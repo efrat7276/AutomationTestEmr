@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Environment>
+    <!--Timeout-->
+    <Timeout>5</Timeout>
+
+    <!--Web-->
+    <PlatformName>web</PlatformName>
+    <BrowserName>chrome</BrowserName>
+<!--    <url>http://lanwebapptest.laniado.org.il/emr2/</url>-->
+
+
+<!--      <url>https://lanwebapp/emr2/</url>-->
+
+    <ImageRepo>H:/Automation/AutomationProject_emr/ImageRepository/</ImageRepo>
+
+
+<!--    <qa>-->
+        <DBUrl-qa>jdbc:sqlserver://lansqltest;databaseName=laniadoQa</DBUrl-qa>
+        <url-qa>https://lanwebapptest.laniado.org.il/emr2/</url-qa>
+<!--    </qa>-->
+
+<!--    <prod>-->
+        <DBUrl-prod>jdbc:sqlserver://lansqltest;databaseName=laniadoProd</DBUrl-prod>
+        <url-prod>https://lanwebapp.laniado.org.il/emr2/</url-prod>
+<!--    </prod>-->
+<!--    <dev>-->
+        <DBUrl-dev>jdbc:sqlserver://lansqltest;databaseName=laniado_dev</DBUrl-dev>
+        <url-dev>https://landev16.laniado.org.il/emr2/</url-dev>
+<!--    </dev>-->
+
+    <DBName>test</DBName>
+    <DBPassword>641153</DBPassword>
+
+    <userTest>test</userTest>
+    <passwordTest>Te231121</passwordTest>
+</Environment>

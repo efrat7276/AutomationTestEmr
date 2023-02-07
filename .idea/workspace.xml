@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="manage pages" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/regression_1.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/regression/regression1.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/regression/regression2.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1rpyF4v4yCV19uvfqzhjsJZ53c9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="K:/efeldman/AutomationProject/AutomationProject_emr" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Automation\AutomationProject_emr" />
+      <recent name="C:\Automation\AutomationProject_emr\medicine_prep" />
+      <recent name="H:\Automation\AutomationProject_emr\DDTFiles\tests" />
+      <recent name="H:\Automation\AutomationProject_emr\DDTFiles" />
+      <recent name="H:\Automation\AutomationProject_emr" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\Automation\AutomationProject_emr\DDTFiles\tests" />
+      <recent name="H:\Automation\AutomationProject_emr\ImageRepository" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sanity.restoreBugs" />
+      <recent name="regression" />
+      <recent name="pageObjects.emr.nurse.prepMedicine" />
+      <recent name="regression.drugRequireApprovalFromInfectologist" />
+      <recent name="workflows.nurse" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.regression1.addToPatientAllPossibilityIns">
+    <configuration name="AddComadinAt2Night.addToPatientCoumadinDrugAndApproval" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sanity.restoreBugs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sanity.restoreBugs" />
+      <option name="MAIN_CLASS_NAME" value="sanity.restoreBugs.AddComadinAt2Night" />
+      <option name="METHOD_NAME" value="addToPatientCoumadinDrugAndApproval" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="H:/Automation/AutomationProject_emr/ToRun.xml" type="TestNG" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/ToRun.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="doctorAddInstruction.addAndSignUnknownDrug" type="TestNG" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.instructionToPatient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression.doctor" />
+      <option name="MAIN_CLASS_NAME" value="regression.doctor.doctorAddInstruction" />
+      <option name="METHOD_NAME" value="addAndSignUnknownDrug" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="regression1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="MAIN_CLASS_NAME" value="regression.regression1" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="regression1.addToPatientAllPossibilityIns" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="MAIN_CLASS_NAME" value="regression.regression1" />
+      <option name="METHOD_NAME" value="addToPatientAllPossibilityIns" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="regression2.addAndSaveAllInstructionToPatient" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="MAIN_CLASS_NAME" value="regression.regression2" />
+      <option name="METHOD_NAME" value="addAndSaveAllInstructionToPatient" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="regression3.addAndDonSaveGeneralInsAt5" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="MAIN_CLASS_NAME" value="regression.regression3" />
+      <option name="METHOD_NAME" value="addAndDonSaveGeneralInsAt5" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.regression1.addToPatientAllPossibilityIns" />
+        <item itemvalue="TestNG.regression2.addAndSaveAllInstructionToPatient" />
+        <item itemvalue="TestNG.regression1" />
+        <item itemvalue="TestNG.AddComadinAt2Night.addToPatientCoumadinDrugAndApproval" />
+        <item itemvalue="TestNG.regression3.addAndDonSaveGeneralInsAt5" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="" />
+      <created>1619687220418</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619687220418</updated>
+    </task>
+    <task id="LOCAL‎00001" summary="commit test">
+      <created>1626353209130</created>
+      <option name="number" value="LOCAL‎00001" />
+      <option name="presentableId" value="LOCAL‎00001" />
+      <updated>1626353209130</updated>
+    </task>
+    <task id="LOCAL‎00002" summary="add test to add_drag from list not dataProvider">
+      <created>1627998534474</created>
+      <option name="number" value="LOCAL‎00002" />
+      <option name="presentableId" value="LOCAL‎00002" />
+      <updated>1627998534474</updated>
+    </task>
+    <task id="LOCAL‎00003" summary="some changes">
+      <created>1629636281305</created>
+      <option name="number" value="LOCAL‎00003" />
+      <option name="presentableId" value="LOCAL‎00003" />
+      <updated>1629636281305</updated>
+    </task>
+    <task id="LOCAL‎00004" summary="sent patient_num to tests from dataProvider Patients.csv">
+      <created>1629636484019</created>
+      <option name="number" value="LOCAL‎00004" />
+      <option name="presentableId" value="LOCAL‎00004" />
+      <updated>1629636484019</updated>
+    </task>
+    <task id="LOCAL‎00005" summary="approval drugDailyNumberOfDay">
+      <created>1629638962722</created>
+      <option name="number" value="LOCAL‎00005" />
+      <option name="presentableId" value="LOCAL‎00005" />
+      <updated>1629638962722</updated>
+    </task>
+    <task id="LOCAL‎00006" summary="add file csv -drugsSOS">
+      <created>1629639679131</created>
+      <option name="number" value="LOCAL‎00006" />
+      <option name="presentableId" value="LOCAL‎00006" />
+      <updated>1629639679131</updated>
+    </task>
+    <task id="LOCAL‎00007" summary="vcs.xml update">
+      <created>1629639727924</created>
+      <option name="number" value="LOCAL‎00007" />
+      <option name="presentableId" value="LOCAL‎00007" />
+      <updated>1629639727924</updated>
+    </task>
+    <task id="LOCAL‎00008" summary="BeforeSuiteFunc - functions to read and write patient of department to patients.csv">
+      <created>1629807598966</created>
+      <option name="number" value="LOCAL‎00008" />
+      <option name="presentableId" value="LOCAL‎00008" />
+      <updated>1629807598966</updated>
+    </task>
+    <task id="LOCAL‎00009" summary="DBQueries add function to clear data to patient , add xml files">
+      <created>1629870862202</created>
+      <option name="number" value="LOCAL‎00009" />
+      <option name="presentableId" value="LOCAL‎00009" />
+      <updated>1629870862202</updated>
+    </task>
+    <task id="LOCAL‎00010" summary="fixes">
+      <created>1629870920054</created>
+      <option name="number" value="LOCAL‎00010" />
+      <option name="presentableId" value="LOCAL‎00010" />
+      <updated>1629870920054</updated>
+    </task>
+    <task id="LOCAL‎00011" summary="add function choose patient with num parameter">
+      <created>1664788468078</created>
+      <option name="number" value="LOCAL‎00011" />
+      <option name="presentableId" value="LOCAL‎00011" />
+      <updated>1664788468078</updated>
+    </task>
+    <task id="LOCAL‎00012" summary="patient list page - changes">
+      <created>1664788753221</created>
+      <option name="number" value="LOCAL‎00012" />
+      <option name="presentableId" value="LOCAL‎00012" />
+      <updated>1664788753221</updated>
+    </task>
+    <task id="LOCAL‎00013" summary="nutrition add flows">
+      <created>1664788931216</created>
+      <option name="number" value="LOCAL‎00013" />
+      <option name="presentableId" value="LOCAL‎00013" />
+      <updated>1664788931216</updated>
+    </task>
+    <task id="LOCAL‎00014" summary="xml tests">
+      <created>1664788968760</created>
+      <option name="number" value="LOCAL‎00014" />
+      <option name="presentableId" value="LOCAL‎00014" />
+      <updated>1664788968760</updated>
+    </task>
+    <task id="LOCAL‎00015" summary="general class to general tests">
+      <created>1664789034971</created>
+      <option name="number" value="LOCAL‎00015" />
+      <option name="presentableId" value="LOCAL‎00015" />
+      <updated>1664789034971</updated>
+    </task>
+    <task id="LOCAL‎00016" summary="generalIns tests">
+      <created>1664789139603</created>
+      <option name="number" value="LOCAL‎00016" />
+      <option name="presentableId" value="LOCAL‎00016" />
+      <updated>1664789139603</updated>
+    </task>
+    <task id="LOCAL‎00017" summary="innerMenuPage addition">
+      <created>1664789225289</created>
+      <option name="number" value="LOCAL‎00017" />
+      <option name="presentableId" value="LOCAL‎00017" />
+      <updated>1664789225289</updated>
+    </task>
+    <task id="LOCAL‎00018" summary="mainMenuPage">
+      <created>1664789277191</created>
+      <option name="number" value="LOCAL‎00018" />
+      <option name="presentableId" value="LOCAL‎00018" />
+      <updated>1664789277191</updated>
+    </task>
+    <task id="LOCAL‎00019" summary="manage pages">
+      <created>1664789323470</created>
+      <option name="number" value="LOCAL‎00019" />
+      <option name="presentableId" value="LOCAL‎00019" />
+      <updated>1664789323470</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="commit test" />
+    <MESSAGE value="add test to add_drag from list not dataProvider" />
+    <MESSAGE value="some changes" />
+    <MESSAGE value="sent patient_num to tests from dataProvider Patients.csv" />
+    <MESSAGE value="approval drugDailyNumberOfDay" />
+    <MESSAGE value="add file csv -drugsSOS" />
+    <MESSAGE value="vcs.xml update" />
+    <MESSAGE value="BeforeSuiteFunc - functions to read and write patient of department to patients.csv" />
+    <MESSAGE value="DBQueries add function to clear data to patient , add xml files" />
+    <MESSAGE value="fixes" />
+    <MESSAGE value="add function choose patient with num parameter" />
+    <MESSAGE value="patient list page - changes" />
+    <MESSAGE value="nutrition add flows" />
+    <MESSAGE value="xml tests" />
+    <MESSAGE value="general class to general tests" />
+    <MESSAGE value="generalIns tests" />
+    <MESSAGE value="innerMenuPage addition" />
+    <MESSAGE value="mainMenuPage" />
+    <MESSAGE value="manage pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="manage pages" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/db/GeneralInstructionDBFlow.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/extensions/DBAction.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/extensions/DBAction.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/extensions/DBAction.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/extensions/DBAction.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/drugs/nurse/nurseFlows.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="259" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/extensions/DBQueries.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/extensions/DBQueries.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/regression/instructionToPatient/stopInstruction.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="269" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/extensions/UIActions.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/bloodProductInstructionFlows.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/regression/emergency/nurseTest.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/regression/nurse/nurseExecute.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="334" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/regression/nurse/nurseExecute.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="336" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/sanity/UnitTest/general/General.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="381" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/bloodProductInstructionFlows.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="383" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/drugs/nurse/nurseFlows.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="400" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/drugs/nurse/nurseFlows.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="424" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/drugs/nurse/nurseFlows.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="429" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/BloodProductScenario.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="442" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/extensions/Verifications.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="509" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/extensions/Verifications.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="510" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="528" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/drugFlows.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="529" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/drugFlows.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="530" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utilities/CommonOps.java</url>
+          <line>176</line>
+          <option name="timeStamp" value="550" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java</url>
+          <line>326</line>
+          <option name="timeStamp" value="607" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java</url>
+          <line>306</line>
+          <option name="timeStamp" value="618" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/regression/regression1.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="658" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/regression/regression1.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="659" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/regression/nurse/nurseExecute.java</url>
+          <line>33</line>
+          <properties class="regression.nurse.nurseExecute">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="256" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/regression/nurse/nurseExecute.java</url>
+          <line>69</line>
+          <properties class="regression.nurse.nurseExecute">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="278" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/BloodProductScenario.java</url>
+          <line>21</line>
+          <properties class="sanity.UnitTest.instructionToPatient.BloodProductScenario">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="441" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/drugFlows.java</url>
+          <line>18</line>
+          <properties class="workflows.doctor.drugFlows" method="addAndSaveDrugOnceOnlyToPatient">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="453" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java</url>
+          <line>20</line>
+          <properties class="sanity.UnitTest.instructionToPatient.DrugsScenario" method="test01_addAndSaveDrugDailyToPatient">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="508" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/regression/regression2.java</url>
+          <line>21</line>
+          <properties class="regression.regression2" method="addAndSaveAllInstructionToPatient">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="619" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="approvalInstructionPage.btns_approveToDrug.size()" language="JAVA" />
+        <watch expression="approvalInstructionPage.btn_drug.size()" language="JAVA" />
+        <watch expression="approvalInstructionPage.solution_scale_currentHourList.size()" language="JAVA" />
+        <watch expression="cardexPage.checkBoxListSol.size()" language="JAVA" />
+        <watch expression="cardexPage.checkBoxListSol.get(0)" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AutomationProject_emr$H__Automation_AutomationProject_emr_TestNGSuite_xml.ic" NAME="$PROJECT_DIR$/TestNGSuite.xml Coverage Results" MODIFIED="1623153384823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/AutomationProject_emr$DrugScenarios_test006_verify_AddAndSavaDrugsDailyFromList.ic" NAME="DrugScenarios.test006_verify_AddAndSavaDrugsDailyFromList Coverage Results" MODIFIED="1623242011562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sanity.instructions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/AutomationProject_emr$H__Automation_AutomationProject_emr_Sanity_xml.ic" NAME="$PROJECT_DIR$/Sanity.xml Coverage Results" MODIFIED="1667202492989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
