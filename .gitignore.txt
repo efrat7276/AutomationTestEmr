@@ -1,1 +1,5 @@
 /allure-results
+/allure-report
+/.idea
+/temp
+/target
