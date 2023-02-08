@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SanityTest">
+    <test name="stopPatientInstruction">
+        <classes>
+            <class name="sanity.UnitTest.instructionToPatient.StopInstructionScenario"></class>
+        </classes>
+    </test>
+    <test name="addAllInstructionToPatient">
+        <classes>
+           <class name="sanity.UnitTest.instructionToPatient.DrugsScenario"></class>
+            <class name="sanity.UnitTest.instructionToPatient.SolutionScenario"></class>
+           <class name="sanity.UnitTest.instructionToPatient.GeneralInsScenario"></class>
+            <class name="sanity.UnitTest.instructionToPatient.BloodProductScenario"></class>
+            <class name="sanity.UnitTest.instructionToPatient.NutritionScenario"></class>
+        </classes>
+    </test>
+
+    <test name="editDrug">
+        <classes>
+            <class name="sanity.UnitTest.addAndEditInstructionToPatient.EditDrugIns"></class>
+        </classes>
+    </test>
+
+
+    <test name="antibioticDrugAddConfirmation">
+        <classes>
+            <class name="sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario"></class>
+        </classes>
+    </test>
+
+    <test name="emergencyTest">
+        <classes>
+            <class name="sanity.UnitTest.emergency.DoctorEmergency"></class>
+        </classes>
+    </test>
+
+</suite>

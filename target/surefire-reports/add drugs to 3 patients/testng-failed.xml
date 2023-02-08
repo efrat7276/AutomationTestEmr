@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [add drugs to 3 patients]">
+  <parameter name="patient_num" value="3"/>
+  <test thread-count="5" verbose="0" name="drugsTest_1(failed)">
+    <classes>
+      <class name="sanity.instructions.DrugScenarios">
+        <methods>
+          <include name="startSession"/>
+          <include name="test03_verifyAddDrugListToPatient" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+          <include name="test04_verifyAddDrugInfectiousDiseaseSpecialListToPatient" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- sanity.instructions.DrugScenarios -->
+    </classes>
+  </test> <!-- drugsTest_1(failed) -->
+  <test thread-count="5" verbose="0" name="drugsTest_2(failed)">
+    <classes>
+      <class name="sanity.instructions.DrugScenarios">
+        <methods>
+          <include name="startSession"/>
+          <include name="test03_verifyAddDrugListToPatient" invocation-numbers="0"/>
+          <include name="test05_verifyAddDrugAsRiskListToPatient" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+          <include name="test04_verifyAddDrugInfectiousDiseaseSpecialListToPatient" invocation-numbers="0"/>
+          <include name="test06_verifyAddDrugSOSListToPatient" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- sanity.instructions.DrugScenarios -->
+    </classes>
+  </test> <!-- drugsTest_2(failed) -->
+  <test thread-count="5" verbose="0" name="drugsTest_3(failed)">
+    <classes>
+      <class name="sanity.instructions.DrugScenarios">
+        <methods>
+          <include name="startSession"/>
+          <include name="test03_verifyAddDrugListToPatient" invocation-numbers="0"/>
+          <include name="test05_verifyAddDrugAsRiskListToPatient" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+          <include name="test04_verifyAddDrugInfectiousDiseaseSpecialListToPatient" invocation-numbers="0"/>
+          <include name="test06_verifyAddDrugSOSListToPatient" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- sanity.instructions.DrugScenarios -->
+    </classes>
+  </test> <!-- drugsTest_3(failed) -->
+</suite> <!-- Failed suite [add drugs to 3 patients] -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="drugFuture" parallel="false">
+
+        <test name="drugFutureIn11Night">
+            <classes>
+                <class name="sanity.UnitTest.instructionToPatient.DrugsScenario">
+                    <methods>
+                        <include name="test02_nurseApprovalFutureDrugDailyToPatient"/>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+</suite>

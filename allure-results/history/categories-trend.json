@@ -1,0 +1,161 @@
+[ {
+  "buildOrder" : 75,
+  "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 11,
+    "Test defects" : 22
+  }
+}, {
+  "buildOrder" : 258,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/258/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 4,
+    "Test defects" : 82
+  }
+}, {
+  "buildOrder" : 257,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/257/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 4,
+    "Test defects" : 88
+  }
+}, {
+  "buildOrder" : 256,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/256/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 4,
+    "Test defects" : 89
+  }
+}, {
+  "buildOrder" : 255,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/255/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 4,
+    "Test defects" : 89
+  }
+}, {
+  "buildOrder" : 254,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/254/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 4,
+    "Test defects" : 89
+  }
+}, {
+  "buildOrder" : 253,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/253/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 4,
+    "Test defects" : 89
+  }
+}, {
+  "buildOrder" : 252,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/252/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 6,
+    "Test defects" : 75
+  }
+}, {
+  "buildOrder" : 251,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/251/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 6,
+    "Test defects" : 76
+  }
+}, {
+  "buildOrder" : 250,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/250/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 6,
+    "Test defects" : 71
+  }
+}, {
+  "buildOrder" : 249,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/249/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 6,
+    "Test defects" : 73
+  }
+}, {
+  "buildOrder" : 248,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/248/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 5,
+    "Test defects" : 80
+  }
+}, {
+  "buildOrder" : 246,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/246/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 5,
+    "Test defects" : 80
+  }
+}, {
+  "buildOrder" : 245,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/245/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 5,
+    "Test defects" : 80
+  }
+}, {
+  "buildOrder" : 244,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/244/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 5,
+    "Test defects" : 79
+  }
+}, {
+  "buildOrder" : 243,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/243/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 4,
+    "Test defects" : 82
+  }
+}, {
+  "buildOrder" : 242,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/242/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 4,
+    "Test defects" : 80
+  }
+}, {
+  "buildOrder" : 241,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/241/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 4,
+    "Test defects" : 80
+  }
+}, {
+  "buildOrder" : 240,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/240/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 4,
+    "Test defects" : 80
+  }
+}, {
+  "buildOrder" : 239,
+  "reportUrl" : "http://localhost:8080/job/CI%20Automation/239/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 4,
+    "Test defects" : 82
+  }
+} ]

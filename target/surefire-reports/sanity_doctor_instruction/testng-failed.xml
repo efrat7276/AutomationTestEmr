@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [sanity_doctor_instruction]">
+  <test thread-count="5" verbose="0" name="AddAllKindsInstruction(failed)">
+    <classes>
+      <class name="sanity.doctor.addInstructionToPatient">
+        <parameter name="patient_num" value="22095467"/>
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="startSession"/>
+          <include name="addAndSignUnknownDrug" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+        </methods>
+      </class> <!-- sanity.doctor.addInstructionToPatient -->
+    </classes>
+  </test> <!-- AddAllKindsInstruction(failed) -->
+</suite> <!-- Failed suite [sanity_doctor_instruction] -->

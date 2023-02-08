@@ -1,0 +1,21 @@
+# Created at 2023-01-15T15:39:01.095
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2023-01-15T15:39:01.874
+Unexpected IOException with stream: [Configuration] [WARN] Detected a static method [utilities.CommonOps.afterMethod()]. Static configuration methods can cause  unexpected behavior.
+
+
+# Created at 2023-01-15T15:39:02.784
+Unexpected IOException with stream: Error eccurred while connecting to DB, see details: com.microsoft.sqlserver.jdbc.SQLServerException: The driver could not establish a secure connection to SQL Server by using Secure Sockets Layer (SSL) encryption. Error: "The server selected protocol version TLS10 is not accepted by client preferences [TLS13, TLS12]". ClientConnectionId:78230ee2-2364-4024-be5b-a57da01574b8
+
+
+# Created at 2023-01-15T15:39:02.795
+Unexpected IOException with stream: --------------------Starting Execution--------------------
+
+

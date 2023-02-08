@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [medicinePrep]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="addDrugToPatientNight(failed)" verbose="0">
+    <classes>
+      <class name="sanity.restoreBugs.Medicine_prep">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+          <include name="startSession"/>
+          <include name="test01_ApprovalDrugDailyNight"/>
+        </methods>
+      </class> <!-- sanity.restoreBugs.Medicine_prep -->
+    </classes>
+  </test> <!-- addDrugToPatientNight(failed) -->
+</suite> <!-- Failed suite [medicinePrep] -->

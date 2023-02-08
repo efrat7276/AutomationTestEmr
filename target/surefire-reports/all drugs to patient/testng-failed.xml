@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [all drugs to patient]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="07_addDrug_EditDrug-numberOfTime(failed)" verbose="0">
+    <classes>
+      <class name="regression.doctor.addAndUpdateInstruction">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="startSession"/>
+          <include name="addAndUpdateAfterSingDrugDaily_numberOfTime"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+        </methods>
+      </class> <!-- regression.doctor.addAndUpdateInstruction -->
+    </classes>
+  </test> <!-- 07_addDrug_EditDrug-numberOfTime(failed) -->
+  <test thread-count="5" name="08_addDrug_EditDrug-dosage(failed)" verbose="0">
+    <classes>
+      <class name="regression.doctor.addAndUpdateInstruction">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="startSession"/>
+          <include name="addAndUpdateAfterSingDrugDaily_dosage"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+        </methods>
+      </class> <!-- regression.doctor.addAndUpdateInstruction -->
+    </classes>
+  </test> <!-- 08_addDrug_EditDrug-dosage(failed) -->
+</suite> <!-- Failed suite [all drugs to patient] -->

@@ -1,0 +1,10 @@
+[ {
+  "name" : "Jenkins",
+  "type" : "jenkins",
+  "url" : "http://localhost:8080/",
+  "buildOrder" : 76,
+  "buildName" : "C:\\Automation\\AutomationProject_emr #76",
+  "buildUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/",
+  "reportName" : "AllureReport",
+  "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure"
+} ]

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SanityTest]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="addAllInstructionToPatient(failed)" verbose="0">
+    <classes>
+      <class name="sanity.UnitTest.instructionToPatient.DrugsScenario">
+        <methods>
+          <include name="test05_nurseApprovalDrugByHourToPatient"/>
+          <include name="test03_addAndSaveDrugSOSToPatient"/>
+          <include name="test04_nurseApprovalDrugOnceOnlyToPatient"/>
+          <include name="test02_nurseApprovalFutureDrugDailyToPatient"/>
+          <include name="closeSession"/>
+          <include name="startSession"/>
+          <include name="test01_addAndSaveDrugDailyToPatient"/>
+          <include name="test05_addAndSaveDrugByHourToPatient"/>
+          <include name="test06_addAndSaveDrugWeeklyToPatient"/>
+          <include name="test04_addAndSaveDrugOnceOnlyToPatient"/>
+          <include name="BeforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="test02_addAndSaveFutureDrugDailyToPatient"/>
+          <include name="test03_nurseApprovalDrugSOSToPatient"/>
+          <include name="test01_nurseApprovalDrugDailyToPatient"/>
+          <include name="test06_nurseApprovalDrugWeeklyToPatient"/>
+        </methods>
+      </class> <!-- sanity.UnitTest.instructionToPatient.DrugsScenario -->
+      <class name="sanity.UnitTest.instructionToPatient.BloodProductScenario">
+        <methods>
+          <include name="test01_nurseApprovalBloodProductToPatient"/>
+          <include name="BeforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+          <include name="startSession"/>
+        </methods>
+      </class> <!-- sanity.UnitTest.instructionToPatient.BloodProductScenario -->
+      <class name="sanity.UnitTest.instructionToPatient.NutritionScenario">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="test01_nurseApprovalNutritionDailyToPatient"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+          <include name="startSession"/>
+          <include name="test01_addAndSaveNutritionDailyToPatient"/>
+        </methods>
+      </class> <!-- sanity.UnitTest.instructionToPatient.NutritionScenario -->
+      <class name="sanity.UnitTest.instructionToPatient.GeneralInsScenario">
+        <methods>
+          <include name="test02_nurseApprovalGeneralInsFutureToPatient"/>
+          <include name="test01_addAndSaveGeneralInsDailyToPatient"/>
+          <include name="test01_nurseApprovalGeneralInsDailyToPatient"/>
+          <include name="BeforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+          <include name="startSession"/>
+          <include name="test02_addAndSaveGeneralInsDailyFutureToPatient"/>
+        </methods>
+      </class> <!-- sanity.UnitTest.instructionToPatient.GeneralInsScenario -->
+      <class name="sanity.UnitTest.instructionToPatient.SolutionScenario">
+        <methods>
+          <include name="test07_addAndSaveDrugContinuesToPatient"/>
+          <include name="test07_nurseApprovalContinuesToPatient"/>
+          <include name="BeforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+          <include name="startSession"/>
+          <include name="test06_nurseApprovalDilutedToPatient"/>
+          <include name="test06_addAndSaveDrugDilutedToPatient"/>
+        </methods>
+      </class> <!-- sanity.UnitTest.instructionToPatient.SolutionScenario -->
+    </classes>
+  </test> <!-- addAllInstructionToPatient(failed) -->
+  <test thread-count="5" name="editDrug(failed)" verbose="0">
+    <classes>
+      <class name="sanity.UnitTest.addAndEditInstructionToPatient.EditDrugIns">
+        <methods>
+          <include name="test01_editDrugDailyNumberOfTime"/>
+          <include name="BeforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+          <include name="test01_editDrugDailyDosage"/>
+          <include name="startSession"/>
+        </methods>
+      </class> <!-- sanity.UnitTest.addAndEditInstructionToPatient.EditDrugIns -->
+    </classes>
+  </test> <!-- editDrug(failed) -->
+  <test thread-count="5" name="antibioticDrugAddConfirmation(failed)" verbose="0">
+    <classes>
+      <class name="sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="test01_nurseApprovalDrugDailyToPatient"/>
+          <include name="test01_addAndSaveWithConfirmationDrugRequireConfirmationDailyToPatient"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+          <include name="startSession"/>
+        </methods>
+      </class> <!-- sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario -->
+    </classes>
+  </test> <!-- antibioticDrugAddConfirmation(failed) -->
+  <test thread-count="5" name="emergencyTest(failed)" verbose="0">
+    <classes>
+      <class name="sanity.UnitTest.emergency.DoctorEmergency">
+        <methods>
+          <include name="test03_addDrugOnceOnly"/>
+          <include name="BeforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+          <include name="startSession"/>
+          <include name="test04_addDrugOnceOnlyAndExecute"/>
+        </methods>
+      </class> <!-- sanity.UnitTest.emergency.DoctorEmergency -->
+    </classes>
+  </test> <!-- emergencyTest(failed) -->
+</suite> <!-- Failed suite [SanityTest] -->

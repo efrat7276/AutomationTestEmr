@@ -1,0 +1,5578 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "COMPU_EFRAT",
+    "children" : [ {
+      "name" : "8832@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add drug once-only emergency ",
+        "uid" : "c5c95f95a44a2e6a",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675376308220,
+          "stop" : 1675376324897,
+          "duration" : 16677
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug daily",
+        "uid" : "601e26d41de377b8",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675375868045,
+          "stop" : 1675375872615,
+          "duration" : 4570
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save nutrition daily",
+        "uid" : "52659c74beafcb43",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675376147271,
+          "stop" : 1675376164757,
+          "duration" : 17486
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "714f7ac1fc5bbb70",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675376070313,
+          "stop" : 1675376085295,
+          "duration" : 14982
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "a8f716ab9dc0d132",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675376099248,
+          "stop" : 1675376109274,
+          "duration" : 10026
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save continues drug",
+        "uid" : "43780f8c9a00d724",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675376045370,
+          "stop" : 1675376053725,
+          "duration" : 8355
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug weekly",
+        "uid" : "90e13a4100e3d7f4",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675375983199,
+          "stop" : 1675375997001,
+          "duration" : 13802
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug daily",
+        "uid" : "bd40cb012ef1e6c3",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675375844229,
+          "stop" : 1675375866550,
+          "duration" : 22321
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug once only",
+        "uid" : "aac0cef54bbf816c",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675375930137,
+          "stop" : 1675375944435,
+          "duration" : 14298
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "edit dosage to drug daily ",
+        "uid" : "5d0c938a1aef4044",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675376182272,
+          "stop" : 1675376198052,
+          "duration" : 15780
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save future drug daily ",
+        "uid" : "2d935a4628bba015",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675375873749,
+          "stop" : 1675375890916,
+          "duration" : 17167
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only and execute",
+        "uid" : "b61ea04bb462b9b4",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675376325999,
+          "stop" : 1675376342557,
+          "duration" : 16558
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug once only",
+        "uid" : "a5a913a0ca1bc419",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675375945679,
+          "stop" : 1675375955716,
+          "duration" : 10037
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug daily",
+        "uid" : "bfa0edc3765aad74",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675376223805,
+          "stop" : 1675376257773,
+          "duration" : 33968
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug diluted",
+        "uid" : "b105c47ad1d549a9",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675376034732,
+          "stop" : 1675376044201,
+          "duration" : 9469
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "approval blood-product",
+        "uid" : "c931cbf002ee7a0a",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675376132005,
+          "stop" : 1675376140779,
+          "duration" : 8774
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug sos",
+        "uid" : "68151bebd8063ed7",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675375901487,
+          "stop" : 1675375917553,
+          "duration" : 16066
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test stop all active instruction to patient ",
+        "uid" : "367566afc08c750e",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675375818766,
+          "stop" : 1675375835966,
+          "duration" : 17200
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug sos",
+        "uid" : "152822821fa9b1af",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675375918905,
+          "stop" : 1675375928850,
+          "duration" : 9945
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "check possibilities for emergency",
+        "uid" : "785d0ccd0d975327",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675376292817,
+          "stop" : 1675376307040,
+          "duration" : 14223
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug by hour",
+        "uid" : "9016f9da54c9205e",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675375957068,
+          "stop" : 1675375971051,
+          "duration" : 13983
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "1ffa38c65d877c97",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675376110399,
+          "stop" : 1675376120932,
+          "duration" : 10533
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "ac067f57bdf95be4",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675376086728,
+          "stop" : 1675376097467,
+          "duration" : 10739
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug weekly",
+        "uid" : "7396314c190c210b",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675376054918,
+          "stop" : 1675376063859,
+          "duration" : 8941
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "check hospital stock checkbox",
+        "uid" : "fb7ebb47e15c1c9b",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675376276769,
+          "stop" : 1675376291432,
+          "duration" : 14663
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "edit timePerDay in drug daily",
+        "uid" : "269b0bb3c8c3b7a8",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675376199571,
+          "stop" : 1675376217620,
+          "duration" : 18049
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "e2826d4498a82ec2",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675375892160,
+          "stop" : 1675375900268,
+          "duration" : 8108
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug daily",
+        "uid" : "1e2922b47cd9daa5",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675376259304,
+          "stop" : 1675376270492,
+          "duration" : 11188
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug weekly",
+        "uid" : "1ffdbccc47808202",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675375998238,
+          "stop" : 1675376007131,
+          "duration" : 8893
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse approval and nurse execute nutrition daily",
+        "uid" : "ff0b7326ea60cd67",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675376166488,
+          "stop" : 1675376176001,
+          "duration" : 9513
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug by-hour",
+        "uid" : "84866af86d2d3c72",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675375972322,
+          "stop" : 1675375981419,
+          "duration" : 9097
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug diluted",
+        "uid" : "1fbde1e7c69cdf16",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675376013437,
+          "stop" : 1675376033123,
+          "duration" : 19686
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save blood-product",
+        "uid" : "f39ed4f52bc76190",
+        "parentUid" : "5dd7c36c32a8a54def0c0ae4abc0e697",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675376127214,
+          "stop" : 1675376130074,
+          "duration" : 2860
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5dd7c36c32a8a54def0c0ae4abc0e697"
+    }, {
+      "name" : "18748@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add and save blood-product",
+        "uid" : "969bc35f4392a243",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675808151857,
+          "stop" : 1675808155514,
+          "duration" : 3657
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug daily",
+        "uid" : "dc06b1c5798bbaa7",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675807840706,
+          "stop" : 1675807868808,
+          "duration" : 28102
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "edit dosage to drug daily ",
+        "uid" : "5f98fd19aa6fbf7c",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675808214689,
+          "stop" : 1675808231634,
+          "duration" : 16945
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only emergency ",
+        "uid" : "4644a51860327c47",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675808346356,
+          "stop" : 1675808363093,
+          "duration" : 16737
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug once only",
+        "uid" : "cbacb3da2deabdb4",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675807947421,
+          "stop" : 1675807955814,
+          "duration" : 8393
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "check hospital stock checkbox",
+        "uid" : "64b874aa1b48dc18",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675808312077,
+          "stop" : 1675808327124,
+          "duration" : 15047
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug daily",
+        "uid" : "c50fc7c03791006",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675808294661,
+          "stop" : 1675808305481,
+          "duration" : 10820
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "fb3da71a7ce6d7ef",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675808098514,
+          "stop" : 1675808113583,
+          "duration" : 15069
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "de2d7a80f8ef019a",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675808115272,
+          "stop" : 1675808123906,
+          "duration" : 8634
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "823903307fbda2a6",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675808125448,
+          "stop" : 1675808135486,
+          "duration" : 10038
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug diluted",
+        "uid" : "fac3c022eac55d81",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675808041502,
+          "stop" : 1675808055067,
+          "duration" : 13565
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "approval blood-product",
+        "uid" : "fc9d5a097f02406d",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675808158876,
+          "stop" : 1675808173755,
+          "duration" : 14879
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug weekly",
+        "uid" : "1437887e315776a0",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675808078640,
+          "stop" : 1675808091929,
+          "duration" : 13289
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug weekly",
+        "uid" : "b744b5ad1dd3be47",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675807998603,
+          "stop" : 1675808011749,
+          "duration" : 13146
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test stop all active instruction to patient ",
+        "uid" : "f9a102d4783f465b",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675807816893,
+          "stop" : 1675807833304,
+          "duration" : 16411
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug weekly",
+        "uid" : "18cd9930f45747ea",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675807982311,
+          "stop" : 1675807997328,
+          "duration" : 15017
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save future drug daily ",
+        "uid" : "b0b7b05cfdb07df0",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675807880061,
+          "stop" : 1675807889472,
+          "duration" : 9411
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "check possibilities for emergency",
+        "uid" : "58c4914fc53d73f3",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675808328993,
+          "stop" : 1675808344997,
+          "duration" : 16004
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug once only",
+        "uid" : "e0b1e3d362eea8eb",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675807938013,
+          "stop" : 1675807946196,
+          "duration" : 8183
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "a04eb9f6837660c7",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675807890716,
+          "stop" : 1675807899579,
+          "duration" : 8863
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug sos",
+        "uid" : "33fe65bc160f5e41",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675807923495,
+          "stop" : 1675807936753,
+          "duration" : 13258
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug by hour",
+        "uid" : "b4cff67028ddc041",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675807957050,
+          "stop" : 1675807971554,
+          "duration" : 14504
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug daily",
+        "uid" : "5cae43d405f28498",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675808257765,
+          "stop" : 1675808292536,
+          "duration" : 34771
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "53654c6d02a94a7f",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675808136643,
+          "stop" : 1675808144977,
+          "duration" : 8334
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug by-hour",
+        "uid" : "2e93ddfd50869638",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675807972838,
+          "stop" : 1675807980937,
+          "duration" : 8099
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save nutrition daily",
+        "uid" : "3ff3167c9c9906c4",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675808180537,
+          "stop" : 1675808197373,
+          "duration" : 16836
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only and execute",
+        "uid" : "a8fa7a1199297675",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675808364582,
+          "stop" : 1675808383120,
+          "duration" : 18538
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "edit timePerDay in drug daily",
+        "uid" : "e1f4d233a611c9fc",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675808233181,
+          "stop" : 1675808251237,
+          "duration" : 18056
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug sos",
+        "uid" : "72b78c7089b2ccb5",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675807901168,
+          "stop" : 1675807922261,
+          "duration" : 21093
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug diluted",
+        "uid" : "58dc7c5e18d3fc58",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675808018980,
+          "stop" : 1675808039840,
+          "duration" : 20860
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save continues drug",
+        "uid" : "af2ab3733a37c501",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675808056369,
+          "stop" : 1675808077363,
+          "duration" : 20994
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug daily",
+        "uid" : "e4c1da70efdfc53e",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675807870500,
+          "stop" : 1675807878804,
+          "duration" : 8304
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse approval and nurse execute nutrition daily",
+        "uid" : "6d6edae7c05150af",
+        "parentUid" : "89eefed96b5249cb8a3aafae4c8281ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675808198937,
+          "stop" : 1675808207790,
+          "duration" : 8853
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "89eefed96b5249cb8a3aafae4c8281ca"
+    }, {
+      "name" : "23096@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "test add and save drug daily",
+        "uid" : "b7490ca8e7ddc0c",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675548647738,
+          "stop" : 1675548669308,
+          "duration" : 21570
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "4678f1bd2e0c9f5",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548897915,
+          "stop" : 1675548905980,
+          "duration" : 8065
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug diluted",
+        "uid" : "4ec8119709d4e5b4",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548830343,
+          "stop" : 1675548838293,
+          "duration" : 7950
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug weekly",
+        "uid" : "36f94695fee7dea4",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548860099,
+          "stop" : 1675548871219,
+          "duration" : 11120
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug daily",
+        "uid" : "16e823f7450b9659",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675549023253,
+          "stop" : 1675549034668,
+          "duration" : 11415
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "6b65b148070f6adf",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548907139,
+          "stop" : 1675548918403,
+          "duration" : 11264
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug sos",
+        "uid" : "43e494f4443cb684",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548728627,
+          "stop" : 1675548739038,
+          "duration" : 10411
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "edit timePerDay in drug daily",
+        "uid" : "4a0f0c765035f004",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548990866,
+          "stop" : 1675549007461,
+          "duration" : 16595
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "2f756159e93717d8",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548887640,
+          "stop" : 1675548896617,
+          "duration" : 8977
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save future drug daily ",
+        "uid" : "31a9f17003a5a22d",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675548677516,
+          "stop" : 1675548693902,
+          "duration" : 16386
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug daily",
+        "uid" : "29a781d459759113",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675549013884,
+          "stop" : 1675549021887,
+          "duration" : 8003
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug weekly",
+        "uid" : "8e7d0b5375a33051",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548812696,
+          "stop" : 1675548823754,
+          "duration" : 11058
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug sos",
+        "uid" : "43c4a128101fc26b",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675548705616,
+          "stop" : 1675548727337,
+          "duration" : 21721
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "check possibilities for emergency",
+        "uid" : "977743d39d739c80",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675549057386,
+          "stop" : 1675549071860,
+          "duration" : 14474
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug by-hour",
+        "uid" : "2afffc31a9fe1a07",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548781262,
+          "stop" : 1675548792306,
+          "duration" : 11044
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save blood-product",
+        "uid" : "4275d3c78611fe9",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675548924868,
+          "stop" : 1675548929379,
+          "duration" : 4511
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only emergency ",
+        "uid" : "fecbc98156b30f86",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675549073166,
+          "stop" : 1675549090485,
+          "duration" : 17319
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "approval blood-product",
+        "uid" : "f0d89f72b2df77de",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548931730,
+          "stop" : 1675548941268,
+          "duration" : 9538
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug once only",
+        "uid" : "b0596337a2448a7",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675548740253,
+          "stop" : 1675548753338,
+          "duration" : 13085
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug diluted",
+        "uid" : "ee0938e9b2199ec9",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548839697,
+          "stop" : 1675548848933,
+          "duration" : 9236
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug once only",
+        "uid" : "d0dec954bccb1d07",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548754589,
+          "stop" : 1675548764384,
+          "duration" : 9795
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "edit dosage to drug daily ",
+        "uid" : "2006a435bcb7556f",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548973831,
+          "stop" : 1675548989270,
+          "duration" : 15439
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "check hospital stock checkbox",
+        "uid" : "64dfd630476dfff4",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675549041778,
+          "stop" : 1675549055895,
+          "duration" : 14117
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug daily",
+        "uid" : "d4e17f37b3f11b4c",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548670871,
+          "stop" : 1675548676272,
+          "duration" : 5401
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "7e99abad9ce1f9c7",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548877564,
+          "stop" : 1675548886291,
+          "duration" : 8727
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug weekly",
+        "uid" : "e1c50e65569cb039",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548793641,
+          "stop" : 1675548811416,
+          "duration" : 17775
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug by hour",
+        "uid" : "776a88e05f4417f1",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675548765626,
+          "stop" : 1675548780069,
+          "duration" : 14443
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save continues drug",
+        "uid" : "91abe48f97f72cb0",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548850419,
+          "stop" : 1675548858754,
+          "duration" : 8335
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "e11ffdf78fcda2c2",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548695193,
+          "stop" : 1675548704352,
+          "duration" : 9159
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save nutrition daily",
+        "uid" : "4ffdfc00785756b7",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548947651,
+          "stop" : 1675548955724,
+          "duration" : 8073
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test stop all active instruction to patient ",
+        "uid" : "f91071e2f155347d",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675548622442,
+          "stop" : 1675548638266,
+          "duration" : 15824
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only and execute",
+        "uid" : "37887651eb27b121",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675549091639,
+          "stop" : 1675549107640,
+          "duration" : 16001
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse approval and nurse execute nutrition daily",
+        "uid" : "df93eff3b057c9af",
+        "parentUid" : "08b57aa20c8e48b851c82c1d385aa542",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548957177,
+          "stop" : 1675548966972,
+          "duration" : 9795
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "08b57aa20c8e48b851c82c1d385aa542"
+    }, {
+      "name" : "19120@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "check hospital stock checkbox",
+        "uid" : "8de37d906dd62b87",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675462696794,
+          "stop" : 1675462711011,
+          "duration" : 14217
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "edit timePerDay in drug daily",
+        "uid" : "e7682fab1ffee72c",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462620894,
+          "stop" : 1675462638493,
+          "duration" : 17599
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug once only",
+        "uid" : "7c5a0a5761c4cf73",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675462341088,
+          "stop" : 1675462355116,
+          "duration" : 14028
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save nutrition daily",
+        "uid" : "8a6469fe1638a6ce",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675462573238,
+          "stop" : 1675462585951,
+          "duration" : 12713
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug daily",
+        "uid" : "8fb490681572424a",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462644727,
+          "stop" : 1675462677518,
+          "duration" : 32791
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "81ac8aee0952aeb0",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675462523068,
+          "stop" : 1675462533300,
+          "duration" : 10232
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug daily",
+        "uid" : "ac8721c865389410",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462242808,
+          "stop" : 1675462266779,
+          "duration" : 23971
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "check possibilities for emergency",
+        "uid" : "da987858e621e305",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675462712279,
+          "stop" : 1675462727103,
+          "duration" : 14824
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug once only",
+        "uid" : "839a265fbda4c73d",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462356356,
+          "stop" : 1675462367722,
+          "duration" : 11366
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug diluted",
+        "uid" : "cfd222eaec1f9917",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462450774,
+          "stop" : 1675462460548,
+          "duration" : 9774
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse approval and nurse execute nutrition daily",
+        "uid" : "54bc2732c38c807b",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462587391,
+          "stop" : 1675462597620,
+          "duration" : 10229
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "a6603ccc9c5ab617",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462513302,
+          "stop" : 1675462521957,
+          "duration" : 8655
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug sos",
+        "uid" : "6a72d997c45be9cc",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675462301809,
+          "stop" : 1675462327019,
+          "duration" : 25210
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save blood-product",
+        "uid" : "68865ae2ff1f2e6",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675462551648,
+          "stop" : 1675462554870,
+          "duration" : 3222
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug weekly",
+        "uid" : "cfa6e3faf959f336",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462411997,
+          "stop" : 1675462422491,
+          "duration" : 10494
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug weekly",
+        "uid" : "2a86264ce0995247",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675462396319,
+          "stop" : 1675462410772,
+          "duration" : 14453
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "edit dosage to drug daily ",
+        "uid" : "34ba54c8815966bb",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462604353,
+          "stop" : 1675462619604,
+          "duration" : 15251
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save continues drug",
+        "uid" : "80ed9520ee8d6811",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675462461714,
+          "stop" : 1675462480900,
+          "duration" : 19186
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug by-hour",
+        "uid" : "9aa16c2f707d470c",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462385040,
+          "stop" : 1675462395148,
+          "duration" : 10108
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug daily",
+        "uid" : "34abd8eda64af321",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462679064,
+          "stop" : 1675462690358,
+          "duration" : 11294
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug diluted",
+        "uid" : "af6374e28f4b41d5",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675462428881,
+          "stop" : 1675462449189,
+          "duration" : 20308
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "28156c94dcf30667",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675462497464,
+          "stop" : 1675462512021,
+          "duration" : 14557
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save future drug daily ",
+        "uid" : "ce81aed26fbc09d6",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675462275282,
+          "stop" : 1675462291756,
+          "duration" : 16474
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "65e83cd91f544b44",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462534748,
+          "stop" : 1675462545432,
+          "duration" : 10684
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug sos",
+        "uid" : "543b1637476d7ba4",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462328311,
+          "stop" : 1675462339819,
+          "duration" : 11508
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test stop all active instruction to patient ",
+        "uid" : "3578f300a8e57ea5",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675462220284,
+          "stop" : 1675462234119,
+          "duration" : 13835
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only and execute",
+        "uid" : "8173621a14a0218",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675462742767,
+          "stop" : 1675462759423,
+          "duration" : 16656
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "approval blood-product",
+        "uid" : "f320ce52cd8ccee8",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462556499,
+          "stop" : 1675462567017,
+          "duration" : 10518
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only emergency ",
+        "uid" : "4f85acda8c8c6f1e",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675462728283,
+          "stop" : 1675462741677,
+          "duration" : 13394
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug by hour",
+        "uid" : "a683c998d4eb5888",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675462368948,
+          "stop" : 1675462383807,
+          "duration" : 14859
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "cbcb356c1fca4998",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462292875,
+          "stop" : 1675462300669,
+          "duration" : 7794
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug daily",
+        "uid" : "4025a7e17e145692",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462268532,
+          "stop" : 1675462274090,
+          "duration" : 5558
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug weekly",
+        "uid" : "6287807c03322c76",
+        "parentUid" : "e40be2f06c5285e2ad3ac6da97f7e996",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462482328,
+          "stop" : 1675462490749,
+          "duration" : 8421
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e40be2f06c5285e2ad3ac6da97f7e996"
+    }, {
+      "name" : "8600@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "test add and save nutrition daily",
+        "uid" : "32189b5624ae9dbf",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675203395028,
+          "stop" : 1675203412162,
+          "duration" : 17134
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug diluted",
+        "uid" : "78d94d1a80b35ba6",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203231746,
+          "stop" : 1675203264642,
+          "duration" : 32896
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "d1c09536a77d89a1",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675203340447,
+          "stop" : 1675203355003,
+          "duration" : 14556
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug weekly",
+        "uid" : "8479118ff2ac3ee1",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203215766,
+          "stop" : 1675203224862,
+          "duration" : 9096
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "check possibilities for emergency",
+        "uid" : "e91e9c3978b53640",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675203542692,
+          "stop" : 1675203558259,
+          "duration" : 15567
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "edit dosage to drug daily ",
+        "uid" : "d1a924037f820c33",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203432267,
+          "stop" : 1675203447676,
+          "duration" : 15409
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug weekly",
+        "uid" : "2eac6053a0e928c",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203298952,
+          "stop" : 1675203308712,
+          "duration" : 9760
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only emergency ",
+        "uid" : "a8448526404df495",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675203559493,
+          "stop" : 1675203581381,
+          "duration" : 21888
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "ea7a59403a009bb9",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203101384,
+          "stop" : 1675203109421,
+          "duration" : 8037
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug sos",
+        "uid" : "e5f28c72bbd2e390",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203135294,
+          "stop" : 1675203146591,
+          "duration" : 11297
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save future drug daily ",
+        "uid" : "37e57986754941f5",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675203078274,
+          "stop" : 1675203100076,
+          "duration" : 21802
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save continues drug",
+        "uid" : "cac23be308aa3b3a",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675203278772,
+          "stop" : 1675203297789,
+          "duration" : 19017
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse approval and nurse execute nutrition daily",
+        "uid" : "f016819b0b8fb41e",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203414222,
+          "stop" : 1675203425788,
+          "duration" : 11566
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug by hour",
+        "uid" : "aead60924ae90dcf",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675203174429,
+          "stop" : 1675203188463,
+          "duration" : 14034
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug sos",
+        "uid" : "3c823f1db9b7906",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675203110939,
+          "stop" : 1675203134004,
+          "duration" : 23065
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug daily",
+        "uid" : "618ffee40c70e130",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203508438,
+          "stop" : 1675203519615,
+          "duration" : 11177
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only and execute",
+        "uid" : "62749c08f51ecd89",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675203582657,
+          "stop" : 1675203600136,
+          "duration" : 17479
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "approval blood-product",
+        "uid" : "d96157b689cc678f",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203378176,
+          "stop" : 1675203388671,
+          "duration" : 10495
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "edit timePerDay in drug daily",
+        "uid" : "e41a9a0b0ab06ab6",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203449284,
+          "stop" : 1675203467184,
+          "duration" : 17900
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "check hospital stock checkbox",
+        "uid" : "70ef7092ec9b2efb",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675203526824,
+          "stop" : 1675203541367,
+          "duration" : 14543
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug weekly",
+        "uid" : "d622e1b95ad2ab6",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675203201100,
+          "stop" : 1675203214466,
+          "duration" : 13366
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test stop all active instruction to patient ",
+        "uid" : "6cf876f7f29f5432",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675203018061,
+          "stop" : 1675203039085,
+          "duration" : 21024
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save blood-product",
+        "uid" : "7c47152736517d36",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675203372846,
+          "stop" : 1675203375822,
+          "duration" : 2976
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug once only",
+        "uid" : "65bd437bfe1e9d30",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675203147888,
+          "stop" : 1675203161099,
+          "duration" : 13211
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug daily",
+        "uid" : "36e06bdd24512a20",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203473901,
+          "stop" : 1675203506366,
+          "duration" : 32465
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "da3fb14d4af1860f",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203330421,
+          "stop" : 1675203339281,
+          "duration" : 8860
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug diluted",
+        "uid" : "9e0a5f2ff49bc92d",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203266513,
+          "stop" : 1675203276976,
+          "duration" : 10463
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug once only",
+        "uid" : "ac9d6d90faca5598",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203162383,
+          "stop" : 1675203173154,
+          "duration" : 10771
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "a838083eef25b164",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675203315337,
+          "stop" : 1675203329095,
+          "duration" : 13758
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug daily",
+        "uid" : "b7bcf47dc2fd869",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203071407,
+          "stop" : 1675203077023,
+          "duration" : 5616
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug daily",
+        "uid" : "9a4f86147f8c1833",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675203047692,
+          "stop" : 1675203069691,
+          "duration" : 21999
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug by-hour",
+        "uid" : "137853e413c7ef69",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203190040,
+          "stop" : 1675203199805,
+          "duration" : 9765
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "eac46d68b597d171",
+        "parentUid" : "025fcc713830929a22f60fb8c52edb58",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203356182,
+          "stop" : 1675203366139,
+          "duration" : 9957
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "025fcc713830929a22f60fb8c52edb58"
+    }, {
+      "name" : "6896@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "eec8a297d63e2261",
+        "parentUid" : "05012bbab91a7c6487ea1a718b35534b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675675389086,
+          "stop" : 1675675440629,
+          "duration" : 51543
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "05012bbab91a7c6487ea1a718b35534b"
+    }, {
+      "name" : "6176@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "1425292fb4df1ce3",
+        "parentUid" : "83079d1879d46d123de2a4b7c87bb5f9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675667712832,
+          "stop" : 1675669901020,
+          "duration" : 2188188
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "83079d1879d46d123de2a4b7c87bb5f9"
+    }, {
+      "name" : "19540@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "edit dosage to drug daily ",
+        "uid" : "b9d8d395b5f75616",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675635395658,
+          "stop" : 1675635411158,
+          "duration" : 15500
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "8ea8fff5a1476539",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675635288719,
+          "stop" : 1675635301447,
+          "duration" : 12728
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug sos",
+        "uid" : "4a0f0aa87579fedc",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675635099783,
+          "stop" : 1675635122356,
+          "duration" : 22573
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug by-hour",
+        "uid" : "31c84429790df236",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635172830,
+          "stop" : 1675635181357,
+          "duration" : 8527
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug weekly",
+        "uid" : "f68196c18c660b80",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635273581,
+          "stop" : 1675635281974,
+          "duration" : 8393
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug by hour",
+        "uid" : "31d18849b3eec589",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675635158288,
+          "stop" : 1675635171647,
+          "duration" : 13359
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save nutrition daily",
+        "uid" : "ec29c23db8a6a9fb",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675635360025,
+          "stop" : 1675635377181,
+          "duration" : 17156
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug diluted",
+        "uid" : "92034f5effcd1012",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675635222998,
+          "stop" : 1675635241356,
+          "duration" : 18358
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save continues drug",
+        "uid" : "874d430c22fd79d3",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675635253469,
+          "stop" : 1675635272423,
+          "duration" : 18954
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "check possibilities for emergency",
+        "uid" : "992a897105c7f8e0",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675635511176,
+          "stop" : 1675635524385,
+          "duration" : 13209
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug weekly",
+        "uid" : "40e1c1f68acfb048",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635198517,
+          "stop" : 1675635206677,
+          "duration" : 8160
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "7865661a1deae0d5",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635090952,
+          "stop" : 1675635098575,
+          "duration" : 7623
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse approval and nurse execute nutrition daily",
+        "uid" : "806cf76970501f9f",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635379060,
+          "stop" : 1675635389056,
+          "duration" : 9996
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "72542c3fb5f49ad7",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635302664,
+          "stop" : 1675635309868,
+          "duration" : 7204
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "cfd74802f8121d02",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675635311068,
+          "stop" : 1675635320709,
+          "duration" : 9641
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug sos",
+        "uid" : "873519daf3a43d69",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635123566,
+          "stop" : 1675635132655,
+          "duration" : 9089
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save blood-product",
+        "uid" : "a1161879d33df738",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675635338631,
+          "stop" : 1675635341921,
+          "duration" : 3290
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only and execute",
+        "uid" : "471c7dae7ff2b605",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675635542291,
+          "stop" : 1675635558303,
+          "duration" : 16012
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test stop all active instruction to patient ",
+        "uid" : "19807b83b90d44ce",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675635024843,
+          "stop" : 1675635036354,
+          "duration" : 11511
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "check hospital stock checkbox",
+        "uid" : "c99a767e525643e0",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675635495556,
+          "stop" : 1675635509934,
+          "duration" : 14378
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug once only",
+        "uid" : "ec9589e2b378349d",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635148143,
+          "stop" : 1675635157054,
+          "duration" : 8911
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug daily",
+        "uid" : "3ed7bfda0d8dfeff",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635479920,
+          "stop" : 1675635489146,
+          "duration" : 9226
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug daily",
+        "uid" : "8bb38aeb541ea352",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635445076,
+          "stop" : 1675635478317,
+          "duration" : 33241
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only emergency ",
+        "uid" : "764ece1850c8e55a",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675635525631,
+          "stop" : 1675635541162,
+          "duration" : 15531
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug weekly",
+        "uid" : "924994335c6ec318",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675635182544,
+          "stop" : 1675635196580,
+          "duration" : 14036
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "edit timePerDay in drug daily",
+        "uid" : "52e26470ff98e0a3",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635412581,
+          "stop" : 1675635438537,
+          "duration" : 25956
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "a352c58c3a858cb",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635322175,
+          "stop" : 1675635331931,
+          "duration" : 9756
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug once only",
+        "uid" : "a3be778a5c1a1947",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675635133850,
+          "stop" : 1675635146900,
+          "duration" : 13050
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "approval blood-product",
+        "uid" : "4f1cd91022c13410",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635343562,
+          "stop" : 1675635353541,
+          "duration" : 9979
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug diluted",
+        "uid" : "3f75ecb54d6641b5",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635242844,
+          "stop" : 1675635252325,
+          "duration" : 9481
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug daily",
+        "uid" : "91b478cee694de6d",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635067011,
+          "stop" : 1675635072467,
+          "duration" : 5456
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save future drug daily ",
+        "uid" : "bda97a39898181f1",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675635073682,
+          "stop" : 1675635089662,
+          "duration" : 15980
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug daily",
+        "uid" : "dc33e133d2e0a498",
+        "parentUid" : "254b5fbe0cea829ecf0b581064071320",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675635044027,
+          "stop" : 1675635065376,
+          "duration" : 21349
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "254b5fbe0cea829ecf0b581064071320"
+    }, {
+      "name" : "19020@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "52f538bf95061ec7",
+        "parentUid" : "d8958ae6b9a2df726251a9ef6f1e3102",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675717274659,
+          "stop" : 1675717290429,
+          "duration" : 15770
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d8958ae6b9a2df726251a9ef6f1e3102"
+    }, {
+      "name" : "14916@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "c37375f954b6d012",
+        "parentUid" : "4f0e34f4494c743ec851b597bbddb33a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675676434653,
+          "stop" : 1675676444672,
+          "duration" : 10019
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4f0e34f4494c743ec851b597bbddb33a"
+    }, {
+      "name" : "11324@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "22e6d0a3f22d063d",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289739020,
+          "stop" : 1675289748456,
+          "duration" : 9436
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save nutrition daily",
+        "uid" : "b5eea682165531ba",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675289776906,
+          "stop" : 1675289794692,
+          "duration" : 17786
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug by-hour",
+        "uid" : "2bf92f20c85536f9",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289580730,
+          "stop" : 1675289590550,
+          "duration" : 9820
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug daily",
+        "uid" : "1297bdada3917d20",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675289446259,
+          "stop" : 1675289470320,
+          "duration" : 24061
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "6dbf5d03efbbc2f3",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289495609,
+          "stop" : 1675289503297,
+          "duration" : 7688
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "check hospital stock checkbox",
+        "uid" : "2412c79e08bac031",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675289906085,
+          "stop" : 1675289920411,
+          "duration" : 14326
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug weekly",
+        "uid" : "ca07b01859672ba1",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289606706,
+          "stop" : 1675289615452,
+          "duration" : 8746
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug diluted",
+        "uid" : "194f662307402687",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289643204,
+          "stop" : 1675289652412,
+          "duration" : 9208
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug sos",
+        "uid" : "5807cf4db09e4ba3",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675289504612,
+          "stop" : 1675289526885,
+          "duration" : 22273
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug daily",
+        "uid" : "c9d51f029079be32",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289890936,
+          "stop" : 1675289899658,
+          "duration" : 8722
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug weekly",
+        "uid" : "5aa6e5bbf20fbb84",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289674639,
+          "stop" : 1675289684869,
+          "duration" : 10230
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "de8fd6ffef1bfed2",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289716242,
+          "stop" : 1675289737711,
+          "duration" : 21469
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "approval blood-product",
+        "uid" : "f38ffda8a76faa11",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289760829,
+          "stop" : 1675289770396,
+          "duration" : 9567
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse approval and nurse execute nutrition daily",
+        "uid" : "e3b5f98fa363dd4f",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289796730,
+          "stop" : 1675289806858,
+          "duration" : 10128
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only emergency ",
+        "uid" : "9384d735da321fa3",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675289937782,
+          "stop" : 1675289953550,
+          "duration" : 15768
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "edit timePerDay in drug daily",
+        "uid" : "f7ccf75f7a3a2a3b",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289830690,
+          "stop" : 1675289847975,
+          "duration" : 17285
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug daily",
+        "uid" : "f0f0bd81472e6091",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289471932,
+          "stop" : 1675289476273,
+          "duration" : 4341
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug by hour",
+        "uid" : "e2aef7e1ebe51e3e",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675289566336,
+          "stop" : 1675289579186,
+          "duration" : 12850
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug sos",
+        "uid" : "999ef876a5ab7e70",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289528288,
+          "stop" : 1675289538671,
+          "duration" : 10383
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug weekly",
+        "uid" : "45cb723fcecc16c",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675289591801,
+          "stop" : 1675289605414,
+          "duration" : 13613
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "edit dosage to drug daily ",
+        "uid" : "c5f04bd11cdd8d15",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289813490,
+          "stop" : 1675289829313,
+          "duration" : 15823
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save future drug daily ",
+        "uid" : "6243868adb0950f2",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675289477462,
+          "stop" : 1675289494123,
+          "duration" : 16661
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save continues drug",
+        "uid" : "da096487adf920a3",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675289653625,
+          "stop" : 1675289673141,
+          "duration" : 19516
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "check possibilities for emergency",
+        "uid" : "59fe329798c6f28a",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675289921756,
+          "stop" : 1675289936534,
+          "duration" : 14778
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug once only",
+        "uid" : "c4797974d8ad06eb",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289556235,
+          "stop" : 1675289565077,
+          "duration" : 8842
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug diluted",
+        "uid" : "511597f730922743",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675289622049,
+          "stop" : 1675289641545,
+          "duration" : 19496
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "2de210fcd7d07480",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675289691240,
+          "stop" : 1675289704963,
+          "duration" : 13723
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save blood-product",
+        "uid" : "b9df33df7aeefe65",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675289755224,
+          "stop" : 1675289758353,
+          "duration" : 3129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug once only",
+        "uid" : "47eb771109653993",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675289539972,
+          "stop" : 1675289554729,
+          "duration" : 14757
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug daily",
+        "uid" : "cf8be3efb1d1b803",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289854465,
+          "stop" : 1675289889308,
+          "duration" : 34843
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test stop all active instruction to patient ",
+        "uid" : "b4152de55f806d52",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675289419918,
+          "stop" : 1675289439264,
+          "duration" : 19346
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only and execute",
+        "uid" : "a0880c191dc5bea8",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675289954701,
+          "stop" : 1675289970304,
+          "duration" : 15603
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "fbaabd4c0cbe94b7",
+        "parentUid" : "9e6c8a8c0ac737759cc082792d0a30f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289706314,
+          "stop" : 1675289715029,
+          "duration" : 8715
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9e6c8a8c0ac737759cc082792d0a30f6"
+    }, {
+      "name" : "23060@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add all instruction emergency to patient",
+        "uid" : "28e9aefc39ed3ea9",
+        "parentUid" : "73b7dfa31a93b212dca940768eab58c1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675477218077,
+          "stop" : 1675477220832,
+          "duration" : 2755
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "73b7dfa31a93b212dca940768eab58c1"
+    }, {
+      "name" : "13116@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "ad2c7aca1a1572a2",
+        "parentUid" : "143f6302a935472605e78855d6c91e01",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675676257434,
+          "stop" : 1675676279780,
+          "duration" : 22346
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "143f6302a935472605e78855d6c91e01"
+    }, {
+      "name" : "17784@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "edit timePerDay in drug daily",
+        "uid" : "28c28332c63ba28b",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721831962,
+          "stop" : 1675721849512,
+          "duration" : 17550
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug weekly",
+        "uid" : "e7f39adb1b0d9563",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675721585132,
+          "stop" : 1675721599229,
+          "duration" : 14097
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "edit dosage to drug daily ",
+        "uid" : "23741f6b6601e990",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721822490,
+          "stop" : 1675721830460,
+          "duration" : 7970
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse approval and nurse execute nutrition daily",
+        "uid" : "50b167afa9709726",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721804586,
+          "stop" : 1675721813077,
+          "duration" : 8491
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save future drug daily ",
+        "uid" : "5190b2783c5b4718",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721467093,
+          "stop" : 1675721486513,
+          "duration" : 19420
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug sos",
+        "uid" : "367311e958dd8537",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675721497841,
+          "stop" : 1675721518473,
+          "duration" : 20632
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "96b3194d8a3e694a",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675721729354,
+          "stop" : 1675721740450,
+          "duration" : 11096
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save nutrition daily",
+        "uid" : "26480bbd378d9ec0",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675721784820,
+          "stop" : 1675721803189,
+          "duration" : 18369
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "f3f4dc4cd157eb06",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721718624,
+          "stop" : 1675721727740,
+          "duration" : 9116
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug daily",
+        "uid" : "c9dfe684599cc36a",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721431252,
+          "stop" : 1675721453930,
+          "duration" : 22678
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug diluted",
+        "uid" : "9d0ee87cd32e2ffe",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675721620370,
+          "stop" : 1675721642253,
+          "duration" : 21883
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only and execute",
+        "uid" : "bdb4d157bf0f62cc",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675721962730,
+          "stop" : 1675721981334,
+          "duration" : 18604
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug by-hour",
+        "uid" : "4c23954b46dbf187",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721575828,
+          "stop" : 1675721583905,
+          "duration" : 8077
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug daily",
+        "uid" : "83f40383e15b18dd",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721856608,
+          "stop" : 1675721891105,
+          "duration" : 34497
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "396d1f1dfbf7aba5",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721487846,
+          "stop" : 1675721496320,
+          "duration" : 8474
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug daily",
+        "uid" : "48b88181cc03e65f",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721893472,
+          "stop" : 1675721901825,
+          "duration" : 8353
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only emergency ",
+        "uid" : "d4cb9ece5684029b",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675721943845,
+          "stop" : 1675721961541,
+          "duration" : 17696
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "check hospital stock checkbox",
+        "uid" : "d27e13ba90d551f3",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675721909914,
+          "stop" : 1675721926123,
+          "duration" : 16209
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug weekly",
+        "uid" : "54dcd8ea611db352",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721680250,
+          "stop" : 1675721693446,
+          "duration" : 13196
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "approval blood-product",
+        "uid" : "30f313f988ed63e9",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721762613,
+          "stop" : 1675721777335,
+          "duration" : 14722
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug by hour",
+        "uid" : "376a5520f83a7cb6",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675721560205,
+          "stop" : 1675721574612,
+          "duration" : 14407
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "nurse approval and nurse execute generalIns daily",
+        "uid" : "249283b62e88a30",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721741779,
+          "stop" : 1675721750048,
+          "duration" : 8269
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug sos",
+        "uid" : "c9d044ad3dc66a4b",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721519709,
+          "stop" : 1675721533073,
+          "duration" : 13364
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug weekly",
+        "uid" : "a6ac93ee89e97f2a",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721600432,
+          "stop" : 1675721613927,
+          "duration" : 13495
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save blood-product",
+        "uid" : "82337972cf5aea3b",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675721756835,
+          "stop" : 1675721760328,
+          "duration" : 3493
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug daily",
+        "uid" : "cd38b880c1079388",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721455654,
+          "stop" : 1675721465816,
+          "duration" : 10162
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval drug diluted",
+        "uid" : "501560bb4ec5359",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721643899,
+          "stop" : 1675721657207,
+          "duration" : 13308
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug once only",
+        "uid" : "79fdca6418602e91",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675721550825,
+          "stop" : 1675721558953,
+          "duration" : 8128
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add and save generalIns daily",
+        "uid" : "66a2243cd0decb7",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675721699955,
+          "stop" : 1675721716657,
+          "duration" : 16702
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save continues drug",
+        "uid" : "71e03f19f197a550",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675721658478,
+          "stop" : 1675721679016,
+          "duration" : 20538
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "check possibilities for emergency",
+        "uid" : "64b0b5e447d476c0",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675721927927,
+          "stop" : 1675721942543,
+          "duration" : 14616
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test stop all active instruction to patient ",
+        "uid" : "f219dc134bb2893d",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675721414475,
+          "stop" : 1675721424395,
+          "duration" : 9920
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test add and save drug once only",
+        "uid" : "d991ca2f70674c6b",
+        "parentUid" : "de4a235fa6c0274067146ebc58103600",
+        "status" : "failed",
+        "time" : {
+          "start" : 1675721534366,
+          "stop" : 1675721549597,
+          "duration" : 15231
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "de4a235fa6c0274067146ebc58103600"
+    }, {
+      "name" : "22376@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add all instruction emergency to patient",
+        "uid" : "81fbf524f404359d",
+        "parentUid" : "9d4ca0cd42c176d61aa3d6c4eafded62",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675650020985,
+          "stop" : 1675650024080,
+          "duration" : 3095
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9d4ca0cd42c176d61aa3d6c4eafded62"
+    }, {
+      "name" : "3436@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "e4f510805ff35b7b",
+        "parentUid" : "cc32e9259a82b66dafa852c4ed55a153",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675675033556,
+          "stop" : 1675675063743,
+          "duration" : 30187
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cc32e9259a82b66dafa852c4ed55a153"
+    }, {
+      "name" : "15144@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "515c81630f9a18d0",
+        "parentUid" : "5c25bb7366f6fbc6a9f921213a1cbad5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675259637385,
+          "stop" : 1675259698740,
+          "duration" : 61355
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5c25bb7366f6fbc6a9f921213a1cbad5"
+    }, {
+      "name" : "3240@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "920cb6f39e3f8b2b",
+        "parentUid" : "964f1c10ccbad145201d30e7f7d63a36",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675259205261,
+          "stop" : 1675259218797,
+          "duration" : 13536
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "964f1c10ccbad145201d30e7f7d63a36"
+    }, {
+      "name" : "9288@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "f9f386bcf1a555e5",
+        "parentUid" : "38d6ae8a9dbef8ce4b187c288e3e0423",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675666208095,
+          "stop" : 1675666391459,
+          "duration" : 183364
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "38d6ae8a9dbef8ce4b187c288e3e0423"
+    }, {
+      "name" : "12048@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "4af2796e45fdadac",
+        "parentUid" : "b82eb6efee221b58e1c1e3ef08994614",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675169063017,
+          "stop" : 1675169178451,
+          "duration" : 115434
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b82eb6efee221b58e1c1e3ef08994614"
+    }, {
+      "name" : "14880@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "c4c79f3fd65aa569",
+        "parentUid" : "efd95cb944326ad98536bc3495468347",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675251979779,
+          "stop" : 1675252001127,
+          "duration" : 21348
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "efd95cb944326ad98536bc3495468347"
+    }, {
+      "name" : "3068@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "6f0f509cd245e1cb",
+        "parentUid" : "91b22b7f61c021d859446413bfd7a2c7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675667407612,
+          "stop" : 1675667470348,
+          "duration" : 62736
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "91b22b7f61c021d859446413bfd7a2c7"
+    }, {
+      "name" : "11004@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "4202e03be9108112",
+        "parentUid" : "8fce54009b3d6934be64059fcbdf5b17",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675548624338,
+          "stop" : 1675548633783,
+          "duration" : 9445
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8fce54009b3d6934be64059fcbdf5b17"
+    }, {
+      "name" : "22076@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "60bed4ff8cfca495",
+        "parentUid" : "8a8a7113128f4001de9b17346b7267cd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675589945978,
+          "stop" : 1675589952760,
+          "duration" : 6782
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8a8a7113128f4001de9b17346b7267cd"
+    }, {
+      "name" : "17064@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "27286f242cb4795c",
+        "parentUid" : "00f0efcc44ff605fcb2866449802acfd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675259281225,
+          "stop" : 1675259390550,
+          "duration" : 109325
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "00f0efcc44ff605fcb2866449802acfd"
+    }, {
+      "name" : "7552@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "7d04918b4d2167ef",
+        "parentUid" : "1644b2dc641387ef4979969774417251",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675666966768,
+          "stop" : 1675667154287,
+          "duration" : 187519
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "afterMethod",
+        "uid" : "bb7f47d754c9de0b",
+        "parentUid" : "1644b2dc641387ef4979969774417251",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675667161892,
+          "stop" : 1675667161892,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1644b2dc641387ef4979969774417251"
+    }, {
+      "name" : "19160@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "304a7d0bbabc8f3b",
+        "parentUid" : "9f9f13299abb99c8a6031565610238f1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675591336167,
+          "stop" : 1675591501171,
+          "duration" : 165004
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9f9f13299abb99c8a6031565610238f1"
+    }, {
+      "name" : "12716@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add generalIns list to patient",
+        "uid" : "1894a469f3d1e028",
+        "parentUid" : "cac4c6ec8f7fc2bc21e41ed58a7427ed",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675567818323,
+          "stop" : 1675567849312,
+          "duration" : 30989
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cac4c6ec8f7fc2bc21e41ed58a7427ed"
+    }, {
+      "name" : "23876@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "bbe61d0a1ec40b02",
+        "parentUid" : "bacdc34af352f16b20b8044671db395d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675593266613,
+          "stop" : 1675593302001,
+          "duration" : 35388
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bacdc34af352f16b20b8044671db395d"
+    }, {
+      "name" : "6632@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add all instruction emergency to patient",
+        "uid" : "16625a4e00486cb0",
+        "parentUid" : "90d73504bb18e22ed8c2e288ae3cb7bf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675218015582,
+          "stop" : 1675218087600,
+          "duration" : 72018
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "90d73504bb18e22ed8c2e288ae3cb7bf"
+    }, {
+      "name" : "7232@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "24248c32fd51d727",
+        "parentUid" : "4215d9146ed68525b4caebb7f0dc28eb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675259518753,
+          "stop" : 1675259531739,
+          "duration" : 12986
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4215d9146ed68525b4caebb7f0dc28eb"
+    }, {
+      "name" : "15588@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add generalIns list to patient",
+        "uid" : "636ccde928a5b37f",
+        "parentUid" : "141f237820e4b1c87aa511765f665538",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675740614717,
+          "stop" : 1675740643333,
+          "duration" : 28616
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "141f237820e4b1c87aa511765f665538"
+    }, {
+      "name" : "21248@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "7e04d75d3435b8a2",
+        "parentUid" : "373be3baecf95dd462d4cd8d90eb0790",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675774632248,
+          "stop" : 1675774824774,
+          "duration" : 192526
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "373be3baecf95dd462d4cd8d90eb0790"
+    }, {
+      "name" : "7640@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add generalIns list to patient",
+        "uid" : "d082566c62eada5a",
+        "parentUid" : "3210c15eb9dba75e46e7206131a6a5ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675308614570,
+          "stop" : 1675308631131,
+          "duration" : 16561
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3210c15eb9dba75e46e7206131a6a5ec"
+    }, {
+      "name" : "18396@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "fdbb26da71e90501",
+        "parentUid" : "e414db18aa9c5284534b1a57fa6d1a65",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675375823971,
+          "stop" : 1675375832974,
+          "duration" : 9003
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e414db18aa9c5284534b1a57fa6d1a65"
+    }, {
+      "name" : "16144@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "300cfa49854093d7",
+        "parentUid" : "c0d9e3f7b7790a5e35d0d51a7f8f2dc8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675259134162,
+          "stop" : 1675259148254,
+          "duration" : 14092
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c0d9e3f7b7790a5e35d0d51a7f8f2dc8"
+    }, {
+      "name" : "19060@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "2a5b8b28f59d0c23",
+        "parentUid" : "03fd6a9e06412c040fca96713288bc9d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675593318412,
+          "stop" : 1675593459134,
+          "duration" : 140722
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "03fd6a9e06412c040fca96713288bc9d"
+    }, {
+      "name" : "11580@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "7fa2d3122d10dfbc",
+        "parentUid" : "68f9654d6a01fbd36d4327c0a2922c15",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675259569362,
+          "stop" : 1675259584137,
+          "duration" : 14775
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "68f9654d6a01fbd36d4327c0a2922c15"
+    }, {
+      "name" : "20932@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "12ea9c09d5e10888",
+        "parentUid" : "fb5a3c93555c00d6120c7458cfc1a735",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675594011215,
+          "stop" : 1675594119542,
+          "duration" : 108327
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fb5a3c93555c00d6120c7458cfc1a735"
+    }, {
+      "name" : "17984@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "6099cc9bfbdaeff1",
+        "parentUid" : "3edd377c9e072e7efc7b3be0beeed7c0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675371677973,
+          "stop" : 1675371687057,
+          "duration" : 9084
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3edd377c9e072e7efc7b3be0beeed7c0"
+    }, {
+      "name" : "9056@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "fc29da462fabce15",
+        "parentUid" : "b9c4157fd33b15393fd559ae50fa70b8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675672957754,
+          "stop" : 1675673183196,
+          "duration" : 225442
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b9c4157fd33b15393fd559ae50fa70b8"
+    }, {
+      "name" : "17200@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "f3f77e53592172b0",
+        "parentUid" : "f6c38bd14e01eb51567c946ac979ab6b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675259752759,
+          "stop" : 1675259768368,
+          "duration" : 15609
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f6c38bd14e01eb51567c946ac979ab6b"
+    }, {
+      "name" : "18128@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "9ac791bbcf275b16",
+        "parentUid" : "a30b0edf02e5ea22e088809593994fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675594798033,
+          "stop" : 1675594924773,
+          "duration" : 126740
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "45c704af5d18d4c7",
+        "parentUid" : "a30b0edf02e5ea22e088809593994fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675591646716,
+          "stop" : 1675591806796,
+          "duration" : 160080
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a30b0edf02e5ea22e088809593994fe9"
+    }, {
+      "name" : "16432@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "1638905ceecbc52d",
+        "parentUid" : "f327fd1e3430d3345b1a5be7bf80c850",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675670858785,
+          "stop" : 1675670897344,
+          "duration" : 38559
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f327fd1e3430d3345b1a5be7bf80c850"
+    }, {
+      "name" : "20552@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add generalIns list to patient",
+        "uid" : "6796873ee10872ca",
+        "parentUid" : "34f133e662012c15bc001167ab679ac5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675481416956,
+          "stop" : 1675481454571,
+          "duration" : 37615
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "34f133e662012c15bc001167ab679ac5"
+    }, {
+      "name" : "15720@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "7036b24aed0c7014",
+        "parentUid" : "2b23428c2796e65bc801470975638b0a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675674081247,
+          "stop" : 1675674088328,
+          "duration" : 7081
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2b23428c2796e65bc801470975638b0a"
+    }, {
+      "name" : "17220@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "9368f912f088cf64",
+        "parentUid" : "b2b3c90e5ac03dc34dd0ce1fdd730285",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675593043671,
+          "stop" : 1675593149751,
+          "duration" : 106080
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b2b3c90e5ac03dc34dd0ce1fdd730285"
+    }, {
+      "name" : "25796@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "6528a675c8badbea",
+        "parentUid" : "c96b035be49614003a2e1efc3fee1658",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675595068245,
+          "stop" : 1675595079930,
+          "duration" : 11685
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c96b035be49614003a2e1efc3fee1658"
+    }, {
+      "name" : "17336@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "b25b0dc7220a2939",
+        "parentUid" : "267edc9b632cce0b050f0d1fdf7bc586",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675458079222,
+          "stop" : 1675458087870,
+          "duration" : 8648
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "267edc9b632cce0b050f0d1fdf7bc586"
+    }, {
+      "name" : "18044@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add all instruction emergency to patient",
+        "uid" : "bb1bd5be501311bd",
+        "parentUid" : "2443fed76ce9251b5ca94639cafc5365",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675304416334,
+          "stop" : 1675304423047,
+          "duration" : 6713
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2443fed76ce9251b5ca94639cafc5365"
+    }, {
+      "name" : "17720@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "cac7a1c3c2f1d406",
+        "parentUid" : "c7ef01277ebd084fb247f031cbd0eb64",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675675219017,
+          "stop" : 1675675287087,
+          "duration" : 68070
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c7ef01277ebd084fb247f031cbd0eb64"
+    }, {
+      "name" : "24048@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "b4721e9cec85d885",
+        "parentUid" : "0fd3a4fbaae0bd9ec00d6cb96bec5614",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675630880189,
+          "stop" : 1675630889574,
+          "duration" : 9385
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0fd3a4fbaae0bd9ec00d6cb96bec5614"
+    }, {
+      "name" : "4688@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "8c15a3b210aef7a7",
+        "parentUid" : "73b524acf2642d5d4c3416c255fc8233",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675164652523,
+          "stop" : 1675164672059,
+          "duration" : 19536
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "73b524acf2642d5d4c3416c255fc8233"
+    }, {
+      "name" : "19084@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "d7013e8262947d34",
+        "parentUid" : "503be475a7983ca940e5d20bf4038b99",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675674148184,
+          "stop" : 1675674167200,
+          "duration" : 19016
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "503be475a7983ca940e5d20bf4038b99"
+    }, {
+      "name" : "14960@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "7a98f065e7d4b4c1",
+        "parentUid" : "0a0e56d5d2f2414ea98806e3cd9eaeb1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675674946527,
+          "stop" : 1675674955407,
+          "duration" : 8880
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0a0e56d5d2f2414ea98806e3cd9eaeb1"
+    }, {
+      "name" : "17700@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "f51bee79f0a4de2e",
+        "parentUid" : "fdf650af689faf458e0f00e29246794c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675462222750,
+          "stop" : 1675462230935,
+          "duration" : 8185
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fdf650af689faf458e0f00e29246794c"
+    }, {
+      "name" : "21012@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add generalIns list to patient",
+        "uid" : "cacffb9a6fcc598e",
+        "parentUid" : "366e9040e47ea9430631002ba4f8e4cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675395016128,
+          "stop" : 1675395049995,
+          "duration" : 33867
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "366e9040e47ea9430631002ba4f8e4cd"
+    }, {
+      "name" : "17856@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "f62bfb5244ee71c3",
+        "parentUid" : "69771406a61d05a9465d45bb9ae85e3a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675676516737,
+          "stop" : 1675676542998,
+          "duration" : 26261
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "69771406a61d05a9465d45bb9ae85e3a"
+    }, {
+      "name" : "268@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "4a61558add24b1ad",
+        "parentUid" : "505dfe34e6935a104ec814eb7d8a3c4e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675669940931,
+          "stop" : 1675670042303,
+          "duration" : 101372
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "505dfe34e6935a104ec814eb7d8a3c4e"
+    }, {
+      "name" : "23072@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "4a6ab77f998acc0c",
+        "parentUid" : "3090bc9debbd1f737574c4a2cf5cc1be",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675593508362,
+          "stop" : 1675593573336,
+          "duration" : 64974
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3090bc9debbd1f737574c4a2cf5cc1be"
+    }, {
+      "name" : "16868@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "d8f75c9dc2a38097",
+        "parentUid" : "73027de17de5fd2d7b28a76f10bb654c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675676204048,
+          "stop" : 1675676214404,
+          "duration" : 10356
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "73027de17de5fd2d7b28a76f10bb654c"
+    }, {
+      "name" : "8344@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "927acad036eb32f0",
+        "parentUid" : "de2860d2aee2aa067fe0917d80786070",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675676305604,
+          "stop" : 1675676376521,
+          "duration" : 70917
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "de2860d2aee2aa067fe0917d80786070"
+    }, {
+      "name" : "25692@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "54b989fa006e095a",
+        "parentUid" : "8ad366deff9803d25218058270736945",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675595123853,
+          "stop" : 1675595134510,
+          "duration" : 10657
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8ad366deff9803d25218058270736945"
+    }, {
+      "name" : "24608@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "d9a3738168bf299",
+        "parentUid" : "ab026a1f5b4466f6589b53092ecec394",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675589967799,
+          "stop" : 1675590001711,
+          "duration" : 33912
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ab026a1f5b4466f6589b53092ecec394"
+    }, {
+      "name" : "20556@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add generalIns list to patient",
+        "uid" : "94ba0c7a4c3f512e",
+        "parentUid" : "d5d023ecfdae3097147d81105a3f3df3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675654219799,
+          "stop" : 1675654256279,
+          "duration" : 36480
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d5d023ecfdae3097147d81105a3f3df3"
+    }, {
+      "name" : "15812@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "c851e3ef760fd5db",
+        "parentUid" : "cd8aef083beee92015eee1869fe84330",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675674184234,
+          "stop" : 1675674202638,
+          "duration" : 18404
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cd8aef083beee92015eee1869fe84330"
+    }, {
+      "name" : "25624@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "3b86e5b2d84136a",
+        "parentUid" : "4a1c8ca6118309b92def01541fc69a67",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675593665363,
+          "stop" : 1675593676256,
+          "duration" : 10893
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4a1c8ca6118309b92def01541fc69a67"
+    }, {
+      "name" : "7376@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "9b5c152ef0460cc",
+        "parentUid" : "21a49da9800a77ac6a915d65c1a5ec16",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675678378372,
+          "stop" : 1675678548967,
+          "duration" : 170595
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "21a49da9800a77ac6a915d65c1a5ec16"
+    }, {
+      "name" : "9340@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "a9104fffa1e70bd5",
+        "parentUid" : "4a054b996dcac37332563c6baf49eb34",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675675839889,
+          "stop" : 1675675847689,
+          "duration" : 7800
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4a054b996dcac37332563c6baf49eb34"
+    }, {
+      "name" : "15592@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "3853e86f1f39692d",
+        "parentUid" : "811f46c11e07f4604bac6d7e49bbceb5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675260992391,
+          "stop" : 1675261000815,
+          "duration" : 8424
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "811f46c11e07f4604bac6d7e49bbceb5"
+    }, {
+      "name" : "1888@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "8e6707ae8bc0f6ec",
+        "parentUid" : "faf3fc5ef6eee652bf45af1606154816",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675803676318,
+          "stop" : 1675803691565,
+          "duration" : 15247
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "faf3fc5ef6eee652bf45af1606154816"
+    }, {
+      "name" : "17564@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "afterMethod",
+        "uid" : "27a91b8160377b28",
+        "parentUid" : "5a5db6ed744955169bcb5b345552cddd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675676152491,
+          "stop" : 1675676152491,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "d5c78ef09a7581c3",
+        "parentUid" : "5a5db6ed744955169bcb5b345552cddd",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675676146440,
+          "stop" : 1675676151545,
+          "duration" : 5105
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5a5db6ed744955169bcb5b345552cddd"
+    }, {
+      "name" : "16128@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "bc5ef38f8bbb7349",
+        "parentUid" : "f897029325787d9406a0e24ca8baf44f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675678303396,
+          "stop" : 1675678329511,
+          "duration" : 26115
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f897029325787d9406a0e24ca8baf44f"
+    }, {
+      "name" : "14780@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "cc3c1d72f2ea84d7",
+        "parentUid" : "38fe06169fa14074538a3878deb33d71",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675289420749,
+          "stop" : 1675289432231,
+          "duration" : 11482
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "38fe06169fa14074538a3878deb33d71"
+    }, {
+      "name" : "26584@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "1cbb8a8f0b8bf484",
+        "parentUid" : "dfc79a3ae99ef940856d125727391773",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675590746137,
+          "stop" : 1675590824171,
+          "duration" : 78034
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dfc79a3ae99ef940856d125727391773"
+    }, {
+      "name" : "3728@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "bad7e1865393aa65",
+        "parentUid" : "2c8e8e6ed79867ab33b767ba48ec56a8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675673825871,
+          "stop" : 1675673994822,
+          "duration" : 168951
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2c8e8e6ed79867ab33b767ba48ec56a8"
+    }, {
+      "name" : "21232@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "ecd7821d3e74d50e",
+        "parentUid" : "a799299d63bdf2cdf51eb71b7218bb9e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675596990777,
+          "stop" : 1675597158691,
+          "duration" : 167914
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a799299d63bdf2cdf51eb71b7218bb9e"
+    }, {
+      "name" : "14984@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add all instruction emergency to patient",
+        "uid" : "c223ed6dcbf202e6",
+        "parentUid" : "fbf90f41a4827d9bac31d502b463824c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675390816634,
+          "stop" : 1675390884093,
+          "duration" : 67459
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fbf90f41a4827d9bac31d502b463824c"
+    }, {
+      "name" : "10404@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "a01feb2b5edd460b",
+        "parentUid" : "5613cfc0606022e5ffee2bf681aec17a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675252462834,
+          "stop" : 1675252485251,
+          "duration" : 22417
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5613cfc0606022e5ffee2bf681aec17a"
+    }, {
+      "name" : "144@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "a606f756c261ed61",
+        "parentUid" : "baeddefbf59d30c133153525e689d43c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675670198252,
+          "stop" : 1675670271182,
+          "duration" : 72930
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "baeddefbf59d30c133153525e689d43c"
+    }, {
+      "name" : "10000@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "94056e7ab55bcae9",
+        "parentUid" : "6b80e871d76e32fa9f31e0d097a80305",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675591829741,
+          "stop" : 1675591836413,
+          "duration" : 6672
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6b80e871d76e32fa9f31e0d097a80305"
+    }, {
+      "name" : "16720@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "b72db0526714735f",
+        "parentUid" : "72634744c5bfd62edc25d264ceb55db5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675675864619,
+          "stop" : 1675675890541,
+          "duration" : 25922
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "72634744c5bfd62edc25d264ceb55db5"
+    }, {
+      "name" : "21636@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add all instruction emergency to patient",
+        "uid" : "c791a1a85fc7e241",
+        "parentUid" : "7124406dd0bb7fde26ee81a59d3a5d2c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675563619335,
+          "stop" : 1675563687186,
+          "duration" : 67851
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7124406dd0bb7fde26ee81a59d3a5d2c"
+    }, {
+      "name" : "26272@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "2d6a38d2c212b4c7",
+        "parentUid" : "d4b22b05a820d9790589b391770e3262",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675635026783,
+          "stop" : 1675635100846,
+          "duration" : 74063
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d4b22b05a820d9790589b391770e3262"
+    }, {
+      "name" : "1368@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "b2d3db14302d8e97",
+        "parentUid" : "b610eead520a77b81261398c84a8fd1e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675598174995,
+          "stop" : 1675598205807,
+          "duration" : 30812
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b610eead520a77b81261398c84a8fd1e"
+    }, {
+      "name" : "7936@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add generalIns list to patient",
+        "uid" : "63af34a517130d8d",
+        "parentUid" : "1944e302e6f744865f177946862b78a3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675222216738,
+          "stop" : 1675222252718,
+          "duration" : 35980
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1944e302e6f744865f177946862b78a3"
+    }, {
+      "name" : "27224@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "59605159942de09e",
+        "parentUid" : "b5d7ed25b73bcf8643669f68c28b26ed",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675593198182,
+          "stop" : 1675593233584,
+          "duration" : 35402
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b5d7ed25b73bcf8643669f68c28b26ed"
+    }, {
+      "name" : "10788@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "9eb250e5dab671d2",
+        "parentUid" : "5ca314901890a2667dbed4c3a4e45b64",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675670779636,
+          "stop" : 1675670817684,
+          "duration" : 38048
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5ca314901890a2667dbed4c3a4e45b64"
+    }, {
+      "name" : "22052@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "ecb59914a76385de",
+        "parentUid" : "c6bbb604ae1b5dc2f1ade321b20525cb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675598134842,
+          "stop" : 1675598143811,
+          "duration" : 8969
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c6bbb604ae1b5dc2f1ade321b20525cb"
+    }, {
+      "name" : "22408@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "4f2963f6aa5fd081",
+        "parentUid" : "644404ebfbe957cc51e036982ffb81e2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675544479937,
+          "stop" : 1675544492018,
+          "duration" : 12081
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "644404ebfbe957cc51e036982ffb81e2"
+    }, {
+      "name" : "16596@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "6433a57fe335a41",
+        "parentUid" : "b3deb7ff1d75ad5af7e4b1f4676dc7d4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675674102714,
+          "stop" : 1675674110352,
+          "duration" : 7638
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b3deb7ff1d75ad5af7e4b1f4676dc7d4"
+    }, {
+      "name" : "7824@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "5d3901268996c56d",
+        "parentUid" : "5a26aa384f8ff58d6b2c931ba81de30e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675258525264,
+          "stop" : 1675258669037,
+          "duration" : 143773
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5a26aa384f8ff58d6b2c931ba81de30e"
+    }, {
+      "name" : "25480@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "4605b908b84c96fb",
+        "parentUid" : "828a05cbeaddc7e710d3d79f7a1d136c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675590234632,
+          "stop" : 1675590498367,
+          "duration" : 263735
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "828a05cbeaddc7e710d3d79f7a1d136c"
+    }, {
+      "name" : "18560@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "f14c7d9aa09b6aa9",
+        "parentUid" : "744d9754d4993d3ea8e98b4900c301a9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675673653931,
+          "stop" : 1675673679353,
+          "duration" : 25422
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "744d9754d4993d3ea8e98b4900c301a9"
+    }, {
+      "name" : "20176@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add all instruction emergency to patient",
+        "uid" : "be838825574ed7df",
+        "parentUid" : "41310ff2c4f15a63ca2e2250fa790828",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675822817175,
+          "stop" : 1675822820665,
+          "duration" : 3490
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "41310ff2c4f15a63ca2e2250fa790828"
+    }, {
+      "name" : "18216@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "75e036b461de43d6",
+        "parentUid" : "ae724f80af1399c09aaaf625f086f6a1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675674646755,
+          "stop" : 1675674655725,
+          "duration" : 8970
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ae724f80af1399c09aaaf625f086f6a1"
+    }, {
+      "name" : "25736@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "8100df3359de5321",
+        "parentUid" : "adcaff316e153633704d97437d5a6378",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675598443266,
+          "stop" : 1675598689702,
+          "duration" : 246436
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "adcaff316e153633704d97437d5a6378"
+    }, {
+      "name" : "16292@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "3f84682b1cd0ea05",
+        "parentUid" : "1f1241318adc371f118a5fc26cff80c7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675252036965,
+          "stop" : 1675252150591,
+          "duration" : 113626
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1f1241318adc371f118a5fc26cff80c7"
+    }, {
+      "name" : "25548@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "2b97447a2701b295",
+        "parentUid" : "47258adeeedec384d8a9d5a9f96c98f5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675593812757,
+          "stop" : 1675593944504,
+          "duration" : 131747
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "47258adeeedec384d8a9d5a9f96c98f5"
+    }, {
+      "name" : "25352@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "bf036f6d70ecc36a",
+        "parentUid" : "723e13933ba9bd8d1fa95ed00c72dedb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675596022439,
+          "stop" : 1675596034883,
+          "duration" : 12444
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "723e13933ba9bd8d1fa95ed00c72dedb"
+    }, {
+      "name" : "17484@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "8f4c76556b631bed",
+        "parentUid" : "78067f180f49e1773e78365bb5e84e5d",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1675675727333,
+          "stop" : 1675675727333,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "BeforeSuite",
+        "uid" : "150363e1108c1521",
+        "parentUid" : "78067f180f49e1773e78365bb5e84e5d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675675727255,
+          "stop" : 1675675727255,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "78067f180f49e1773e78365bb5e84e5d"
+    }, {
+      "name" : "22556@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "56b10b54b9366df2",
+        "parentUid" : "4239bd36b806fe1d717539e5279d5de3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675591859096,
+          "stop" : 1675591957766,
+          "duration" : 98670
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4239bd36b806fe1d717539e5279d5de3"
+    }, {
+      "name" : "17608@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "4b33cf6df09a2df2",
+        "parentUid" : "2260970511557a234091434a092b4b8d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675671747815,
+          "stop" : 1675671897095,
+          "duration" : 149280
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2260970511557a234091434a092b4b8d"
+    }, {
+      "name" : "26648@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "d5dbffdedaab3977",
+        "parentUid" : "4ff98ef7c83ed60004cc459b3d9581d4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675593786082,
+          "stop" : 1675593793567,
+          "duration" : 7485
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4ff98ef7c83ed60004cc459b3d9581d4"
+    }, {
+      "name" : "17512@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "63cf37bcdd7b7083",
+        "parentUid" : "e1a81e36d10654e1fd411aeba995e6df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675682059159,
+          "stop" : 1675682098728,
+          "duration" : 39569
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e1a81e36d10654e1fd411aeba995e6df"
+    }, {
+      "name" : "6800@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "a9a13f2fd72758f3",
+        "parentUid" : "3289fec9bfd5794fbff52fd196e62edf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1675671939008,
+          "stop" : 1675672604224,
+          "duration" : 665216
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3289fec9bfd5794fbff52fd196e62edf"
+    }, {
+      "name" : "25468@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "e7cd588afb159400",
+        "parentUid" : "816a9a3095f837629161a2ed92119938",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675590652802,
+          "stop" : 1675590682814,
+          "duration" : 30012
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "816a9a3095f837629161a2ed92119938"
+    }, {
+      "name" : "15600@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "4f4c00fd422e95de",
+        "parentUid" : "fca90b60510d925664ccd0d3ebf6cd1e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675676486917,
+          "stop" : 1675676502033,
+          "duration" : 15116
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fca90b60510d925664ccd0d3ebf6cd1e"
+    }, {
+      "name" : "24592@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "3c1ec1f6c76683ad",
+        "parentUid" : "03044ec373cd38c15e9b1a63ccddca69",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675599052299,
+          "stop" : 1675599261242,
+          "duration" : 208943
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "03044ec373cd38c15e9b1a63ccddca69"
+    }, {
+      "name" : "3452@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "94b0bc02020b5158",
+        "parentUid" : "372403865143ea65b83f4df951b113f3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675259946885,
+          "stop" : 1675260135945,
+          "duration" : 189060
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "372403865143ea65b83f4df951b113f3"
+    }, {
+      "name" : "8756@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "9ab8a4848b244e3c",
+        "parentUid" : "78bf0850718d80c618b5e67d7ef58554",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675673230409,
+          "stop" : 1675673431361,
+          "duration" : 200952
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "78bf0850718d80c618b5e67d7ef58554"
+    }, {
+      "name" : "15752@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "b6d4cd10ead01428",
+        "parentUid" : "803b65f61de739c6c3544b072fb1c2c4",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1675675711311,
+          "stop" : 1675675711311,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "BeforeSuite",
+        "uid" : "62658cbf789e405",
+        "parentUid" : "803b65f61de739c6c3544b072fb1c2c4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675675711233,
+          "stop" : 1675675711233,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "803b65f61de739c6c3544b072fb1c2c4"
+    }, {
+      "name" : "12824@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "17f6c43c01542888",
+        "parentUid" : "11dd7072b95259038310b4b5adfa7a2f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675675104207,
+          "stop" : 1675675175086,
+          "duration" : 70879
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "11dd7072b95259038310b4b5adfa7a2f"
+    }, {
+      "name" : "16584@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "931bac75d3e00a22",
+        "parentUid" : "636318702c1c974ee368b2b69fcd0238",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675594557986,
+          "stop" : 1675594679271,
+          "duration" : 121285
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "636318702c1c974ee368b2b69fcd0238"
+    }, {
+      "name" : "17992@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "241fc6dced3c9ed8",
+        "parentUid" : "19cf481c29c2b8df12eb8fa0f86c1c68",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675285277792,
+          "stop" : 1675285286726,
+          "duration" : 8934
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "19cf481c29c2b8df12eb8fa0f86c1c68"
+    }, {
+      "name" : "27564@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "876e724fc6a7374f",
+        "parentUid" : "8224495ea42016a3a989aa4ff61996de",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675592391181,
+          "stop" : 1675592462223,
+          "duration" : 71042
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8224495ea42016a3a989aa4ff61996de"
+    }, {
+      "name" : "16376@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "65da1b6e2e3da37c",
+        "parentUid" : "9939c27a48d4d896f025ae43c3a1b1ad",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675259238029,
+          "stop" : 1675259251030,
+          "duration" : 13001
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9939c27a48d4d896f025ae43c3a1b1ad"
+    }, {
+      "name" : "12932@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "test nurse-approval future drug daily",
+        "uid" : "a3cbabcaa014bafd",
+        "parentUid" : "27e70eb8f29b0cedd4b8a818d3c4d539",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675198874862,
+          "stop" : 1675198887487,
+          "duration" : 12625
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "27e70eb8f29b0cedd4b8a818d3c4d539"
+    }, {
+      "name" : "22364@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "56ce40cf169cfc1f",
+        "parentUid" : "2a4c365c52ca0a9cdb0af8e3589ae334",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675774591810,
+          "stop" : 1675774599918,
+          "duration" : 8108
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2a4c365c52ca0a9cdb0af8e3589ae334"
+    }, {
+      "name" : "8560@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "ba2e71f5a13de0e",
+        "parentUid" : "bc79eea1dc627dc0d47b85b0fadfdef5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675251671802,
+          "stop" : 1675251787144,
+          "duration" : 115342
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bc79eea1dc627dc0d47b85b0fadfdef5"
+    }, {
+      "name" : "18672@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "23c1bd0827170402",
+        "parentUid" : "518deec0c9d212e4e496e82d82222041",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675674624991,
+          "stop" : 1675674632522,
+          "duration" : 7531
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "518deec0c9d212e4e496e82d82222041"
+    }, {
+      "name" : "22336@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add generalIns list to patient",
+        "uid" : "baeff823eb8b3dee",
+        "parentUid" : "881c0ed7acf4cce5d843e7aa41139c48",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675827016345,
+          "stop" : 1675827030668,
+          "duration" : 14323
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "881c0ed7acf4cce5d843e7aa41139c48"
+    }, {
+      "name" : "11280@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "b37923ec8d074c7d",
+        "parentUid" : "347030290d48dabfae7dd9b8da7f67c1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675666171216,
+          "stop" : 1675666188326,
+          "duration" : 17110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "347030290d48dabfae7dd9b8da7f67c1"
+    }, {
+      "name" : "16156@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "2d5775aa141329a1",
+        "parentUid" : "424438dbb1c348612d615eac4ec288b3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675675911432,
+          "stop" : 1675676111932,
+          "duration" : 200500
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "424438dbb1c348612d615eac4ec288b3"
+    }, {
+      "name" : "18636@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "b00f542c630eaaf9",
+        "parentUid" : "9ccf2f5acae14834f12acd08f370559f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675673446826,
+          "stop" : 1675673488818,
+          "duration" : 41992
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9ccf2f5acae14834f12acd08f370559f"
+    }, {
+      "name" : "19244@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "7b1327477d0251cf",
+        "parentUid" : "4c173035b2a19438c67233a168b00508",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675674860805,
+          "stop" : 1675674870577,
+          "duration" : 9772
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4c173035b2a19438c67233a168b00508"
+    }, {
+      "name" : "6644@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "ff5fca377989d7de",
+        "parentUid" : "fa4a107e178004d81552ffc9322b94f8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675203020102,
+          "stop" : 1675203041113,
+          "duration" : 21011
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fa4a107e178004d81552ffc9322b94f8"
+    }, {
+      "name" : "19536@COMPU_EFRAT.main(1)",
+      "children" : [ {
+        "name" : "add all instruction emergency to patient",
+        "uid" : "85d8a9b28e87cabb",
+        "parentUid" : "6f0a791b7fdde6f589662bf7ce99f801",
+        "status" : "broken",
+        "time" : {
+          "start" : 1675736416287,
+          "stop" : 1675736420891,
+          "duration" : 4604
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6f0a791b7fdde6f589662bf7ce99f801"
+    } ],
+    "uid" : "ea2283fd2789bda711f7125690359880"
+  } ]
+}

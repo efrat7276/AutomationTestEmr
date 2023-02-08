@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [checkTest]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="9(failed)" verbose="0">
+    <classes>
+      <class name="regression.emergency.doctorTests">
+        <methods>
+          <include name="addDrugForm_DepartmentStandardCheckbox"/>
+          <include name="BeforeSuite"/>
+          <include name="startSession"/>
+          <include name="chooseDepartment"/>
+          <include name="afterMethod"/>
+          <include name="drugForm_addDrugAndExecute"/>
+          <include name="closeSession"/>
+          <include name="addGeneralInsEmergency"/>
+          <include name="instructionDoctor_btn_addNutrition"/>
+        </methods>
+      </class> <!-- regression.emergency.doctorTests -->
+    </classes>
+  </test> <!-- 9(failed) -->
+  <test thread-count="5" name="3(failed)" verbose="0">
+    <classes>
+      <class name="regression.emergency.nurseTest">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="startSession"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+          <include name="addNurseIns"/>
+        </methods>
+      </class> <!-- regression.emergency.nurseTest -->
+    </classes>
+  </test> <!-- 3(failed) -->
+</suite> <!-- Failed suite [checkTest] -->

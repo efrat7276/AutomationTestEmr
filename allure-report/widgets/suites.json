@@ -1,0 +1,59 @@
+{
+  "total" : 5,
+  "items" : [ {
+    "uid" : "1972a1a0643475e3379c2f12ada7267e",
+    "name" : "SanityTest",
+    "statistic" : {
+      "failed" : 10,
+      "broken" : 19,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 33
+    }
+  }, {
+    "uid" : "35f60ff59e188e5774a6cccfedd3bad6",
+    "name" : "regression_1",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "8399274b4bb69ec8699907dd6ef7de4e",
+    "name" : "Default Suite",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "4c0d9aa6040fd16e1359c73096dea71b",
+    "name" : "regression_2",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "e79ac24a368dbc4617d37fb054ae1d6e",
+    "name" : "regression_3",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

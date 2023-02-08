@@ -1,0 +1,1 @@
+{"uuid":"1031b73f-0df1-416e-a999-0b220d390a6c","name":"drugFuture","children":["5d678ba0-337e-4ee8-ac5e-d94a64af323b"],"befores":[{"name":"BeforeSuite","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1675544471900,"stop":1675544472260}],"afters":[],"links":[],"start":1675544471885,"stop":1675544502834}

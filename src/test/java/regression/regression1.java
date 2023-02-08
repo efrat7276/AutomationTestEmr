@@ -27,7 +27,7 @@ public class regression1 extends CommonOps {
       doctorFlows.stopAllActiveInstructionToPatient();
         doctorFlows.newDrug();
         //add new daily drug
-        doctorFlows.drugFormAddDrugDaily("acetaZOLAMIDE 500mg" , 20 , 1 , null , false,false ,false);
+        doctorFlows.drugFormAddDrugDaily("acetaZOLAMIDE 500mg" , 15 , 1 , null , false,false ,false);
         //add new once-only drug
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         Thread.sleep(3000);

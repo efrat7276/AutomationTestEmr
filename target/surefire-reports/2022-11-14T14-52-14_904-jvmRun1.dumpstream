@@ -1,0 +1,459 @@
+# Created at 2022-11-14T14:53:01.395
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2022-11-14T14:53:05.612
+Unexpected IOException with stream: -------- Test: test06_addAndSaveDrugDilutedToPatient Failed -----------
+
+
+# Created at 2022-11-14T14:53:09.628
+Unexpected IOException with stream: [
+
+# Created at 2022-11-14T14:53:09.633
+Unexpected IOException with stream: 1
+
+# Created at 2022-11-14T14:53:09.634
+Unexpected IOException with stream: 6
+
+# Created at 2022-11-14T14:53:09.635
+Unexpected IOException with stream: 6
+
+# Created at 2022-11-14T14:53:09.636
+Unexpected IOException with stream: 8
+
+# Created at 2022-11-14T14:53:09.637
+Unexpected IOException with stream: 4
+
+# Created at 2022-11-14T14:53:09.638
+Unexpected IOException with stream: 3
+
+# Created at 2022-11-14T14:53:09.639
+Unexpected IOException with stream: 0
+
+# Created at 2022-11-14T14:53:09.640
+Unexpected IOException with stream: 3
+
+# Created at 2022-11-14T14:53:09.642
+Unexpected IOException with stream: 8
+
+# Created at 2022-11-14T14:53:09.643
+Unexpected IOException with stream: 9
+
+# Created at 2022-11-14T14:53:09.644
+Unexpected IOException with stream: .
+
+# Created at 2022-11-14T14:53:09.645
+Unexpected IOException with stream: 6
+
+# Created at 2022-11-14T14:53:09.646
+Unexpected IOException with stream: 2
+
+# Created at 2022-11-14T14:53:09.647
+Unexpected IOException with stream: 6
+
+# Created at 2022-11-14T14:53:09.648
+Unexpected IOException with stream: ]
+
+# Created at 2022-11-14T14:53:09.649
+Unexpected IOException with stream: [
+
+# Created at 2022-11-14T14:53:09.651
+Unexpected IOException with stream: W
+
+# Created at 2022-11-14T14:53:09.652
+Unexpected IOException with stream: A
+
+# Created at 2022-11-14T14:53:09.653
+Unexpected IOException with stream: R
+
+# Created at 2022-11-14T14:53:09.654
+Unexpected IOException with stream: N
+
+# Created at 2022-11-14T14:53:09.655
+Unexpected IOException with stream: I
+
+# Created at 2022-11-14T14:53:09.656
+Unexpected IOException with stream: N
+
+# Created at 2022-11-14T14:53:09.657
+Unexpected IOException with stream: G
+
+# Created at 2022-11-14T14:53:09.659
+Unexpected IOException with stream: ]
+
+# Created at 2022-11-14T14:53:09.660
+Unexpected IOException with stream: :
+
+# Created at 2022-11-14T14:53:09.661
+Unexpected IOException with stream:  
+
+# Created at 2022-11-14T14:53:09.663
+Unexpected IOException with stream: T
+
+# Created at 2022-11-14T14:53:09.664
+Unexpected IOException with stream: i
+
+# Created at 2022-11-14T14:53:09.666
+Unexpected IOException with stream: m
+
+# Created at 2022-11-14T14:53:09.667
+Unexpected IOException with stream: e
+
+# Created at 2022-11-14T14:53:09.668
+Unexpected IOException with stream: d
+
+# Created at 2022-11-14T14:53:09.669
+Unexpected IOException with stream:  
+
+# Created at 2022-11-14T14:53:09.670
+Unexpected IOException with stream: o
+
+# Created at 2022-11-14T14:53:09.671
+Unexpected IOException with stream: u
+
+# Created at 2022-11-14T14:53:09.672
+Unexpected IOException with stream: t
+
+# Created at 2022-11-14T14:53:09.673
+Unexpected IOException with stream:  
+
+# Created at 2022-11-14T14:53:09.674
+Unexpected IOException with stream: c
+
+# Created at 2022-11-14T14:53:09.675
+Unexpected IOException with stream: o
+
+# Created at 2022-11-14T14:53:09.676
+Unexpected IOException with stream: n
+
+# Created at 2022-11-14T14:53:09.677
+Unexpected IOException with stream: n
+
+# Created at 2022-11-14T14:53:09.678
+Unexpected IOException with stream: e
+
+# Created at 2022-11-14T14:53:09.679
+Unexpected IOException with stream: c
+
+# Created at 2022-11-14T14:53:09.680
+Unexpected IOException with stream: t
+
+# Created at 2022-11-14T14:53:09.681
+Unexpected IOException with stream: i
+
+# Created at 2022-11-14T14:53:09.682
+Unexpected IOException with stream: n
+
+# Created at 2022-11-14T14:53:09.683
+Unexpected IOException with stream: g
+
+# Created at 2022-11-14T14:53:09.684
+Unexpected IOException with stream:  
+
+# Created at 2022-11-14T14:53:09.685
+Unexpected IOException with stream: t
+
+# Created at 2022-11-14T14:53:09.686
+Unexpected IOException with stream: o
+
+# Created at 2022-11-14T14:53:09.687
+Unexpected IOException with stream:  
+
+# Created at 2022-11-14T14:53:09.688
+Unexpected IOException with stream: C
+
+# Created at 2022-11-14T14:53:09.689
+Unexpected IOException with stream: h
+
+# Created at 2022-11-14T14:53:09.690
+Unexpected IOException with stream: r
+
+# Created at 2022-11-14T14:53:09.691
+Unexpected IOException with stream: o
+
+# Created at 2022-11-14T14:53:09.692
+Unexpected IOException with stream: m
+
+# Created at 2022-11-14T14:53:09.693
+Unexpected IOException with stream: e
+
+# Created at 2022-11-14T14:53:09.694
+Unexpected IOException with stream: ,
+
+# Created at 2022-11-14T14:53:09.695
+Unexpected IOException with stream:  
+
+# Created at 2022-11-14T14:53:09.696
+Unexpected IOException with stream: r
+
+# Created at 2022-11-14T14:53:09.696
+Unexpected IOException with stream: e
+
+# Created at 2022-11-14T14:53:09.698
+Unexpected IOException with stream: t
+
+# Created at 2022-11-14T14:53:09.699
+Unexpected IOException with stream: r
+
+# Created at 2022-11-14T14:53:09.700
+Unexpected IOException with stream: y
+
+# Created at 2022-11-14T14:53:09.701
+Unexpected IOException with stream: i
+
+# Created at 2022-11-14T14:53:09.701
+Unexpected IOException with stream: n
+
+# Created at 2022-11-14T14:53:09.702
+Unexpected IOException with stream: g
+
+# Created at 2022-11-14T14:53:09.703
+Unexpected IOException with stream: .
+
+# Created at 2022-11-14T14:53:09.704
+Unexpected IOException with stream: .
+
+# Created at 2022-11-14T14:53:09.705
+Unexpected IOException with stream: .
+
+# Created at 2022-11-14T14:53:09.706
+Unexpected IOException with stream: 
+
+# Created at 2022-11-14T14:53:09.707
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-14T14:53:17.850
+Unexpected IOException with stream: -------- Test: test06_addAndSaveDrugDilutedToPatient Failed -----------
+
+
+# Created at 2022-11-14T14:53:21.866
+Unexpected IOException with stream: [
+
+# Created at 2022-11-14T14:53:21.868
+Unexpected IOException with stream: 1
+
+# Created at 2022-11-14T14:53:21.869
+Unexpected IOException with stream: 6
+
+# Created at 2022-11-14T14:53:21.870
+Unexpected IOException with stream: 6
+
+# Created at 2022-11-14T14:53:21.871
+Unexpected IOException with stream: 8
+
+# Created at 2022-11-14T14:53:21.872
+Unexpected IOException with stream: 4
+
+# Created at 2022-11-14T14:53:21.873
+Unexpected IOException with stream: 3
+
+# Created at 2022-11-14T14:53:21.874
+Unexpected IOException with stream: 0
+
+# Created at 2022-11-14T14:53:21.875
+Unexpected IOException with stream: 4
+
+# Created at 2022-11-14T14:53:21.876
+Unexpected IOException with stream: 0
+
+# Created at 2022-11-14T14:53:21.877
+Unexpected IOException with stream: 1
+
+# Created at 2022-11-14T14:53:21.878
+Unexpected IOException with stream: .
+
+# Created at 2022-11-14T14:53:21.879
+Unexpected IOException with stream: 8
+
+# Created at 2022-11-14T14:53:21.880
+Unexpected IOException with stream: 6
+
+# Created at 2022-11-14T14:53:21.881
+Unexpected IOException with stream: 2
+
+# Created at 2022-11-14T14:53:21.882
+Unexpected IOException with stream: ]
+
+# Created at 2022-11-14T14:53:21.883
+Unexpected IOException with stream: [
+
+# Created at 2022-11-14T14:53:21.884
+Unexpected IOException with stream: W
+
+# Created at 2022-11-14T14:53:21.885
+Unexpected IOException with stream: A
+
+# Created at 2022-11-14T14:53:21.885
+Unexpected IOException with stream: R
+
+# Created at 2022-11-14T14:53:21.886
+Unexpected IOException with stream: N
+
+# Created at 2022-11-14T14:53:21.887
+Unexpected IOException with stream: I
+
+# Created at 2022-11-14T14:53:21.888
+Unexpected IOException with stream: N
+
+# Created at 2022-11-14T14:53:21.889
+Unexpected IOException with stream: G
+
+# Created at 2022-11-14T14:53:21.890
+Unexpected IOException with stream: ]
+
+# Created at 2022-11-14T14:53:21.891
+Unexpected IOException with stream: :
+
+# Created at 2022-11-14T14:53:21.892
+Unexpected IOException with stream:  
+
+# Created at 2022-11-14T14:53:21.893
+Unexpected IOException with stream: T
+
+# Created at 2022-11-14T14:53:21.894
+Unexpected IOException with stream: i
+
+# Created at 2022-11-14T14:53:21.895
+Unexpected IOException with stream: m
+
+# Created at 2022-11-14T14:53:21.895
+Unexpected IOException with stream: e
+
+# Created at 2022-11-14T14:53:21.896
+Unexpected IOException with stream: d
+
+# Created at 2022-11-14T14:53:21.897
+Unexpected IOException with stream:  
+
+# Created at 2022-11-14T14:53:21.898
+Unexpected IOException with stream: o
+
+# Created at 2022-11-14T14:53:21.899
+Unexpected IOException with stream: u
+
+# Created at 2022-11-14T14:53:21.900
+Unexpected IOException with stream: t
+
+# Created at 2022-11-14T14:53:21.901
+Unexpected IOException with stream:  
+
+# Created at 2022-11-14T14:53:21.902
+Unexpected IOException with stream: c
+
+# Created at 2022-11-14T14:53:21.903
+Unexpected IOException with stream: o
+
+# Created at 2022-11-14T14:53:21.904
+Unexpected IOException with stream: n
+
+# Created at 2022-11-14T14:53:21.905
+Unexpected IOException with stream: n
+
+# Created at 2022-11-14T14:53:21.906
+Unexpected IOException with stream: e
+
+# Created at 2022-11-14T14:53:21.907
+Unexpected IOException with stream: c
+
+# Created at 2022-11-14T14:53:21.907
+Unexpected IOException with stream: t
+
+# Created at 2022-11-14T14:53:21.908
+Unexpected IOException with stream: i
+
+# Created at 2022-11-14T14:53:21.909
+Unexpected IOException with stream: n
+
+# Created at 2022-11-14T14:53:21.910
+Unexpected IOException with stream: g
+
+# Created at 2022-11-14T14:53:21.911
+Unexpected IOException with stream:  
+
+# Created at 2022-11-14T14:53:21.912
+Unexpected IOException with stream: t
+
+# Created at 2022-11-14T14:53:21.913
+Unexpected IOException with stream: o
+
+# Created at 2022-11-14T14:53:21.914
+Unexpected IOException with stream:  
+
+# Created at 2022-11-14T14:53:21.914
+Unexpected IOException with stream: C
+
+# Created at 2022-11-14T14:53:21.915
+Unexpected IOException with stream: h
+
+# Created at 2022-11-14T14:53:21.916
+Unexpected IOException with stream: r
+
+# Created at 2022-11-14T14:53:21.916
+Unexpected IOException with stream: o
+
+# Created at 2022-11-14T14:53:21.917
+Unexpected IOException with stream: m
+
+# Created at 2022-11-14T14:53:21.918
+Unexpected IOException with stream: e
+
+# Created at 2022-11-14T14:53:21.918
+Unexpected IOException with stream: ,
+
+# Created at 2022-11-14T14:53:21.919
+Unexpected IOException with stream:  
+
+# Created at 2022-11-14T14:53:21.919
+Unexpected IOException with stream: r
+
+# Created at 2022-11-14T14:53:21.920
+Unexpected IOException with stream: e
+
+# Created at 2022-11-14T14:53:21.920
+Unexpected IOException with stream: t
+
+# Created at 2022-11-14T14:53:21.921
+Unexpected IOException with stream: r
+
+# Created at 2022-11-14T14:53:21.922
+Unexpected IOException with stream: y
+
+# Created at 2022-11-14T14:53:21.922
+Unexpected IOException with stream: i
+
+# Created at 2022-11-14T14:53:21.923
+Unexpected IOException with stream: n
+
+# Created at 2022-11-14T14:53:21.923
+Unexpected IOException with stream: g
+
+# Created at 2022-11-14T14:53:21.924
+Unexpected IOException with stream: .
+
+# Created at 2022-11-14T14:53:21.925
+Unexpected IOException with stream: .
+
+# Created at 2022-11-14T14:53:21.925
+Unexpected IOException with stream: .
+
+# Created at 2022-11-14T14:53:21.926
+Unexpected IOException with stream: 
+
+# Created at 2022-11-14T14:53:21.926
+Unexpected IOException with stream: 
+
+
+# Created at 2022-11-14T14:53:30.048
+Unexpected IOException with stream: --------------------Ending Execution--------------------
+
+
+# Created at 2022-11-14T14:53:30.095
+Unexpected IOException with stream: --------------------Ending Execution--------------------
+
+

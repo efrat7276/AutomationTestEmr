@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: regression.addAndEditInstructionToPatient.EditDrugIns
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 34.259 s <<< FAILURE! - in regression.addAndEditInstructionToPatient.EditDrugIns
+test01_editDrugDailyDosage(regression.addAndEditInstructionToPatient.EditDrugIns)  Time elapsed: 9.185 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at regression.addAndEditInstructionToPatient.EditDrugIns.test01_editDrugDailyDosage(EditDrugIns.java:21)
+
+test01_editDrugDailyNumberOfTime(regression.addAndEditInstructionToPatient.EditDrugIns)  Time elapsed: 12.716 s  <<< FAILURE!
+org.openqa.selenium.UnhandledAlertException: 
+unexpected alert open: {Alert text : }
+  (Session info: chrome=103.0.5060.134): {Alert text : 
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\efeldman\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62667}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f51c8ab1371c5495c506774f8dfdf02
+*** Element info: {Using=id, value=approvalDrug}
+	at regression.addAndEditInstructionToPatient.EditDrugIns.test01_editDrugDailyNumberOfTime(EditDrugIns.java:32)
+

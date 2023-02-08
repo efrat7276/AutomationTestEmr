@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="restoreBugAt2">
+    <test name="coumadinDrugCardex">
+        <classes>
+            <class name="sanity.restoreBugs.AddComadinAt2Night"></class>
+        </classes>
+    </test>
+</suite>

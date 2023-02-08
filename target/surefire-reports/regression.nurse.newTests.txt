@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: regression.nurse.newTests
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 3.659 s <<< FAILURE! - in regression.nurse.newTests
+BeforeSuite(regression.nurse.newTests)  Time elapsed: 2.932 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Can inject only one of <ITestContext, XmlTest> into a @BeforeSuite annotated BeforeSuite.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+
