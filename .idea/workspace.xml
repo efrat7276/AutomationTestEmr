@@ -19,9 +19,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="first commit from intellij -&#10;upload all allure report">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="first commit from intellij -&#10;upload all allure report" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -339,7 +337,13 @@
       <option name="presentableId" value="LOCAL‎00019" />
       <updated>1664789323470</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL‎00020" summary="first commit from intellij -&#10;upload all allure report">
+      <created>1676202951931</created>
+      <option name="number" value="LOCAL‎00020" />
+      <option name="presentableId" value="LOCAL‎00020" />
+      <updated>1676202951931</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -390,7 +394,8 @@
     <MESSAGE value="innerMenuPage addition" />
     <MESSAGE value="mainMenuPage" />
     <MESSAGE value="manage pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="manage pages" />
+    <MESSAGE value="first commit from intellij -&#10;upload all allure report" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit from intellij -&#10;upload all allure report" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
