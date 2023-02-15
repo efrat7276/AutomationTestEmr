@@ -1,0 +1,721 @@
+{
+  "uid" : "5f3e0278d3c878eb",
+  "name" : "add and save generalIns daily",
+  "fullName" : "sanity.UnitTest.instructionToPatient.GeneralInsScenario.test02_addAndSaveGeneralInsDailyFutureToPatient",
+  "historyId" : "6af94d7852c0bf19843935fd672a66ab",
+  "time" : {
+    "start" : 1675894521244,
+    "stop" : 1675894532982,
+    "duration" : 11738
+  },
+  "description" : "add and save generalIns daily ",
+  "descriptionHtml" : "<p>add and save generalIns daily</p>\n",
+  "status" : "failed",
+  "statusMessage" : "expected [true] but found [false]",
+  "statusTrace" : "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertTrue(Assert.java:45)\r\n\tat org.testng.Assert.assertTrue(Assert.java:55)\r\n\tat extensions.Verifications.textIsContains(Verifications.java:37)\r\n\tat workflows.doctor.generalInstructionFlows.addAndSaveGeneralInsDailyToPatient(generalInstructionFlows.java:78)\r\n\tat sanity.UnitTest.instructionToPatient.GeneralInsScenario.test02_addAndSaveGeneralInsDailyFutureToPatient(GeneralInsScenario.java:47)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\r\n\tat org.testng.TestRunner.run(TestRunner.java:596)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\r\n\tat org.testng.TestNG.run(TestNG.java:1031)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1675894491329,
+      "stop" : 1675894496349,
+      "duration" : 5020
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "BeforeSuite",
+    "time" : {
+      "start" : 1675894206375,
+      "stop" : 1675894206795,
+      "duration" : 420
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "add and save generalIns daily ",
+    "status" : "failed",
+    "statusMessage" : "expected [true] but found [false]",
+    "statusTrace" : "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertTrue(Assert.java:45)\r\n\tat org.testng.Assert.assertTrue(Assert.java:55)\r\n\tat extensions.Verifications.textIsContains(Verifications.java:37)\r\n\tat workflows.doctor.generalInstructionFlows.addAndSaveGeneralInsDailyToPatient(generalInstructionFlows.java:78)\r\n\tat sanity.UnitTest.instructionToPatient.GeneralInsScenario.test02_addAndSaveGeneralInsDailyFutureToPatient(GeneralInsScenario.java:47)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\r\n\tat org.testng.TestRunner.run(TestRunner.java:596)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\r\n\tat org.testng.TestNG.run(TestNG.java:1031)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+    "steps" : [ {
+      "name" : " Login With Choose Role",
+      "time" : {
+        "start" : 1675894521244,
+        "stop" : 1675894521967,
+        "duration" : 723
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1675894521251,
+          "stop" : 1675894521303,
+          "duration" : 52
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> id: user_name]"
+        }, {
+          "name" : "text",
+          "value" : "test"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1675894521310,
+          "stop" : 1675894521387,
+          "duration" : 77
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> id: password]"
+        }, {
+          "name" : "text",
+          "value" : "Te231121"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675894521393,
+          "stop" : 1675894521457,
+          "duration" : 64
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> id: submitBtn]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Select text from List",
+        "time" : {
+          "start" : 1675894521898,
+          "stop" : 1675894521967,
+          "duration" : 69
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1675894521917,
+            "stop" : 1675894521967,
+            "duration" : 50
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> tag name: li]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "list",
+          "value" : "[[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> tag name: li]]"
+        }, {
+          "name" : "text",
+          "value" : "רופא"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "r",
+        "value" : "d"
+      } ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " patientBoxEntry",
+      "time" : {
+        "start" : 1675894521967,
+        "stop" : 1675894524584,
+        "duration" : 2617
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675894523162,
+          "stop" : 1675894523239,
+          "duration" : 77
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //p-table[contains(@class,'depMeushpazim-table patients-table')]//tr]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Verify Text in Element",
+        "time" : {
+          "start" : 1675894524552,
+          "stop" : 1675894524584,
+          "duration" : 32
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //span[@class='value-label']]"
+        }, {
+          "name" : "expected",
+          "value" : "מס' שרות:"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "index",
+        "value" : "3"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "add generalIns to patient",
+      "time" : {
+        "start" : 1675894524584,
+        "stop" : 1675894532793,
+        "duration" : 8209
+      },
+      "status" : "failed",
+      "statusMessage" : "expected [true] but found [false]",
+      "statusTrace" : "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertTrue(Assert.java:45)\r\n\tat org.testng.Assert.assertTrue(Assert.java:55)\r\n\tat extensions.Verifications.textIsContains(Verifications.java:37)\r\n\tat workflows.doctor.generalInstructionFlows.addAndSaveGeneralInsDailyToPatient(generalInstructionFlows.java:78)\r\n\tat sanity.UnitTest.instructionToPatient.GeneralInsScenario.test02_addAndSaveGeneralInsDailyFutureToPatient(GeneralInsScenario.java:47)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\r\n\tat org.testng.TestRunner.run(TestRunner.java:596)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\r\n\tat org.testng.TestNG.run(TestNG.java:1031)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+      "steps" : [ {
+        "name" : " click on newGeneralInstruction",
+        "time" : {
+          "start" : 1675894524584,
+          "stop" : 1675894529323,
+          "duration" : 4739
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : " go to newGeneral",
+        "time" : {
+          "start" : 1675894529324,
+          "stop" : 1675894531026,
+          "duration" : 1702
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1675894529837,
+            "stop" : 1675894529887,
+            "duration" : 50
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //ngb-accordion/div//button]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1675894529904,
+            "stop" : 1675894529963,
+            "duration" : 59
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='sub-list']/div]] -> tag name: input]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : " confirm same instruction",
+          "time" : {
+            "start" : 1675894529963,
+            "stop" : 1675894531026,
+            "duration" : 1063
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "categoryIndex",
+          "value" : "1"
+        }, {
+          "name" : "subCategoryIndex",
+          "value" : "1"
+        } ],
+        "stepsCount" : 3,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : " choose possibility daily generalIns",
+        "time" : {
+          "start" : 1675894531026,
+          "stop" : 1675894531398,
+          "duration" : 372
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1675894531033,
+            "stop" : 1675894531104,
+            "duration" : 71
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='main-box']//div[@class='dropdown-regular dropdown']//label[text()='תדירות']/following-sibling::button[@class='btn selector drop-down dropdown-toggle']]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Select text from List",
+          "time" : {
+            "start" : 1675894531111,
+            "stop" : 1675894531211,
+            "duration" : 100
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Click on Element",
+            "time" : {
+              "start" : 1675894531148,
+              "stop" : 1675894531211,
+              "duration" : 63
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "elem",
+              "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='main-box']//div[@class='dropdown-regular show dropdown']//button]"
+            } ],
+            "stepsCount" : 0,
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "list",
+            "value" : "[[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='main-box']//div[@class='dropdown-regular show dropdown']//button], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='main-box']//div[@class='dropdown-regular show dropdown']//button], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='main-box']//div[@class='dropdown-regular show dropdown']//button], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='main-box']//div[@class='dropdown-regular show dropdown']//button]]"
+          }, {
+            "name" : "text",
+            "value" : "Daily"
+          } ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1675894531218,
+            "stop" : 1675894531283,
+            "duration" : 65
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='main-box']//div[@class='dropdown-regular dropdown']//label[text()='פעמים']/following-sibling::button[@class='btn selector drop-down dropdown-toggle']]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Select text from List",
+          "time" : {
+            "start" : 1675894531289,
+            "stop" : 1675894531398,
+            "duration" : 109
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Click on Element",
+            "time" : {
+              "start" : 1675894531339,
+              "stop" : 1675894531398,
+              "duration" : 59
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "elem",
+              "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='main-box']//div[@class='dropdown-regular show dropdown']//button]"
+            } ],
+            "stepsCount" : 0,
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "list",
+            "value" : "[[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='main-box']//div[@class='dropdown-regular show dropdown']//button], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='main-box']//div[@class='dropdown-regular show dropdown']//button], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='main-box']//div[@class='dropdown-regular show dropdown']//button], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='main-box']//div[@class='dropdown-regular show dropdown']//button], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='main-box']//div[@class='dropdown-regular show dropdown']//button], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='main-box']//div[@class='dropdown-regular show dropdown']//button], [[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //div[@class='main-box']//div[@class='dropdown-regular show dropdown']//button]]"
+          }, {
+            "name" : "text",
+            "value" : "3"
+          } ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "numberOfTime",
+          "value" : "3"
+        } ],
+        "stepsCount" : 6,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : " choose a future day",
+        "time" : {
+          "start" : 1675894531398,
+          "stop" : 1675894531579,
+          "duration" : 181
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1675894531407,
+            "stop" : 1675894531506,
+            "duration" : 99
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //emr-datepicker//i]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1675894531518,
+            "stop" : 1675894531579,
+            "duration" : 61
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //emr-datepicker//div[@class='ngb-dp-day']]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : " add details to generalIns",
+        "time" : {
+          "start" : 1675894531579,
+          "stop" : 1675894531680,
+          "duration" : 101
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : " go to newGeneral",
+        "time" : {
+          "start" : 1675894532692,
+          "stop" : 1675894532767,
+          "duration" : 75
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1675894532698,
+            "stop" : 1675894532767,
+            "duration" : 69
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //button[@class='btn btn-defualt btn-submit btn-click ']]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Verify Text in Element",
+        "time" : {
+          "start" : 1675894532773,
+          "stop" : 1675894532793,
+          "duration" : 20
+        },
+        "status" : "failed",
+        "statusMessage" : "expected [true] but found [false]",
+        "statusTrace" : "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertTrue(Assert.java:45)\r\n\tat org.testng.Assert.assertTrue(Assert.java:55)\r\n\tat extensions.Verifications.textIsContains(Verifications.java:37)\r\n\tat workflows.doctor.generalInstructionFlows.addAndSaveGeneralInsDailyToPatient(generalInstructionFlows.java:78)\r\n\tat sanity.UnitTest.instructionToPatient.GeneralInsScenario.test02_addAndSaveGeneralInsDailyFutureToPatient(GeneralInsScenario.java:47)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\r\n\tat org.testng.TestRunner.run(TestRunner.java:596)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\r\n\tat org.testng.TestNG.run(TestNG.java:1031)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> xpath: //*/div[@class='rtl flex text-right menu-page-title']/span]"
+        }, {
+          "name" : "expected",
+          "value" : "הוראות רפואיות"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "numberOfTime",
+        "value" : "3"
+      }, {
+        "name" : "isFuture",
+        "value" : "true"
+      } ],
+      "stepsCount" : 19,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "13ed63b4988767a2",
+      "name" : "Page Screen-Shot",
+      "source" : "13ed63b4988767a2.png",
+      "type" : "image/png",
+      "size" : 64881
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 29,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "closeSession",
+    "time" : {
+      "start" : 1675894543968,
+      "stop" : 1675894544346,
+      "duration" : 378
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1675894532984,
+      "stop" : 1675894534323,
+      "duration" : 1339
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Clear Text Element",
+      "time" : {
+        "start" : 1675894534179,
+        "stop" : 1675894534262,
+        "duration" : 83
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> id: user_name]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Clear Text Element",
+      "time" : {
+        "start" : 1675894534268,
+        "stop" : 1675894534323,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (1d583baafcce5b32564c4918c94f901f)] -> id: password]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "sanity.UnitTest.instructionToPatient.GeneralInsScenario"
+  }, {
+    "name" : "testClass",
+    "value" : "sanity.UnitTest.instructionToPatient.GeneralInsScenario"
+  }, {
+    "name" : "testMethod",
+    "value" : "test02_addAndSaveGeneralInsDailyFutureToPatient"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SanityTest"
+  }, {
+    "name" : "suite",
+    "value" : "addAllInstructionToPatient"
+  }, {
+    "name" : "subSuite",
+    "value" : "sanity.UnitTest.instructionToPatient.GeneralInsScenario"
+  }, {
+    "name" : "host",
+    "value" : "COMPU_EFRAT"
+  }, {
+    "name" : "thread",
+    "value" : "17972@COMPU_EFRAT.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5f3e0278d3c878eb.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,347 @@
+{
+  "uid" : "96946c072247dea8",
+  "name" : "add and save blood-product",
+  "fullName" : "sanity.UnitTest.instructionToPatient.BloodProductScenario.test01_addAndSaveBloodProductToPatient",
+  "historyId" : "d17388702bf28a1df650b22596d9e468",
+  "time" : {
+    "start" : 1675462551648,
+    "stop" : 1675462554870,
+    "duration" : 3222
+  },
+  "description" : "add and save blood-product to patient ",
+  "descriptionHtml" : "<p>add and save blood-product to patient</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1675462546886,
+      "stop" : 1675462551646,
+      "duration" : 4760
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "BeforeSuite",
+    "time" : {
+      "start" : 1675462209891,
+      "stop" : 1675462210438,
+      "duration" : 547
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "add and save blood-product to patient ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : " Login With Choose Role",
+      "time" : {
+        "start" : 1675462551648,
+        "stop" : 1675462552204,
+        "duration" : 556
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1675462551663,
+          "stop" : 1675462551724,
+          "duration" : 61
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> id: user_name]"
+        }, {
+          "name" : "text",
+          "value" : "test"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1675462551734,
+          "stop" : 1675462551809,
+          "duration" : 75
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> id: password]"
+        }, {
+          "name" : "text",
+          "value" : "Te231121"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675462551817,
+          "stop" : 1675462551878,
+          "duration" : 61
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> id: submitBtn]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Select text from List",
+        "time" : {
+          "start" : 1675462552138,
+          "stop" : 1675462552204,
+          "duration" : 66
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1675462552161,
+            "stop" : 1675462552204,
+            "duration" : 43
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> tag name: li]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "list",
+          "value" : "[[[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> tag name: li]]"
+        }, {
+          "name" : "text",
+          "value" : "רופא"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "r",
+        "value" : "d"
+      } ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " patientBoxEntry",
+      "time" : {
+        "start" : 1675462552204,
+        "stop" : 1675462554870,
+        "duration" : 2666
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675462553471,
+          "stop" : 1675462553576,
+          "duration" : 105
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> xpath: //p-table[contains(@class,'depMeushpazim-table patients-table')]//tr]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Verify Text in Element",
+        "time" : {
+          "start" : 1675462553837,
+          "stop" : 1675462554870,
+          "duration" : 1033
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> xpath: //span[@class='value-label']]"
+        }, {
+          "name" : "expected",
+          "value" : "מס' שרות:"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "index",
+        "value" : "3"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "closeSession",
+    "time" : {
+      "start" : 1675462568246,
+      "stop" : 1675462568536,
+      "duration" : 290
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1675462554874,
+      "stop" : 1675462556460,
+      "duration" : 1586
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Clear Text Element",
+      "time" : {
+        "start" : 1675462556353,
+        "stop" : 1675462556410,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> id: user_name]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Clear Text Element",
+      "time" : {
+        "start" : 1675462556416,
+        "stop" : 1675462556460,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (5c037eab1b231c0fb8a15d8fd49739ee)] -> id: password]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "sanity.UnitTest.instructionToPatient.BloodProductScenario"
+  }, {
+    "name" : "testClass",
+    "value" : "sanity.UnitTest.instructionToPatient.BloodProductScenario"
+  }, {
+    "name" : "testMethod",
+    "value" : "test01_addAndSaveBloodProductToPatient"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SanityTest"
+  }, {
+    "name" : "suite",
+    "value" : "addAllInstructionToPatient"
+  }, {
+    "name" : "subSuite",
+    "value" : "sanity.UnitTest.instructionToPatient.BloodProductScenario"
+  }, {
+    "name" : "host",
+    "value" : "COMPU_EFRAT"
+  }, {
+    "name" : "thread",
+    "value" : "19120@COMPU_EFRAT.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "96946c072247dea8.json",
+  "parameterValues" : [ ]
+}

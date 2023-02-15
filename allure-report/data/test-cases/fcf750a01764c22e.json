@@ -1,0 +1,737 @@
+{
+  "uid" : "fcf750a01764c22e",
+  "name" : "test stop all active instruction to patient ",
+  "fullName" : "sanity.UnitTest.instructionToPatient.StopInstructionScenario.test01_stopAllActiveInstructionToPatient",
+  "historyId" : "fd3487e0ffdf39c691cb3cdf59c719a5",
+  "time" : {
+    "start" : 1675203018061,
+    "stop" : 1675203039085,
+    "duration" : 21024
+  },
+  "description" : "test stop all active instruction to patient ",
+  "descriptionHtml" : "<p>test stop all active instruction to patient</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1675203007997,
+      "stop" : 1675203018010,
+      "duration" : 10013
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "BeforeSuite",
+    "time" : {
+      "start" : 1675203007503,
+      "stop" : 1675203007968,
+      "duration" : 465
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "test stop all active instruction to patient ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : " Login With Choose Role",
+      "time" : {
+        "start" : 1675203018110,
+        "stop" : 1675203019918,
+        "duration" : 1808
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1675203018167,
+          "stop" : 1675203018327,
+          "duration" : 160
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> id: user_name]"
+        }, {
+          "name" : "text",
+          "value" : "test"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1675203018343,
+          "stop" : 1675203018461,
+          "duration" : 118
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> id: password]"
+        }, {
+          "name" : "text",
+          "value" : "Te231121"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203018470,
+          "stop" : 1675203018550,
+          "duration" : 80
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> id: submitBtn]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Select text from List",
+        "time" : {
+          "start" : 1675203019734,
+          "stop" : 1675203019918,
+          "duration" : 184
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1675203019803,
+            "stop" : 1675203019918,
+            "duration" : 115
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> tag name: li]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "list",
+          "value" : "[[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> tag name: li]]"
+        }, {
+          "name" : "text",
+          "value" : "רופא"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "r",
+        "value" : "d"
+      } ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " patientBoxEntry",
+      "time" : {
+        "start" : 1675203019918,
+        "stop" : 1675203023970,
+        "duration" : 4052
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203021440,
+          "stop" : 1675203021614,
+          "duration" : 174
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //p-table[contains(@class,'depMeushpazim-table patients-table')]//tr]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Verify Text in Element",
+        "time" : {
+          "start" : 1675203023923,
+          "stop" : 1675203023969,
+          "duration" : 46
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //span[@class='value-label']]"
+        }, {
+          "name" : "expected",
+          "value" : "מס' שרות:"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "index",
+        "value" : "3"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " stop all active instruction to patient",
+      "time" : {
+        "start" : 1675203024013,
+        "stop" : 1675203039051,
+        "duration" : 15038
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203027055,
+          "stop" : 1675203027119,
+          "duration" : 64
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203027643,
+          "stop" : 1675203027709,
+          "duration" : 66
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203028222,
+          "stop" : 1675203028277,
+          "duration" : 55
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203028792,
+          "stop" : 1675203028853,
+          "duration" : 61
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203029362,
+          "stop" : 1675203029475,
+          "duration" : 113
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203029994,
+          "stop" : 1675203030058,
+          "duration" : 64
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203030580,
+          "stop" : 1675203030645,
+          "duration" : 65
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203031161,
+          "stop" : 1675203031217,
+          "duration" : 56
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203031732,
+          "stop" : 1675203031815,
+          "duration" : 83
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203032334,
+          "stop" : 1675203032398,
+          "duration" : 64
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203032917,
+          "stop" : 1675203032968,
+          "duration" : 51
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203033487,
+          "stop" : 1675203033556,
+          "duration" : 69
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203034075,
+          "stop" : 1675203034136,
+          "duration" : 61
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203034645,
+          "stop" : 1675203034716,
+          "duration" : 71
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203035228,
+          "stop" : 1675203035290,
+          "duration" : 62
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203035811,
+          "stop" : 1675203035882,
+          "duration" : 71
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675203036398,
+          "stop" : 1675203036458,
+          "duration" : 60
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //button/i[@class='icon ion-android-hand ion-md-hand glyphiconBtnEdit']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : " click on approvalInstructions",
+        "time" : {
+          "start" : 1675203036458,
+          "stop" : 1675203039051,
+          "duration" : 2593
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Wait for text in element",
+          "time" : {
+            "start" : 1675203036513,
+            "stop" : 1675203036579,
+            "duration" : 66
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> id: approvalDrug]] -> tag name: span]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "sign",
+          "time" : {
+            "start" : 1675203036579,
+            "stop" : 1675203039051,
+            "duration" : 2472
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 20,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Verify Text in Element",
+      "time" : {
+        "start" : 1675203039061,
+        "stop" : 1675203039082,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> xpath: //*/div[@class='rtl flex text-right menu-page-title']/span]"
+      }, {
+        "name" : "expected",
+        "value" : "הוראות רפואיות"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 31,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "closeSession",
+    "time" : {
+      "start" : 1675203041181,
+      "stop" : 1675203041705,
+      "duration" : 524
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1675203039182,
+      "stop" : 1675203041170,
+      "duration" : 1988
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Clear Text Element",
+      "time" : {
+        "start" : 1675203041035,
+        "stop" : 1675203041094,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> id: user_name]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Clear Text Element",
+      "time" : {
+        "start" : 1675203041102,
+        "stop" : 1675203041170,
+        "duration" : 68
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (20f8af05c4eb1af353723ce99b0412ee)] -> id: password]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "sanity.UnitTest.instructionToPatient.StopInstructionScenario"
+  }, {
+    "name" : "testClass",
+    "value" : "sanity.UnitTest.instructionToPatient.StopInstructionScenario"
+  }, {
+    "name" : "testMethod",
+    "value" : "test01_stopAllActiveInstructionToPatient"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SanityTest"
+  }, {
+    "name" : "suite",
+    "value" : "stopPatientInstruction"
+  }, {
+    "name" : "subSuite",
+    "value" : "sanity.UnitTest.instructionToPatient.StopInstructionScenario"
+  }, {
+    "name" : "host",
+    "value" : "COMPU_EFRAT"
+  }, {
+    "name" : "thread",
+    "value" : "8600@COMPU_EFRAT.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fcf750a01764c22e.json",
+  "parameterValues" : [ ]
+}

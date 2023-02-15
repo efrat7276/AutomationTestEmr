@@ -1,0 +1,1360 @@
+{
+  "uid" : "fb191a07036f081b",
+  "name" : "addToPatientAllPossibilityIns",
+  "fullName" : "regression.regression1.addToPatientAllPossibilityIns",
+  "historyId" : "38971d0495c58a3aa81ba6dc38868805",
+  "time" : {
+    "start" : 1675938367533,
+    "stop" : 1675938381922,
+    "duration" : 14389
+  },
+  "description" : "addToPatientAllPossibilityIns",
+  "descriptionHtml" : "<p>addToPatientAllPossibilityIns</p>\n",
+  "status" : "broken",
+  "statusMessage" : "Index 0 out of bounds for length 0",
+  "statusTrace" : "java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0\r\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)\r\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)\r\n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)\r\n\tat java.base/java.util.Objects.checkIndex(Objects.java:359)\r\n\tat java.base/java.util.ArrayList.get(ArrayList.java:427)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:40)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy19.get(Unknown Source)\r\n\tat workflows.doctor.doctorFlows.newDrug(doctorFlows.java:23)\r\n\tat regression.regression1.addToPatientAllPossibilityIns(regression1.java:28)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\r\n\tat org.testng.TestRunner.run(TestRunner.java:596)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\r\n\tat org.testng.TestNG.run(TestNG.java:1031)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1675938360285,
+      "stop" : 1675938367497,
+      "duration" : 7212
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "BeforeSuite",
+    "time" : {
+      "start" : 1675938359852,
+      "stop" : 1675938360269,
+      "duration" : 417
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "addToPatientAllPossibilityIns",
+    "status" : "broken",
+    "statusMessage" : "Index 0 out of bounds for length 0",
+    "statusTrace" : "java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0\r\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)\r\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)\r\n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)\r\n\tat java.base/java.util.Objects.checkIndex(Objects.java:359)\r\n\tat java.base/java.util.ArrayList.get(ArrayList.java:427)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:40)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy19.get(Unknown Source)\r\n\tat workflows.doctor.doctorFlows.newDrug(doctorFlows.java:23)\r\n\tat regression.regression1.addToPatientAllPossibilityIns(regression1.java:28)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\r\n\tat org.testng.TestRunner.run(TestRunner.java:596)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\r\n\tat org.testng.TestNG.run(TestNG.java:1031)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+    "steps" : [ {
+      "name" : " Login With Choose Role",
+      "time" : {
+        "start" : 1675938367566,
+        "stop" : 1675938368676,
+        "duration" : 1110
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1675938367598,
+          "stop" : 1675938367708,
+          "duration" : 110
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> id: user_name]"
+        }, {
+          "name" : "text",
+          "value" : "test"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1675938367722,
+          "stop" : 1675938367813,
+          "duration" : 91
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> id: password]"
+        }, {
+          "name" : "text",
+          "value" : "Te231121"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675938367825,
+          "stop" : 1675938367899,
+          "duration" : 74
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> id: submitBtn]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Select text from List",
+        "time" : {
+          "start" : 1675938368562,
+          "stop" : 1675938368676,
+          "duration" : 114
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1675938368597,
+            "stop" : 1675938368676,
+            "duration" : 79
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> tag name: li]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "list",
+          "value" : "[[[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> tag name: li]]"
+        }, {
+          "name" : "text",
+          "value" : "רופא"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "r",
+        "value" : "d"
+      } ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " patientBoxEntry",
+      "time" : {
+        "start" : 1675938368676,
+        "stop" : 1675938371597,
+        "duration" : 2921
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675938370007,
+          "stop" : 1675938370141,
+          "duration" : 134
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> xpath: //p-table[contains(@class,'depMeushpazim-table patients-table')]//tr]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Verify Text in Element",
+        "time" : {
+          "start" : 1675938370457,
+          "stop" : 1675938371597,
+          "duration" : 1140
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> xpath: //span[@class='value-label']]"
+        }, {
+          "name" : "expected",
+          "value" : "מס' שרות:"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "index",
+        "value" : "15"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " stop all active instruction to patient",
+      "time" : {
+        "start" : 1675938371630,
+        "stop" : 1675938376646,
+        "duration" : 5016
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " click on newDrug",
+      "time" : {
+        "start" : 1675938376646,
+        "stop" : 1675938381660,
+        "duration" : 5014
+      },
+      "status" : "broken",
+      "statusMessage" : "Index 0 out of bounds for length 0",
+      "statusTrace" : "java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0\r\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)\r\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)\r\n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)\r\n\tat java.base/java.util.Objects.checkIndex(Objects.java:359)\r\n\tat java.base/java.util.ArrayList.get(ArrayList.java:427)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:40)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy19.get(Unknown Source)\r\n\tat workflows.doctor.doctorFlows.newDrug(doctorFlows.java:23)\r\n\tat regression.regression1.addToPatientAllPossibilityIns(regression1.java:28)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\r\n\tat org.testng.TestRunner.run(TestRunner.java:596)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\r\n\tat org.testng.TestNG.run(TestNG.java:1031)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "375da21a40694183",
+      "name" : "Page Screen-Shot",
+      "source" : "375da21a40694183.png",
+      "type" : "image/png",
+      "size" : 60759
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "closeSession",
+    "time" : {
+      "start" : 1675938383637,
+      "stop" : 1675938384100,
+      "duration" : 463
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1675938382036,
+      "stop" : 1675938383625,
+      "duration" : 1589
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Clear Text Element",
+      "time" : {
+        "start" : 1675938383511,
+        "stop" : 1675938383564,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> id: user_name]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Clear Text Element",
+      "time" : {
+        "start" : 1675938383575,
+        "stop" : 1675938383625,
+        "duration" : 50
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (a17f506ebf99dfdeb3b7f010ef2b8753)] -> id: password]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "regression.regression1"
+  }, {
+    "name" : "testClass",
+    "value" : "regression.regression1"
+  }, {
+    "name" : "testMethod",
+    "value" : "addToPatientAllPossibilityIns"
+  }, {
+    "name" : "parentSuite",
+    "value" : "regression_1"
+  }, {
+    "name" : "suite",
+    "value" : "addApprovalAndExecute"
+  }, {
+    "name" : "subSuite",
+    "value" : "regression.regression1"
+  }, {
+    "name" : "host",
+    "value" : "COMPU_EFRAT"
+  }, {
+    "name" : "thread",
+    "value" : "13076@COMPU_EFRAT.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9bae1d0c5fe1c62f",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1675938088015,
+        "stop" : 1675938101972,
+        "duration" : 13957
+      }
+    }, {
+      "uid" : "2962de866d079aa4",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1675938023214,
+        "stop" : 1675938036743,
+        "duration" : 13529
+      }
+    }, {
+      "uid" : "f465a684d4a42d64",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for extensions.UIActions$$Lambda$459/929482343@1a91370c (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58592}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c912f6e16087586891749aaabbc20d81",
+      "time" : {
+        "start" : 1675937835061,
+        "stop" : 1675937888768,
+        "duration" : 53707
+      }
+    }, {
+      "uid" : "e43597e6b466d1bf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1675937279520,
+        "stop" : 1675937338882,
+        "duration" : 59362
+      }
+    }, {
+      "uid" : "f7ec9d367a67c731",
+      "status" : "broken",
+      "statusDetails" : "unexpected alert open: {Alert text : }\n  (Session info: chrome=108.0.5359.125): {Alert text : \nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: bf8e56a5424107c6db4f91210d993293\n*** Element info: {Using=xpath, value=//form//button[2]}",
+      "time" : {
+        "start" : 1675937109486,
+        "stop" : 1675937126738,
+        "duration" : 17252
+      }
+    }, {
+      "uid" : "cd7f6d981595f8b",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <span _ngcontent-nmm-c14=\"\">...</span> is not clickable at point (1854, 363). Other element would receive the click: <div _ngcontent-nmm-c3=\"\" class=\"overlay\" ng-reflect-ng-style=\"[object Object]\" style=\"background-color: rgba(51, 51, 51, 0.5); position: fixed;\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:53903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 67ba16cc921d8aed7283a1d4d7c63272",
+      "time" : {
+        "start" : 1675774632248,
+        "stop" : 1675774824774,
+        "duration" : 192526
+      }
+    }, {
+      "uid" : "88f41a71adab2285",
+      "status" : "broken",
+      "statusDetails" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:53819}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a6dfd98d8e1ce0301af7d2bed4f429dc",
+      "time" : {
+        "start" : 1675774591810,
+        "stop" : 1675774599918,
+        "duration" : 8108
+      }
+    }, {
+      "uid" : "ecfcbadb510f9d63",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='form-group code-list']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:50589}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ad4517bab0d912bdd92edc616b97e9e7\n*** Element info: {Using=xpath, value=//div[@class='form-group code-list']//button}",
+      "time" : {
+        "start" : 1675682059159,
+        "stop" : 1675682098728,
+        "duration" : 39569
+      }
+    }, {
+      "uid" : "f1846168ae62ceed",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-wek-c27=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582406\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1675, 200). Other element would receive the click: <div _ngcontent-wek-c27=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:65359}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d1810fdaecda09ebbc7e4f87fb94bff5",
+      "time" : {
+        "start" : 1675678378372,
+        "stop" : 1675678548967,
+        "duration" : 170595
+      }
+    }, {
+      "uid" : "961da47b77576651",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='form-group code-list']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:65180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 133b3a3c8fc5e226326fcb481565725f\n*** Element info: {Using=xpath, value=//div[@class='form-group code-list']//button}",
+      "time" : {
+        "start" : 1675678303396,
+        "stop" : 1675678329511,
+        "duration" : 26115
+      }
+    }, {
+      "uid" : "76bcd02306166f58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1675676516737,
+        "stop" : 1675676542998,
+        "duration" : 26261
+      }
+    }, {
+      "uid" : "b991413a28091688",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-brb-c18=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582392\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1675, 200). Other element would receive the click: <div _ngcontent-brb-c18=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64843}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f4dd96cfdc874ee6e6eea0e4c5760815",
+      "time" : {
+        "start" : 1675676486917,
+        "stop" : 1675676502033,
+        "duration" : 15116
+      }
+    }, {
+      "uid" : "742833a762c1b91d",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-sdr-c18=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582392\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1675, 200). Other element would receive the click: <div _ngcontent-sdr-c18=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64746}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 99d68e156d9d401b8eed0fa696392f37",
+      "time" : {
+        "start" : 1675676434653,
+        "stop" : 1675676444672,
+        "duration" : 10019
+      }
+    }, {
+      "uid" : "85dbb768f8c024d5",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-pwq-c18=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582392\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1675, 200). Other element would receive the click: <div _ngcontent-pwq-c18=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f2cd3d743951a2fe52081dc9387b7a1c",
+      "time" : {
+        "start" : 1675676305604,
+        "stop" : 1675676376521,
+        "duration" : 70917
+      }
+    }, {
+      "uid" : "fc089dce2702cb9e",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-mvq-c18=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582392\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1675, 200). Other element would receive the click: <div _ngcontent-mvq-c18=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64545}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b925295ebb8c0bf4144110ff9da2da2f",
+      "time" : {
+        "start" : 1675676257434,
+        "stop" : 1675676279780,
+        "duration" : 22346
+      }
+    }, {
+      "uid" : "7ee6463d9549756d",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-nfe-c18=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582392\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1675, 200). Other element would receive the click: <div _ngcontent-nfe-c18=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64437}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a247473186e154a88758c9b9f56ab429",
+      "time" : {
+        "start" : 1675676204048,
+        "stop" : 1675676214404,
+        "duration" : 10356
+      }
+    }, {
+      "uid" : "f0aa729e6164e59f",
+      "status" : "broken",
+      "statusDetails" : "unexpected alert open: {Alert text : }\n  (Session info: chrome=108.0.5359.125): {Alert text : \nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 90913db069ba25bc52a9d302011f70b3\n*** Element info: {Using=id, value=btnAddMedicine}",
+      "time" : {
+        "start" : 1675676146440,
+        "stop" : 1675676151545,
+        "duration" : 5105
+      }
+    }, {
+      "uid" : "a982686e269c0dfe",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-qae-c27=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582392\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1675, 200). Other element would receive the click: <div _ngcontent-qae-c27=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9cffdc2e2be92659285d70f7cb922346",
+      "time" : {
+        "start" : 1675675911432,
+        "stop" : 1675676111932,
+        "duration" : 200500
+      }
+    }, {
+      "uid" : "b136d9a440a60dff",
+      "status" : "broken",
+      "statusDetails" : "Index: 0, Size: 0",
+      "time" : {
+        "start" : 1675675864619,
+        "stop" : 1675675890541,
+        "duration" : 25922
+      }
+    }, {
+      "uid" : "44fe001ea733ee35",
+      "status" : "broken",
+      "statusDetails" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63393}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a2c5737e2481c683c303c0e2dd720bb4",
+      "time" : {
+        "start" : 1675675839889,
+        "stop" : 1675675847689,
+        "duration" : 7800
+      }
+    }, {
+      "uid" : "816d3af0aecdfbd7",
+      "status" : "skipped",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1675675727333,
+        "stop" : 1675675727333,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "42eafdfcf526dfe6",
+      "status" : "skipped",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1675675711311,
+        "stop" : 1675675711311,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "57a75588ec9b63c5",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675675389086,
+        "stop" : 1675675440629,
+        "duration" : 51543
+      }
+    }, {
+      "uid" : "8c786c429a482d9d",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675675219017,
+        "stop" : 1675675287087,
+        "duration" : 68070
+      }
+    }, {
+      "uid" : "459c6ee8cdbbd5b9",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675675104207,
+        "stop" : 1675675175086,
+        "duration" : 70879
+      }
+    }, {
+      "uid" : "d324fec790822079",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#btnApproval\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8f2b8f1369ff506eb831ac3d58b87c81\n*** Element info: {Using=id, value=btnApproval}",
+      "time" : {
+        "start" : 1675675033556,
+        "stop" : 1675675063743,
+        "duration" : 30187
+      }
+    }, {
+      "uid" : "40ef3a214400f2af",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-hmd-c18=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582005\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1675, 232). Other element would receive the click: <div _ngcontent-hmd-c3=\"\" class=\"overlay\" ng-reflect-ng-style=\"[object Object]\" style=\"background-color: rgba(51, 51, 51, 0.5); position: fixed;\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62644}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 156f09064a8dcc84a7d297bbb5833591",
+      "time" : {
+        "start" : 1675674946527,
+        "stop" : 1675674955407,
+        "duration" : 8880
+      }
+    }, {
+      "uid" : "c3e1bb38aa8e0496",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-cno-c18=\"\" type=\"checkbox\" ng-reflect-ng-style=\"[object Object]\" id=\"solExec_1582337_11\"> is not clickable at point (1599, 914). Other element would receive the click: <div _ngcontent-cno-c3=\"\" class=\"overlay\" ng-reflect-ng-style=\"[object Object]\" style=\"background-color: rgba(51, 51, 51, 0.5); position: fixed;\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62538}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e1ecbe501fb78a262f64b87c93495a00",
+      "time" : {
+        "start" : 1675674860805,
+        "stop" : 1675674870577,
+        "duration" : 9772
+      }
+    }, {
+      "uid" : "1d5badbe61c92d5d",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-ycy-c18=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582005\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1675, 232). Other element would receive the click: <div _ngcontent-ycy-c3=\"\" class=\"overlay\" ng-reflect-ng-style=\"[object Object]\" style=\"background-color: rgba(51, 51, 51, 0.5); position: fixed;\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: decddb7649a7baa38682cbf20f6f2cda",
+      "time" : {
+        "start" : 1675674646755,
+        "stop" : 1675674655725,
+        "duration" : 8970
+      }
+    }, {
+      "uid" : "7d42eebb1fb9a234",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-pri-c18=\"\" type=\"checkbox\" ng-reflect-ng-style=\"[object Object]\" id=\"solExec_1582337_11\"> is not clickable at point (1599, 914). Other element would receive the click: <div _ngcontent-pri-c3=\"\" class=\"overlay\" ng-reflect-ng-style=\"[object Object]\" style=\"background-color: rgba(51, 51, 51, 0.5); position: fixed;\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7d28fd04ebe079fc888b59046a227b95",
+      "time" : {
+        "start" : 1675674624991,
+        "stop" : 1675674632522,
+        "duration" : 7531
+      }
+    }, {
+      "uid" : "a49e7b7665bf6ce4",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-ekd-c18=\"\" type=\"checkbox\" ng-reflect-ng-style=\"[object Object]\" id=\"solExec_1582334_11\"> is not clickable at point (1599, 200). Other element would receive the click: <div _ngcontent-ekd-c18=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62008}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e71237bac114a981db02097b0ab0a358",
+      "time" : {
+        "start" : 1675674184234,
+        "stop" : 1675674202638,
+        "duration" : 18404
+      }
+    }, {
+      "uid" : "6b6af4e145618bec",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-lef-c18=\"\" type=\"checkbox\" ng-reflect-ng-style=\"[object Object]\" id=\"solExec_1582334_11\"> is not clickable at point (1599, 200). Other element would receive the click: <div _ngcontent-lef-c15=\"\" class=\"height-25-spacing \"></div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61918}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 195e0b49c79d38a734bbf29a7e529e93",
+      "time" : {
+        "start" : 1675674148184,
+        "stop" : 1675674167200,
+        "duration" : 19016
+      }
+    }, {
+      "uid" : "a946f7249a2774d7",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-beu-c18=\"\" type=\"checkbox\" ng-reflect-ng-style=\"[object Object]\" id=\"solExec_1582336_11\"> is not clickable at point (1599, 914). Other element would receive the click: <div _ngcontent-beu-c3=\"\" class=\"overlay\" ng-reflect-ng-style=\"[object Object]\" style=\"background-color: rgba(51, 51, 51, 0.5); position: fixed;\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61821}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8a5bb86e4fd592af82d736d31b5c837a",
+      "time" : {
+        "start" : 1675674102714,
+        "stop" : 1675674110352,
+        "duration" : 7638
+      }
+    }, {
+      "uid" : "b1a18603b1a2577e",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-vky-c18=\"\" type=\"checkbox\" ng-reflect-ng-style=\"[object Object]\" id=\"solExec_1582337_11\"> is not clickable at point (1599, 914). Other element would receive the click: <div _ngcontent-vky-c3=\"\" class=\"overlay\" ng-reflect-ng-style=\"[object Object]\" style=\"background-color: rgba(51, 51, 51, 0.5); position: fixed;\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61730}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e00433ea0f783727b9e27fdcc3620edc",
+      "time" : {
+        "start" : 1675674081247,
+        "stop" : 1675674088328,
+        "duration" : 7081
+      }
+    }, {
+      "uid" : "752309a50dc04682",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-lyj-c27=\"\" type=\"checkbox\" ng-reflect-ng-style=\"[object Object]\" id=\"solExec_1582336_10\"> is not clickable at point (1523, 914). Other element would receive the click: <div _ngcontent-lyj-c3=\"\" class=\"overlay\" ng-reflect-ng-style=\"[object Object]\" style=\"background-color: rgba(51, 51, 51, 0.5); position: fixed;\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61598}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d5fe894cab4941ed93b272e1cbcd4096",
+      "time" : {
+        "start" : 1675673825871,
+        "stop" : 1675673994822,
+        "duration" : 168951
+      }
+    }, {
+      "uid" : "6d0986ee1dd9e300",
+      "status" : "broken",
+      "statusDetails" : "Index: 0, Size: 0",
+      "time" : {
+        "start" : 1675673653931,
+        "stop" : 1675673679353,
+        "duration" : 25422
+      }
+    }, {
+      "uid" : "55c76857f4fc973",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675673446826,
+        "stop" : 1675673488818,
+        "duration" : 41992
+      }
+    }, {
+      "uid" : "e47b59e4c3fe8715",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-epr-c27=\"\" type=\"checkbox\" ng-reflect-ng-style=\"[object Object]\" id=\"solExec_1582318_10\"> is not clickable at point (1536, 931). Other element would receive the click: <ngb-modal-window role=\"dialog\" tabindex=\"-1\" class=\"modal fade show d-block\" aria-modal=\"true\">...</ngb-modal-window>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 226d25ea36c769cbd8d6a03705ef0ab6",
+      "time" : {
+        "start" : 1675673230409,
+        "stop" : 1675673431361,
+        "duration" : 200952
+      }
+    }, {
+      "uid" : "cb684914e4e97fca",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675672957754,
+        "stop" : 1675673183196,
+        "duration" : 225442
+      }
+    }, {
+      "uid" : "6af608317667e261",
+      "status" : "passed",
+      "time" : {
+        "start" : 1675671939008,
+        "stop" : 1675672604224,
+        "duration" : 665216
+      }
+    }, {
+      "uid" : "5ce576835baa90a4",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-rin-c27=\"\" type=\"checkbox\" ng-reflect-ng-style=\"[object Object]\" id=\"solExec_1582612_10\"> is not clickable at point (1523, 200). Other element would receive the click: <div _ngcontent-rin-c27=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58838}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e0ade67b198aded344e4c8b02e329132",
+      "time" : {
+        "start" : 1675671747815,
+        "stop" : 1675671897095,
+        "duration" : 149280
+      }
+    }, {
+      "uid" : "f3a55a115168c23c",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675670858785,
+        "stop" : 1675670897344,
+        "duration" : 38559
+      }
+    }, {
+      "uid" : "d766282b1dce479d",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675670779636,
+        "stop" : 1675670817684,
+        "duration" : 38048
+      }
+    }, {
+      "uid" : "dd6eddfb3b76783b",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675670198252,
+        "stop" : 1675670271182,
+        "duration" : 72930
+      }
+    }, {
+      "uid" : "a6b986c5bf330c6b",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675669940931,
+        "stop" : 1675670042303,
+        "duration" : 101372
+      }
+    }, {
+      "uid" : "2255a51f7ab73f18",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675667712832,
+        "stop" : 1675669901020,
+        "duration" : 2188188
+      }
+    }, {
+      "uid" : "3a5502b6ed3c1a3e",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675667407612,
+        "stop" : 1675667470348,
+        "duration" : 62736
+      }
+    }, {
+      "uid" : "4e8ba9f93e4625eb",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675666966768,
+        "stop" : 1675667154287,
+        "duration" : 187519
+      }
+    }, {
+      "uid" : "b0510a2371136176",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675666208095,
+        "stop" : 1675666391459,
+        "duration" : 183364
+      }
+    }, {
+      "uid" : "2c065807f9f437a6",
+      "status" : "broken",
+      "statusDetails" : "Index: 0, Size: 0",
+      "time" : {
+        "start" : 1675666171216,
+        "stop" : 1675666188326,
+        "duration" : 17110
+      }
+    }, {
+      "uid" : "e69947d7dd443fad",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1675635026783,
+        "stop" : 1675635100846,
+        "duration" : 74063
+      }
+    }, {
+      "uid" : "34734f5e7b905acc",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-qns-c37=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582567\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1675, 200). Other element would receive the click: <div _ngcontent-qns-c37=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:49684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e96d80b8c046b2d9bf6143fd8da35339",
+      "time" : {
+        "start" : 1675599052299,
+        "stop" : 1675599261242,
+        "duration" : 208943
+      }
+    }, {
+      "uid" : "6d7786094ef5a2e",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#user\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:49425}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b40c3d6d5cee679589888307fc69cc9e\n*** Element info: {Using=id, value=user}",
+      "time" : {
+        "start" : 1675598443266,
+        "stop" : 1675598689702,
+        "duration" : 246436
+      }
+    }, {
+      "uid" : "2bda9d0b164485bf",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='form-group code-list']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:49267}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 71829c4e0beb52d10e7e71e383d7c3c3\n*** Element info: {Using=xpath, value=//div[@class='form-group code-list']//button}",
+      "time" : {
+        "start" : 1675598174995,
+        "stop" : 1675598205807,
+        "duration" : 30812
+      }
+    }, {
+      "uid" : "97418ea9d65d25c4",
+      "status" : "broken",
+      "statusDetails" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:49189}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3b0489636488e05f3198f271944cdc30",
+      "time" : {
+        "start" : 1675598134842,
+        "stop" : 1675598143811,
+        "duration" : 8969
+      }
+    }, {
+      "uid" : "11599383786a4fb7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1675596990777,
+        "stop" : 1675597158691,
+        "duration" : 167914
+      }
+    }, {
+      "uid" : "d0362f3af5c1d744",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-tmq-c18=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582531\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1675, 200). Other element would receive the click: <div _ngcontent-tmq-c18=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f18bc2ae934ebfd02abad2bb16aee635",
+      "time" : {
+        "start" : 1675596022439,
+        "stop" : 1675596034883,
+        "duration" : 12444
+      }
+    }, {
+      "uid" : "132ddbc418c4a0a",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-gsb-c18=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582531\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1675, 200). Other element would receive the click: <div _ngcontent-gsb-c18=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64632}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f4f677d564bbf9a6e6e4b0818527c775",
+      "time" : {
+        "start" : 1675595123853,
+        "stop" : 1675595134510,
+        "duration" : 10657
+      }
+    }, {
+      "uid" : "95f7644c6f2ef36f",
+      "status" : "broken",
+      "statusDetails" : "Index: 9, Size: 0",
+      "time" : {
+        "start" : 1675595068245,
+        "stop" : 1675595079930,
+        "duration" : 11685
+      }
+    }, {
+      "uid" : "6f89a0dfc9cc4242",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-bkd-c27=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582531\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1675, 200). Other element would receive the click: <div _ngcontent-bkd-c27=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64403}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3b582a9ae93a67bbebe440fc81f166f3",
+      "time" : {
+        "start" : 1675594798033,
+        "stop" : 1675594924773,
+        "duration" : 126740
+      }
+    }, {
+      "uid" : "ac6b5b8213b76e46",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675594557986,
+        "stop" : 1675594679271,
+        "duration" : 121285
+      }
+    }, {
+      "uid" : "b5860dd723f8e81f",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675594011215,
+        "stop" : 1675594119542,
+        "duration" : 108327
+      }
+    }, {
+      "uid" : "45fe8c8f5db79cbe",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-uny-c18=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582295\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1689, 200). Other element would receive the click: <div _ngcontent-uny-c18=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a9a07d95290fbc707ec95bfab9d7a127",
+      "time" : {
+        "start" : 1675593812757,
+        "stop" : 1675593944504,
+        "duration" : 131747
+      }
+    }, {
+      "uid" : "ef4664997b8e3d2d",
+      "status" : "broken",
+      "statusDetails" : "Index: 9, Size: 0",
+      "time" : {
+        "start" : 1675593786082,
+        "stop" : 1675593793567,
+        "duration" : 7485
+      }
+    }, {
+      "uid" : "43251407cd3a1a0c",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-lbr-c18=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582295\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1675, 200). Other element would receive the click: <div _ngcontent-lbr-c18=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a20b9cd74b6fc0a510f66def2b12fd4c",
+      "time" : {
+        "start" : 1675593665363,
+        "stop" : 1675593676256,
+        "duration" : 10893
+      }
+    }, {
+      "uid" : "b7df37aa39cc1fd0",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-set-c27=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582295\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1675, 200). Other element would receive the click: <div _ngcontent-set-c27=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63145}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e665861a4bf1721403c98996ed45b0a7",
+      "time" : {
+        "start" : 1675593508362,
+        "stop" : 1675593573336,
+        "duration" : 64974
+      }
+    }, {
+      "uid" : "9c32e720615c826f",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <div _ngcontent-xcj-c18=\"\" class=\"timeLineIn timeLineInToday timelineIsNoColumnAppearInCardex\" ng-reflect-klass=\"timeLineIn\" ng-reflect-ng-class=\"[object Object]\">...</div> is not clickable at point (1010, 870). Other element would receive the click: <div _ngcontent-xcj-c18=\"\" class=\"ltr\" ng-reflect-klass=\"ltr\" ng-reflect-ng-class=\"[object Object]\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62888}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3fa16eedeb8c654dd2a82f8a8b54423e",
+      "time" : {
+        "start" : 1675593318412,
+        "stop" : 1675593459134,
+        "duration" : 140722
+      }
+    }, {
+      "uid" : "e7e431ae12487472",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='form-group code-list']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62766}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 46096c3bd7189e71a248e47872de2c06\n*** Element info: {Using=xpath, value=//div[@class='form-group code-list']//button}",
+      "time" : {
+        "start" : 1675593266613,
+        "stop" : 1675593302001,
+        "duration" : 35388
+      }
+    }, {
+      "uid" : "8036a431801ab63c",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 08da19d16fce9a3008b66d6bc2330288\n*** Element info: {Using=id, value=approvalDrug}",
+      "time" : {
+        "start" : 1675593198182,
+        "stop" : 1675593233584,
+        "duration" : 35402
+      }
+    }, {
+      "uid" : "333f0d6dab727ddd",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675593043671,
+        "stop" : 1675593149751,
+        "duration" : 106080
+      }
+    }, {
+      "uid" : "eb38015a5306fcd7",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675592391181,
+        "stop" : 1675592462223,
+        "duration" : 71042
+      }
+    }, {
+      "uid" : "3311289c520c5704",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675591859096,
+        "stop" : 1675591957766,
+        "duration" : 98670
+      }
+    }, {
+      "uid" : "d89a8faa477988f0",
+      "status" : "broken",
+      "statusDetails" : "Index: 9, Size: 0",
+      "time" : {
+        "start" : 1675591829741,
+        "stop" : 1675591836413,
+        "duration" : 6672
+      }
+    }, {
+      "uid" : "7ec6c406e94b03f4",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#user\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61029}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b78d9f777980c50998fe23513d083363\n*** Element info: {Using=id, value=user}",
+      "time" : {
+        "start" : 1675591646716,
+        "stop" : 1675591806796,
+        "duration" : 160080
+      }
+    }, {
+      "uid" : "8322d9f5e718c5b3",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#user\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60784}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: bd8d65d19fc77b207304208645ee8cfd\n*** Element info: {Using=id, value=user}",
+      "time" : {
+        "start" : 1675591336167,
+        "stop" : 1675591501171,
+        "duration" : 165004
+      }
+    }, {
+      "uid" : "4b8ff4572e66825c",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675590746137,
+        "stop" : 1675590824171,
+        "duration" : 78034
+      }
+    }, {
+      "uid" : "7ed7622bfb97395f",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#btnApproval\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60380}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c3e31216f3f9722f37778e780ae1abce\n*** Element info: {Using=id, value=btnApproval}",
+      "time" : {
+        "start" : 1675590652802,
+        "stop" : 1675590682814,
+        "duration" : 30012
+      }
+    }, {
+      "uid" : "69fed8126e6a74b7",
+      "status" : "broken",
+      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown",
+      "time" : {
+        "start" : 1675590234632,
+        "stop" : 1675590498367,
+        "duration" : 263735
+      }
+    }, {
+      "uid" : "c72c5b19479d884d",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='form-group code-list']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:59803}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8857a63b3c5e8f368fb7b940c8c79d91\n*** Element info: {Using=xpath, value=//div[@class='form-group code-list']//button}",
+      "time" : {
+        "start" : 1675589967799,
+        "stop" : 1675590001711,
+        "duration" : 33912
+      }
+    }, {
+      "uid" : "75c8c7777bf1c679",
+      "status" : "broken",
+      "statusDetails" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:59700}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 96590f401b340531111ad5dd3121fa18",
+      "time" : {
+        "start" : 1675589945978,
+        "stop" : 1675589952760,
+        "duration" : 6782
+      }
+    }, {
+      "uid" : "fb8d7962516e0d2c",
+      "status" : "broken",
+      "statusDetails" : "invalid selector: Unable to locate an element with the xpath expression //input[contains(@id, 'solExec')] and not(@disabled)] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[contains(@id, 'solExec')] and not(@disabled)]' is not a valid XPath expression.\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:54509}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a5c9b9151499a17a983d636de952f062\n*** Element info: {Using=xpath, value=//input[contains(@id, 'solExec')] and not(@disabled)]}",
+      "time" : {
+        "start" : 1675548624338,
+        "stop" : 1675548633783,
+        "duration" : 9445
+      }
+    }, {
+      "uid" : "668bc055c014298f",
+      "status" : "broken",
+      "statusDetails" : "invalid selector: Unable to locate an element with the xpath expression //input[contains(@id, 'solExec')] and not(@disabled)] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[contains(@id, 'solExec')] and not(@disabled)]' is not a valid XPath expression.\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63853}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 48b793d81309dbe37eb9783354672b79\n*** Element info: {Using=xpath, value=//input[contains(@id, 'solExec')] and not(@disabled)]}",
+      "time" : {
+        "start" : 1675462222750,
+        "stop" : 1675462230935,
+        "duration" : 8185
+      }
+    }, {
+      "uid" : "cd9403d8321a93cc",
+      "status" : "broken",
+      "statusDetails" : "invalid selector: Unable to locate an element with the xpath expression //input[contains(@id, 'solExec')] and not(@disabled)] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[contains(@id, 'solExec')] and not(@disabled)]' is not a valid XPath expression.\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:56442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 823880b14aa10b8ff29c4c2c02830778\n*** Element info: {Using=xpath, value=//input[contains(@id, 'solExec')] and not(@disabled)]}",
+      "time" : {
+        "start" : 1675375823971,
+        "stop" : 1675375832974,
+        "duration" : 9003
+      }
+    }, {
+      "uid" : "837bacf53dfd6f62",
+      "status" : "broken",
+      "statusDetails" : "invalid selector: Unable to locate an element with the xpath expression //input[contains(@id, 'solExec')] and not(@disabled)] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[contains(@id, 'solExec')] and not(@disabled)]' is not a valid XPath expression.\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61730}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 983afd575833516288baff651b78fe6e\n*** Element info: {Using=xpath, value=//input[contains(@id, 'solExec')] and not(@disabled)]}",
+      "time" : {
+        "start" : 1675289420749,
+        "stop" : 1675289432231,
+        "duration" : 11482
+      }
+    }, {
+      "uid" : "c13a18dab746e90c",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-run-c18=\"\" type=\"checkbox\" ng-reflect-ng-style=\"[object Object]\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"drugInsDayModeCheckbox_1582194\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1372, 200). Other element would receive the click: <div _ngcontent-run-c18=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58981}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b5ce79db70f0c17a8c0a1c56df7fb551",
+      "time" : {
+        "start" : 1675260992391,
+        "stop" : 1675261000815,
+        "duration" : 8424
+      }
+    }, {
+      "uid" : "5849c8a7feba5cac",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (91ede6cf0bbc4fd19e26a4f9283a1022)] -> xpath: //input[contains(@id, 'solExec')]] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 91ede6cf0bbc4fd19e26a4f9283a1022",
+      "time" : {
+        "start" : 1675259946885,
+        "stop" : 1675260135945,
+        "duration" : 189060
+      }
+    }, {
+      "uid" : "fee312ac4b463492",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (d755e43961a28365dfcdf124d1ccecb3)] -> xpath: //input[contains(@id, 'solExec')]] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d755e43961a28365dfcdf124d1ccecb3",
+      "time" : {
+        "start" : 1675259752759,
+        "stop" : 1675259768368,
+        "duration" : 15609
+      }
+    }, {
+      "uid" : "93a68d45d2a146f8",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (1c1fcc4978fa8bff4484dd4fed4240c0)] -> xpath: //input[contains(@id, 'solExec')]] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58164}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1c1fcc4978fa8bff4484dd4fed4240c0",
+      "time" : {
+        "start" : 1675259637385,
+        "stop" : 1675259698740,
+        "duration" : 61355
+      }
+    }, {
+      "uid" : "3ca140798d6430d",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (ea1561eeb164f29688bf9a50cbd74d71)] -> xpath: //general-liquidation//table[@class='table main-table']//div[@id='div-group-current-day']//button] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58057}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ea1561eeb164f29688bf9a50cbd74d71",
+      "time" : {
+        "start" : 1675259569362,
+        "stop" : 1675259584137,
+        "duration" : 14775
+      }
+    }, {
+      "uid" : "cedc6a36443a9969",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (aecf3d3ce34226ac700ddf15f106c76d)] -> xpath: //general-liquidation//table[@class='table main-table']//div[@id='div-group-current-day']//button] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:57942}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: aecf3d3ce34226ac700ddf15f106c76d",
+      "time" : {
+        "start" : 1675259518753,
+        "stop" : 1675259531739,
+        "duration" : 12986
+      }
+    }, {
+      "uid" : "96090b4477fe701f",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (6621a0f24a92eae647a0fbc90e9c864c)] -> xpath: //general-liquidation//table[@class='table main-table']//div[@id='div-group-current-day']//button] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:57767}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6621a0f24a92eae647a0fbc90e9c864c",
+      "time" : {
+        "start" : 1675259281225,
+        "stop" : 1675259390550,
+        "duration" : 109325
+      }
+    }, {
+      "uid" : "c49cc64d0edda6bd",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (4f025584cdbd48ea0c05782ee16ba2f8)] -> xpath: //general-liquidation//table[@class='table main-table']//div[@id='div-group-current-day']//button] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:57667}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4f025584cdbd48ea0c05782ee16ba2f8",
+      "time" : {
+        "start" : 1675259238029,
+        "stop" : 1675259251030,
+        "duration" : 13001
+      }
+    }, {
+      "uid" : "5c903bb0b35c200f",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (58c672a9c236e00b9e1a22b9cae8d233)] -> xpath: //general-liquidation//table[@class='table main-table']//div[@id='div-group-current-day']//button] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:57571}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 58c672a9c236e00b9e1a22b9cae8d233",
+      "time" : {
+        "start" : 1675259205261,
+        "stop" : 1675259218797,
+        "duration" : 13536
+      }
+    }, {
+      "uid" : "b0a6465c2e076b0e",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (41df4b2cc2701fb8d9b10d4bca59215a)] -> xpath: //general-liquidation//table[@class='table main-table']//div[@id='div-group-current-day']//button] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:57448}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 41df4b2cc2701fb8d9b10d4bca59215a",
+      "time" : {
+        "start" : 1675259134162,
+        "stop" : 1675259148254,
+        "duration" : 14092
+      }
+    }, {
+      "uid" : "5824944dc35c5c7f",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"input\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:57176}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 490c62e0c46c5d28ee6f40738df54c1b\n*** Element info: {Using=tag name, value=input}",
+      "time" : {
+        "start" : 1675258525264,
+        "stop" : 1675258669037,
+        "duration" : 143773
+      }
+    }, {
+      "uid" : "67bfa71e0bf6a6ff",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1675252462834,
+        "stop" : 1675252485251,
+        "duration" : 22417
+      }
+    }, {
+      "uid" : "c407dd8494815d07",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='custom-control custom-radio']//label[text()=' Time Limit ']\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:53673}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5b78a640fe9c2aefb00fb62d5325272f\n*** Element info: {Using=xpath, value=//div[@class='custom-control custom-radio']//label[text()=' Time Limit ']}",
+      "time" : {
+        "start" : 1675252036965,
+        "stop" : 1675252150591,
+        "duration" : 113626
+      }
+    }, {
+      "uid" : "76dc8693d0a82e3a",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1675251979779,
+        "stop" : 1675252001127,
+        "duration" : 21348
+      }
+    }, {
+      "uid" : "982e1a6ca5c3970f",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='custom-control custom-radio']//label[text()=' Time Limit ']\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:53393}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a76866e7f8f3b19b95193b37c64e18a3\n*** Element info: {Using=xpath, value=//div[@class='custom-control custom-radio']//label[text()=' Time Limit ']}",
+      "time" : {
+        "start" : 1675251671802,
+        "stop" : 1675251787144,
+        "duration" : 115342
+      }
+    }, {
+      "uid" : "4736ecf3b940e1d8",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1675203020102,
+        "stop" : 1675203041113,
+        "duration" : 21011
+      }
+    }, {
+      "uid" : "d51644ff871dcf9a",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='custom-control custom-radio']//label[text()=' Time Limit ']\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:55653}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 727dba9bdecd548143193c16dda05770\n*** Element info: {Using=xpath, value=//div[@class='custom-control custom-radio']//label[text()=' Time Limit ']}",
+      "time" : {
+        "start" : 1675169063017,
+        "stop" : 1675169178451,
+        "duration" : 115434
+      }
+    }, {
+      "uid" : "87e92f654e64a590",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1675164652523,
+        "stop" : 1675164672059,
+        "duration" : 19536
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "4ea94b57eadefe6c",
+        "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/81/allure/#testresult/4ea94b57eadefe6c",
+        "status" : "broken",
+        "statusDetails" : "Index 0 out of bounds for length 0",
+        "time" : {
+          "start" : 1675938367533,
+          "stop" : 1675938381922,
+          "duration" : 14389
+        }
+      }, {
+        "uid" : "3466a45460fff424",
+        "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/80/allure/#testresult/3466a45460fff424",
+        "status" : "broken",
+        "statusDetails" : "Index 0 out of bounds for length 0",
+        "time" : {
+          "start" : 1675938367533,
+          "stop" : 1675938381922,
+          "duration" : 14389
+        }
+      }, {
+        "uid" : "b18f4fc513fd41a1",
+        "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/79/allure/#testresult/b18f4fc513fd41a1",
+        "status" : "broken",
+        "statusDetails" : "Index 0 out of bounds for length 0",
+        "time" : {
+          "start" : 1675938367533,
+          "stop" : 1675938381922,
+          "duration" : 14389
+        }
+      }, {
+        "uid" : "8ee4a6ac17e5186a",
+        "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/77/allure/#testresult/8ee4a6ac17e5186a",
+        "status" : "broken",
+        "statusDetails" : "element click intercepted: Element <span _ngcontent-nmm-c14=\"\">...</span> is not clickable at point (1854, 363). Other element would receive the click: <div _ngcontent-nmm-c3=\"\" class=\"overlay\" ng-reflect-ng-style=\"[object Object]\" style=\"background-color: rgba(51, 51, 51, 0.5); position: fixed;\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:53903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 67ba16cc921d8aed7283a1d4d7c63272",
+        "time" : {
+          "start" : 1675774632248,
+          "stop" : 1675774824774,
+          "duration" : 192526
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fb191a07036f081b.json",
+  "parameterValues" : [ ]
+}

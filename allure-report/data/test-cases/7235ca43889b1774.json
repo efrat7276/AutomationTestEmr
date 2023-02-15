@@ -1,0 +1,627 @@
+{
+  "uid" : "7235ca43889b1774",
+  "name" : "test add and save drug daily",
+  "fullName" : "sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.test01_addAndSaveWithConfirmationDrugRequireConfirmationDailyToPatient",
+  "historyId" : "fe856f553d8d6906cb8652cdda23516a",
+  "time" : {
+    "start" : 1675376223805,
+    "stop" : 1675376257773,
+    "duration" : 33968
+  },
+  "description" : "test add and save drug daily ",
+  "descriptionHtml" : "<p>test add and save drug daily</p>\n",
+  "status" : "broken",
+  "statusMessage" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown",
+  "statusTrace" : "org.openqa.selenium.TimeoutException: Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:221)\r\n\tat extensions.UIActions.click(UIActions.java:42)\r\n\tat workflows.doctor.doctorFlows.confirmationInfectionToDrugFromInstructionPage(doctorFlows.java:390)\r\n\tat sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.test01_addAndSaveWithConfirmationDrugRequireConfirmationDailyToPatient(DrugWithConfirmationScenario.java:25)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\r\n\tat org.testng.TestRunner.run(TestRunner.java:596)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\r\n\tat org.testng.TestNG.run(TestNG.java:1031)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\nCaused by: java.util.concurrent.TimeoutException\r\n\tat java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)\r\n\tat java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\t... 35 more\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1675376219066,
+      "stop" : 1675376223804,
+      "duration" : 4738
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "BeforeSuite",
+    "time" : {
+      "start" : 1675375808354,
+      "stop" : 1675375808994,
+      "duration" : 640
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "test add and save drug daily ",
+    "status" : "broken",
+    "statusMessage" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown",
+    "statusTrace" : "org.openqa.selenium.TimeoutException: Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:221)\r\n\tat extensions.UIActions.click(UIActions.java:42)\r\n\tat workflows.doctor.doctorFlows.confirmationInfectionToDrugFromInstructionPage(doctorFlows.java:390)\r\n\tat sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.test01_addAndSaveWithConfirmationDrugRequireConfirmationDailyToPatient(DrugWithConfirmationScenario.java:25)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\r\n\tat org.testng.TestRunner.run(TestRunner.java:596)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\r\n\tat org.testng.TestNG.run(TestNG.java:1031)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\nCaused by: java.util.concurrent.TimeoutException\r\n\tat java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)\r\n\tat java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\t... 35 more\r\n",
+    "steps" : [ {
+      "name" : " Login With Choose Role",
+      "time" : {
+        "start" : 1675376223805,
+        "stop" : 1675376224370,
+        "duration" : 565
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1675376223822,
+          "stop" : 1675376223897,
+          "duration" : 75
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> id: user_name]"
+        }, {
+          "name" : "text",
+          "value" : "test"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1675376223904,
+          "stop" : 1675376223979,
+          "duration" : 75
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> id: password]"
+        }, {
+          "name" : "text",
+          "value" : "Te231121"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675376223988,
+          "stop" : 1675376224055,
+          "duration" : 67
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> id: submitBtn]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Select text from List",
+        "time" : {
+          "start" : 1675376224323,
+          "stop" : 1675376224370,
+          "duration" : 47
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1675376224336,
+            "stop" : 1675376224370,
+            "duration" : 34
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> tag name: li]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "list",
+          "value" : "[[[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> tag name: li]]"
+        }, {
+          "name" : "text",
+          "value" : "רופא"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "r",
+        "value" : "d"
+      } ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " patientBoxEntry",
+      "time" : {
+        "start" : 1675376224370,
+        "stop" : 1675376226745,
+        "duration" : 2375
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675376225171,
+          "stop" : 1675376225244,
+          "duration" : 73
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> xpath: //p-table[contains(@class,'depMeushpazim-table patients-table')]//tr]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Verify Text in Element",
+        "time" : {
+          "start" : 1675376225741,
+          "stop" : 1675376226745,
+          "duration" : 1004
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> xpath: //span[@class='value-label']]"
+        }, {
+          "name" : "expected",
+          "value" : "מס' שרות:"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "index",
+        "value" : "3"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "add and save the drug as daily to patient",
+      "time" : {
+        "start" : 1675376226745,
+        "stop" : 1675376242530,
+        "duration" : 15785
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : " click on newDrug",
+        "time" : {
+          "start" : 1675376226745,
+          "stop" : 1675376235519,
+          "duration" : 8774
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1675376230401,
+            "stop" : 1675376230499,
+            "duration" : 98
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> id: btnAddMedicine]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : " fill DrugForm for addNewDrugDaily",
+        "time" : {
+          "start" : 1675376235519,
+          "stop" : 1675376242530,
+          "duration" : 7011
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : " Fill Drug's Details",
+          "time" : {
+            "start" : 1675376235519,
+            "stop" : 1675376242124,
+            "duration" : 6605
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : " confirm same instruction",
+            "time" : {
+              "start" : 1675376235949,
+              "stop" : 1675376242008,
+              "duration" : 6059
+            },
+            "status" : "broken",
+            "statusMessage" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#buttonImport\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:56902}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 764f61e3c08b8a6c40df99ed12123884\n*** Element info: {Using=id, value=buttonImport}",
+            "statusTrace" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#buttonImport\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:56902}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 764f61e3c08b8a6c40df99ed12123884\n*** Element info: {Using=id, value=buttonImport}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:193)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)\r\n\tat workflows.doctor.doctorFlows.confirmModalSameInstruction(doctorFlows.java:380)\r\n\tat workflows.doctor.doctorFlows.fillDrugsDetails(doctorFlows.java:125)\r\n\tat workflows.doctor.doctorFlows.drugFormAddDrugDaily(doctorFlows.java:242)\r\n\tat workflows.doctor.drugFlows.addAndSaveDrugDailyToPatient(drugFlows.java:14)\r\n\tat sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.test01_addAndSaveWithConfirmationDrugRequireConfirmationDailyToPatient(DrugWithConfirmationScenario.java:24)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\r\n\tat org.testng.TestRunner.run(TestRunner.java:596)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\r\n\tat org.testng.TestNG.run(TestNG.java:1031)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "drugName",
+            "value" : "TAB acyclovir 400mg (ZOVIRAX)"
+          }, {
+            "name" : "dosage",
+            "value" : "100"
+          }, {
+            "name" : "routeAdministration",
+            "value" : "null"
+          } ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Update Text Element",
+          "time" : {
+            "start" : 1675376242133,
+            "stop" : 1675376242229,
+            "duration" : 96
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> id: drugComment]"
+          }, {
+            "name" : "text",
+            "value" : "בדיקות אוטו'"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : " fill diagnosis to antibiotic drug",
+          "time" : {
+            "start" : 1675376242229,
+            "stop" : 1675376242389,
+            "duration" : 160
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Click on Element",
+            "time" : {
+              "start" : 1675376242239,
+              "stop" : 1675376242336,
+              "duration" : 97
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "elem",
+              "value" : "[[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> xpath: //*[@id='0}-header']/div/button]"
+            } ],
+            "stepsCount" : 0,
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          }, {
+            "name" : "Select from List by index",
+            "time" : {
+              "start" : 1675376242348,
+              "stop" : 1675376242389,
+              "duration" : 41
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "list",
+              "value" : "[[[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> xpath: //*[@id='0}']/div/div], [[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> xpath: //*[@id='0}']/div/div], [[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> xpath: //*[@id='0}']/div/div], [[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> xpath: //*[@id='0}']/div/div], [[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> xpath: //*[@id='0}']/div/div], [[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> xpath: //*[@id='0}']/div/div], [[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> xpath: //*[@id='0}']/div/div], [[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> xpath: //*[@id='0}']/div/div]]"
+            }, {
+              "name" : "index",
+              "value" : "1"
+            } ],
+            "stepsCount" : 0,
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 2,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : " Fill Details In Daily",
+          "time" : {
+            "start" : 1675376242389,
+            "stop" : 1675376242483,
+            "duration" : 94
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "numberOfTimeDaily",
+            "value" : "3"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "drugName",
+          "value" : "TAB acyclovir 400mg (ZOVIRAX)"
+        }, {
+          "name" : "dosage",
+          "value" : "100"
+        }, {
+          "name" : "numberOfTimeDaily",
+          "value" : "3"
+        }, {
+          "name" : "routeAdinistration",
+          "value" : "null"
+        }, {
+          "name" : "isAntibiotic",
+          "value" : "true"
+        }, {
+          "name" : "isFuture",
+          "value" : "false"
+        }, {
+          "name" : "addAndClose",
+          "value" : "true"
+        } ],
+        "stepsCount" : 7,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "drugName",
+        "value" : "TAB acyclovir 400mg (ZOVIRAX)"
+      }, {
+        "name" : "dosage",
+        "value" : "100"
+      }, {
+        "name" : "numberOfTime",
+        "value" : "1"
+      }, {
+        "name" : "isAntibiotic",
+        "value" : "true"
+      }, {
+        "name" : "isFuture",
+        "value" : "false"
+      } ],
+      "stepsCount" : 10,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "fill infection confirmation to drug by doctor",
+      "time" : {
+        "start" : 1675376242530,
+        "stop" : 1675376253063,
+        "duration" : 10533
+      },
+      "status" : "broken",
+      "statusMessage" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown",
+      "statusTrace" : "org.openqa.selenium.TimeoutException: Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:221)\r\n\tat extensions.UIActions.click(UIActions.java:42)\r\n\tat workflows.doctor.doctorFlows.confirmationInfectionToDrugFromInstructionPage(doctorFlows.java:390)\r\n\tat sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.test01_addAndSaveWithConfirmationDrugRequireConfirmationDailyToPatient(DrugWithConfirmationScenario.java:25)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\r\n\tat org.testng.TestRunner.run(TestRunner.java:596)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\r\n\tat org.testng.TestNG.run(TestNG.java:1031)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\nCaused by: java.util.concurrent.TimeoutException\r\n\tat java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)\r\n\tat java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\t... 35 more\r\n",
+      "steps" : [ {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1675376247550,
+          "stop" : 1675376253063,
+          "duration" : 5513
+        },
+        "status" : "broken",
+        "statusMessage" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown",
+        "statusTrace" : "org.openqa.selenium.TimeoutException: Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:221)\r\n\tat extensions.UIActions.click(UIActions.java:42)\r\n\tat workflows.doctor.doctorFlows.confirmationInfectionToDrugFromInstructionPage(doctorFlows.java:390)\r\n\tat sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.test01_addAndSaveWithConfirmationDrugRequireConfirmationDailyToPatient(DrugWithConfirmationScenario.java:25)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\r\n\tat org.testng.TestRunner.run(TestRunner.java:596)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\r\n\tat org.testng.TestNG.run(TestNG.java:1031)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\nCaused by: java.util.concurrent.TimeoutException\r\n\tat java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)\r\n\tat java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\t... 35 more\r\n",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "Proxy element for: DefaultElementLocator 'By.xpath: //tr[@id='groupTable5_drugList']//td[@id='action']//span[@class='cursorPointer']'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "92cc7d0a54a880bb",
+      "name" : "Page Screen-Shot",
+      "source" : "92cc7d0a54a880bb.png",
+      "type" : "image/png",
+      "size" : 133958
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 22,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "closeSession",
+    "time" : {
+      "start" : 1675376271692,
+      "stop" : 1675376271999,
+      "duration" : 307
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1675376257773,
+      "stop" : 1675376259304,
+      "duration" : 1531
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Clear Text Element",
+      "time" : {
+        "start" : 1675376259208,
+        "stop" : 1675376259260,
+        "duration" : 52
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> id: user_name]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Clear Text Element",
+      "time" : {
+        "start" : 1675376259268,
+        "stop" : 1675376259304,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (764f61e3c08b8a6c40df99ed12123884)] -> id: password]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario"
+  }, {
+    "name" : "testClass",
+    "value" : "sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario"
+  }, {
+    "name" : "testMethod",
+    "value" : "test01_addAndSaveWithConfirmationDrugRequireConfirmationDailyToPatient"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SanityTest"
+  }, {
+    "name" : "suite",
+    "value" : "antibioticDrugAddConfirmation"
+  }, {
+    "name" : "subSuite",
+    "value" : "sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario"
+  }, {
+    "name" : "host",
+    "value" : "COMPU_EFRAT"
+  }, {
+    "name" : "thread",
+    "value" : "8832@COMPU_EFRAT.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7235ca43889b1774.json",
+  "parameterValues" : [ ]
+}

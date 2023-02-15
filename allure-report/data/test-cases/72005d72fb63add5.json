@@ -1,0 +1,1491 @@
+{
+  "uid" : "72005d72fb63add5",
+  "name" : "add all instruction emergency to patient",
+  "fullName" : "regression.regression2.addAndSaveAllInstructionToPatient",
+  "historyId" : "f9d93a4615e373b25cbe144a0a9a75b5",
+  "time" : {
+    "start" : 1676082018092,
+    "stop" : 1676082095132,
+    "duration" : 77040
+  },
+  "description" : "add all instruction emergency to patient",
+  "descriptionHtml" : "<p>add all instruction emergency to patient</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1676082010234,
+      "stop" : 1676082018048,
+      "duration" : 7814
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "BeforeSuite",
+    "time" : {
+      "start" : 1676082009688,
+      "stop" : 1676082010204,
+      "duration" : 516
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "add all instruction emergency to patient",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : " Login With Choose Role",
+      "time" : {
+        "start" : 1676082018129,
+        "stop" : 1676082019275,
+        "duration" : 1146
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1676082018167,
+          "stop" : 1676082018257,
+          "duration" : 90
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: user_name]"
+        }, {
+          "name" : "text",
+          "value" : "test"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1676082018268,
+          "stop" : 1676082018341,
+          "duration" : 73
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: password]"
+        }, {
+          "name" : "text",
+          "value" : "Te231121"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1676082018351,
+          "stop" : 1676082018423,
+          "duration" : 72
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: submitBtn]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Select text from List",
+        "time" : {
+          "start" : 1676082019204,
+          "stop" : 1676082019275,
+          "duration" : 71
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1676082019224,
+            "stop" : 1676082019275,
+            "duration" : 51
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> tag name: li]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "list",
+          "value" : "[[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> tag name: li]]"
+        }, {
+          "name" : "text",
+          "value" : "רופא"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "r",
+        "value" : "d"
+      } ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "choose department",
+      "time" : {
+        "start" : 1676082019279,
+        "stop" : 1676082023630,
+        "duration" : 4351
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1676082019599,
+          "stop" : 1676082020988,
+          "duration" : 1389
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: dropdownBasic1]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1676082023529,
+          "stop" : 1676082023630,
+          "duration" : 101
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //ngb-typeahead-window//button]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "dep",
+        "value" : "חדר מיון"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " patientBoxEntry",
+      "time" : {
+        "start" : 1676082023630,
+        "stop" : 1676082025803,
+        "duration" : 2173
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1676082023932,
+          "stop" : 1676082023994,
+          "duration" : 62
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //p-table[contains(@class,'depMeushpazim-table patients-table')]//tr]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Verify Text in Element",
+        "time" : {
+          "start" : 1676082025770,
+          "stop" : 1676082025803,
+          "duration" : 33
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //span[@class='value-label']]"
+        }, {
+          "name" : "expected",
+          "value" : "מס' שרות:"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "index",
+        "value" : "4"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " stop all active instruction to patient",
+      "time" : {
+        "start" : 1676082025837,
+        "stop" : 1676082030884,
+        "duration" : 5047
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " click on newDrug",
+      "time" : {
+        "start" : 1676082030884,
+        "stop" : 1676082036535,
+        "duration" : 5651
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1676082031422,
+          "stop" : 1676082031521,
+          "duration" : 99
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: btnAddMedicine]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " fill DrugForm for addNewDrugOnceOnly",
+      "time" : {
+        "start" : 1676082036535,
+        "stop" : 1676082043239,
+        "duration" : 6704
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : " Fill Drug's Details",
+        "time" : {
+          "start" : 1676082036535,
+          "stop" : 1676082043042,
+          "duration" : 6507
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : " confirm same instruction",
+          "time" : {
+            "start" : 1676082036983,
+            "stop" : 1676082043042,
+            "duration" : 6059
+          },
+          "status" : "broken",
+          "statusMessage" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#buttonImport\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: aea21a7135f5e6fa9a67761dcbb20b1f\n*** Element info: {Using=id, value=buttonImport}",
+          "statusTrace" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#buttonImport\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: aea21a7135f5e6fa9a67761dcbb20b1f\n*** Element info: {Using=id, value=buttonImport}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:193)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)\r\n\tat workflows.doctor.doctorFlows.confirmModalSameInstruction(doctorFlows.java:380)\r\n\tat workflows.doctor.doctorFlows.fillDrugsDetails(doctorFlows.java:125)\r\n\tat workflows.doctor.doctorFlows.drugFormAddDrugOnceOnly(doctorFlows.java:228)\r\n\tat regression.regression2.addAndSaveAllInstructionToPatient(regression2.java:29)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\r\n\tat org.testng.TestRunner.run(TestRunner.java:596)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\r\n\tat org.testng.TestNG.run(TestNG.java:1031)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "drugName",
+          "value" : "TAB acetylsalicylic acid 100mg (MICROPIRIN)"
+        }, {
+          "name" : "dosage",
+          "value" : "null"
+        }, {
+          "name" : "routeAdministration",
+          "value" : "null"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1676082043091,
+          "stop" : 1676082043173,
+          "duration" : 82
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: drugComment]"
+        }, {
+          "name" : "text",
+          "value" : "בדיקות אוטו'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "drugName",
+        "value" : "TAB acetylsalicylic acid 100mg (MICROPIRIN)"
+      }, {
+        "name" : "dosage",
+        "value" : "null"
+      }, {
+        "name" : "hour",
+        "value" : "null"
+      }, {
+        "name" : "routeAdinistration",
+        "value" : "null"
+      }, {
+        "name" : "withExecute",
+        "value" : "false"
+      }, {
+        "name" : "addAndClose",
+        "value" : "false"
+      } ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " fill DrugForm for addNewDrugSOS",
+      "time" : {
+        "start" : 1676082044265,
+        "stop" : 1676082046355,
+        "duration" : 2090
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : " Fill Drug's Details",
+        "time" : {
+          "start" : 1676082044265,
+          "stop" : 1676082045763,
+          "duration" : 1498
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : " confirm same instruction",
+          "time" : {
+            "start" : 1676082044626,
+            "stop" : 1676082045682,
+            "duration" : 1056
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "drugName",
+          "value" : "INJ acetylcysteine 2g/10ml (PARVOLEX)"
+        }, {
+          "name" : "dosage",
+          "value" : "20"
+        }, {
+          "name" : "routeAdministration",
+          "value" : "null"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1676082045769,
+          "stop" : 1676082045835,
+          "duration" : 66
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: drugComment]"
+        }, {
+          "name" : "text",
+          "value" : "בדיקות אוטו'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : " Fill Hour In OnceOnly",
+        "time" : {
+          "start" : 1676082045883,
+          "stop" : 1676082046328,
+          "duration" : 445
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1676082045893,
+            "stop" : 1676082045961,
+            "duration" : 68
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: sosMaxTimesPerDay]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Select text from List",
+          "time" : {
+            "start" : 1676082045971,
+            "stop" : 1676082046067,
+            "duration" : 96
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Click on Element",
+            "time" : {
+              "start" : 1676082046014,
+              "stop" : 1676082046067,
+              "duration" : 53
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "elem",
+              "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li]"
+            } ],
+            "stepsCount" : 0,
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "list",
+            "value" : "[[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li]]"
+          }, {
+            "name" : "text",
+            "value" : "3"
+          } ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1676082046076,
+            "stop" : 1676082046138,
+            "duration" : 62
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: sosMinTimesPerDay]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Select text from ListInsideAnotherTag",
+          "time" : {
+            "start" : 1676082046148,
+            "stop" : 1676082046328,
+            "duration" : 180
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Click on Element",
+            "time" : {
+              "start" : 1676082046271,
+              "stop" : 1676082046328,
+              "duration" : 57
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "elem",
+              "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li]"
+            } ],
+            "stepsCount" : 0,
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "list",
+            "value" : "[[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li]]"
+          }, {
+            "name" : "text",
+            "value" : "5"
+          } ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "max",
+          "value" : "3"
+        }, {
+          "name" : "min",
+          "value" : "5"
+        } ],
+        "stepsCount" : 6,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "drugName",
+        "value" : "INJ acetylcysteine 2g/10ml (PARVOLEX)"
+      }, {
+        "name" : "dosage",
+        "value" : "20"
+      }, {
+        "name" : "routeAdinistration",
+        "value" : "null"
+      }, {
+        "name" : "addAndClose",
+        "value" : "false"
+      } ],
+      "stepsCount" : 10,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " Fill DrugForm for addNewDrugDiluted",
+      "time" : {
+        "start" : 1676082047378,
+        "stop" : 1676082049377,
+        "duration" : 1999
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : " confirm same instruction",
+        "time" : {
+          "start" : 1676082047778,
+          "stop" : 1676082048829,
+          "duration" : 1051
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1676082048835,
+          "stop" : 1676082048904,
+          "duration" : 69
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: drugComment]"
+        }, {
+          "name" : "text",
+          "value" : "בדיקות אוטו'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : " Fill Hour In OnceOnly",
+        "time" : {
+          "start" : 1676082048939,
+          "stop" : 1676082049344,
+          "duration" : 405
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1676082048946,
+            "stop" : 1676082049008,
+            "duration" : 62
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: sosMaxTimesPerDay]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Select text from List",
+          "time" : {
+            "start" : 1676082049015,
+            "stop" : 1676082049110,
+            "duration" : 95
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Click on Element",
+            "time" : {
+              "start" : 1676082049058,
+              "stop" : 1676082049110,
+              "duration" : 52
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "elem",
+              "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li]"
+            } ],
+            "stepsCount" : 0,
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "list",
+            "value" : "[[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMaxTimesPerDay']/following-sibling::ul/li]]"
+          }, {
+            "name" : "text",
+            "value" : "3"
+          } ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1676082049117,
+            "stop" : 1676082049181,
+            "duration" : 64
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: sosMinTimesPerDay]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Select text from ListInsideAnotherTag",
+          "time" : {
+            "start" : 1676082049189,
+            "stop" : 1676082049344,
+            "duration" : 155
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Click on Element",
+            "time" : {
+              "start" : 1676082049295,
+              "stop" : 1676082049344,
+              "duration" : 49
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "elem",
+              "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li]"
+            } ],
+            "stepsCount" : 0,
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "list",
+            "value" : "[[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li], [[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@id='sosMinTimesPerDay']/following-sibling::ul/li]]"
+          }, {
+            "name" : "text",
+            "value" : "5"
+          } ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "max",
+          "value" : "3"
+        }, {
+          "name" : "min",
+          "value" : "5"
+        } ],
+        "stepsCount" : 6,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "drugName",
+        "value" : "INJ dexamethasone 4mg/1ml (DEXACORT)"
+      }, {
+        "name" : "dilutedName",
+        "value" : "null"
+      }, {
+        "name" : "possId",
+        "value" : "2"
+      }, {
+        "name" : "addAndClose",
+        "value" : "false"
+      } ],
+      "stepsCount" : 9,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " Fill DrugForm for addNewDrugDiluted",
+      "time" : {
+        "start" : 1676082050397,
+        "stop" : 1676082052091,
+        "duration" : 1694
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : " confirm same instruction",
+        "time" : {
+          "start" : 1676082050795,
+          "stop" : 1676082051847,
+          "duration" : 1052
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1676082051854,
+          "stop" : 1676082051921,
+          "duration" : 67
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: drugComment]"
+        }, {
+          "name" : "text",
+          "value" : "בדיקות אוטו'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : " Fill rate",
+        "time" : {
+          "start" : 1676082051975,
+          "stop" : 1676082052048,
+          "duration" : 73
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Update Text Element",
+          "time" : {
+            "start" : 1676082051984,
+            "stop" : 1676082052048,
+            "duration" : 64
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: MinRate]"
+          }, {
+            "name" : "text",
+            "value" : "20"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "rate",
+          "value" : "20"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "drugName",
+        "value" : "INF dextrose 5% 1000ml (GLUCOSE)"
+      }, {
+        "name" : "dilutedName",
+        "value" : "null"
+      }, {
+        "name" : "possId",
+        "value" : "12"
+      }, {
+        "name" : "addAndClose",
+        "value" : "true"
+      } ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " click on newGeneralInstruction",
+      "time" : {
+        "start" : 1676082052091,
+        "stop" : 1676082053415,
+        "duration" : 1324
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "fill DrugForm for addNewGeneralOnceOnly",
+      "time" : {
+        "start" : 1676082053422,
+        "stop" : 1676082060006,
+        "duration" : 6584
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : " go to newGeneral",
+        "time" : {
+          "start" : 1676082053422,
+          "stop" : 1676082059793,
+          "duration" : 6371
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1676082053563,
+            "stop" : 1676082053649,
+            "duration" : 86
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //ngb-accordion/div//button]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1676082053668,
+            "stop" : 1676082053735,
+            "duration" : 67
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //div[@class='sub-list']/div]] -> tag name: input]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : " confirm same instruction",
+          "time" : {
+            "start" : 1676082053736,
+            "stop" : 1676082059793,
+            "duration" : 6057
+          },
+          "status" : "broken",
+          "statusMessage" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#buttonImport\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: aea21a7135f5e6fa9a67761dcbb20b1f\n*** Element info: {Using=id, value=buttonImport}",
+          "statusTrace" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#buttonImport\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: aea21a7135f5e6fa9a67761dcbb20b1f\n*** Element info: {Using=id, value=buttonImport}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:193)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)\r\n\tat workflows.doctor.doctorFlows.confirmModalSameInstruction(doctorFlows.java:380)\r\n\tat workflows.doctor.generalInstructionFlows.chooseGeneralInstruction(generalInstructionFlows.java:22)\r\n\tat workflows.doctor.generalInstructionFlows.generalFormAddGeneralInsOnceOnly(generalInstructionFlows.java:115)\r\n\tat regression.regression2.addAndSaveAllInstructionToPatient(regression2.java:41)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\r\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\r\n\tat org.testng.TestRunner.run(TestRunner.java:596)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\r\n\tat org.testng.TestNG.run(TestNG.java:1031)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "categoryIndex",
+          "value" : "2"
+        }, {
+          "name" : "subCategoryIndex",
+          "value" : "1"
+        } ],
+        "stepsCount" : 3,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1676082059905,
+          "stop" : 1676082060005,
+          "duration" : 100
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //button[@class='btn btn-defualt btn-submit btn-click ']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "category",
+        "value" : "2"
+      }, {
+        "name" : "sub_category",
+        "value" : "1"
+      }, {
+        "name" : "hour",
+        "value" : "null"
+      }, {
+        "name" : "isFuture",
+        "value" : "false"
+      }, {
+        "name" : "addAndSave",
+        "value" : "true"
+      } ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " click on approvalInstructions",
+      "time" : {
+        "start" : 1676082061009,
+        "stop" : 1676082063519,
+        "duration" : 2510
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Wait for text in element",
+        "time" : {
+          "start" : 1676082061028,
+          "stop" : 1676082061086,
+          "duration" : 58
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: approvalDrug]] -> tag name: span]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "sign",
+        "time" : {
+          "start" : 1676082061086,
+          "stop" : 1676082063519,
+          "duration" : 2433
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "goToCategory",
+      "time" : {
+        "start" : 1676082065531,
+        "stop" : 1676082069617,
+        "duration" : 4086
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "categoryName",
+        "value" : "cardex"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "execute all daily_onceOnly_sos_weekly_byHour ins",
+      "time" : {
+        "start" : 1676082069632,
+        "stop" : 1676082074629,
+        "duration" : 4997
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1676082074062,
+          "stop" : 1676082074172,
+          "duration" : 110
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //input[contains(@id, 'drugInsDayModeCheckbox')]]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1676082074185,
+          "stop" : 1676082074258,
+          "duration" : 73
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //input[contains(@id, 'drugInsDayModeCheckbox')]]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1676082074270,
+          "stop" : 1676082074345,
+          "duration" : 75
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //input[contains(@id, 'drugInsDayModeCheckbox')]]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1676082074356,
+          "stop" : 1676082074424,
+          "duration" : 68
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //input[contains(@id, 'drugInsDayModeCheckbox')]]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1676082074436,
+          "stop" : 1676082074507,
+          "duration" : 71
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //input[contains(@id, 'drugInsDayModeCheckbox')]]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "execute liquid drugs and blood-products",
+      "time" : {
+        "start" : 1676082074629,
+        "stop" : 1676082086282,
+        "duration" : 11653
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1676082075046,
+          "stop" : 1676082075198,
+          "duration" : 152
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //input[contains(@id, 'solExec')][not(@disabled)]]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "execute general-ins",
+      "time" : {
+        "start" : 1676082086282,
+        "stop" : 1676082089433,
+        "duration" : 3151
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1676082086297,
+          "stop" : 1676082086414,
+          "duration" : 117
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> xpath: //input[contains(@id, 'generalInsDayModeCheckbox')]]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "execution nurse sign",
+      "time" : {
+        "start" : 1676082090442,
+        "stop" : 1676082095129,
+        "duration" : 4687
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "sign",
+        "time" : {
+          "start" : 1676082090583,
+          "stop" : 1676082095102,
+          "duration" : 4519
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Verify Text in Element",
+        "time" : {
+          "start" : 1676082095108,
+          "stop" : 1676082095129,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: btnApproval]"
+        }, {
+          "name" : "expected",
+          "value" : "0"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 69,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1676082095222,
+      "stop" : 1676082096820,
+      "duration" : 1598
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Clear Text Element",
+      "time" : {
+        "start" : 1676082096715,
+        "stop" : 1676082096768,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: user_name]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Clear Text Element",
+      "time" : {
+        "start" : 1676082096773,
+        "stop" : 1676082096820,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (aea21a7135f5e6fa9a67761dcbb20b1f)] -> id: password]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "closeSession",
+    "time" : {
+      "start" : 1676082096828,
+      "stop" : 1676082097214,
+      "duration" : 386
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "regression.regression2"
+  }, {
+    "name" : "testClass",
+    "value" : "regression.regression2"
+  }, {
+    "name" : "testMethod",
+    "value" : "addAndSaveAllInstructionToPatient"
+  }, {
+    "name" : "parentSuite",
+    "value" : "regression_2"
+  }, {
+    "name" : "suite",
+    "value" : "addAndExecute_emergency"
+  }, {
+    "name" : "subSuite",
+    "value" : "regression.regression2"
+  }, {
+    "name" : "host",
+    "value" : "COMPU_EFRAT"
+  }, {
+    "name" : "thread",
+    "value" : "28472@COMPU_EFRAT.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "72005d72fb63add5.json",
+  "parameterValues" : [ ]
+}

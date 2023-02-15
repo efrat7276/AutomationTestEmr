@@ -1,0 +1,782 @@
+{
+  "uid" : "b51c9f7f1d19c399",
+  "name" : "test add and save future drug daily ",
+  "fullName" : "sanity.UnitTest.instructionToPatient.DrugsScenario.test02_addAndSaveFutureDrugDailyToPatient",
+  "historyId" : "371242fcc4a23a5381a9a59a49db2842",
+  "time" : {
+    "start" : 1676326284355,
+    "stop" : 1676326302883,
+    "duration" : 18528
+  },
+  "description" : "test add and save future drug daily ",
+  "descriptionHtml" : "<p>test add and save future drug daily</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1676326245389,
+      "stop" : 1676326250778,
+      "duration" : 5389
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "BeforeSuite",
+    "time" : {
+      "start" : 1676326213056,
+      "stop" : 1676326213456,
+      "duration" : 400
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "test add and save future drug daily ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : " Login With Choose Role",
+      "time" : {
+        "start" : 1676326284355,
+        "stop" : 1676326285015,
+        "duration" : 660
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1676326284362,
+          "stop" : 1676326284413,
+          "duration" : 51
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> id: user_name]"
+        }, {
+          "name" : "text",
+          "value" : "test"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Update Text Element",
+        "time" : {
+          "start" : 1676326284420,
+          "stop" : 1676326284490,
+          "duration" : 70
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> id: password]"
+        }, {
+          "name" : "text",
+          "value" : "Te231121"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1676326284496,
+          "stop" : 1676326284559,
+          "duration" : 63
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> id: submitBtn]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Select text from List",
+        "time" : {
+          "start" : 1676326284938,
+          "stop" : 1676326285015,
+          "duration" : 77
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1676326284956,
+            "stop" : 1676326285015,
+            "duration" : 59
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> tag name: li]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "list",
+          "value" : "[[[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> tag name: li], [[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> tag name: li]]"
+        }, {
+          "name" : "text",
+          "value" : "רופא"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "r",
+        "value" : "d"
+      } ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " patientBoxEntry",
+      "time" : {
+        "start" : 1676326285015,
+        "stop" : 1676326288220,
+        "duration" : 3205
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1676326286781,
+          "stop" : 1676326286878,
+          "duration" : 97
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> xpath: //p-table[contains(@class,'depMeushpazim-table patients-table')]//tr]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Verify Text in Element",
+        "time" : {
+          "start" : 1676326288193,
+          "stop" : 1676326288220,
+          "duration" : 27
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> xpath: //span[@class='value-label']]"
+        }, {
+          "name" : "expected",
+          "value" : "מס' שרות:"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "index",
+        "value" : "4"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "add and save the drug as daily to patient",
+      "time" : {
+        "start" : 1676326288220,
+        "stop" : 1676326298542,
+        "duration" : 10322
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : " click on newDrug",
+        "time" : {
+          "start" : 1676326288220,
+          "stop" : 1676326296506,
+          "duration" : 8286
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Click on Element",
+          "time" : {
+            "start" : 1676326291398,
+            "stop" : 1676326291497,
+            "duration" : 99
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> id: btnAddMedicine]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : " fill DrugForm for addNewDrugDaily",
+        "time" : {
+          "start" : 1676326296506,
+          "stop" : 1676326298541,
+          "duration" : 2035
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : " Fill Drug's Details",
+          "time" : {
+            "start" : 1676326296506,
+            "stop" : 1676326298076,
+            "duration" : 1570
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : " confirm same instruction",
+            "time" : {
+              "start" : 1676326296925,
+              "stop" : 1676326297993,
+              "duration" : 1068
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "drugName",
+            "value" : "INJ PACLitaxel 150mg"
+          }, {
+            "name" : "dosage",
+            "value" : "100"
+          }, {
+            "name" : "routeAdministration",
+            "value" : "null"
+          } ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Update Text Element",
+          "time" : {
+            "start" : 1676326298082,
+            "stop" : 1676326298179,
+            "duration" : 97
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> id: drugComment]"
+          }, {
+            "name" : "text",
+            "value" : "בדיקות אוטו'"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : " Fill Details In Daily",
+          "time" : {
+            "start" : 1676326298179,
+            "stop" : 1676326298263,
+            "duration" : 84
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "numberOfTimeDaily",
+            "value" : "3"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : " choose a future day",
+          "time" : {
+            "start" : 1676326298263,
+            "stop" : 1676326298490,
+            "duration" : 227
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "Click on Element",
+            "time" : {
+              "start" : 1676326298272,
+              "stop" : 1676326298384,
+              "duration" : 112
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "elem",
+              "value" : "[[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> xpath: //emr-datepicker//i]"
+            } ],
+            "stepsCount" : 0,
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          }, {
+            "name" : "Click on Element",
+            "time" : {
+              "start" : 1676326298427,
+              "stop" : 1676326298490,
+              "duration" : 63
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "elem",
+              "value" : "[[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> xpath: //emr-datepicker//div[@class='ngb-dp-day']]"
+            } ],
+            "stepsCount" : 0,
+            "hasContent" : true,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 2,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "drugName",
+          "value" : "INJ PACLitaxel 150mg"
+        }, {
+          "name" : "dosage",
+          "value" : "100"
+        }, {
+          "name" : "numberOfTimeDaily",
+          "value" : "3"
+        }, {
+          "name" : "routeAdinistration",
+          "value" : "null"
+        }, {
+          "name" : "isAntibiotic",
+          "value" : "false"
+        }, {
+          "name" : "isFuture",
+          "value" : "true"
+        }, {
+          "name" : "addAndClose",
+          "value" : "true"
+        } ],
+        "stepsCount" : 7,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "drugName",
+        "value" : "INJ PACLitaxel 150mg"
+      }, {
+        "name" : "dosage",
+        "value" : "100"
+      }, {
+        "name" : "numberOfTime",
+        "value" : "3"
+      }, {
+        "name" : "isAntibiotic",
+        "value" : "false"
+      }, {
+        "name" : "isFuture",
+        "value" : "true"
+      } ],
+      "stepsCount" : 10,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : " click on approvalInstructions",
+      "time" : {
+        "start" : 1676326298542,
+        "stop" : 1676326302883,
+        "duration" : 4341
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Wait for text in element",
+        "time" : {
+          "start" : 1676326298817,
+          "stop" : 1676326300404,
+          "duration" : 1587
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[[[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> id: approvalDrug]] -> tag name: span]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "sign",
+        "time" : {
+          "start" : 1676326300404,
+          "stop" : 1676326302883,
+          "duration" : 2479
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 23,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1676326302886,
+      "stop" : 1676326304111,
+      "duration" : 1225
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Clear Text Element",
+      "time" : {
+        "start" : 1676326304009,
+        "stop" : 1676326304060,
+        "duration" : 51
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> id: user_name]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Clear Text Element",
+      "time" : {
+        "start" : 1676326304065,
+        "stop" : 1676326304111,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (39259907af8ee897810c72f312b4d564)] -> id: password]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "closeSession",
+    "time" : {
+      "start" : 1676326432584,
+      "stop" : 1676326432975,
+      "duration" : 391
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "sanity.UnitTest.instructionToPatient.DrugsScenario"
+  }, {
+    "name" : "testClass",
+    "value" : "sanity.UnitTest.instructionToPatient.DrugsScenario"
+  }, {
+    "name" : "testMethod",
+    "value" : "test02_addAndSaveFutureDrugDailyToPatient"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SanityTest"
+  }, {
+    "name" : "suite",
+    "value" : "addAllInstructionToPatient"
+  }, {
+    "name" : "subSuite",
+    "value" : "sanity.UnitTest.instructionToPatient.DrugsScenario"
+  }, {
+    "name" : "host",
+    "value" : "COMPU_EFRAT"
+  }, {
+    "name" : "thread",
+    "value" : "20576@COMPU_EFRAT.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "bd4e7589873c7b06",
+      "status" : "passed",
+      "time" : {
+        "start" : 1676239880628,
+        "stop" : 1676239899072,
+        "duration" : 18444
+      }
+    }, {
+      "uid" : "1cd0f021b75852db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1676153454447,
+        "stop" : 1676153471620,
+        "duration" : 17173
+      }
+    }, {
+      "uid" : "97ad90111324e973",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:56690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 38bef2fd88ab0b4baf9a62cfa9c8eba9\n*** Element info: {Using=id, value=approvalDrug}",
+      "time" : {
+        "start" : 1676067052863,
+        "stop" : 1676067071919,
+        "duration" : 19056
+      }
+    }, {
+      "uid" : "eda36700dda08d3f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1675980655877,
+        "stop" : 1675980673602,
+        "duration" : 17725
+      }
+    }, {
+      "uid" : "64813baf9af03c2d",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:51131}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ab974b2962add4d881c60ea3716fbe80\n*** Element info: {Using=id, value=approvalDrug}",
+      "time" : {
+        "start" : 1675894268212,
+        "stop" : 1675894287141,
+        "duration" : 18929
+      }
+    }, {
+      "uid" : "f9db0598c2c91eb3",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1675807880061,
+        "stop" : 1675807889472,
+        "duration" : 9411
+      }
+    }, {
+      "uid" : "af887e5229394619",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:56980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 27c8fa7b64786340e8eca881d6f70daa\n*** Element info: {Using=id, value=approvalDrug}",
+      "time" : {
+        "start" : 1675721467093,
+        "stop" : 1675721486513,
+        "duration" : 19420
+      }
+    }, {
+      "uid" : "27d04264ffcca180",
+      "status" : "passed",
+      "time" : {
+        "start" : 1675635073682,
+        "stop" : 1675635089662,
+        "duration" : 15980
+      }
+    }, {
+      "uid" : "b7df077c4c6d6d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1675548677516,
+        "stop" : 1675548693902,
+        "duration" : 16386
+      }
+    }, {
+      "uid" : "a5eb864d6ab46063",
+      "status" : "passed",
+      "time" : {
+        "start" : 1675462275282,
+        "stop" : 1675462291756,
+        "duration" : 16474
+      }
+    }, {
+      "uid" : "ac22179c9566c061",
+      "status" : "passed",
+      "time" : {
+        "start" : 1675375873749,
+        "stop" : 1675375890916,
+        "duration" : 17167
+      }
+    }, {
+      "uid" : "3fd90fd82a14c973",
+      "status" : "passed",
+      "time" : {
+        "start" : 1675289477462,
+        "stop" : 1675289494123,
+        "duration" : 16661
+      }
+    }, {
+      "uid" : "fea5cfa8e75c454b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1675203078274,
+        "stop" : 1675203100076,
+        "duration" : 21802
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "95b691d2686c4e5a",
+        "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/81/allure/#testresult/95b691d2686c4e5a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1676239880628,
+          "stop" : 1676239899072,
+          "duration" : 18444
+        }
+      }, {
+        "uid" : "d32eb78b9ae63db9",
+        "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/80/allure/#testresult/d32eb78b9ae63db9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1676153454447,
+          "stop" : 1676153471620,
+          "duration" : 17173
+        }
+      }, {
+        "uid" : "c41290aa7365d554",
+        "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/79/allure/#testresult/c41290aa7365d554",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:56690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 38bef2fd88ab0b4baf9a62cfa9c8eba9\n*** Element info: {Using=id, value=approvalDrug}",
+        "time" : {
+          "start" : 1676067052863,
+          "stop" : 1676067071919,
+          "duration" : 19056
+        }
+      }, {
+        "uid" : "52b10f9e76b3a410",
+        "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/77/allure/#testresult/52b10f9e76b3a410",
+        "status" : "broken",
+        "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:51131}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ab974b2962add4d881c60ea3716fbe80\n*** Element info: {Using=id, value=approvalDrug}",
+        "time" : {
+          "start" : 1675894268212,
+          "stop" : 1675894287141,
+          "duration" : 18929
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b51c9f7f1d19c399.json",
+  "parameterValues" : [ ]
+}
