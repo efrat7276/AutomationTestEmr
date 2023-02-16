@@ -1,5 +1,4 @@
-/allure-results
-/allure-report
-/.idea
-/temp
-/target
+allure-results/
+allure-report/
+temp/
+target/
