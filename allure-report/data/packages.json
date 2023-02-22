@@ -7,7 +7,7 @@
       "name" : "regression1",
       "children" : [ {
         "name" : "BeforeSuite",
-        "uid" : "150363e1108c1521",
+        "uid" : "4c0852a59e83b673",
         "parentUid" : "4d5d53860835d49797fe09f4bd62f547",
         "status" : "broken",
         "time" : {
@@ -20,7 +20,7 @@
         "parameters" : [ ]
       }, {
         "name" : "afterMethod",
-        "uid" : "27a91b8160377b28",
+        "uid" : "bddb9b1683af8dc9",
         "parentUid" : "4d5d53860835d49797fe09f4bd62f547",
         "status" : "broken",
         "time" : {
@@ -32,14 +32,27 @@
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "addToPatientAllPossibilityIns",
-        "uid" : "7e04d75d3435b8a2",
+        "name" : "startSession",
+        "uid" : "b463a2c24a90f07f",
         "parentUid" : "4d5d53860835d49797fe09f4bd62f547",
         "status" : "broken",
         "time" : {
-          "start" : 1675774632248,
-          "stop" : 1675774824774,
-          "duration" : 192526
+          "start" : 1676897352071,
+          "stop" : 1676897352074,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "be7254734c8798c7",
+        "parentUid" : "4d5d53860835d49797fe09f4bd62f547",
+        "status" : "broken",
+        "time" : {
+          "start" : 1677059911644,
+          "stop" : 1677059932172,
+          "duration" : 20528
         },
         "flaky" : false,
         "newFailed" : false,
@@ -47,39 +60,39 @@
       } ],
       "uid" : "4d5d53860835d49797fe09f4bd62f547"
     }, {
-      "name" : "regression2",
-      "children" : [ {
-        "name" : "addAndSaveAllInstructionToPatient",
-        "uid" : "be838825574ed7df",
-        "parentUid" : "447e45c62de21de2ed19b89732959ce7",
-        "status" : "broken",
-        "time" : {
-          "start" : 1675822817175,
-          "stop" : 1675822820665,
-          "duration" : 3490
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "447e45c62de21de2ed19b89732959ce7"
-    }, {
       "name" : "regression3",
       "children" : [ {
         "name" : "addAndDonSaveGeneralInsAt5",
-        "uid" : "baeff823eb8b3dee",
+        "uid" : "679204037babb197",
         "parentUid" : "7a810ae8dbbbcb14d43894fc8088f235",
         "status" : "broken",
         "time" : {
-          "start" : 1675827016345,
-          "stop" : 1675827030668,
-          "duration" : 14323
+          "start" : 1677036617754,
+          "stop" : 1677036634816,
+          "duration" : 17062
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
       "uid" : "7a810ae8dbbbcb14d43894fc8088f235"
+    }, {
+      "name" : "regression2",
+      "children" : [ {
+        "name" : "addAndSaveAllInstructionToPatient",
+        "uid" : "6747fcf847da6621",
+        "parentUid" : "447e45c62de21de2ed19b89732959ce7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1677060165325,
+          "stop" : 1677060180774,
+          "duration" : 15449
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "447e45c62de21de2ed19b89732959ce7"
     } ],
     "uid" : "58117110a648e9e5831fd75bbb74083d"
   }, {
@@ -90,13 +103,13 @@
         "name" : "StopInstructionScenario",
         "children" : [ {
           "name" : "test01_stopAllActiveInstructionToPatient",
-          "uid" : "f9a102d4783f465b",
+          "uid" : "34747a6be09bf124",
           "parentUid" : "c1832ce54c679bebada044e8c4121d1e",
           "status" : "passed",
           "time" : {
-            "start" : 1675807816893,
-            "stop" : 1675807833304,
-            "duration" : 16411
+            "start" : 1677017422448,
+            "stop" : 1677017433633,
+            "duration" : 11185
           },
           "flaky" : false,
           "newFailed" : false,
@@ -107,156 +120,156 @@
         "name" : "DrugsScenario",
         "children" : [ {
           "name" : "test01_addAndSaveDrugDailyToPatient",
-          "uid" : "dc06b1c5798bbaa7",
+          "uid" : "f393a874dded65c6",
           "parentUid" : "5462e7bb2ac1fb30f1a5c22d251e2d7d",
           "status" : "broken",
           "time" : {
-            "start" : 1675807840706,
-            "stop" : 1675807868808,
-            "duration" : 28102
+            "start" : 1677017442467,
+            "stop" : 1677017451165,
+            "duration" : 8698
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test01_nurseApprovalDrugDailyToPatient",
-          "uid" : "e4c1da70efdfc53e",
+          "uid" : "95240092e6c65975",
           "parentUid" : "5462e7bb2ac1fb30f1a5c22d251e2d7d",
           "status" : "broken",
           "time" : {
-            "start" : 1675807870500,
-            "stop" : 1675807878804,
-            "duration" : 8304
+            "start" : 1677017453159,
+            "stop" : 1677017463126,
+            "duration" : 9967
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test02_addAndSaveFutureDrugDailyToPatient",
-          "uid" : "b0b7b05cfdb07df0",
+          "uid" : "e6ece534e0f61bb2",
           "parentUid" : "5462e7bb2ac1fb30f1a5c22d251e2d7d",
           "status" : "broken",
           "time" : {
-            "start" : 1675807880061,
-            "stop" : 1675807889472,
-            "duration" : 9411
+            "start" : 1677017464489,
+            "stop" : 1677017482599,
+            "duration" : 18110
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test02_nurseApprovalFutureDrugDailyToPatient",
-          "uid" : "a04eb9f6837660c7",
+          "uid" : "ae856506c455092b",
           "parentUid" : "5462e7bb2ac1fb30f1a5c22d251e2d7d",
           "status" : "broken",
           "time" : {
-            "start" : 1675807890716,
-            "stop" : 1675807899579,
-            "duration" : 8863
+            "start" : 1677017484151,
+            "stop" : 1677017492153,
+            "duration" : 8002
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test03_addAndSaveDrugSOSToPatient",
-          "uid" : "72b78c7089b2ccb5",
+          "uid" : "90a0af1f7b4654e8",
           "parentUid" : "5462e7bb2ac1fb30f1a5c22d251e2d7d",
-          "status" : "failed",
+          "status" : "broken",
           "time" : {
-            "start" : 1675807901168,
-            "stop" : 1675807922261,
-            "duration" : 21093
+            "start" : 1677017494372,
+            "stop" : 1677017510733,
+            "duration" : 16361
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test03_nurseApprovalDrugSOSToPatient",
-          "uid" : "33fe65bc160f5e41",
+          "uid" : "292cbc05e09953e9",
           "parentUid" : "5462e7bb2ac1fb30f1a5c22d251e2d7d",
           "status" : "broken",
           "time" : {
-            "start" : 1675807923495,
-            "stop" : 1675807936753,
-            "duration" : 13258
+            "start" : 1677017512714,
+            "stop" : 1677017526602,
+            "duration" : 13888
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test04_addAndSaveDrugOnceOnlyToPatient",
-          "uid" : "e0b1e3d362eea8eb",
+          "uid" : "6cf1e826452610d9",
           "parentUid" : "5462e7bb2ac1fb30f1a5c22d251e2d7d",
           "status" : "broken",
           "time" : {
-            "start" : 1675807938013,
-            "stop" : 1675807946196,
-            "duration" : 8183
+            "start" : 1677017528141,
+            "stop" : 1677017536565,
+            "duration" : 8424
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test04_nurseApprovalDrugOnceOnlyToPatient",
-          "uid" : "cbacb3da2deabdb4",
+          "uid" : "cba611231ac5616",
           "parentUid" : "5462e7bb2ac1fb30f1a5c22d251e2d7d",
           "status" : "broken",
           "time" : {
-            "start" : 1675807947421,
-            "stop" : 1675807955814,
-            "duration" : 8393
+            "start" : 1677017537869,
+            "stop" : 1677017547185,
+            "duration" : 9316
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test05_addAndSaveDrugByHourToPatient",
-          "uid" : "b4cff67028ddc041",
+          "uid" : "39c1127bbab74810",
           "parentUid" : "5462e7bb2ac1fb30f1a5c22d251e2d7d",
-          "status" : "failed",
+          "status" : "broken",
           "time" : {
-            "start" : 1675807957050,
-            "stop" : 1675807971554,
-            "duration" : 14504
+            "start" : 1677017548460,
+            "stop" : 1677017556639,
+            "duration" : 8179
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test05_nurseApprovalDrugByHourToPatient",
-          "uid" : "2e93ddfd50869638",
+          "uid" : "28fcb74db3b31596",
           "parentUid" : "5462e7bb2ac1fb30f1a5c22d251e2d7d",
           "status" : "broken",
           "time" : {
-            "start" : 1675807972838,
-            "stop" : 1675807980937,
-            "duration" : 8099
+            "start" : 1677017557960,
+            "stop" : 1677017566138,
+            "duration" : 8178
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test06_addAndSaveDrugWeeklyToPatient",
-          "uid" : "18cd9930f45747ea",
+          "uid" : "bbd17db09aabca7c",
           "parentUid" : "5462e7bb2ac1fb30f1a5c22d251e2d7d",
-          "status" : "failed",
+          "status" : "broken",
           "time" : {
-            "start" : 1675807982311,
-            "stop" : 1675807997328,
-            "duration" : 15017
+            "start" : 1677017567727,
+            "stop" : 1677017575988,
+            "duration" : 8261
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test06_nurseApprovalDrugWeeklyToPatient",
-          "uid" : "b744b5ad1dd3be47",
+          "uid" : "514199bbc06cb812",
           "parentUid" : "5462e7bb2ac1fb30f1a5c22d251e2d7d",
           "status" : "broken",
           "time" : {
-            "start" : 1675807998603,
-            "stop" : 1675808011749,
-            "duration" : 13146
+            "start" : 1677017577288,
+            "stop" : 1677017590551,
+            "duration" : 13263
           },
           "flaky" : false,
           "newFailed" : false,
@@ -267,52 +280,52 @@
         "name" : "SolutionScenario",
         "children" : [ {
           "name" : "test06_addAndSaveDrugDilutedToPatient",
-          "uid" : "58dc7c5e18d3fc58",
+          "uid" : "b6926e5d86cbffa0",
           "parentUid" : "9c950c4f245f95f4daf9f5da0cb6ea4b",
-          "status" : "failed",
+          "status" : "broken",
           "time" : {
-            "start" : 1675808018980,
-            "stop" : 1675808039840,
-            "duration" : 20860
+            "start" : 1677017597880,
+            "stop" : 1677017606276,
+            "duration" : 8396
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test06_nurseApprovalDilutedToPatient",
-          "uid" : "fac3c022eac55d81",
+          "uid" : "4b487bd388fbc3a8",
           "parentUid" : "9c950c4f245f95f4daf9f5da0cb6ea4b",
           "status" : "broken",
           "time" : {
-            "start" : 1675808041502,
-            "stop" : 1675808055067,
-            "duration" : 13565
+            "start" : 1677017608144,
+            "stop" : 1677017621571,
+            "duration" : 13427
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test07_addAndSaveDrugContinuesToPatient",
-          "uid" : "af2ab3733a37c501",
+          "uid" : "c94992437f443c2b",
           "parentUid" : "9c950c4f245f95f4daf9f5da0cb6ea4b",
-          "status" : "failed",
+          "status" : "broken",
           "time" : {
-            "start" : 1675808056369,
-            "stop" : 1675808077363,
-            "duration" : 20994
+            "start" : 1677017623289,
+            "stop" : 1677017631601,
+            "duration" : 8312
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test07_nurseApprovalContinuesToPatient",
-          "uid" : "1437887e315776a0",
+          "uid" : "d45217a4152c72d8",
           "parentUid" : "9c950c4f245f95f4daf9f5da0cb6ea4b",
           "status" : "broken",
           "time" : {
-            "start" : 1675808078640,
-            "stop" : 1675808091929,
-            "duration" : 13289
+            "start" : 1677017632904,
+            "stop" : 1677017646520,
+            "duration" : 13616
           },
           "flaky" : false,
           "newFailed" : false,
@@ -323,52 +336,52 @@
         "name" : "GeneralInsScenario",
         "children" : [ {
           "name" : "test01_addAndSaveGeneralInsDailyToPatient",
-          "uid" : "fb3da71a7ce6d7ef",
+          "uid" : "91d5a6e92b7a6ecf",
           "parentUid" : "70f0c24d07fb7e168e5126bdfdc08a67",
-          "status" : "failed",
+          "status" : "broken",
           "time" : {
-            "start" : 1675808098514,
-            "stop" : 1675808113583,
-            "duration" : 15069
+            "start" : 1677017653643,
+            "stop" : 1677017661782,
+            "duration" : 8139
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test01_nurseApprovalGeneralInsDailyToPatient",
-          "uid" : "de2d7a80f8ef019a",
+          "uid" : "e977d009ed5363da",
           "parentUid" : "70f0c24d07fb7e168e5126bdfdc08a67",
           "status" : "broken",
           "time" : {
-            "start" : 1675808115272,
-            "stop" : 1675808123906,
-            "duration" : 8634
+            "start" : 1677017663303,
+            "stop" : 1677017671643,
+            "duration" : 8340
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test02_addAndSaveGeneralInsDailyFutureToPatient",
-          "uid" : "823903307fbda2a6",
+          "uid" : "cd10f8dc5d45d5e1",
           "parentUid" : "70f0c24d07fb7e168e5126bdfdc08a67",
-          "status" : "failed",
+          "status" : "broken",
           "time" : {
-            "start" : 1675808125448,
-            "stop" : 1675808135486,
-            "duration" : 10038
+            "start" : 1677017673008,
+            "stop" : 1677017681170,
+            "duration" : 8162
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test02_nurseApprovalGeneralInsFutureToPatient",
-          "uid" : "53654c6d02a94a7f",
+          "uid" : "4cff12d0d681258b",
           "parentUid" : "70f0c24d07fb7e168e5126bdfdc08a67",
           "status" : "broken",
           "time" : {
-            "start" : 1675808136643,
-            "stop" : 1675808144977,
-            "duration" : 8334
+            "start" : 1677017682482,
+            "stop" : 1677017691174,
+            "duration" : 8692
           },
           "flaky" : false,
           "newFailed" : false,
@@ -379,26 +392,26 @@
         "name" : "BloodProductScenario",
         "children" : [ {
           "name" : "test01_addAndSaveBloodProductToPatient",
-          "uid" : "969bc35f4392a243",
+          "uid" : "7e29a79094415150",
           "parentUid" : "4e428d1a4de62901d62cf6441e1c54d6",
           "status" : "passed",
           "time" : {
-            "start" : 1675808151857,
-            "stop" : 1675808155514,
-            "duration" : 3657
+            "start" : 1677017698223,
+            "stop" : 1677017701237,
+            "duration" : 3014
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test01_nurseApprovalBloodProductToPatient",
-          "uid" : "fc9d5a097f02406d",
+          "uid" : "d4e226ef245153f8",
           "parentUid" : "4e428d1a4de62901d62cf6441e1c54d6",
           "status" : "broken",
           "time" : {
-            "start" : 1675808158876,
-            "stop" : 1675808173755,
-            "duration" : 14879
+            "start" : 1677017702635,
+            "stop" : 1677017716055,
+            "duration" : 13420
           },
           "flaky" : false,
           "newFailed" : false,
@@ -409,26 +422,26 @@
         "name" : "NutritionScenario",
         "children" : [ {
           "name" : "test01_addAndSaveNutritionDailyToPatient",
-          "uid" : "3ff3167c9c9906c4",
+          "uid" : "9c0bac762ca4ad38",
           "parentUid" : "2e60d3870016d9ff57c5f4add245228f",
-          "status" : "failed",
+          "status" : "broken",
           "time" : {
-            "start" : 1675808180537,
-            "stop" : 1675808197373,
-            "duration" : 16836
+            "start" : 1677017722981,
+            "stop" : 1677017731414,
+            "duration" : 8433
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test01_nurseApprovalNutritionDailyToPatient",
-          "uid" : "6d6edae7c05150af",
+          "uid" : "94858759b6d4017",
           "parentUid" : "2e60d3870016d9ff57c5f4add245228f",
           "status" : "broken",
           "time" : {
-            "start" : 1675808198937,
-            "stop" : 1675808207790,
-            "duration" : 8853
+            "start" : 1677017732952,
+            "stop" : 1677017741229,
+            "duration" : 8277
           },
           "flaky" : false,
           "newFailed" : false,
@@ -441,26 +454,26 @@
       "name" : "addAndEditInstructionToPatient.EditDrugIns",
       "children" : [ {
         "name" : "test01_editDrugDailyDosage",
-        "uid" : "5f98fd19aa6fbf7c",
+        "uid" : "3de78f0dbd645122",
         "parentUid" : "a8499aeb7aea2b7b4f774f1045fe7e19",
         "status" : "broken",
         "time" : {
-          "start" : 1675808214689,
-          "stop" : 1675808231634,
-          "duration" : 16945
+          "start" : 1677017748899,
+          "stop" : 1677017766836,
+          "duration" : 17937
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test01_editDrugDailyNumberOfTime",
-        "uid" : "e1f4d233a611c9fc",
+        "uid" : "fa953dd9330b854d",
         "parentUid" : "a8499aeb7aea2b7b4f774f1045fe7e19",
         "status" : "broken",
         "time" : {
-          "start" : 1675808233181,
-          "stop" : 1675808251237,
-          "duration" : 18056
+          "start" : 1677017768495,
+          "stop" : 1677017784787,
+          "duration" : 16292
         },
         "flaky" : false,
         "newFailed" : false,
@@ -471,26 +484,26 @@
       "name" : "drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario",
       "children" : [ {
         "name" : "test01_addAndSaveWithConfirmationDrugRequireConfirmationDailyToPatient",
-        "uid" : "5cae43d405f28498",
+        "uid" : "4bde5b8862e15935",
         "parentUid" : "8745d47a984c907a4063de7c0d8bb9ea",
         "status" : "broken",
         "time" : {
-          "start" : 1675808257765,
-          "stop" : 1675808292536,
-          "duration" : 34771
+          "start" : 1677017792076,
+          "stop" : 1677017800291,
+          "duration" : 8215
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test01_nurseApprovalDrugDailyToPatient",
-        "uid" : "c50fc7c03791006",
+        "uid" : "16c89276997df34a",
         "parentUid" : "8745d47a984c907a4063de7c0d8bb9ea",
         "status" : "broken",
         "time" : {
-          "start" : 1675808294661,
-          "stop" : 1675808305481,
-          "duration" : 10820
+          "start" : 1677017801964,
+          "stop" : 1677017810473,
+          "duration" : 8509
         },
         "flaky" : false,
         "newFailed" : false,
@@ -501,52 +514,52 @@
       "name" : "emergency.DoctorEmergency",
       "children" : [ {
         "name" : "test01_checkHospitalStockCheckbox",
-        "uid" : "64b874aa1b48dc18",
+        "uid" : "b7982cfb2b5c974a",
         "parentUid" : "157434039740e3879347b1681094e80d",
         "status" : "passed",
         "time" : {
-          "start" : 1675808312077,
-          "stop" : 1675808327124,
-          "duration" : 15047
+          "start" : 1677017817781,
+          "stop" : 1677017832333,
+          "duration" : 14552
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test02_checkPossibilitiesInDrugForm",
-        "uid" : "58c4914fc53d73f3",
+        "uid" : "df385dc138596588",
         "parentUid" : "157434039740e3879347b1681094e80d",
         "status" : "passed",
         "time" : {
-          "start" : 1675808328993,
-          "stop" : 1675808344997,
-          "duration" : 16004
+          "start" : 1677017833809,
+          "stop" : 1677017849796,
+          "duration" : 15987
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test03_addDrugOnceOnly",
-        "uid" : "4644a51860327c47",
+        "uid" : "a2cfd8217a31c7e5",
         "parentUid" : "157434039740e3879347b1681094e80d",
         "status" : "failed",
         "time" : {
-          "start" : 1675808346356,
-          "stop" : 1675808363093,
-          "duration" : 16737
+          "start" : 1677017851241,
+          "stop" : 1677017871455,
+          "duration" : 20214
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test04_addDrugOnceOnlyAndExecute",
-        "uid" : "a8fa7a1199297675",
+        "uid" : "68c4bebd2565a7dc",
         "parentUid" : "157434039740e3879347b1681094e80d",
         "status" : "failed",
         "time" : {
-          "start" : 1675808364582,
-          "stop" : 1675808383120,
-          "duration" : 18538
+          "start" : 1677017872807,
+          "stop" : 1677017890983,
+          "duration" : 18176
         },
         "flaky" : false,
         "newFailed" : false,

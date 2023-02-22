@@ -6,7 +6,9 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import pageObjects.emr.addForms.DrugForm;
+import sun.awt.windows.ThemeReader;
 import utilities.CommonOps;
 import workflows.WebFlows;
 
@@ -95,20 +97,26 @@ public class doctorFlows extends CommonOps {
         // approvalInstruction();
     }
 
-    @Step(" click edit on the top patient's instruction ")
-    public static void editDrugDosage()  {
+   // @Step(" click edit on drug by name param ")
 
+
+    @Step(" click edit on the top patient's instruction ")
+    public static void editDrugDosage(int drug_index ,int dosage) throws InterruptedException {
+
+        UIActions.click(doctorInstructionPage.editIconList.get(drug_index));
+        Thread.sleep(2000);
         UIActions.clearText(drugForm.input_drugDosage);
-        UIActions.updateText(drugForm.input_drugDosage , "67");
+        UIActions.updateText(drugForm.input_drugDosage , String.valueOf(dosage));
         UIActions.click(drugForm.btn_add);
         approvalInstruction();
-       // Verifications
+   //     Verifications.
 
     }
 
     @Step(" click edit on the top patient's instruction ")
-    public static void editDrugNumberOfTime(int numberPerDay)  {
+    public static void editDrugNumberOfTime(int drug_index, int numberPerDay)  {
 
+        UIActions.click(doctorInstructionPage.editIconList.get(drug_index));
         UIActions.click(drugFormDailyPossibility.btn_numberOfTimesDaily);
         UIActions.selectFromList(drugFormDailyPossibility.numberOfTimesDaily , String.valueOf(numberPerDay));
         UIActions.click(drugForm.btn_add);
@@ -119,6 +127,7 @@ public class doctorFlows extends CommonOps {
 
     @Step(" Fill Drug's Details")
     public static void fillDrugsDetails(String drugName ,@Nullable String dosage ,@Nullable  String routeAdministration ){
+        wait.until(ExpectedConditions.textToBePresentInElement(drugForm.inp_selectDrug , ""));
         drugForm.inp_selectDrug.sendKeys(drugName);
         drugForm.inp_selectDrugTopList.click();
 
@@ -302,7 +311,7 @@ public class doctorFlows extends CommonOps {
         try{ confirmModalSameInstruction();}catch (Exception ex){}
         if(dilutedName != null) {
             drugForm.btn_diluted.click();
-            UIActions.selectFromList(drugForm.dilutedList, dilutedName);
+            UIActions.selectFromListInsideAnotherTag(drugForm.dilutedList, dilutedName);
         }
         UIActions.updateText(drugForm.input_drugComment, "בדיקות אוטו'");
 

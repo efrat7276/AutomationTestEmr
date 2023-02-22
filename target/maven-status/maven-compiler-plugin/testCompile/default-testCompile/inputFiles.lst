@@ -7,6 +7,7 @@ C:\Automation\AutomationProject_emr\src\test\java\sanity\UnitTest\instructionToP
 C:\Automation\AutomationProject_emr\src\test\java\sanity\UnitTest\instructionToPatient\GeneralInsScenario.java
 C:\Automation\AutomationProject_emr\src\test\java\sanity\UnitTest\instructionToPatient\BloodProductScenario.java
 C:\Automation\AutomationProject_emr\src\test\java\sanity\UnitTest\general\Patient.java
+C:\Automation\AutomationProject_emr\src\test\java\regression\actionOnInstruction\regression_updateDrug.java
 C:\Automation\AutomationProject_emr\src\test\java\sanity\UnitTest\addAndEditInstructionToPatient\EditDrugIns.java
 C:\Automation\AutomationProject_emr\src\test\java\sanity\UnitTest\emergency\DoctorEmergency.java
 C:\Automation\AutomationProject_emr\src\test\java\sanity\UnitTest\instructionToPatient\SolutionScenario.java

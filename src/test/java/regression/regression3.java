@@ -15,7 +15,7 @@ public class regression3 extends CommonOps {
 
     @Test(description = "add generalIns list to patient")
     @Description("add generalIns list to patient")
-    public void addAndDonSaveGeneralInsAt5(){
+    public void addAndDonSaveGeneralInsAt5() throws InterruptedException{
 
         WebFlows.login('d');
         departmentFlows.chooseDepartment("חדר מיון");

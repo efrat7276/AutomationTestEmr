@@ -52,7 +52,10 @@ public class DoctorInstructionPage {
   //tables
 
     @FindBy(how = How.XPATH, using="//drug-ins//*[@class='table main-table']")
-    public List<WebElement> tableDrugList;
+    public WebElement tableDrug;
+
+    @FindBy(how = How.XPATH, using="//drug-ins//*[@class='table main-table']//tr[@id='groupTable2_drugList']")
+    public List<WebElement > drugList;
 
     @FindBy(how = How.XPATH, using="//general-ins//*[@class='table main-table']")
     public List<WebElement> tableGeneralList;
@@ -66,6 +69,9 @@ public class DoctorInstructionPage {
 
     @FindBy(how = How.XPATH, using="//tr[@id='groupTable5_drugList']//td[@id='action']//span[@class='cursorPointer']")
     public WebElement requireConfirmationIcon;
+
+    @FindBy(how = How.XPATH, using="//td[@id='Dosage']/div/span[1]")
+    public List< WebElement> dosageList;
 
 // icons
 

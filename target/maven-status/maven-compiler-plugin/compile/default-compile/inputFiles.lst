@@ -15,10 +15,12 @@ C:\Automation\AutomationProject_emr\src\main\java\workflows\db\GeneralInstructio
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\addForms\DrugFormTimeLimitPossibility.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\DoctorInstructionPage.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\addForms\DrugFormOnceOnlyPossibility.java
+C:\Automation\AutomationProject_emr\src\main\java\models\InstructionObject.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\menu\MainMenuPage.java
 C:\Automation\AutomationProject_emr\src\main\java\utilities\ManageDDT_int.java
 C:\Automation\AutomationProject_emr\src\main\java\utilities\Base.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\ChooseDepartmentListPage.java
+C:\Automation\AutomationProject_emr\src\main\java\workflows\general\general.java
 C:\Automation\AutomationProject_emr\src\main\java\extensions\Verifications.java
 C:\Automation\AutomationProject_emr\src\main\java\workflows\regression\drugsSenario.java
 C:\Automation\AutomationProject_emr\src\main\java\workflows\db\GeneralWithDBFlow.java
@@ -45,6 +47,7 @@ C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\addForms\DrugF
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\DemogeDataBarPage.java
 C:\Automation\AutomationProject_emr\src\main\java\workflows\doctor\drugFlows.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\addForms\DrugFormContinuesPossibility.java
+C:\Automation\AutomationProject_emr\src\main\java\models\DrugObj.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\nurse\prepMedicine\prepMedcinePage.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\UserSignModalPage.java
 C:\Automation\AutomationProject_emr\src\main\java\workflows\doctor\addInstructionFlows.java

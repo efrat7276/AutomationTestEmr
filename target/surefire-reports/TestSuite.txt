@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 25.765 s <<< FAILURE! - in TestSuite
-addAndDonSaveGeneralInsAt5(regression.regression3)  Time elapsed: 14.35 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 28.095 s <<< FAILURE! - in TestSuite
+addAndSaveAllInstructionToPatient(regression.regression2)  Time elapsed: 15.591 s  <<< FAILURE!
+org.openqa.selenium.UnhandledAlertException: 
+unexpected alert open: {Alert text : }
+  (Session info: chrome=108.0.5359.125): {Alert text : 
 Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
 System info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\efeldman\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52525}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 91555b52cd6dc3ce6b10f6e9ad6ec82b
-	at regression.regression3.addAndDonSaveGeneralInsAt5(regression3.java:24)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\efeldman\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55434}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a559671d1b80efd994da05a22d729ca
+*** Element info: {Using=xpath, value=//form//button[2]}
+	at regression.regression2.addAndSaveAllInstructionToPatient(regression2.java:27)
 

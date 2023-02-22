@@ -51,6 +51,12 @@ public class DrugForm {
     @FindBy(how = How.XPATH, using = "//button[@id='btnSelectListDilutionSolution']//following-sibling::ul/li")
     public List<WebElement> dilutedList;
 
+    //:יש גרסאות שזה ככה
+//
+//    @FindBy(how = How.XPATH, using = "//div[@class='dropdown']//following-sibling::ul/li")
+//    public List<WebElement> dilutedList;
+
+
     @FindBy(how = How.ID, using = "btnSelectListDilutionSolution")
     public WebElement btn_diluted;
 

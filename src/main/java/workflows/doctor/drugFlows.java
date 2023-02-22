@@ -75,7 +75,7 @@ public class drugFlows extends CommonOps {
     public static void editDrugDailyDosage() throws InterruptedException {
 
         doctorFlows.editDrug();
-        doctorFlows.editDrugDosage();
+        doctorFlows.editDrugDosage(1,10);
         Verifications.isNotDisplay(doctorInstructionPage.redStamp_icons.get(0));
     }
 
@@ -83,7 +83,7 @@ public class drugFlows extends CommonOps {
     public static void editDrugDailyNumberOfTime(int numberPerDay) throws InterruptedException {
 
         doctorFlows.editDrug();
-        doctorFlows.editDrugNumberOfTime(numberPerDay);
+        doctorFlows.editDrugNumberOfTime(1,numberPerDay);
         Verifications.isNotDisplay(doctorInstructionPage.redStamp_icons.get(0));
     }
 }

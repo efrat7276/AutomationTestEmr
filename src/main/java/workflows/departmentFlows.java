@@ -9,13 +9,14 @@ import utilities.CommonOps;
 public class departmentFlows extends CommonOps {
 
     @Step("choose department")
-    public static void chooseDepartment(String dep) {
+    public static void chooseDepartment(String dep) throws InterruptedException {
 
         UIActions.click(chooseDepartmentListPage.btn_li_department);
 
         for (int i = 0; i < chooseDepartmentListPage.departmentList.size(); i++) {
             if (chooseDepartmentListPage.departmentList.get(i).getText().contains(dep)) {
                 UIActions.click(chooseDepartmentListPage.departmentList.get(i));
+                Thread.sleep(1000);
                 return;
             }
         }

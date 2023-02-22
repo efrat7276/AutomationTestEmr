@@ -3,6 +3,18 @@
 <suite name="Failed suite [SanityTest]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="addAllInstructionToPatient(failed)" verbose="0">
     <classes>
+      <class name="sanity.UnitTest.instructionToPatient.GeneralInsScenario">
+        <methods>
+          <include name="test02_nurseApprovalGeneralInsFutureToPatient"/>
+          <include name="test01_addAndSaveGeneralInsDailyToPatient"/>
+          <include name="test01_nurseApprovalGeneralInsDailyToPatient"/>
+          <include name="BeforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+          <include name="startSession"/>
+          <include name="test02_addAndSaveGeneralInsDailyFutureToPatient"/>
+        </methods>
+      </class> <!-- sanity.UnitTest.instructionToPatient.GeneralInsScenario -->
       <class name="sanity.UnitTest.instructionToPatient.DrugsScenario">
         <methods>
           <include name="test05_nurseApprovalDrugByHourToPatient"/>
@@ -32,28 +44,6 @@
           <include name="startSession"/>
         </methods>
       </class> <!-- sanity.UnitTest.instructionToPatient.BloodProductScenario -->
-      <class name="sanity.UnitTest.instructionToPatient.NutritionScenario">
-        <methods>
-          <include name="BeforeSuite"/>
-          <include name="test01_nurseApprovalNutritionDailyToPatient"/>
-          <include name="afterMethod"/>
-          <include name="closeSession"/>
-          <include name="startSession"/>
-          <include name="test01_addAndSaveNutritionDailyToPatient"/>
-        </methods>
-      </class> <!-- sanity.UnitTest.instructionToPatient.NutritionScenario -->
-      <class name="sanity.UnitTest.instructionToPatient.GeneralInsScenario">
-        <methods>
-          <include name="test02_nurseApprovalGeneralInsFutureToPatient"/>
-          <include name="test01_addAndSaveGeneralInsDailyToPatient"/>
-          <include name="test01_nurseApprovalGeneralInsDailyToPatient"/>
-          <include name="BeforeSuite"/>
-          <include name="afterMethod"/>
-          <include name="closeSession"/>
-          <include name="startSession"/>
-          <include name="test02_addAndSaveGeneralInsDailyFutureToPatient"/>
-        </methods>
-      </class> <!-- sanity.UnitTest.instructionToPatient.GeneralInsScenario -->
       <class name="sanity.UnitTest.instructionToPatient.SolutionScenario">
         <methods>
           <include name="test07_addAndSaveDrugContinuesToPatient"/>
@@ -66,6 +56,16 @@
           <include name="test06_addAndSaveDrugDilutedToPatient"/>
         </methods>
       </class> <!-- sanity.UnitTest.instructionToPatient.SolutionScenario -->
+      <class name="sanity.UnitTest.instructionToPatient.NutritionScenario">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="test01_nurseApprovalNutritionDailyToPatient"/>
+          <include name="afterMethod"/>
+          <include name="closeSession"/>
+          <include name="startSession"/>
+          <include name="test01_addAndSaveNutritionDailyToPatient"/>
+        </methods>
+      </class> <!-- sanity.UnitTest.instructionToPatient.NutritionScenario -->
     </classes>
   </test> <!-- addAllInstructionToPatient(failed) -->
   <test thread-count="5" name="editDrug(failed)" verbose="0">

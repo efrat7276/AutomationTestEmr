@@ -81,6 +81,7 @@ public class nurseFlows extends CommonOps {
 
             for (int i = 0; i < approvalInstructionPage.bloodP_scale_currentHour.size(); i++) {
                 UIActions.click(approvalInstructionPage.bloodP_scale_currentHour.get(i));
+                Thread.sleep(1000);
                 UIActions.click(approvalInstructionPage.btn_V_blood);
             }
             Thread.sleep(1000);
@@ -311,6 +312,7 @@ public class nurseFlows extends CommonOps {
     @Step("execute general-ins")
     public static void executeAllGeneralInsAfterApprovalNurse() throws InterruptedException {
 
+        Thread.sleep(1000);
         for (int i = 0; i < cardexPage.checkBoxListGeneralIns.size(); i++) {
             UIActions.click(cardexPage.checkBoxListGeneralIns.get(i)); }
         Thread.sleep(3000);
@@ -321,6 +323,7 @@ public class nurseFlows extends CommonOps {
     public static void executionNurseSign(){
         cardexPage.btn_approval.click();
         WebFlows.userSignConfirm();
+        wait.until(ExpectedConditions.elementToBeClickable(cardexPage.btn_approval));
         Verifications.textIsContains(cardexPage.btn_approval , "0");
     }
 

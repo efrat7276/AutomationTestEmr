@@ -1090,31 +1090,41 @@
   "4ac4f16f1df0c4c18614ac0255671a0e" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "b744b5ad1dd3be47",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/b744b5ad1dd3be47",
+      "uid" : "514199bbc06cb812",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/514199bbc06cb812",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63129}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 175109fdc60e395f5b611dce4d53e424\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: eb12571b70a22303dd233077e4aedca6\n*** Element info: {Using=id, value=approvalDrug}",
       "time" : {
-        "start" : 1675807998603,
-        "stop" : 1675808011749,
-        "duration" : 13146
+        "start" : 1677017577288,
+        "stop" : 1677017590551,
+        "duration" : 13263
       }
     }, {
-      "uid" : "beb64ef955c8c6db",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/beb64ef955c8c6db",
+      "uid" : "5d099be5a66c35b",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/5d099be5a66c35b",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:56980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 27c8fa7b64786340e8eca881d6f70daa\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: eb12571b70a22303dd233077e4aedca6\n*** Element info: {Using=id, value=approvalDrug}",
       "time" : {
-        "start" : 1675721600432,
-        "stop" : 1675721613927,
-        "duration" : 13495
+        "start" : 1677017577288,
+        "stop" : 1677017590551,
+        "duration" : 13263
+      }
+    }, {
+      "uid" : "e011e20d1f6c5f5a",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/e011e20d1f6c5f5a",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8260f423aa7a33c3f1716b80a023b87b\n*** Element info: {Using=id, value=approvalDrug}",
+      "time" : {
+        "start" : 1676931171928,
+        "stop" : 1676931184957,
+        "duration" : 13029
       }
     } ]
   },
@@ -1312,31 +1322,41 @@
   "ae3026ceca325102a422f7c16d132836" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "e4c1da70efdfc53e",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/e4c1da70efdfc53e",
+      "uid" : "95240092e6c65975",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/95240092e6c65975",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675807870500,
-        "stop" : 1675807878804,
-        "duration" : 8304
+        "start" : 1677017453159,
+        "stop" : 1677017463126,
+        "duration" : 9967
       }
     }, {
-      "uid" : "564be388d570e16",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/564be388d570e16",
+      "uid" : "4fcea511e98efc78",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/4fcea511e98efc78",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675721455654,
-        "stop" : 1675721465816,
-        "duration" : 10162
+        "start" : 1677017453159,
+        "stop" : 1677017463126,
+        "duration" : 9967
+      }
+    }, {
+      "uid" : "de94a631baf14cf2",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/de94a631baf14cf2",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931050612,
+        "stop" : 1676931060961,
+        "duration" : 10349
       }
     } ]
   },
@@ -1646,31 +1666,41 @@
   "f9d93a4615e373b25cbe144a0a9a75b5" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "be838825574ed7df",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/be838825574ed7df",
+      "uid" : "6747fcf847da6621",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/6747fcf847da6621",
       "status" : "broken",
-      "statusDetails" : "element click intercepted: Element <input _ngcontent-kke-c8=\"\" aria-multiline=\"false\" autocapitalize=\"off\" autocorrect=\"off\" class=\"btn-default dropdown-toggle unitText1 dropDep change-dep-btn ng-untouched ng-pristine ng-valid\" dontlock=\"true\" id=\"dropdownBasic1\" role=\"combobox\" type=\"text\" ng-reflect-input-formatter=\"function (selectItem) {\n      \" ng-reflect-ngb-typeahead=\"function (text$) {\n           \" ng-reflect-result-formatter=\"function (selectItem) {\n      \" ng-reflect-model=\"[object Object]\" autocomplete=\"off\" aria-autocomplete=\"list\" aria-expanded=\"false\"> is not clickable at point (1815, 83). Other element would receive the click: <div _ngcontent-kke-c3=\"\" class=\"overlay\" ng-reflect-ng-style=\"[object Object]\" style=\"background-color: rgba(51, 51, 51, 0.5); position: fixed;\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:51309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3411ea52b6a01141439b9382d5c8d447",
+      "statusDetails" : "unexpected alert open: {Alert text : }\n  (Session info: chrome=108.0.5359.125): {Alert text : \nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:55434}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1a559671d1b80efd994da05a22d729ca\n*** Element info: {Using=xpath, value=//form//button[2]}",
       "time" : {
-        "start" : 1675822817175,
-        "stop" : 1675822820665,
-        "duration" : 3490
+        "start" : 1677060165325,
+        "stop" : 1677060180774,
+        "duration" : 15449
       }
     }, {
-      "uid" : "18fd12cda251bcca",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/18fd12cda251bcca",
+      "uid" : "385d1525c321062c",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/385d1525c321062c",
       "status" : "broken",
-      "statusDetails" : "element click intercepted: Element <input _ngcontent-tet-c8=\"\" aria-multiline=\"false\" autocapitalize=\"off\" autocorrect=\"off\" class=\"btn-default dropdown-toggle unitText1 dropDep change-dep-btn ng-untouched ng-pristine ng-valid\" dontlock=\"true\" id=\"dropdownBasic1\" role=\"combobox\" type=\"text\" ng-reflect-input-formatter=\"function (selectItem) {\n      \" ng-reflect-ngb-typeahead=\"function (text$) {\n           \" ng-reflect-result-formatter=\"function (selectItem) {\n      \" ng-reflect-model=\"[object Object]\" autocomplete=\"off\" aria-autocomplete=\"list\" aria-expanded=\"false\"> is not clickable at point (1815, 83). Other element would receive the click: <div _ngcontent-tet-c3=\"\" class=\"overlay\" ng-reflect-ng-style=\"[object Object]\" style=\"background-color: rgba(51, 51, 51, 0.5); position: fixed;\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58665}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 49e2288d5572cd2d5513353f3c1dd75f",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-aeu-c8=\"\" aria-multiline=\"false\" autocapitalize=\"off\" autocorrect=\"off\" class=\"btn-default dropdown-toggle unitText1 dropDep change-dep-btn ng-untouched ng-pristine ng-valid\" dontlock=\"true\" id=\"dropdownBasic1\" role=\"combobox\" type=\"text\" ng-reflect-input-formatter=\"function (selectItem) {\n      \" ng-reflect-ngb-typeahead=\"function (text$) {\n           \" ng-reflect-result-formatter=\"function (selectItem) {\n      \" ng-reflect-model=\"[object Object]\" autocomplete=\"off\" aria-autocomplete=\"list\" aria-expanded=\"false\"> is not clickable at point (1815, 83). Other element would receive the click: <div _ngcontent-aeu-c3=\"\" class=\"overlay\" ng-reflect-ng-style=\"[object Object]\" style=\"background-color: rgba(51, 51, 51, 0.5); position: fixed;\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62955}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1f252900319062821f7ab1dcd5e86088",
       "time" : {
-        "start" : 1675736416287,
-        "stop" : 1675736420891,
-        "duration" : 4604
+        "start" : 1677032418636,
+        "stop" : 1677032422354,
+        "duration" : 3718
+      }
+    }, {
+      "uid" : "9646ef7e6943df81",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/9646ef7e6943df81",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-huy-c8=\"\" aria-multiline=\"false\" autocapitalize=\"off\" autocorrect=\"off\" class=\"btn-default dropdown-toggle unitText1 dropDep change-dep-btn ng-untouched ng-pristine ng-valid\" dontlock=\"true\" id=\"dropdownBasic1\" role=\"combobox\" type=\"text\" ng-reflect-input-formatter=\"function (selectItem) {\n      \" ng-reflect-ngb-typeahead=\"function (text$) {\n           \" ng-reflect-result-formatter=\"function (selectItem) {\n      \" ng-reflect-model=\"[object Object]\" autocomplete=\"off\" aria-autocomplete=\"list\" aria-expanded=\"false\"> is not clickable at point (1815, 83). Other element would receive the click: <div _ngcontent-huy-c3=\"\" class=\"overlay\" ng-reflect-ng-style=\"[object Object]\" style=\"background-color: rgba(51, 51, 51, 0.5); position: fixed;\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:65258}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dd3b91651167d017a002ba1edc8608fe",
+      "time" : {
+        "start" : 1676946017017,
+        "stop" : 1676946020256,
+        "duration" : 3239
       }
     } ]
   },
@@ -3337,6 +3367,47 @@
       }
     } ]
   },
+  "7809dbb853cb9e1a041d6f0198fc5fdb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "b463a2c24a90f07f",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/b463a2c24a90f07f",
+      "status" : "broken",
+      "statusDetails" : "Error communicating with the remote browser. It may have died.\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d27a9bb3ebd31306a3a7a41659a0b141",
+      "time" : {
+        "start" : 1676897352071,
+        "stop" : 1676897352074,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "c96910e6947ebe33",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/c96910e6947ebe33",
+      "status" : "broken",
+      "statusDetails" : "Error communicating with the remote browser. It may have died.\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d27a9bb3ebd31306a3a7a41659a0b141",
+      "time" : {
+        "start" : 1676897352071,
+        "stop" : 1676897352074,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "b381f3c6df878453",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/b381f3c6df878453",
+      "status" : "broken",
+      "statusDetails" : "Error communicating with the remote browser. It may have died.\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d27a9bb3ebd31306a3a7a41659a0b141",
+      "time" : {
+        "start" : 1676897352071,
+        "stop" : 1676897352074,
+        "duration" : 3
+      }
+    } ]
+  },
   "3e183c471de340b8f9209660b9b231c6" : {
     "statistic" : {
       "failed" : 0,
@@ -4499,29 +4570,38 @@
       "failed" : 0,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "b0b7b05cfdb07df0",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/b0b7b05cfdb07df0",
+      "uid" : "e6ece534e0f61bb2",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/e6ece534e0f61bb2",
       "status" : "broken",
-      "statusDetails" : "Index 0 out of bounds for length 0",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: eb12571b70a22303dd233077e4aedca6\n*** Element info: {Using=id, value=approvalDrug}",
       "time" : {
-        "start" : 1675807880061,
-        "stop" : 1675807889472,
-        "duration" : 9411
+        "start" : 1677017464489,
+        "stop" : 1677017482599,
+        "duration" : 18110
       }
     }, {
-      "uid" : "bfcba060011d4207",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/bfcba060011d4207",
+      "uid" : "27ff48a6e78a0dfd",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/27ff48a6e78a0dfd",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:56980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 27c8fa7b64786340e8eca881d6f70daa\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: eb12571b70a22303dd233077e4aedca6\n*** Element info: {Using=id, value=approvalDrug}",
       "time" : {
-        "start" : 1675721467093,
-        "stop" : 1675721486513,
-        "duration" : 19420
+        "start" : 1677017464489,
+        "stop" : 1677017482599,
+        "duration" : 18110
+      }
+    }, {
+      "uid" : "116b8ecb65bde531",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/116b8ecb65bde531",
+      "status" : "passed",
+      "time" : {
+        "start" : 1676931062348,
+        "stop" : 1676931080430,
+        "duration" : 18082
       }
     } ]
   },
@@ -6654,15 +6734,15 @@
   "7750e850e38b18cab293ce71b9e0c4ce" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "150363e1108c1521",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/150363e1108c1521",
+      "uid" : "4c0852a59e83b673",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/4c0852a59e83b673",
       "status" : "broken",
       "statusDetails" : "java.lang.NullPointerException",
       "time" : {
@@ -6671,8 +6751,18 @@
         "duration" : 0
       }
     }, {
-      "uid" : "b740dea4ffe08ba0",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/b740dea4ffe08ba0",
+      "uid" : "5000fc90bf19d410",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/5000fc90bf19d410",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1675675727255,
+        "stop" : 1675675727255,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "817804c8727bf10b",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/817804c8727bf10b",
       "status" : "broken",
       "statusDetails" : "java.lang.NullPointerException",
       "time" : {
@@ -6705,62 +6795,82 @@
   "a5fb8b75b2520f50902ea2b2b5744d11" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "33fe65bc160f5e41",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/33fe65bc160f5e41",
+      "uid" : "292cbc05e09953e9",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/292cbc05e09953e9",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63129}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 175109fdc60e395f5b611dce4d53e424\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: eb12571b70a22303dd233077e4aedca6\n*** Element info: {Using=id, value=approvalDrug}",
       "time" : {
-        "start" : 1675807923495,
-        "stop" : 1675807936753,
-        "duration" : 13258
+        "start" : 1677017512714,
+        "stop" : 1677017526602,
+        "duration" : 13888
       }
     }, {
-      "uid" : "22a7c71e4a35f3c9",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/22a7c71e4a35f3c9",
+      "uid" : "5b141764b2b54fdb",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/5b141764b2b54fdb",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:56980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 27c8fa7b64786340e8eca881d6f70daa\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: eb12571b70a22303dd233077e4aedca6\n*** Element info: {Using=id, value=approvalDrug}",
       "time" : {
-        "start" : 1675721519709,
-        "stop" : 1675721533073,
-        "duration" : 13364
+        "start" : 1677017512714,
+        "stop" : 1677017526602,
+        "duration" : 13888
+      }
+    }, {
+      "uid" : "4ef84dd3077cf2e5",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/4ef84dd3077cf2e5",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8260f423aa7a33c3f1716b80a023b87b\n*** Element info: {Using=id, value=approvalDrug}",
+      "time" : {
+        "start" : 1676931108646,
+        "stop" : 1676931122093,
+        "duration" : 13447
       }
     } ]
   },
   "b1c7e4aedfb8df3edcce50c0782088e0" : {
     "statistic" : {
-      "failed" : 2,
-      "broken" : 0,
+      "failed" : 0,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "b4cff67028ddc041",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/b4cff67028ddc041",
-      "status" : "failed",
-      "statusDetails" : "null",
+      "uid" : "39c1127bbab74810",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/39c1127bbab74810",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675807957050,
-        "stop" : 1675807971554,
-        "duration" : 14504
+        "start" : 1677017548460,
+        "stop" : 1677017556639,
+        "duration" : 8179
       }
     }, {
-      "uid" : "7b86e0eb52f09214",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/7b86e0eb52f09214",
-      "status" : "failed",
-      "statusDetails" : "null",
+      "uid" : "29ab8f0819a85b74",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/29ab8f0819a85b74",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675721560205,
-        "stop" : 1675721574612,
-        "duration" : 14407
+        "start" : 1677017548460,
+        "stop" : 1677017556639,
+        "duration" : 8179
+      }
+    }, {
+      "uid" : "95a90c371b042b12",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/95a90c371b042b12",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931143177,
+        "stop" : 1676931151136,
+        "duration" : 7959
       }
     } ]
   },
@@ -7644,32 +7754,42 @@
   },
   "e43361a9217326e6bd035ef3726ee6c6" : {
     "statistic" : {
-      "failed" : 2,
-      "broken" : 0,
+      "failed" : 0,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "72b78c7089b2ccb5",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/72b78c7089b2ccb5",
-      "status" : "failed",
-      "statusDetails" : "null",
+      "uid" : "90a0af1f7b4654e8",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/90a0af1f7b4654e8",
+      "status" : "broken",
+      "statusDetails" : "Index 3 out of bounds for length 0",
       "time" : {
-        "start" : 1675807901168,
-        "stop" : 1675807922261,
-        "duration" : 21093
+        "start" : 1677017494372,
+        "stop" : 1677017510733,
+        "duration" : 16361
       }
     }, {
-      "uid" : "64f5370f4b3d7cbb",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/64f5370f4b3d7cbb",
-      "status" : "failed",
-      "statusDetails" : "null",
+      "uid" : "a9556cc8580ee7c0",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/a9556cc8580ee7c0",
+      "status" : "broken",
+      "statusDetails" : "Index 3 out of bounds for length 0",
       "time" : {
-        "start" : 1675721497841,
-        "stop" : 1675721518473,
-        "duration" : 20632
+        "start" : 1677017494372,
+        "stop" : 1677017510733,
+        "duration" : 16361
+      }
+    }, {
+      "uid" : "6964b544ba376b29",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/6964b544ba376b29",
+      "status" : "broken",
+      "statusDetails" : "Index 3 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931090708,
+        "stop" : 1676931107121,
+        "duration" : 16413
       }
     } ]
   },
@@ -10300,32 +10420,42 @@
   },
   "6af94d7852c0bf19843935fd672a66ab" : {
     "statistic" : {
-      "failed" : 2,
-      "broken" : 0,
+      "failed" : 0,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "823903307fbda2a6",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/823903307fbda2a6",
-      "status" : "failed",
-      "statusDetails" : "expected [true] but found [false]",
+      "uid" : "cd10f8dc5d45d5e1",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/cd10f8dc5d45d5e1",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//section[@id='generalIns']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60914}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0a8ec4786837eff81f5771c866e6c822\n*** Element info: {Using=xpath, value=//section[@id='generalIns']//button}",
       "time" : {
-        "start" : 1675808125448,
-        "stop" : 1675808135486,
-        "duration" : 10038
+        "start" : 1677017673008,
+        "stop" : 1677017681170,
+        "duration" : 8162
       }
     }, {
-      "uid" : "90bca730a963f634",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/90bca730a963f634",
-      "status" : "failed",
-      "statusDetails" : "expected [true] but found [false]",
+      "uid" : "c86a19c20d010219",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/c86a19c20d010219",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//section[@id='generalIns']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60914}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0a8ec4786837eff81f5771c866e6c822\n*** Element info: {Using=xpath, value=//section[@id='generalIns']//button}",
       "time" : {
-        "start" : 1675721729354,
-        "stop" : 1675721740450,
-        "duration" : 11096
+        "start" : 1677017673008,
+        "stop" : 1677017681170,
+        "duration" : 8162
+      }
+    }, {
+      "uid" : "6c4058fd4f2f95d7",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/6c4058fd4f2f95d7",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//section[@id='generalIns']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63462}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cdb6625e0192ee40387f93ebf9565e96\n*** Element info: {Using=xpath, value=//section[@id='generalIns']//button}",
+      "time" : {
+        "start" : 1676931267505,
+        "stop" : 1676931275619,
+        "duration" : 8114
       }
     } ]
   },
@@ -12422,31 +12552,41 @@
   "8c4cd28af0efa9802585010dd54ec3dc" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "2e93ddfd50869638",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/2e93ddfd50869638",
+      "uid" : "28fcb74db3b31596",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/28fcb74db3b31596",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675807972838,
-        "stop" : 1675807980937,
-        "duration" : 8099
+        "start" : 1677017557960,
+        "stop" : 1677017566138,
+        "duration" : 8178
       }
     }, {
-      "uid" : "bda4e8025551554d",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/bda4e8025551554d",
+      "uid" : "355cba948be54356",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/355cba948be54356",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675721575828,
-        "stop" : 1675721583905,
-        "duration" : 8077
+        "start" : 1677017557960,
+        "stop" : 1677017566138,
+        "duration" : 8178
+      }
+    }, {
+      "uid" : "1e9a1da2be744ec7",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/1e9a1da2be744ec7",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931152349,
+        "stop" : 1676931161082,
+        "duration" : 8733
       }
     } ]
   },
@@ -15184,32 +15324,42 @@
   },
   "a99fbed9d1860a5fe4ba336a3132efaf" : {
     "statistic" : {
-      "failed" : 2,
-      "broken" : 0,
+      "failed" : 0,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "58dc7c5e18d3fc58",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/58dc7c5e18d3fc58",
-      "status" : "failed",
-      "statusDetails" : "null",
+      "uid" : "b6926e5d86cbffa0",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/b6926e5d86cbffa0",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675808018980,
-        "stop" : 1675808039840,
-        "duration" : 20860
+        "start" : 1677017597880,
+        "stop" : 1677017606276,
+        "duration" : 8396
       }
     }, {
-      "uid" : "37bc007967a6cd08",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/37bc007967a6cd08",
-      "status" : "failed",
-      "statusDetails" : "null",
+      "uid" : "aadba90d2347d22d",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/aadba90d2347d22d",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675721620370,
-        "stop" : 1675721642253,
-        "duration" : 21883
+        "start" : 1677017597880,
+        "stop" : 1677017606276,
+        "duration" : 8396
+      }
+    }, {
+      "uid" : "b620e2381007ddd0",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/b620e2381007ddd0",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931191987,
+        "stop" : 1676931200068,
+        "duration" : 8081
       }
     } ]
   },
@@ -19713,32 +19863,42 @@
   },
   "424f4b48cf339cecc6fde1718e3c3721" : {
     "statistic" : {
-      "failed" : 2,
-      "broken" : 0,
+      "failed" : 0,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "3ff3167c9c9906c4",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/3ff3167c9c9906c4",
-      "status" : "failed",
-      "statusDetails" : "expected [true] but found [false]",
+      "uid" : "9c0bac762ca4ad38",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/9c0bac762ca4ad38",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//section[@id='nutrition']//button[@id='btnAddMedicine']\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61027}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3960585417dffc2b18a25cf0905708e4\n*** Element info: {Using=xpath, value=//section[@id='nutrition']//button[@id='btnAddMedicine']}",
       "time" : {
-        "start" : 1675808180537,
-        "stop" : 1675808197373,
-        "duration" : 16836
+        "start" : 1677017722981,
+        "stop" : 1677017731414,
+        "duration" : 8433
       }
     }, {
-      "uid" : "589a92d58a5f7451",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/589a92d58a5f7451",
-      "status" : "failed",
-      "statusDetails" : "expected [true] but found [false]",
+      "uid" : "769800028c29cbce",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/769800028c29cbce",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//section[@id='nutrition']//button[@id='btnAddMedicine']\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61027}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3960585417dffc2b18a25cf0905708e4\n*** Element info: {Using=xpath, value=//section[@id='nutrition']//button[@id='btnAddMedicine']}",
       "time" : {
-        "start" : 1675721784820,
-        "stop" : 1675721803189,
-        "duration" : 18369
+        "start" : 1677017722981,
+        "stop" : 1677017731414,
+        "duration" : 8433
+      }
+    }, {
+      "uid" : "220d83d3f583fb0d",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/220d83d3f583fb0d",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//section[@id='nutrition']//button[@id='btnAddMedicine']\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63585}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5b59ca8ed9d27c8b4b7a175b7f1a9b10\n*** Element info: {Using=xpath, value=//section[@id='nutrition']//button[@id='btnAddMedicine']}",
+      "time" : {
+        "start" : 1676931318412,
+        "stop" : 1676931327715,
+        "duration" : 9303
       }
     } ]
   },
@@ -21510,31 +21670,41 @@
   "8d48efab460bbd38fd2ac41baca54c20" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "dc06b1c5798bbaa7",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/dc06b1c5798bbaa7",
+      "uid" : "f393a874dded65c6",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/f393a874dded65c6",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63129}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 175109fdc60e395f5b611dce4d53e424\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675807840706,
-        "stop" : 1675807868808,
-        "duration" : 28102
+        "start" : 1677017442467,
+        "stop" : 1677017451165,
+        "duration" : 8698
       }
     }, {
-      "uid" : "74fc0515f828fb06",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/74fc0515f828fb06",
+      "uid" : "8f941e846c7ac66d",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/8f941e846c7ac66d",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:56980}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 27c8fa7b64786340e8eca881d6f70daa\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675721431252,
-        "stop" : 1675721453930,
-        "duration" : 22678
+        "start" : 1677017442467,
+        "stop" : 1677017451165,
+        "duration" : 8698
+      }
+    }, {
+      "uid" : "361c8b4ca9d38b42",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/361c8b4ca9d38b42",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931040053,
+        "stop" : 1676931048905,
+        "duration" : 8852
       }
     } ]
   },
@@ -25452,31 +25622,41 @@
   "2caf2575b1a7db45d1a4ae8d3699fd43" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "cbacb3da2deabdb4",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/cbacb3da2deabdb4",
+      "uid" : "cba611231ac5616",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/cba611231ac5616",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675807947421,
-        "stop" : 1675807955814,
-        "duration" : 8393
+        "start" : 1677017537869,
+        "stop" : 1677017547185,
+        "duration" : 9316
       }
     }, {
-      "uid" : "52be098cbfbe7af4",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/52be098cbfbe7af4",
+      "uid" : "639b57307b20b956",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/639b57307b20b956",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675721550825,
-        "stop" : 1675721558953,
-        "duration" : 8128
+        "start" : 1677017537869,
+        "stop" : 1677017547185,
+        "duration" : 9316
+      }
+    }, {
+      "uid" : "547bce248ef2e9aa",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/547bce248ef2e9aa",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931132931,
+        "stop" : 1676931141938,
+        "duration" : 9007
       }
     } ]
   },
@@ -26895,32 +27075,42 @@
   },
   "98c56e973542d417e36fa463e140c2f5" : {
     "statistic" : {
-      "failed" : 2,
+      "failed" : 3,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "4644a51860327c47",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/4644a51860327c47",
+      "uid" : "a2cfd8217a31c7e5",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/a2cfd8217a31c7e5",
       "status" : "failed",
       "statusDetails" : "null",
       "time" : {
-        "start" : 1675808346356,
-        "stop" : 1675808363093,
-        "duration" : 16737
+        "start" : 1677017851241,
+        "stop" : 1677017871455,
+        "duration" : 20214
       }
     }, {
-      "uid" : "2d0f95c33725e64",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/2d0f95c33725e64",
+      "uid" : "a54c03b9ae27380d",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/a54c03b9ae27380d",
       "status" : "failed",
       "statusDetails" : "null",
       "time" : {
-        "start" : 1675721943845,
-        "stop" : 1675721961541,
-        "duration" : 17696
+        "start" : 1677017851241,
+        "stop" : 1677017871455,
+        "duration" : 20214
+      }
+    }, {
+      "uid" : "21527d2d19a891d1",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/21527d2d19a891d1",
+      "status" : "failed",
+      "statusDetails" : "null",
+      "time" : {
+        "start" : 1676931441339,
+        "stop" : 1676931459417,
+        "duration" : 18078
       }
     } ]
   },
@@ -29296,31 +29486,41 @@
   "3fb20293219c768f4a2c60e4feebaa1f" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "6d6edae7c05150af",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/6d6edae7c05150af",
+      "uid" : "94858759b6d4017",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/94858759b6d4017",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675808198937,
-        "stop" : 1675808207790,
-        "duration" : 8853
+        "start" : 1677017732952,
+        "stop" : 1677017741229,
+        "duration" : 8277
       }
     }, {
-      "uid" : "3d34ce27cf776ee",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/3d34ce27cf776ee",
+      "uid" : "204938ff292474dc",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/204938ff292474dc",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675721804586,
-        "stop" : 1675721813077,
-        "duration" : 8491
+        "start" : 1677017732952,
+        "stop" : 1677017741229,
+        "duration" : 8277
+      }
+    }, {
+      "uid" : "6631ea3b6ee59401",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/6631ea3b6ee59401",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931329157,
+        "stop" : 1676931337619,
+        "duration" : 8462
       }
     } ]
   },
@@ -32032,32 +32232,42 @@
   },
   "cd015e848e069a761d44752c5135171a" : {
     "statistic" : {
-      "failed" : 1,
-      "broken" : 1,
+      "failed" : 0,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "e0b1e3d362eea8eb",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/e0b1e3d362eea8eb",
+      "uid" : "6cf1e826452610d9",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/6cf1e826452610d9",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675807938013,
-        "stop" : 1675807946196,
-        "duration" : 8183
+        "start" : 1677017528141,
+        "stop" : 1677017536565,
+        "duration" : 8424
       }
     }, {
-      "uid" : "f60040fb7ca2b607",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/f60040fb7ca2b607",
-      "status" : "failed",
-      "statusDetails" : "null",
+      "uid" : "20e880b78d9650ba",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/20e880b78d9650ba",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675721534366,
-        "stop" : 1675721549597,
-        "duration" : 15231
+        "start" : 1677017528141,
+        "stop" : 1677017536565,
+        "duration" : 8424
+      }
+    }, {
+      "uid" : "fd31b72a919db7d2",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/fd31b72a919db7d2",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931123272,
+        "stop" : 1676931131653,
+        "duration" : 8381
       }
     } ]
   },
@@ -33288,63 +33498,83 @@
   },
   "5ad89d546ca7daa5e4c5a293f4149e4" : {
     "statistic" : {
-      "failed" : 2,
-      "broken" : 0,
+      "failed" : 0,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "af2ab3733a37c501",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/af2ab3733a37c501",
-      "status" : "failed",
-      "statusDetails" : "null",
+      "uid" : "c94992437f443c2b",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/c94992437f443c2b",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675808056369,
-        "stop" : 1675808077363,
-        "duration" : 20994
+        "start" : 1677017623289,
+        "stop" : 1677017631601,
+        "duration" : 8312
       }
     }, {
-      "uid" : "7ea9243306d34c78",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/7ea9243306d34c78",
-      "status" : "failed",
-      "statusDetails" : "null",
+      "uid" : "e55953c4b2251d9c",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/e55953c4b2251d9c",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675721658478,
-        "stop" : 1675721679016,
-        "duration" : 20538
+        "start" : 1677017623289,
+        "stop" : 1677017631601,
+        "duration" : 8312
+      }
+    }, {
+      "uid" : "b7b317b650a64fe8",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/b7b317b650a64fe8",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931216904,
+        "stop" : 1676931225441,
+        "duration" : 8537
       }
     } ]
   },
   "91baa85b525ed08d787a804f58b1cdd7" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "c50fc7c03791006",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/c50fc7c03791006",
+      "uid" : "16c89276997df34a",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/16c89276997df34a",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675808294661,
-        "stop" : 1675808305481,
-        "duration" : 10820
+        "start" : 1677017801964,
+        "stop" : 1677017810473,
+        "duration" : 8509
       }
     }, {
-      "uid" : "c1536322109bfe1a",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/c1536322109bfe1a",
+      "uid" : "ef3ad7efc84afa04",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/ef3ad7efc84afa04",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675721893472,
-        "stop" : 1675721901825,
-        "duration" : 8353
+        "start" : 1677017801964,
+        "stop" : 1677017810473,
+        "duration" : 8509
+      }
+    }, {
+      "uid" : "807c6137000d2c62",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/807c6137000d2c62",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931396490,
+        "stop" : 1676931405336,
+        "duration" : 8846
       }
     } ]
   },
@@ -33544,27 +33774,36 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "969bc35f4392a243",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/969bc35f4392a243",
+      "uid" : "7e29a79094415150",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/7e29a79094415150",
       "status" : "passed",
       "time" : {
-        "start" : 1675808151857,
-        "stop" : 1675808155514,
-        "duration" : 3657
+        "start" : 1677017698223,
+        "stop" : 1677017701237,
+        "duration" : 3014
       }
     }, {
-      "uid" : "3a520480fdae38dd",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/3a520480fdae38dd",
+      "uid" : "de454c5a4c4c5666",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/de454c5a4c4c5666",
       "status" : "passed",
       "time" : {
-        "start" : 1675721756835,
-        "stop" : 1675721760328,
-        "duration" : 3493
+        "start" : 1677017698223,
+        "stop" : 1677017701237,
+        "duration" : 3014
+      }
+    }, {
+      "uid" : "242195c628510a18",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/242195c628510a18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1676931292156,
+        "stop" : 1676931296065,
+        "duration" : 3909
       }
     } ]
   },
@@ -34395,31 +34634,41 @@
   "a6ac261eec85fc14e62863eadebf0a19" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "53654c6d02a94a7f",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/53654c6d02a94a7f",
+      "uid" : "4cff12d0d681258b",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/4cff12d0d681258b",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675808136643,
-        "stop" : 1675808144977,
-        "duration" : 8334
+        "start" : 1677017682482,
+        "stop" : 1677017691174,
+        "duration" : 8692
       }
     }, {
-      "uid" : "ef630cd9b7462775",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/ef630cd9b7462775",
+      "uid" : "84d39f7f2e132f92",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/84d39f7f2e132f92",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675721741779,
-        "stop" : 1675721750048,
-        "duration" : 8269
+        "start" : 1677017682482,
+        "stop" : 1677017691174,
+        "duration" : 8692
+      }
+    }, {
+      "uid" : "b3e1699350237ad6",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/b3e1699350237ad6",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931276943,
+        "stop" : 1676931285180,
+        "duration" : 8237
       }
     } ]
   },
@@ -37725,32 +37974,42 @@
   },
   "3b960ead8927aa0dd8d6a5d3b9fadff8" : {
     "statistic" : {
-      "failed" : 2,
-      "broken" : 0,
+      "failed" : 0,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "fb3da71a7ce6d7ef",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/fb3da71a7ce6d7ef",
-      "status" : "failed",
-      "statusDetails" : "expected [true] but found [false]",
+      "uid" : "91d5a6e92b7a6ecf",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/91d5a6e92b7a6ecf",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//section[@id='generalIns']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60914}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0a8ec4786837eff81f5771c866e6c822\n*** Element info: {Using=xpath, value=//section[@id='generalIns']//button}",
       "time" : {
-        "start" : 1675808098514,
-        "stop" : 1675808113583,
-        "duration" : 15069
+        "start" : 1677017653643,
+        "stop" : 1677017661782,
+        "duration" : 8139
       }
     }, {
-      "uid" : "3c85dff37a8c2790",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/3c85dff37a8c2790",
-      "status" : "failed",
-      "statusDetails" : "expected [true] but found [false]",
+      "uid" : "4356e4d378682001",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/4356e4d378682001",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//section[@id='generalIns']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60914}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0a8ec4786837eff81f5771c866e6c822\n*** Element info: {Using=xpath, value=//section[@id='generalIns']//button}",
       "time" : {
-        "start" : 1675721699955,
-        "stop" : 1675721716657,
-        "duration" : 16702
+        "start" : 1677017653643,
+        "stop" : 1677017661782,
+        "duration" : 8139
+      }
+    }, {
+      "uid" : "1d4c2d40f5848607",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/1d4c2d40f5848607",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//section[@id='generalIns']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63462}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cdb6625e0192ee40387f93ebf9565e96\n*** Element info: {Using=xpath, value=//section[@id='generalIns']//button}",
+      "time" : {
+        "start" : 1676931247611,
+        "stop" : 1676931256204,
+        "duration" : 8593
       }
     } ]
   },
@@ -39805,31 +40064,41 @@
   "96788e3daeb291023e18dd63f3304018" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "a04eb9f6837660c7",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/a04eb9f6837660c7",
+      "uid" : "ae856506c455092b",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/ae856506c455092b",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675807890716,
-        "stop" : 1675807899579,
-        "duration" : 8863
+        "start" : 1677017484151,
+        "stop" : 1677017492153,
+        "duration" : 8002
       }
     }, {
-      "uid" : "835f2d8a06a47526",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/835f2d8a06a47526",
+      "uid" : "abcc36d8f6ce3b5c",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/abcc36d8f6ce3b5c",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675721487846,
-        "stop" : 1675721496320,
-        "duration" : 8474
+        "start" : 1677017484151,
+        "stop" : 1677017492153,
+        "duration" : 8002
+      }
+    }, {
+      "uid" : "908a2f6fb5ae81fe",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/908a2f6fb5ae81fe",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931081999,
+        "stop" : 1676931089442,
+        "duration" : 7443
       }
     } ]
   },
@@ -41017,27 +41286,36 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "58c4914fc53d73f3",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/58c4914fc53d73f3",
+      "uid" : "df385dc138596588",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/df385dc138596588",
       "status" : "passed",
       "time" : {
-        "start" : 1675808328993,
-        "stop" : 1675808344997,
-        "duration" : 16004
+        "start" : 1677017833809,
+        "stop" : 1677017849796,
+        "duration" : 15987
       }
     }, {
-      "uid" : "253071bf196da303",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/253071bf196da303",
+      "uid" : "ca4584d9155e2ad5",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/ca4584d9155e2ad5",
       "status" : "passed",
       "time" : {
-        "start" : 1675721927927,
-        "stop" : 1675721942543,
-        "duration" : 14616
+        "start" : 1677017833809,
+        "stop" : 1677017849796,
+        "duration" : 15987
+      }
+    }, {
+      "uid" : "92edf069bfea8c7a",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/92edf069bfea8c7a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1676931426338,
+        "stop" : 1676931439917,
+        "duration" : 13579
       }
     } ]
   },
@@ -44794,31 +45072,41 @@
   "38971d0495c58a3aa81ba6dc38868805" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "7e04d75d3435b8a2",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/7e04d75d3435b8a2",
+      "uid" : "be7254734c8798c7",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/be7254734c8798c7",
       "status" : "broken",
-      "statusDetails" : "element click intercepted: Element <span _ngcontent-nmm-c14=\"\">...</span> is not clickable at point (1854, 363). Other element would receive the click: <div _ngcontent-nmm-c3=\"\" class=\"overlay\" ng-reflect-ng-style=\"[object Object]\" style=\"background-color: rgba(51, 51, 51, 0.5); position: fixed;\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:53903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 67ba16cc921d8aed7283a1d4d7c63272",
+      "statusDetails" : "element click intercepted: Element <input _ngcontent-kvn-c18=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582570\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1689, 200). Other element would receive the click: <div _ngcontent-kvn-c18=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:55192}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 020eebe8d90d18bb70a696d4d6f8bac9",
       "time" : {
-        "start" : 1675774632248,
-        "stop" : 1675774824774,
-        "duration" : 192526
+        "start" : 1677059911644,
+        "stop" : 1677059932172,
+        "duration" : 20528
       }
     }, {
-      "uid" : "5279ab99e9b80556",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/5279ab99e9b80556",
+      "uid" : "120b96d83217dfe5",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/120b96d83217dfe5",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='form-group code-list']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:50589}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ad4517bab0d912bdd92edc616b97e9e7\n*** Element info: {Using=xpath, value=//div[@class='form-group code-list']//button}",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='custom-control custom-radio']//label[text()=' Time Limit ']\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60650}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0cd26616c08ab8016c210696eb6e32ef\n*** Element info: {Using=xpath, value=//div[@class='custom-control custom-radio']//label[text()=' Time Limit ']}",
       "time" : {
-        "start" : 1675682059159,
-        "stop" : 1675682098728,
-        "duration" : 39569
+        "start" : 1677017426727,
+        "stop" : 1677017510730,
+        "duration" : 84003
+      }
+    }, {
+      "uid" : "3cc6d036c12cc13",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/3cc6d036c12cc13",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class='form-group code-list']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63166}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4a7251f00754de3e4630b0f27c15cc34\n*** Element info: {Using=xpath, value=//div[@class='form-group code-list']//button}",
+      "time" : {
+        "start" : 1676931023164,
+        "stop" : 1676931095771,
+        "duration" : 72607
       }
     } ]
   },
@@ -45218,32 +45506,42 @@
   },
   "99f5c7f69b2cdb85e7ccbbad9559b2c1" : {
     "statistic" : {
-      "failed" : 2,
+      "failed" : 3,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "a8fa7a1199297675",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/a8fa7a1199297675",
+      "uid" : "68c4bebd2565a7dc",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/68c4bebd2565a7dc",
       "status" : "failed",
       "statusDetails" : "null",
       "time" : {
-        "start" : 1675808364582,
-        "stop" : 1675808383120,
-        "duration" : 18538
+        "start" : 1677017872807,
+        "stop" : 1677017890983,
+        "duration" : 18176
       }
     }, {
-      "uid" : "564733292e762b3b",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/564733292e762b3b",
+      "uid" : "272ade552cee7dbc",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/272ade552cee7dbc",
       "status" : "failed",
       "statusDetails" : "null",
       "time" : {
-        "start" : 1675721962730,
-        "stop" : 1675721981334,
-        "duration" : 18604
+        "start" : 1677017872807,
+        "stop" : 1677017890983,
+        "duration" : 18176
+      }
+    }, {
+      "uid" : "c01f02f83cb5554f",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/c01f02f83cb5554f",
+      "status" : "failed",
+      "statusDetails" : "null",
+      "time" : {
+        "start" : 1676931460612,
+        "stop" : 1676931477460,
+        "duration" : 16848
       }
     } ]
   },
@@ -46293,32 +46591,42 @@
   },
   "67838dc7a40bf1c430e25d3060807200" : {
     "statistic" : {
-      "failed" : 2,
-      "broken" : 0,
+      "failed" : 0,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "18cd9930f45747ea",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/18cd9930f45747ea",
-      "status" : "failed",
-      "statusDetails" : "null",
+      "uid" : "bbd17db09aabca7c",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/bbd17db09aabca7c",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675807982311,
-        "stop" : 1675807997328,
-        "duration" : 15017
+        "start" : 1677017567727,
+        "stop" : 1677017575988,
+        "duration" : 8261
       }
     }, {
-      "uid" : "cae3c7b3f9602926",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/cae3c7b3f9602926",
-      "status" : "failed",
-      "statusDetails" : "null",
+      "uid" : "f9872e234aadd1b9",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/f9872e234aadd1b9",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675721585132,
-        "stop" : 1675721599229,
-        "duration" : 14097
+        "start" : 1677017567727,
+        "stop" : 1677017575988,
+        "duration" : 8261
+      }
+    }, {
+      "uid" : "76410e24fbc24048",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/76410e24fbc24048",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931162308,
+        "stop" : 1676931170622,
+        "duration" : 8314
       }
     } ]
   },
@@ -46898,30 +47206,40 @@
   "b1f4c56d9670d6dd2761f300db712d69" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "baeff823eb8b3dee",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/baeff823eb8b3dee",
+      "uid" : "679204037babb197",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/679204037babb197",
       "status" : "broken",
-      "statusDetails" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:52525}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 91555b52cd6dc3ce6b10f6e9ad6ec82b",
+      "statusDetails" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63531}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 48961661823a5961a91726cc0caef53f",
       "time" : {
-        "start" : 1675827016345,
-        "stop" : 1675827030668,
-        "duration" : 14323
+        "start" : 1677036617754,
+        "stop" : 1677036634816,
+        "duration" : 17062
       }
     }, {
-      "uid" : "5956e29e52eb5ed2",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/5956e29e52eb5ed2",
+      "uid" : "ac808049f0414f14",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/ac808049f0414f14",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <button _ngcontent-gqi-c18=\"\" class=\"btn btn-defualt btn-ok\" id=\"btnAddMedicine\">...</button> is not clickable at point (111, 320). Other element would receive the click: <ngb-modal-window role=\"dialog\" tabindex=\"-1\" class=\"modal fade show d-block\" aria-modal=\"true\">...</ngb-modal-window>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:49333}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ebb5cc6c8bec3cf827fd1e72eba1d66f",
+      "time" : {
+        "start" : 1676950215991,
+        "stop" : 1676950230054,
+        "duration" : 14063
+      }
+    }, {
+      "uid" : "9ff02dfd2adda138",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/9ff02dfd2adda138",
       "status" : "passed",
       "time" : {
-        "start" : 1675740614717,
-        "stop" : 1675740643333,
-        "duration" : 28616
+        "start" : 1676345420904,
+        "stop" : 1676345437223,
+        "duration" : 16319
       }
     } ]
   },
@@ -47220,31 +47538,41 @@
   "356d13d5e2948d3200aee88e249dde56" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "de2d7a80f8ef019a",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/de2d7a80f8ef019a",
+      "uid" : "e977d009ed5363da",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/e977d009ed5363da",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675808115272,
-        "stop" : 1675808123906,
-        "duration" : 8634
+        "start" : 1677017663303,
+        "stop" : 1677017671643,
+        "duration" : 8340
       }
     }, {
-      "uid" : "c4a1d39b367abc4a",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/c4a1d39b367abc4a",
+      "uid" : "df349fd6c00fec57",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/df349fd6c00fec57",
       "status" : "broken",
       "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675721718624,
-        "stop" : 1675721727740,
-        "duration" : 9116
+        "start" : 1677017663303,
+        "stop" : 1677017671643,
+        "duration" : 8340
+      }
+    }, {
+      "uid" : "5be050db48d21697",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/5be050db48d21697",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931257911,
+        "stop" : 1676931266098,
+        "duration" : 8187
       }
     } ]
   },
@@ -48241,31 +48569,41 @@
   "678383ee97d79960d52d57861cf84422" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "1437887e315776a0",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/1437887e315776a0",
+      "uid" : "d45217a4152c72d8",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/d45217a4152c72d8",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63253}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7f9b25e5c7d1a8be55c0cb2a5cbe906b\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cab24dc188974efd047e871f99216ae7\n*** Element info: {Using=id, value=approvalDrug}",
       "time" : {
-        "start" : 1675808078640,
-        "stop" : 1675808091929,
-        "duration" : 13289
+        "start" : 1677017632904,
+        "stop" : 1677017646520,
+        "duration" : 13616
       }
     }, {
-      "uid" : "22f8b13c01bd117c",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/22f8b13c01bd117c",
+      "uid" : "f8bac2da9769640c",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/f8bac2da9769640c",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:57066}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2cd0d1c6efe87b61e12ec46c7f6de1fe\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cab24dc188974efd047e871f99216ae7\n*** Element info: {Using=id, value=approvalDrug}",
       "time" : {
-        "start" : 1675721680250,
-        "stop" : 1675721693446,
-        "duration" : 13196
+        "start" : 1677017632904,
+        "stop" : 1677017646520,
+        "duration" : 13616
+      }
+    }, {
+      "uid" : "204f9902fa62bdd7",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/204f9902fa62bdd7",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63401}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 518e98906cd5bdb0756e8cd7722521d4\n*** Element info: {Using=id, value=approvalDrug}",
+      "time" : {
+        "start" : 1676931226816,
+        "stop" : 1676931240173,
+        "duration" : 13357
       }
     } ]
   },
@@ -48704,31 +49042,41 @@
   "e973a9dbb731b3677c6a46aa35213faa" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "fc9d5a097f02406d",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/fc9d5a097f02406d",
+      "uid" : "d4e226ef245153f8",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/d4e226ef245153f8",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0d00d829825768572c3f232047dd3078\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 22e34156f25656763c31a35937cba16e\n*** Element info: {Using=id, value=approvalDrug}",
       "time" : {
-        "start" : 1675808158876,
-        "stop" : 1675808173755,
-        "duration" : 14879
+        "start" : 1677017702635,
+        "stop" : 1677017716055,
+        "duration" : 13420
       }
     }, {
-      "uid" : "1f5dd5561637e31b",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/1f5dd5561637e31b",
+      "uid" : "ecb2ca75b3f854d4",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/ecb2ca75b3f854d4",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:57210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 765b2cd22908f4118c593af13fac04ac\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 22e34156f25656763c31a35937cba16e\n*** Element info: {Using=id, value=approvalDrug}",
       "time" : {
-        "start" : 1675721762613,
-        "stop" : 1675721777335,
-        "duration" : 14722
+        "start" : 1677017702635,
+        "stop" : 1677017716055,
+        "duration" : 13420
+      }
+    }, {
+      "uid" : "68ca4d8dc403f964",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/68ca4d8dc403f964",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63525}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 70194418c9b4d7f227682b4f2da25162\n*** Element info: {Using=id, value=approvalDrug}",
+      "time" : {
+        "start" : 1676931297542,
+        "stop" : 1676931311441,
+        "duration" : 13899
       }
     } ]
   },
@@ -49714,15 +50062,15 @@
   "5afb764af107ad8b230f8cdfe6af36de" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "27a91b8160377b28",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/27a91b8160377b28",
+      "uid" : "bddb9b1683af8dc9",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/bddb9b1683af8dc9",
       "status" : "broken",
       "statusDetails" : "unexpected alert open: {Alert text : }\n  (Session info: chrome=108.0.5359.125): {Alert text : \nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 90913db069ba25bc52a9d302011f70b3\n*** Element info: {Using=id, value=user_name}",
       "time" : {
@@ -49731,8 +50079,18 @@
         "duration" : 0
       }
     }, {
-      "uid" : "e3f95a4db2024017",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/e3f95a4db2024017",
+      "uid" : "3ec48bd70d4885e3",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/3ec48bd70d4885e3",
+      "status" : "broken",
+      "statusDetails" : "unexpected alert open: {Alert text : }\n  (Session info: chrome=108.0.5359.125): {Alert text : \nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 90913db069ba25bc52a9d302011f70b3\n*** Element info: {Using=id, value=user_name}",
+      "time" : {
+        "start" : 1675676152491,
+        "stop" : 1675676152491,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "37b0e64ce0a31d0f",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/37b0e64ce0a31d0f",
       "status" : "broken",
       "statusDetails" : "unexpected alert open: {Alert text : }\n  (Session info: chrome=108.0.5359.125): {Alert text : \nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 90913db069ba25bc52a9d302011f70b3\n*** Element info: {Using=id, value=user_name}",
       "time" : {
@@ -51806,31 +52164,41 @@
   "fe856f553d8d6906cb8652cdda23516a" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "5cae43d405f28498",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/5cae43d405f28498",
+      "uid" : "4bde5b8862e15935",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/4bde5b8862e15935",
       "status" : "broken",
-      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown",
+      "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675808257765,
-        "stop" : 1675808292536,
-        "duration" : 34771
+        "start" : 1677017792076,
+        "stop" : 1677017800291,
+        "duration" : 8215
       }
     }, {
-      "uid" : "3080d2b784b8d286",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/3080d2b784b8d286",
+      "uid" : "9cfee6b32989197a",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/9cfee6b32989197a",
       "status" : "broken",
-      "statusDetails" : "Supplied function might have stalled\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: unknown",
+      "statusDetails" : "Index 0 out of bounds for length 0",
       "time" : {
-        "start" : 1675721856608,
-        "stop" : 1675721891105,
-        "duration" : 34497
+        "start" : 1677017792076,
+        "stop" : 1677017800291,
+        "duration" : 8215
+      }
+    }, {
+      "uid" : "eebcc6bf09a9c0b1",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/eebcc6bf09a9c0b1",
+      "status" : "broken",
+      "statusDetails" : "Index 0 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931386857,
+        "stop" : 1676931395050,
+        "duration" : 8193
       }
     } ]
   },
@@ -55753,27 +56121,36 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "64b874aa1b48dc18",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/64b874aa1b48dc18",
+      "uid" : "b7982cfb2b5c974a",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/b7982cfb2b5c974a",
       "status" : "passed",
       "time" : {
-        "start" : 1675808312077,
-        "stop" : 1675808327124,
-        "duration" : 15047
+        "start" : 1677017817781,
+        "stop" : 1677017832333,
+        "duration" : 14552
       }
     }, {
-      "uid" : "bd82df130f7d9a9e",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/bd82df130f7d9a9e",
+      "uid" : "ee9a760252519e18",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/ee9a760252519e18",
       "status" : "passed",
       "time" : {
-        "start" : 1675721909914,
-        "stop" : 1675721926123,
-        "duration" : 16209
+        "start" : 1677017817781,
+        "stop" : 1677017832333,
+        "duration" : 14552
+      }
+    }, {
+      "uid" : "f3ca0898d32abcea",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/f3ca0898d32abcea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1676931412361,
+        "stop" : 1676931424880,
+        "duration" : 12519
       }
     } ]
   },
@@ -59237,31 +59614,41 @@
   "c37f1d9e91c4375760490dbbae2e980d" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "5f98fd19aa6fbf7c",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/5f98fd19aa6fbf7c",
+      "uid" : "3de78f0dbd645122",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/3de78f0dbd645122",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63554}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2f4af36b67526c97a09bee2a592860d8\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "Index 1 out of bounds for length 0",
       "time" : {
-        "start" : 1675808214689,
-        "stop" : 1675808231634,
-        "duration" : 16945
+        "start" : 1677017748899,
+        "stop" : 1677017766836,
+        "duration" : 17937
       }
     }, {
-      "uid" : "a81babcda41093e1",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/a81babcda41093e1",
+      "uid" : "5248c1576d3afd9f",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/5248c1576d3afd9f",
       "status" : "broken",
-      "statusDetails" : "Index 0 out of bounds for length 0",
+      "statusDetails" : "Index 1 out of bounds for length 0",
       "time" : {
-        "start" : 1675721822490,
-        "stop" : 1675721830460,
-        "duration" : 7970
+        "start" : 1677017748899,
+        "stop" : 1677017766836,
+        "duration" : 17937
+      }
+    }, {
+      "uid" : "b5fe2637430c5141",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/b5fe2637430c5141",
+      "status" : "broken",
+      "statusDetails" : "Index 1 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931344960,
+        "stop" : 1676931361667,
+        "duration" : 16707
       }
     } ]
   },
@@ -59785,31 +60172,41 @@
   "ce5af09c655d14e1aff4bc85be100a55" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "e1f4d233a611c9fc",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/e1f4d233a611c9fc",
+      "uid" : "fa953dd9330b854d",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/fa953dd9330b854d",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63554}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2f4af36b67526c97a09bee2a592860d8\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "Index 1 out of bounds for length 0",
       "time" : {
-        "start" : 1675808233181,
-        "stop" : 1675808251237,
-        "duration" : 18056
+        "start" : 1677017768495,
+        "stop" : 1677017784787,
+        "duration" : 16292
       }
     }, {
-      "uid" : "a6f6d0067103cbcc",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/a6f6d0067103cbcc",
+      "uid" : "f8b48e2025ff90c9",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/f8b48e2025ff90c9",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:57329}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 29791d750d66d0d95867c79aac592adb\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "Index 1 out of bounds for length 0",
       "time" : {
-        "start" : 1675721831962,
-        "stop" : 1675721849512,
-        "duration" : 17550
+        "start" : 1677017768495,
+        "stop" : 1677017784787,
+        "duration" : 16292
+      }
+    }, {
+      "uid" : "ed9adfd203f15616",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/ed9adfd203f15616",
+      "status" : "broken",
+      "statusDetails" : "Index 1 out of bounds for length 0",
+      "time" : {
+        "start" : 1676931363404,
+        "stop" : 1676931379722,
+        "duration" : 16318
       }
     } ]
   },
@@ -63559,27 +63956,36 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "f9a102d4783f465b",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/f9a102d4783f465b",
+      "uid" : "34747a6be09bf124",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/34747a6be09bf124",
       "status" : "passed",
       "time" : {
-        "start" : 1675807816893,
-        "stop" : 1675807833304,
-        "duration" : 16411
+        "start" : 1677017422448,
+        "stop" : 1677017433633,
+        "duration" : 11185
       }
     }, {
-      "uid" : "154305652cc4a0e8",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/154305652cc4a0e8",
+      "uid" : "5103e2285b2f9526",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/5103e2285b2f9526",
       "status" : "passed",
       "time" : {
-        "start" : 1675721414475,
-        "stop" : 1675721424395,
-        "duration" : 9920
+        "start" : 1677017422448,
+        "stop" : 1677017433633,
+        "duration" : 11185
+      }
+    }, {
+      "uid" : "6d16ac9047587bbc",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/6d16ac9047587bbc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1676931020917,
+        "stop" : 1676931032095,
+        "duration" : 11178
       }
     } ]
   },
@@ -63808,31 +64214,41 @@
   "bb86337a144e57aab7260626a87491b3" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
-      "uid" : "fac3c022eac55d81",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/76/allure/#testresult/fac3c022eac55d81",
+      "uid" : "4b487bd388fbc3a8",
+      "reportUrl" : "http://localhost:8080/job/regression2/61/allure/#testresult/4b487bd388fbc3a8",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63253}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7f9b25e5c7d1a8be55c0cb2a5cbe906b\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cab24dc188974efd047e871f99216ae7\n*** Element info: {Using=id, value=approvalDrug}",
       "time" : {
-        "start" : 1675808041502,
-        "stop" : 1675808055067,
-        "duration" : 13565
+        "start" : 1677017608144,
+        "stop" : 1677017621571,
+        "duration" : 13427
       }
     }, {
-      "uid" : "6a4a52d05c4ace82",
-      "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure/#testresult/6a4a52d05c4ace82",
+      "uid" : "68e1a1d5117c6a98",
+      "reportUrl" : "http://localhost:8080/job/regression2/60/allure/#testresult/68e1a1d5117c6a98",
       "status" : "broken",
-      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:57066}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2cd0d1c6efe87b61e12ec46c7f6de1fe\n*** Element info: {Using=id, value=approvalDrug}",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cab24dc188974efd047e871f99216ae7\n*** Element info: {Using=id, value=approvalDrug}",
       "time" : {
-        "start" : 1675721643899,
-        "stop" : 1675721657207,
-        "duration" : 13308
+        "start" : 1677017608144,
+        "stop" : 1677017621571,
+        "duration" : 13427
+      }
+    }, {
+      "uid" : "b9009f1a4690de1e",
+      "reportUrl" : "http://localhost:8080/job/regression2/59/allure/#testresult/b9009f1a4690de1e",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63401}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 518e98906cd5bdb0756e8cd7722521d4\n*** Element info: {Using=id, value=approvalDrug}",
+      "time" : {
+        "start" : 1676931201537,
+        "stop" : 1676931215648,
+        "duration" : 14111
       }
     } ]
   },

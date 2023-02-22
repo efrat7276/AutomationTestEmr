@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 08 00:17:32 IST 2023</td>
+<td>Started on:</td><td>Wed Feb 22 00:16:26 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>54 seconds (54364 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25833 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,29 +76,33 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.test01_addAndSaveWithConfirmationDrugRequireConfirmationDailyToPatient()'><b>test01_addAndSaveWithConfirmationDrugRequireConfirmationDailyToPatient</b><br>Test class: sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario<br>Test method: test add and save drug daily</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Supplied function might have stalled
-Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
-System info: host: &apos;COMPU_EFRAT&apos;, ip: &apos;172.20.8.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:221)
-	at extensions.UIActions.click(UIActions.java:42)
-	at workflows.doctor.doctorFlows.confirmationInfectionToDrugFromInstructionPage(doctorFlows.java:390)
-	at sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.test01_addAndSaveWithConfirmationDrugRequireConfirmationDailyToPatient(DrugWithConfirmationScenario.java:25)
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:40)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.get(Unknown Source)
+	at workflows.doctor.doctorFlows.newDrug(doctorFlows.java:25)
+	at workflows.doctor.drugFlows.addAndSaveDrugDailyToPatient(drugFlows.java:13)
+	at sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.test01_addAndSaveWithConfirmationDrugRequireConfirmationDailyToPatient(DrugWithConfirmationScenario.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 35 more
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace333812325", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace333812325'><pre>org.openqa.selenium.TimeoutException: Supplied function might have stalled
-Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
-System info: host: &apos;COMPU_EFRAT&apos;, ip: &apos;172.20.8.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:221)
-	at extensions.UIActions.click(UIActions.java:42)
-	at workflows.doctor.doctorFlows.confirmationInfectionToDrugFromInstructionPage(doctorFlows.java:390)
-	at sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.test01_addAndSaveWithConfirmationDrugRequireConfirmationDailyToPatient(DrugWithConfirmationScenario.java:25)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2108668409", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2108668409'><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor27.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:40)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.get(Unknown Source)
+	at workflows.doctor.doctorFlows.newDrug(doctorFlows.java:25)
+	at workflows.doctor.drugFlows.addAndSaveDrugDailyToPatient(drugFlows.java:13)
+	at sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.test01_addAndSaveWithConfirmationDrugRequireConfirmationDailyToPatient(DrugWithConfirmationScenario.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,14 +135,9 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 35 more
 </pre></div></td>
-<td>30</td>
-<td>sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario@50825a02</td></tr>
+<td>8</td>
+<td>sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario@3241713e</td></tr>
 <tr>
 <td title='sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.test01_nurseApprovalDrugDailyToPatient()'><b>test01_nurseApprovalDrugDailyToPatient</b><br>Test class: sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario<br>Test method: test nurse-approval drug daily</td>
 <td><div><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
@@ -152,14 +151,14 @@ Caused by: java.util.concurrent.TimeoutException
 	at workflows.nurse.nurseFlows.approvalDrugsDaily(nurseFlows.java:106)
 	at sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.test01_nurseApprovalDrugDailyToPatient(DrugWithConfirmationScenario.java:35)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1131557365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1131557365'><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1893987940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1893987940'><pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
 	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
 	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
 	at java.base/java.util.Objects.checkIndex(Objects.java:359)
 	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor27.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:40)
@@ -199,8 +198,8 @@ Caused by: java.util.concurrent.TimeoutException
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>10</td>
-<td>sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario@50825a02</td></tr>
+<td>8</td>
+<td>sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario@3241713e</td></tr>
 </table><p>
 </body>
 </html>

@@ -2,61 +2,55 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-08T05:30:08 IST" name="regression_3" finished-at="2023-02-08T05:30:32 IST" duration-ms="24127">
+  <suite started-at="2023-02-22T12:02:37 IST" name="regression_2" finished-at="2023-02-22T12:03:03 IST" duration-ms="26009">
     <groups>
     </groups>
-    <test started-at="2023-02-08T05:30:08 IST" name="emergency_addGeneralInsNotSaveAt5" finished-at="2023-02-08T05:30:32 IST" duration-ms="24127">
-      <class name="regression.regression3">
-        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:regression.regression3@736ac09a]" started-at="2023-02-08T05:30:08 IST" name="BeforeSuite" finished-at="2023-02-08T05:30:08 IST" duration-ms="426" status="PASS">
+    <test started-at="2023-02-22T12:02:37 IST" name="addAndExecute_emergency" finished-at="2023-02-22T12:03:03 IST" duration-ms="26009">
+      <class name="regression.regression2">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:regression.regression2@4b6ac111]" started-at="2023-02-22T12:02:37 IST" name="BeforeSuite" finished-at="2023-02-22T12:02:37 IST" duration-ms="500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method is-config="true" signature="startSession()[pri:0, instance:regression.regression3@736ac09a]" started-at="2023-02-08T05:30:08 IST" name="startSession" finished-at="2023-02-08T05:30:16 IST" duration-ms="7514" status="PASS">
+        <test-method is-config="true" signature="startSession()[pri:0, instance:regression.regression2@4b6ac111]" started-at="2023-02-22T12:02:37 IST" name="startSession" finished-at="2023-02-22T12:02:45 IST" duration-ms="7743" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startSession -->
-        <test-method signature="addAndDonSaveGeneralInsAt5()[pri:0, instance:regression.regression3@736ac09a]" started-at="2023-02-08T05:30:16 IST" name="addAndDonSaveGeneralInsAt5" description="add generalIns list to patient" finished-at="2023-02-08T05:30:30 IST" duration-ms="14109" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method signature="addAndSaveAllInstructionToPatient()[pri:0, instance:regression.regression2@4b6ac111]" started-at="2023-02-22T12:02:45 IST" name="addAndSaveAllInstructionToPatient" description="add all instruction emergency to patient" finished-at="2023-02-22T12:03:00 IST" duration-ms="15227" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+              <![CDATA[unexpected alert open: {Alert text : }
+  (Session info: chrome=108.0.5359.125): {Alert text : 
 Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
 System info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\efeldman\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52525}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 91555b52cd6dc3ce6b10f6e9ad6ec82b]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\efeldman\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55434}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a559671d1b80efd994da05a22d729ca
+*** Element info: {Using=xpath, value=//form//button[2]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
+  (Session info: chrome=108.0.5359.125): {Alert text : 
 Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
 System info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\efeldman\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52525}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 91555b52cd6dc3ce6b10f6e9ad6ec82b
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\efeldman\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55434}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a559671d1b80efd994da05a22d729ca
+*** Element info: {Using=xpath, value=//form//button[2]}
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:127)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:238)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at workflows.doctor.doctorFlows.newGeneralIns(doctorFlows.java:30)
-at regression.regression3.addAndDonSaveGeneralInsAt5(regression3.java:24)
+at workflows.WebFlows.userSignConfirm(WebFlows.java:24)
+at workflows.doctor.doctorFlows.approvalInstruction(doctorFlows.java:68)
+at workflows.doctor.doctorFlows.stopAllActiveInstructionToPatient(doctorFlows.java:83)
+at regression.regression2.addAndSaveAllInstructionToPatient(regression2.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -91,19 +85,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addAndDonSaveGeneralInsAt5 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:regression.regression3@736ac09a]" started-at="2023-02-08T05:30:30 IST" name="afterMethod" finished-at="2023-02-08T05:30:32 IST" duration-ms="1775" status="PASS">
+        </test-method> <!-- addAndSaveAllInstructionToPatient -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:regression.regression2@4b6ac111]" started-at="2023-02-22T12:03:00 IST" name="afterMethod" finished-at="2023-02-22T12:03:03 IST" duration-ms="2092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="closeSession()[pri:0, instance:regression.regression3@736ac09a]" started-at="2023-02-08T05:30:32 IST" name="closeSession" finished-at="2023-02-08T05:30:32 IST" duration-ms="328" status="PASS">
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:regression.regression2@4b6ac111]" started-at="2023-02-22T12:03:03 IST" name="closeSession" finished-at="2023-02-22T12:03:03 IST" duration-ms="514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->
-      </class> <!-- regression.regression3 -->
-    </test> <!-- emergency_addGeneralInsNotSaveAt5 -->
-  </suite> <!-- regression_3 -->
+      </class> <!-- regression.regression2 -->
+    </test> <!-- addAndExecute_emergency -->
+  </suite> <!-- regression_2 -->
 </testng-results>

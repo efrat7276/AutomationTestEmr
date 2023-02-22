@@ -13,10 +13,25 @@ import static org.testng.Assert.assertTrue;
 
 public class Verifications extends CommonOps {
 
+    public static Object existInList;
+
     @Step("Verify count in List")
     public static void numberOfElementList(List< WebElement> li, int expected){
         wait.until(ExpectedConditions.visibilityOf(li.get(li.size()-1)));
         assertEquals(li.size() , expected);
+    }
+
+    @Step("Verify String exist in List")
+    public static void existInList(List< WebElement> li, String expected){
+        wait.until(ExpectedConditions.visibilityOf(li.get(li.size()-1)));
+        for(WebElement l: li) {
+        if (l.getText().equals(expected) == true  );
+            {
+                assertTrue(1 == 1);
+                return;
+            }
+        }
+        assertTrue(1==0);
     }
 
     @Step("Verify count")

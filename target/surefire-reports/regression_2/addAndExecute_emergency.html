@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 08 04:20:09 IST 2023</td>
+<td>Started on:</td><td>Wed Feb 22 12:02:37 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13124 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26009 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,60 +76,54 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='regression.regression2.addAndSaveAllInstructionToPatient()'><b>addAndSaveAllInstructionToPatient</b><br>Test class: regression.regression2<br>Test method: add all instruction emergency to patient</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input _ngcontent-kke-c8=&quot;&quot; aria-multiline=&quot;false&quot; autocapitalize=&quot;off&quot; autocorrect=&quot;off&quot; class=&quot;btn-default dropdown-toggle unitText1 dropDep change-dep-btn ng-untouched ng-pristine ng-valid&quot; dontlock=&quot;true&quot; id=&quot;dropdownBasic1&quot; role=&quot;combobox&quot; type=&quot;text&quot; ng-reflect-input-formatter=&quot;function (selectItem) {
-  (Session info: chrome=108.0.5359.125)
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
+  (Session info: chrome=108.0.5359.125): {Alert text : 
 Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
 System info: host: &apos;COMPU_EFRAT&apos;, ip: &apos;172.20.8.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\efeldman\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3411ea52b6a01141439b9382d5c8d447
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\efeldman\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55434}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a559671d1b80efd994da05a22d729ca
+*** Element info: {Using=xpath, value=//form//button[2]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:127)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:238)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at extensions.UIActions.click(UIActions.java:43)
-	at workflows.departmentFlows.chooseDepartment(departmentFlows.java:14)
-	at regression.regression2.addAndSaveAllInstructionToPatient(regression2.java:25)
+	at workflows.WebFlows.userSignConfirm(WebFlows.java:24)
+	at workflows.doctor.doctorFlows.approvalInstruction(doctorFlows.java:68)
+	at workflows.doctor.doctorFlows.stopAllActiveInstructionToPatient(doctorFlows.java:83)
+	at regression.regression2.addAndSaveAllInstructionToPatient(regression2.java:27)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 43 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace271328465", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace271328465'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input _ngcontent-kke-c8=&quot;&quot; aria-multiline=&quot;false&quot; autocapitalize=&quot;off&quot; autocorrect=&quot;off&quot; class=&quot;btn-default dropdown-toggle unitText1 dropDep change-dep-btn ng-untouched ng-pristine ng-valid&quot; dontlock=&quot;true&quot; id=&quot;dropdownBasic1&quot; role=&quot;combobox&quot; type=&quot;text&quot; ng-reflect-input-formatter=&quot;function (selectItem) {
-      &quot; ng-reflect-ngb-typeahead=&quot;function (text$) {
-           &quot; ng-reflect-result-formatter=&quot;function (selectItem) {
-      &quot; ng-reflect-model=&quot;[object Object]&quot; autocomplete=&quot;off&quot; aria-autocomplete=&quot;list&quot; aria-expanded=&quot;false&quot;&gt; is not clickable at point (1815, 83). Other element would receive the click: &lt;div _ngcontent-kke-c3=&quot;&quot; class=&quot;overlay&quot; ng-reflect-ng-style=&quot;[object Object]&quot; style=&quot;background-color: rgba(51, 51, 51, 0.5); position: fixed;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=108.0.5359.125)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace690715138", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace690715138'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
+  (Session info: chrome=108.0.5359.125): {Alert text : 
 Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
 System info: host: &apos;COMPU_EFRAT&apos;, ip: &apos;172.20.8.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\efeldman\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3411ea52b6a01141439b9382d5c8d447
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\efeldman\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55434}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a559671d1b80efd994da05a22d729ca
+*** Element info: {Using=xpath, value=//form//button[2]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:127)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:238)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at extensions.UIActions.click(UIActions.java:43)
-	at workflows.departmentFlows.chooseDepartment(departmentFlows.java:14)
-	at regression.regression2.addAndSaveAllInstructionToPatient(regression2.java:25)
+	at workflows.WebFlows.userSignConfirm(WebFlows.java:24)
+	at workflows.doctor.doctorFlows.approvalInstruction(doctorFlows.java:68)
+	at workflows.doctor.doctorFlows.stopAllActiveInstructionToPatient(doctorFlows.java:83)
+	at regression.regression2.addAndSaveAllInstructionToPatient(regression2.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -163,8 +157,8 @@ Session ID: 3411ea52b6a01141439b9382d5c8d447
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>3</td>
-<td>regression.regression2@6ecd665</td></tr>
+<td>15</td>
+<td>regression.regression2@4b6ac111</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,9 +1,16 @@
 [ {
-  "buildOrder" : 75,
-  "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure",
+  "buildOrder" : 60,
+  "reportUrl" : "http://localhost:8080/job/regression2/60/allure",
   "reportName" : "AllureReport",
   "data" : {
-    "duration" : 64916078
+    "duration" : 1356695099
+  }
+}, {
+  "buildOrder" : 59,
+  "reportUrl" : "http://localhost:8080/job/regression2/59/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 1270293001
   }
 }, {
   "buildOrder" : 258,
@@ -130,12 +137,5 @@
   "reportName" : "AllureReport",
   "data" : {
     "duration" : 8219648127
-  }
-}, {
-  "buildOrder" : 239,
-  "reportUrl" : "http://localhost:8080/job/CI%20Automation/239/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "duration" : 8175691006
   }
 } ]

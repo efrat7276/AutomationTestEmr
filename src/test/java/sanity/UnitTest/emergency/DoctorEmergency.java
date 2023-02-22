@@ -28,7 +28,7 @@ public class DoctorEmergency extends CommonOps {
 //    }
     @Test(description="check hospital stock checkbox")
     @Description("check hospital stock checkbox")
-    public void test01_checkHospitalStockCheckbox(){
+    public void test01_checkHospitalStockCheckbox() throws InterruptedException{
         WebFlows.login('d');
         departmentFlows.chooseDepartment("חדר מיון");
         WebFlows.patientBoxEntry(1);
@@ -38,7 +38,7 @@ public class DoctorEmergency extends CommonOps {
 
     @Test(description="check possibilities for emergency")
     @Description("check possibilities for emergency")
-    public void test02_checkPossibilitiesInDrugForm(){
+    public void test02_checkPossibilitiesInDrugForm() throws InterruptedException{
         WebFlows.login('d');
         departmentFlows.chooseDepartment("חדר מיון");
         WebFlows.patientBoxEntry(1);
@@ -51,7 +51,7 @@ public class DoctorEmergency extends CommonOps {
 
     @Test(description="add drug once-only emergency ")
     @Description("add drug once-only emergency ")
-    public void test03_addDrugOnceOnly(){
+    public void test03_addDrugOnceOnly() throws InterruptedException{
         WebFlows.login('d');
         departmentFlows.chooseDepartment("חדר מיון");
         WebFlows.patientBoxEntry(1);
@@ -61,7 +61,7 @@ public class DoctorEmergency extends CommonOps {
 
     @Test(description="add drug once-only and execute")
     @Description("add drug once-only and execute")
-    public void test04_addDrugOnceOnlyAndExecute(){
+    public void test04_addDrugOnceOnlyAndExecute() throws InterruptedException{
         WebFlows.login('d');
         departmentFlows.chooseDepartment("חדר מיון");
         WebFlows.patientBoxEntry(1);

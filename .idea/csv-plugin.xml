@@ -80,6 +80,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\allure-report\data\suites.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

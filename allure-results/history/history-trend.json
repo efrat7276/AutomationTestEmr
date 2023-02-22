@@ -1,14 +1,26 @@
 [ {
-  "buildOrder" : 75,
-  "reportUrl" : "http://localhost:8080/job/goToMedicinePrepInNight/75/allure",
+  "buildOrder" : 60,
+  "reportUrl" : "http://localhost:8080/job/regression2/60/allure",
   "reportName" : "AllureReport",
   "data" : {
-    "failed" : 11,
-    "broken" : 22,
+    "failed" : 2,
+    "broken" : 33,
     "skipped" : 0,
-    "passed" : 5,
+    "passed" : 4,
     "unknown" : 0,
-    "total" : 38
+    "total" : 39
+  }
+}, {
+  "buildOrder" : 59,
+  "reportUrl" : "http://localhost:8080/job/regression2/59/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "failed" : 2,
+    "broken" : 31,
+    "skipped" : 0,
+    "passed" : 6,
+    "unknown" : 0,
+    "total" : 39
   }
 }, {
   "buildOrder" : 258,
@@ -223,18 +235,6 @@
     "broken" : 80,
     "skipped" : 0,
     "passed" : 54,
-    "unknown" : 0,
-    "total" : 138
-  }
-}, {
-  "buildOrder" : 239,
-  "reportUrl" : "http://localhost:8080/job/CI%20Automation/239/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "failed" : 4,
-    "broken" : 82,
-    "skipped" : 1,
-    "passed" : 51,
     "unknown" : 0,
     "total" : 138
   }

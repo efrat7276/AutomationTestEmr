@@ -4,8 +4,8 @@
     "uid" : "1972a1a0643475e3379c2f12ada7267e",
     "name" : "SanityTest",
     "statistic" : {
-      "failed" : 10,
-      "broken" : 19,
+      "failed" : 2,
+      "broken" : 27,
       "skipped" : 0,
       "passed" : 4,
       "unknown" : 0,
@@ -16,11 +16,11 @@
     "name" : "regression_1",
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     }
   }, {
     "uid" : "8399274b4bb69ec8699907dd6ef7de4e",
@@ -34,8 +34,8 @@
       "total" : 1
     }
   }, {
-    "uid" : "4c0d9aa6040fd16e1359c73096dea71b",
-    "name" : "regression_2",
+    "uid" : "e79ac24a368dbc4617d37fb054ae1d6e",
+    "name" : "regression_3",
     "statistic" : {
       "failed" : 0,
       "broken" : 1,
@@ -45,8 +45,8 @@
       "total" : 1
     }
   }, {
-    "uid" : "e79ac24a368dbc4617d37fb054ae1d6e",
-    "name" : "regression_3",
+    "uid" : "4c0d9aa6040fd16e1359c73096dea71b",
+    "name" : "regression_2",
     "statistic" : {
       "failed" : 0,
       "broken" : 1,
