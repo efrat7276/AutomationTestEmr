@@ -1,8 +1,9 @@
-package extensions;
+package workflowsDB;
 
 import utilities.CommonOps;
 
 import java.sql.ResultSet;
+import java.util.List;
 
 public class DBQueries extends CommonOps {
 
@@ -15,5 +16,12 @@ public class DBQueries extends CommonOps {
             System.out.println("the query didn't success for mispar_ishpuz " + mispar_ishpuz +". see details "+ ex);
         }
         return  "success";
+    }
+
+    public static void clearPatientsDrug(List<String> patient_list){
+
+        for (int i=0; i<patient_list.size() ; i++){
+            DBQueries.clearDataForMisparIshpuz(patient_list.get(i));
+        }
     }
 }

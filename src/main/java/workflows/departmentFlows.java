@@ -16,10 +16,10 @@ public class departmentFlows extends CommonOps {
         for (int i = 0; i < chooseDepartmentListPage.departmentList.size(); i++) {
             if (chooseDepartmentListPage.departmentList.get(i).getText().contains(dep)) {
                 UIActions.click(chooseDepartmentListPage.departmentList.get(i));
-                Thread.sleep(1000);
                 return;
             }
         }
+        Thread.sleep(3000);
     }
     }
 

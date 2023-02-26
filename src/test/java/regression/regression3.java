@@ -8,26 +8,34 @@ import workflows.WebFlows;
 import workflows.departmentFlows;
 import workflows.doctor.doctorFlows;
 import workflows.doctor.generalInstructionFlows;
+import workflows.nurse.nurseFlows;
 
 @Listeners(utilities.Listeners.class)
 public class regression3 extends CommonOps {
 
 
-    @Test(description = "add generalIns list to patient")
-    @Description("add generalIns list to patient")
-    public void addAndDonSaveGeneralInsAt5() throws InterruptedException{
+    @Test(description = "add one daily drug patient")
+    @Description("add drug daily to patient")
+    public void addDrugDailyToPatient() throws InterruptedException{
 
         WebFlows.login('d');
-        departmentFlows.chooseDepartment("חדר מיון");
-        WebFlows.patientBoxEntry(5);
+     //   departmentFlows.chooseDepartment("חדר מיון");
+        WebFlows.patientBoxEntry(6);
         doctorFlows.stopAllActiveInstructionToPatient();
-        doctorFlows.newGeneralIns();
-        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(1,1,null , false,false);
-        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(2,1,null , false,true);
+        doctorFlows.newDrug();
+        doctorFlows.drugFormAddDrugDaily("TAB acetylcysteine 200mg efferv (REOLIN )", 20 ,1 , null ,false,false,true);
+        doctorFlows.approvalInstruction();
+        CommonOps.afterMethod();
+        WebFlows.login('n');
+        WebFlows.patientBoxEntry(6);
+        nurseFlows.approvalAllPossibilitiesIns(true,false);
+        nurseFlows.approvalNurseSign();
 
-        generalInstructionFlows.saveGeneralInstructionsSelected();
 
-      //  doctorFlows.approvalInstruction();
+
+
+
+        //  doctorFlows.approvalInstruction();
 
 
 

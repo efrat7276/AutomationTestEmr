@@ -1,165 +1,25 @@
 [ {
-  "uid" : "a2cfd8217a31c7e5",
-  "name" : "add drug once-only emergency ",
+  "uid" : "17c0452008246b05",
+  "name" : "test nurse-approval and nurse-execute drug sos",
   "time" : {
-    "start" : 1677017851241,
-    "stop" : 1677017871455,
-    "duration" : 20214
+    "start" : 1677363116011,
+    "stop" : 1677363129837,
+    "duration" : 13826
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "948709abae79f1c4",
+  "name" : "add drug once-only and execute",
+  "time" : {
+    "start" : 1677363465296,
+    "stop" : 1677363484031,
+    "duration" : 18735
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "b6926e5d86cbffa0",
-  "name" : "test add and save drug diluted",
-  "time" : {
-    "start" : 1677017597880,
-    "stop" : 1677017606276,
-    "duration" : 8396
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "514199bbc06cb812",
-  "name" : "test nurse-approval and nurse-execute drug weekly",
-  "time" : {
-    "start" : 1677017577288,
-    "stop" : 1677017590551,
-    "duration" : 13263
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "b7982cfb2b5c974a",
-  "name" : "check hospital stock checkbox",
-  "time" : {
-    "start" : 1677017817781,
-    "stop" : 1677017832333,
-    "duration" : 14552
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bbd17db09aabca7c",
-  "name" : "test add and save drug weekly",
-  "time" : {
-    "start" : 1677017567727,
-    "stop" : 1677017575988,
-    "duration" : 8261
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "f393a874dded65c6",
-  "name" : "test add and save drug daily",
-  "time" : {
-    "start" : 1677017442467,
-    "stop" : 1677017451165,
-    "duration" : 8698
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "7e29a79094415150",
-  "name" : "add and save blood-product",
-  "time" : {
-    "start" : 1677017698223,
-    "stop" : 1677017701237,
-    "duration" : 3014
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "94858759b6d4017",
-  "name" : "test nurse approval and nurse execute nutrition daily",
-  "time" : {
-    "start" : 1677017732952,
-    "stop" : 1677017741229,
-    "duration" : 8277
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "df385dc138596588",
-  "name" : "check possibilities for emergency",
-  "time" : {
-    "start" : 1677017833809,
-    "stop" : 1677017849796,
-    "duration" : 15987
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d45217a4152c72d8",
-  "name" : "test nurse-approval drug weekly",
-  "time" : {
-    "start" : 1677017632904,
-    "stop" : 1677017646520,
-    "duration" : 13616
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "4b487bd388fbc3a8",
-  "name" : "test nurse-approval drug diluted",
-  "time" : {
-    "start" : 1677017608144,
-    "stop" : 1677017621571,
-    "duration" : 13427
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "34747a6be09bf124",
-  "name" : "test stop all active instruction to patient ",
-  "time" : {
-    "start" : 1677017422448,
-    "stop" : 1677017433633,
-    "duration" : 11185
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bddb9b1683af8dc9",
-  "name" : "afterMethod",
-  "time" : {
-    "start" : 1675676152491,
-    "stop" : 1675676152491,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "6747fcf847da6621",
-  "name" : "add all instruction emergency to patient",
-  "time" : {
-    "start" : 1677060165325,
-    "stop" : 1677060180774,
-    "duration" : 15449
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "4c0852a59e83b673",
-  "name" : "BeforeSuite",
-  "time" : {
-    "start" : 1675675727255,
-    "stop" : 1675675727255,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "fa953dd9330b854d",
-  "name" : "edit timePerDay in drug daily",
-  "time" : {
-    "start" : 1677017768495,
-    "stop" : 1677017784787,
-    "duration" : 16292
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "b463a2c24a90f07f",
+  "uid" : "1eaed2a480e5b1e5",
   "name" : "startSession",
   "time" : {
     "start" : 1676897352071,
@@ -169,222 +29,382 @@
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "4cff12d0d681258b",
-  "name" : "nurse approval and nurse execute generalIns daily",
-  "time" : {
-    "start" : 1677017682482,
-    "stop" : 1677017691174,
-    "duration" : 8692
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "cba611231ac5616",
-  "name" : "test nurse-approval and nurse-execute drug once only",
-  "time" : {
-    "start" : 1677017537869,
-    "stop" : 1677017547185,
-    "duration" : 9316
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "6cf1e826452610d9",
-  "name" : "test add and save drug once only",
-  "time" : {
-    "start" : 1677017528141,
-    "stop" : 1677017536565,
-    "duration" : 8424
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "68c4bebd2565a7dc",
-  "name" : "add drug once-only and execute",
-  "time" : {
-    "start" : 1677017872807,
-    "stop" : 1677017890983,
-    "duration" : 18176
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "cd10f8dc5d45d5e1",
-  "name" : "add and save generalIns daily",
-  "time" : {
-    "start" : 1677017673008,
-    "stop" : 1677017681170,
-    "duration" : 8162
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "679204037babb197",
-  "name" : "add generalIns list to patient",
-  "time" : {
-    "start" : 1677036617754,
-    "stop" : 1677036634816,
-    "duration" : 17062
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "e977d009ed5363da",
-  "name" : "nurse approval and nurse execute generalIns daily",
-  "time" : {
-    "start" : 1677017663303,
-    "stop" : 1677017671643,
-    "duration" : 8340
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "ae856506c455092b",
-  "name" : "test nurse-approval future drug daily",
-  "time" : {
-    "start" : 1677017484151,
-    "stop" : 1677017492153,
-    "duration" : 8002
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "91d5a6e92b7a6ecf",
-  "name" : "add and save generalIns daily",
-  "time" : {
-    "start" : 1677017653643,
-    "stop" : 1677017661782,
-    "duration" : 8139
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "c94992437f443c2b",
-  "name" : "test add and save continues drug",
-  "time" : {
-    "start" : 1677017623289,
-    "stop" : 1677017631601,
-    "duration" : 8312
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "39c1127bbab74810",
-  "name" : "test add and save drug by hour",
-  "time" : {
-    "start" : 1677017548460,
-    "stop" : 1677017556639,
-    "duration" : 8179
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "95240092e6c65975",
+  "uid" : "975313064f3c80ba",
   "name" : "test nurse-approval and nurse-execute drug daily",
   "time" : {
-    "start" : 1677017453159,
-    "stop" : 1677017463126,
-    "duration" : 9967
+    "start" : 1677363057071,
+    "stop" : 1677363066227,
+    "duration" : 9156
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "16c89276997df34a",
-  "name" : "test nurse-approval drug daily",
+  "uid" : "5a6b7a68ddfb5138",
+  "name" : "check hospital stock checkbox",
   "time" : {
-    "start" : 1677017801964,
-    "stop" : 1677017810473,
-    "duration" : 8509
+    "start" : 1677363421246,
+    "stop" : 1677363436952,
+    "duration" : 15706
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "28fcb74db3b31596",
-  "name" : "test nurse-approval and nurse-execute drug by-hour",
+  "uid" : "d5f55fc57ce3bf29",
+  "name" : "add all instruction emergency to patient",
   "time" : {
-    "start" : 1677017557960,
-    "stop" : 1677017566138,
-    "duration" : 8178
+    "start" : 1677378023853,
+    "stop" : 1677378129051,
+    "duration" : 105198
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92bb5ae8cce28d91",
+  "name" : "nurse approval and nurse execute generalIns daily",
+  "time" : {
+    "start" : 1677363264349,
+    "stop" : 1677363272815,
+    "duration" : 8466
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "9c0bac762ca4ad38",
+  "uid" : "7c3e85d87861eadc",
+  "name" : "add generalIns list to patient",
+  "time" : {
+    "start" : 1677382223029,
+    "stop" : 1677382254469,
+    "duration" : 31440
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "dc775e14ae3b184c",
   "name" : "test add and save nutrition daily",
   "time" : {
-    "start" : 1677017722981,
-    "stop" : 1677017731414,
-    "duration" : 8433
+    "start" : 1677363325226,
+    "stop" : 1677363333634,
+    "duration" : 8408
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "4bde5b8862e15935",
-  "name" : "test add and save drug daily",
+  "uid" : "2584828b189dc03e",
+  "name" : "add one daily drug patient",
   "time" : {
-    "start" : 1677017792076,
-    "stop" : 1677017800291,
-    "duration" : 8215
+    "start" : 1677407507068,
+    "stop" : 1677407571686,
+    "duration" : 64618
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d4e226ef245153f8",
-  "name" : "approval blood-product",
+  "uid" : "8d9e618eec157a55",
+  "name" : "test add and save drug diluted",
   "time" : {
-    "start" : 1677017702635,
-    "stop" : 1677017716055,
-    "duration" : 13420
+    "start" : 1677363199717,
+    "stop" : 1677363208507,
+    "duration" : 8790
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "3de78f0dbd645122",
-  "name" : "edit dosage to drug daily ",
+  "uid" : "7badb2d80c9cd5ed",
+  "name" : "add drug once-only emergency ",
   "time" : {
-    "start" : 1677017748899,
-    "stop" : 1677017766836,
-    "duration" : 17937
+    "start" : 1677363454020,
+    "stop" : 1677363464027,
+    "duration" : 10007
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "292cbc05e09953e9",
-  "name" : "test nurse-approval and nurse-execute drug sos",
+  "uid" : "aef96aeb1269b527",
+  "name" : "test add and save drug weekly",
   "time" : {
-    "start" : 1677017512714,
-    "stop" : 1677017526602,
-    "duration" : 13888
+    "start" : 1677363170191,
+    "stop" : 1677363178235,
+    "duration" : 8044
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "e6ece534e0f61bb2",
+  "uid" : "8a848f87e24c8a3a",
+  "name" : "Verify List Roles",
+  "time" : {
+    "start" : 1677392482927,
+    "stop" : 1677392484126,
+    "duration" : 1199
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "7df131fcb97742fb",
   "name" : "test add and save future drug daily ",
   "time" : {
-    "start" : 1677017464489,
-    "stop" : 1677017482599,
-    "duration" : 18110
+    "start" : 1677363067652,
+    "stop" : 1677363086534,
+    "duration" : 18882
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6db0dcd73f1e64ea",
+  "name" : "edit dosage to drug daily ",
+  "time" : {
+    "start" : 1677363351194,
+    "stop" : 1677363367639,
+    "duration" : 16445
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "be7254734c8798c7",
+  "uid" : "929472ee1ac89b6d",
+  "name" : "afterMethod",
+  "time" : {
+    "start" : 1675676152491,
+    "stop" : 1675676152491,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "552099d04c3017d5",
+  "name" : "test nurse-approval drug weekly",
+  "time" : {
+    "start" : 1677363234262,
+    "stop" : 1677363248062,
+    "duration" : 13800
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "921237be52f6b638",
+  "name" : "add and save generalIns daily",
+  "time" : {
+    "start" : 1677363274050,
+    "stop" : 1677363283722,
+    "duration" : 9672
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "db781fa2418c73d4",
+  "name" : "add and save generalIns daily",
+  "time" : {
+    "start" : 1677363254904,
+    "stop" : 1677363263015,
+    "duration" : 8111
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b1fca02cb5aeb2c7",
+  "name" : "edit timePerDay in drug daily",
+  "time" : {
+    "start" : 1677363369178,
+    "stop" : 1677363386081,
+    "duration" : 16903
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f43dd3c08fcdcedb",
+  "name" : "add and save blood-product",
+  "time" : {
+    "start" : 1677363300630,
+    "stop" : 1677363303843,
+    "duration" : 3213
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d881d7df62d7fc55",
+  "name" : "test nurse approval and nurse execute nutrition daily",
+  "time" : {
+    "start" : 1677363335051,
+    "stop" : 1677363343360,
+    "duration" : 8309
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b7de084f461a2d8f",
+  "name" : "test add and save drug once only",
+  "time" : {
+    "start" : 1677363131076,
+    "stop" : 1677363139429,
+    "duration" : 8353
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3e3bcce19356f9e0",
+  "name" : "test nurse-approval drug diluted",
+  "time" : {
+    "start" : 1677363209920,
+    "stop" : 1677363223687,
+    "duration" : 13767
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3448963529043a81",
+  "name" : "test add and save continues drug",
+  "time" : {
+    "start" : 1677363225022,
+    "stop" : 1677363233088,
+    "duration" : 8066
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f3fba01dd9845c6f",
   "name" : "addToPatientAllPossibilityIns",
   "time" : {
-    "start" : 1677059911644,
-    "stop" : 1677059932172,
-    "duration" : 20528
+    "start" : 1677363028503,
+    "stop" : 1677363105781,
+    "duration" : 77278
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "90a0af1f7b4654e8",
+  "uid" : "d2378dbf5e17523a",
+  "name" : "test nurse-approval and nurse-execute drug once only",
+  "time" : {
+    "start" : 1677363140602,
+    "stop" : 1677363148784,
+    "duration" : 8182
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3e979935b26b4f1b",
+  "name" : "approval blood-product",
+  "time" : {
+    "start" : 1677363305228,
+    "stop" : 1677363318352,
+    "duration" : 13124
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "2933cfa1b2122a6f",
+  "name" : "test stop all active instruction to patient ",
+  "time" : {
+    "start" : 1677363028484,
+    "stop" : 1677363037976,
+    "duration" : 9492
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9dd3aae07935977f",
+  "name" : "test add and save drug daily",
+  "time" : {
+    "start" : 1677363046671,
+    "stop" : 1677363055316,
+    "duration" : 8645
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "13dc3dede047edd2",
+  "name" : "nurse approval and nurse execute generalIns daily",
+  "time" : {
+    "start" : 1677363284936,
+    "stop" : 1677363293311,
+    "duration" : 8375
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "591a72a0ab02d1fd",
   "name" : "test add and save drug sos",
   "time" : {
-    "start" : 1677017494372,
-    "stop" : 1677017510733,
-    "duration" : 16361
+    "start" : 1677363097638,
+    "stop" : 1677363114351,
+    "duration" : 16713
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c7c5aa12306274ad",
+  "name" : "BeforeSuite",
+  "time" : {
+    "start" : 1675675727255,
+    "stop" : 1675675727255,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "2b58606b499b46b0",
+  "name" : "test add and save drug daily",
+  "time" : {
+    "start" : 1677363393631,
+    "stop" : 1677363402964,
+    "duration" : 9333
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3568f798179ffec2",
+  "name" : "test nurse-approval and nurse-execute drug weekly",
+  "time" : {
+    "start" : 1677363179439,
+    "stop" : 1677363192463,
+    "duration" : 13024
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "db455044b119a331",
+  "name" : "check possibilities for emergency",
+  "time" : {
+    "start" : 1677363438433,
+    "stop" : 1677363452556,
+    "duration" : 14123
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e404336feac83344",
+  "name" : "test add and save drug by hour",
+  "time" : {
+    "start" : 1677363149975,
+    "stop" : 1677363158802,
+    "duration" : 8827
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5fd655b791f3d090",
+  "name" : "test nurse-approval and nurse-execute drug by-hour",
+  "time" : {
+    "start" : 1677363160013,
+    "stop" : 1677363169040,
+    "duration" : 9027
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "cab08b225671742e",
+  "name" : "test nurse-approval future drug daily",
+  "time" : {
+    "start" : 1677363087883,
+    "stop" : 1677363095723,
+    "duration" : 7840
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "8aed39dd229935c8",
+  "name" : "test nurse-approval drug daily",
+  "time" : {
+    "start" : 1677363404376,
+    "stop" : 1677363413951,
+    "duration" : 9575
   },
   "status" : "broken",
   "severity" : "normal"

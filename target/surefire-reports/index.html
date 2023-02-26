@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-regression_2" class="navigator-link">
-              <span class="suite-name border-failed">regression_2</span>
+            <a href="#" panel-name="suite-regression_3" class="navigator-link">
+              <span class="suite-name border-passed">regression_3</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-regression_2" class="navigator-link ">
-                    <span>C:\Automation\AutomationProject_emr\regression_2.xml</span>
+                  <a href="#" panel-name="test-xml-regression_3" class="navigator-link ">
+                    <span>C:\Automation\AutomationProject_emr\regression_3.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-regression_2" class="navigator-link ">
+                  <a href="#" panel-name="testlist-regression_3" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-regression_2" class="navigator-link ">
+                  <a href="#" panel-name="group-regression_3" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-regression_2" class="navigator-link ">
+                  <a href="#" panel-name="times-regression_3" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-regression_2" class="navigator-link ">
+                  <a href="#" panel-name="reporter-regression_3" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-regression_2" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-regression_3" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-regression_2" class="navigator-link ">
+                  <a href="#" panel-name="chronological-regression_3" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-regression_2" class="hide-methods failed suite-regression_2"> (hide)</a> <!-- hide-methods failed suite-regression_2 -->
-                      <a href="#" panel-name="suite-regression_2" class="show-methods failed suite-regression_2"> (show)</a> <!-- show-methods failed suite-regression_2 -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-regression_3" class="hide-methods passed suite-regression_3"> (hide)</a> <!-- hide-methods passed suite-regression_3 -->
+                      <a href="#" panel-name="suite-regression_3" class="show-methods passed suite-regression_3"> (show)</a> <!-- show-methods passed suite-regression_3 -->
                     </span>
-                    <div class="method-list-content failed suite-regression_2">
+                    <div class="method-list-content passed suite-regression_3">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-regression_2" title="regression.regression2" class="method navigator-link" hash-for-method="addAndSaveAllInstructionToPatient">addAndSaveAllInstructionToPatient</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_3" title="regression.regression3" class="method navigator-link" hash-for-method="addDrugDailyToPatient">addDrugDailyToPatient</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-regression_2 -->
+                    </div> <!-- method-list-content passed suite-regression_3 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,97 +118,71 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-regression_2" class="panel regression_2">
-          <div class="suite-regression_2-class-failed">
+        <div panel-name="suite-regression_3" class="panel regression_3">
+          <div class="suite-regression_3-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">regression.regression2</span>
+              <img src="passed.png"/>
+              <span class="class-name">regression.regression3</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addAndSaveAllInstructionToPatient">
-                  </a> <!-- addAndSaveAllInstructionToPatient -->
-                  <span class="method-name">addAndSaveAllInstructionToPatient</span>
-                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
-  (Session info: chrome=108.0.5359.125): {Alert text : 
-Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
-System info: host: &apos;COMPU_EFRAT&apos;, ip: &apos;172.20.8.167&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\efeldman\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55434}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1a559671d1b80efd994da05a22d729ca
-*** Element info: {Using=xpath, value=//form//button[2]}
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:127)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at workflows.WebFlows.userSignConfirm(WebFlows.java:24)
-	at workflows.doctor.doctorFlows.approvalInstruction(doctorFlows.java:68)
-	at workflows.doctor.doctorFlows.stopAllActiveInstructionToPatient(doctorFlows.java:83)
-	at regression.regression2.addAndSaveAllInstructionToPatient(regression2.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="addDrugDailyToPatient">
+                  </a> <!-- addDrugDailyToPatient -->
+                  <span class="method-name">addDrugDailyToPatient</span>
                   <em>
-(add all instruction emergency to patient)                  </em>
+(add one daily drug patient)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-regression_2-class-failed -->
-        </div> <!-- panel regression_2 -->
-        <div panel-name="test-xml-regression_2" class="panel">
+          </div> <!-- suite-regression_3-class-passed -->
+        </div> <!-- panel regression_3 -->
+        <div panel-name="test-xml-regression_3" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Automation\AutomationProject_emr\regression_2.xml</span>
+            <span class="header-content">C:\Automation\AutomationProject_emr\regression_3.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;regression_2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;addAndExecute_emergency&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;regression_3&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;emergency_addGeneralInsNotSaveAt5&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;regression.regression2&quot;/&gt;
+      &lt;class name=&quot;regression.regression3&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- addAndExecute_emergency --&gt;
-&lt;/suite&gt; &lt;!-- regression_2 --&gt;
+  &lt;/test&gt; &lt;!-- emergency_addGeneralInsNotSaveAt5 --&gt;
+&lt;/suite&gt; &lt;!-- regression_3 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-regression_2" class="panel">
+        <div panel-name="testlist-regression_3" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for regression_2</span>
+            <span class="header-content">Tests for regression_3</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">addAndExecute_emergency (1 class)</span>
+                <span class="test-name">emergency_addGeneralInsNotSaveAt5 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-regression_2" class="panel">
+        <div panel-name="group-regression_3" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for regression_2</span>
+            <span class="header-content">Groups for regression_3</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-regression_2" class="panel">
+        <div panel-name="times-regression_3" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for regression_2</span>
+            <span class="header-content">Times for regression_3</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_regression_2');
-function tableData_regression_2() {
+suiteTableInitFunctions.push('tableData_regression_3');
+function tableData_regression_3() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -216,61 +190,59 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addAndSaveAllInstructionToPatient')
-data.setCell(0, 2, 'regression.regression2')
-data.setCell(0, 3, 15227);
-window.suiteTableData['regression_2']= { tableData: data, tableDiv: 'times-div-regression_2'}
+data.setCell(0, 1, 'addDrugDailyToPatient')
+data.setCell(0, 2, 'regression.regression3')
+data.setCell(0, 3, 64647);
+window.suiteTableData['regression_3']= { tableData: data, tableDiv: 'times-div-regression_3'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
-              <div id="times-div-regression_2">
-              </div> <!-- times-div-regression_2 -->
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-regression_3">
+              </div> <!-- times-div-regression_3 -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-regression_2" class="panel">
+        <div panel-name="reporter-regression_3" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for regression_2</span>
+            <span class="header-content">Reporter output for regression_3</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-regression_2" class="panel">
+        <div panel-name="ignored-methods-regression_3" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-regression_2" class="panel">
+        <div panel-name="chronological-regression_3" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">regression.regression2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">regression.regression3</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">BeforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">startSession</span>
-                <span class="method-start">533 ms</span>
+                <span class="method-start">449 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">addAndSaveAllInstructionToPatient</span>
-                <span class="method-start">8292 ms</span>
+                <span class="method-name">addDrugDailyToPatient</span>
+                <span class="method-start">7883 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">23911 ms</span>
+                <span class="method-start">72611 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeSession</span>
-                <span class="method-start">26011 ms</span>
+                <span class="method-start">74028 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

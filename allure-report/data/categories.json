@@ -7,7 +7,7 @@
       "name" : "java.lang.NullPointerException",
       "children" : [ {
         "name" : "BeforeSuite",
-        "uid" : "4c0852a59e83b673",
+        "uid" : "c7c5aa12306274ad",
         "parentUid" : "5592898b36d684905e31486a23088bda",
         "status" : "broken",
         "time" : {
@@ -24,7 +24,7 @@
       "name" : "unexpected alert open: {Alert text : }\n  (Session info: chrome=108.0.5359.125): {Alert text : \nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 90913db069ba25bc52a9d302011f70b3\n*** Element info: {Using=id, value=user_name}",
       "children" : [ {
         "name" : "afterMethod",
-        "uid" : "bddb9b1683af8dc9",
+        "uid" : "929472ee1ac89b6d",
         "parentUid" : "f349ece2a9d78708cf479c1e5156023e",
         "status" : "broken",
         "time" : {
@@ -41,7 +41,7 @@
       "name" : "Error communicating with the remote browser. It may have died.\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: driver.version: RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d27a9bb3ebd31306a3a7a41659a0b141",
       "children" : [ {
         "name" : "startSession",
-        "uid" : "b463a2c24a90f07f",
+        "uid" : "1eaed2a480e5b1e5",
         "parentUid" : "c65cd44eadad3576f52c354787c23796",
         "status" : "broken",
         "time" : {
@@ -55,198 +55,228 @@
       } ],
       "uid" : "c65cd44eadad3576f52c354787c23796"
     }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//section[@id='blood-product']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63520}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f0ba2d04ee3b626018fb52328cc47d9b\n*** Element info: {Using=xpath, value=//section[@id='blood-product']//button}",
+      "children" : [ {
+        "name" : "addToPatientAllPossibilityIns",
+        "uid" : "f3fba01dd9845c6f",
+        "parentUid" : "ccaa133ab8e2ada0fc08c19329c5e419",
+        "status" : "broken",
+        "time" : {
+          "start" : 1677363028503,
+          "stop" : 1677363105781,
+          "duration" : 77278
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ccaa133ab8e2ada0fc08c19329c5e419"
+    }, {
       "name" : "Index 0 out of bounds for length 0",
       "children" : [ {
         "name" : "test add and save drug daily",
-        "uid" : "f393a874dded65c6",
+        "uid" : "9dd3aae07935977f",
         "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
         "status" : "broken",
         "time" : {
-          "start" : 1677017442467,
-          "stop" : 1677017451165,
-          "duration" : 8698
+          "start" : 1677363046671,
+          "stop" : 1677363055316,
+          "duration" : 8645
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test nurse-approval and nurse-execute drug daily",
-        "uid" : "95240092e6c65975",
+        "uid" : "975313064f3c80ba",
         "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
         "status" : "broken",
         "time" : {
-          "start" : 1677017453159,
-          "stop" : 1677017463126,
-          "duration" : 9967
+          "start" : 1677363057071,
+          "stop" : 1677363066227,
+          "duration" : 9156
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test nurse-approval future drug daily",
-        "uid" : "ae856506c455092b",
+        "uid" : "cab08b225671742e",
         "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
         "status" : "broken",
         "time" : {
-          "start" : 1677017484151,
-          "stop" : 1677017492153,
-          "duration" : 8002
+          "start" : 1677363087883,
+          "stop" : 1677363095723,
+          "duration" : 7840
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test add and save drug once only",
-        "uid" : "6cf1e826452610d9",
+        "uid" : "b7de084f461a2d8f",
         "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
         "status" : "broken",
         "time" : {
-          "start" : 1677017528141,
-          "stop" : 1677017536565,
-          "duration" : 8424
+          "start" : 1677363131076,
+          "stop" : 1677363139429,
+          "duration" : 8353
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test nurse-approval and nurse-execute drug once only",
-        "uid" : "cba611231ac5616",
+        "uid" : "d2378dbf5e17523a",
         "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
         "status" : "broken",
         "time" : {
-          "start" : 1677017537869,
-          "stop" : 1677017547185,
-          "duration" : 9316
+          "start" : 1677363140602,
+          "stop" : 1677363148784,
+          "duration" : 8182
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test add and save drug by hour",
-        "uid" : "39c1127bbab74810",
+        "uid" : "e404336feac83344",
         "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
         "status" : "broken",
         "time" : {
-          "start" : 1677017548460,
-          "stop" : 1677017556639,
-          "duration" : 8179
+          "start" : 1677363149975,
+          "stop" : 1677363158802,
+          "duration" : 8827
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test nurse-approval and nurse-execute drug by-hour",
-        "uid" : "28fcb74db3b31596",
+        "uid" : "5fd655b791f3d090",
         "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
         "status" : "broken",
         "time" : {
-          "start" : 1677017557960,
-          "stop" : 1677017566138,
-          "duration" : 8178
+          "start" : 1677363160013,
+          "stop" : 1677363169040,
+          "duration" : 9027
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test add and save drug weekly",
-        "uid" : "bbd17db09aabca7c",
+        "uid" : "aef96aeb1269b527",
         "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
         "status" : "broken",
         "time" : {
-          "start" : 1677017567727,
-          "stop" : 1677017575988,
-          "duration" : 8261
+          "start" : 1677363170191,
+          "stop" : 1677363178235,
+          "duration" : 8044
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test add and save drug diluted",
-        "uid" : "b6926e5d86cbffa0",
+        "uid" : "8d9e618eec157a55",
         "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
         "status" : "broken",
         "time" : {
-          "start" : 1677017597880,
-          "stop" : 1677017606276,
-          "duration" : 8396
+          "start" : 1677363199717,
+          "stop" : 1677363208507,
+          "duration" : 8790
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test add and save continues drug",
-        "uid" : "c94992437f443c2b",
+        "uid" : "3448963529043a81",
         "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
         "status" : "broken",
         "time" : {
-          "start" : 1677017623289,
-          "stop" : 1677017631601,
-          "duration" : 8312
+          "start" : 1677363225022,
+          "stop" : 1677363233088,
+          "duration" : 8066
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "nurse approval and nurse execute generalIns daily",
-        "uid" : "e977d009ed5363da",
+        "uid" : "92bb5ae8cce28d91",
         "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
         "status" : "broken",
         "time" : {
-          "start" : 1677017663303,
-          "stop" : 1677017671643,
-          "duration" : 8340
+          "start" : 1677363264349,
+          "stop" : 1677363272815,
+          "duration" : 8466
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "nurse approval and nurse execute generalIns daily",
-        "uid" : "4cff12d0d681258b",
+        "uid" : "13dc3dede047edd2",
         "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
         "status" : "broken",
         "time" : {
-          "start" : 1677017682482,
-          "stop" : 1677017691174,
-          "duration" : 8692
+          "start" : 1677363284936,
+          "stop" : 1677363293311,
+          "duration" : 8375
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test nurse approval and nurse execute nutrition daily",
-        "uid" : "94858759b6d4017",
+        "uid" : "d881d7df62d7fc55",
         "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
         "status" : "broken",
         "time" : {
-          "start" : 1677017732952,
-          "stop" : 1677017741229,
-          "duration" : 8277
+          "start" : 1677363335051,
+          "stop" : 1677363343360,
+          "duration" : 8309
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test add and save drug daily",
-        "uid" : "4bde5b8862e15935",
+        "uid" : "2b58606b499b46b0",
         "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
         "status" : "broken",
         "time" : {
-          "start" : 1677017792076,
-          "stop" : 1677017800291,
-          "duration" : 8215
+          "start" : 1677363393631,
+          "stop" : 1677363402964,
+          "duration" : 9333
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test nurse-approval drug daily",
-        "uid" : "16c89276997df34a",
+        "uid" : "8aed39dd229935c8",
         "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
         "status" : "broken",
         "time" : {
-          "start" : 1677017801964,
-          "stop" : 1677017810473,
-          "duration" : 8509
+          "start" : 1677363404376,
+          "stop" : 1677363413951,
+          "duration" : 9575
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "add drug once-only emergency ",
+        "uid" : "7badb2d80c9cd5ed",
+        "parentUid" : "cd678efc9459eb5fa08af3c540cca518",
+        "status" : "broken",
+        "time" : {
+          "start" : 1677363454020,
+          "stop" : 1677363464027,
+          "duration" : 10007
         },
         "flaky" : false,
         "newFailed" : false,
@@ -254,59 +284,16 @@
       } ],
       "uid" : "cd678efc9459eb5fa08af3c540cca518"
     }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: eb12571b70a22303dd233077e4aedca6\n*** Element info: {Using=id, value=approvalDrug}",
-      "children" : [ {
-        "name" : "test add and save future drug daily ",
-        "uid" : "e6ece534e0f61bb2",
-        "parentUid" : "5a2c1626a867d1668c4a0fa40b1aa520",
-        "status" : "broken",
-        "time" : {
-          "start" : 1677017464489,
-          "stop" : 1677017482599,
-          "duration" : 18110
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test nurse-approval and nurse-execute drug sos",
-        "uid" : "292cbc05e09953e9",
-        "parentUid" : "5a2c1626a867d1668c4a0fa40b1aa520",
-        "status" : "broken",
-        "time" : {
-          "start" : 1677017512714,
-          "stop" : 1677017526602,
-          "duration" : 13888
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test nurse-approval and nurse-execute drug weekly",
-        "uid" : "514199bbc06cb812",
-        "parentUid" : "5a2c1626a867d1668c4a0fa40b1aa520",
-        "status" : "broken",
-        "time" : {
-          "start" : 1677017577288,
-          "stop" : 1677017590551,
-          "duration" : 13263
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "5a2c1626a867d1668c4a0fa40b1aa520"
-    }, {
       "name" : "Index 3 out of bounds for length 0",
       "children" : [ {
         "name" : "test add and save drug sos",
-        "uid" : "90a0af1f7b4654e8",
+        "uid" : "591a72a0ab02d1fd",
         "parentUid" : "d8e2724cc95806ad00087d2020c4e062",
         "status" : "broken",
         "time" : {
-          "start" : 1677017494372,
-          "stop" : 1677017510733,
-          "duration" : 16361
+          "start" : 1677363097638,
+          "stop" : 1677363114351,
+          "duration" : 16713
         },
         "flaky" : false,
         "newFailed" : false,
@@ -314,123 +301,153 @@
       } ],
       "uid" : "d8e2724cc95806ad00087d2020c4e062"
     }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cab24dc188974efd047e871f99216ae7\n*** Element info: {Using=id, value=approvalDrug}",
+      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63618}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 94ab58aabd78ed3a90b5a4f5369f7b6d\n*** Element info: {Using=id, value=approvalDrug}",
       "children" : [ {
-        "name" : "test nurse-approval drug diluted",
-        "uid" : "4b487bd388fbc3a8",
-        "parentUid" : "e9260edc5fd25b4fa530c5d37fe714f0",
+        "name" : "test nurse-approval and nurse-execute drug sos",
+        "uid" : "17c0452008246b05",
+        "parentUid" : "afb3181d2853fa6ae23fd5a3bfe7ff0c",
         "status" : "broken",
         "time" : {
-          "start" : 1677017608144,
-          "stop" : 1677017621571,
-          "duration" : 13427
+          "start" : 1677363116011,
+          "stop" : 1677363129837,
+          "duration" : 13826
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test nurse-approval and nurse-execute drug weekly",
+        "uid" : "3568f798179ffec2",
+        "parentUid" : "afb3181d2853fa6ae23fd5a3bfe7ff0c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1677363179439,
+          "stop" : 1677363192463,
+          "duration" : 13024
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "afb3181d2853fa6ae23fd5a3bfe7ff0c"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63753}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3e8015b0c934c7d912a4c086ff46fc05\n*** Element info: {Using=id, value=approvalDrug}",
+      "children" : [ {
+        "name" : "test nurse-approval drug diluted",
+        "uid" : "3e3bcce19356f9e0",
+        "parentUid" : "6e57e16a110b0f8c3bd83814f46491d5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1677363209920,
+          "stop" : 1677363223687,
+          "duration" : 13767
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test nurse-approval drug weekly",
-        "uid" : "d45217a4152c72d8",
-        "parentUid" : "e9260edc5fd25b4fa530c5d37fe714f0",
+        "uid" : "552099d04c3017d5",
+        "parentUid" : "6e57e16a110b0f8c3bd83814f46491d5",
         "status" : "broken",
         "time" : {
-          "start" : 1677017632904,
-          "stop" : 1677017646520,
-          "duration" : 13616
+          "start" : 1677363234262,
+          "stop" : 1677363248062,
+          "duration" : 13800
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "e9260edc5fd25b4fa530c5d37fe714f0"
+      "uid" : "6e57e16a110b0f8c3bd83814f46491d5"
     }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//section[@id='generalIns']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60914}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0a8ec4786837eff81f5771c866e6c822\n*** Element info: {Using=xpath, value=//section[@id='generalIns']//button}",
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//section[@id='generalIns']//button\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63811}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: edd152b351dd7a0c820869deb0e760fb\n*** Element info: {Using=xpath, value=//section[@id='generalIns']//button}",
       "children" : [ {
         "name" : "add and save generalIns daily",
-        "uid" : "91d5a6e92b7a6ecf",
-        "parentUid" : "8fd7e5968df6fa5221e07e102cf82eae",
+        "uid" : "db781fa2418c73d4",
+        "parentUid" : "a826b20320e65107ed373f13971df5bc",
         "status" : "broken",
         "time" : {
-          "start" : 1677017653643,
-          "stop" : 1677017661782,
-          "duration" : 8139
+          "start" : 1677363254904,
+          "stop" : 1677363263015,
+          "duration" : 8111
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "add and save generalIns daily",
-        "uid" : "cd10f8dc5d45d5e1",
-        "parentUid" : "8fd7e5968df6fa5221e07e102cf82eae",
+        "uid" : "921237be52f6b638",
+        "parentUid" : "a826b20320e65107ed373f13971df5bc",
         "status" : "broken",
         "time" : {
-          "start" : 1677017673008,
-          "stop" : 1677017681170,
-          "duration" : 8162
+          "start" : 1677363274050,
+          "stop" : 1677363283722,
+          "duration" : 9672
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "8fd7e5968df6fa5221e07e102cf82eae"
+      "uid" : "a826b20320e65107ed373f13971df5bc"
     }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 22e34156f25656763c31a35937cba16e\n*** Element info: {Using=id, value=approvalDrug}",
+      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#approvalDrug\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63875}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4158310eacead5c582846eace9db0844\n*** Element info: {Using=id, value=approvalDrug}",
       "children" : [ {
         "name" : "approval blood-product",
-        "uid" : "d4e226ef245153f8",
-        "parentUid" : "64cf41034f9902ef273512e9ddfd06ce",
+        "uid" : "3e979935b26b4f1b",
+        "parentUid" : "7f534c135ee578104cc817665883c886",
         "status" : "broken",
         "time" : {
-          "start" : 1677017702635,
-          "stop" : 1677017716055,
-          "duration" : 13420
+          "start" : 1677363305228,
+          "stop" : 1677363318352,
+          "duration" : 13124
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "64cf41034f9902ef273512e9ddfd06ce"
+      "uid" : "7f534c135ee578104cc817665883c886"
     }, {
-      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//section[@id='nutrition']//button[@id='btnAddMedicine']\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61027}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3960585417dffc2b18a25cf0905708e4\n*** Element info: {Using=xpath, value=//section[@id='nutrition']//button[@id='btnAddMedicine']}",
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//section[@id='nutrition']//button[@id='btnAddMedicine']\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 14b647bb7384663c2ebc2c30472b8828\n*** Element info: {Using=xpath, value=//section[@id='nutrition']//button[@id='btnAddMedicine']}",
       "children" : [ {
         "name" : "test add and save nutrition daily",
-        "uid" : "9c0bac762ca4ad38",
-        "parentUid" : "ada2a2fb3a7d7d1aac32a9b472b011db",
+        "uid" : "dc775e14ae3b184c",
+        "parentUid" : "0169dceeacd5437a1efe8d56b4bd67d4",
         "status" : "broken",
         "time" : {
-          "start" : 1677017722981,
-          "stop" : 1677017731414,
-          "duration" : 8433
+          "start" : 1677363325226,
+          "stop" : 1677363333634,
+          "duration" : 8408
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "ada2a2fb3a7d7d1aac32a9b472b011db"
+      "uid" : "0169dceeacd5437a1efe8d56b4bd67d4"
     }, {
       "name" : "Index 1 out of bounds for length 0",
       "children" : [ {
         "name" : "edit dosage to drug daily ",
-        "uid" : "3de78f0dbd645122",
+        "uid" : "6db0dcd73f1e64ea",
         "parentUid" : "47d82206d557e7edbd0d77bb385542aa",
         "status" : "broken",
         "time" : {
-          "start" : 1677017748899,
-          "stop" : 1677017766836,
-          "duration" : 17937
+          "start" : 1677363351194,
+          "stop" : 1677363367639,
+          "duration" : 16445
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "edit timePerDay in drug daily",
-        "uid" : "fa953dd9330b854d",
+        "uid" : "b1fca02cb5aeb2c7",
         "parentUid" : "47d82206d557e7edbd0d77bb385542aa",
         "status" : "broken",
         "time" : {
-          "start" : 1677017768495,
-          "stop" : 1677017784787,
-          "duration" : 16292
+          "start" : 1677363369178,
+          "stop" : 1677363386081,
+          "duration" : 16903
         },
         "flaky" : false,
         "newFailed" : false,
@@ -438,56 +455,39 @@
       } ],
       "uid" : "47d82206d557e7edbd0d77bb385542aa"
     }, {
-      "name" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63531}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 48961661823a5961a91726cc0caef53f",
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@class='btn btn-defualt btn-submit btn-click ']\"}\n  (Session info: chrome=108.0.5359.125)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:49419}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 04090dc20b5016d5c6feecf56c2316f1\n*** Element info: {Using=xpath, value=//button[@class='btn btn-defualt btn-submit btn-click ']}",
       "children" : [ {
         "name" : "add generalIns list to patient",
-        "uid" : "679204037babb197",
-        "parentUid" : "9124047c4bcd64fed46d2257d61e40e9",
+        "uid" : "7c3e85d87861eadc",
+        "parentUid" : "d2354bcf357cc7cc1696f91a8c50527d",
         "status" : "broken",
         "time" : {
-          "start" : 1677036617754,
-          "stop" : 1677036634816,
-          "duration" : 17062
+          "start" : 1677382223029,
+          "stop" : 1677382254469,
+          "duration" : 31440
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "9124047c4bcd64fed46d2257d61e40e9"
+      "uid" : "d2354bcf357cc7cc1696f91a8c50527d"
     }, {
-      "name" : "element click intercepted: Element <input _ngcontent-kvn-c18=\"\" type=\"checkbox\" ng-reflect-is-disabled=\"false\" ng-reflect-model=\"false\" id=\"generalInsDayModeCheckbox_1582570\" class=\"ng-untouched ng-pristine ng-valid\"> is not clickable at point (1689, 200). Other element would receive the click: <div _ngcontent-kvn-c18=\"\" class=\"col-sm-10\">...</div>\n  (Session info: chrome=108.0.5359.125)\nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:55192}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 020eebe8d90d18bb70a696d4d6f8bac9",
+      "name" : "Index: 0, Size: 0",
       "children" : [ {
-        "name" : "addToPatientAllPossibilityIns",
-        "uid" : "be7254734c8798c7",
-        "parentUid" : "fe4f86ceeb4bc05963b5a74cedb75ce8",
+        "name" : "Verify List Roles",
+        "uid" : "8a848f87e24c8a3a",
+        "parentUid" : "c9a92acda0ece9f24acb2c1b89b9f060",
         "status" : "broken",
         "time" : {
-          "start" : 1677059911644,
-          "stop" : 1677059932172,
-          "duration" : 20528
+          "start" : 1677392482927,
+          "stop" : 1677392484126,
+          "duration" : 1199
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "fe4f86ceeb4bc05963b5a74cedb75ce8"
-    }, {
-      "name" : "unexpected alert open: {Alert text : }\n  (Session info: chrome=108.0.5359.125): {Alert text : \nBuild info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'\nSystem info: host: 'COMPU_EFRAT', ip: '172.20.8.167', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\efeldman\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:55434}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1a559671d1b80efd994da05a22d729ca\n*** Element info: {Using=xpath, value=//form//button[2]}",
-      "children" : [ {
-        "name" : "add all instruction emergency to patient",
-        "uid" : "6747fcf847da6621",
-        "parentUid" : "622ca269bfdaf9e2ef4ca975e53c2cfb",
-        "status" : "broken",
-        "time" : {
-          "start" : 1677060165325,
-          "stop" : 1677060180774,
-          "duration" : 15449
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "622ca269bfdaf9e2ef4ca975e53c2cfb"
+      "uid" : "c9a92acda0ece9f24acb2c1b89b9f060"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   }, {
@@ -495,27 +495,14 @@
     "children" : [ {
       "name" : "null",
       "children" : [ {
-        "name" : "add drug once-only emergency ",
-        "uid" : "a2cfd8217a31c7e5",
-        "parentUid" : "666d1a31450af3ae8459f14f07f9a1b4",
-        "status" : "failed",
-        "time" : {
-          "start" : 1677017851241,
-          "stop" : 1677017871455,
-          "duration" : 20214
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "add drug once-only and execute",
-        "uid" : "68c4bebd2565a7dc",
+        "uid" : "948709abae79f1c4",
         "parentUid" : "666d1a31450af3ae8459f14f07f9a1b4",
         "status" : "failed",
         "time" : {
-          "start" : 1677017872807,
-          "stop" : 1677017890983,
-          "duration" : 18176
+          "start" : 1677363465296,
+          "stop" : 1677363484031,
+          "duration" : 18735
         },
         "flaky" : false,
         "newFailed" : false,

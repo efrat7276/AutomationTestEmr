@@ -36,7 +36,6 @@ C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\addForms\Nutri
 C:\Automation\AutomationProject_emr\src\main\java\workflows\NavigateFlows.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\popUp\ConfirmationAlert.java
 C:\Automation\AutomationProject_emr\src\main\java\utilities\ManagePages.java
-C:\Automation\AutomationProject_emr\src\main\java\extensions\DBQueries.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\DrugsSection.java
 C:\Automation\AutomationProject_emr\src\main\java\workflows\db\DrugsWithDBFlow.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\addForms\GeneralInstructionPage.java
@@ -51,6 +50,7 @@ C:\Automation\AutomationProject_emr\src\main\java\models\DrugObj.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\nurse\prepMedicine\prepMedcinePage.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\UserSignModalPage.java
 C:\Automation\AutomationProject_emr\src\main\java\workflows\doctor\addInstructionFlows.java
+C:\Automation\AutomationProject_emr\src\main\java\workflowsDB\DBQueries.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\addForms\DrugFormSOSPossibility.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\menu\InnerMenuPage.java
 C:\Automation\AutomationProject_emr\src\main\java\workflows\nurse\nurseFlows.java

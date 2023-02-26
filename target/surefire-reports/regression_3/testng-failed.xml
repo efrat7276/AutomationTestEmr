@@ -5,7 +5,7 @@
     <classes>
       <class name="regression.regression3">
         <methods>
-          <include name="addAndDonSaveGeneralInsAt5"/>
+          <include name="addDrugDailyToPatient"/>
           <include name="BeforeSuite"/>
           <include name="afterMethod"/>
           <include name="closeSession"/>

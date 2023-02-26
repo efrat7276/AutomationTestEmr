@@ -21,11 +21,13 @@ public class Verifications extends CommonOps {
         assertEquals(li.size() , expected);
     }
 
+
+    // todo - בדיקה לא עובדת- לבדוק מדוע
     @Step("Verify String exist in List")
-    public static void existInList(List< WebElement> li, String expected){
-        wait.until(ExpectedConditions.visibilityOf(li.get(li.size()-1)));
+    public static void existInList(List< WebElement> li, String expected) throws InterruptedException {
+        Thread.sleep(1000);
         for(WebElement l: li) {
-        if (l.getText().equals(expected) == true  );
+        if (l.getText().equals(expected));
             {
                 assertTrue(1 == 1);
                 return;

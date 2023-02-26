@@ -14,7 +14,7 @@ import java.util.List;
 
 public class DBAction extends CommonOps {
 
-  @Step("Get List From database")
+  @Step("Get Row From database")
     public static List<String> getRow(String query){
         List<String> result = new ArrayList<String>();
          try {
@@ -33,25 +33,13 @@ public class DBAction extends CommonOps {
 
     @Step("Get List From database")
     public static boolean getListToCSV(String query, String fileCsvName){
-      //  List<String> result = new ArrayList<String>();
         try {
-
             //open new csv file
             rs = stmt.executeQuery(query);
             String csv = "./DDTFiles/"  + fileCsvName + ".csv";
             CSVWriter writer = new CSVWriter(new FileWriter(csv));
-
-             writer.writeAll(rs,false);
-
+            writer.writeAll(rs,false);
             writer.close();
-
-
-//            CSVReader reader = new CSVReader(new FileReader("./DDTFiles/data.csv"));
-//
-//            List<String[]> allRows = reader.readAll();
-//
-//            System.out.println(allRows.get(0)[0]);
-
         }
         catch (SQLException | IOException ex){
             System.out.println("the data didn't reach . see details: "+ ex);
@@ -62,7 +50,6 @@ public class DBAction extends CommonOps {
 
     @Step("Count rows From database")
     public static int getCountRows(String query){
-        List<String> result = new ArrayList<String>();
         int countRows = 0;
         try {
             rs = stmt.executeQuery(query);

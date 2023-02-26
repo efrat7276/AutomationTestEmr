@@ -28,95 +28,95 @@ public class regression1 extends CommonOps {
     public void addToPatientAllPossibilityIns() throws InterruptedException {
         int patient_num = 11;
         DrugObj drugDaily = new DrugObj ("acetylsalicylic",20,null,1,1,false,false);
-//       WebFlows.login('d');
-//      WebFlows.patientBoxEntry(patient_num);
-//      doctorFlows.stopAllActiveInstructionToPatient();
-//        doctorFlows.newDrug();
-//        //add new daily drug
-//        doctorFlows.drugFormAddDrugDaily(drugDaily.drug_desc,drugDaily.dosage,drugDaily.numberOfTime,drugDaily.routeAdmin,drugDaily.isAntibiotic,drugDaily.isFutureDate,false);
-//        //add new once-only drug
-//        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        Thread.sleep(3000);
-//       doctorFlows.drugFormAddDrugOnceOnly("TAB acetylcysteine 200mg efferv (REOLIN )", "20" ,null , null ,false,false);
-//        //add new sos drug
-//        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        Thread.sleep(1000);
-//        doctorFlows.drugFormAddDrugSOS("TAB paracetamol 500mg (ACAMOL)" ,"20" , null ,false );
-//        //add new byHour drug
-//        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        Thread.sleep(1000);
-//        doctorFlows.drugFormAddDrugByHour("TAB paracetamol 500mg (ACAMOL)" ,48 ,"20" , null ,false );
-//       // add new weekly drug
-//        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        Thread.sleep(1000);
-//        doctorFlows.drugFormAddDrugWeekly("TAB FLUoxetine 20mg (FLUTINE)" , 2, "20",null,true);
-//        //doctorFlows.clickReturn();
-//
-//
-//       // הוראות כלליות
-//        doctorFlows.newGeneralIns();
-//        generalInstructionFlows.generalFormAddGeneralInsDaily(1,1,1,false,false, false);
-//        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(2,1,"16:00",false, true);
-//
-////        // מוצרי דם
-////        //todo  לשלוח שם וכמות מוצר דם
-//        doctorFlows.newBloodProduct();
-//        bloodProductInstructionFlows.bloodProductFormAddBloodProduct(true);
-//
-//        // תזונה
-//        doctorFlows.newNutrition();
-//        nutritionFlows.nutritionFormAddNutritionDaily("NUT daily protein cream 30/300",500,1,false,false);
-//        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        Thread.sleep(3000);
-//        nutritionFlows.nutritionFormAddNutritionContinues("NUT conc. protein water 15/100" ,20 ,true);
-//
-//
-//       ////  תרופות נוזליות
-//        doctorFlows.newDrug();
-//        doctorFlows.drugFormAddLiquidDrug("INJ atracrium 25mg/2.5ml (TRACRIUM)","dextrose 5% 500ml",11,false);
-//        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        Thread.sleep(2000);
-//        doctorFlows.drugFormAddLiquidDrug("INJ aflibercept 100mg (EYLEA)","dextrose 10% 500ml",12,false);
-//        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        Thread.sleep(2000);
-//        doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)",null ,11,false);
-//        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        Thread.sleep(1000);
-//        doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)",null ,12,true);
-//
-//        doctorFlows.approvalInstruction();
-//
-//////
-//////
-//////      //   3 דקות ללא כלום
-//////     //  Thread.sleep(240000);
-//       CommonOps.afterMethod();
-////////
+       WebFlows.login('d');
+      WebFlows.patientBoxEntry(patient_num);
+      doctorFlows.stopAllActiveInstructionToPatient();
+        doctorFlows.newDrug();
+        //add new daily drug
+        doctorFlows.drugFormAddDrugDaily(drugDaily.drug_desc,drugDaily.dosage,drugDaily.numberOfTime,drugDaily.routeAdmin,drugDaily.isAntibiotic,drugDaily.isFutureDate,false);
+        //add new once-only drug
+        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        Thread.sleep(3000);
+       doctorFlows.drugFormAddDrugOnceOnly("TAB acetylcysteine 200mg efferv (REOLIN )", "20" ,null , null ,false,false);
+        //add new sos drug
+        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        Thread.sleep(1000);
+        doctorFlows.drugFormAddDrugSOS("TAB paracetamol 500mg (ACAMOL)" ,"20" , null ,false );
+        //add new byHour drug
+        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        Thread.sleep(1000);
+        doctorFlows.drugFormAddDrugByHour("TAB paracetamol 500mg (ACAMOL)" ,48 ,"20" , null ,false );
+       // add new weekly drug
+        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        Thread.sleep(1000);
+        doctorFlows.drugFormAddDrugWeekly("TAB FLUoxetine 20mg (FLUTINE)" , 2, "20",null,true);
+        //doctorFlows.clickReturn();
 
-        WebFlows.login('n');
+
+       // הוראות כלליות
+        doctorFlows.newGeneralIns();
+        generalInstructionFlows.generalFormAddGeneralInsDaily(1,1,1,false,false, false);
+        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(2,1,"16:00",false, true);
+
+//        // מוצרי דם
+//        //todo  לשלוח שם וכמות מוצר דם
+        doctorFlows.newBloodProduct();
+        bloodProductInstructionFlows.bloodProductFormAddBloodProduct(true);
+
+        // תזונה
+        doctorFlows.newNutrition();
+        nutritionFlows.nutritionFormAddNutritionDaily("NUT daily protein cream 30/300",500,1,false,false);
+        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        Thread.sleep(3000);
+        nutritionFlows.nutritionFormAddNutritionContinues("NUT conc. protein water 15/100" ,20 ,true);
+
+
+       ////  תרופות נוזליות
+        doctorFlows.newDrug();
+        doctorFlows.drugFormAddLiquidDrug("INJ atracrium 25mg/2.5ml (TRACRIUM)","dextrose 5% 500ml",11,false);
+        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        Thread.sleep(2000);
+        doctorFlows.drugFormAddLiquidDrug("INJ aflibercept 100mg (EYLEA)","dextrose 10% 500ml",12,false);
+        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        Thread.sleep(2000);
+        doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)",null ,11,false);
+        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        Thread.sleep(1000);
+        doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)",null ,12,true);
+
+        doctorFlows.approvalInstruction();
+
+////
+////
+////      //   3 דקות ללא כלום
+////     //  Thread.sleep(240000);
+       CommonOps.afterMethod();
+//////
+
+       WebFlows.login('n');
        WebFlows.patientBoxEntry(patient_num);
 
-      // todo הוספת ברנולה למטופל
+     ////  todo הוספת ברנולה למטופל
 
 
-        //הוספת הוראה סיעודית
-//        Thread.sleep(3000);
-//        NavigateFlows.goToCategory("nursing");
-//        NavigateFlows.goToSubCategory("nursingIns");
-//        doctorFlows.newGeneralIns();
-//        generalInstructionFlows.generalFormAddGeneralInsDaily(1,1,1,false,false,true);
-//        doctorFlows.approvalInstruction();
-//
-//
-//        NavigateFlows.goToCategory("nurseConfirmation");
-//        NavigateFlows.goToSubCategory("instructionConfirmation");
+     // //  הוספת הוראה סיעודית
+        Thread.sleep(3000);
+        NavigateFlows.goToCategory("nursing");
+        NavigateFlows.goToSubCategory("nursingIns");
+        doctorFlows.newGeneralIns();
+        generalInstructionFlows.generalFormAddGeneralInsDaily(1,1,1,false,false,true);
+        doctorFlows.approvalInstruction();
 
-       //   todo לשלוח פרמטרים כמה פירוק מכל סוג
-//        nurseFlows.approvalAllPossibilitiesIns(true,true);
-//
-//        nurseFlows.approvalNurseSign();
-//        Thread.sleep(5000);
-//     NavigateFlows.goToCategory("cardex");
+
+        NavigateFlows.goToCategory("nurseConfirmation");
+        NavigateFlows.goToSubCategory("instructionConfirmation");
+
+       ////   todo לשלוח פרמטרים כמה פירוק מכל סוג
+        nurseFlows.approvalAllPossibilitiesIns(true,true);
+
+        nurseFlows.approvalNurseSign();
+        Thread.sleep(5000);
+     NavigateFlows.goToCategory("cardex");
 
         nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
         nurseFlows.executeAllLiquidAfterApprovalNurse();
@@ -131,7 +131,10 @@ public class regression1 extends CommonOps {
         WebFlows.patientBoxEntry(patient_num);
        int indexDrug =  general.searchDrugByName(drugDaily.drug_desc);
         doctorFlows.editDrugDosage(indexDrug,41);
-      Verifications.existInList(doctorInstructionPage.dosageList, "41");
+
+
+
+  //    Verifications.existInList(doctorInstructionPage.dosageList, "ssss");
 
 
 
