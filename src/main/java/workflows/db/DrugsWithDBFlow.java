@@ -5,6 +5,7 @@ import extensions.UIActions;
 import io.qameta.allure.Step;
 import org.testng.annotations.Listeners;
 import utilities.CommonOps;
+import utilities.ManageDDT;
 
 import java.util.List;
 
@@ -29,7 +30,7 @@ public class DrugsWithDBFlow extends CommonOps {
                 "AND dc.isAntibiotics = 0\n" +
                 "AND dc.dosageTafnit  IS NOT NULL  \n" +
                 "ORDER BY dc.item_no\n";
-                DBAction.getListToCSV(query, "drugsDailyNew");
+                 ManageDDT.writeToCSV(query, "drugsDailyNew");
     }
 
 
@@ -51,7 +52,7 @@ public class DrugsWithDBFlow extends CommonOps {
                 "AND dc.isAntibiotics = 0\n" +
                 "AND dc.dosageTafnit  IS NOT NULL  \n" +
                 "ORDER BY dc.item_no desc\n";
-        DBAction.getListToCSV(query, "drugsSOS");
+        ManageDDT.writeToCSV(query, "drugsSOS");
     }
 
     @Step(" get drugInfectiousDiseaseSpecial list from db")
@@ -69,7 +70,7 @@ public class DrugsWithDBFlow extends CommonOps {
                 "AND dfg.isDefault = 1\n" +
                 "AND dc.infectiousDiseaseSpecialist = 1\n" +
                 "ORDER BY dc.item_no\n";
-        DBAction.getListToCSV(query, "DrugsInfectiousDiseaseSpecial");
+        ManageDDT.writeToCSV(query, "DrugsInfectiousDiseaseSpecial");
     }
 
     @Step(" get drugAsRisk list from db")
@@ -88,7 +89,7 @@ public class DrugsWithDBFlow extends CommonOps {
                 "AND dc.drugAtRisk = 1\n" +
                 "AND dfg.isDefault=1\n" +
                 "ORDER BY dc.item_no";
-        DBAction.getListToCSV(query, "drugsDailyDrugAtRiskNew");
+        ManageDDT.writeToCSV(query, "drugsDailyDrugAtRiskNew");
     }
 
 
@@ -107,7 +108,7 @@ public class DrugsWithDBFlow extends CommonOps {
                 "AND (dc.drugFormOfGivingID=10\n" +
                 "OR dc.nutritionApprovedSolution = 1 )\n" +
                 "ORDER BY dc.item_no DESC";
-        DBAction.getListToCSV(query, "NutritionList");
+        ManageDDT.writeToCSV(query, "NutritionList");
     }
 
 

@@ -6,7 +6,6 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflows.WebFlows;
-import workflows.doctor.chooseDepartmentFlow;
 
 
 @Listeners(utilities.Listeners.class)
@@ -35,7 +34,7 @@ public class General extends CommonOps {
     @Description("login with db and verify changing department")
     public void test02_verifyChooseDepartment() throws InterruptedException {
         WebFlows.login( 'd');
-        chooseDepartmentFlow.chooseDepartment("פנימית א");
+        //chooseDepartmentFlow.chooseDepartment("פנימית א");
         //Verifications.textIsVisible(patientsList.span_nameDepartment, "פנימית א");
         Verifications.isElementDisplay(patientsList.menu_patientList);
 

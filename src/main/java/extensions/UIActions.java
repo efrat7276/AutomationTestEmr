@@ -136,5 +136,26 @@ public class UIActions extends CommonOps {
 
     }
 
+    @Step("check if the element exist ")
+    public static boolean isExist(WebElement elem) {
+
+        try {
+            elem.getTagName();
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    @Step("check if the element exist ")
+    public static boolean isExist(List< WebElement> elem) {
+
+        try {
+            elem.get(0);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
 
 }

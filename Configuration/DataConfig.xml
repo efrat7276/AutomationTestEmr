@@ -28,6 +28,11 @@
         <url-dev>https://landev16.laniado.org.il/emr2/</url-dev>
 <!--    </dev>-->
 
+    <!--    <production>-->
+       <DBUrl-production>jdbc:sqlserver://lansql05;databaseName=laniado</DBUrl-production>
+       <url-production>https://emr.laniado.org.il/emr2/</url-production>
+    <!--    </production>-->
+
     <DBName>test</DBName>
     <DBPassword>641153</DBPassword>
 

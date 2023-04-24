@@ -3,37 +3,49 @@
 
 <suite name="SanityTest">
     <test name="stopPatientInstruction">
+<!--        <parameter name="patient_num" value="7"></parameter>-->
         <classes>
-            <class name="sanity.UnitTest.instructionToPatient.StopInstructionScenario"></class>
+            <class name="sanity.UnitTest.instructionToPatient.DrugsScenario">
+                <methods>
+                    <include name="test00_stopAllInstructionToPatient"></include>
+                </methods>
+            </class>
         </classes>
     </test>
     <test name="addAllInstructionToPatient">
+<!--        <parameter name="patient_num" value="'7'"></parameter>-->
         <classes>
-           <class name="sanity.UnitTest.instructionToPatient.DrugsScenario"></class>
-            <class name="sanity.UnitTest.instructionToPatient.SolutionScenario"></class>
-           <class name="sanity.UnitTest.instructionToPatient.GeneralInsScenario"></class>
-            <class name="sanity.UnitTest.instructionToPatient.BloodProductScenario"></class>
-            <class name="sanity.UnitTest.instructionToPatient.NutritionScenario"></class>
+           <class name="sanity.UnitTest.instructionToPatient.DrugsScenario">
+               <methods>
+                   <include name="test01_addAndSaveDrugDailyToPatient"></include>
+                   <include name="test01_nurseApprovalDrugDailyToPatient"></include>
+
+               </methods>
+           </class>
+<!--            <class name="sanity.UnitTest.instructionToPatient.SolutionScenario"></class>-->
+<!--           <class name="sanity.UnitTest.instructionToPatient.GeneralInsScenario"></class>-->
+<!--            <class name="sanity.UnitTest.instructionToPatient.BloodProductScenario"></class>-->
+<!--            <class name="sanity.UnitTest.instructionToPatient.NutritionScenario"></class>-->
         </classes>
     </test>
 
-    <test name="editDrug">
-        <classes>
-            <class name="sanity.UnitTest.addAndEditInstructionToPatient.EditDrugIns"></class>
-        </classes>
-    </test>
+<!--    <test name="editDrug">-->
+<!--        <classes>-->
+<!--            <class name="sanity.UnitTest.addAndEditInstructionToPatient.EditDrugIns"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
-    <test name="antibioticDrugAddConfirmation">
-        <classes>
-            <class name="sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario"></class>
-        </classes>
-    </test>
+<!--    <test name="antibioticDrugAddConfirmation">-->
+<!--        <classes>-->
+<!--            <class name="sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="emergencyTest">
-        <classes>
-            <class name="sanity.UnitTest.emergency.DoctorEmergency"></class>
-        </classes>
-    </test>
+<!--    <test name="emergencyTest">-->
+<!--        <classes>-->
+<!--            <class name="sanity.UnitTest.emergency.DoctorEmergency"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>

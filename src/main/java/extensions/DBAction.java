@@ -14,8 +14,48 @@ import java.util.List;
 
 public class DBAction extends CommonOps {
 
-  @Step("Get Row From database")
-    public static List<String> getRow(String query){
+    @Step("get count list")
+    public  static String countRow(String query) throws SQLException {
+        try {
+            rs = stmt.executeQuery(query);
+        }
+        catch (Exception ex){
+            System.out.println("the data didn't reach . see details: "+ ex);
+        }
+        return rs.getString(1);
+    }
+
+    @Step("insert to table")
+    public static String InsertQuery(String query) throws SQLException {
+        try {
+            rs = stmt.executeQuery(query);
+            System.out.println( "the insert query succeed");
+            return "succeed";
+
+        }
+        catch (Exception ex){
+            System.out.println( "the insert query failed . see details: "+ ex);
+            return "failed";
+        }
+    }
+
+    @Step("get all rows from database to list ")
+    public static List<String> getAllRows(String query){
+        List<String> result = new ArrayList<String>();
+        try {
+            rs = stmt.executeQuery(query);
+            while (rs.next()){
+                result.add(String.valueOf( rs.getRow()));
+            }
+        }
+        catch (Exception ex){
+            System.out.println("the data didn't reach . see details: "+ ex);
+        }
+        return result;
+    }
+
+  @Step("Get columns Row From database to list")
+    public static List<String> getColumnsInRows(String query){
         List<String> result = new ArrayList<String>();
          try {
           rs = stmt.executeQuery(query);
@@ -31,20 +71,18 @@ public class DBAction extends CommonOps {
 
     }
 
-    @Step("Get List From database")
-    public static boolean getListToCSV(String query, String fileCsvName){
+    @Step("Get result database")
+    public static String getResultForQuery(String query){
+        String result = "";
         try {
-            //open new csv file
             rs = stmt.executeQuery(query);
-            String csv = "./DDTFiles/"  + fileCsvName + ".csv";
-            CSVWriter writer = new CSVWriter(new FileWriter(csv));
-            writer.writeAll(rs,false);
-            writer.close();
+            rs.next();
+            result= rs.getString(1);
         }
-        catch (SQLException | IOException ex){
+        catch (Exception ex){
             System.out.println("the data didn't reach . see details: "+ ex);
         }
-        return true;
+        return result;
 
     }
 
@@ -55,7 +93,9 @@ public class DBAction extends CommonOps {
             rs = stmt.executeQuery(query);
 
            while(rs.next()){
+
                countRows++;
+               System.out.println(rs.getRow()+ "   "+rs.findColumn("mispar_ishpuz"));
             }
         }
         catch (Exception ex){

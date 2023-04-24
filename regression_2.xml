@@ -3,7 +3,7 @@
 
 <suite name="regression_2" parallel="false">
 
-        <test name="addAndExecute_emergency">
+        <test name="emergency_allInstruction">
             <classes>
                 <class name="regression.regression2"></class>
             </classes>

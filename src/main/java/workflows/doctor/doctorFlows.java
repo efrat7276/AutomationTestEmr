@@ -264,12 +264,12 @@ public class doctorFlows extends CommonOps {
 
 
     @Step(" fill DrugForm for addNewDrugSOS")
-    public static void drugFormAddDrugSOS(String drugName ,String dosage, String routeAdinistration ,boolean addAndClose){
+    public static void drugFormAddDrugSOS(String drugName ,String dosage, String routeAdinistration  , int max , int min,boolean addAndClose ){
 
         fillDrugsDetails(drugName,dosage,routeAdinistration);
         UIActions.updateText(drugForm.input_drugComment, "בדיקות אוטו'");
         drugForm.radio_sosPossbility.click();
-        fillDrugSOSDetails(3,5);
+        fillDrugSOSDetails(max, min);
         if(addAndClose)
             drugForm.btn_addAndClose.click();
         else

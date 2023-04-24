@@ -35,7 +35,7 @@ public class drugFlows extends CommonOps {
     public static void  addAndSaveDrugSOSToPatient(){
 
         doctorFlows.newDrug();
-        doctorFlows.drugFormAddDrugSOS("TAB acetylsalicylic acid 100mg (GODAMED)",null ,null,true);
+        doctorFlows.drugFormAddDrugSOS("TAB acetylsalicylic acid 100mg (GODAMED)",null ,null, 4 , 3, false);
         Verifications.isNotDisplay(doctorInstructionPage.redStamp_icons.get(0));
     }
 

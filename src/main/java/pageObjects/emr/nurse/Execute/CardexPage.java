@@ -8,6 +8,14 @@ import java.util.List;
 
 public class CardexPage {
 
+    @FindBy(how = How.XPATH , using = "//div[@class=row oneDrugLine]")
+    public List<WebElement> listDrug;
+
+
+    //just for test user
+    @FindBy(how = How.XPATH , using = "//div[@class='row oneDrugLine']/div/div/div[2]")
+    public List< WebElement> topCpoeInCardex ;
+
  // inputList to execute drugs
 
     @FindBy(how = How.XPATH , using = "//input[contains(@id, 'drugInsDayModeCheckbox')]")

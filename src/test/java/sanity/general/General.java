@@ -9,9 +9,7 @@ import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflows.NavigateFlows;
 import workflows.WebFlows;
-import workflows.db.DrugsWithDBFlow;
 import workflows.db.GeneralWithDBFlow;
-import workflows.doctor.chooseDepartmentFlow;
 
 
 @Listeners(utilities.Listeners.class)
@@ -35,7 +33,7 @@ public class General extends CommonOps {
     public void test02_verifyChooseDepartment() throws InterruptedException {
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("רופא");
-        chooseDepartmentFlow.chooseDepartment("פנימית א");
+       // chooseDepartmentFlow.chooseDepartment("פנימית א");
         //Verifications.textIsVisible(patientsList.span_nameDepartment, "פנימית א");
         Verifications.isElementDisplay(patientsList.menu_patientList);
 

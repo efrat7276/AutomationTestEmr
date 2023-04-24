@@ -3,6 +3,8 @@ package sanity.UnitTest.instructionToPatient;
 import extensions.UIActions;
 import io.qameta.allure.Description;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflows.NavigateFlows;
@@ -14,17 +16,29 @@ import workflows.nurse.nurseFlows;
 import java.util.Calendar;
 
 @Listeners(utilities.Listeners.class)
+
 public class DrugsScenario extends CommonOps {
+
+
+    @Test(description = "stop all patient's instruction", groups = {"doctor"})
+    @Description("test add and save drug daily ")
+    public void test00_stopAllInstructionToPatient(){
+
+        WebFlows.login('d');
+    //  System.out.println("this is param: ");
+        WebFlows.patientBoxEntry(7);
+     // WebFlows.patientBoxEntry(patient_num);
+        doctorFlows.stopAllActiveInstructionToPatient();
+    }
 
     @Test(description = "test add and save drug daily", groups = {"doctor"})
     @Description("test add and save drug daily ")
     public void test01_addAndSaveDrugDailyToPatient(){
 
         WebFlows.login('d');
-         WebFlows.patientBoxEntry(3);
-        drugFlows.addAndSaveDrugDailyToPatient("TAB acetylsalicylic acid 100mg (GODAMED)",100 , 3 , false, false);
+         WebFlows.patientBoxEntry(7);
+        drugFlows.addAndSaveDrugDailyToPatient("TAB acetylsalicylic acid 100mg (GODAMED)",100 , 1 , false, false);
         doctorFlows.approvalInstruction();
-
     }
 
     @Test(description = "test nurse-approval and nurse-execute drug daily" , groups = {"nurse"})
@@ -32,11 +46,10 @@ public class DrugsScenario extends CommonOps {
     public void test01_nurseApprovalDrugDailyToPatient() throws InterruptedException {
 
         WebFlows.login('n');
-         WebFlows.patientBoxEntry(3);
-        nurseFlows.approvalDrugsDaily(3, false);
+         WebFlows.patientBoxEntry(7);
+        nurseFlows.approvalDrugsDaily(1, false);
         NavigateFlows.goToCategory("cardex");
         nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
-
     }
 
     @Test(description = "test add and save future drug daily ", groups = {"doctor"})
@@ -56,6 +69,7 @@ public class DrugsScenario extends CommonOps {
 
         WebFlows.login('n');
         WebFlows.patientBoxEntry(4);
+        Thread.sleep(30000);
         nurseFlows.approvalDrugsDaily(3,true);
 
 

@@ -1,4 +1,3 @@
-sanity\UnitTest\general\General.class
 sanity\UnitTest\general\Patient.class
 sanity\UnitTest\instructionToPatient\GeneralInsScenario.class
 sanity\restoreBugs\Medicine_prep.class

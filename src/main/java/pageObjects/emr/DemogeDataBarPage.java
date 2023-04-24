@@ -14,6 +14,9 @@ public class DemogeDataBarPage {
     @FindBy(how= How.XPATH , using = "//span[@class='value-label']")
     public WebElement  sherut_label;
 
+    @FindBy(how= How.XPATH , using = "//div[@class='line-number']/span[2]")
+    public WebElement  sherut_number;
+
     @FindBy(how= How.XPATH , using = "//span[@class='value-label ']")
     public List<WebElement>  labels_value;
 

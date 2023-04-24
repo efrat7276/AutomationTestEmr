@@ -32,7 +32,7 @@ public class ApprovalInstructionPage {
     public List<WebElement>  ul_drug;
 
 
-    @FindBy(how= How.XPATH , using = "//tr[@name='drugRow1']//button[@tabindex='5']")
+    @FindBy(how= How.XPATH , using = "//tr[@name='drugRow1']//button[contains(@id,'btnIsApproval')]")
     public List<WebElement>  btns_approveToDrug;
 
 //  general-ins

@@ -14,7 +14,7 @@ public class GeneralInstructionDBFlow extends CommonOps {
     public static void loginWithDB(){
         System.out.println("enter to function loginWithDB");
         String query = "SELECT userName,password FROM dbo.users WHERE id=1";
-        List<String> list = DBAction.getRow(query);
+        List<String> list = DBAction.getColumnsInRows(query);
         UIActions.updateText( emrLogin.txt_username ,list.get(0));
         UIActions.updateText( emrLogin.txt_password, list.get(1));
         UIActions.click(emrLogin.btn_submitBtn);

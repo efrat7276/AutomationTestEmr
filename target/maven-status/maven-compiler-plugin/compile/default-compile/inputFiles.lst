@@ -1,9 +1,7 @@
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\PatientBoxPage.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\nurse\Execute\UpdateExecutionPage.java
 C:\Automation\AutomationProject_emr\src\main\java\workflows\WebFlows.java
-C:\Automation\AutomationProject_emr\src\main\java\prepertion\BeforeSuiteFunc.java
 C:\Automation\AutomationProject_emr\src\main\java\workflows\doctor\doctorFlows.java
-C:\Automation\AutomationProject_emr\src\main\java\prepertion\BeforeTest.java
 C:\Automation\AutomationProject_emr\src\main\java\utilities\Listeners.java
 C:\Automation\AutomationProject_emr\src\main\java\utilities\CommonOps.java
 C:\Automation\AutomationProject_emr\src\main\java\workflows\doctor\generalInstructionFlows.java
@@ -26,7 +24,6 @@ C:\Automation\AutomationProject_emr\src\main\java\workflows\regression\drugsSena
 C:\Automation\AutomationProject_emr\src\main\java\workflows\db\GeneralWithDBFlow.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\LoginPage.java
 C:\Automation\AutomationProject_emr\src\main\java\workflows\doctor\solutionFlows.java
-C:\Automation\AutomationProject_emr\src\main\java\workflows\doctor\chooseDepartmentFlow.java
 C:\Automation\AutomationProject_emr\src\main\java\workflows\doctor\nutritionFlows.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\nurse\approval\ApprovalInstructionPage.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\addForms\DrugFormDailyPossibility.java
@@ -50,7 +47,6 @@ C:\Automation\AutomationProject_emr\src\main\java\models\DrugObj.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\nurse\prepMedicine\prepMedcinePage.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\UserSignModalPage.java
 C:\Automation\AutomationProject_emr\src\main\java\workflows\doctor\addInstructionFlows.java
-C:\Automation\AutomationProject_emr\src\main\java\workflowsDB\DBQueries.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\addForms\DrugFormSOSPossibility.java
 C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\menu\InnerMenuPage.java
 C:\Automation\AutomationProject_emr\src\main\java\workflows\nurse\nurseFlows.java

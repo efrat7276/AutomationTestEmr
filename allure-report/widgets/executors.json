@@ -2,9 +2,9 @@
   "name" : "Jenkins",
   "type" : "jenkins",
   "url" : "http://localhost:8080/",
-  "buildOrder" : 47,
-  "buildName" : "regression_3 #47",
-  "buildUrl" : "http://localhost:8080/job/regression_3/47/",
+  "buildOrder" : 125,
+  "buildName" : "nurseApprovDrugDailyToPatientNIgth #125",
+  "buildUrl" : "http://localhost:8080/job/nurseApprovDrugDailyToPatientNIgth/125/",
   "reportName" : "AllureReport",
-  "reportUrl" : "http://localhost:8080/job/regression_3/47/allure"
+  "reportUrl" : "http://localhost:8080/job/nurseApprovDrugDailyToPatientNIgth/125/allure"
 } ]

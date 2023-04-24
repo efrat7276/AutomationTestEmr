@@ -201,7 +201,7 @@ public class DrugScenarios extends CommonOps {
         for(int i=0; i<2 ;i++) {
             str = ManageDDT.getLineFromCSV("./DDTFiles/drugsSOS.csv", i);
             details = Arrays.asList(str.split(","));
-            doctorFlows.drugFormAddDrugSOS(details.get(1), details.get(2), details.get(3),false);
+            doctorFlows.drugFormAddDrugSOS(details.get(1), details.get(2), details.get(3),4,5,false);
         }
         doctorFlows.clickReturnAndApproval();
         WebFlows.userSignConfirm();

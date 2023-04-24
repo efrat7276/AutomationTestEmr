@@ -10,7 +10,7 @@ public class MainMenuPage  {
     @FindBy(how = How.XPATH ,using="//ul[contains(@class,'flex-fill main-menu-list')]//span[text()='הכנת תרופות']")
     public WebElement mainCategory_drugPreparation;
 
-    @FindBy(how = How.XPATH ,using="//ul[contains(@class,'flex-fill main-menu-list')]//span[text()='רשימת מטופלים']")
+    @FindBy(how = How.XPATH ,using="//app-inner-menu//div[@class='back-to-list top-menu']")
     public WebElement mainCategory_patientList;
 
 }

@@ -1,4 +1,4 @@
-allure-results/
-allure-report/
-temp/
-target/
+/allure-results/
+/allure-report/
+/temp/
+/target/

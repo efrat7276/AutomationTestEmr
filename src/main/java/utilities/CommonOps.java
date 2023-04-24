@@ -1,4 +1,5 @@
 package utilities;
+import extensions.DBAction;
 import extensions.UIActions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
@@ -22,6 +23,9 @@ import java.time.format.DateTimeFormatter;
 public class CommonOps extends Base {
 
     static String env = null;
+    public static String getEnv(){
+        return env;
+    }
 
     public static String getFileName(){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
@@ -93,6 +97,10 @@ public class CommonOps extends Base {
             case "dev":
                 driver.get(getData("url-dev"));
                 break;
+
+            case "production":
+                driver.get(getData("url-production"));
+                break;
         }
       ManagePages.initEmr();
       action = new Actions(driver);
@@ -136,7 +144,7 @@ public class CommonOps extends Base {
                 env= "qa";
          }
         catch (SecurityException e){
-           env= " dev";
+           env= "qa";
         }
          switch (env){
              case "qa":
@@ -148,6 +156,10 @@ public class CommonOps extends Base {
              case "dev":
                  ManageDB.openConnection(getData("DBUrl-dev"),getData("DBName"),getData("DBPassword"));
                  break;
+             case "production":
+                 ManageDB.openConnection(getData("DBUrl-production"),getData("DBName"),getData("DBPassword"));
+                 break;
+
          }
 
      }

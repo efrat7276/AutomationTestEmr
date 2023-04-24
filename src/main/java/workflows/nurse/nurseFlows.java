@@ -84,11 +84,11 @@ public class nurseFlows extends CommonOps {
                 Thread.sleep(1000);
                 UIActions.click(approvalInstructionPage.btn_V_blood);
             }
-            Thread.sleep(1000);
-
+            Thread.sleep(3000);
+            int btns_approveToDrugSize =  approvalInstructionPage.btns_approveToDrug.size();
 
             // לחיצה על כפתורי אישור לכול ההוראות שבמסך
-            for (int i = 0; i < approvalInstructionPage.btns_approveToDrug.size(); i++) {
+            for (int i = 0; i < btns_approveToDrugSize; i++) {
              //   System.out.println("אישור הוראה מספר " + i);
 
                 UIActions.click(approvalInstructionPage.btns_approveToDrug.get(i));
