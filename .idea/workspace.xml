@@ -19,15 +19,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="version1 to project">
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="down sikuli from use">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/Verifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/Verifications.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/general/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/general/General.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/general/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/general/General.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/extensions/Verifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/extensions/Verifications.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/Base.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/CommonOps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/general/General.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/general/General.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/general/General.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sanity/general/General.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -391,7 +390,13 @@
       <option name="presentableId" value="LOCAL‎00025" />
       <updated>1682314054201</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL‎00026" summary="down sikuli from use">
+      <created>1682589955515</created>
+      <option name="number" value="LOCAL‎00026" />
+      <option name="presentableId" value="LOCAL‎00026" />
+      <updated>1682589955515</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -423,7 +428,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="commit test" />
     <MESSAGE value="add test to add_drag from list not dataProvider" />
     <MESSAGE value="some changes" />
     <MESSAGE value="sent patient_num to tests from dataProvider Patients.csv" />
@@ -448,7 +452,8 @@
     <MESSAGE value="add to regression_1 - doctor update dosage to drug" />
     <MESSAGE value="changes in hierarchy" />
     <MESSAGE value="version1 to project" />
-    <option name="LAST_COMMIT_MESSAGE" value="version1 to project" />
+    <MESSAGE value="down sikuli from use" />
+    <option name="LAST_COMMIT_MESSAGE" value="down sikuli from use" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
