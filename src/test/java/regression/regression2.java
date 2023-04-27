@@ -1,7 +1,7 @@
 package regression;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-import extensions.DBAction;
+//import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+//import extensions.DBAction;
 import io.qameta.allure.Description;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
