@@ -130,7 +130,7 @@ public class CommonOps extends Base {
             throw new RuntimeException("Invalid platform name");
 
 
-        screen = new Screen();
+      //  screen = new Screen();
         softAssert = new SoftAssert();
 
     }

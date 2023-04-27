@@ -19,198 +19,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="changes in hierarchy">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="version1 to project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuration/DataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/DataConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sanity_qa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sanity_qa.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/behaviors.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/behaviors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/categories.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/packages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/suites.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/suites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/timeline.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/export/prometheusData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/export/prometheusData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/history/categories-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/history/duration-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/history/history-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/history/history.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/history/retry-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/behaviors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/categories-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/duration-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/duration.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/executors.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/executors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/history-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/retry-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/severity.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/suites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/summary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/executor.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-results/executor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/history/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-results/history/categories-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-results/history/duration-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-results/history/history-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-results/history/history.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/history/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-results/history/retry-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/testrun.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-results/testrun.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regression_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/regression_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regression_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/regression_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/DBAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/DBAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/DemogeDataBarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/DemogeDataBarPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/menu/MainMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/menu/MainMenuPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/Execute/CardexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/Execute/CardexPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/approval/ApprovalInstructionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/approval/ApprovalInstructionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/Verifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/Verifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ManageDDT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ManageDDT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ManageDDT_int.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ManageDDT_int.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/db/DrugsWithDBFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/db/DrugsWithDBFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/db/GeneralInstructionDBFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/db/GeneralInstructionDBFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/db/GeneralWithDBFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/db/GeneralWithDBFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/doctor/chooseDepartmentFlow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/doctor/drugFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/doctor/drugFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflowsDB/DBQueries.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/regression1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/regression2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/regression2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/general/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/general/General.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/StopInstructionScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/StopInstructionScenario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sanity/general/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/general/General.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/extensions/DBAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/extensions/UIActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/extensions/UIActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/extensions/Verifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/extensions/Verifications.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/ChooseDepartmentListPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/ChooseDepartmentListPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/ChooseRolePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/ChooseRolePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/DemogeDataBarPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/DemogeDataBarPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/DoctorInstructionPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/DoctorInstructionPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/DrugConfirmation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/DrugConfirmation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/DrugsSection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/DrugsSection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/PatientBoxPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/PatientBoxPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/PatientsListPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/PatientsListPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/UserSignModalPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/UserSignModalPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/BloodProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/BloodProducts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormByHourPossibility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormByHourPossibility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormContinuesPossibility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormContinuesPossibility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormDailyPossibility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormDailyPossibility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormOnceOnlyPossibility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormOnceOnlyPossibility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormSOSPossibility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormSOSPossibility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormTimeLimitPossibility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormTimeLimitPossibility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormWeeklyPossibility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormWeeklyPossibility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/GeneralInstructionPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/GeneralInstructionPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/NutritionForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/NutritionForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/menu/InnerMenuPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/menu/InnerMenuPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/menu/MainMenuPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/menu/MainMenuPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/nurse/Execute/CardexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/nurse/Execute/CardexPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/nurse/Execute/UpdateExecutionPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/nurse/Execute/UpdateExecutionPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/nurse/approval/ApprovalInstructionPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/nurse/approval/ApprovalInstructionPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/nurse/prepMedicine/prepMedcinePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/nurse/prepMedicine/prepMedcinePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/popUp/ConfirmationAlert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/emr/popUp/ConfirmationAlert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/Base.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/CommonOps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/Listeners.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/Listeners.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ManageDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/ManageDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ManageDDT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/ManageDDT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ManageDDT_int.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/ManageDDT_int.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ManagePages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/ManagePages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/NavigateFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workflows/NavigateFlows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/WebFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workflows/WebFlows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/db/DrugsWithDBFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workflows/db/DrugsWithDBFlow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/db/GeneralInstructionDBFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workflows/db/GeneralInstructionDBFlow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/db/GeneralWithDBFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workflows/db/GeneralWithDBFlow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/departmentFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workflows/departmentFlows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/doctor/addInstructionFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workflows/doctor/addInstructionFlows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/doctor/bloodProductInstructionFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workflows/doctor/bloodProductInstructionFlows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/doctor/chooseDepartmentFlow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/doctor/doctorFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workflows/doctor/doctorFlows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/doctor/drugFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workflows/doctor/drugFlows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/doctor/generalInstructionFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workflows/doctor/generalInstructionFlows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/doctor/nutritionFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workflows/doctor/nutritionFlows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/doctor/solutionFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workflows/doctor/solutionFlows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/nurse/nurseFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workflows/nurse/nurseFlows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/regression/drugsSenario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workflows/regression/drugsSenario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/addAllInstructionToPatient.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/SanityTest/addAllInstructionToPatient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/addAllInstructionToPatient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/SanityTest/addAllInstructionToPatient.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/antibioticDrugAddConfirmation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/SanityTest/antibioticDrugAddConfirmation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/antibioticDrugAddConfirmation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/SanityTest/antibioticDrugAddConfirmation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/editDrug.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/SanityTest/editDrug.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/editDrug.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/SanityTest/editDrug.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/emergencyTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/SanityTest/emergencyTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/emergencyTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/SanityTest/emergencyTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/stopPatientInstruction.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/SanityTest/stopPatientInstruction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/stopPatientInstruction.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/SanityTest/stopPatientInstruction.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/SanityTest/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/drugFuture/drugFutureIn11Night.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/drugFuture/drugFutureIn11Night.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/drugFuture/drugFutureIn11Night.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/drugFuture/drugFutureIn11Night.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.regression1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.regression1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.regression2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.regression2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.regression3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.regression3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.addAndEditInstructionToPatient.EditDrugIns.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.addAndEditInstructionToPatient.EditDrugIns.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.emergency.DoctorEmergency.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.emergency.DoctorEmergency.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.BloodProductScenario.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.BloodProductScenario.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.DrugsScenario.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.DrugsScenario.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.GeneralInsScenario.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.GeneralInsScenario.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.NutritionScenario.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.NutritionScenario.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.SolutionScenario.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.SolutionScenario.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.StopInstructionScenario.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.StopInstructionScenario.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/addAllInstructionToPatient.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/addAllInstructionToPatient.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/stopPatientInstruction.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/stopPatientInstruction.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_1/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/regression_1/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_1/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/regression_1/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_1/addApprovalAndExecute.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/regression_1/addApprovalAndExecute.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_1/addApprovalAndExecute.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/regression_1/addApprovalAndExecute.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_2/addAndExecute_emergency.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/regression_2/addAndExecute_emergency.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_2/addAndExecute_emergency.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/regression_2/addAndExecute_emergency.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_3/emergency_addGeneralInsNotSaveAt5.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/regression_3/emergency_addGeneralInsNotSaveAt5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_3/emergency_addGeneralInsNotSaveAt5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/regression_3/emergency_addGeneralInsNotSaveAt5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/regression1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/regression1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/regression2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/regression2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/regression3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/regression/regression3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/general/General.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/general/General.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/instructionToPatient/DrugsScenario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/instructionToPatient/DrugsScenario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/instructionToPatient/StopInstructionScenario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/instructionToPatient/StopInstructionScenario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/general/General.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sanity/general/General.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/instructions/DrugScenarios.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sanity/instructions/DrugScenarios.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,6 +78,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -287,7 +105,7 @@
       <recent name="regression.drugRequireApprovalFromInfectologist" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DoctorEmergency">
+  <component name="RunManager" selected="TestNG.regression1">
     <configuration name="DoctorEmergency" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <extension name="coverage">
@@ -406,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.regression1" />
         <item itemvalue="TestNG.DoctorEmergency" />
         <item itemvalue="TestNG.regression2.addAndSaveAllInstructionToPatient" />
         <item itemvalue="TestNG.DoctorEmergency.test04_addDrugOnceOnlyAndExecute" />
         <item itemvalue="TestNG.General.test02_verifyChooseDepartment" />
-        <item itemvalue="TestNG.regression1" />
       </list>
     </recent_temporary>
   </component>
@@ -567,7 +385,13 @@
       <option name="presentableId" value="LOCAL‎00024" />
       <updated>1677410660766</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL‎00025" summary="version1 to project">
+      <created>1682314054201</created>
+      <option name="number" value="LOCAL‎00025" />
+      <option name="presentableId" value="LOCAL‎00025" />
+      <updated>1682314054201</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -623,7 +447,8 @@
     <MESSAGE value="gitignore fix" />
     <MESSAGE value="add to regression_1 - doctor update dosage to drug" />
     <MESSAGE value="changes in hierarchy" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes in hierarchy" />
+    <MESSAGE value="version1 to project" />
+    <option name="LAST_COMMIT_MESSAGE" value="version1 to project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -3,7 +3,7 @@ package utilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.sikuli.script.Screen;
+//import org.sikuli.script.Screen;
 import org.testng.asserts.SoftAssert;
 import pageObjects.emr.*;
 import pageObjects.emr.addForms.*;
@@ -25,7 +25,7 @@ public class Base {
     protected static WebDriver driver ;
     protected static WebDriverWait wait;
     protected static Actions action;
-    protected static Screen screen;
+  //  protected static Screen screen;
     protected static SoftAssert softAssert;
 
     //DB

@@ -15,11 +15,11 @@ import workflows.db.GeneralWithDBFlow;
 @Listeners(utilities.Listeners.class)
 public class General extends CommonOps {
 
-    @Test(description = "Verify Logo Image")
-    @Description("verify logo image Using Sikuli")
-    public void test06_verifyLogo() {
-        Verifications.visualElement("logo.JPG");
-    }
+//    @Test(description = "Verify Logo Image")
+//    @Description("verify logo image Using Sikuli")
+//    public void test06_verifyLogo() {
+//        Verifications.visualElement("logo.JPG");
+//    }
 
     @Test(description = "Verify List Roles")
     @Description("login with db and verify list roles - how many roles in list")

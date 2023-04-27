@@ -59,11 +59,11 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>sikulix</groupId>
-            <artifactId>sikulix-api</artifactId>
-            <version>2.0.4</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>sikulix</groupId>-->
+<!--            <artifactId>sikulix-api</artifactId>-->
+<!--            <version>2.0.4</version>-->
+<!--        </dependency>-->
 
         <!-- allure-->
 
@@ -107,13 +107,13 @@
 
     <!--Reposetory for Sikuli -->
 
-    <repositories>
-        <repository>
-            <id>sikulix-atid-college</id>
-            <name>Sikulix Repo ATID</name>
-            <url>https://atidcollege.co.il/downloads/libs</url>
-        </repository>
-    </repositories>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>sikulix-atid-college</id>-->
+<!--            <name>Sikulix Repo ATID</name>-->
+<!--            <url>https://atidcollege.co.il/downloads/libs</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
 
 
     <profiles>

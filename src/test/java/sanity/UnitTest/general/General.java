@@ -14,13 +14,13 @@ public class General extends CommonOps {
 
     String doctor_role = "רופא";
 
-    @Test(description = "Verify Logo Image")
-    @Description("verify logo image Using Sikuli")
-    public void test06_verifyLogo() {
-      //  String file_name = "aaaaa";
-     //   System.out.println("./DDTFiles/tests/"+file_name+".csv");
-        Verifications.visualElement("logo.JPG");
-    }
+  //  @Test(description = "Verify Logo Image")
+  //  @Description("verify logo image Using Sikuli")
+//    public void test06_verifyLogo() {
+//      //  String file_name = "aaaaa";
+//     //   System.out.println("./DDTFiles/tests/"+file_name+".csv");
+//        Verifications.visualElement("logo.JPG");
+//    }
 
     @Test(description = "Verify List Roles")
     @Description("login with db and verify list roles - how many roles in list")
