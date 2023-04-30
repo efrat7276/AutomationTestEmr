@@ -19,8 +19,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="down sikuli from use (2)">
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/regression2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/regression2.java" afterDir="false" />
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="down sikuli from use (3)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -396,7 +397,13 @@
       <option name="presentableId" value="LOCAL‎00027" />
       <updated>1682625834687</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL‎00028" summary="down sikuli from use (3)">
+      <created>1682626761175</created>
+      <option name="number" value="LOCAL‎00028" />
+      <option name="presentableId" value="LOCAL‎00028" />
+      <updated>1682626761175</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -428,7 +435,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="some changes" />
     <MESSAGE value="sent patient_num to tests from dataProvider Patients.csv" />
     <MESSAGE value="approval drugDailyNumberOfDay" />
     <MESSAGE value="add file csv -drugsSOS" />
@@ -453,7 +459,8 @@
     <MESSAGE value="version1 to project" />
     <MESSAGE value="down sikuli from use" />
     <MESSAGE value="down sikuli from use (2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="down sikuli from use (2)" />
+    <MESSAGE value="down sikuli from use (3)" />
+    <option name="LAST_COMMIT_MESSAGE" value="down sikuli from use (3)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
