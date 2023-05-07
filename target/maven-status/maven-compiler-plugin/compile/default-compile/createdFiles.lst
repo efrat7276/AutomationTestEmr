@@ -1,4 +1,0 @@
-workflows\nurse\nurseFlows.class
-pageObjects\emr\ChooseRolePage.class
-workflows\db\GeneralInstructionDBFlow.class
-workflows\db\GeneralWithDBFlow.class
