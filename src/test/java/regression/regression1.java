@@ -21,7 +21,7 @@ public class regression1 extends CommonOps {
 
     @Test(description = "addToPatientAllPossibilityIns")
     @Description("add to patient all possibility ins ")
-    public void addToPatientAllPossibilityIns() throws InterruptedException {
+    public void test01_addToPatientAllPossibilityIns() throws InterruptedException {
         // מוסיף למטופל תרופות , הוראות כלליות , נוזלים , מוצרי דם
 
         // תרופת
@@ -156,7 +156,7 @@ public class regression1 extends CommonOps {
 
     @Test(description = "addToPatientTwoDrugsOneApprovedAndOneNotApproved")
     @Description("add to patient two drugs one approved and one not approved")
-    public void addToPatientTwoDrugsOneApprovedAndOneNotApproved(){
+    public void test02_addToPatientTwoDrugsOneApprovedAndOneNotApproved(){
         // add to patient one drug not approved and drug approved
 
         WebFlows.login('d');
@@ -170,7 +170,7 @@ public class regression1 extends CommonOps {
 
     @Test(description = "stopToPatientAllActiveDrugs")
     @Description("stop to patient all active drugs")
-    public void stopToPatientAllActiveDrugs(){
+    public void test03_stopToPatientAllActiveDrugs(){
         WebFlows.login('d');
         WebFlows.patientBoxEntry(1);
         doctorFlows.stopAllActiveInstructionToPatient();
@@ -179,7 +179,7 @@ public class regression1 extends CommonOps {
 
     @Test(description = "addToPatientFutureDrug")
     @Description("add to patient future drug")
-    public void addToPatientFutureDrug(){
+    public void test04_addToPatientFutureDrug(){
         WebFlows.login('d');
         WebFlows.patientBoxEntry(1);
         doctorFlows.newDrug();
@@ -189,7 +189,7 @@ public class regression1 extends CommonOps {
 
     @Test(description = "updateDosageApprovalDrug")
     @Description("update dosage approval drug")
-    public void updateDosageApprovalDrug() throws InterruptedException {
+    public void test05_updateDosageApprovalDrug() throws InterruptedException {
         WebFlows.login('d');
         WebFlows.patientBoxEntry(1);
         doctorFlows.editDrugDosage(0,41);
@@ -198,7 +198,7 @@ public class regression1 extends CommonOps {
 
     @Test(description = "updateDosageNotApprovalDrug")
     @Description("update dosage not approval drug")
-    public void updateDosageNotApprovalDrug() throws InterruptedException {
+    public void test06_updateDosageNotApprovalDrug() throws InterruptedException {
         WebFlows.login('d');
         WebFlows.patientBoxEntry(1);
         doctorFlows.editDrugDosage(0,90);

@@ -31,22 +31,20 @@ public class nurseFlows extends CommonOps {
             //תרופות
             //  drugs_count = 5;
             if (approvalInstructionPage.btn_drug.size() > 0) {
-                for (int i = 0; i < approvalInstructionPage.btn_drug.size(); i++) {
-                    UIActions.click(approvalInstructionPage.btn_drug.get(i));
-                    UIActions.click(approvalInstructionPage.ul_drug.get(4));
-                }
-
-
-                // פירוק הוראה שבועית של יומיים
-
-                //  WebDriverWait waitToCheckboxDays = new WebDriverWait(driver,1);
-                //  waitToCheckboxDays.until(ExpectedConditions.visibilityOf(approvalInstructionPage.days_checkBoxList.get(0)));
-
-                if (existWeeklyDrug) {
-                    int arrDaysNew[] = fillArrToDaysInWeek(today);
-                    for (int j = 0; j < 2; j++) {
-                        UIActions.click(approvalInstructionPage.days_checkBoxList.get(arrDaysNew[j]));
+                for (int i = 0; i < approvalInstructionPage.btns_approveDrug.size(); i++) {
+                   try {
+                       UIActions.click(approvalInstructionPage.btn_drug.get(i));
+                       UIActions.click(approvalInstructionPage.ul_drug.get(4));
+                   }
+                   catch (Exception error){ }
+                    // הוראה שבועית של שבועיים
+                    if (approvalInstructionPage.possibilityDescDrug.get(i).getText().contains("Week")) {
+                        int arrDaysNew[] = fillArrToDaysInWeek(today);
+                        for (int j = 0; j < 2; j++) {
+                            UIActions.click(approvalInstructionPage.days_checkBoxList.get(arrDaysNew[j]));
+                        }
                     }
+                    UIActions.click(approvalInstructionPage.btns_approveDrug.get(i));
                 }
             }
 
@@ -54,16 +52,17 @@ public class nurseFlows extends CommonOps {
 
             //  gen_count = 2;
             // if (gen_count > 0) {
-            for (int i = 0; i < approvalInstructionPage.btn_gen.size(); i++) {
+            for (int i = 0; i < approvalInstructionPage.btns_approveGeneral.size(); i++) {
                 UIActions.click(approvalInstructionPage.btn_gen.get(i));
                 UIActions.click(approvalInstructionPage.ul_gen.get(4));
+                UIActions.click(approvalInstructionPage.btns_approveGeneral.get(i));
             }
             // }
 
 
             // נוזלים
 
-            for (int i = 0; i < approvalInstructionPage.solution_scale_currentHourList.size(); i++) {
+            for (int i = 0; i < approvalInstructionPage.btns_approveSolution.size(); i++) {
                 //   System.out.println("תמיסה מספר " + i);
                 UIActions.click(approvalInstructionPage.solution_scale_currentHourList.get(i));
                 // not relevant to continues
@@ -74,28 +73,21 @@ public class nurseFlows extends CommonOps {
 
                 } catch (Exception e) {
                 }
+                UIActions.click(approvalInstructionPage.btns_approveSolution.get(i));
+
             }
 
             Thread.sleep(1000);
             // מוצרי דם
 
-            for (int i = 0; i < approvalInstructionPage.bloodP_scale_currentHour.size(); i++) {
+            for (int i = 0; i < approvalInstructionPage.btns_approveBloodProduct.size(); i++) {
                 UIActions.click(approvalInstructionPage.bloodP_scale_currentHour.get(i));
                 Thread.sleep(1000);
                 UIActions.click(approvalInstructionPage.btn_V_blood);
-            }
-            Thread.sleep(3000);
-            int btns_approveToDrugSize =  approvalInstructionPage.btns_approveToDrug.size();
+                UIActions.click(approvalInstructionPage.btns_approveBloodProduct.get(i));
 
-            // לחיצה על כפתורי אישור לכול ההוראות שבמסך
-            for (int i = 0; i < btns_approveToDrugSize; i++) {
-             //   System.out.println("אישור הוראה מספר " + i);
-
-                UIActions.click(approvalInstructionPage.btns_approveToDrug.get(i));
             }
 
-
-            //    approvalNurseSign();
         }
     }
 
@@ -107,7 +99,7 @@ public class nurseFlows extends CommonOps {
                 approvalInstructionPage.btn_drug.get(i).click();
                 approvalInstructionPage.ul_drug.get(i+4).click();
             }}
-        approvalInstructionPage.btns_approveToDrug.get(0).click();
+        approvalInstructionPage.btns_approveDrug.get(0).click();
         approvalNurseSign();
     }
 
@@ -121,7 +113,7 @@ public class nurseFlows extends CommonOps {
                 approvalInstructionPage.btn_drug.get(i+j).click();
                 approvalInstructionPage.ul_drug.get(i+j).findElements(By.tagName("li")).get(k).click();
             }
-            approvalInstructionPage.btns_approveToDrug.get(r).click();
+            approvalInstructionPage.btns_approveDrug.get(r).click();
         }
         approvalInstructionPage.btn_approvalDrug.click();
         WebFlows.userSignConfirm();
@@ -136,7 +128,7 @@ public class nurseFlows extends CommonOps {
                 // פירוק ל'ללא מתן'
                 approvalInstructionPage.ul_drug.get(i).findElements(By.tagName("li")).get(2).click();
         }
-        approvalInstructionPage.btns_approveToDrug.get(0).click();
+        approvalInstructionPage.btns_approveDrug.get(0).click();
         approvalInstructionPage.btn_approvalDrug.click();
         WebFlows.userSignConfirm();
     }
@@ -148,7 +140,7 @@ public class nurseFlows extends CommonOps {
             // פירוק כל התרופות לשעת מתן הקרובה
             approvalInstructionPage.btn_drug.get(i).click();
             approvalInstructionPage.ul_drug.get(i).findElements(By.tagName("li")).get(4).click();
-            approvalInstructionPage.btns_approveToDrug.get(i).click();
+            approvalInstructionPage.btns_approveDrug.get(i).click();
         }
         approvalInstructionPage.btn_approvalDrug.click();
         WebFlows.userSignConfirm();
@@ -156,8 +148,8 @@ public class nurseFlows extends CommonOps {
 
     @Step("approval SOS Drugs")
     public static void approvalSOSDrugList()  {
-        for (int i = 0; i < approvalInstructionPage.btns_approveToDrug.size() ; i++) {
-            UIActions.click(approvalInstructionPage.btns_approveToDrug.get(i));
+        for (int i = 0; i < approvalInstructionPage.btns_approveDrug.size() ; i++) {
+            UIActions.click(approvalInstructionPage.btns_approveDrug.get(i));
         }
         approvalNurseSign();
     }
@@ -165,7 +157,7 @@ public class nurseFlows extends CommonOps {
     @Step("approval Weekly Drugs , choosing days : today and the close next days")
     public static void approvalWeeklyDrugList(int today, int countDay)  {
         int arrDaysNew []= fillArrToDaysInWeek(today);
-        for (int i = 0; i < approvalInstructionPage.btns_approveToDrug.size() ; i++) {
+        for (int i = 0; i < approvalInstructionPage.btns_approveDrug.size() ; i++) {
             approvalInstructionPage.btn_drug.get(i).click();
             approvalInstructionPage.ul_drug.get(i).findElements(By.tagName("li")).get(4).click();
 
@@ -173,7 +165,7 @@ public class nurseFlows extends CommonOps {
             // בחירת ימים לפי :  היום הנוכחי והימים הבאים אחריו
             for (int j = 0; j < countDay ; j++) {
                 UIActions.click(approvalInstructionPage.days_checkBoxList.get(arrDaysNew[j]));}
-            UIActions.click(approvalInstructionPage.btns_approveToDrug.get(i));
+            UIActions.click(approvalInstructionPage.btns_approveDrug.get(i));
         }
         approvalNurseSign();
 
@@ -194,7 +186,7 @@ public class nurseFlows extends CommonOps {
 
     @Step("approval solution to current hour ")
     public static void approvalSolution(boolean isSolution ,boolean isContinues)  {
-        for (int i = 0; i < approvalInstructionPage.btns_approveToDrug.size() ; i++) {
+        for (int i = 0; i < approvalInstructionPage.btns_approveSolution.size() ; i++) {
            if(isSolution)
                UIActions.click(approvalInstructionPage.solution_scale_currentHourList.get(i));
            else
@@ -202,7 +194,7 @@ public class nurseFlows extends CommonOps {
             if(!isContinues)  {
               //  Thread.sleep();
                 UIActions.click(approvalInstructionPage.btn_V_liquid);}
-            UIActions.click(approvalInstructionPage.btns_approveToDrug.get(i));
+            UIActions.click(approvalInstructionPage.btns_approveSolution.get(i));
         }
         approvalNurseSign();
 
@@ -221,7 +213,7 @@ public class nurseFlows extends CommonOps {
                 approvalInstructionPage.ul_gen.get(i).findElements(By.tagName("li")).get(4 + i).click();
             }
         }
-        approvalInstructionPage.btns_approveToDrug.get(0).click();
+        approvalInstructionPage.btns_approveGeneral.get(0).click();
 
         approvalNurseSign();
     }
@@ -232,7 +224,7 @@ public class nurseFlows extends CommonOps {
             for (int i = 0; i < approvalInstructionPage.btn_gen.size(); i++) {
                 approvalInstructionPage.btn_gen.get(i).click();
                 approvalInstructionPage.ul_gen.get(i).findElements(By.tagName("li")).get(4).click();
-                approvalInstructionPage.btns_approveToDrug.get(i).click();
+                approvalInstructionPage.btns_approveGeneral.get(i).click();
             }
             approvalNurseSign();
     }

@@ -31,9 +31,11 @@ public class ApprovalInstructionPage {
     @FindBy(how= How.XPATH , using = "//div[@id='div-group-current-day']//button/following-sibling::ul[@class='small_dr_button dropdown-menu show']/li")
     public List<WebElement>  ul_drug;
 
+    @FindBy(how= How.XPATH , using = "//drug-liquidation//tr[@name='drugRow1']/td[4]")
+    public List<WebElement>  possibilityDescDrug;
 
-    @FindBy(how= How.XPATH , using = "//tr[@name='drugRow1']//button[contains(@id,'btnIsApproval')]")
-    public List<WebElement>  btns_approveToDrug;
+    @FindBy(how= How.XPATH , using = "//drug-liquidation//tr[@name='drugRow1']//button[contains(@id,'btnIsApproval')]")
+    public List<WebElement>  btns_approveDrug;
 
 //  general-ins
 
@@ -49,6 +51,9 @@ public class ApprovalInstructionPage {
     @FindBy(how= How.XPATH , using = "//general-liquidation//table[@class='table main-table']//div[@id='div-group-current-day']//button/following-sibling::ul[@class='small_dr_button dropdown-menu show']/li")
     public List<WebElement>  ul_gen;
     // btn for daily 1 in day and once only
+
+    @FindBy(how= How.XPATH , using = "//general-liquidation//tr[@name='drugRow1']//button[contains(@id,'btnIsApproval')]")
+    public List<WebElement>  btns_approveGeneral;
 
     @FindBy(how = How.ID , using = "approvalDrug")
     public WebElement btn_approvalDrug;
@@ -67,6 +72,9 @@ public class ApprovalInstructionPage {
     @FindBy(how = How.XPATH , using ="//solution-liquidation//div[@name='solutionInstructionsTypeListStatusId2']//div[@class='timelineListFrame']//div[contains(@class,'timeLineInToday')]")
     public List<WebElement> solution_scale_currentHourList;
 
+
+    @FindBy(how= How.XPATH , using = "//solution-liquidation//tr[@name='drugRow1']//button[contains(@id,'btnIsApproval')]")
+    public List<WebElement>  btns_approveSolution;
     // bloodProd
     @FindBy(how = How.XPATH , using ="//blood-product-liquidation//div[@class='timelineListFrame']")
     public List<WebElement> bloodP_scale_hourList;
@@ -74,6 +82,8 @@ public class ApprovalInstructionPage {
     @FindBy(how = How.XPATH , using ="//blood-product-liquidation//div[@name='solutionInstructionsTypeListStatusId2']//div[@class='timelineListFrame']//div[contains(@class,'timeLineInToday')]")
     public List<WebElement> bloodP_scale_currentHour;
 
+    @FindBy(how= How.XPATH , using = "//blood-product-liquidation//tr[@name='drugRow1']//button[contains(@id,'btnIsApproval')]")
+    public List<WebElement>  btns_approveBloodProduct;
 
     @FindBy(how = How.XPATH , using ="//div[@class='solutionBagSizeDynamicPopover']//button[@class='btn btn-default dropdown-toggle'][1]")
     public WebElement btn_bagsList;

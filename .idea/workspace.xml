@@ -19,1071 +19,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="remove all allure results old">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="remove target folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AutomationProject_emr-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/extensions/UIActions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/extensions/Verifications.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/ChooseDepartmentListPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/ChooseRolePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/DemogeDataBarPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/DoctorInstructionPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/DrugConfirmation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/DrugsSection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/PatientBoxPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/PatientsListPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/UserSignModalPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/BloodProducts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormByHourPossibility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormContinuesPossibility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormDailyPossibility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormOnceOnlyPossibility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormSOSPossibility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormTimeLimitPossibility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/DrugFormWeeklyPossibility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/GeneralInstructionPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/addForms/NutritionForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/menu/InnerMenuPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/menu/MainMenuPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/nurse/Execute/CardexPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/nurse/Execute/UpdateExecutionPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/nurse/approval/ApprovalInstructionPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/nurse/prepMedicine/prepMedcinePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/emr/popUp/ConfirmationAlert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/Base.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/CommonOps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/Listeners.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ManageDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ManageDDT.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ManageDDT_int.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ManagePages.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/NavigateFlows.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/WebFlows.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/db/DrugsWithDBFlow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/db/GeneralInstructionDBFlow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/db/GeneralWithDBFlow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/departmentFlows.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/doctor/addInstructionFlows.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/doctor/bloodProductInstructionFlows.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/doctor/doctorFlows.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/doctor/drugFlows.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/doctor/generalInstructionFlows.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/doctor/nutritionFlows.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/doctor/solutionFlows.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/nurse/nurseFlows.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workflows/regression/drugsSenario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-05-10T09-14-55_115-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-06-17T13-15-05_031-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-06-20T16-24-43_686-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-06-21T00-02-08_598-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-06-21T10-11-03_423-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-07-25T14-04-26_927-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-07-25T14-15-02_588-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-07-25T14-46-03_516-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-07-25T14-48-02_644-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-07-27T15-27-14_495-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-07-27T15-33-50_855-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-03T17-00-03_217-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-08T10-34-57_393-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-08T10-38-11_413-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-08T15-50-04_382-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-08T15-52-02_804-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-08T15-53-02_607-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-08T15-56-02_708-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-08T16-47-07_203-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-08T17-02-23_506-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-08T17-02-23_506-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-11T14-27-03_493-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-11T14-44-52_854-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-11T14-51-36_095-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-11T15-00-48_812-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-18T15-02-05_170-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-08-19T08-14-19_514-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2021-09-13T16-45-14_644-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-05-10T10-36-34_459-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-05-30T15-52-09_237-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-05-30T15-59-19_083-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-05-30T16-07-05_173-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-05-31T09-47-41_408-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-05-31T12-29-59_418-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-05-31T14-34-36_125-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-06-06T14-39-17_696-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-06-06T14-39-17_696-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-06-06T15-19-42_409-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-06-06T15-41-58_635-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-06-07T10-34-01_139-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-06-27T09-45-00_561-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-06-27T09-57-05_001-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-06-27T11-41-26_584-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-06-27T14-00-09_012-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-06-28T10-28-58_422-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-06-28T12-42-03_007-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-06-28T12-42-03_007-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-08T12-22-43_134-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-08T12-23-42_280-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-12T16-45-09_647-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T11-13-11_843-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T12-20-13_523-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T12-27-11_678-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T13-01-11_716-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T13-05-11_588-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T13-07-11_746-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T13-13-11_666-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T13-18-11_715-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T13-20-11_663-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T13-46-11_633-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T14-19-11_665-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T14-23-11_679-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T14-25-11_767-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T14-27-11_871-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T14-46-03_278-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T15-14-59_251-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T15-16-51_528-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T15-19-16_455-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T15-20-31_731-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T15-24-16_036-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T15-24-56_443-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T15-26-46_964-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T15-30-18_643-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T15-34-04_751-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T15-36-57_693-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T15-38-02_932-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T15-54-28_462-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T15-54-28_462-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-14T16-17-09_112-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T09-36-55_227-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T09-45-13_221-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T09-45-13_221-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T10-03-04_820-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T10-03-39_419-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T10-05-58_068-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T10-07-35_594-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T10-32-28_169-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T10-49-49_148-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T10-50-54_140-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T10-57-13_009-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T11-03-53_307-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T11-04-22_429-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T12-42-19_409-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T12-44-07_584-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T12-45-03_129-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T12-59-19_529-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T12-59-19_529-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T13-22-52_077-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T15-22-35_499-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T16-01-39_707-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T21-55-12_101-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-15T23-30-03_851-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-16T00-10-04_076-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-16T15-04-10_367-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-16T15-47-41_726-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-16T23-30-08_528-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-17T00-10-05_419-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-18T00-10-06_564-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-18T10-46-23_228-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-18T10-46-23_228-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-19T00-10-10_152-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-20T00-10-09_403-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-21T00-10-10_681-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-22T00-10-16_617-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-23T00-10-16_596-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-24T00-10-15_858-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-24T15-04-49_551-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-24T15-06-56_019-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-25T00-10-16_553-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-26T00-10-17_409-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-27T00-10-18_983-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-28T00-10-20_553-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-30T00-10-27_197-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-30T13-53-12_256-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-30T13-53-12_256-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-30T21-59-45_041-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-30T21-59-45_041-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-30T22-02-55_890-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-08-31T00-10-25_974-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-01T11-28-04_016-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-02T02-10-27_190-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-05T11-30-43_568-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-05T11-47-01_758-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-05T11-51-48_715-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-14T14-29-02_522-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-14T14-29-02_522-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-14T15-23-42_842-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-14T15-24-46_899-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-14T15-26-51_863-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-15T13-00-08_468-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-18T09-36-25_418-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-28T10-42-38_029-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-29T13-10-39_649-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-29T13-14-46_919-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-29T13-17-59_217-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-29T13-21-15_744-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-29T13-26-56_230-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-29T13-30-53_272-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-29T14-49-41_049-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-29T14-58-07_721-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-09-29T15-00-12_250-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-10-02T11-36-46_475-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-10-02T12-54-40_196-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-10-02T12-54-40_196-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-10-03T10-00-11_663-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-10-03T10-00-11_663-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-09T10-01-32_057-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-09T10-01-32_057-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-09T10-05-06_459-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-09T11-24-40_394-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-10T02-05-10_108-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-13T02-05-11_817-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-14T14-25-04_065-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-14T14-25-04_065-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-14T14-52-14_904-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-14T14-52-14_904-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-16T01-30-04_082-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-16T02-20-03_911-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-16T06-10-04_248-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-16T08-39-01_745-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-16T12-29-21_322-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-16T13-20-02_603-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-23T09-37-05_847-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-23T09-37-05_847-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-24T00-00-15_081-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-24T14-38-09_058-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-24T22-50-41_861-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-27T01-30-07_079-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-27T06-20-07_403-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-27T22-50-38_585-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-28T08-45-08_955-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-29T02-20-09_968-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-29T12-03-10_379-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-29T12-03-10_379-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-29T12-10-10_287-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-29T12-10-10_287-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-29T12-16-03_265-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-11-30T01-30-15_009-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-05T00-11-01_205-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-06T01-31-02_487-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-07T09-40-13_098-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-07T09-42-41_069-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-07T09-42-41_069-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-13T08-10-12_331-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-15T08-10-15_294-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-17T00-10-17_583-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-17T02-20-17_590-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-17T06-20-17_910-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-18T09-56-11_526-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-18T10-13-19_674-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-18T10-48-07_420-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-21T23-01-05_668-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-23T08-10-07_651-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-23T23-01-08_576-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-24T23-01-10_183-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-25T01-30-10_209-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-25T02-20-10_114-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-25T23-55-11_473-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-27T00-10-13_019-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-27T08-10-13_554-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-28T23-55-19_483-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-30T23-01-19_449-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-31T06-20-19_719-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2022-12-31T23-01-20_976-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-01T02-20-20_968-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-01T14-48-55_024-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-02T04-20-23_404-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-02T12-01-45_683-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-02T12-28-01_407-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-02T23-55-04_103-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-03T01-30-04_372-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-03T02-20-04_386-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-03T06-20-04_589-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-03T23-01-06_091-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-04T06-20-06_377-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-04T08-37-13_886-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-04T13-50-55_192-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-05T01-30-05_387-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-05T05-30-05_564-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-05T23-57-06_829-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-06T04-20-07_300-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-08T05-30-10_280-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-08T06-20-10_250-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-08T08-10-10_413-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-08T23-01-18_588-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-09T06-20-11_959-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-09T09-26-12_900-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-09T09-43-46_868-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-09T09-46-20_628-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-09T12-00-58_594-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-10T09-29-08_782-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-10T23-01-13_122-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-11T05-30-07_183-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-11T23-01-12_262-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-12T23-01-10_067-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-15T15-33-23_258-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-15T15-38-59_083-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-15T15-38-59_083-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-15T16-19-48_721-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-15T16-19-56_608-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-15T16-19-56_608-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-16T04-20-15_034-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-17T00-10-16_968-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-17T01-30-15_603-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-20T01-30-03_920-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-20T02-20-03_765-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-21T00-10-05_217-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-21T08-10-05_835-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-22T00-10-06_923-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-22T00-10-12_666-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-22T01-30-07_122-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-22T02-20-07_183-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-22T10-12-17_664-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-31T14-44-02_431-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-31T14-44-02_431-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-31T23-01-04_054-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-01T01-30-04_117-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-01T02-20-04_151-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-01T02-20-08_053-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-01T08-10-04_548-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-02T01-30-04_484-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-02T02-20-04_640-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-02T02-20-07_598-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-02T08-10-04_767-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-02T23-01-07_268-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-03T00-10-11_363-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-03T01-30-05_511-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-03T02-20-05_526-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-03T02-20-10_772-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-03T05-30-05_712-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-03T08-10-05_894-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-04T01-30-06_782-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-04T02-20-06_791-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-04T02-20-10_687-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-04T08-10-07_072-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-05T01-30-08_044-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-05T02-20-08_371-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-05T02-20-10_814-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-05T08-10-08_450-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-05T11-50-42_868-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-05T11-52-15_719-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-06T01-30-09_756-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-06T02-20-09_660-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-06T02-20-15_860-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-06T08-10-09_940-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-06T11-20-09_691-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-06T11-36-34_621-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-06T13-14-08_943-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-06T13-38-18_611-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-06T13-38-18_611-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-07T01-30-04_510-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-07T02-20-04_856-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-07T02-20-07_356-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-07T08-10-05_303-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-08T01-30-05_939-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-08T02-20-06_826-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-08T02-20-07_757-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-08T08-10-06_195-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-09T01-30-04_222-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-09T02-20-05_885-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-09T02-20-06_445-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-09T08-10-04_907-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-09T12-25-57_535-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-10T01-30-05_426-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-10T02-20-05_875-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-10T02-20-07_905-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-10T08-10-05_777-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-11T01-30-06_723-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-11T02-20-06_845-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-11T02-20-10_339-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-11T08-10-07_151-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-12T00-10-07_967-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-12T01-30-08_086-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-12T02-20-08_114-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-12T02-20-12_001-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-12T08-10-08_439-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-13T01-30-09_752-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-13T02-20-09_442-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-13T02-20-12_983-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-13T04-20-09_648-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-13T08-10-09_768-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-14T00-10-10_678-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-14T01-30-10_697-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-14T02-20-10_708-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-14T02-20-14_387-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-02-14T08-10-11_072-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/addAllInstructionToPatient.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/addAllInstructionToPatient.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/antibioticDrugAddConfirmation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/antibioticDrugAddConfirmation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/editDrug.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/editDrug.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/emergencyTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/emergencyTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/stopPatientInstruction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/stopPatientInstruction.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/SanityTest/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite/Test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite/Test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-regression.addAndEditInstructionToPatient.EditDrugIns.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-regression.emergency.doctorTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-regression.emergency.nurseTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-regression.nurse.newTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-sanity.instructions.BloodProductsScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs to 3 patients/drugsTest_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs to 3 patients/drugsTest_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs to 3 patients/drugsTest_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs to 3 patients/drugsTest_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs to 3 patients/drugsTest_3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs to 3 patients/drugsTest_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs to 3 patients/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs/bloodProductTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs/bloodProductTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs/drugsTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs/drugsTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs/drugsTest_1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs/drugsTest_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs/drugsTest_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs/drugsTest_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs/drugsTest_3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs/drugsTest_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs/generalInsTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs/generalInsTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs/nutritionTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs/nutritionTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/add drugs/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/addApprovalExecute/addApprovalExecute.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/addApprovalExecute/addApprovalExecute.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/00_StopAllInstruction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/00_StopAllInstruction.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/01_drugsAllPossibilitiesTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/01_drugsAllPossibilitiesTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/01_drugsTimeLimitTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/01_drugsTimeLimitTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/02_drugsAllPossibilitiesTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/02_drugsAllPossibilitiesTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/02_drugsTimeLimitTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/02_drugsTimeLimitTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/02_drugsTimeLimitWithSupervisionTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/02_drugsTimeLimitWithSupervisionTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/03_ContinuesSanity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/03_ContinuesSanity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/04_AllInstructionSanity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/04_AllInstructionSanity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/04_AllInstruction_add,approval,execution.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/04_AllInstruction_add,approval,execution.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/04_GeneralInsSanity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/04_GeneralInsSanity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/05_BloodProdInsSanity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/05_BloodProdInsSanity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/05_addDrug_EditDrug-numberOfTime.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/05_addDrug_EditDrug-numberOfTime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/06_NutritionInsSanity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/06_NutritionInsSanity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/06_addDrug_EditDrug-dosage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/06_addDrug_EditDrug-dosage.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/07_StopAllInstruction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/07_StopAllInstruction.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/07_addDrug_EditDrug-numberOfTime.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/07_addDrug_EditDrug-numberOfTime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/08_addDrug_EditDrug-dosage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/08_addDrug_EditDrug-dosage.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/AllInstructionSSanity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/AllInstructionSSanity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/AllInstructionSanity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/AllInstructionSanity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/ContinuesSanity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/ContinuesSanity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/dfdfd.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/dfdfd.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/drugsAllPossibilitiesTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/drugsAllPossibilitiesTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/drugsTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/drugsTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/drugsTimeLimitTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/drugsTimeLimitTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/futureInstruction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/futureInstruction.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/initialize.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/initialize.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/negativeTest_.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/negativeTest_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/night.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/night.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/patientTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/patientTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/testExecute.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/testExecute.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/all drugs to patient/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/checkTest/3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/checkTest/3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/checkTest/9.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/checkTest/9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/checkTest/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/drugFuture/drugFutureIn11Night.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/drugFuture/drugFutureIn11Night.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/drugFuture/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edit drugs/editDrug.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edit drugs/editDrug.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edit drugs/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/instructionTest/addApprovalExecute.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/instructionTest/addApprovalExecute.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/instructionTest/emergencyTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/instructionTest/emergencyTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/instructionTest/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-addInstruction.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.addAndEditInstructionToPatient.EditDrugIns.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.doctor.BloodProductScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.doctor.DrugsScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.doctor.GeneralInsScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.doctor.NutritionScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.doctor.SolutionScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.doctor.StopInstructionScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.doctor.addAndUpdateInstruction.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.doctor.doctorAddInstruction.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.doctor.stopInstruction.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.emergency.DoctorEmergency.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.emergency.doctorTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.emergency.nurseTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.general.Patient.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.instructionToPatient.BloodProductScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.instructionToPatient.DrugsScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.instructionToPatient.GeneralInsScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.instructionToPatient.NutritionScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.instructionToPatient.SolutionScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.instructionToPatient.StopInstructionScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.instructions.BloodProductsScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.instructions.DrugScenarios.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.instructions.GeneralScenarios.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.instructions.NutritionScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.nurse.newTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.nurse.nurseApproval.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.nurse.nurseApprovalDrugs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.nurse.nurseExecute.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.prepare.preparationScreen.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.regression1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.regression2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.regression3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-regression.restoreBugs.Medicine_prep.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.addAndEditInstructionToPatient.EditDrugIns.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.drugRequireApprovalFromInfectologist.DrugWithConfirmationScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.emergency.DoctorEmergency.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.BloodProductScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.DrugsScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.GeneralInsScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.NutritionScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.SolutionScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.UnitTest.instructionToPatient.StopInstructionScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.doctor.addAndUpdateInstruction.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.doctor.addGeneralInstructionToPatient.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.doctor.addInstructionToPatient.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.general.General.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.general.Patient.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.general.TitlePage.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.instructions.BloodProductsScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.instructions.DrugScenarios.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.instructions.GeneralScenarios.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.instructions.InstructionMainPageScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.instructions.NutritionScenario.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-sanity.restoreBugs.Medicine_prep.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/medicinePrep/addDrugToPatientNight.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/medicinePrep/addDrugToPatientNight.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/medicinePrep/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/addAllInstructionToPatient.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/antibioticDrugAddConfirmation.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/editDrug.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/emergencyTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/stopPatientInstruction.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/SanityTest/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/Test.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/Surefire test.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs to 3 patients/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs to 3 patients/drugsTest_1.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs to 3 patients/drugsTest_2.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs to 3 patients/drugsTest_3.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs to 3 patients/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs to 3 patients/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs to 3 patients/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs to 3 patients/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs to 3 patients/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs to 3 patients/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs to 3 patients/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs to 3 patients/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs to 3 patients/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/bloodProductTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/drugsTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/drugsTest_1.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/drugsTest_2.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/drugsTest_3.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/generalInsTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/nutritionTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/add drugs/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/addApprovalExecute/addApprovalExecute.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/addApprovalExecute/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/addApprovalExecute/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/addApprovalExecute/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/addApprovalExecute/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/addApprovalExecute/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/addApprovalExecute/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/addApprovalExecute/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/addApprovalExecute/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/addApprovalExecute/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/addApprovalExecute/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/00_StopAllInstruction.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/01_drugsAllPossibilitiesTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/01_drugsTimeLimitTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/02_drugsAllPossibilitiesTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/02_drugsTimeLimitTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/02_drugsTimeLimitWithSupervisionTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/03_ContinuesSanity.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/04_AllInstructionSanity.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/04_AllInstruction_add,approval,execution.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/04_GeneralInsSanity.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/05_BloodProdInsSanity.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/05_addDrug_EditDrug-numberOfTime.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/06_NutritionInsSanity.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/06_addDrug_EditDrug-dosage.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/07_StopAllInstruction.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/07_addDrug_EditDrug-numberOfTime.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/08_addDrug_EditDrug-dosage.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/AllInstructionSSanity.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/AllInstructionSanity.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/ContinuesSanity.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/dfdfd.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/drugsAllPossibilitiesTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/drugsTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/drugsTimeLimitTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/futureInstruction.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/initialize.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/negativeTest_.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/night.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/patientTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/testExecute.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/all drugs to patient/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkTest/3.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkTest/9.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkTest/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkTest/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkTest/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkTest/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkTest/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkTest/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkTest/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkTest/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkTest/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/checkTest/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/drugFutureIn11Night.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/drugFuture/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/edit drugs/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/edit drugs/editDrug.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/edit drugs/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/edit drugs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/edit drugs/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/edit drugs/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/edit drugs/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/edit drugs/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/edit drugs/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/edit drugs/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/edit drugs/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/instructionTest/addApprovalExecute.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/instructionTest/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/instructionTest/emergencyTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/instructionTest/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/instructionTest/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/instructionTest/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/instructionTest/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/instructionTest/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/instructionTest/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/instructionTest/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/instructionTest/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/instructionTest/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/medicinePrep/addDrugToPatientNight.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/medicinePrep/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/medicinePrep/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/medicinePrep/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/medicinePrep/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/medicinePrep/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/medicinePrep/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/medicinePrep/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/medicinePrep/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/medicinePrep/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/medicinePrep/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/patient_1/Test.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/patient_1/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/patient_1/drugDailyAsRiskTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/patient_1/drugDailyTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/patient_1/drugSOSTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/patient_1/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/patient_1/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/patient_1/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/patient_1/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/patient_1/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/patient_1/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/patient_1/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/patient_1/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/patient_1/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression.emergency.nurseTest/Command line test.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression.emergency.nurseTest/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression.emergency.nurseTest/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression.emergency.nurseTest/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression.emergency.nurseTest/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression.emergency.nurseTest/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression.emergency.nurseTest/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression.emergency.nurseTest/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression.emergency.nurseTest/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression.emergency.nurseTest/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression.emergency.nurseTest/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/addAllInstructionToPatient.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/addApprovalExecute.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/antibioticDrugAddConfirmation.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/editDrug.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/emergencyTest.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/stopPatientInstruction.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regressionInstruction/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_1/addApprovalAndExecute.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_1/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_1/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_1/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_1/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_1/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_1/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_1/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_1/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_1/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_1/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/addAndExecute_emergency.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/addApprovalAndExecute.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/addApprovalAndExecute_emergency.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/addGeneralInsAt4.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_2/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/addGeneralInsNotSaveAt5.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/emergency_addGeneralInsNotSaveAt5.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/regression_3/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity/bloodProducts.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity/general.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity/generalIns.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity/instruction-doctor.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_AllKindInstruction-AddAndSignAll/add bloodProduct ins to patient.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_AllKindInstruction-AddAndSignAll/add drugs , nutrition , generalIns , bloodProd to patient.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_AllKindInstruction-AddAndSignAll/add drugs to patient.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_AllKindInstruction-AddAndSignAll/add general ins to patient.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_AllKindInstruction-AddAndSignAll/add nutrition to patient.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_AllKindInstruction-AddAndSignAll/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_AllKindInstruction-AddAndSignAll/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_AllKindInstruction-AddAndSignAll/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_AllKindInstruction-AddAndSignAll/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_AllKindInstruction-AddAndSignAll/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_AllKindInstruction-AddAndSignAll/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_AllKindInstruction-AddAndSignAll/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_AllKindInstruction-AddAndSignAll/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_AllKindInstruction-AddAndSignAll/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_AllKindInstruction-AddAndSignAll/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/drugUnknownInstructionWithApprovalAndExecute.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/drugsAsRiskInstructionWithApprovalAndExecute.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/drugsDailyInstructionWithApprovalAndExecute.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/drugsSOSInstructionWithApprovalAndExecute.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/general.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/instruction-doctor.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor_instruction/AddAllDrugPossibles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor_instruction/AddAllKindsInstruction.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor_instruction/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor_instruction/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor_instruction/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor_instruction/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor_instruction/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor_instruction/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor_instruction/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor_instruction/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor_instruction/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_doctor_instruction/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_drugs/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_drugs/drugsDailyInstructionWithApprovalAndExecute.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_drugs/drugsInfectiousDiseaseSpecialConfirmationCodeWithApprovalAndExecute.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_drugs/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_drugs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_drugs/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_drugs/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_drugs/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_drugs/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_drugs/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_drugs/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_drugs/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_generalIns/add bloodProduct ins to patient.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_generalIns/add general ins to patient.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_generalIns/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_generalIns/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_generalIns/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_generalIns/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_generalIns/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_generalIns/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_generalIns/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_generalIns/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_generalIns/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/sanity_generalIns/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/stopInstructionTest/addApprovalExecute.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/stopInstructionTest/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/stopInstructionTest/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/stopInstructionTest/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/stopInstructionTest/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/stopInstructionTest/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/stopInstructionTest/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/stopInstructionTest/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/stopInstructionTest/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/stopInstructionTest/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/stopInstructionTest/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/patient_1/Test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/patient_1/Test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/patient_1/drugDailyAsRiskTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/patient_1/drugDailyAsRiskTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/patient_1/drugDailyTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/patient_1/drugDailyTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/patient_1/drugSOSTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/patient_1/drugSOSTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/patient_1/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression.addAndEditInstructionToPatient.EditDrugIns.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression.emergency.doctorTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression.emergency.nurseTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression.emergency.nurseTest/Command line test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression.emergency.nurseTest/Command line test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression.emergency.nurseTest/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression.nurse.newTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regressionInstruction/addAllInstructionToPatient.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regressionInstruction/addAllInstructionToPatient.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regressionInstruction/addApprovalExecute.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regressionInstruction/addApprovalExecute.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regressionInstruction/antibioticDrugAddConfirmation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regressionInstruction/antibioticDrugAddConfirmation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regressionInstruction/editDrug.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regressionInstruction/editDrug.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regressionInstruction/emergencyTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regressionInstruction/emergencyTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regressionInstruction/stopPatientInstruction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regressionInstruction/stopPatientInstruction.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regressionInstruction/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_1/addApprovalAndExecute.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_1/addApprovalAndExecute.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_1/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_2/addAndExecute_emergency.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_2/addAndExecute_emergency.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_2/addApprovalAndExecute.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_2/addApprovalAndExecute.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_2/addApprovalAndExecute_emergency.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_2/addApprovalAndExecute_emergency.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_2/addGeneralInsAt4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_2/addGeneralInsAt4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_2/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_3/addGeneralInsNotSaveAt5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_3/addGeneralInsNotSaveAt5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_3/emergency_addGeneralInsNotSaveAt5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_3/emergency_addGeneralInsNotSaveAt5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/regression_3/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity.instructions.BloodProductsScenario.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity/bloodProducts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity/bloodProducts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity/general.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity/general.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity/generalIns.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity/generalIns.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity/instruction-doctor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity/instruction-doctor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_AllKindInstruction-AddAndSignAll/add bloodProduct ins to patient.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_AllKindInstruction-AddAndSignAll/add bloodProduct ins to patient.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_AllKindInstruction-AddAndSignAll/add drugs , nutrition , generalIns , bloodProd to patient.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_AllKindInstruction-AddAndSignAll/add drugs , nutrition , generalIns , bloodProd to patient.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_AllKindInstruction-AddAndSignAll/add drugs to patient.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_AllKindInstruction-AddAndSignAll/add drugs to patient.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_AllKindInstruction-AddAndSignAll/add general ins to patient.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_AllKindInstruction-AddAndSignAll/add general ins to patient.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_AllKindInstruction-AddAndSignAll/add nutrition to patient.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_AllKindInstruction-AddAndSignAll/add nutrition to patient.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_AllKindInstruction-AddAndSignAll/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor/drugUnknownInstructionWithApprovalAndExecute.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor/drugUnknownInstructionWithApprovalAndExecute.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor/drugsAsRiskInstructionWithApprovalAndExecute.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor/drugsAsRiskInstructionWithApprovalAndExecute.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor/drugsDailyInstructionWithApprovalAndExecute.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor/drugsDailyInstructionWithApprovalAndExecute.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor/drugsSOSInstructionWithApprovalAndExecute.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor/drugsSOSInstructionWithApprovalAndExecute.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor/general.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor/general.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor/instruction-doctor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor/instruction-doctor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor_instruction/AddAllDrugPossibles.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor_instruction/AddAllDrugPossibles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor_instruction/AddAllKindsInstruction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor_instruction/AddAllKindsInstruction.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_doctor_instruction/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_drugs/drugsDailyInstructionWithApprovalAndExecute.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_drugs/drugsDailyInstructionWithApprovalAndExecute.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_drugs/drugsInfectiousDiseaseSpecialConfirmationCodeWithApprovalAndExecute.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_drugs/drugsInfectiousDiseaseSpecialConfirmationCodeWithApprovalAndExecute.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_drugs/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_generalIns/add bloodProduct ins to patient.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_generalIns/add bloodProduct ins to patient.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_generalIns/add general ins to patient.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_generalIns/add general ins to patient.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sanity_generalIns/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/stopInstructionTest/addApprovalExecute.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/stopInstructionTest/addApprovalExecute.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/stopInstructionTest/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/regression1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/regression2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/regression/regression3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/addAndEditInstructionToPatient/EditDrugIns.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/drugRequireApprovalFromInfectologist/DrugWithConfirmationScenario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/emergency/DoctorEmergency.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/general/General.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/general/Patient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/instructionToPatient/BloodProductScenario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/instructionToPatient/DrugsScenario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/instructionToPatient/GeneralInsScenario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/instructionToPatient/NutritionScenario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/instructionToPatient/SolutionScenario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/UnitTest/instructionToPatient/StopInstructionScenario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/general/General.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/general/TitlePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/instructions/BloodProductsScenario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/instructions/DrugScenarios.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/instructions/DrugScenariosFunctionWithParams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/instructions/InstructionMainPageScenario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/restoreBugs/AddComadinAt2Night.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sanity/restoreBugs/Medicine_prep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/approval/ApprovalInstructionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/approval/ApprovalInstructionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/regression1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1161,7 +101,7 @@
       <recent name="regression.drugRequireApprovalFromInfectologist" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.regression2.addAndSaveAllInstructionToPatient">
+  <component name="RunManager" selected="TestNG.regression1.addToPatientAllPossibilityIns">
     <configuration name="H:/Automation/AutomationProject_emr/ToRun.xml" type="TestNG" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/ToRun.xml" />
@@ -1190,6 +130,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="regression1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="MAIN_CLASS_NAME" value="regression.regression1" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="regression1.addToPatientAllPossibilityIns" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="MAIN_CLASS_NAME" value="regression.regression1" />
+      <option name="METHOD_NAME" value="addToPatientAllPossibilityIns" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="regression2.addAndSaveAllInstructionToPatient" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <extension name="coverage">
@@ -1208,24 +183,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="regression2.addAndSaveGeneralInsAt4" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject_emr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.regression2" />
-      <option name="METHOD_NAME" value="addAndSaveGeneralInsAt4" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="regression2.addToPatientNotApprovalDrug" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <extension name="coverage">
@@ -1237,24 +194,6 @@
       <option name="PACKAGE_NAME" value="regression" />
       <option name="MAIN_CLASS_NAME" value="regression.regression2" />
       <option name="METHOD_NAME" value="addToPatientNotApprovalDrug" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="regression2.updateDosageApprovalDrug" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject_emr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.regression2" />
-      <option name="METHOD_NAME" value="updateDosageApprovalDrug" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -1282,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.regression1.addToPatientAllPossibilityIns" />
+        <item itemvalue="TestNG.regression1" />
         <item itemvalue="TestNG.regression2.addAndSaveAllInstructionToPatient" />
         <item itemvalue="TestNG.regression2.addToPatientNotApprovalDrug" />
         <item itemvalue="TestNG.regression2.updateDosageNotApprovalDrug" />
-        <item itemvalue="TestNG.regression2.addAndSaveGeneralInsAt4" />
-        <item itemvalue="TestNG.regression2.updateDosageApprovalDrug" />
       </list>
     </recent_temporary>
   </component>
@@ -1497,7 +436,13 @@
       <option name="presentableId" value="LOCAL‎00033" />
       <updated>1683445139734</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL‎00034" summary="remove target folder">
+      <created>1683445790679</created>
+      <option name="number" value="LOCAL‎00034" />
+      <option name="presentableId" value="LOCAL‎00034" />
+      <updated>1683445790679</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1529,7 +474,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="DBQueries add function to clear data to patient , add xml files" />
     <MESSAGE value="fixes" />
     <MESSAGE value="add function choose patient with num parameter" />
     <MESSAGE value="patient list page - changes" />
@@ -1554,7 +498,8 @@
     <MESSAGE value="rechanges time to timeOut in dataConfig File" />
     <MESSAGE value="add tests regression to emergency in regression2.class" />
     <MESSAGE value="remove all allure results old" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove all allure results old" />
+    <MESSAGE value="remove target folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove target folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1705,11 +650,6 @@
           <option name="timeStamp" value="700" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/regression/regression1.java</url>
-          <line>132</line>
-          <option name="timeStamp" value="704" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/extensions/DBAction.java</url>
           <line>24</line>
           <option name="timeStamp" value="714" />
@@ -1718,16 +658,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/extensions/DBAction.java</url>
           <line>58</line>
           <option name="timeStamp" value="719" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
-          <line>93</line>
-          <option name="timeStamp" value="734" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/regression/regression1.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="736" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/regression/regression2.java</url>
@@ -1753,6 +683,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/regression/regression2.java</url>
           <line>19</line>
           <option name="timeStamp" value="745" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="748" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/regression/nurse/nurseExecute.java</url>
@@ -1833,6 +768,7 @@
         <watch expression="patientsList.list_patients.get(i).findElement(By.tagName(&quot;i&quot;)).getClass()" language="JAVA" />
         <watch expression="patientsList.list_patients.get(i).findElement(By.tagName(&quot;i&quot;)).getText()" language="JAVA" />
         <watch expression="patientsList.list_patients.get(i).findElement(By.tagName(&quot;i&quot;)).getClass()" language="JAVA" />
+        <watch expression="btns_approveToDrugSize" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
