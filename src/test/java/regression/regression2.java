@@ -6,13 +6,10 @@ import io.qameta.allure.Description;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
-import workflows.NavigateFlows;
 import workflows.WebFlows;
 import workflows.departmentFlows;
-import workflows.doctor.bloodProductInstructionFlows;
 import workflows.doctor.doctorFlows;
 import workflows.doctor.generalInstructionFlows;
-import workflows.doctor.nutritionFlows;
 import workflows.nurse.nurseFlows;
 
 import java.sql.SQLException;
@@ -23,13 +20,13 @@ import java.util.Date;
 @Listeners(utilities.Listeners.class)
 public class regression2 extends CommonOps {
 
+   static String emergencyDep = "חדר מיון";
 
     @Test(description = "add all instruction emergency to patient")
     @Description("add all instruction emergency to patient")
     public void addAndSaveAllInstructionToPatient() throws InterruptedException, SQLException {
 
-        String department = "חדר מיון";
-        String mispar_sherut="23059995";
+        int patient_num = 1;
         LocalDateTime now = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
@@ -40,15 +37,15 @@ public class regression2 extends CommonOps {
       //  DBAction.InsertQuery(query_addTzantarToPatient);
 
         WebFlows.login('d');
-        departmentFlows.chooseDepartment(department);
-        WebFlows.patientBoxEntry(mispar_sherut);
+        departmentFlows.chooseDepartment(emergencyDep);
+        WebFlows.patientBoxEntry(patient_num);
         doctorFlows.stopAllActiveInstructionToPatient();
-
-        // החדרת צנתר
-
-
-
-
+//
+//        // החדרת צנתר
+//
+//
+//
+//
         doctorFlows.newDrug();
         doctorFlows.drugFormAddDrugOnceOnly("TAB acetylsalicylic acid 100mg (MICROPIRIN)",null, null,null,false,false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
@@ -72,8 +69,8 @@ public class regression2 extends CommonOps {
 
        CommonOps.afterMethod();
        WebFlows.login('n');
-        departmentFlows.chooseDepartment(department);
-       WebFlows.patientBoxEntry(mispar_sherut);
+        departmentFlows.chooseDepartment(emergencyDep);
+       WebFlows.patientBoxEntry(patient_num);
 //        NavigateFlows.goToCategory("nursing");
 //        NavigateFlows.goToSubCategory("nursingIns");
 //        doctorFlows.newGeneralIns();
@@ -89,33 +86,82 @@ public class regression2 extends CommonOps {
         Thread.sleep(1000);
         nurseFlows.executionNurseSign();
 
+    }
+
+     @Test(description = "addToPatientNotApprovalDrug")
+     @Description("add to patient not approval drug")
+     public void addToPatientNotApprovalDrug() throws InterruptedException {
+         WebFlows.login('d');
+         departmentFlows.chooseDepartment(emergencyDep);
+         WebFlows.patientBoxEntry(1);
+         doctorFlows.newDrug();
+         doctorFlows.drugFormAddDrugOnceOnly("TAB acetylsalicylic acid 100mg" , "100" , null , null , false , true );
+     }
 
 
+
+    @Test(description = "stopToPatientAllActiveDrugs")
+    @Description("stop to patient all active drugs")
+    public void stopToPatientAllActiveDrugs() throws InterruptedException {
+        WebFlows.login('d');
+        departmentFlows.chooseDepartment(emergencyDep);
+        WebFlows.patientBoxEntry(1);
+        doctorFlows.stopAllActiveInstructionToPatient();
     }
 
 
-//    @Test(description = "add generalIns list to patient")
-//    @Description("add generalIns list to patient")
-//    public void addAndSaveGeneralInsAt4(){
-//
-//        WebFlows.login('d');
-//        WebFlows.patientBoxEntry(4);
-//        doctorFlows.stopAllActiveInstructionToPatient();
-//        doctorFlows.newGeneralIns();
-//        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(1,1,null , false);
-//        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(2,1,null , false);
-//        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(3,1,null , false);
-//        generalInstructionFlows.generalFormAddGeneralInsDaily(4,1,1 , false,false);
-//
-//        generalInstructionFlows.saveGeneralInstructionsSelected();
-//
-//        doctorFlows.approvalInstruction();
-//
-//
-//
-//    }
+    @Test(description = "addToPatientDrugsOneNotApproved")
+    @Description("add to patient drugs one not approved")
+    public void addToPatientDrugsOneNotApproved() throws InterruptedException {
+        WebFlows.login('d');
+        departmentFlows.chooseDepartment(emergencyDep);
+        WebFlows.patientBoxEntry(1);
+        doctorFlows.newDrug();
+        doctorFlows.drugFormAddDrugOnceOnly("TAB acetylsalicylic acid 100mg" , "100" , null , null , false , true );
+    }
 
+    @Test(description = "updateDosageNotApprovalDrug")
+    @Description("update dosage not approval drug")
+    public void updateDosageNotApprovalDrug() throws InterruptedException {
+        WebFlows.login('d');
+        departmentFlows.chooseDepartment(emergencyDep);
+        WebFlows.patientBoxEntry(1);
+        doctorFlows.editDrugDosage(0,90);
+        doctorFlows.approvalInstruction();
 
+    }
 
+    @Test(description = "updateDosageApprovalDrug")
+    @Description("update dosage approval drug")
+    public void updateDosageApprovalDrug() throws InterruptedException {
+        WebFlows.login('d');
+        departmentFlows.chooseDepartment(emergencyDep);
+        WebFlows.patientBoxEntry(1);
+        doctorFlows.editDrugDosage(0,41);
+    }
 
+    @Test(description = "add and execute generalIns list to patient at 3 ")
+    @Description("add and execute generalIns list to patient")
+    public void addAndSaveGeneralInsAt4() throws InterruptedException {
+
+        WebFlows.login('d');
+        departmentFlows.chooseDepartment(emergencyDep);
+        WebFlows.patientBoxEntry(4);
+        doctorFlows.stopAllActiveInstructionToPatient();
+        doctorFlows.newGeneralIns();
+        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(1,1,null , false,false);
+        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(2,1,null , false,false);
+        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(3,1,null , false,false);
+       // generalInstructionFlows.generalFormAddGeneralInsDaily(4,1,1 , false,false);
+
+        generalInstructionFlows.saveGeneralInstructionsSelected();
+
+        doctorFlows.approvalInstruction();
+
+        WebFlows.login('n');
+        departmentFlows.chooseDepartment(emergencyDep);
+        WebFlows.patientBoxEntry(4);
+        nurseFlows.executeAllGeneralInsAfterApprovalNurse();
+        nurseFlows.executionNurseSign();
+    }
 }

@@ -20,7 +20,7 @@ import workflows.nurse.nurseFlows;
 public class regression1 extends CommonOps {
 
     @Test(description = "addToPatientAllPossibilityIns")
-    @Description("addToPatientAllPossibilityIns")
+    @Description("add to patient all possibility ins ")
     public void addToPatientAllPossibilityIns() throws InterruptedException {
         // מוסיף למטופל תרופות , הוראות כלליות , נוזלים , מוצרי דם
 
@@ -29,9 +29,9 @@ public class regression1 extends CommonOps {
         // onceOnly -
         // weekly - פעמיים בשבוע
         // SOS -
-        // byHour - פעם ב-48 שעות
-      int patient_num = 11;
-      // DrugObj drugDaily = new DrugObj ("acetylsalicylic",20,null,1,1,false,false);
+       // byHour - פעם ב-48 שעות
+   int patient_num = 11;
+    //   DrugObj drugDaily = new DrugObj ("acetylsalicylic",20,null,1,1,false,false);
        WebFlows.login('d');
         departmentFlows.chooseDepartment("ט'נ' כללי");
 
@@ -103,7 +103,7 @@ public class regression1 extends CommonOps {
 ////      //   3 דקות ללא כלום
 ////     //  Thread.sleep(240000);
        CommonOps.afterMethod();
-////
+//
 
        WebFlows.login('n');
         departmentFlows.chooseDepartment("ט'נ' כללי");
@@ -153,6 +153,58 @@ public class regression1 extends CommonOps {
 
     }
 
+
+    @Test(description = "addToPatientTwoDrugsOneApprovedAndOneNotApproved")
+    @Description("add to patient two drugs one approved and one not approved")
+    public void addToPatientTwoDrugsOneApprovedAndOneNotApproved(){
+        // add to patient one drug not approved and drug approved
+
+        WebFlows.login('d');
+        WebFlows.patientBoxEntry(1);
+        doctorFlows.newDrug();
+        doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (XANAX)", 20 , 3 , null , false , false , true);
+        doctorFlows.approvalInstruction();
+        doctorFlows.newDrug();
+        doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (XANAX)", 100 , 3 , null , false , false , true);
+    }
+
+    @Test(description = "stopToPatientAllActiveDrugs")
+    @Description("stop to patient all active drugs")
+    public void stopToPatientAllActiveDrugs(){
+        WebFlows.login('d');
+        WebFlows.patientBoxEntry(1);
+        doctorFlows.stopAllActiveInstructionToPatient();
+    }
+
+
+    @Test(description = "addToPatientFutureDrug")
+    @Description("add to patient future drug")
+    public void addToPatientFutureDrug(){
+        WebFlows.login('d');
+        WebFlows.patientBoxEntry(1);
+        doctorFlows.newDrug();
+        doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (XANAX)", 100 , 3 , null , false , true , true);
+        doctorFlows.approvalInstruction();
+    }
+
+    @Test(description = "updateDosageApprovalDrug")
+    @Description("update dosage approval drug")
+    public void updateDosageApprovalDrug() throws InterruptedException {
+        WebFlows.login('d');
+        WebFlows.patientBoxEntry(1);
+        doctorFlows.editDrugDosage(0,41);
+
+    }
+
+    @Test(description = "updateDosageNotApprovalDrug")
+    @Description("update dosage not approval drug")
+    public void updateDosageNotApprovalDrug() throws InterruptedException {
+        WebFlows.login('d');
+        WebFlows.patientBoxEntry(1);
+        doctorFlows.editDrugDosage(0,90);
+        doctorFlows.approvalInstruction();
+
+    }
 
 
 
