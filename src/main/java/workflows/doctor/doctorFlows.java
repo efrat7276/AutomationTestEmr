@@ -108,7 +108,7 @@ public class doctorFlows extends CommonOps {
         UIActions.clearText(drugForm.input_drugDosage);
         UIActions.updateText(drugForm.input_drugDosage , String.valueOf(dosage));
         UIActions.click(drugForm.btn_add);
-        approvalInstruction();
+       // approvalInstruction();
    //     Verifications.
 
     }

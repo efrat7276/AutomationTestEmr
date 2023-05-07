@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [regression_3]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" name="emergency_addGeneralInsNotSaveAt5(failed)" verbose="0">
+<suite name="Failed suite [SanityTest]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="addAllInstructionToPatient(failed)" verbose="0">
     <classes>
-      <class name="regression.regression3">
+      <class name="sanity.UnitTest.instructionToPatient.DrugsScenario">
         <methods>
-          <include name="addDrugDailyToPatient"/>
           <include name="BeforeSuite"/>
           <include name="afterMethod"/>
           <include name="closeSession"/>
           <include name="startSession"/>
+          <include name="test01_nurseApprovalDrugDailyToPatient"/>
         </methods>
-      </class> <!-- regression.regression3 -->
+      </class> <!-- sanity.UnitTest.instructionToPatient.DrugsScenario -->
     </classes>
-  </test> <!-- emergency_addGeneralInsNotSaveAt5(failed) -->
-</suite> <!-- Failed suite [regression_3] -->
+  </test> <!-- addAllInstructionToPatient(failed) -->
+</suite> <!-- Failed suite [SanityTest] -->
