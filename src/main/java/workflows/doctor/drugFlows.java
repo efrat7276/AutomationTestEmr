@@ -11,7 +11,7 @@ public class drugFlows extends CommonOps {
     public static void addAndSaveDrugDailyToPatient(String drugName , int dosage , int numberOfTime ,boolean isAntibiotic, boolean isFuture){
 
         doctorFlows.newDrug();
-        doctorFlows.drugFormAddDrugDaily(drugName,dosage ,3,null,isAntibiotic,isFuture,true);
+        doctorFlows.drugFormAddDrugDaily(drugName,dosage ,numberOfTime,null,isAntibiotic,isFuture,true);
       //  Verifications.textIsContains(doctorInstructionPage.btn_approvalDrug , "0");
     }
 

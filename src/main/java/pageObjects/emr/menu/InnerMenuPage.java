@@ -8,6 +8,10 @@ import java.util.HashMap;
 
 public class InnerMenuPage {
 
+
+    @FindBy(how = How.XPATH ,using="//div[contains(@class,'back-to-list top-menu')]//span[text()='רשימת מטופלים']")
+    public WebElement depMeushpazim;
+
     @FindBy(how = How.XPATH ,using="//div[contains(@class,'list-group-item menu-parent')]/span[text()=' הוראות רפואיות ']")
     public WebElement category_doctorInstruction;
 

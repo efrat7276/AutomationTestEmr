@@ -1,29 +1,27 @@
-package regression;
+package ICU;
 
-import extensions.Verifications;
 import io.qameta.allure.Description;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflows.NavigateFlows;
-import workflows.general.general;
-import workflows.*;
+import workflows.WebFlows;
+import workflows.departmentFlows;
 import workflows.doctor.bloodProductInstructionFlows;
 import workflows.doctor.doctorFlows;
 import workflows.doctor.generalInstructionFlows;
 import workflows.doctor.nutritionFlows;
+import workflows.general.general;
 import workflows.nurse.nurseFlows;
 
 import java.io.IOException;
 
 @Listeners(utilities.Listeners.class)
-public class regression1 extends CommonOps {
+public class regression1_icu extends CommonOps {
 
-    @Test(description = "addToPatientAllPossibilityIns")
-    @Description("add to patient all possibility ins ")
-    public void test01_addToPatientAllPossibilityIns() throws InterruptedException, IOException {
+    @Test(description = "addToPatientDailyDrug-patient sheet", groups = {"drug daily"})
+    @Description("add to patient drug daily - patient sheet")
+    public void test01_01_addToPatientDrugDaily() throws InterruptedException, IOException {
 //         מוסיף למטופל תרופות , הוראות כלליות , נוזלים , מוצרי דם
 //
 //         תרופת
@@ -32,35 +30,28 @@ public class regression1 extends CommonOps {
 //         weekly - פעמיים בשבוע
 //         SOS -
 //        byHour - פעם ב-48 שעות
-   int patient_num =2;
-    //   DrugObj drugDaily = new DrugObj ("acetylsalicylic",20,null,1,1,false,false);
-       WebFlows.login('d');
-      //  departmentFlows.chooseDepartment("ט'נ' כללי");
-
+        int patient_num =3;
+        String departmentICU = "ט'נ' כללי";
+        WebFlows.login('d');
+        departmentFlows.chooseDepartment(departmentICU);
         WebFlows.patientBoxEntry(patient_num);
-      doctorFlows.stopAllActiveInstructionToPatient();
+        doctorFlows.stopAllActiveInstructionToPatient();
         doctorFlows.newDrug();
-        //daily drug
-        doctorFlows.drugFormAddDrugDaily("acetylsalicylic",20,1,"1",false,false,false);
-        // doctorFlows.drugFormAddDrugDaily(drugDaily.drug_desc,drugDaily.dosage,drugDaily.numberOfTime,drugDaily.routeAdmin,drugDaily.isAntibiotic,drugDaily.isFutureDate,false);
-        //once-only drug
-        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-        Thread.sleep(3000);
-        doctorFlows.drugFormAddDrugOnceOnly("INJ bevacizumab 100mg/4ml ( AVASTIN)", "20" ,null , null ,false,false);
-        //sos drug
-        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-        Thread.sleep(1000);
-        doctorFlows.drugFormAddDrugSOS("TAB paracetamol 500mg (ACAMOL)" ,"20" , null , 4 , 3,false  );
-        //byHour drug
-        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-        Thread.sleep(1000);
-        doctorFlows.drugFormAddDrugByHour("TAB paracetamol 500mg (ACAMOL)" ,48 ,"20" , null ,true );
-        //weekly drug
-//        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        Thread.sleep(1000);
-//        doctorFlows.drugFormAddDrugWeekly("TAB FLUoxetine 20mg (FLUTINE)" , 2, "20",null,false);
+        doctorFlows.drugFormAddDrugDaily("acetylsalicylic", 20, 1, "1", false, false, true);
+        doctorFlows.approvalInstruction();
+        CommonOps.afterMethod();
+        WebFlows.login('n');
+        departmentFlows.chooseDepartment(departmentICU);
+        WebFlows.patientBoxEntry(patient_num);
+        nurseFlows.approvalAllPossibilitiesIns(true, true);
+        nurseFlows.approvalNurseSign();
+        Thread.sleep(5000);
+        NavigateFlows.goToCategory("cardex");
+        nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
+        nurseFlows.executionNurseSign();
+    }
 
-
+void aa() throws InterruptedException, IOException {
         ////  תרופות נוזליות
         doctorFlows.newDrug();
         doctorFlows.drugFormAddLiquidDrug("INJ atracrium 25mg/2.5ml (TRACRIUM)","dextrose 5% 500ml",11,false);
@@ -110,7 +101,7 @@ public class regression1 extends CommonOps {
        WebFlows.login('n');
      //   departmentFlows.chooseDepartment("ט'נ' כללי");
 
-        WebFlows.patientBoxEntry(patient_num);
+        WebFlows.patientBoxEntry(1);
 
      ////  todo הוספת ברנולה למטופל
 
@@ -147,7 +138,7 @@ public class regression1 extends CommonOps {
         WebFlows.login('d');
       //  departmentFlows.chooseDepartment("ט'נ' כללי");
 
-        WebFlows.patientBoxEntry(patient_num);
+        WebFlows.patientBoxEntry(1);
        int indexDrug =  general.searchDrugByName("acetylsalicylic");
         doctorFlows.editDrugDosage(indexDrug,41);
 

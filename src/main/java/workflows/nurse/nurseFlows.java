@@ -3,6 +3,7 @@ import com.google.common.util.concurrent.Uninterruptibles;
 import extensions.UIActions;
 import extensions.Verifications;
 import io.qameta.allure.Step;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,13 +12,15 @@ import utilities.CommonOps;
 import workflows.WebFlows;
 
 import javax.annotation.Nullable;
+import java.io.File;
+import java.io.IOException;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class nurseFlows extends CommonOps {
 
     @Step("approval all instruction")
-    public static void approvalAllPossibilitiesIns(boolean chooseHourCurrentDay, boolean existWeeklyDrug) throws InterruptedException {
+    public static void approvalAllPossibilitiesIns(boolean chooseHourCurrentDay, boolean existWeeklyDrug) throws InterruptedException, IOException {
 
         Date d = new Date();
         int today = d.getDay() + 1;
@@ -63,7 +66,9 @@ public class nurseFlows extends CommonOps {
             // נוזלים
 
             for (int i = 0; i < approvalInstructionPage.btns_approveSolution.size(); i++) {
-                //   System.out.println("תמיסה מספר " + i);
+                if(i==1)
+                    Thread.sleep(500);
+                FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("nurseApprovalSolution")+".png"));
                 UIActions.click(approvalInstructionPage.solution_scale_currentHourList.get(i));
                 // not relevant to continues
                 try {

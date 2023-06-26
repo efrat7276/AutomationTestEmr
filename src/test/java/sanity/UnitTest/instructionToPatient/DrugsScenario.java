@@ -2,6 +2,8 @@ package sanity.UnitTest.instructionToPatient;
 
 import extensions.UIActions;
 import io.qameta.allure.Description;
+import io.qameta.allure.Muted;
+import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -13,6 +15,8 @@ import workflows.doctor.doctorFlows;
 import workflows.doctor.drugFlows;
 import workflows.nurse.nurseFlows;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Calendar;
 
 @Listeners(utilities.Listeners.class)
@@ -50,6 +54,7 @@ public class DrugsScenario extends CommonOps {
         nurseFlows.approvalDrugsDaily(1, false);
         NavigateFlows.goToCategory("cardex");
         nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
+        nurseFlows.executionNurseSign();
     }
 
     @Test(description = "test add and save future drug daily ", groups = {"doctor"})
@@ -94,6 +99,8 @@ public class DrugsScenario extends CommonOps {
         nurseFlows.approvalSOSDrugList();
         NavigateFlows.goToCategory("cardex");
         nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
+        nurseFlows.executionNurseSign();
+
     }
 
 
@@ -116,6 +123,8 @@ public class DrugsScenario extends CommonOps {
        nurseFlows.approvalDrugOnceOnlyList(1);
        NavigateFlows.goToCategory("cardex");
        nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
+        nurseFlows.executionNurseSign();
+
     }
 
     @Test(description = "test add and save drug by hour" , groups = {"doctor"} )
@@ -137,6 +146,8 @@ public class DrugsScenario extends CommonOps {
         nurseFlows.approvalDrugsDaily(1, false);
         NavigateFlows.goToCategory("cardex");
        nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
+        nurseFlows.executionNurseSign();
+
     }
 
     @Test(description = "test add and save drug weekly" , groups = {"doctor"})
@@ -160,9 +171,64 @@ public class DrugsScenario extends CommonOps {
         nurseFlows.approvalWeeklyDrugList(day,2);
         NavigateFlows.goToCategory("cardex");
         nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
+        nurseFlows.executionNurseSign();
+
     }
 
 
+    @Test(description = "test add and save drug daily", groups = {"doctor"})
+    @Description("test add and save drug daily ")
+    public void test07_addAndSaveDrugDailToPatient(){
+
+        WebFlows.login('d');
+        WebFlows.patientBoxEntry(3);
+        doctorFlows.stopAllActiveInstructionToPatient();
+        drugFlows.addAndSaveDrugDailyToPatient("INJ metroNIDAZOLE 500mg/100ml (FLAGYL)",100 , 1 , true, false);
+        doctorFlows.approvalInstruction();
+    }
+
+    @Test(description = "test nurse-approval and nurse-execute drug daily" , groups = {"nurse"})
+    @Description("test nurse-approval and nurse-execute  drug daily ")
+    public void test07_nurseApprovalDrugDailyToPatient() throws InterruptedException, IOException {
+
+        WebFlows.login('n');
+        WebFlows.patientBoxEntry(3);
+        nurseFlows.approvalDrugsDaily(1, false);
+        UIActions.click(innerMenuPage.depMeushpazim);
+        Thread.sleep(1000);
+        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("depMeushpazimAt00")+".png"));
+        WebFlows.patientBoxEntry(3);
+        Thread.sleep(1000);
+        //NavigateFlows.goToCategory("cardex");
+        UIActions.click(cardexPage.checkBoxListDrug.get(0));
+        Thread.sleep(2000);
+        nurseFlows.executionNurseSign();
+        UIActions.click(cardexPage.i_arrow);
+        UIActions.click(innerMenuPage.depMeushpazim);
+        Thread.sleep(500);
+        UIActions.click(mainMenuPage.category_drugPreparation);
+        Thread.sleep(2000);
+        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("printAt00")+".png"));
+
+
+    }
+
+    @Test(description = "take pictures" , groups = {"nurse"})
+    @Description("test take picture ")
+    public void test07_takePictures() throws InterruptedException, IOException {
+
+        WebFlows.login('n');
+        Thread.sleep(500);
+        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\" + getFileName("depMeushpazimAt1:30") + ".png"));
+        UIActions.click(mainMenuPage.category_drugPreparation);
+        Thread.sleep(2000);
+        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\" + getFileName("printAt1:30") + ".png"));
+        UIActions.click(mainMenuPage.category_patientList);
+        WebFlows.patientBoxEntry(3);
+        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\" + getFileName("cardexAt1:30") + ".png"));
+
+
+    }
 //    @Test(description = "test add and save drug daily", groups = {"doctor"})
 //    @Description("test add and save drug daily ")
 //    public void test01_checkConsoleLog(){

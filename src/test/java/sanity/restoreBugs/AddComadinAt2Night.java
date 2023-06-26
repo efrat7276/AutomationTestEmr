@@ -34,7 +34,7 @@ public class AddComadinAt2Night extends CommonOps {
         nurseFlows.approvalDrugsDaily(1,false);
         NavigateFlows.goToCategory("cardex");
         Thread.sleep(3000);
-        FileUtils.copyFile(Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+"picCardexAtHour02"+getFileName()+".png"));
+        FileUtils.copyFile(Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("picCardexAtHour02")+".png"));
 
     }
 

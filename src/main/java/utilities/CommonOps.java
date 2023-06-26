@@ -27,10 +27,10 @@ public class CommonOps extends Base {
         return env;
     }
 
-    public static String getFileName(){
+    public static String getFileName(String desc){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
         LocalDateTime now = LocalDateTime.now();
-        return dtf.format(now);
+        return desc+"_"+dtf.format(now);
     }
 
     public static String getData(String nodeName) {

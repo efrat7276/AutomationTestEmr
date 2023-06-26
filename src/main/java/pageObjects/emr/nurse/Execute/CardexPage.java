@@ -45,25 +45,46 @@ public class CardexPage {
 
 
  // popover execute
+//
+    @FindBy(how = How.XPATH , using = "//div[@class='lineRow custom-control custom-checkbox heb-rtl input-group'][2]")
+    public WebElement checkboxVInput;
+
+    @FindBy(how = How.ID , using = "checkbox2")
+    public WebElement checkboxXInput;
 
     @FindBy(how = How.XPATH , using = "//input[@id='supervisionCbox']/following-sibling::label")
     public WebElement inputSupervision;
 
-    @FindBy(how = How.XPATH , using = "//*[contains(@id,'ngb-popover')]//button[1]")
+    @FindBy(how = How.XPATH , using = "//*[contains(@id,'ngb-popover')]//button[2]")
     public WebElement btn_ok;
 
-    @FindBy(how = How.XPATH , using = "//*[contains(@id,'ngb-popover')]//button[2]")
+    @FindBy(how = How.XPATH , using = "//*[contains(@id,'ngb-popover')]//button[1]")
     public WebElement btn_cancle;
 
-    @FindBy(how = How.NAME , using = "notGivenCbox")
-    public WebElement inputNotGiven;
+//    @FindBy(how = How.NAME , using = "notGivenCbox")
+//    public WebElement inputNotGiven;
+//
+//    @FindBy(how = How.NAME , using = "given")
+//    public WebElement inputGiven;
 
-    @FindBy(how = How.NAME , using = "given")
-    public WebElement inputGiven;
+    @FindBy(how = How.XPATH , using = "//execution-popover//p-dropdown")
+    public WebElement dropDownReason;
 
+    @FindBy(how = How.XPATH , using = "//execution-popover//p-dropdownitem")
+    public List<WebElement> reasonList;
+
+//    @FindBy(how = How.XPATH , using = "//execution-popover//input")
+//    public WebElement comment;
 
     @FindBy(how= How.ID , using = "btnApproval")
     public WebElement btn_approval;
+
+    @FindBy(how = How.XPATH , using = "//user-and-password//input[1]")
+    public WebElement userName_input;
+
+    @FindBy(how = How.XPATH , using = "//user-and-password//input[2]")
+    public WebElement userSign_input;
+
 
 
  // button to exit from cardex page
@@ -72,6 +93,15 @@ public class CardexPage {
     public WebElement i_arrow;
 
 
+// print stickers
+
+    @FindBy(how= How.XPATH, using = "//button[text()='הדפסת מדבקות']")
+    public WebElement btn_printStickers;
+
+
+
+    @FindBy(how= How.XPATH, using = "//app-pdf-modal/div[1]/button/span")
+    public WebElement exit_printStickers;
 
 
 // after execute

@@ -62,12 +62,12 @@ public class Medicine_prep extends CommonOps {
     @Description("")
     public void test01_printStickDrug() throws InterruptedException, IOException {
         WebFlows.login('n');
-        UIActions.click(mainMenuPage.mainCategory_drugPreparation);
+        UIActions.click(mainMenuPage.category_drugPreparation);
         Thread.sleep(6000);
         UIActions.click(prepMedcinePage.filterHourBtn);
         UIActions.selectFromList(prepMedcinePage.filterHourList,"12:00");
         Thread.sleep(2000);
-        FileUtils.copyFile(Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName()+".png"));
+        FileUtils.copyFile(Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("12")+".png"));
 
     }
 

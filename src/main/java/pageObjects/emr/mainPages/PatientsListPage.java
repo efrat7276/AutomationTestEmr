@@ -1,4 +1,4 @@
-package pageObjects.emr;
+package pageObjects.emr.mainPages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,6 +25,8 @@ public class PatientsListPage {
     @FindBy(how= How.LINK_TEXT , using = "פרוטוקולים")
     public WebElement menu_protocols;
 
+    @FindBy(how= How.XPATH , using = "//app-patients")
+    public WebElement patients_body;
 
     @FindBy(how= How.XPATH , using = "//p-table[contains(@class,'depMeushpazim-table patients-table')]//tr")
     public List< WebElement> list_patients;

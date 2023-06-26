@@ -3,6 +3,7 @@ package utilities;
 import org.openqa.selenium.support.PageFactory;
 import pageObjects.emr.*;
 import pageObjects.emr.addForms.*;
+import pageObjects.emr.mainPages.*;
 import pageObjects.emr.menu.InnerMenuPage;
 import pageObjects.emr.menu.MainMenuPage;
 import pageObjects.emr.nurse.Execute.CardexPage;
@@ -20,6 +21,15 @@ public class ManagePages extends Base {
         innerMenuPage = PageFactory.initElements(driver, InnerMenuPage.class);
         mainMenuPage = PageFactory.initElements(driver , MainMenuPage.class);
         patientsList = PageFactory.initElements(driver , PatientsListPage.class);
+        dischargedListPage = PageFactory.initElements(driver , DischargedListPage.class);
+        depReport = PageFactory.initElements(driver , DepReport.class);
+        operationsPage = PageFactory.initElements(driver , OperationsPage.class);
+        orderListPage = PageFactory.initElements(driver , OrderListPage.class);
+        protocolListPage = PageFactory.initElements(driver , ProtocolListPage.class);
+
+
+
+
         chooseDepartmentListPage = PageFactory.initElements(driver , ChooseDepartmentListPage.class);
 
         patientBox = PageFactory.initElements(driver , PatientBoxPage.class);

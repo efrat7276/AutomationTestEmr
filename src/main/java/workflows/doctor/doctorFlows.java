@@ -331,7 +331,7 @@ public class doctorFlows extends CommonOps {
                 break;
             case 11 :
                 drugForm.radio_timeLimitPossbility.click();
-                fillDrugDilutedDetails(24);
+                fillDrugDilutedDetails(2);
                 break;
             case 12 :
                 drugForm.radio_continuousPossbility.click();

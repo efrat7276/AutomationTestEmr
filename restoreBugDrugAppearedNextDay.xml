@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="restoreBugs-20.06.23 00:00" parallel="false">
+
+    <test name="addDrugAntibioticAt00NightAndExecute">
+        <classes>
+            <class name="sanity.UnitTest.instructionToPatient.DrugsScenario">
+                <methods>
+                    <include name="test07_addAndSaveDrugDailToPatient"></include>
+                    <include name="test07_nurseApprovalDrugDailyToPatient"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

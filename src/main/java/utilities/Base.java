@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 import pageObjects.emr.*;
 import pageObjects.emr.addForms.*;
+import pageObjects.emr.mainPages.*;
 import pageObjects.emr.menu.InnerMenuPage;
 import pageObjects.emr.menu.MainMenuPage;
 import pageObjects.emr.nurse.Execute.CardexPage;
@@ -40,7 +41,23 @@ public class Base {
     protected static InnerMenuPage innerMenuPage;
     protected static MainMenuPage mainMenuPage;
 
+    //main pages
     protected static PatientsListPage patientsList ;
+    protected static DischargedListPage dischargedListPage;
+    protected static DepReport depReport;
+    protected static OperationsPage operationsPage;
+    protected static OrderListPage orderListPage;
+    protected static ProtocolListPage protocolListPage ;
+
+
+
+
+
+
+
+
+
+
     protected static ChooseDepartmentListPage chooseDepartmentListPage ;
     protected static PatientBoxPage patientBox ; ;
     protected static DemogeDataBarPage demogeDataBar ;
