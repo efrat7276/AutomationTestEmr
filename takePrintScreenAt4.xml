@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="restoreBugAt4">
+    <test name="generalCardex">
+        <classes>
+            <class name="emergency.generalinstruction">
+                <methods>
+                    <include name="test01_takePrintScreenEmergency"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

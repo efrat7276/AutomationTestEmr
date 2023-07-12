@@ -141,10 +141,10 @@ public class CommonOps extends Base {
          try{
             env = System.getenv("environment");
             if(env == null)
-                env= "prod";
+                env= "qa";
          }
         catch (SecurityException e){
-           env= "prod";
+           env= "qa";
         }
          switch (env){
              case "qa":
