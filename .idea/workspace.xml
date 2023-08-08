@@ -19,12 +19,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="some change for rus restore bugs">
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="regression test for running">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regression_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/regression_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regression_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/regression_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/regression/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/regression1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/regression2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/regression2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +99,7 @@
       <recent name="regression" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.regression2.test07_addAndSaveGeneralInsAt4">
+  <component name="RunManager" selected="TestNG.regression1">
     <configuration name="H:/Automation/AutomationProject_emr/ToRun.xml" type="TestNG" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/ToRun.xml" />
@@ -131,6 +128,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="regression1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="regression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="regression" />
+      <option name="MAIN_CLASS_NAME" value="regression.regression1" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="regression1.test01_addToPatientAllPossibilityIns" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <extension name="coverage">
@@ -142,24 +156,6 @@
       <option name="PACKAGE_NAME" value="regression" />
       <option name="MAIN_CLASS_NAME" value="regression.regression1" />
       <option name="METHOD_NAME" value="test01_addToPatientAllPossibilityIns" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="regression2.test01_addAndSaveAllInstructionToPatient" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject_emr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.regression2" />
-      <option name="METHOD_NAME" value="test01_addAndSaveAllInstructionToPatient" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -225,18 +221,18 @@
       <item itemvalue="TestNG.H:/Automation/AutomationProject_emr/ToRun.xml" />
       <item itemvalue="TestNG.doctorAddInstruction.addAndSignUnknownDrug" />
       <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
-      <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
       <item itemvalue="TestNG.regression2.test02_addToPatientNotApprovalDrug" />
       <item itemvalue="TestNG.regression2.test03_stopToPatientAllActiveDrugs" />
       <item itemvalue="TestNG.regression2.test07_addAndSaveGeneralInsAt4" />
+      <item itemvalue="TestNG.regression1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.regression1" />
+        <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
         <item itemvalue="TestNG.regression2.test07_addAndSaveGeneralInsAt4" />
         <item itemvalue="TestNG.regression2.test03_stopToPatientAllActiveDrugs" />
         <item itemvalue="TestNG.regression2.test02_addToPatientNotApprovalDrug" />
-        <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
-        <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
       </list>
     </recent_temporary>
   </component>
@@ -471,7 +467,13 @@
       <option name="presentableId" value="LOCAL‎00037" />
       <updated>1689160367508</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL‎00038" summary="regression test for running">
+      <created>1691498663796</created>
+      <option name="number" value="LOCAL‎00038" />
+      <option name="presentableId" value="LOCAL‎00038" />
+      <updated>1691498663796</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -503,7 +505,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="nutrition add flows" />
     <MESSAGE value="xml tests" />
     <MESSAGE value="general class to general tests" />
     <MESSAGE value="generalIns tests" />
@@ -528,7 +529,8 @@
     <MESSAGE value="nurseFlows fix approvalAllPossibilitiesIns function" />
     <MESSAGE value="add new tests" />
     <MESSAGE value="some change for rus restore bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="some change for rus restore bugs" />
+    <MESSAGE value="regression test for running" />
+    <option name="LAST_COMMIT_MESSAGE" value="regression test for running" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -712,6 +714,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java</url>
           <line>222</line>
           <option name="timeStamp" value="755" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/regression/regression1.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="758" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
+          <line>313</line>
+          <option name="timeStamp" value="759" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/regression/nurse/nurseExecute.java</url>
