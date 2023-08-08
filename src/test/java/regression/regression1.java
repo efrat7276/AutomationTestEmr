@@ -32,9 +32,8 @@ public class regression1 extends CommonOps {
 //         weekly - פעמיים בשבוע
 //         SOS -
 //        byHour - פעם ב-48 שעות
-   int patient_num =3;
-    //   DrugObj drugDaily = new DrugObj ("acetylsalicylic",20,null,1,1,false,false);
-       WebFlows.login('d');
+       int patient_num =5;
+        WebFlows.login('d');
         departmentFlows.chooseDepartment("ט'נ' כללי");
 
         WebFlows.patientBoxEntry(patient_num);

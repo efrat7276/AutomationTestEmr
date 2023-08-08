@@ -5,7 +5,9 @@
 
         <test name="emergency_allInstruction">
             <classes>
-                <class name="regression.regression2"></class>
+                <class name="regression.regression2">
+
+                </class>
             </classes>
         </test>
 
