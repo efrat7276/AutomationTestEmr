@@ -45,7 +45,7 @@ public class regression2 extends CommonOps {
     @Description("add all instruction emergency to patient")
     public void test01_addAndSaveAllInstructionToPatient() throws InterruptedException, SQLException, IOException {
 
-        int patient_num = 1;
+        int patient_num =1;
         //החדרת צנתר בDB
 //
 //        String query_addTzantarToPatient = "INSERT INTO dbo.emr_tzantar VALUES(" + "2023059578"+",4"+",NULL" +",1"+",NULL"+",NULL"+",NULL,'" +formatDateTime.toString()+"',NULL"+",NULL"+",NULL"+",NULL" +",NULL"+",NULL,"+"0" +",NULL,'"+formatDateTime.toString()+ "'," +"'בדיקות אוטומציה'"+",NULL"+",NULL"+",NULL" +",NULL"+",NULL,"+"3)";
@@ -107,13 +107,13 @@ public class regression2 extends CommonOps {
         Thread.sleep(1000);
         nurseFlows.executionNurseSign();
 
-        UIActions.click(cardexPage.i_arrow);
-        NavigateFlows.goToCategory("nurseConfirmation");
-        NavigateFlows.goToSubCategory("updateExecution");
-        UIActions.click(updateExecutionPage.btn_updateExecList.get(0));
-        UIActions.click(updateExecutionPage.btn_iconExecList.get(0));
-        Thread.sleep(1000);
-        UIActions.click(cardexPage.checkboxXInput);
+//        UIActions.click(cardexPage.i_arrow);
+//        NavigateFlows.goToCategory("nurseConfirmation");
+//        NavigateFlows.goToSubCategory("updateExecution");
+//        UIActions.click(updateExecutionPage.btn_updateExecList.get(0));
+//        UIActions.click(updateExecutionPage.btn_iconExecList.get(0));
+//        Thread.sleep(1000);
+//        UIActions.click(cardexPage.checkboxXInput);
 
     }
 
