@@ -128,15 +128,15 @@ public class regression1 extends CommonOps {
        nurseFlows.approvalAllPossibilitiesIns(true, false);
 //
        nurseFlows.approvalNurseSign();
-//        Thread.sleep(5000);
-//        NavigateFlows.goToCategory("cardex");
+        Thread.sleep(5000);
+        NavigateFlows.goToCategory("cardex");
 
         nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
         nurseFlows.executeAllLiquidAfterApprovalNurse();
         //ביצוע הוראות כלליות לא עובד
 //        Thread.sleep(2000);
 //        nurseFlows.executeAllGeneralInsAfterApprovalNurse();
-//        Thread.sleep(2000);
+       Thread.sleep(2000);
         nurseFlows.executionNurseSign();
 
 //        //עדכון תרופה
