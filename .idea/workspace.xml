@@ -19,15 +19,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add new objects to icu-screen">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/generalComponents/ListChoicesComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/generalComponents/NumberOfTimeListComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/NutritionPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/NutritionPlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/ReceptionTreatmentPlanMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/ReceptionTreatmentPlanMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/SolutionPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/SolutionPlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" afterDir="false" />
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="regression1_icu">
+      <change afterPath="$PROJECT_DIR$/regression_ICU.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -516,7 +510,13 @@
       <option name="presentableId" value="LOCAL‎00044" />
       <updated>1691665131599</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL‎00045" summary="regression1_icu">
+      <created>1691676218176</created>
+      <option name="number" value="LOCAL‎00045" />
+      <option name="presentableId" value="LOCAL‎00045" />
+      <updated>1691676218176</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -548,7 +548,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="manage pages" />
     <MESSAGE value="first commit from intellij -&#10;upload all allure report" />
     <MESSAGE value="changed alure results" />
     <MESSAGE value="gitignore fix" />
@@ -573,7 +572,8 @@
     <MESSAGE value="regression2 fix" />
     <MESSAGE value="names object - change" />
     <MESSAGE value="add new objects to icu-screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new objects to icu-screen" />
+    <MESSAGE value="regression1_icu" />
+    <option name="LAST_COMMIT_MESSAGE" value="regression1_icu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

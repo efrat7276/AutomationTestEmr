@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="regression_ICU" parallel="false">
+
+        <test name="icu">
+            <classes>
+                <class name="ICU.regression1_icu"></class>
+            </classes>
+        </test>
+
+</suite>

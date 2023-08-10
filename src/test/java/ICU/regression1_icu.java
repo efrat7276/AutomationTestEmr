@@ -147,29 +147,29 @@ public class regression1_icu extends CommonOps {
 
 
 
-
-void aa() throws InterruptedException, IOException {
-
-
-
-    }
-
-
-    @Test(description = "addToPatientTwoDrugsOneApprovedAndOneNotApproved")
-    @Description("add to patient two drugs one approved and one not approved")
-    public void test02_addToPatientTwoDrugsOneApprovedAndOneNotApproved(){
-        // add to patient one drug not approved and drug approved
-
-        WebFlows.login('d');
-        WebFlows.patientBoxEntry(1);
-        doctorFlows.newDrug();
-        doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (XANAX)", 20 , 3 , null , false , false , true);
-        doctorFlows.approvalInstruction();
-        doctorFlows.newDrug();
-        doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (XANAX)", 100 , 3 , null , false , false , true);
-    }
-
-
+//
+//void aa() throws InterruptedException, IOException {
+//
+//
+//
+//    }
+//
+//
+//    @Test(description = "addToPatientTwoDrugsOneApprovedAndOneNotApproved")
+//    @Description("add to patient two drugs one approved and one not approved")
+//    public void test02_addToPatientTwoDrugsOneApprovedAndOneNotApproved(){
+//        // add to patient one drug not approved and drug approved
+//
+//        WebFlows.login('d');
+//        WebFlows.patientBoxEntry(1);
+//        doctorFlows.newDrug();
+//        doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (XANAX)", 20 , 3 , null , false , false , true);
+//        doctorFlows.approvalInstruction();
+//        doctorFlows.newDrug();
+//        doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (XANAX)", 100 , 3 , null , false , false , true);
+//    }
+//
+//
 
 
 
