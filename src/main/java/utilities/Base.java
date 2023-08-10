@@ -16,6 +16,11 @@ import pageObjects.emr.nurse.approval.ApprovalInstructionPage;
 import pageObjects.emr.nurse.prepMedicine.prepMedcinePage;
 
 import pageObjects.emr.popUp.ConfirmationAlert;
+import pageObjects.emr.receptionTreatmentPlan.NutritionPlan;
+import pageObjects.emr.receptionTreatmentPlan.ReceptionTreatmentPlanMain;
+import pageObjects.emr.receptionTreatmentPlan.SolutionBolusPlan;
+import pageObjects.emr.receptionTreatmentPlan.SolutionPlan;
+import pageObjects.emr.settingGoals.SettingGoals;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -90,6 +95,13 @@ public class Base {
 
     protected static UserSignModalPage userSignModalPage;
     protected static ConfirmationAlert confirmationAlert;
+
+    protected static SettingGoals settingGoals;
+    protected static ReceptionTreatmentPlanMain receptionTreatmentPlanMain;
+    protected static NutritionPlan nutritionPlan;
+    protected static SolutionPlan solutionPlan;
+    protected static SolutionBolusPlan solutionBolusPlan;
+
 
 
 

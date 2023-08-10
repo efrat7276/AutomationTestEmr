@@ -11,6 +11,9 @@ import pageObjects.emr.nurse.Execute.UpdateExecutionPage;
 import pageObjects.emr.nurse.prepMedicine.prepMedcinePage;
 import pageObjects.emr.nurse.approval.ApprovalInstructionPage;
 import pageObjects.emr.popUp.ConfirmationAlert;
+import pageObjects.emr.settingGoals.*;
+import pageObjects.emr.receptionTreatmentPlan.*;
+
 //import pageObjects.emr.popUp.DrugConfirmationPopUp;
 
 public class ManagePages extends Base {
@@ -59,6 +62,15 @@ public class ManagePages extends Base {
         userSignModalPage = PageFactory.initElements(driver, UserSignModalPage.class);
 
         confirmationAlert = PageFactory.initElements(driver, ConfirmationAlert.class);
-     //   drugConfirmationPopUp = PageFactory.initElements(driver, DrugConfirmationPopUp.class);
+
+        settingGoals =  PageFactory.initElements(driver, SettingGoals.class);
+        receptionTreatmentPlanMain = PageFactory.initElements(driver, ReceptionTreatmentPlanMain.class);
+        nutritionPlan = PageFactory.initElements(driver, NutritionPlan.class);
+        solutionPlan = PageFactory.initElements(driver, SolutionPlan.class);
+        solutionBolusPlan = PageFactory.initElements(driver, SolutionBolusPlan.class);
+
+
+
+        //   drugConfirmationPopUp = PageFactory.initElements(driver, DrugConfirmationPopUp.class);
     }
 }
