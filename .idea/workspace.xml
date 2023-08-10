@@ -19,9 +19,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="regression test for running">
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add new objects to icu-screen">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/generalComponents/ListChoicesComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/generalComponents/NumberOfTimeListComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/regression1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/NutritionPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/NutritionPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/ReceptionTreatmentPlanMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/ReceptionTreatmentPlanMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/SolutionPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/SolutionPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,14 +99,14 @@
       <recent name="H:\Automation\AutomationProject_emr\ImageRepository" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pageObjects.emr.generalComponents" />
+      <recent name="pageObjects.emr.settingGoals" />
+      <recent name="pageObjects.emr.receptionTreatmentPlan" />
+      <recent name="pageObjects.emr.addForms" />
       <recent name="ICU" />
-      <recent name="pageObjects.emr.mainPages" />
-      <recent name="sanity" />
-      <recent name="sanity.restoreBugs" />
-      <recent name="regression" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.regression1">
+  <component name="RunManager" selected="TestNG.regression1_icu.test01_icu_addToPatientDrugDaily">
     <configuration name="H:/Automation/AutomationProject_emr/ToRun.xml" type="TestNG" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/ToRun.xml" />
@@ -145,6 +152,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="regression1_icu.test01_icu_addToPatientDrugDaily" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ICU.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ICU" />
+      <option name="MAIN_CLASS_NAME" value="ICU.regression1_icu" />
+      <option name="METHOD_NAME" value="test01_icu_addToPatientDrugDaily" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="regression1.test01_addToPatientAllPossibilityIns" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <extension name="coverage">
@@ -163,7 +188,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="regression2.test02_addToPatientNotApprovalDrug" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="regression2.test01_addAndSaveAllInstructionToPatient" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <extension name="coverage">
         <pattern>
@@ -173,25 +198,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="regression" />
       <option name="MAIN_CLASS_NAME" value="regression.regression2" />
-      <option name="METHOD_NAME" value="test02_addToPatientNotApprovalDrug" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="regression2.test03_stopToPatientAllActiveDrugs" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject_emr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.regression2" />
-      <option name="METHOD_NAME" value="test03_stopToPatientAllActiveDrugs" />
+      <option name="METHOD_NAME" value="test01_addAndSaveAllInstructionToPatient" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -221,18 +228,18 @@
       <item itemvalue="TestNG.H:/Automation/AutomationProject_emr/ToRun.xml" />
       <item itemvalue="TestNG.doctorAddInstruction.addAndSignUnknownDrug" />
       <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
-      <item itemvalue="TestNG.regression2.test02_addToPatientNotApprovalDrug" />
-      <item itemvalue="TestNG.regression2.test03_stopToPatientAllActiveDrugs" />
       <item itemvalue="TestNG.regression2.test07_addAndSaveGeneralInsAt4" />
       <item itemvalue="TestNG.regression1" />
+      <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
+      <item itemvalue="TestNG.regression1_icu.test01_icu_addToPatientDrugDaily" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.regression1" />
+        <item itemvalue="TestNG.regression1_icu.test01_icu_addToPatientDrugDaily" />
         <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
+        <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
+        <item itemvalue="TestNG.regression1" />
         <item itemvalue="TestNG.regression2.test07_addAndSaveGeneralInsAt4" />
-        <item itemvalue="TestNG.regression2.test03_stopToPatientAllActiveDrugs" />
-        <item itemvalue="TestNG.regression2.test02_addToPatientNotApprovalDrug" />
       </list>
     </recent_temporary>
   </component>
@@ -473,7 +480,43 @@
       <option name="presentableId" value="LOCAL‎00038" />
       <updated>1691498663796</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL‎00039" summary="regression test for running">
+      <created>1691500277626</created>
+      <option name="number" value="LOCAL‎00039" />
+      <option name="presentableId" value="LOCAL‎00039" />
+      <updated>1691500277626</updated>
+    </task>
+    <task id="LOCAL‎00040" summary="regression test for running (2)">
+      <created>1691570997021</created>
+      <option name="number" value="LOCAL‎00040" />
+      <option name="presentableId" value="LOCAL‎00040" />
+      <updated>1691570997021</updated>
+    </task>
+    <task id="LOCAL‎00041" summary="regression1 fix">
+      <created>1691656088072</created>
+      <option name="number" value="LOCAL‎00041" />
+      <option name="presentableId" value="LOCAL‎00041" />
+      <updated>1691656088072</updated>
+    </task>
+    <task id="LOCAL‎00042" summary="regression2 fix">
+      <created>1691656637834</created>
+      <option name="number" value="LOCAL‎00042" />
+      <option name="presentableId" value="LOCAL‎00042" />
+      <updated>1691656637834</updated>
+    </task>
+    <task id="LOCAL‎00043" summary="names object - change">
+      <created>1691663721868</created>
+      <option name="number" value="LOCAL‎00043" />
+      <option name="presentableId" value="LOCAL‎00043" />
+      <updated>1691663721868</updated>
+    </task>
+    <task id="LOCAL‎00044" summary="add new objects to icu-screen">
+      <created>1691665131599</created>
+      <option name="number" value="LOCAL‎00044" />
+      <option name="presentableId" value="LOCAL‎00044" />
+      <updated>1691665131599</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -505,11 +548,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="xml tests" />
-    <MESSAGE value="general class to general tests" />
-    <MESSAGE value="generalIns tests" />
-    <MESSAGE value="innerMenuPage addition" />
-    <MESSAGE value="mainMenuPage" />
     <MESSAGE value="manage pages" />
     <MESSAGE value="first commit from intellij -&#10;upload all allure report" />
     <MESSAGE value="changed alure results" />
@@ -530,7 +568,12 @@
     <MESSAGE value="add new tests" />
     <MESSAGE value="some change for rus restore bugs" />
     <MESSAGE value="regression test for running" />
-    <option name="LAST_COMMIT_MESSAGE" value="regression test for running" />
+    <MESSAGE value="regression test for running (2)" />
+    <MESSAGE value="regression1 fix" />
+    <MESSAGE value="regression2 fix" />
+    <MESSAGE value="names object - change" />
+    <MESSAGE value="add new objects to icu-screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new objects to icu-screen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -724,6 +767,26 @@
           <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
           <line>313</line>
           <option name="timeStamp" value="759" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
+          <line>303</line>
+          <option name="timeStamp" value="760" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenarios.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="766" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="783" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="784" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/regression/nurse/nurseExecute.java</url>

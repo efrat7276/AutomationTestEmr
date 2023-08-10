@@ -38,6 +38,9 @@ public class SolutionPlan {
     @FindBy(how=How.ID, using="D50W-0")
     public WebElement isD50WNo;
 
+    @FindBy(how=How.ID, using="D50W-rate")
+    public WebElement D50W_rate;
+
 }
 
 

@@ -3,6 +3,8 @@ package utilities;
 import org.openqa.selenium.support.PageFactory;
 import pageObjects.emr.*;
 import pageObjects.emr.addForms.*;
+import pageObjects.emr.generalComponents.ListChoicesComponent;
+import pageObjects.emr.generalComponents.NumberOfTimeListComponent;
 import pageObjects.emr.mainPages.*;
 import pageObjects.emr.menu.InnerMenuPage;
 import pageObjects.emr.menu.MainMenuPage;
@@ -69,6 +71,8 @@ public class ManagePages extends Base {
         solutionPlan = PageFactory.initElements(driver, SolutionPlan.class);
         solutionBolusPlan = PageFactory.initElements(driver, SolutionBolusPlan.class);
 
+        listChoices= PageFactory.initElements(driver, ListChoicesComponent.class);
+        numberOfTimeList= PageFactory.initElements(driver, NumberOfTimeListComponent.class);
 
 
         //   drugConfirmationPopUp = PageFactory.initElements(driver, DrugConfirmationPopUp.class);

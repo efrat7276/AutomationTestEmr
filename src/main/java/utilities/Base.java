@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 import pageObjects.emr.*;
 import pageObjects.emr.addForms.*;
+import pageObjects.emr.generalComponents.ListChoicesComponent;
+import pageObjects.emr.generalComponents.NumberOfTimeListComponent;
 import pageObjects.emr.mainPages.*;
 import pageObjects.emr.menu.InnerMenuPage;
 import pageObjects.emr.menu.MainMenuPage;
@@ -101,6 +103,14 @@ public class Base {
     protected static NutritionPlan nutritionPlan;
     protected static SolutionPlan solutionPlan;
     protected static SolutionBolusPlan solutionBolusPlan;
+
+
+
+    //general
+
+   protected static ListChoicesComponent listChoices;
+    protected static NumberOfTimeListComponent numberOfTimeList;
+
 
 
 
