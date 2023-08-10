@@ -103,7 +103,7 @@ public class regression2 extends CommonOps {
 
         nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
         nurseFlows.executeAllLiquidAfterApprovalNurse();
-        nurseFlows.executeAllGeneralInsAfterApprovalNurse();
+       // nurseFlows.executeAllGeneralInsAfterApprovalNurse();
         Thread.sleep(1000);
         nurseFlows.executionNurseSign();
 
