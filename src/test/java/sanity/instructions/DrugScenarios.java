@@ -11,6 +11,7 @@ import pageObjects.emr.DoctorInstructionPage;
 import utilities.CommonOps;
 import utilities.ManageDDT;
 import utilities.ManageDDT;
+import workflows.NavigateFlows;
 import workflows.WebFlows;
 import workflows.db.GeneralWithDBFlow;
 import workflows.doctor.doctorFlows;
@@ -113,13 +114,13 @@ public class DrugScenarios extends CommonOps {
 
     @Test(description = "verify a doctor's signature on unsigned instruction ", dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"} )
     @Description("a doctor signs on doctor's instruction")
-    public void  test03_2_NurseApprovalAllAndExecuteDailyDrug(String patient_num){
+    public void  test03_2_NurseApprovalAllAndExecuteDailyDrug(String patient_num) throws InterruptedException {
 
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("אחות מוסמכת");
         WebFlows.patientBoxEntry(patient_num);
         nurseFlows.approvalDrugDailyList(5 , 3);
-        UIActions.click(innerMenuPage.category_cardex);
+        NavigateFlows.goToCategory("cardex");
         nurseFlows.CardexPage_executeOnceOnlyDrugs();
    }
 
@@ -151,13 +152,13 @@ public class DrugScenarios extends CommonOps {
 
     @Test(description = "verify a doctor's signature on unsigned instruction ", dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"} )
     @Description("a doctor signs on doctor's instruction")
-    public void  test04_3_NurseApprovalAllAndExecuteDailyInfectiousDiseaseSpecialDrug(String patient_num){
+    public void  test04_3_NurseApprovalAllAndExecuteDailyInfectiousDiseaseSpecialDrug(String patient_num) throws InterruptedException {
 
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("אחות מוסמכת");
         WebFlows.patientBoxEntry(patient_num);
         nurseFlows.approvalDrugOnceOnlyList(3);
-        UIActions.click(innerMenuPage.category_cardex);
+        NavigateFlows.goToCategory("cardex");
         nurseFlows.CardexPage_executeOnceOnlyDrugs();
     }
 
@@ -180,13 +181,13 @@ public class DrugScenarios extends CommonOps {
 
 
     @Test(description = "Verify additions 3 drugs daily As Risk to Patient" , dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"})
-    public void test05_2_NurseApprovalAllAndExecuteAsRiskDrug(String patient_num){
+    public void test05_2_NurseApprovalAllAndExecuteAsRiskDrug(String patient_num) throws InterruptedException {
 
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("אחות מוסמכת");
         WebFlows.patientBoxEntry(patient_num);
         nurseFlows.approvalDrugOnceOnlyList(2);
-        UIActions.click(innerMenuPage.category_cardex);
+        NavigateFlows.goToCategory("cardex");
         nurseFlows.CardexPage_supervisionPlusExecuteOnceOnlyDrugs();
     }
 
@@ -209,13 +210,13 @@ public class DrugScenarios extends CommonOps {
 
     @Test(description = "verify a doctor's signature on unsigned instruction ", dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"} )
     @Description("a doctor signs on doctor's instruction")
-    public void  test06_2_NurseApprovalAllAndExecuteSOSDrug(String patient_num){
+    public void  test06_2_NurseApprovalAllAndExecuteSOSDrug(String patient_num) throws InterruptedException {
 
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("אחות מוסמכת");
         WebFlows.patientBoxEntry(patient_num);
         nurseFlows.approvalSOSDrugList();
-        UIActions.click(innerMenuPage.category_cardex);
+        NavigateFlows.goToCategory("cardex");
         nurseFlows.CardexPage_executeOnceOnlyDrugs();
 
     }
@@ -236,13 +237,13 @@ public class DrugScenarios extends CommonOps {
 
     @Test(description = "verify a doctor's signature on unsigned instruction ", dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"} )
     @Description("a doctor signs on doctor's instruction")
-    public void  test07_2_NurseApprovalAllAndExecuteDailyDrug(String patient_num){
+    public void  test07_2_NurseApprovalAllAndExecuteDailyDrug(String patient_num) throws InterruptedException {
 
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("אחות מוסמכת");
         WebFlows.patientBoxEntry(patient_num);
         nurseFlows.approvalDrugOnceOnlyList(1);
-        UIActions.click(innerMenuPage.category_cardex);
+        NavigateFlows.goToCategory("cardex");
         nurseFlows.CardexPage_executeOnceOnlyDrugs();
     }
 

@@ -15,7 +15,7 @@ public class NavigateFlows extends CommonOps {
     @Step("goToCategory")
     public static void goToCategory(String categoryName) throws InterruptedException {
 
-        String name = "category_" + categoryName;
+        String name = categoryName;
 
         WebElement elem = getWebElementByObjectAndName(Base.innerMenuPage, name);
         Thread.sleep(4000);
@@ -25,7 +25,7 @@ public class NavigateFlows extends CommonOps {
     @Step("goToSubCategory")
     public static void goToSubCategory(String subCategoryName) throws InterruptedException {
 
-        String name = "subcategory_" + subCategoryName;
+        String name = subCategoryName;
 
         WebElement elem = getWebElementByObjectAndName(Base.innerMenuPage, name);
         Thread.sleep(2000);
