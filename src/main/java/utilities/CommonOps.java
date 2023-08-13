@@ -4,6 +4,7 @@ import extensions.UIActions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 //import org.sikuli.script.Screen;
@@ -109,14 +110,15 @@ public class CommonOps extends Base {
     public static WebDriver initChromeDriver(){
         WebDriverManager.chromedriver().setup();
 
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--start-maximized");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        options.addArguments("--start-maximized");
 //        options.addArguments("disable-infobars");
 //        options.addArguments("--disable-notifications");
 //        options.addArguments("--auto-open-devtools-for-tabs");
  //       driver = new ChromeDriver(options);
 
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
 
         return driver;
     }
