@@ -27,7 +27,7 @@ public class regression1_icu extends CommonOps {
     @Test(description = "")
     @Description("")
     public void test01_icu_addToPatientDrugDaily() throws InterruptedException, IOException {
-        int patient_num = 2;
+        int patient_num = 1;
         String departmentICU = "ט'נ' כללי";
         WebFlows.login('d');
         departmentFlows.chooseDepartment(departmentICU);
@@ -62,15 +62,16 @@ public class regression1_icu extends CommonOps {
         UIActions.updateText(nutritionPlan.input_proteinComment , "בדיקות אוטו'");
 
         // תוספת מי אורז
+        Thread.sleep(500);
 
         UIActions.click(nutritionPlan.isRiceWaterYes);
         UIActions.click(nutritionPlan.list_numberOfTime.get(1));
         Thread.sleep(500);
-
         UIActions.click(nutritionPlan.list_numberOfTime.get(1).findElements(By.xpath("following-sibling::ul/li")).get(0));
         UIActions.updateText(nutritionPlan.input_RiceWaterComment , "בדיקות אוטו'");
 
        // הוספת תמיסה IV
+        Thread.sleep(500);
         UIActions.click(nutritionPlan.input_solution);
         UIActions.click(listChoices.listChoices.get(0));
 
