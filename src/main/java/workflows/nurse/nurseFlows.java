@@ -282,11 +282,35 @@ public class nurseFlows extends CommonOps {
         WebFlows.userSignConfirm();
     }
 
+    @Step("cardex execute supervision to drug")
+    public static void executeSupervisionToDrug() {
+        for (int i = 0; i < cardexPage.checkBoxListDrug.size(); i++) {
+            if (cardexPage.checkBoxListDrug.get(i).getAttribute("style").contains("border")) {
+                UIActions.click(cardexPage.popover_execArrowList.get(i));
+                UIActions.click(cardexPage.inputSupervision);
+                UIActions.click(cardexPage.btn_ok);
+                executionNurseSign();
+            }
+        }
+    }
+
+    @Step("cardex execute supervision to solution")
+    public static void executeSupervisionToSolution() throws InterruptedException {
+        for (int i = 0; i < cardexPage.checkBoxListSol.size(); i++) {
+            if (cardexPage.checkBoxListSol.get(i).getAttribute("style").contains("border")) {
+                UIActions.click(cardexPage.popover_execArrowList.get(i));
+                UIActions.click(cardexPage.inputSupervision);
+                UIActions.click(cardexPage.btn_ok);
+                Thread.sleep(500);
+                executionNurseSign();
+            }
+        }
+    }
+
     @Step("execute all daily_onceOnly_sos_weekly_byHour ins")
     public static void executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse() throws InterruptedException {
-                for (int i = 0; i < cardexPage.checkBoxListDrug.size(); i++) {
-                    if(!cardexPage.checkBoxListDrug.get(i).getAttribute("style").contains("border"))
-                            UIActions.click(cardexPage.checkBoxListDrug.get(i)); }
+                for (int i = 0; i < cardexPage.checkBoxListDrug.size(); i++)
+                    UIActions.click(cardexPage.checkBoxListDrug.get(i));
                 Thread.sleep(100);
     }
 
@@ -295,8 +319,7 @@ public class nurseFlows extends CommonOps {
                  //continues and timeLimit
         if( cardexPage.checkBoxListSol.size()>0) {
             for (int i = 0; i < cardexPage.checkBoxListSol.size(); i++) {
-                if(!cardexPage.checkBoxListDrug.get(i).getAttribute("style").contains("border"))
-                    UIActions.click(cardexPage.checkBoxListDrug.get(i)); }
+                UIActions.click(cardexPage.checkBoxListSol.get(i)); }
             Thread.sleep(3000);
 
         }

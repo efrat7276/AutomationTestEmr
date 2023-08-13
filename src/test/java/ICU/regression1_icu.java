@@ -123,6 +123,7 @@ public class regression1_icu extends CommonOps {
         Thread.sleep(1000);
 
         CommonOps.afterMethod();
+
         WebFlows.login('n');
         departmentFlows.chooseDepartment(departmentICU);
         WebFlows.patientBoxEntry(patient_num);
@@ -131,6 +132,9 @@ public class regression1_icu extends CommonOps {
         nurseFlows.approvalNurseSign();
 
         NavigateFlows.goToCategory("cardex");
+
+        nurseFlows.executeSupervisionToDrug();
+        nurseFlows.executeSupervisionToSolution();
 
         nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
         nurseFlows.executeAllLiquidAfterApprovalNurse();

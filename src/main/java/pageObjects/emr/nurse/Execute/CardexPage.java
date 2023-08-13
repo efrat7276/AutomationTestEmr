@@ -55,10 +55,10 @@ public class CardexPage {
     @FindBy(how = How.XPATH , using = "//input[@id='supervisionCbox']/following-sibling::label")
     public WebElement inputSupervision;
 
-    @FindBy(how = How.XPATH , using = "//*[contains(@id,'ngb-popover')]//button[2]")
+    @FindBy(how = How.XPATH , using = "//*[contains(@id,'ngb-popover')]//button[1]")
     public WebElement btn_ok;
 
-    @FindBy(how = How.XPATH , using = "//*[contains(@id,'ngb-popover')]//button[1]")
+    @FindBy(how = How.XPATH , using = "//*[contains(@id,'ngb-popover')]//button[2]")
     public WebElement btn_cancle;
 
 //    @FindBy(how = How.NAME , using = "notGivenCbox")
