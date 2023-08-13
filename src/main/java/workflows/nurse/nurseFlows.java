@@ -285,7 +285,8 @@ public class nurseFlows extends CommonOps {
     @Step("execute all daily_onceOnly_sos_weekly_byHour ins")
     public static void executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse() throws InterruptedException {
                 for (int i = 0; i < cardexPage.checkBoxListDrug.size(); i++) {
-                    UIActions.click(cardexPage.checkBoxListDrug.get(i)); }
+                    if(!cardexPage.checkBoxListDrug.get(i).getAttribute("style").contains("border"))
+                            UIActions.click(cardexPage.checkBoxListDrug.get(i)); }
                 Thread.sleep(100);
     }
 
@@ -294,7 +295,8 @@ public class nurseFlows extends CommonOps {
                  //continues and timeLimit
         if( cardexPage.checkBoxListSol.size()>0) {
             for (int i = 0; i < cardexPage.checkBoxListSol.size(); i++) {
-                UIActions.click(cardexPage.checkBoxListSol.get(i)); }
+                if(!cardexPage.checkBoxListDrug.get(i).getAttribute("style").contains("border"))
+                    UIActions.click(cardexPage.checkBoxListDrug.get(i)); }
             Thread.sleep(3000);
 
         }
