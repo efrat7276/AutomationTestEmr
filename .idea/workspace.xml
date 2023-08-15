@@ -19,10 +19,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add new test to restore bug drug preparation - add thread sleep">
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add new test to restore bug drug preparation - add thread sleep - fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/emergency/generalinstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/emergency/generalinstruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,12 +247,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619687220418</updated>
-    </task>
-    <task id="LOCAL‎00004" summary="sent patient_num to tests from dataProvider Patients.csv">
-      <created>1629636484019</created>
-      <option name="number" value="LOCAL‎00004" />
-      <option name="presentableId" value="LOCAL‎00004" />
-      <updated>1629636484019</updated>
     </task>
     <task id="LOCAL‎00005" summary="approval drugDailyNumberOfDay">
       <created>1629638962722</created>
@@ -541,7 +536,13 @@
       <option name="presentableId" value="LOCAL‎00052" />
       <updated>1692088099259</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL‎00053" summary="add new test to restore bug drug preparation - add thread sleep - fix">
+      <created>1692088582022</created>
+      <option name="number" value="LOCAL‎00053" />
+      <option name="presentableId" value="LOCAL‎00053" />
+      <updated>1692088582022</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -573,7 +574,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="down sikuli from use" />
     <MESSAGE value="down sikuli from use (2)" />
     <MESSAGE value="down sikuli from use (3)" />
     <MESSAGE value="loggin to lanwebapp" />
@@ -598,7 +598,8 @@
     <MESSAGE value="new function for supervision cardex" />
     <MESSAGE value="add new test to restore bug drug preparation" />
     <MESSAGE value="add new test to restore bug drug preparation - add thread sleep" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new test to restore bug drug preparation - add thread sleep" />
+    <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new test to restore bug drug preparation - add thread sleep - fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
