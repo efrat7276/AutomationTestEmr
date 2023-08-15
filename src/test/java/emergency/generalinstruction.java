@@ -41,8 +41,8 @@ public class generalinstruction extends CommonOps {
 
     }
 
-    @Test(description = "test add and save drug to patient emergency")
-    @Description("add and save drug to patient emergency")
+    @Test(description = "take Print Screen Emergency")
+    @Description("takePrintScreenEmergency")
     public void test01_takePrintScreenEmergency() throws InterruptedException, IOException {
         WebFlows.login('n');
         Thread.sleep(1000);
@@ -53,7 +53,9 @@ public class generalinstruction extends CommonOps {
        UIActions.click(cardexPage.btn_printStickers);
         Thread.sleep(2000);
       //  FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\+"+getFileName("cardex_stickersPrintAt0020")+".png"));
-        utilities.Listeners.saveScreenshotFile();
+       // utilities.Listeners.saveScreenshotFile();
+        UIActions.updateText(cardexPage.exit_printStickers,"'yj");
+
         UIActions.click(cardexPage.exit_printStickers);
 
     }
