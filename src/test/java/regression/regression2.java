@@ -30,16 +30,16 @@ public class regression2 extends CommonOps {
 
    static String emergencyDep = "חדר מיון";
 
-//   @Test(description = "test add and save drug to patient emergency")
-//   @Description("add and save drug to patient emergency")
-//   public void test00_AddAndSavaDruToPatientEmergency() throws InterruptedException {
-//       WebFlows.login('d');
-//       departmentFlows.chooseDepartment(emergencyDep);
-//       WebFlows.patientBoxEntry(1);
-//       doctorFlows.newDrug();
-//       doctorFlows.drugFormAddDrugOnceOnly("TAB acetylsalicylic acid 100mg (MICROPIRIN)",null, null,null,false,true);
-//       doctorFlows.approvalInstruction();
-//   }
+   @Test(description = "test add and save drug to patient emergency")
+   @Description("add and save drug to patient emergency")
+   public void test00_AddAndSavaDruToPatientEmergency() throws InterruptedException {
+       WebFlows.login('d');
+       departmentFlows.chooseDepartment(emergencyDep);
+       WebFlows.patientBoxEntry(1);
+       doctorFlows.newDrug();
+       doctorFlows.drugFormAddDrugOnceOnly("TAB acetylsalicylic acid 100mg (MICROPIRIN)",null, null,null,false,true);
+       doctorFlows.approvalInstruction();
+   }
 
     @Test(description = "add all instruction emergency to patient")
     @Description("add all instruction emergency to patient")

@@ -1,5 +1,5 @@
 package emergency;
-
+import extensions.UIActions;
 import io.qameta.allure.Description;
 import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Listeners;
@@ -48,11 +48,9 @@ public class generalinstruction extends CommonOps {
         Thread.sleep(1000);
         departmentFlows.chooseDepartment(emergencyDep);
         WebFlows.patientBoxEntry(1);
-        Thread.sleep(1000);
-        NavigateFlows.goToCategory("cardex");
-
-        nurseFlows.executionNurseSign();
-
+        Thread.sleep(500);
+       UIActions.click(cardexPage.btn_printStickers);
+       FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\+"+getFileName("cardex_stickersPrintAt00:20")+".png"));
 
     }
 

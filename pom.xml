@@ -369,7 +369,7 @@
         </profile>
 
         <profile>
-            <id>takePrintScreenAt4</id>
+            <id>takePrintScreenAt00</id>
             <build>
                 <plugins>
                     <plugin>
@@ -378,7 +378,7 @@
                         <version>2.22.1</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <xmlFile>takePrintScreenAt4.xml</xmlFile>
+                                <xmlFile>takePrintScreenAt00.xml</xmlFile>
                             </suiteXmlFiles>
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"

@@ -109,4 +109,9 @@ public class CardexPage {
     @FindBy(how = How.XPATH , using = "//img[@src='assets/images/cardexIcons/checkmark-24.png']")
     public List<WebElement> drugsSignGaveList;
 
+// history - icons
+
+   @FindBy(how=How.CLASS_NAME, using = "fa fa-history")
+   public List<WebElement> icon_historyList ;
+
 }
