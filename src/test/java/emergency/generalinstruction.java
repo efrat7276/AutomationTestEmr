@@ -47,6 +47,7 @@ public class generalinstruction extends CommonOps {
         WebFlows.login('n');
         Thread.sleep(1000);
         departmentFlows.chooseDepartment(emergencyDep);
+        Thread.sleep(1000);
         WebFlows.patientBoxEntry(1);
         Thread.sleep(500);
        UIActions.click(cardexPage.btn_printStickers);
