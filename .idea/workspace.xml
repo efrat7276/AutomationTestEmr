@@ -19,15 +19,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="new function for supervision cardex">
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add new test to restore bug drug preparation - add thread sleep">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/Execute/CardexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/Execute/CardexPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/emergency/generalinstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/emergency/generalinstruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/regression1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/regression2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/regression2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takePrintScreenAt4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/takePrintScreenAt00.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,18 +246,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619687220418</updated>
-    </task>
-    <task id="LOCAL‎00002" summary="add test to add_drag from list not dataProvider">
-      <created>1627998534474</created>
-      <option name="number" value="LOCAL‎00002" />
-      <option name="presentableId" value="LOCAL‎00002" />
-      <updated>1627998534474</updated>
-    </task>
-    <task id="LOCAL‎00003" summary="some changes">
-      <created>1629636281305</created>
-      <option name="number" value="LOCAL‎00003" />
-      <option name="presentableId" value="LOCAL‎00003" />
-      <updated>1629636281305</updated>
     </task>
     <task id="LOCAL‎00004" summary="sent patient_num to tests from dataProvider Patients.csv">
       <created>1629636484019</created>
@@ -546,7 +529,19 @@
       <option name="presentableId" value="LOCAL‎00050" />
       <updated>1691918893846</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL‎00051" summary="add new test to restore bug drug preparation">
+      <created>1692087736177</created>
+      <option name="number" value="LOCAL‎00051" />
+      <option name="presentableId" value="LOCAL‎00051" />
+      <updated>1692087736177</updated>
+    </task>
+    <task id="LOCAL‎00052" summary="add new test to restore bug drug preparation - add thread sleep">
+      <created>1692088099259</created>
+      <option name="number" value="LOCAL‎00052" />
+      <option name="presentableId" value="LOCAL‎00052" />
+      <updated>1692088099259</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -578,8 +573,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="changes in hierarchy" />
-    <MESSAGE value="version1 to project" />
     <MESSAGE value="down sikuli from use" />
     <MESSAGE value="down sikuli from use (2)" />
     <MESSAGE value="down sikuli from use (3)" />
@@ -603,7 +596,9 @@
     <MESSAGE value="driver initialize add options" />
     <MESSAGE value="cardex execute with inpection" />
     <MESSAGE value="new function for supervision cardex" />
-    <option name="LAST_COMMIT_MESSAGE" value="new function for supervision cardex" />
+    <MESSAGE value="add new test to restore bug drug preparation" />
+    <MESSAGE value="add new test to restore bug drug preparation - add thread sleep" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new test to restore bug drug preparation - add thread sleep" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
