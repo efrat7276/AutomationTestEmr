@@ -51,7 +51,7 @@ public class generalinstruction extends CommonOps {
         WebFlows.patientBoxEntry(1);
         Thread.sleep(500);
        UIActions.click(cardexPage.btn_printStickers);
-        Thread.sleep(2000);
+        Thread.sleep(2500);
       //  FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\+"+getFileName("cardex_stickersPrintAt0020")+".png"));
        // utilities.Listeners.saveScreenshotFile();
         UIActions.updateText(cardexPage.exit_printStickers,"'yj");
