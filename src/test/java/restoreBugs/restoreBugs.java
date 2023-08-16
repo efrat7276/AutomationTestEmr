@@ -24,8 +24,8 @@ public class restoreBugs extends CommonOps {
         WebFlows.patientBoxEntry(3);
         Thread.sleep(4000);
         FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+getFileName("cardex")+".png"));
-        Thread.sleep(4000);
         UIActions.click(cardexPage.btn_printStickers);
+        Thread.sleep(4000);
         FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+getFileName("printStickers")+".png"));
     }
 

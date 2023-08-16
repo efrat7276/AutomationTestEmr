@@ -19,13 +19,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add new test to restore bug drug preparation - add thread sleep - fix 4">
-      <change afterPath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" afterDir="false" />
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add new test to restore bug at 00 night - fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/emergency/generalinstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/emergency/generalinstruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takePrintScreenAt00.xml" beforeDir="false" afterPath="$PROJECT_DIR$/takePrintScreenAt00.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,24 +247,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619687220418</updated>
-    </task>
-    <task id="LOCAL‎00008" summary="BeforeSuiteFunc - functions to read and write patient of department to patients.csv">
-      <created>1629807598966</created>
-      <option name="number" value="LOCAL‎00008" />
-      <option name="presentableId" value="LOCAL‎00008" />
-      <updated>1629807598966</updated>
-    </task>
-    <task id="LOCAL‎00009" summary="DBQueries add function to clear data to patient , add xml files">
-      <created>1629870862202</created>
-      <option name="number" value="LOCAL‎00009" />
-      <option name="presentableId" value="LOCAL‎00009" />
-      <updated>1629870862202</updated>
-    </task>
-    <task id="LOCAL‎00010" summary="fixes">
-      <created>1629870920054</created>
-      <option name="number" value="LOCAL‎00010" />
-      <option name="presentableId" value="LOCAL‎00010" />
-      <updated>1629870920054</updated>
     </task>
     <task id="LOCAL‎00011" summary="add function choose patient with num parameter">
       <created>1664788468078</created>
@@ -544,7 +524,25 @@
       <option name="presentableId" value="LOCAL‎00056" />
       <updated>1692090312757</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL‎00057" summary="add new test to restore bug at 00 night">
+      <created>1692176200469</created>
+      <option name="number" value="LOCAL‎00057" />
+      <option name="presentableId" value="LOCAL‎00057" />
+      <updated>1692176200469</updated>
+    </task>
+    <task id="LOCAL‎00058" summary="add new test to restore bug at 00 night - fix">
+      <created>1692176491414</created>
+      <option name="number" value="LOCAL‎00058" />
+      <option name="presentableId" value="LOCAL‎00058" />
+      <updated>1692176491414</updated>
+    </task>
+    <task id="LOCAL‎00059" summary="add new test to restore bug at 00 night - fix">
+      <created>1692176814548</created>
+      <option name="number" value="LOCAL‎00059" />
+      <option name="presentableId" value="LOCAL‎00059" />
+      <updated>1692176814548</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -576,8 +574,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="lonnger time to timeOut in dataConfig File" />
-    <MESSAGE value="rechanges time to timeOut in dataConfig File" />
     <MESSAGE value="add tests regression to emergency in regression2.class" />
     <MESSAGE value="remove all allure results old" />
     <MESSAGE value="remove target folder" />
@@ -601,7 +597,9 @@
     <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix 2" />
     <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix 3" />
     <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new test to restore bug drug preparation - add thread sleep - fix 4" />
+    <MESSAGE value="add new test to restore bug at 00 night" />
+    <MESSAGE value="add new test to restore bug at 00 night - fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new test to restore bug at 00 night - fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
