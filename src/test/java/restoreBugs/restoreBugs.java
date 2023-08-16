@@ -19,10 +19,12 @@ public class restoreBugs extends CommonOps {
     @Description("take picture to depMeushpazim , cardexPage and printSticker")
     public void takePictureDepMeushpazim_cardexPage_printSticker() throws InterruptedException, IOException {
         WebFlows.login('n');
-        Thread.sleep(1000);
+        Thread.sleep(4000);
         FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+getFileName("depMeushpazim")+".png"));
         WebFlows.patientBoxEntry(3);
+        Thread.sleep(4000);
         FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+getFileName("cardex")+".png"));
+        Thread.sleep(4000);
         UIActions.click(cardexPage.btn_printStickers);
         FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+getFileName("printStickers")+".png"));
     }
