@@ -19,11 +19,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add new test to restore bug drug preparation - add thread sleep - fix 2">
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add new test to restore bug drug preparation - add thread sleep - fix 4">
+      <change afterPath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/emergency/generalinstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/emergency/generalinstruction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/takePrintScreenAt00.xml" beforeDir="false" afterPath="$PROJECT_DIR$/takePrintScreenAt00.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +96,11 @@
       <recent name="H:\Automation\AutomationProject_emr\ImageRepository" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="restoreBugs" />
       <recent name="pageObjects.emr.generalComponents" />
       <recent name="pageObjects.emr.settingGoals" />
       <recent name="pageObjects.emr.receptionTreatmentPlan" />
       <recent name="pageObjects.emr.addForms" />
-      <recent name="ICU" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.generalinstruction.test01_takePrintScreenEmergency">
@@ -247,18 +249,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619687220418</updated>
-    </task>
-    <task id="LOCAL‎00006" summary="add file csv -drugsSOS">
-      <created>1629639679131</created>
-      <option name="number" value="LOCAL‎00006" />
-      <option name="presentableId" value="LOCAL‎00006" />
-      <updated>1629639679131</updated>
-    </task>
-    <task id="LOCAL‎00007" summary="vcs.xml update">
-      <created>1629639727924</created>
-      <option name="number" value="LOCAL‎00007" />
-      <option name="presentableId" value="LOCAL‎00007" />
-      <updated>1629639727924</updated>
     </task>
     <task id="LOCAL‎00008" summary="BeforeSuiteFunc - functions to read and write patient of department to patients.csv">
       <created>1629807598966</created>
@@ -542,7 +532,19 @@
       <option name="presentableId" value="LOCAL‎00054" />
       <updated>1692089686006</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL‎00055" summary="add new test to restore bug drug preparation - add thread sleep - fix 3">
+      <created>1692090100383</created>
+      <option name="number" value="LOCAL‎00055" />
+      <option name="presentableId" value="LOCAL‎00055" />
+      <updated>1692090100383</updated>
+    </task>
+    <task id="LOCAL‎00056" summary="add new test to restore bug drug preparation - add thread sleep - fix 4">
+      <created>1692090312757</created>
+      <option name="number" value="LOCAL‎00056" />
+      <option name="presentableId" value="LOCAL‎00056" />
+      <updated>1692090312757</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -574,8 +576,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="down sikuli from use (3)" />
-    <MESSAGE value="loggin to lanwebapp" />
     <MESSAGE value="lonnger time to timeOut in dataConfig File" />
     <MESSAGE value="rechanges time to timeOut in dataConfig File" />
     <MESSAGE value="add tests regression to emergency in regression2.class" />
@@ -599,7 +599,9 @@
     <MESSAGE value="add new test to restore bug drug preparation - add thread sleep" />
     <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix" />
     <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new test to restore bug drug preparation - add thread sleep - fix 2" />
+    <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix 3" />
+    <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new test to restore bug drug preparation - add thread sleep - fix 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

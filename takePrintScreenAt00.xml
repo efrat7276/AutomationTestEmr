@@ -11,4 +11,14 @@
             </class>
         </classes>
     </test>
+
+    <test name="cardex_depMeushpazim_printStickers">
+        <classes>
+            <class name="restoreBugs.restoreBugs">
+                <methods>
+                    <include name="takePictureDepMeushpazim_cardexPage_printSticker"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>
