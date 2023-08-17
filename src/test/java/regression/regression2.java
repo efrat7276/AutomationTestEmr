@@ -58,7 +58,7 @@ public class regression2 extends CommonOps {
 
 
         doctorFlows.newDrug();
-        doctorFlows.drugFormAddDrugOnceOnly("TAB acetylsalicylic acid 100mg (MICROPIRIN)",null, null,null,false,false);
+        doctorFlows.drugFormAddDrugOnceOnly("",null, null,null,false,false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         Thread.sleep(1000);
         doctorFlows.drugFormAddDrugSOS("INJ acetylcysteine 2g/10ml (PARVOLEX)","20" , null,4 ,3,false);
