@@ -219,13 +219,13 @@ public class DrugsScenario extends CommonOps {
 
         WebFlows.login('n');
         Thread.sleep(500);
-        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\" + getFileName("depMeushpazimAt1:30") + ".png"));
+        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\" + getFileName("depMeushpazimAt130") + ".png"));
         UIActions.click(mainMenuPage.category_drugPreparation);
         Thread.sleep(2000);
-        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\" + getFileName("printAt1:30") + ".png"));
+        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\" + getFileName("printAt130") + ".png"));
         UIActions.click(mainMenuPage.category_patientList);
         WebFlows.patientBoxEntry(3);
-        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\" + getFileName("cardexAt1:30") + ".png"));
+        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\" + getFileName("cardexAt130") + ".png"));
 
 
     }
