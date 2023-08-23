@@ -19,11 +19,19 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add new test to restore bug at 00 night - fix">
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="change name file of image">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/CommonMedicationPlan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/workflows/icu_department/planningReception.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/UserSignModalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/UserSignModalPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/generalComponents/NumberOfTimeListComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/generalComponents/NumberOfTimeListComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/Execute/CardexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/Execute/CardexPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/cardex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/cardex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenarios.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,18 +102,36 @@
       <recent name="H:\Automation\AutomationProject_emr\ImageRepository" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pageObjects.emr.receptionTreatmentPlan" />
+      <recent name="workflows.icu_department" />
       <recent name="restoreBugs" />
       <recent name="pageObjects.emr.generalComponents" />
       <recent name="pageObjects.emr.settingGoals" />
-      <recent name="pageObjects.emr.receptionTreatmentPlan" />
-      <recent name="pageObjects.emr.addForms" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.generalinstruction.test01_takePrintScreenEmergency">
+  <component name="RunManager" selected="TestNG.regression1_icu.test01_icu_receptionPlanning">
     <configuration name="H:/Automation/AutomationProject_emr/ToRun.xml" type="TestNG" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/ToRun.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cardex.supervisionAndExecute" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sanity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sanity" />
+      <option name="MAIN_CLASS_NAME" value="sanity.cardex" />
+      <option name="METHOD_NAME" value="supervisionAndExecute" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -123,24 +149,6 @@
       <option name="PACKAGE_NAME" value="regression.doctor" />
       <option name="MAIN_CLASS_NAME" value="regression.doctor.doctorAddInstruction" />
       <option name="METHOD_NAME" value="addAndSignUnknownDrug" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="generalinstruction.test01_takePrintScreenEmergency" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject_emr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="emergency.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="emergency" />
-      <option name="MAIN_CLASS_NAME" value="emergency.generalinstruction" />
-      <option name="METHOD_NAME" value="test01_takePrintScreenEmergency" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -166,7 +174,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="regression1.test01_addToPatientAllPossibilityIns" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="regression1_icu.test01_icu_receptionPlanning" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ICU.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ICU" />
+      <option name="MAIN_CLASS_NAME" value="ICU.regression1_icu" />
+      <option name="METHOD_NAME" value="test01_icu_receptionPlanning" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="regression2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <extension name="coverage">
         <pattern>
@@ -175,9 +201,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.regression1" />
-      <option name="METHOD_NAME" value="test01_addToPatientAllPossibilityIns" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="regression.regression2" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -202,40 +227,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="regression2.test01_addAndSaveAllInstructionToPatient" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject_emr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="regression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.regression2" />
-      <option name="METHOD_NAME" value="test01_addAndSaveAllInstructionToPatient" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="TestNG.H:/Automation/AutomationProject_emr/ToRun.xml" />
       <item itemvalue="TestNG.doctorAddInstruction.addAndSignUnknownDrug" />
-      <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
-      <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
       <item itemvalue="TestNG.regression1_icu.test01_icu_addToPatientDrugDaily" />
-      <item itemvalue="TestNG.generalinstruction.test01_takePrintScreenEmergency" />
       <item itemvalue="TestNG.regression2.test00_AddAndSavaDruToPatientEmergency" />
+      <item itemvalue="TestNG.regression2" />
+      <item itemvalue="TestNG.regression1_icu.test01_icu_receptionPlanning" />
+      <item itemvalue="TestNG.cardex.supervisionAndExecute" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.generalinstruction.test01_takePrintScreenEmergency" />
-        <item itemvalue="TestNG.regression2.test00_AddAndSavaDruToPatientEmergency" />
-        <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
+        <item itemvalue="TestNG.regression1_icu.test01_icu_receptionPlanning" />
+        <item itemvalue="TestNG.cardex.supervisionAndExecute" />
         <item itemvalue="TestNG.regression1_icu.test01_icu_addToPatientDrugDaily" />
-        <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
+        <item itemvalue="TestNG.regression2" />
+        <item itemvalue="TestNG.regression2.test00_AddAndSavaDruToPatientEmergency" />
       </list>
     </recent_temporary>
   </component>
@@ -247,24 +254,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619687220418</updated>
-    </task>
-    <task id="LOCAL‎00011" summary="add function choose patient with num parameter">
-      <created>1664788468078</created>
-      <option name="number" value="LOCAL‎00011" />
-      <option name="presentableId" value="LOCAL‎00011" />
-      <updated>1664788468078</updated>
-    </task>
-    <task id="LOCAL‎00012" summary="patient list page - changes">
-      <created>1664788753221</created>
-      <option name="number" value="LOCAL‎00012" />
-      <option name="presentableId" value="LOCAL‎00012" />
-      <updated>1664788753221</updated>
-    </task>
-    <task id="LOCAL‎00013" summary="nutrition add flows">
-      <created>1664788931216</created>
-      <option name="number" value="LOCAL‎00013" />
-      <option name="presentableId" value="LOCAL‎00013" />
-      <updated>1664788931216</updated>
     </task>
     <task id="LOCAL‎00014" summary="xml tests">
       <created>1664788968760</created>
@@ -542,7 +531,25 @@
       <option name="presentableId" value="LOCAL‎00059" />
       <updated>1692176814548</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL‎00060" summary="add new test to restore bug at 00 night - fix">
+      <created>1692177223913</created>
+      <option name="number" value="LOCAL‎00060" />
+      <option name="presentableId" value="LOCAL‎00060" />
+      <updated>1692177223913</updated>
+    </task>
+    <task id="LOCAL‎00061" summary="regression2 change name drug">
+      <created>1692262326534</created>
+      <option name="number" value="LOCAL‎00061" />
+      <option name="presentableId" value="LOCAL‎00061" />
+      <updated>1692262326534</updated>
+    </task>
+    <task id="LOCAL‎00062" summary="change name file of image">
+      <created>1692510335770</created>
+      <option name="number" value="LOCAL‎00062" />
+      <option name="presentableId" value="LOCAL‎00062" />
+      <updated>1692510335770</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -574,8 +581,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="add tests regression to emergency in regression2.class" />
-    <MESSAGE value="remove all allure results old" />
     <MESSAGE value="remove target folder" />
     <MESSAGE value="nurseFlows fix approvalAllPossibilitiesIns function" />
     <MESSAGE value="add new tests" />
@@ -599,7 +604,9 @@
     <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix 4" />
     <MESSAGE value="add new test to restore bug at 00 night" />
     <MESSAGE value="add new test to restore bug at 00 night - fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new test to restore bug at 00 night - fix" />
+    <MESSAGE value="regression2 change name drug" />
+    <MESSAGE value="change name file of image" />
+    <option name="LAST_COMMIT_MESSAGE" value="change name file of image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -791,13 +798,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
-          <line>338</line>
+          <line>291</line>
           <option name="timeStamp" value="759" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
-          <line>328</line>
-          <option name="timeStamp" value="760" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenarios.java</url>
@@ -805,34 +807,19 @@
           <option name="timeStamp" value="766" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="783" />
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/icu_department/planningReception.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="821" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="784" />
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/icu_department/planningReception.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="824" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
-          <line>321</line>
-          <option name="timeStamp" value="785" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
-          <line>302</line>
-          <option name="timeStamp" value="788" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
-          <line>301</line>
-          <option name="timeStamp" value="789" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
-          <line>303</line>
-          <option name="timeStamp" value="790" />
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/icu_department/planningReception.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="825" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/regression/nurse/nurseExecute.java</url>
@@ -914,6 +901,9 @@
         <watch expression="patientsList.list_patients.get(i).findElement(By.tagName(&quot;i&quot;)).getText()" language="JAVA" />
         <watch expression="patientsList.list_patients.get(i).findElement(By.tagName(&quot;i&quot;)).getClass()" language="JAVA" />
         <watch expression="btns_approveToDrugSize" language="JAVA" />
+        <watch expression="numberOfTimeList.listNumberOfTimes.get(i)" language="JAVA" />
+        <watch expression="numberOfTimeList.listNumberOfTimes" language="JAVA" />
+        <watch expression="cardexPage.checkBoxListSol.size()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

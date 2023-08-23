@@ -234,59 +234,11 @@ public class nurseFlows extends CommonOps {
             approvalNurseSign();
     }
 
-
-    @Step("execute OnceOnly Drugs")
-    public static void CardexPage_executeOnceOnlyDrugs() {
-        //todo כניסה למסך קרדקס
-//
-        //     WebFlows.login(user,password, nurse_role);
-//
-//
-        //   WebFlows.patientBoxEntry(3);
-
-        //  NavigateFlows.goTo("jj");
-
-        for (int i = 0; i < cardexPage.checkBoxListDrug.size(); i++) {
-            UIActions.click( cardexPage.checkBoxListDrug.get(i));
-        }
-        //   Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
-
-        cardexPage.btn_approval.click();
-
-        WebFlows.userSignConfirm();
-    }
-
-
-
-    @Step("execute OnceOnly Drugs")
-    public static void CardexPage_supervisionPlusExecuteOnceOnlyDrugs() {
-
-        for (int i = 0; i < cardexPage.checkBoxListDrug.size(); i++) {
-
-            UIActions.click( cardexPage.popover_execArrowList.get(i));
-            UIActions.click( cardexPage.inputSupervision);
-            UIActions.click( cardexPage.btn_ok);
-        }
-        cardexPage.btn_approval.click();
-        WebFlows.userSignConfirm();
-
-        Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
-
-        for (int i = 0; i < cardexPage.checkBoxListDrug.size(); i++) {
-
-            UIActions.click(cardexPage.checkBoxListDrug.get(i));
-            Uninterruptibles.sleepUninterruptibly(500, TimeUnit.MILLISECONDS);
-
-        }
-        cardexPage.btn_approval.click();
-        WebFlows.userSignConfirm();
-    }
-
     @Step("cardex execute supervision to drug")
     public static void executeSupervisionToDrug() {
         for (int i = 0; i < cardexPage.checkBoxListDrug.size(); i++) {
-            if (cardexPage.checkBoxListDrug.get(i).getAttribute("style").contains("border")) {
-                UIActions.click(cardexPage.popover_execArrowList.get(i));
+            if (cardexPage.checkBoxListDrug.get(i).getCssValue("border-color").contains("194, 49, 52")) {
+                UIActions.click(cardexPage.drug_popover_execArrowList.get(i));
                 UIActions.click(cardexPage.inputSupervision);
                 UIActions.click(cardexPage.btn_ok);
                 executionNurseSign();
@@ -297,8 +249,9 @@ public class nurseFlows extends CommonOps {
     @Step("cardex execute supervision to solution")
     public static void executeSupervisionToSolution() throws InterruptedException {
         for (int i = 0; i < cardexPage.checkBoxListSol.size(); i++) {
-            if (cardexPage.checkBoxListSol.get(i).getAttribute("style").contains("border")) {
-                UIActions.click(cardexPage.popover_execArrowList.get(i));
+            System.out.println(cardexPage.checkBoxListSol.get(i).getCssValue("border-color"));
+            if (cardexPage.checkBoxListSol.get(i).getCssValue("border-color").contains("194, 49, 52") && i==3) {
+                UIActions.click(cardexPage.sol_popover_execArrowList.get(i));
                 UIActions.click(cardexPage.inputSupervision);
                 UIActions.click(cardexPage.btn_ok);
                 Thread.sleep(500);
@@ -343,8 +296,10 @@ public class nurseFlows extends CommonOps {
 
     @Step("execution nurse sign")
     public static void executionNurseSign(){
-        cardexPage.btn_approval.click();
-        WebFlows.userSignConfirm();
+        if(!cardexPage.btn_approval.getText().contains("0")) {
+            cardexPage.btn_approval.click();
+            WebFlows.userSignConfirm();
+        }
         wait.until(ExpectedConditions.elementToBeClickable(cardexPage.btn_approval));
         Verifications.textIsContains(cardexPage.btn_approval , "0");
     }
@@ -354,4 +309,18 @@ public class nurseFlows extends CommonOps {
         approvalInstructionPage.btn_approvalDrug.click();
         WebFlows.userSignConfirm();
     }
+
+
+
+    @Step("execute and supervision all CardexIns")
+    public static void executeAndSupervisionAllCardexIns() throws InterruptedException {
+        Thread.sleep(500);
+        executeSupervisionToDrug();
+        executeSupervisionToSolution();
+        Thread.sleep(500);
+        executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
+        executeAllLiquidAfterApprovalNurse();
+        executionNurseSign();
+    }
+
 }

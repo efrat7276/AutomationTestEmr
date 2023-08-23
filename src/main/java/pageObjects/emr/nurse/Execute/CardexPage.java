@@ -39,9 +39,20 @@ public class CardexPage {
 
 // arrowList to open popover exec
 
-    @FindBy(how = How.XPATH , using = "//*[@id='Div1']/div/button/i")
-    public List<WebElement> popover_execArrowList;
+    @FindBy(how = How.XPATH , using = "//input[contains(@id, 'drugInsDayModeCheckbox')][not(@disabled)]/parent::label/parent::div/parent::div/parent::div//following-sibling::div//div/button/i")
+    public List<WebElement> drug_popover_execArrowList;
 
+
+    @FindBy(how = How.XPATH , using = "//input[contains(@id, 'solExec')][not(@disabled)]/parent::label/parent::div/parent::div/parent::div//following-sibling::div//div/button/i")
+    public List<WebElement> sol_popover_execArrowList;
+
+
+    @FindBy(how = How.XPATH , using = "//input[contains(@id, 'generalInsDayModeCheckbox')][not(@disabled)]/parent::label/parent::div/parent::div/parent::div//following-sibling::div//div/button/i")
+    public List<WebElement> general_popover_execArrowList;
+
+
+    @FindBy(how = How.XPATH , using = "//input[contains(@id, 'bloodExec')][not(@disabled)]/parent::label/parent::div/parent::div/parent::div//following-sibling::div//div/button/i")
+    public List<WebElement> blood_popover_execArrowList;
 
 
  // popover execute

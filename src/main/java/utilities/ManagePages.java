@@ -16,6 +16,8 @@ import pageObjects.emr.popUp.ConfirmationAlert;
 import pageObjects.emr.settingGoals.*;
 import pageObjects.emr.receptionTreatmentPlan.*;
 
+import java.util.List;
+
 //import pageObjects.emr.popUp.DrugConfirmationPopUp;
 
 public class ManagePages extends Base {
@@ -70,7 +72,7 @@ public class ManagePages extends Base {
         nutritionPlan = PageFactory.initElements(driver, NutritionPlan.class);
         solutionPlan = PageFactory.initElements(driver, SolutionPlan.class);
         solutionBolusPlan = PageFactory.initElements(driver, SolutionBolusPlan.class);
-
+        commonMedicationPlan =PageFactory.initElements(driver, CommonMedicationPlan.class) ;
         listChoices= PageFactory.initElements(driver, ListChoicesComponent.class);
         numberOfTimeList= PageFactory.initElements(driver, NumberOfTimeListComponent.class);
 

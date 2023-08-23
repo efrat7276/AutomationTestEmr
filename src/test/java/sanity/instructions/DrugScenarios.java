@@ -121,7 +121,7 @@ public class DrugScenarios extends CommonOps {
         WebFlows.patientBoxEntry(patient_num);
         nurseFlows.approvalDrugDailyList(5 , 3);
         NavigateFlows.goToCategory("cardex");
-        nurseFlows.CardexPage_executeOnceOnlyDrugs();
+        nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
    }
 
     @Test(description = "Verify additions 3 drugs daily Infectious_Disease_Specialto to Patient" , dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"})
@@ -159,7 +159,7 @@ public class DrugScenarios extends CommonOps {
         WebFlows.patientBoxEntry(patient_num);
         nurseFlows.approvalDrugOnceOnlyList(3);
         NavigateFlows.goToCategory("cardex");
-        nurseFlows.CardexPage_executeOnceOnlyDrugs();
+        nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
     }
 
     @Test(description = "Verify additions 3 drugs daily As Risk to Patient" , dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"})
@@ -188,7 +188,7 @@ public class DrugScenarios extends CommonOps {
         WebFlows.patientBoxEntry(patient_num);
         nurseFlows.approvalDrugOnceOnlyList(2);
         NavigateFlows.goToCategory("cardex");
-        nurseFlows.CardexPage_supervisionPlusExecuteOnceOnlyDrugs();
+        nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
     }
 
      @Test(description = "Verify additions 2 sos drugs to Patient" , dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"})
@@ -217,7 +217,7 @@ public class DrugScenarios extends CommonOps {
         WebFlows.patientBoxEntry(patient_num);
         nurseFlows.approvalSOSDrugList();
         NavigateFlows.goToCategory("cardex");
-        nurseFlows.CardexPage_executeOnceOnlyDrugs();
+        nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
 
     }
 
@@ -244,7 +244,7 @@ public class DrugScenarios extends CommonOps {
         WebFlows.patientBoxEntry(patient_num);
         nurseFlows.approvalDrugOnceOnlyList(1);
         NavigateFlows.goToCategory("cardex");
-        nurseFlows.CardexPage_executeOnceOnlyDrugs();
+        nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
     }
 
 

@@ -15,4 +15,6 @@ public class UserSignModalPage {
     @FindBy(how= How.XPATH, using = "//form//button[2]")
     public WebElement btn_confirm;
 
+    @FindBy(how= How.XPATH, using = "//form//button[1]")
+    public WebElement btn_cancel;
 }
