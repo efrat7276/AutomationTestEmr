@@ -58,7 +58,7 @@ public class regression2 extends CommonOps {
 
 
         doctorFlows.newDrug();
-        doctorFlows.drugFormAddDrugOnceOnly("",null, null,null,false,false);
+        doctorFlows.drugFormAddDrugOnceOnly("INJ acetylcysteine 2g/10ml (PARVOLEX)",null, null,null,false,false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         Thread.sleep(1000);
         doctorFlows.drugFormAddDrugSOS("INJ acetylcysteine 2g/10ml (PARVOLEX)","20" , null,4 ,3,false);

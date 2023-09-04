@@ -19,19 +19,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="change name file of image">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/CommonMedicationPlan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/workflows/icu_department/planningReception.java" afterDir="false" />
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="regression1_icu add common medicine">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/UserSignModalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/UserSignModalPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/generalComponents/NumberOfTimeListComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/generalComponents/NumberOfTimeListComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/Execute/CardexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/Execute/CardexPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/regression2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/regression2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sanity/cardex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/cardex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenarios.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +64,12 @@
     <setting file="file://$PROJECT_DIR$/regression_1.xml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/regression/regression1.java" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="1rpyF4v4yCV19uvfqzhjsJZ53c9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -77,18 +78,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="TODO_SCOPE" value="All Places" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="http.certificates" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/Java/New folder&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Automation\AutomationProject_emr" />
@@ -109,29 +108,58 @@
       <recent name="pageObjects.emr.settingGoals" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.regression1_icu.test01_icu_receptionPlanning">
-    <configuration name="H:/Automation/AutomationProject_emr/ToRun.xml" type="TestNG" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.regression2.test01_addAndSaveAllInstructionToPatient">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="General.goToScreen" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/ToRun.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sanity.general.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sanity.general" />
+      <option name="MAIN_CLASS_NAME" value="sanity.general.General" />
+      <option name="METHOD_NAME" value="goToScreen" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cardex.supervisionAndExecute" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="General.test09_verifyListPatients" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sanity.*" />
+          <option name="PATTERN" value="sanity.general.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sanity" />
-      <option name="MAIN_CLASS_NAME" value="sanity.cardex" />
-      <option name="METHOD_NAME" value="supervisionAndExecute" />
+      <option name="PACKAGE_NAME" value="sanity.general" />
+      <option name="MAIN_CLASS_NAME" value="sanity.general.General" />
+      <option name="METHOD_NAME" value="test09_verifyListPatients" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="H:/Automation/AutomationProject_emr/ToRun.xml" type="TestNG" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/ToRun.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -149,24 +177,6 @@
       <option name="PACKAGE_NAME" value="regression.doctor" />
       <option name="MAIN_CLASS_NAME" value="regression.doctor.doctorAddInstruction" />
       <option name="METHOD_NAME" value="addAndSignUnknownDrug" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="regression1_icu.test01_icu_addToPatientDrugDaily" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject_emr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ICU.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ICU" />
-      <option name="MAIN_CLASS_NAME" value="ICU.regression1_icu" />
-      <option name="METHOD_NAME" value="test01_icu_addToPatientDrugDaily" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -192,7 +202,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="regression2" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="regression1.test04_updateDosageNotApprovalDrug" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <extension name="coverage">
         <pattern>
@@ -201,15 +211,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="regression.regression2" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="regression.regression1" />
+      <option name="METHOD_NAME" value="test04_updateDosageNotApprovalDrug" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="regression2.test00_AddAndSavaDruToPatientEmergency" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="regression2.test01_addAndSaveAllInstructionToPatient" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <extension name="coverage">
         <pattern>
@@ -219,7 +230,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="regression" />
       <option name="MAIN_CLASS_NAME" value="regression.regression2" />
-      <option name="METHOD_NAME" value="test00_AddAndSavaDruToPatientEmergency" />
+      <option name="METHOD_NAME" value="test01_addAndSaveAllInstructionToPatient" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -230,19 +241,19 @@
     <list>
       <item itemvalue="TestNG.H:/Automation/AutomationProject_emr/ToRun.xml" />
       <item itemvalue="TestNG.doctorAddInstruction.addAndSignUnknownDrug" />
-      <item itemvalue="TestNG.regression1_icu.test01_icu_addToPatientDrugDaily" />
-      <item itemvalue="TestNG.regression2.test00_AddAndSavaDruToPatientEmergency" />
-      <item itemvalue="TestNG.regression2" />
+      <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
+      <item itemvalue="TestNG.regression1.test04_updateDosageNotApprovalDrug" />
       <item itemvalue="TestNG.regression1_icu.test01_icu_receptionPlanning" />
-      <item itemvalue="TestNG.cardex.supervisionAndExecute" />
+      <item itemvalue="TestNG.General.test09_verifyListPatients" />
+      <item itemvalue="TestNG.General.goToScreen" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
         <item itemvalue="TestNG.regression1_icu.test01_icu_receptionPlanning" />
-        <item itemvalue="TestNG.cardex.supervisionAndExecute" />
-        <item itemvalue="TestNG.regression1_icu.test01_icu_addToPatientDrugDaily" />
-        <item itemvalue="TestNG.regression2" />
-        <item itemvalue="TestNG.regression2.test00_AddAndSavaDruToPatientEmergency" />
+        <item itemvalue="TestNG.regression1.test04_updateDosageNotApprovalDrug" />
+        <item itemvalue="TestNG.General.goToScreen" />
+        <item itemvalue="TestNG.General.test09_verifyListPatients" />
       </list>
     </recent_temporary>
   </component>
@@ -254,12 +265,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619687220418</updated>
-    </task>
-    <task id="LOCAL‎00014" summary="xml tests">
-      <created>1664788968760</created>
-      <option name="number" value="LOCAL‎00014" />
-      <option name="presentableId" value="LOCAL‎00014" />
-      <updated>1664788968760</updated>
     </task>
     <task id="LOCAL‎00015" summary="general class to general tests">
       <created>1664789034971</created>
@@ -549,7 +554,13 @@
       <option name="presentableId" value="LOCAL‎00062" />
       <updated>1692510335770</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL‎00063" summary="regression1_icu add common medicine">
+      <created>1692789808338</created>
+      <option name="number" value="LOCAL‎00063" />
+      <option name="presentableId" value="LOCAL‎00063" />
+      <updated>1692789808338</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -574,14 +585,12 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="remove target folder" />
     <MESSAGE value="nurseFlows fix approvalAllPossibilitiesIns function" />
     <MESSAGE value="add new tests" />
     <MESSAGE value="some change for rus restore bugs" />
@@ -606,7 +615,8 @@
     <MESSAGE value="add new test to restore bug at 00 night - fix" />
     <MESSAGE value="regression2 change name drug" />
     <MESSAGE value="change name file of image" />
-    <option name="LAST_COMMIT_MESSAGE" value="change name file of image" />
+    <MESSAGE value="regression1_icu add common medicine" />
+    <option name="LAST_COMMIT_MESSAGE" value="regression1_icu add common medicine" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -713,12 +723,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java</url>
-          <line>335</line>
+          <line>334</line>
           <option name="timeStamp" value="607" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java</url>
-          <line>93</line>
+          <line>92</line>
           <option name="timeStamp" value="660" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -758,7 +768,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java</url>
-          <line>109</line>
+          <line>108</line>
           <option name="timeStamp" value="744" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -820,6 +830,26 @@
           <url>file://$PROJECT_DIR$/src/main/java/workflows/icu_department/planningReception.java</url>
           <line>39</line>
           <option name="timeStamp" value="825" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utilities/CommonOps.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="891" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utilities/CommonOps.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="892" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utilities/CommonOps.java</url>
+          <line>153</line>
+          <option name="timeStamp" value="893" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utilities/CommonOps.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="895" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/regression/nurse/nurseExecute.java</url>
@@ -911,10 +941,10 @@
     <SUITE FILE_PATH="coverage/AutomationProject_emr$regression1_addToPatientAllPossibilityIns.ic" NAME="regression1.addToPatientAllPossibilityIns Coverage Results" MODIFIED="1677057853387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>regression.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/AutomationProject_emr$H__Automation_AutomationProject_emr_TestNGSuite_xml.ic" NAME="$PROJECT_DIR$/TestNGSuite.xml Coverage Results" MODIFIED="1623153384823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/AutomationProject_emr$DrugScenarios_test006_verify_AddAndSavaDrugsDailyFromList.ic" NAME="DrugScenarios.test006_verify_AddAndSavaDrugsDailyFromList Coverage Results" MODIFIED="1623242011562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sanity.instructions.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/AutomationProject_emr$H__Automation_AutomationProject_emr_TestNGSuite_xml.ic" NAME="$PROJECT_DIR$/TestNGSuite.xml Coverage Results" MODIFIED="1623153384823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/AutomationProject_emr$H__Automation_AutomationProject_emr_Sanity_xml.ic" NAME="$PROJECT_DIR$/Sanity.xml Coverage Results" MODIFIED="1667202492989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

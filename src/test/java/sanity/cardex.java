@@ -103,6 +103,8 @@ public class cardex extends CommonOps {
                 UIActions.click(mainMenuPage.category_patientList);
             }
         }
+
+
     }
 }
 
