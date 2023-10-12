@@ -19,16 +19,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="regression2 add drug name to test">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add sleep to 2 tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Configuration/DataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/DataConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/departmentFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/departmentFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/regression/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/regression1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +43,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "efrat7276"
+  }
+}]]></component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -57,6 +56,14 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="2fa5aa28-ee9c-451d-a25f-97c95ab71d14" />
+        <option name="url" value="https://github.com/efrat7276/AutomationTestEmr.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/test/java/regression/regression2.java" root0="FORCE_HIGHLIGHTING" />
@@ -565,7 +572,7 @@
       <option name="presentableId" value="LOCAL‎00063" />
       <updated>1692789808338</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -596,7 +603,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="add new tests" />
     <MESSAGE value="some change for rus restore bugs" />
     <MESSAGE value="regression test for running" />
     <MESSAGE value="regression test for running (2)" />
@@ -621,7 +627,8 @@
     <MESSAGE value="change name file of image" />
     <MESSAGE value="regression1_icu add common medicine" />
     <MESSAGE value="regression2 add drug name to test" />
-    <option name="LAST_COMMIT_MESSAGE" value="regression2 add drug name to test" />
+    <MESSAGE value="add sleep to 2 tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sleep to 2 tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
