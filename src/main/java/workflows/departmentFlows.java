@@ -11,6 +11,7 @@ public class departmentFlows extends CommonOps {
     @Step("choose department")
     public static void chooseDepartment(String dep) throws InterruptedException {
 
+        Thread.sleep(1000);
         UIActions.click(chooseDepartmentListPage.btn_li_department);
 
         for (int i = 0; i < chooseDepartmentListPage.departmentList.size(); i++) {

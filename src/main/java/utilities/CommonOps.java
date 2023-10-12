@@ -108,6 +108,7 @@ public class CommonOps extends Base {
     }
 
     public static WebDriver initChromeDriver(){
+
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
@@ -195,7 +196,7 @@ public class CommonOps extends Base {
             Alert confirm_popup = driver.switchTo().alert();
             confirm_popup.accept();
         }
-        catch (NoAlertPresentException ex){
+        catch (Exception ex){
 
         }
         UIActions.clearText(emrLogin.txt_username);

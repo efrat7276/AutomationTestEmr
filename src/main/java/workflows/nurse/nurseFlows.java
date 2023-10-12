@@ -250,7 +250,7 @@ public class nurseFlows extends CommonOps {
     public static void executeSupervisionToSolution() throws InterruptedException {
         for (int i = 0; i < cardexPage.checkBoxListSol.size(); i++) {
             System.out.println(cardexPage.checkBoxListSol.get(i).getCssValue("border-color"));
-            if (cardexPage.checkBoxListSol.get(i).getCssValue("border-color").contains("194, 49, 52") && i==3) {
+            if (cardexPage.checkBoxListSol.get(i).getCssValue("border-color").contains("194, 49, 52") && i==1) {
                 UIActions.click(cardexPage.sol_popover_execArrowList.get(i));
                 UIActions.click(cardexPage.inputSupervision);
                 UIActions.click(cardexPage.btn_ok);
@@ -316,8 +316,8 @@ public class nurseFlows extends CommonOps {
     public static void executeAndSupervisionAllCardexIns() throws InterruptedException {
         Thread.sleep(500);
         executeSupervisionToDrug();
-        executeSupervisionToSolution();
-        Thread.sleep(500);
+     //   executeSupervisionToSolution();
+      //  Thread.sleep(500);
         executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
         executeAllLiquidAfterApprovalNurse();
         executionNurseSign();

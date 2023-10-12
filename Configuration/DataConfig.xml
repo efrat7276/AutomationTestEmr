@@ -33,8 +33,11 @@
        <url-production>https://emr.laniado.org.il/emr2/</url-production>
     <!--    </production>-->
 
-    <DBName>test</DBName>
-    <DBPassword>641153</DBPassword>
+<!--    <DBName>test</DBName>-->
+<!--    <DBPassword>641153</DBPassword>-->
+
+        <DBName>select_user</DBName>
+        <DBPassword>natandsl</DBPassword>
 
     <userTest>test</userTest>
     <passwordTest>Te231121</passwordTest>

@@ -154,9 +154,10 @@ public class regression1 extends CommonOps {
 
     @Test(description = "addToPatientFutureDrug")
     @Description("add to patient future drug")
-    public void test02_addToPatientFutureDrug(){
+    public void test02_addToPatientFutureDrug() throws InterruptedException {
         WebFlows.login('d');
         WebFlows.patientBoxEntry(1);
+        Thread.sleep(1000);
         doctorFlows.newDrug();
         doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (XANAX)", 100 , 3 , null , false , true , true);
         doctorFlows.approvalInstruction();
