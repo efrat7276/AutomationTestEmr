@@ -19,9 +19,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add sleep to 2 tests">
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="change timeout to bigger">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuration/DataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/DataConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +43,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "efrat7276"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;efrat7276&quot;
   }
-}]]></component>
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -572,7 +572,7 @@
       <option name="presentableId" value="LOCAL‎00063" />
       <updated>1692789808338</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +603,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="some change for rus restore bugs" />
     <MESSAGE value="regression test for running" />
     <MESSAGE value="regression test for running (2)" />
     <MESSAGE value="regression1 fix" />
@@ -628,7 +627,8 @@
     <MESSAGE value="regression1_icu add common medicine" />
     <MESSAGE value="regression2 add drug name to test" />
     <MESSAGE value="add sleep to 2 tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sleep to 2 tests" />
+    <MESSAGE value="change timeout to bigger" />
+    <option name="LAST_COMMIT_MESSAGE" value="change timeout to bigger" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
