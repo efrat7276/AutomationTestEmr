@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Environment>
     <!--Timeout-->
-    <Timeout>30</Timeout>
+    <Timeout>100</Timeout>
 
     <!--Web-->
     <PlatformName>web</PlatformName>
