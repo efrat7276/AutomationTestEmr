@@ -14,6 +14,7 @@ import workflows.WebFlows;
 import javax.annotation.Nullable;
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -68,11 +69,11 @@ public class nurseFlows extends CommonOps {
             for (int i = 0; i < approvalInstructionPage.btns_approveSolution.size(); i++) {
                 if(i==1)
                     Thread.sleep(500);
-                FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("nurseApprovalSolution")+".png"));
+              //  FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("nurseApprovalSolution")+".png"));
                 UIActions.click(approvalInstructionPage.solution_scale_currentHourList.get(i));
                 // not relevant to continues
                 try {
-                    WebDriverWait wait = new WebDriverWait(driver, 1);
+                    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
                     wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='solutionBagSizeDynamicPopover']/button")));
                     UIActions.click(approvalInstructionPage.btn_V_liquid);
 

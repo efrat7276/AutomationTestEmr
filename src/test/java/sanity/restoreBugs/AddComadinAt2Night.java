@@ -2,6 +2,7 @@ package sanity.restoreBugs;
 
 import extensions.UIActions;
 import io.qameta.allure.Description;
+import org.apache.commons.*;
 import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
@@ -34,7 +35,7 @@ public class AddComadinAt2Night extends CommonOps {
         nurseFlows.approvalDrugsDaily(1,false);
         NavigateFlows.goToCategory("cardex");
         Thread.sleep(3000);
-        FileUtils.copyFile(Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("picCardexAtHour02")+".png"));
+       FileUtils.copyFile(Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("picCardexAtHour02")+".png"));
 
     }
 

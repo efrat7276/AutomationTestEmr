@@ -23,60 +23,63 @@ import java.util.List;
 public class ManagePages extends Base {
 
     public static void initEmr(){
-        emrLogin = PageFactory.initElements(driver , LoginPage.class);
-        chooseRole = PageFactory.initElements(driver , ChooseRolePage.class);
-        innerMenuPage = PageFactory.initElements(driver, InnerMenuPage.class);
-        mainMenuPage = PageFactory.initElements(driver , MainMenuPage.class);
-        patientsList = PageFactory.initElements(driver , PatientsListPage.class);
-        dischargedListPage = PageFactory.initElements(driver , DischargedListPage.class);
-        depReport = PageFactory.initElements(driver , DepReport.class);
-        operationsPage = PageFactory.initElements(driver , OperationsPage.class);
-        orderListPage = PageFactory.initElements(driver , OrderListPage.class);
-        protocolListPage = PageFactory.initElements(driver , ProtocolListPage.class);
+
+        try {
+            emrLogin = PageFactory.initElements(driver, LoginPage.class);
+           chooseRole = PageFactory.initElements(driver, ChooseRolePage.class);
+           innerMenuPage = PageFactory.initElements(driver, InnerMenuPage.class);
+            mainMenuPage = PageFactory.initElements(driver, MainMenuPage.class);
+            patientsList = PageFactory.initElements(driver, PatientsListPage.class);
+            dischargedListPage = PageFactory.initElements(driver, DischargedListPage.class);
+            depReport = PageFactory.initElements(driver, DepReport.class);
+            operationsPage = PageFactory.initElements(driver, OperationsPage.class);
+            orderListPage = PageFactory.initElements(driver, OrderListPage.class);
+            protocolListPage = PageFactory.initElements(driver, ProtocolListPage.class);
+//
+//
+           chooseDepartmentListPage = PageFactory.initElements(driver, ChooseDepartmentListPage.class);
+//
+           patientBox = PageFactory.initElements(driver, PatientBoxPage.class);
+            demogeDataBar = PageFactory.initElements(driver, DemogeDataBarPage.class);
+           doctorInstructionPage = PageFactory.initElements(driver, DoctorInstructionPage.class);
+            // nursingInstructionPage = PageFactory.initElements(driver , NursingInstructionPage.class);
+//           drugSection = PageFactory.initElements(driver, DrugsSection.class);
+          drugForm = PageFactory.initElements(driver, DrugForm.class);
+           drugFormDailyPossibility = PageFactory.initElements(driver, DrugFormDailyPossibility.class);
+            drugFormSOSPossibility = PageFactory.initElements(driver, DrugFormSOSPossibility.class);
+            drugFormOnceOnlyPossibility = PageFactory.initElements(driver, DrugFormOnceOnlyPossibility.class);
+            drugFormByHourPossibility = PageFactory.initElements(driver, DrugFormByHourPossibility.class);
+            drugFormWeeklyPossibility = PageFactory.initElements(driver, DrugFormWeeklyPossibility.class);
+            drugFormTimeLimitPossibility = PageFactory.initElements(driver, DrugFormTimeLimitPossibility.class);
+            drugFormContinuesPossibility = PageFactory.initElements(driver, DrugFormContinuesPossibility.class);
+            drugConfirmation = PageFactory.initElements(driver, DrugConfirmation.class);
+
+            generalInstructionPage = PageFactory.initElements(driver, GeneralInstructionPage.class);
+            bloodProducts = PageFactory.initElements(driver, BloodProducts.class);
+            nutritionForm = PageFactory.initElements(driver, NutritionForm.class);
 
 
+            approvalInstructionPage = PageFactory.initElements(driver, ApprovalInstructionPage.class);
+            cardexPage = PageFactory.initElements(driver, CardexPage.class);
+            updateExecutionPage = PageFactory.initElements(driver, UpdateExecutionPage.class);
+            prepMedcinePage = PageFactory.initElements(driver, prepMedcinePage.class);
+           userSignModalPage = PageFactory.initElements(driver, UserSignModalPage.class);
+//
+            confirmationAlert = PageFactory.initElements(driver, ConfirmationAlert.class);
 
+            settingGoals = PageFactory.initElements(driver, SettingGoals.class);
+            receptionTreatmentPlanMain = PageFactory.initElements(driver, ReceptionTreatmentPlanMain.class);
+            nutritionPlan = PageFactory.initElements(driver, NutritionPlan.class);
+            solutionPlan = PageFactory.initElements(driver, SolutionPlan.class);
+            solutionBolusPlan = PageFactory.initElements(driver, SolutionBolusPlan.class);
+            commonMedicationPlan = PageFactory.initElements(driver, CommonMedicationPlan.class);
+            listChoices = PageFactory.initElements(driver, ListChoicesComponent.class);
+            numberOfTimeList = PageFactory.initElements(driver, NumberOfTimeListComponent.class);
 
-        chooseDepartmentListPage = PageFactory.initElements(driver , ChooseDepartmentListPage.class);
-
-        patientBox = PageFactory.initElements(driver , PatientBoxPage.class);
-        demogeDataBar = PageFactory.initElements(driver , DemogeDataBarPage.class);
-        doctorInstructionPage = PageFactory.initElements(driver, DoctorInstructionPage.class);
-      //  nursingInstructionPage = PageFactory.initElements(driver , NursingInstructionPage.class);
-        drugSection  = PageFactory.initElements(driver, DrugsSection.class);
-        drugForm = PageFactory.initElements(driver, DrugForm.class);
-        drugFormDailyPossibility = PageFactory.initElements(driver, DrugFormDailyPossibility.class);
-        drugFormSOSPossibility = PageFactory.initElements(driver, DrugFormSOSPossibility.class);
-        drugFormOnceOnlyPossibility = PageFactory.initElements(driver, DrugFormOnceOnlyPossibility.class);
-        drugFormByHourPossibility = PageFactory.initElements(driver, DrugFormByHourPossibility.class);
-        drugFormWeeklyPossibility = PageFactory.initElements(driver, DrugFormWeeklyPossibility.class);
-        drugFormTimeLimitPossibility = PageFactory.initElements(driver , DrugFormTimeLimitPossibility.class);
-        drugFormContinuesPossibility = PageFactory.initElements(driver , DrugFormContinuesPossibility.class);
-        drugConfirmation = PageFactory.initElements(driver,DrugConfirmation.class);
-
-        generalInstructionPage = PageFactory.initElements(driver, GeneralInstructionPage.class);
-        bloodProducts = PageFactory.initElements(driver, BloodProducts.class);
-        nutritionForm = PageFactory.initElements(driver, NutritionForm.class);
-
-
-        approvalInstructionPage = PageFactory.initElements(driver, ApprovalInstructionPage.class);
-        cardexPage= PageFactory.initElements(driver , CardexPage.class);
-        updateExecutionPage = PageFactory.initElements(driver , UpdateExecutionPage.class);
-        prepMedcinePage = PageFactory.initElements(driver , prepMedcinePage.class);
-        userSignModalPage = PageFactory.initElements(driver, UserSignModalPage.class);
-
-        confirmationAlert = PageFactory.initElements(driver, ConfirmationAlert.class);
-
-        settingGoals =  PageFactory.initElements(driver, SettingGoals.class);
-        receptionTreatmentPlanMain = PageFactory.initElements(driver, ReceptionTreatmentPlanMain.class);
-        nutritionPlan = PageFactory.initElements(driver, NutritionPlan.class);
-        solutionPlan = PageFactory.initElements(driver, SolutionPlan.class);
-        solutionBolusPlan = PageFactory.initElements(driver, SolutionBolusPlan.class);
-        commonMedicationPlan =PageFactory.initElements(driver, CommonMedicationPlan.class) ;
-        listChoices= PageFactory.initElements(driver, ListChoicesComponent.class);
-        numberOfTimeList= PageFactory.initElements(driver, NumberOfTimeListComponent.class);
-
-
+        }
+        catch (Exception fd){
+            System.out.println("not succeed to initialize all pages and page's webElement");
+        }
         //   drugConfirmationPopUp = PageFactory.initElements(driver, DrugConfirmationPopUp.class);
     }
 }

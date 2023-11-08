@@ -6,7 +6,7 @@ import extensions.UIActions;
 import extensions.Verifications;
 import io.qameta.allure.Description;
 import io.qameta.allure.Muted;
-import org.apache.commons.io.FileUtils;
+//import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pageObjects.emr.nurse.Execute.UpdateExecutionPage;
@@ -54,7 +54,7 @@ public class regression2 extends CommonOps {
         WebFlows.login('d');
         departmentFlows.chooseDepartment(emergencyDep);
         WebFlows.patientBoxEntry(patient_num);
-        doctorFlows.stopAllActiveInstructionToPatient();
+        //    doctorFlows.stopAllActiveInstructionToPatient();
 
 
         doctorFlows.newDrug();

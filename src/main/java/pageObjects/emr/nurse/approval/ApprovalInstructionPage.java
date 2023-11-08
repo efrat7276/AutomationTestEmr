@@ -104,9 +104,6 @@ public class ApprovalInstructionPage {
     @FindBy(how = How.XPATH, using="//button[@id='approvalDrug']/span[2]")
     public WebElement span_numberForApproval;
 
-    //title
 
-    @FindBy(how= How.CLASS_NAME , using = "navbar-text-s-heder")
-    public List<WebElement>  title_instructionToApproval;
 
 }

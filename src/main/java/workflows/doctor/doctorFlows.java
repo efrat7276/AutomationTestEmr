@@ -20,7 +20,6 @@ public class doctorFlows extends CommonOps {
 
     @Step(" click on newDrug")
     public static void newDrug(){
-
         UIActions.click(doctorInstructionPage.btns_addDrug.get(0));
         Uninterruptibles.sleepUninterruptibly(5, TimeUnit.SECONDS);
     }

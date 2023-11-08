@@ -16,9 +16,6 @@ public class DrugsSection {
     @FindBy(how = How.ID, using="btnDilution")
     public WebElement btn_addDilution;
 
-    @FindBy(how = How.CLASS_NAME, using="main-title")
-    public WebElement h2_drug;
-
 
 }
 

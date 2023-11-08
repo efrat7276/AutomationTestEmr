@@ -26,7 +26,7 @@ public class WebFlows extends CommonOps {
 
     }
     @Step(" Login With Choose Role")
-    public static void login(char r){
+    public static void login(char r)  {
 
         UIActions.updateText(emrLogin.txt_username, CommonOps.getData("userTest"));
         UIActions.updateText( emrLogin.txt_password, CommonOps.getData("passwordTest"));
@@ -34,6 +34,12 @@ public class WebFlows extends CommonOps {
         switch (r){
             case 'd' : UIActions.selectFromList(chooseRole.list , "רופא"); break;
             case 'n' : UIActions.selectFromList(chooseRole.list , "אחות"); break;
+
+        }
+        try {
+            Thread.sleep(1000);
+        }
+        catch (InterruptedException e){
 
         }
 

@@ -1,7 +1,6 @@
 package utilities;
 import extensions.DBAction;
 import extensions.UIActions;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -109,28 +108,22 @@ public class CommonOps extends Base {
 
     public static WebDriver initChromeDriver(){
 
-        WebDriverManager.chromedriver().setup();
-
+       // WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-     //   options.addArguments("--headless");
+        options.addArguments("--remote-allow-origins=*");
         options.addArguments("--start-maximized");
-//        options.addArguments("disable-infobars");
-//        options.addArguments("--disable-notifications");
-//        options.addArguments("--auto-open-devtools-for-tabs");
- //       driver = new ChromeDriver(options);
 
         driver = new ChromeDriver(options);
-
         return driver;
     }
 
     @BeforeClass
     public void startSession() {
         //  String platform = "web";
-        if (getData("PlatformName").equalsIgnoreCase("web"))
+      //  if (getData("PlatformName").equalsIgnoreCase("web"))
             initBrowser(getData("BrowserName"));
-        else
-            throw new RuntimeException("Invalid platform name");
+      //  else
+         //   throw new RuntimeException("Invalid platform name");
 
 
       //  screen = new Screen();
@@ -147,7 +140,7 @@ public class CommonOps extends Base {
                 env= "qa";
          }
         catch (SecurityException e){
-           env= "qa";
+           env= "prod";
         }
          switch (env){
              case "qa":

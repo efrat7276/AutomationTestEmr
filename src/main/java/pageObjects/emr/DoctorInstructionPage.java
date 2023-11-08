@@ -42,13 +42,6 @@ public class DoctorInstructionPage {
     public WebElement span_numberForApproval;
 
 
-//
-//    @FindBy(how = How.CLASS_NAME, using="main-title")
-//    public List<WebElement> h2_list;
-//
-//    @FindBy(how = How.TAG_NAME, using="table")
-//    public List<WebElement> table_list;
-
   //tables
 
     @FindBy(how = How.XPATH, using="//drug-ins//*[@class='table main-table']")

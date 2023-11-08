@@ -26,10 +26,6 @@ public class DrugForm {
     @FindBy(how = How.ID, using = "drugComment")
     public WebElement input_drugComment;
 
-
-    @FindBy(how = How.CLASS_NAME, using = "border-container row")
-    public List<WebElement> div_containers;
-
     @FindBy(how = How.XPATH, using = "div[@class='dir_rtl text-right']")
     public WebElement otherSymbolises;
 

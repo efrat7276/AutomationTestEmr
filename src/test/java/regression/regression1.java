@@ -156,7 +156,7 @@ public class regression1 extends CommonOps {
     @Description("add to patient future drug")
     public void test02_addToPatientFutureDrug() throws InterruptedException {
         WebFlows.login('d');
-        WebFlows.patientBoxEntry(1);
+        WebFlows.patientBoxEntry(2);
         Thread.sleep(1000);
         doctorFlows.newDrug();
         doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (XANAX)", 100 , 3 , null , false , true , true);
@@ -167,7 +167,7 @@ public class regression1 extends CommonOps {
     @Description("update dosage approval drug")
     public void test03_updateDosageApprovalDrug() throws InterruptedException {
         WebFlows.login('d');
-        WebFlows.patientBoxEntry(1);
+        WebFlows.patientBoxEntry(2);
         doctorFlows.editDrugDosage(0,41);
 
     }
@@ -176,7 +176,7 @@ public class regression1 extends CommonOps {
     @Description("update dosage not approval drug")
     public void test04_updateDosageNotApprovalDrug() throws InterruptedException {
         WebFlows.login('d');
-        WebFlows.patientBoxEntry(1);
+        WebFlows.patientBoxEntry(2);
         doctorFlows.editDrugDosage(0,90);
         doctorFlows.approvalInstruction();
 
