@@ -118,7 +118,7 @@ public class planningReception extends CommonOps {
         UIActions.click(receptionTreatmentPlanMain.div_openDrugCommonPlan);
         Thread.sleep(1000);
 
-        for (int i = 0; i < commonMedicationPlan.list_selectMedication.size()-1 ; i++) {
+        for (int i = 0; i < commonMedicationPlan.list_selectMedication.size()-3 ; i++) {
             Thread.sleep(1000);
             UIActions.click(commonMedicationPlan.list_selectMedication.get(i));
             Thread.sleep(1000);
