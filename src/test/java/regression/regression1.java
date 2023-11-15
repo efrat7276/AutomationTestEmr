@@ -1,5 +1,6 @@
 package regression;
 
+import extensions.UIActions;
 import extensions.Verifications;
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
@@ -44,15 +45,17 @@ public class regression1 extends CommonOps {
         // doctorFlows.drugFormAddDrugDaily(drugDaily.drug_desc,drugDaily.dosage,drugDaily.numberOfTime,drugDaily.routeAdmin,drugDaily.isAntibiotic,drugDaily.isFutureDate,false);
         //once-only drug
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-        Thread.sleep(3000);
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
         doctorFlows.drugFormAddDrugOnceOnly("INJ bevacizumab 100mg/4ml ( AVASTIN)", "20", null, null, false, false);
         //sos drug
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-        Thread.sleep(1000);
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+
         doctorFlows.drugFormAddDrugSOS("TAB paracetamol 500mg (ACAMOL)", "20", null, 4, 3, false);
         //byHour drug
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-        Thread.sleep(1000);
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+
         doctorFlows.drugFormAddDrugByHour("TAB paracetamol 500mg (ACAMOL)", 48, "20", null, true);
         //weekly drug
 //        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
@@ -64,13 +67,16 @@ public class regression1 extends CommonOps {
         doctorFlows.newDrug();
         doctorFlows.drugFormAddLiquidDrug("INJ atracrium 25mg/2.5ml (TRACRIUM)", "dextrose 5% 500ml", 11, false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-        Thread.sleep(2000);
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+
         doctorFlows.drugFormAddLiquidDrug("INJ aflibercept 100mg (EYLEA)", "dextrose 10% 500ml", 12, false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-        Thread.sleep(2000);
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+
         doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 11, false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-        Thread.sleep(1000);
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+
         doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 12, true);
 //
 
@@ -91,7 +97,8 @@ public class regression1 extends CommonOps {
         doctorFlows.newNutrition();
         nutritionFlows.nutritionFormAddNutritionDaily("NUT daily protein cream 30/300", 500, 1, false, false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-        Thread.sleep(3000);
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+
         nutritionFlows.nutritionFormAddNutritionContinues("NUT conc. protein water 15/100", 20, true);
 
 
