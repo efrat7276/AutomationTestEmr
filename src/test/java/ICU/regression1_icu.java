@@ -26,8 +26,9 @@ public class regression1_icu extends CommonOps {
 
     @Test(description = "reception planning")
     @Description("reception planning")
-    public void test01_icu_receptionPlanning() throws InterruptedException, IOException {
-        int patient_num = 1;
+    public void
+    test01_icu_receptionPlanning() throws InterruptedException, IOException {
+        int patient_num = 3;
         String departmentICU = "ט'נ' כללי";
         WebFlows.login('d');
         departmentFlows.chooseDepartment(departmentICU);
@@ -35,7 +36,7 @@ public class regression1_icu extends CommonOps {
        planningReception.savePlanningReception();
 
         Thread.sleep(1000);
-        // חתימה על כל ההוראות מהקבלה
+         ////חתימה על כל ההוראות מהקבלה
         doctorFlows.approvalInstruction();
         Thread.sleep(1000);
         CommonOps.afterMethod();

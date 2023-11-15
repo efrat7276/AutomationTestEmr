@@ -198,7 +198,7 @@ public class doctorFlows extends CommonOps {
     }
 
 
-    @Step(" Fill Hour In OnceOnly")
+    @Step(" Fill details to SOS drug")
     public static void fillDrugSOSDetails(int max , int min ) {
 
        UIActions.click(drugFormSOSPossibility.btn_sosMaxTimesPerDay);

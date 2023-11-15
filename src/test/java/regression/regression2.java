@@ -36,6 +36,7 @@ public class regression2 extends CommonOps {
        WebFlows.login('d');
        departmentFlows.chooseDepartment(emergencyDep);
        WebFlows.patientBoxEntry(1);
+       doctorFlows.stopAllActiveInstructionToPatient();
        doctorFlows.newDrug();
        doctorFlows.drugFormAddDrugOnceOnly("TAB acetylsalicylic acid 100mg (MICROPIRIN)",null, null,null,false,true);
        doctorFlows.approvalInstruction();
@@ -54,7 +55,7 @@ public class regression2 extends CommonOps {
         WebFlows.login('d');
         departmentFlows.chooseDepartment(emergencyDep);
         WebFlows.patientBoxEntry(patient_num);
-        //    doctorFlows.stopAllActiveInstructionToPatient();
+        doctorFlows.stopAllActiveInstructionToPatient();
 
 
         doctorFlows.newDrug();
