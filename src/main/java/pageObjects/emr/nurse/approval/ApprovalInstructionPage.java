@@ -69,6 +69,9 @@ public class ApprovalInstructionPage {
     @FindBy(how = How.XPATH , using ="//solution-liquidation//div[@class='timelineListFrame']")
     public List<WebElement> solution_scale_hourList;
 
+    @FindBy(how = How.XPATH , using ="//solution-liquidation//div[@name='solutionInstructionsTypeListStatusId2']//tr[@name='drugRow1']//td[4]//div[3]")
+    public List<WebElement> solution_scale_details_isContinues;
+
     @FindBy(how = How.XPATH , using ="//solution-liquidation//div[@name='solutionInstructionsTypeListStatusId2']//div[@class='timelineListFrame']//div[contains(@class,'timeLineInToday')]")
     public List<WebElement> solution_scale_currentHourList;
 
