@@ -65,24 +65,13 @@ public class nurseFlows extends CommonOps {
 
 
             // נוזלים
-
             for (int i = 0; i < approvalInstructionPage.btns_approveSolution.size(); i++) {
                 if(i==1)
                     Thread.sleep(500);
-              //  FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("nurseApprovalSolution")+".png"));
                 UIActions.click(approvalInstructionPage.solution_scale_currentHourList.get(i));
-                // not relevant to continues
-                try {
-
-                    // מדובר רק בהוראות לנוזלים time limit
-                    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
-                    wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='solutionBagSizeDynamicPopover']/button")));
+                if(approvalInstructionPage.solution_scale_details_isContinues.get(i).getText().contains("continues")==false)
                     UIActions.click(approvalInstructionPage.btn_V_liquid);
-
-                } catch (Exception e) {
-                }
                 UIActions.click(approvalInstructionPage.btns_approveSolution.get(i));
-
             }
 
             Thread.sleep(1000);
@@ -209,6 +198,17 @@ public class nurseFlows extends CommonOps {
 
     }
 
+    @Step("approval solution to current hour ")
+    public static void approvalSolutionList(){
+        for (int i = 0; i < approvalInstructionPage.btns_approveSolution.size(); i++) {
+            UIActions.click(approvalInstructionPage.solution_scale_currentHourList.get(i));
+            if(approvalInstructionPage.solution_scale_details_isContinues.get(i).getText().contains("continues")==false)
+                UIActions.click(approvalInstructionPage.btn_V_liquid);
+            UIActions.click(approvalInstructionPage.btns_approveSolution.get(i));
+        }
+        approvalNurseSign();
+    }
+
     @Step("approval general-ins daily")
     public static void approvalGeneralInsDaily(int numberOfTime , boolean isFuture)  {
         if(isFuture== false) {
@@ -320,7 +320,7 @@ public class nurseFlows extends CommonOps {
         Thread.sleep(500);
         executeSupervisionToDrug();
         executeSupervisionToSolution();
-      //  Thread.sleep(500);
+        Thread.sleep(500);
         executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
         executeAllLiquidAfterApprovalNurse();
         executionNurseSign();
