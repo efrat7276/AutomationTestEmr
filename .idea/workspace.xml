@@ -19,12 +19,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="update text input select drug to space instead Sleep()">
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add changes 19.11.23">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/approval/ApprovalInstructionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/approval/ApprovalInstructionPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/departmentFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/departmentFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/regression/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/regression/regression1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +122,7 @@
       <recent name="pageObjects.emr.settingGoals" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.regression2.test01_addAndSaveAllInstructionToPatient">
+  <component name="RunManager" selected="TestNG.regression1.test01_addToPatientAllPossibilityIns">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -265,10 +263,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
         <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
         <item itemvalue="TestNG.regression1_icu.test_0111" />
         <item itemvalue="TestNG.regression1_icu.test01_icu_receptionPlanning" />
-        <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
         <item itemvalue="TestNG.regression1.test03_updateDosageApprovalDrug" />
       </list>
     </recent_temporary>
@@ -576,7 +574,7 @@
       <option name="presentableId" value="LOCAL‎00063" />
       <updated>1692789808338</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -607,8 +605,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="names object - change" />
-    <MESSAGE value="add new objects to icu-screen" />
     <MESSAGE value="regression1_icu" />
     <MESSAGE value="regression1_icu add thread sleep" />
     <MESSAGE value="driver initialize add options" />
@@ -632,7 +628,9 @@
     <MESSAGE value="regression_icu update function" />
     <MESSAGE value="change something" />
     <MESSAGE value="update text input select drug to space instead Sleep()" />
-    <option name="LAST_COMMIT_MESSAGE" value="update text input select drug to space instead Sleep()" />
+    <MESSAGE value="approval solution changes - short the run time" />
+    <MESSAGE value="add changes 19.11.23" />
+    <option name="LAST_COMMIT_MESSAGE" value="add changes 19.11.23" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -794,7 +792,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/regression/regression1.java</url>
-          <line>77</line>
+          <line>82</line>
           <option name="timeStamp" value="752" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

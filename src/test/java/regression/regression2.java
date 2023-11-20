@@ -62,18 +62,22 @@ public class regression2 extends CommonOps {
         doctorFlows.drugFormAddDrugOnceOnly("INJ acetylcysteine 2g/10ml (PARVOLEX)",null, null,null,false,false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
 
         doctorFlows.drugFormAddDrugSOS("INJ acetylcysteine 2g/10ml (PARVOLEX)","20" , null,4 ,3,false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
 
         doctorFlows.drugFormAddLiquidDrug("INJ dexamethasone 4mg/1ml (DEXACORT)",null ,3,false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
 
         doctorFlows.drugFormAddLiquidDrug("INJ traMADol ","saline 0.9% 100ml" ,3,false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
 
         doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 1000ml (GLUCOSE)",null ,12,true);
 

@@ -140,7 +140,7 @@ public class CommonOps extends Base {
                 env= "qa";
          }
         catch (SecurityException e){
-           env= "prod";
+           env= "qa";
         }
          switch (env){
              case "qa":

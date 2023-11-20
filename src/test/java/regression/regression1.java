@@ -46,15 +46,18 @@ public class regression1 extends CommonOps {
         //once-only drug
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
         doctorFlows.drugFormAddDrugOnceOnly("INJ bevacizumab 100mg/4ml ( AVASTIN)", "20", null, null, false, false);
         //sos drug
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
 
         doctorFlows.drugFormAddDrugSOS("TAB paracetamol 500mg (ACAMOL)", "20", null, 4, 3, false);
         //byHour drug
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
 
         doctorFlows.drugFormAddDrugByHour("TAB paracetamol 500mg (ACAMOL)", 48, "20", null, true);
         //weekly drug
@@ -68,14 +71,17 @@ public class regression1 extends CommonOps {
         doctorFlows.drugFormAddLiquidDrug("INJ atracrium 25mg/2.5ml (TRACRIUM)", "dextrose 5% 500ml", 11, false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
 
         doctorFlows.drugFormAddLiquidDrug("INJ aflibercept 100mg (EYLEA)", "dextrose 10% 500ml", 12, false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
 
         doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 11, false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
 
         doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 12, true);
 //
@@ -98,6 +104,7 @@ public class regression1 extends CommonOps {
         nutritionFlows.nutritionFormAddNutritionDaily("NUT daily protein cream 30/300", 500, 1, false, false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
 
         nutritionFlows.nutritionFormAddNutritionContinues("NUT conc. protein water 15/100", 20, true);
 
