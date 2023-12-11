@@ -111,32 +111,9 @@ public class DrugForm {
 
     //possibility
 
-    @FindBy(how = How.XPATH, using = "//input[contains(@id,'drugTimeGivingPossibilitiesID')]")
+    @FindBy(how = How.XPATH, using = "//input[contains(@id,'drugTimeGivingPossibilitiesID')]/following-sibling::label")
     public List<WebElement> listRadioPossbility;
 
-    @FindBy(how = How.XPATH, using = "//div[@class='custom-control custom-radio']//label[text()=' Daily ']")
-    public WebElement radio_dailyPossbility;
-
-    @FindBy(how = How.XPATH, using = "//div[@class='custom-control custom-radio']//label[text()=' SOS ']")
-    public WebElement radio_sosPossbility;
-
-    @FindBy(how = How.XPATH, using = "//div[@class='custom-control custom-radio']//label[text()=' Once Only ']")
-    public WebElement radio_onceOnlyPossbility;
-
-    @FindBy(how = How.XPATH, using = "//div[@class='custom-control custom-radio']//label[text()=' By Hour ']")
-    public WebElement radio_byHourPossbility;
-
-    @FindBy(how = How.XPATH, using = "//div[@class='custom-control custom-radio']//label[text()=' Weekly ']")
-    public WebElement radio_WeeklyPossbility;
-
-    @FindBy(how = How.XPATH, using = "//div[@class='custom-control custom-radio']//label[text()=' Time Limit ']")
-    public WebElement radio_timeLimitPossbility;
-
-    @FindBy(how = How.XPATH, using = "//div[@class='custom-control custom-radio']//label[text()=' Continuous ']")
-    public WebElement radio_continuousPossbility;
-
-    @FindBy(how = How.XPATH, using = "//div[@class='custom-control custom-radio']//label[text()=' Constant Rate ']")
-    public WebElement radio_constantRatePossbility;
 
     //modals
 

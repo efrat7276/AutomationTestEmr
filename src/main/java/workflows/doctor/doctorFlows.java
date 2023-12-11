@@ -233,7 +233,7 @@ public class doctorFlows extends CommonOps {
     public static void drugFormAddDrugOnceOnly(String drugName ,String dosage, String hour , String routeAdinistration , boolean withExecute , boolean addAndClose){
 
         fillDrugsDetails(drugName, dosage,routeAdinistration);
-        drugForm.radio_onceOnlyPossbility.click();
+         UIActions.click(drugForm.listRadioPossbility.get(2));
         if(hour!=null)  fillDrugOnceOnlyHour(hour);
         UIActions.updateText(drugForm.input_drugComment, "בדיקות אוטו'");
         if(withExecute)  fillWithExecute();
@@ -266,7 +266,7 @@ public class doctorFlows extends CommonOps {
 
         fillDrugsDetails(drugName,dosage,routeAdinistration);
         UIActions.updateText(drugForm.input_drugComment, "בדיקות אוטו'");
-        drugForm.radio_sosPossbility.click();
+         UIActions.click(drugForm.listRadioPossbility.get(1));
         fillDrugSOSDetails(max, min);
         if(addAndClose)
             drugForm.btn_addAndClose.click();
@@ -279,7 +279,7 @@ public class doctorFlows extends CommonOps {
     public static void drugFormAddDrugByHour(String drugName ,int everyXHour , String dosage, String routeAdinistration,boolean addAndClose ){
 
         fillDrugsDetails(drugName,dosage,routeAdinistration);
-        drugForm.radio_byHourPossbility.click();
+         UIActions.click(drugForm.listRadioPossbility.get(3));
         UIActions.updateText(drugForm.input_drugComment, "בדיקות אוטו'");
         fillEveryXHour(String.valueOf(everyXHour));
         if(addAndClose)
@@ -292,7 +292,7 @@ public class doctorFlows extends CommonOps {
     public static void drugFormAddDrugWeekly(String drugName ,int timePerWeek , String dosage, String routeAdinistration ,boolean addAndClose){
 
         fillDrugsDetails(drugName,dosage,routeAdinistration);
-        drugForm.radio_WeeklyPossbility.click();
+         UIActions.click(drugForm.listRadioPossbility.get(4));
         UIActions.updateText(drugForm.input_drugComment, "בדיקות אוטו'");
         fillDrugWeeklyDetails(timePerWeek);
         if(addAndClose)
@@ -317,22 +317,34 @@ public class doctorFlows extends CommonOps {
         switch (possId){
 
             case 1 :
-                drugForm.radio_dailyPossbility.click();
+                 UIActions.click(drugForm.listRadioPossbility.get(0));
                 fillDrugNumberOfTimes(1);
                  break;
             case 2 :
-                drugForm.radio_sosPossbility.click();
+                 UIActions.click(drugForm.listRadioPossbility.get(1));
                 fillDrugSOSDetails(3,5);
                 break;
             case 3 :
-                drugForm.radio_onceOnlyPossbility.click();
+                 UIActions.click(drugForm.listRadioPossbility.get(2));
                 break;
             case 11 :
-                drugForm.radio_timeLimitPossbility.click();
+                try {
+                    UIActions.click(drugForm.listRadioPossbility.get(5));
+                }
+                catch (Exception exception){
+                    if (exception.equals("IndexOutOfBoundsException"))
+                        UIActions.click(drugForm.listRadioPossbility.get(0));
+                    else return;
+                }
                 fillDrugDilutedDetails(2);
                 break;
             case 12 :
-                drugForm.radio_continuousPossbility.click();
+                try {
+                    UIActions.click(drugForm.listRadioPossbility.get(6));
+                }
+                catch (java.lang.IndexOutOfBoundsException exception){
+                        UIActions.click(drugForm.listRadioPossbility.get(1));
+                }
                 fillDrugContinuesDetails(20);
                 break;
 

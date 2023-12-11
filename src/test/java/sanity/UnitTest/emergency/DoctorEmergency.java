@@ -44,8 +44,8 @@ public class DoctorEmergency extends CommonOps {
         WebFlows.patientBoxEntry(1);
         doctorFlows.newDrug();
         softAssert.assertTrue(drugForm.listRadioPossbility.size()==2);
-        softAssert.assertTrue(drugForm.radio_onceOnlyPossbility.isDisplayed());
-        softAssert.assertTrue(drugForm.radio_sosPossbility.isDisplayed());
+        softAssert.assertTrue(drugForm.listRadioPossbility.get(2).isDisplayed());
+        softAssert.assertTrue(drugForm.listRadioPossbility.get(3).isDisplayed());
         softAssert.assertAll();
     }
 
