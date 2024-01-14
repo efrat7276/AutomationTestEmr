@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="change value to drugDulited parameter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/departmentFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/departmentFlows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -573,7 +573,7 @@
       <option name="presentableId" value="LOCAL‎00063" />
       <updated>1692789808338</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
