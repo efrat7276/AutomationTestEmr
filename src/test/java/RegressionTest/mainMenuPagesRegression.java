@@ -1,11 +1,9 @@
-package regression;
+package RegressionTest;
 
 import extensions.UIActions;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import utilities.CommonOps;
-import workflows.NavigateFlows;
 import workflows.WebFlows;
 
 @Listeners(utilities.Listeners.class)

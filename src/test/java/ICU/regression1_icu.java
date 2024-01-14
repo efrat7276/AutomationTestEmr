@@ -40,7 +40,8 @@ public class regression1_icu extends CommonOps {
          ////חתימה על כל ההוראות מהקבלה
         doctorFlows.approvalInstruction();
         Thread.sleep(1000);
-        CommonOps.afterMethod();
+        afterMethod();
+       // CommonOps.reLogin();
         WebFlows.login('n');
         departmentFlows.chooseDepartment(departmentICU);
         WebFlows.patientBoxEntry(patient_num);

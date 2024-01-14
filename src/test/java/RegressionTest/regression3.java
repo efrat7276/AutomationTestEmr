@@ -1,4 +1,4 @@
-package regression;
+package RegressionTest;
 
 import extensions.UIActions;
 import io.qameta.allure.Description;
@@ -8,10 +8,8 @@ import utilities.CommonOps;
 import workflows.WebFlows;
 import workflows.departmentFlows;
 import workflows.doctor.doctorFlows;
-import workflows.doctor.generalInstructionFlows;
 import workflows.nurse.nurseFlows;
 
-import java.io.File;
 import java.io.IOException;
 
 @Listeners(utilities.Listeners.class)
@@ -30,7 +28,8 @@ public class regression3 extends CommonOps {
         doctorFlows.newDrug();
         doctorFlows.drugFormAddDrugDaily("TAB acetylcysteine 200mg efferv (REOLIN )", 20 ,1 , null ,false,false,true);
         doctorFlows.approvalInstruction();
-        CommonOps.afterMethod();
+        afterMethod();
+        // CommonOps.reLogin();
         WebFlows.login('n');
         WebFlows.patientBoxEntry(6);
         nurseFlows.approvalAllPossibilitiesIns(true,false);

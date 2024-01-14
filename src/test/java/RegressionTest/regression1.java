@@ -1,15 +1,11 @@
-package regression;
+package RegressionTest;
 
 import extensions.UIActions;
-import extensions.Verifications;
 import io.qameta.allure.Description;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflows.NavigateFlows;
-import workflows.general.general;
 import workflows.*;
 import workflows.doctor.bloodProductInstructionFlows;
 import workflows.doctor.doctorFlows;
@@ -115,7 +111,8 @@ public class regression1 extends CommonOps {
 ////
 ////      //   3 דקות ללא כלום
 ////     //  Thread.sleep(240000);
-        CommonOps.afterMethod();
+        afterMethod();
+        //CommonOps.reLogin();
 //
 
         WebFlows.login('n');

@@ -42,29 +42,29 @@ public class cardex extends CommonOps {
         for (int i = 1; i < patientsList.list_patients.size(); i++) {
             WebFlows.patientBoxEntry(i);
             System.out.println("patient " + i);
-
-            // בדיקה באיזה מסך נמצא
+//
+//            // בדיקה באיזה מסך נמצא
             int urlDefault_countChars = 0;
-            switch (CommonOps.getEnv()) {
-                case "dev":
-                    urlDefault_countChars = "https://landev16.laniado.org.il/emr2/#/main/patients/patientDetail/".length();
-                    break;
-                case "qa":
-                    urlDefault_countChars = "https://lanwebapptest.laniado.org.il/emr2/#/main/patients/patientDetail/".length();
-                    break;
-                case "prod":
-                    urlDefault_countChars = "https://lanwebapp.laniado.org.il/emr2/#/main/patients/patientDetail/".length();
-                    break;
-                case "production":
-                    urlDefault_countChars = "https://emr.laniado.org.il/emr2/#/main/patients/patientDetail/".length();
-                    break;
+//            switch (CommonOps.getEnv()) {
+//                case "dev":
+//                    urlDefault_countChars = "https://landev16.laniado.org.il/emr2/#/main/patients/patientDetail/".length();
+//                    break;
+//                case "qa":
+//                    urlDefault_countChars = "https://lanwebapptest.laniado.org.il/emr2/#/main/patients/patientDetail/".length();
+//                    break;
+//                case "prod":
+//                    urlDefault_countChars = "https://lanwebapp.laniado.org.il/emr2/#/main/patients/patientDetail/".length();
+//                    break;
+//                case "production":
+//                    urlDefault_countChars = "https://emr.laniado.org.il/emr2/#/main/patients/patientDetail/".length();
+//                    break;
             }
 
             // ניווט למסך קרקס במקרה שלא היה במסך
-            String subUrl = driver.getCurrentUrl().substring(urlDefault_countChars);
-            if (!subUrl.equals("cardex")) {
-                NavigateFlows.goToCategory("cardex");
-            }
+       //     String subUrl = driver.getCurrentUrl().substring(urlDefault_countChars);
+       //     if (!subUrl.equals("cardex")) {
+         //       NavigateFlows.goToCategory("cardex");
+         //   }
 
             // חילוץ מספר ההוראה הראשונה (במקרה שישי הוראות)
             if (UIActions.isExist(cardexPage.topCpoeInCardex)) {
@@ -105,6 +105,6 @@ public class cardex extends CommonOps {
         }
 
 
-    }
+
 }
 

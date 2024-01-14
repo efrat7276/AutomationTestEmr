@@ -5,7 +5,7 @@
 
         <test name="emergency_addGeneralInsNotSaveAt5">
             <classes>
-                <class name="regression.regression3">
+                <class name="RegressionTest.regression3">
                     <methods>
                         <include name="test02_printstickersfromcardexAt00night"></include>
                     </methods>

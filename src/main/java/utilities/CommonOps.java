@@ -7,13 +7,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 //import org.sikuli.script.Screen;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.*;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
-import org.testng.annotations.BeforeSuite;
+
 import org.testng.asserts.SoftAssert;
 import org.w3c.dom.Document;
 import java.time.Duration;
@@ -22,10 +21,8 @@ import java.time.format.DateTimeFormatter;
 
 public class CommonOps extends Base {
 
-    static String env = null;
-    public static String getEnv(){
-        return env;
-    }
+     static String env = null;
+
 
     public static String getFileName(String desc){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
@@ -68,7 +65,7 @@ public class CommonOps extends Base {
 //    }
 
 
-    public static void initBrowser(String browserType){
+    public  void initBrowser(String browserType){
         if(browserType.equalsIgnoreCase("chrome"))
             driver = initChromeDriver();
         else throw new RuntimeException("Invalid Browser Type") ;
@@ -117,30 +114,23 @@ public class CommonOps extends Base {
         return driver;
     }
 
-    @BeforeClass
+    @BeforeMethod
     public void startSession() {
-        //  String platform = "web";
-      //  if (getData("PlatformName").equalsIgnoreCase("web"))
-            initBrowser(getData("BrowserName"));
-      //  else
-         //   throw new RuntimeException("Invalid platform name");
-
-
-      //  screen = new Screen();
+        initBrowser(getData("BrowserName"));
+        //  screen = new Screen();
         softAssert = new SoftAssert();
-
     }
-
      @BeforeSuite
      public void BeforeSuite() {
 
+        //קבלת פרמטר מהrunner על איזה סביבה להריץ טסטים
          try{
             env = System.getenv("environment");
             if(env == null)
-                env= "qa";
+                env= "dev";
          }
         catch (SecurityException e){
-           env= "qa";
+           env= "dev";
         }
          switch (env){
              case "qa":
@@ -155,11 +145,8 @@ public class CommonOps extends Base {
              case "production":
                  ManageDB.openConnection(getData("DBUrl-production"),getData("DBName"),getData("DBPassword"));
                  break;
-
          }
-
      }
-
 
     @AfterClass
     public void closeSession(){
@@ -194,6 +181,36 @@ public class CommonOps extends Base {
         }
         UIActions.clearText(emrLogin.txt_username);
         UIActions.clearText(emrLogin.txt_password);
+    }
+
+
+    public static void reLogin(){
+
+        switch (env) {
+            case "qa":
+                driver.get(getData("url-qa"));
+                break;
+
+            case "prod":
+                driver.get(getData("url-prod"));
+                break;
+
+            case "dev":
+                driver.get(getData("url-dev"));
+                break;
+        }
+
+
+        try {
+            Alert confirm_popup = driver.switchTo().alert();
+            confirm_popup.accept();
+        }
+        catch (Exception ex){
+
+        }
+        UIActions.clearText(emrLogin.txt_username);
+        UIActions.clearText(emrLogin.txt_password);
+
     }
 
 }

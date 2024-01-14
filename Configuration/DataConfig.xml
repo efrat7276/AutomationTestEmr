@@ -25,7 +25,7 @@
 <!--    </prod>-->
 <!--    <dev>-->
         <DBUrl-dev>jdbc:sqlserver://lansqltest;databaseName=laniado_dev</DBUrl-dev>
-        <url-dev>https://landev16.laniado.org.il/emr2/</url-dev>
+        <url-dev>https://landev16.laniado.org.il/emr3/</url-dev>
 <!--    </dev>-->
 
     <!--    <production>-->

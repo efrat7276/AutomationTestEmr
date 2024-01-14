@@ -5,7 +5,7 @@
 
         <test name="allDepartment_allInstruction">
             <classes>
-                <class name="regression.regression1"></class>
+                <class name="RegressionTest.regression1"></class>
             </classes>
         </test>
 

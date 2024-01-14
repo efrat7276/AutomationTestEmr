@@ -1,15 +1,12 @@
-package regression;
+package RegressionTest;
 
 //import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 //import extensions.DBAction;
 import extensions.UIActions;
-import extensions.Verifications;
 import io.qameta.allure.Description;
-import io.qameta.allure.Muted;
 //import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import pageObjects.emr.nurse.Execute.UpdateExecutionPage;
 import utilities.CommonOps;
 import workflows.NavigateFlows;
 import workflows.WebFlows;
@@ -18,12 +15,8 @@ import workflows.doctor.doctorFlows;
 import workflows.doctor.generalInstructionFlows;
 import workflows.nurse.nurseFlows;
 
-import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
 
 @Listeners(utilities.Listeners.class)
 public class regression2 extends CommonOps {
@@ -86,8 +79,8 @@ public class regression2 extends CommonOps {
 
         Thread.sleep(1000);
         doctorFlows.approvalInstruction();
-
-       CommonOps.afterMethod();
+afterMethod();
+      // CommonOps.reLogin();
        WebFlows.login('n');
         departmentFlows.chooseDepartment(emergencyDep);
        WebFlows.patientBoxEntry(patient_num);

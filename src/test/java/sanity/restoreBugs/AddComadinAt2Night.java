@@ -30,6 +30,7 @@ public class AddComadinAt2Night extends CommonOps {
         doctorFlows.drugFormAddDrugDaily("TAB warfarin 1mg (COUMADIN)", 1, 1, null, false,false,true);
         doctorFlows.approvalInstruction();
         afterMethod();
+       //reLogin();
         WebFlows.login('n');
         WebFlows.patientBoxEntry(1);
         nurseFlows.approvalDrugsDaily(1,false);
