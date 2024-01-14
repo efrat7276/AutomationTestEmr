@@ -31,7 +31,7 @@ public class regression1 extends CommonOps {
 //        byHour - פעם ב-48 שעות
         int patient_num = 5;
         WebFlows.login('d');
-        departmentFlows.chooseDepartment("ט'נ' כללי");
+      //  departmentFlows.chooseDepartment("ט'נ' כללי");
 
         WebFlows.patientBoxEntry(patient_num);
         doctorFlows.stopAllActiveInstructionToPatient();
