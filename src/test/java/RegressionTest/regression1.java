@@ -116,7 +116,7 @@ public class regression1 extends CommonOps {
 //
 
         WebFlows.login('n');
-        Thread.sleep(500);
+        Thread.sleep(2000);
         departmentFlows.chooseDepartment("ט'נ' כללי");
 
         WebFlows.patientBoxEntry(patient_num);
