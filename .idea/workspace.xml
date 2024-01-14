@@ -19,9 +19,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="change little changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" afterDir="false" />
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="change value to drugDulited parameter">
       <change beforePath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -574,7 +572,7 @@
       <option name="presentableId" value="LOCAL‎00063" />
       <updated>1692789808338</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -605,7 +603,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="cardex execute with inpection" />
     <MESSAGE value="new function for supervision cardex" />
     <MESSAGE value="add new test to restore bug drug preparation" />
     <MESSAGE value="add new test to restore bug drug preparation - add thread sleep" />
@@ -630,7 +627,8 @@
     <MESSAGE value="add theard.sleep() to regression1,2" />
     <MESSAGE value="use for element radio-button of possibility's drug with list-webelement possbility" />
     <MESSAGE value="change little changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="change little changes" />
+    <MESSAGE value="change value to drugDulited parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="change value to drugDulited parameter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
