@@ -30,6 +30,17 @@ public class restoreBugs extends CommonOps {
         FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+getFileName("printStickers")+".png"));
     }
 
+    @Test(description = "take picture cardex patient at 00 ")
+    @Description("take picture cardex patient at 00 ")
+    public void box_in_cardex() throws InterruptedException, IOException {
+        WebFlows.login('n');
+        Thread.sleep(4000);
+        WebFlows.patientBoxEntry(12);
+        Thread.sleep(4000);
+        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+getFileName("cardexAt00ToPatient12")+".png"));
+
+       }
+
 
 
 }

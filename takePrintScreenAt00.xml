@@ -21,4 +21,14 @@
             </class>
         </classes>
     </test>
+
+    <test name="box_in_cardex_at_00-instructionWithoutExecution">
+        <classes>
+            <class name="restoreBugs.restoreBugs">
+                <methods>
+                    <include name="box_in_cardex"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>

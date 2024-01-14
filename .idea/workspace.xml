@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add therad.sleep before choose department">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/takePrintScreenAt00.xml" beforeDir="false" afterPath="$PROJECT_DIR$/takePrintScreenAt00.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -573,7 +575,7 @@
       <option name="presentableId" value="LOCAL‎00063" />
       <updated>1692789808338</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
