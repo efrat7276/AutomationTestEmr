@@ -19,11 +19,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add therad.sleep before choose department">
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add test to cardex at 00 in restore bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takePrintScreenAt00.xml" beforeDir="false" afterPath="$PROJECT_DIR$/takePrintScreenAt00.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -575,7 +573,7 @@
       <option name="presentableId" value="LOCAL‎00063" />
       <updated>1692789808338</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -606,8 +604,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="add new test to restore bug drug preparation" />
-    <MESSAGE value="add new test to restore bug drug preparation - add thread sleep" />
     <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix" />
     <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix 2" />
     <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix 3" />
@@ -631,7 +627,9 @@
     <MESSAGE value="change little changes" />
     <MESSAGE value="change value to drugDulited parameter" />
     <MESSAGE value="add therad.sleep before choose department" />
-    <option name="LAST_COMMIT_MESSAGE" value="add therad.sleep before choose department" />
+    <MESSAGE value="add test to cardex at 00" />
+    <MESSAGE value="add test to cardex at 00 in restore bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test to cardex at 00 in restore bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

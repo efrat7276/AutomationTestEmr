@@ -36,7 +36,7 @@ public class restoreBugs extends CommonOps {
         WebFlows.login('n');
         Thread.sleep(4000);
         WebFlows.patientBoxEntry(12);
-        Thread.sleep(4000);
+        Thread.sleep(7000);
         FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+getFileName("cardexAt00ToPatient12")+".png"));
 
        }
