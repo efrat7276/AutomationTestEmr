@@ -37,7 +37,7 @@ public class WebFlows extends CommonOps {
 
         }
         try {
-            Thread.sleep(1000);
+            Thread.sleep(4000);
         }
         catch (InterruptedException e){
 
@@ -61,20 +61,25 @@ public class WebFlows extends CommonOps {
         UIActions.selectFromList(chooseRole.list , roleDescription);
     }
 
-    @Step(" patientBoxEntry")
-    public static void patientBoxEntry(String mispar_sherut){
-
-        String mispar_sherut_katzar = mispar_sherut.substring(2);
-        UIActions.searchInList(patientsList.list_patients, mispar_sherut_katzar);
-    }
+//    @Step(" patientBoxEntry")
+//    public static void patientBoxEntry(String mispar_sherut){
+//
+//
+//        String mispar_sherut_katzar = mispar_sherut.substring(2);
+//        UIActions.searchInList(patientsList.list_patients, mispar_sherut_katzar);
+//
+//    }
 
     @Step(" patientBoxEntry")
     public static void patientBoxEntry(int index){
 
         UIActions.click(patientsList.list_patients.get(index));
-
-     //   doctorInstructionFlows.newDrug();
         Verifications.textIsVisible(demogeDataBar.sherut_label , "מס' שרות:");
+        try {
+            Thread.sleep(4000);
+        }
+        catch (InterruptedException e){
 
+        }
     }
 }

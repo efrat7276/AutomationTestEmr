@@ -20,7 +20,12 @@ public class departmentFlows extends CommonOps {
                 return;
             }
         }
-        Thread.sleep(3000);
+        try {
+            Thread.sleep(6000);
+        }
+        catch (InterruptedException e){
+
+        }
     }
     }
 
