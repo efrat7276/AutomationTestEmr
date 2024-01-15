@@ -19,9 +19,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add test to cardex at 00 in restore bug">
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add thread.sleep to login,chooseDepartment and patientBoxEntry functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +121,7 @@
       <recent name="pageObjects.emr.settingGoals" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.regression1.test01_addToPatientAllPossibilityIns">
+  <component name="RunManager" selected="TestNG.regression3.addDrugDailyToPatient">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -179,42 +179,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="regression1_icu.test01_icu_receptionPlanning" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject_emr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ICU.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ICU" />
-      <option name="MAIN_CLASS_NAME" value="ICU.regression1_icu" />
-      <option name="METHOD_NAME" value="test01_icu_receptionPlanning" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="regression1_icu.test_0111" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject_emr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ICU.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ICU" />
-      <option name="MAIN_CLASS_NAME" value="ICU.regression1_icu" />
-      <option name="METHOD_NAME" value="test_0111" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="regression1.test01_addToPatientAllPossibilityIns" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <extension name="coverage">
@@ -226,6 +190,24 @@
       <option name="PACKAGE_NAME" value="regression" />
       <option name="MAIN_CLASS_NAME" value="RegressionTest.regression1" />
       <option name="METHOD_NAME" value="test01_addToPatientAllPossibilityIns" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="regression2.test00_AddAndSavaDruToPatientEmergency" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RegressionTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RegressionTest" />
+      <option name="MAIN_CLASS_NAME" value="RegressionTest.regression2" />
+      <option name="METHOD_NAME" value="test00_AddAndSavaDruToPatientEmergency" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -251,22 +233,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="regression3.addDrugDailyToPatient" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RegressionTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RegressionTest" />
+      <option name="MAIN_CLASS_NAME" value="RegressionTest.regression3" />
+      <option name="METHOD_NAME" value="addDrugDailyToPatient" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="TestNG.H:/Automation/AutomationProject_emr/ToRun.xml" />
       <item itemvalue="TestNG.doctorAddInstruction.addAndSignUnknownDrug" />
+      <item itemvalue="TestNG.regression2.test00_AddAndSavaDruToPatientEmergency" />
+      <item itemvalue="TestNG.regression3.addDrugDailyToPatient" />
       <item itemvalue="TestNG.mainMenuPagesRegression.goToAllMainMenuDoctor" />
-      <item itemvalue="TestNG.regression1_icu.test01_icu_receptionPlanning" />
-      <item itemvalue="TestNG.regression1_icu.test_0111" />
       <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
       <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.regression3.addDrugDailyToPatient" />
+        <item itemvalue="TestNG.regression2.test00_AddAndSavaDruToPatientEmergency" />
         <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
         <item itemvalue="TestNG.mainMenuPagesRegression.goToAllMainMenuDoctor" />
         <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
-        <item itemvalue="TestNG.regression1_icu.test_0111" />
-        <item itemvalue="TestNG.regression1_icu.test01_icu_receptionPlanning" />
       </list>
     </recent_temporary>
   </component>
@@ -573,7 +573,7 @@
       <option name="presentableId" value="LOCAL‎00063" />
       <updated>1692789808338</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -604,8 +604,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix" />
-    <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix 2" />
     <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix 3" />
     <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix 4" />
     <MESSAGE value="add new test to restore bug at 00 night" />
@@ -629,7 +627,9 @@
     <MESSAGE value="add therad.sleep before choose department" />
     <MESSAGE value="add test to cardex at 00" />
     <MESSAGE value="add test to cardex at 00 in restore bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test to cardex at 00 in restore bug" />
+    <MESSAGE value="add test to cardex at 00 in restore bug- add thread" />
+    <MESSAGE value="add thread.sleep to login,chooseDepartment and patientBoxEntry functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="add thread.sleep to login,chooseDepartment and patientBoxEntry functions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

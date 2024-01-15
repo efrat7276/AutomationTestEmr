@@ -69,7 +69,7 @@ public class regression1 extends CommonOps {
 //        UIActions.updateText(drugForm.inp_selectDrug,"   ");
 //        Thread.sleep(500);
 
-        doctorFlows.drugFormAddLiquidDrug("INJ aflibercept 100mg (EYLEA)", "dextrose 10% 100ml", 12, false);
+        doctorFlows.drugFormAddLiquidDrug("INJ aflibercept 100mg (EYLEA)", "dextrose 5% 100ml", 12, false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
         Thread.sleep(500);
