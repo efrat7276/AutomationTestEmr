@@ -6,6 +6,7 @@ import extensions.UIActions;
 import extensions.Verifications;
 import io.qameta.allure.Step;
 import utilities.CommonOps;
+import utilities.Helpers;
 //import workflows.doctor.doctorInstructionFlows;
 
 import java.util.List;
@@ -17,9 +18,9 @@ public class WebFlows extends CommonOps {
     public static void userSignConfirm(){
 
         userSignModalPage.input_userName.clear();
-        userSignModalPage.input_userName.sendKeys(CommonOps.getData("userTest"));
+        userSignModalPage.input_userName.sendKeys(Helpers.getData("userTest"));
         userSignModalPage.input_password.clear();
-        userSignModalPage.input_password.sendKeys(CommonOps.getData("passwordTest"));
+        userSignModalPage.input_password.sendKeys(Helpers.getData("passwordTest"));
         Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
         userSignModalPage.btn_confirm.click();
         Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
@@ -28,8 +29,8 @@ public class WebFlows extends CommonOps {
     @Step(" Login With Choose Role")
     public static void login(char r)  {
 
-        UIActions.updateText(emrLogin.txt_username, CommonOps.getData("userTest"));
-        UIActions.updateText( emrLogin.txt_password, CommonOps.getData("passwordTest"));
+        UIActions.updateText(emrLogin.txt_username, Helpers.getData("userTest"));
+        UIActions.updateText( emrLogin.txt_password, Helpers.getData("passwordTest"));
         UIActions.click(emrLogin.btn_submitBtn);
         switch (r){
             case 'd' : UIActions.selectFromList(chooseRole.list , "רופא"); break;

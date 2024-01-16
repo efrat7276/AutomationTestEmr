@@ -6,6 +6,7 @@ import org.apache.commons.*;
 import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
+import utilities.Helpers;
 import utilities.Listeners;
 import workflows.NavigateFlows;
 import workflows.WebFlows;
@@ -36,7 +37,7 @@ public class AddComadinAt2Night extends CommonOps {
         nurseFlows.approvalDrugsDaily(1,false);
         NavigateFlows.goToCategory("cardex");
         Thread.sleep(3000);
-       FileUtils.copyFile(Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("picCardexAtHour02")+".png"));
+       FileUtils.copyFile(Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+ Helpers.getFileName("picCardexAtHour02")+".png"));
 
     }
 

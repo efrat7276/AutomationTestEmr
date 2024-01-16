@@ -97,7 +97,7 @@ public class DrugScenarios extends CommonOps {
 
     @Test(description = "Verify additions 5 drugs daily to Patient", dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"})
     @Description("drugForm - additions 5 drugs daily to Patient")
-    public void test03_1_verifyAddDailyDrugListToPatient(String patient_num){
+    public void test03_1_verifyAddDailyDrugListToPatient(int patient_num){
 
         String str; List<String> details;
         WebFlows.login('d');
@@ -114,7 +114,7 @@ public class DrugScenarios extends CommonOps {
 
     @Test(description = "verify a doctor's signature on unsigned instruction ", dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"} )
     @Description("a doctor signs on doctor's instruction")
-    public void  test03_2_NurseApprovalAllAndExecuteDailyDrug(String patient_num) throws InterruptedException {
+    public void  test03_2_NurseApprovalAllAndExecuteDailyDrug(int patient_num) throws InterruptedException {
 
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("אחות מוסמכת");
@@ -126,7 +126,7 @@ public class DrugScenarios extends CommonOps {
 
     @Test(description = "Verify additions 3 drugs daily Infectious_Disease_Specialto to Patient" , dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"})
     @Description("drugForm - additions 3 drugs daily Infectious_Disease_Specialto Patient")
-    public void test04_1_verifyAddDrugInfectiousDiseaseSpecialListToPatient(String patient_num) {
+    public void test04_1_verifyAddDrugInfectiousDiseaseSpecialListToPatient(int patient_num) {
 
         String str; List<String> details;
         WebFlows.login('d');
@@ -141,7 +141,7 @@ public class DrugScenarios extends CommonOps {
         WebFlows.userSignConfirm();
     }
 
-    public void test04_2_(String patient_num){
+    public void test04_2_(int patient_num){
 
         // אישור זיהומולוג
         GeneralWithDBFlow.loginWithDB();
@@ -152,7 +152,7 @@ public class DrugScenarios extends CommonOps {
 
     @Test(description = "verify a doctor's signature on unsigned instruction ", dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"} )
     @Description("a doctor signs on doctor's instruction")
-    public void  test04_3_NurseApprovalAllAndExecuteDailyInfectiousDiseaseSpecialDrug(String patient_num) throws InterruptedException {
+    public void  test04_3_NurseApprovalAllAndExecuteDailyInfectiousDiseaseSpecialDrug(int patient_num) throws InterruptedException {
 
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("אחות מוסמכת");
@@ -164,7 +164,7 @@ public class DrugScenarios extends CommonOps {
 
     @Test(description = "Verify additions 3 drugs daily As Risk to Patient" , dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"})
     @Description("drugForm - additions 3 drugs daily As Risk to Patient")
-    public void test05_1_verifyAddDrugAsRiskListToPatient(String patient_num){
+    public void test05_1_verifyAddDrugAsRiskListToPatient(int patient_num){
 
         String str; List<String> details;
         WebFlows.login('d');
@@ -181,7 +181,7 @@ public class DrugScenarios extends CommonOps {
 
 
     @Test(description = "Verify additions 3 drugs daily As Risk to Patient" , dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"})
-    public void test05_2_NurseApprovalAllAndExecuteAsRiskDrug(String patient_num) throws InterruptedException {
+    public void test05_2_NurseApprovalAllAndExecuteAsRiskDrug(int patient_num) throws InterruptedException {
 
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("אחות מוסמכת");
@@ -193,7 +193,7 @@ public class DrugScenarios extends CommonOps {
 
      @Test(description = "Verify additions 2 sos drugs to Patient" , dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"})
     @Description("drugForm - additions 2 SOS drugs to Patient")
-    public void test06_1_verifyAddDrugSOSListToPatient(String patient_num){
+    public void test06_1_verifyAddDrugSOSListToPatient(int patient_num){
 
         String str; List<String> details;
         WebFlows.login('d');
@@ -210,7 +210,7 @@ public class DrugScenarios extends CommonOps {
 
     @Test(description = "verify a doctor's signature on unsigned instruction ", dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"} )
     @Description("a doctor signs on doctor's instruction")
-    public void  test06_2_NurseApprovalAllAndExecuteSOSDrug(String patient_num) throws InterruptedException {
+    public void  test06_2_NurseApprovalAllAndExecuteSOSDrug(int patient_num) throws InterruptedException {
 
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("אחות מוסמכת");
@@ -237,7 +237,7 @@ public class DrugScenarios extends CommonOps {
 
     @Test(description = "verify a doctor's signature on unsigned instruction ", dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"} )
     @Description("a doctor signs on doctor's instruction")
-    public void  test07_2_NurseApprovalAllAndExecuteDailyDrug(String patient_num) throws InterruptedException {
+    public void  test07_2_NurseApprovalAllAndExecuteDailyDrug(int patient_num) throws InterruptedException {
 
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("אחות מוסמכת");

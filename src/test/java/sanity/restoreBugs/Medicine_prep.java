@@ -6,6 +6,7 @@ import io.qameta.allure.Description;
 import org.apache.commons.io.FileUtils;
 import org.testng.annotations.*;
 import utilities.CommonOps;
+import utilities.Helpers;
 import utilities.Listeners;
 import workflows.NavigateFlows;
 import workflows.WebFlows;
@@ -68,7 +69,7 @@ public class Medicine_prep extends CommonOps {
         UIActions.click(prepMedcinePage.filterHourBtn);
         UIActions.selectFromList(prepMedcinePage.filterHourList,"12:00");
         Thread.sleep(2000);
-        FileUtils.copyFile(Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("12")+".png"));
+        FileUtils.copyFile(Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+ Helpers.getFileName("12")+".png"));
 
     }
 

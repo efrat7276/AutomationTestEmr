@@ -196,7 +196,7 @@ public class DrugsScenario extends CommonOps {
         nurseFlows.approvalDrugsDaily(1, false);
         UIActions.click(innerMenuPage.depMeushpazim);
         Thread.sleep(1000);
-   //     FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("depMeushpazimAt00")+".png"));
+   //     FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+Helpers.getFileName("depMeushpazimAt00")+".png"));
         WebFlows.patientBoxEntry(3);
         Thread.sleep(1000);
         //NavigateFlows.goToCategory("cardex");
@@ -208,7 +208,7 @@ public class DrugsScenario extends CommonOps {
         Thread.sleep(500);
         UIActions.click(mainMenuPage.category_drugPreparation);
         Thread.sleep(2000);
-    //    FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("printAt00")+".png"));
+    //    FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+Helpers.getFileName("printAt00")+".png"));
 
 
     }
@@ -219,13 +219,13 @@ public class DrugsScenario extends CommonOps {
 
         WebFlows.login('n');
         Thread.sleep(500);
-     //   FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\" + getFileName("depMeushpazimAt130") + ".png"));
+     //   FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\" + Helpers.getFileName("depMeushpazimAt130") + ".png"));
         UIActions.click(mainMenuPage.category_drugPreparation);
         Thread.sleep(2000);
-    //    FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\" + getFileName("printAt130") + ".png"));
+    //    FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\" + Helpers.getFileName("printAt130") + ".png"));
         UIActions.click(mainMenuPage.category_patientList);
         WebFlows.patientBoxEntry(3);
-     //   FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\" + getFileName("cardexAt130") + ".png"));
+     //   FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\" + Helpers.getFileName("cardexAt130") + ".png"));
 
 
     }

@@ -53,7 +53,7 @@ public class regression3 extends CommonOps {
         WebFlows.patientBoxEntry(1);
         UIActions.click(cardexPage.btn_printStickers);
         Thread.sleep(5000);
-     //   FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("picPrintStickersAt00")+".png"));
+     //   FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+Helpers.getFileName("picPrintStickersAt00")+".png"));
         UIActions.click(cardexPage.exit_printStickers);
 
     }

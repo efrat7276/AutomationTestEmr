@@ -57,7 +57,7 @@ public class General extends CommonOps {
     public void goToScreen() throws InterruptedException {
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("אחות מוסמכת");
-        WebFlows.patientBoxEntry("2021159500");
+        //WebFlows.patientBoxEntry("2021159500");
         UIActions.click(cardexPage.i_arrow);
         NavigateFlows.goToCategory("nurseConfirmation");
         NavigateFlows.goToSubCategory("updateExecution");

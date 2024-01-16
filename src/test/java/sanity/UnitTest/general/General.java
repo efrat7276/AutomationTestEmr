@@ -5,6 +5,7 @@ import io.qameta.allure.Description;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
+import utilities.Helpers;
 import workflows.WebFlows;
 
 
@@ -26,7 +27,7 @@ public class General extends CommonOps {
     @Description("login with db and verify list roles - how many roles in list")
     public void test01_verifyListRoles(){
        // GeneralWithDBFlow.loginWithDB();
-        WebFlows.login(CommonOps.getData("userTest"), CommonOps.getData("userPassword"));
+        WebFlows.login(Helpers.getData("userTest"), Helpers.getData("userPassword"));
         Verifications.numberOfElementList(chooseRole.list , 6);
     }
 

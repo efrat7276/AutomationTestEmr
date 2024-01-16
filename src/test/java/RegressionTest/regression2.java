@@ -98,7 +98,7 @@ afterMethod();
 // שחזור באג של הכנת תרופות בלילה
 //        UIActions.click(cardexPage.btn_printStickers);
 //        Thread.sleep(5000);
-//        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+getFileName("picPrintStickersAt23")+".png"));
+//        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\"+Helpers.getFileName("picPrintStickersAt23")+".png"));
 //        UIActions.click(cardexPage.exit_printStickers);
 
 

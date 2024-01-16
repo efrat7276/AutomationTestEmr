@@ -37,7 +37,7 @@ public class generalinstruction extends CommonOps {
         Thread.sleep(5000);
 
         nurseFlows.executionNurseSign();
-        //  FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\+"+getFileName("cardex")+".png"));
+        //  FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\+"+Helpers.getFileName("cardex")+".png"));
 
     }
 
@@ -52,7 +52,7 @@ public class generalinstruction extends CommonOps {
         Thread.sleep(500);
         UIActions.click(cardexPage.btn_printStickers);
         Thread.sleep(4000);
-      //  FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\+"+getFileName("cardex_stickersPrintAt0020")+".png"));
+      //  FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\+"+Helpers.getFileName("cardex_stickersPrintAt0020")+".png"));
        // utilities.Listeners.saveScreenshotFile();
         UIActions.updateText(cardexPage.exit_printStickers,"'yj");
 

@@ -22,49 +22,6 @@ import java.time.format.DateTimeFormatter;
 public class CommonOps extends Base {
 
      static String env = null;
-
-
-    public static String getFileName(String desc){
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
-        LocalDateTime now = LocalDateTime.now();
-        return desc+"_"+dtf.format(now);
-    }
-
-    public static String getData(String nodeName) {
-
-        DocumentBuilder dBuilder;
-        Document doc = null;
-        File fxmlFile = new File("./Configuration/DataConfig.xml");
-        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-        try {
-            dBuilder = dbFactory.newDocumentBuilder();
-            doc = dBuilder.parse(fxmlFile);
-        }
-        catch (Exception e) {
-            System.out.println("Exception in reading XMLfile: "+ e);
-        }
-        doc.getDocumentElement().normalize();
-        return  doc.getElementsByTagName(nodeName).item(0).getTextContent();
-    }
-
-//    public static String getDataFromData(String nodeName1, String nodeName2) {
-//
-//        DocumentBuilder dBuilder;
-//        Document doc = null;
-//        File fxmlFile = new File("./Configuration/DataConfig.xml");
-//        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-//        try {
-//            dBuilder = dbFactory.newDocumentBuilder();
-//            doc = dBuilder.parse(fxmlFile);
-//        }
-//        catch (Exception e) {
-//            System.out.println("Exception in reading XMLfile: "+ e);
-//        }
-//        doc.getDocumentElement().normalize();
-//        return  ((Element)doc.getElementsByTagName(nodeName1).item(1)).getTextContent();
-//    }
-
-
     public  void initBrowser(String browserType){
         if(browserType.equalsIgnoreCase("chrome"))
             driver = initChromeDriver();
@@ -78,25 +35,25 @@ public class CommonOps extends Base {
 
 
         //Wait
-        wait = new WebDriverWait(driver, Duration.ofSeconds(Long.parseLong((getData("Timeout")))));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong((getData("Timeout")))));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(Long.parseLong((Helpers.getData("Timeout")))));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong((Helpers.getData("Timeout")))));
 
 
         switch (env) {
             case "qa":
-                driver.get(getData("url-qa"));
+                driver.get(Helpers.getData("url-qa"));
                 break;
 
             case "prod":
-                driver.get(getData("url-prod"));
+                driver.get(Helpers.getData("url-prod"));
                 break;
 
             case "dev":
-                driver.get(getData("url-dev"));
+                driver.get(Helpers.getData("url-dev"));
                 break;
 
             case "production":
-                driver.get(getData("url-production"));
+                driver.get(Helpers.getData("url-production"));
                 break;
         }
       ManagePages.initEmr();
@@ -116,7 +73,7 @@ public class CommonOps extends Base {
 
     @BeforeMethod
     public void startSession() {
-        initBrowser(getData("BrowserName"));
+        initBrowser(Helpers.getData("BrowserName"));
         //  screen = new Screen();
         softAssert = new SoftAssert();
     }
@@ -134,16 +91,16 @@ public class CommonOps extends Base {
         }
          switch (env){
              case "qa":
-                 ManageDB.openConnection(getData("DBUrl-qa"),getData("DBName"),getData("DBPassword"));
+                 ManageDB.openConnection(Helpers.getData("DBUrl-qa"),Helpers.getData("DBName"),Helpers.getData("DBPassword"));
                  break;
              case "prod":
-                 ManageDB.openConnection(getData("DBUrl-prod"),getData("DBName"),getData("DBPassword"));
+                 ManageDB.openConnection(Helpers.getData("DBUrl-prod"),Helpers.getData("DBName"),Helpers.getData("DBPassword"));
                  break;
              case "dev":
-                 ManageDB.openConnection(getData("DBUrl-dev"),getData("DBName"),getData("DBPassword"));
+                 ManageDB.openConnection(Helpers.getData("DBUrl-dev"),Helpers.getData("DBName"),Helpers.getData("DBPassword"));
                  break;
              case "production":
-                 ManageDB.openConnection(getData("DBUrl-production"),getData("DBName"),getData("DBPassword"));
+                 ManageDB.openConnection(Helpers.getData("DBUrl-production"),Helpers.getData("DBName"),Helpers.getData("DBPassword"));
                  break;
          }
      }
@@ -159,15 +116,15 @@ public class CommonOps extends Base {
 
         switch (env) {
             case "qa":
-                driver.get(getData("url-qa"));
+                driver.get(Helpers.getData("url-qa"));
                 break;
 
             case "prod":
-                driver.get(getData("url-prod"));
+                driver.get(Helpers.getData("url-prod"));
                 break;
 
             case "dev":
-                driver.get(getData("url-dev"));
+                driver.get(Helpers.getData("url-dev"));
                 break;
         }
 
@@ -188,15 +145,15 @@ public class CommonOps extends Base {
 
         switch (env) {
             case "qa":
-                driver.get(getData("url-qa"));
+                driver.get(Helpers.getData("url-qa"));
                 break;
 
             case "prod":
-                driver.get(getData("url-prod"));
+                driver.get(Helpers.getData("url-prod"));
                 break;
 
             case "dev":
-                driver.get(getData("url-dev"));
+                driver.get(Helpers.getData("url-dev"));
                 break;
         }
 
