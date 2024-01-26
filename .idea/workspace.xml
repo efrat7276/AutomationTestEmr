@@ -19,22 +19,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="else parameter to addDrulitedDrug function">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/Helpers.java" afterDir="false" />
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add new class 'helper'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/regression_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/regression_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/WebFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/WebFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/departmentFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/departmentFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegressionTest/regression2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/regression2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegressionTest/regression3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/regression3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/emergency/generalinstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/emergency/generalinstruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/general/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/general/General.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/general/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/general/General.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/restoreBugs/AddComadinAt2Night.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/restoreBugs/AddComadinAt2Night.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/restoreBugs/Medicine_prep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/restoreBugs/Medicine_prep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/general/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/general/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenariosFunctionWithParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenariosFunctionWithParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/instructions/InstructionMainPageScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/instructions/InstructionMainPageScenario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +128,7 @@
       <recent name="pageObjects.emr.settingGoals" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.regression3.addDrugDailyToPatient">
+  <component name="RunManager" selected="TestNG.restoreBugs.box_in_cardex">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -228,24 +222,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="regression2.test01_addAndSaveAllInstructionToPatient" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject_emr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RegressionTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="regression" />
-      <option name="MAIN_CLASS_NAME" value="RegressionTest.regression2" />
-      <option name="METHOD_NAME" value="test01_addAndSaveAllInstructionToPatient" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="regression3.addDrugDailyToPatient" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <extension name="coverage">
@@ -264,22 +240,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="restoreBugs.box_in_cardex" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="restoreBugs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="restoreBugs" />
+      <option name="MAIN_CLASS_NAME" value="restoreBugs.restoreBugs" />
+      <option name="METHOD_NAME" value="box_in_cardex" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="TestNG.H:/Automation/AutomationProject_emr/ToRun.xml" />
       <item itemvalue="TestNG.doctorAddInstruction.addAndSignUnknownDrug" />
       <item itemvalue="TestNG.regression2.test00_AddAndSavaDruToPatientEmergency" />
       <item itemvalue="TestNG.regression3.addDrugDailyToPatient" />
+      <item itemvalue="TestNG.restoreBugs.box_in_cardex" />
       <item itemvalue="TestNG.mainMenuPagesRegression.goToAllMainMenuDoctor" />
       <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
-      <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.restoreBugs.box_in_cardex" />
+        <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
         <item itemvalue="TestNG.regression3.addDrugDailyToPatient" />
         <item itemvalue="TestNG.regression2.test00_AddAndSavaDruToPatientEmergency" />
-        <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
         <item itemvalue="TestNG.mainMenuPagesRegression.goToAllMainMenuDoctor" />
-        <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
       </list>
     </recent_temporary>
   </component>
@@ -586,7 +580,7 @@
       <option name="presentableId" value="LOCAL‎00063" />
       <updated>1692789808338</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -617,7 +611,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="add new test to restore bug drug preparation - add thread sleep - fix 4" />
     <MESSAGE value="add new test to restore bug at 00 night" />
     <MESSAGE value="add new test to restore bug at 00 night - fix" />
     <MESSAGE value="regression2 change name drug" />
@@ -642,7 +635,8 @@
     <MESSAGE value="add test to cardex at 00 in restore bug- add thread" />
     <MESSAGE value="add thread.sleep to login,chooseDepartment and patientBoxEntry functions" />
     <MESSAGE value="else parameter to addDrulitedDrug function" />
-    <option name="LAST_COMMIT_MESSAGE" value="else parameter to addDrulitedDrug function" />
+    <MESSAGE value="add new class 'helper'" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new class 'helper'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -744,7 +738,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/utilities/CommonOps.java</url>
-          <line>117</line>
+          <line>119</line>
           <option name="timeStamp" value="550" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

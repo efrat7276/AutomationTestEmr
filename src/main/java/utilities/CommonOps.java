@@ -1,6 +1,7 @@
 package utilities;
 import extensions.DBAction;
 import extensions.UIActions;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -62,11 +63,12 @@ public class CommonOps extends Base {
 
     public static WebDriver initChromeDriver(){
 
-       // WebDriverManager.chromedriver().setup();
+     //  WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--start-maximized");
-
+       // options.setBinary("C:\\Users\\chrome\\ChromeStandaloneSetup.exe");
+    //    System. setProperty("webdriver.chrome.driver", "C:\\Users\\chromedriver\\114.0.5735.90\\chromedriver.exe");
         driver = new ChromeDriver(options);
         return driver;
     }

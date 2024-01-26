@@ -31,7 +31,7 @@ public class DrugScenariosFunctionWithParams extends CommonOps {
 
     @Test(description = "verify drugs daily added to patient's instructions parameters")
     @Description("verify adding daily drugs to patient from parameters")
-    public void AddAndSavaDrugsWithParameters(String patientIndex , String[] drugDescriptionList , int[] numberOfTimeList, @Nullable String[] dosage , @Nullable String[] routeAdministration ) {
+    public void AddAndSavaDrugsWithParameters(int patientIndex , String[] drugDescriptionList , int[] numberOfTimeList, @Nullable String[] dosage , @Nullable String[] routeAdministration ) {
 
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("רופא");

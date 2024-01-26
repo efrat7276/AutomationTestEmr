@@ -18,7 +18,7 @@ public class InstructionMainPageScenario extends CommonOps {
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("רופא");
 
-        WebFlows.patientBoxEntry("2021159500");
+        WebFlows.patientBoxEntry(1);
        // Thread.sleep(1000);
         UIActions.click(doctorInstructionPage.btn_approvalDrug);
         WebFlows.userSignConfirm();
@@ -37,7 +37,7 @@ public class InstructionMainPageScenario extends CommonOps {
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("אחות מוסמכת");
 
-        WebFlows.patientBoxEntry("2021159500");
+        WebFlows.patientBoxEntry(1);
        // Thread.sleep(5000);
         nurseFlows.approvalDrugOnceOnlyList(4);
 

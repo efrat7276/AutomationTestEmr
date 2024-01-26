@@ -21,7 +21,7 @@ public class Patient extends CommonOps {
      //  GeneralWithDBFlow.loginWithDB();
         WebFlows.login('d');
   //      WebFlows.chooseRole("ddd");
-       WebFlows.patientBoxEntry("2022148888");
+       WebFlows.patientBoxEntry(1);
        Verifications.textIsVisible(demogeDataBar.sherut_label , "מס' שרות:");
 
     }
