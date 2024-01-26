@@ -36,7 +36,7 @@ public class restoreBugs extends CommonOps {
     public void box_in_cardex() throws InterruptedException, IOException {
         WebFlows.login('n');
         Thread.sleep(4000);
-        WebFlows.patientBoxEntry(12);
+        WebFlows.patientBoxEntry(1);
         Thread.sleep(10000);
         FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+Helpers.getFileName("cardexAt00ToPatient12")+".png"));
 

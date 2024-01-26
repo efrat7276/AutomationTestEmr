@@ -2,15 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="restoreBugAt00">
-    <test name="cardex">
-        <classes>
-            <class name="emergency.generalinstruction">
-                <methods>
-                    <include name="test01_takePrintScreenEmergency"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
+<!--    <test name="cardex">-->
+<!--        <classes>-->
+<!--            <class name="emergency.generalinstruction">-->
+<!--                <methods>-->
+<!--                    <include name="test01_takePrintScreenEmergency"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
     <test name="cardex_depMeushpazim_printStickers">
         <classes>

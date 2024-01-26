@@ -19,16 +19,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add new class 'helper'">
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="sleep to cardex">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regression_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/regression_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/general/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/UnitTest/general/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenariosFunctionWithParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenariosFunctionWithParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/instructions/InstructionMainPageScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/instructions/InstructionMainPageScenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/takePrintScreenAt00.xml" beforeDir="false" afterPath="$PROJECT_DIR$/takePrintScreenAt00.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -580,7 +574,7 @@
       <option name="presentableId" value="LOCAL‎00063" />
       <updated>1692789808338</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -611,7 +605,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="add new test to restore bug at 00 night" />
     <MESSAGE value="add new test to restore bug at 00 night - fix" />
     <MESSAGE value="regression2 change name drug" />
     <MESSAGE value="change name file of image" />
@@ -636,7 +629,8 @@
     <MESSAGE value="add thread.sleep to login,chooseDepartment and patientBoxEntry functions" />
     <MESSAGE value="else parameter to addDrulitedDrug function" />
     <MESSAGE value="add new class 'helper'" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new class 'helper'" />
+    <MESSAGE value="sleep to cardex" />
+    <option name="LAST_COMMIT_MESSAGE" value="sleep to cardex" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
