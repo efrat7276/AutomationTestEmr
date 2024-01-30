@@ -19,7 +19,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="sleep to cardex">
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="takePrintScreenAt00 updown one test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/takePrintScreenAt00.xml" beforeDir="false" afterPath="$PROJECT_DIR$/takePrintScreenAt00.xml" afterDir="false" />
@@ -122,7 +122,7 @@
       <recent name="pageObjects.emr.settingGoals" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.restoreBugs.box_in_cardex">
+  <component name="RunManager" selected="TestNG.regression1.test01_addToPatientAllPossibilityIns">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -263,8 +263,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.restoreBugs.box_in_cardex" />
         <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
+        <item itemvalue="TestNG.restoreBugs.box_in_cardex" />
         <item itemvalue="TestNG.regression3.addDrugDailyToPatient" />
         <item itemvalue="TestNG.regression2.test00_AddAndSavaDruToPatientEmergency" />
         <item itemvalue="TestNG.mainMenuPagesRegression.goToAllMainMenuDoctor" />
@@ -574,7 +574,7 @@
       <option name="presentableId" value="LOCAL‎00063" />
       <updated>1692789808338</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -605,7 +605,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="add new test to restore bug at 00 night - fix" />
     <MESSAGE value="regression2 change name drug" />
     <MESSAGE value="change name file of image" />
     <MESSAGE value="regression1_icu add common medicine" />
@@ -630,7 +629,8 @@
     <MESSAGE value="else parameter to addDrulitedDrug function" />
     <MESSAGE value="add new class 'helper'" />
     <MESSAGE value="sleep to cardex" />
-    <option name="LAST_COMMIT_MESSAGE" value="sleep to cardex" />
+    <MESSAGE value="takePrintScreenAt00 updown one test" />
+    <option name="LAST_COMMIT_MESSAGE" value="takePrintScreenAt00 updown one test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

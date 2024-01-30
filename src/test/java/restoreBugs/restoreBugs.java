@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import utilities.CommonOps;
 import utilities.Helpers;
 import workflows.WebFlows;
+import workflows.doctor.doctorFlows;
 
 import java.io.File;
 import java.io.IOException;
@@ -42,6 +43,18 @@ public class restoreBugs extends CommonOps {
 
        }
 
+    @Test(description = "addDrugToPatient")
+    @Description("addDrugToPatient ")
+    public void addDrugToPatient() throws InterruptedException, IOException {
+        WebFlows.login('d');
+        WebFlows.patientBoxEntry(1);
+        doctorFlows.newDrug();
+        doctorFlows.drugFormAddDrugDaily("TAB paracetamol 500mg (ACAMOL)" , 10,3,null,false,false,true);
+
+        Thread.sleep(1000);
+        doctorFlows.approvalInstruction();
+
+    }
 
 
 }
