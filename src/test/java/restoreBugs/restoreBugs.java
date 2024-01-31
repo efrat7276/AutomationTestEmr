@@ -48,7 +48,9 @@ public class restoreBugs extends CommonOps {
     public void addDrugToPatient() throws InterruptedException, IOException {
         WebFlows.login('d');
         WebFlows.patientBoxEntry(1);
+        Thread.sleep(2000);
         doctorFlows.newDrug();
+        Thread.sleep(1000);
         doctorFlows.drugFormAddDrugDaily("TAB paracetamol 500mg (ACAMOL)" , 10,3,null,false,false,true);
 
         Thread.sleep(1000);
