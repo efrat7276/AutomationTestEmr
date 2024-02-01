@@ -19,16 +19,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="takePrintScreenAt00 add one test -thread.sleep">
-      <change afterPath="$PROJECT_DIR$/run10.xml" afterDir="false" />
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add run10 - restoreBugsAt23o'clock">
       <change afterPath="$PROJECT_DIR$/src/main/java/workflows/nurse/cardex/cardexFeaturesFlow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/Execute/CardexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/Execute/CardexPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/db/GeneralInstructionDBFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/db/GeneralInstructionDBFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/db/GeneralWithDBFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/db/GeneralWithDBFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -580,7 +574,7 @@
       <option name="presentableId" value="LOCAL‎00063" />
       <updated>1692789808338</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -611,7 +605,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="regression1_icu add common medicine" />
     <MESSAGE value="regression2 add drug name to test" />
     <MESSAGE value="add sleep to 2 tests" />
     <MESSAGE value="change timeout to bigger" />
@@ -636,7 +629,8 @@
     <MESSAGE value="takePrintScreenAt00 updown one test" />
     <MESSAGE value="takePrintScreenAt00 add one test" />
     <MESSAGE value="takePrintScreenAt00 add one test -thread.sleep" />
-    <option name="LAST_COMMIT_MESSAGE" value="takePrintScreenAt00 add one test -thread.sleep" />
+    <MESSAGE value="add run10 - restoreBugsAt23o'clock" />
+    <option name="LAST_COMMIT_MESSAGE" value="add run10 - restoreBugsAt23o'clock" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
