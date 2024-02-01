@@ -95,7 +95,10 @@ public class CardexPage {
 
     @FindBy(how = How.XPATH , using = "//user-and-password//input[2]")
     public WebElement userSign_input;
+// daily report
 
+    @FindBy(how = How.XPATH , using = "//div[contains(@class,'oneDayLineIcon cursorPointer')]//i")
+    public WebElement dailyReportIcon;
 
 
  // button to exit from cardex page

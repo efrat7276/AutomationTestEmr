@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="restoreBug2" parallel="false">
+
+        <test name="run at 23 o'clock - restore bugs">
+            <classes>
+                <class name="restoreBugs.restoreBugs2">
+                </class>
+            </classes>
+        </test>
+
+</suite>
