@@ -66,8 +66,7 @@ public class nurseFlows extends CommonOps {
 
             // נוזלים
             for (int i = 0; i < approvalInstructionPage.btns_approveSolution.size(); i++) {
-                if(i==1)
-                    Thread.sleep(500);
+                Thread.sleep(500);
                 UIActions.click(approvalInstructionPage.solution_scale_currentHourList.get(i));
                 if(approvalInstructionPage.solution_scale_details_isContinues.get(i).getText().contains("continues")==false)
                     UIActions.click(approvalInstructionPage.btn_V_liquid);
