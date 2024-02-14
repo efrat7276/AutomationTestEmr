@@ -1,4 +1,4 @@
-package pageObjects.emr.receptionTreatmentPlan;
+package pageObjects.emr.icu.receptionTreatmentPlan;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

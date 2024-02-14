@@ -18,7 +18,6 @@ import java.io.IOException;
 @Listeners(utilities.Listeners.class)
 public class restoreBugs2 extends CommonOps {
 
- //   static String emergencyDep = "חדר מיון";
 
      @Test(description = "take picture cardex daily report at 23 o'clock ")
      @Description("take picture cardex daily report at 23 o'clock ")

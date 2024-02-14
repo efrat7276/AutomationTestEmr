@@ -9,6 +9,7 @@ import pageObjects.emr.*;
 import pageObjects.emr.addForms.*;
 import pageObjects.emr.generalComponents.ListChoicesComponent;
 import pageObjects.emr.generalComponents.NumberOfTimeListComponent;
+import pageObjects.emr.icu.receptionTreatmentPlan.*;
 import pageObjects.emr.mainPages.*;
 import pageObjects.emr.menu.InnerMenuPage;
 import pageObjects.emr.menu.MainMenuPage;
@@ -18,8 +19,8 @@ import pageObjects.emr.nurse.approval.ApprovalInstructionPage;
 import pageObjects.emr.nurse.prepMedicine.prepMedcinePage;
 
 import pageObjects.emr.popUp.ConfirmationAlert;
-import pageObjects.emr.receptionTreatmentPlan.*;
-import pageObjects.emr.settingGoals.SettingGoals;
+import pageObjects.emr.icu.receptionTreatmentPlan.*;
+import pageObjects.emr.icu.settingGoals.SettingGoals;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

@@ -19,9 +19,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add run10 - restoreBugsAt23o'clock">
-      <change afterPath="$PROJECT_DIR$/src/main/java/workflows/nurse/cardex/cardexFeaturesFlow.java" afterDir="false" />
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="add package patient-sheet">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/icu/patientSheet/patientSheetMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/CommonMedicationPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/icu/receptionTreatmentPlan/CommonMedicationPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/NutritionPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/icu/receptionTreatmentPlan/NutritionPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/ReceptionTreatmentPlanMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/icu/receptionTreatmentPlan/ReceptionTreatmentPlanMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/SolutionBolusPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/icu/receptionTreatmentPlan/SolutionBolusPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/receptionTreatmentPlan/SolutionPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/icu/receptionTreatmentPlan/SolutionPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/settingGoals/SettingGoals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/icu/settingGoals/SettingGoals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,17 +99,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ToolWindowStructure.ShowToolbar": "false",
-    "last_opened_file_path": "C:/Automation/AutomationProject_emr",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.general"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ToolWindowStructure.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Automation/AutomationProject_emr&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Automation\AutomationProject_emr" />
@@ -115,14 +123,14 @@
       <recent name="H:\Automation\AutomationProject_emr\ImageRepository" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pageObjects.emr.patientSheet" />
       <recent name="workflows.nurse.cardex" />
       <recent name="restoreBugs" />
       <recent name="pageObjects.emr.receptionTreatmentPlan" />
       <recent name="workflows.icu_department" />
-      <recent name="pageObjects.emr.generalComponents" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.restoreBugs2.box_in_cardex">
+  <component name="RunManager" selected="TestNG.DrugsScenario.test00_stopAllInstructionToPatient">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,6 +138,34 @@
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Automation/AutomationProject_emr/Sanity_qa.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Sanity_qa.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DrugsScenario.test00_stopAllInstructionToPatient" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sanity.UnitTest.instructionToPatient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sanity.UnitTest.instructionToPatient" />
+      <option name="MAIN_CLASS_NAME" value="sanity.UnitTest.instructionToPatient.DrugsScenario" />
+      <option name="METHOD_NAME" value="test00_stopAllInstructionToPatient" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -198,24 +234,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="regression3.addDrugDailyToPatient" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject_emr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RegressionTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RegressionTest" />
-      <option name="MAIN_CLASS_NAME" value="RegressionTest.regression3" />
-      <option name="METHOD_NAME" value="addDrugDailyToPatient" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="restoreBugs2.box_in_cardex" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <extension name="coverage">
@@ -234,40 +252,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="restoreBugs.box_in_cardex" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject_emr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="restoreBugs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="restoreBugs" />
-      <option name="MAIN_CLASS_NAME" value="restoreBugs.restoreBugs" />
-      <option name="METHOD_NAME" value="box_in_cardex" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="TestNG.H:/Automation/AutomationProject_emr/ToRun.xml" />
       <item itemvalue="TestNG.doctorAddInstruction.addAndSignUnknownDrug" />
+      <item itemvalue="TestNG.C:/Automation/AutomationProject_emr/Sanity_qa.xml" />
+      <item itemvalue="TestNG.DrugsScenario.test00_stopAllInstructionToPatient" />
       <item itemvalue="TestNG.General.test09_verifyListPatients" />
       <item itemvalue="TestNG.restoreBugs2.box_in_cardex" />
-      <item itemvalue="TestNG.regression3.addDrugDailyToPatient" />
-      <item itemvalue="TestNG.restoreBugs.box_in_cardex" />
       <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.DrugsScenario.test00_stopAllInstructionToPatient" />
+        <item itemvalue="TestNG.C:/Automation/AutomationProject_emr/Sanity_qa.xml" />
         <item itemvalue="TestNG.restoreBugs2.box_in_cardex" />
         <item itemvalue="TestNG.General.test09_verifyListPatients" />
         <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
-        <item itemvalue="TestNG.restoreBugs.box_in_cardex" />
-        <item itemvalue="TestNG.regression3.addDrugDailyToPatient" />
       </list>
     </recent_temporary>
   </component>
@@ -574,7 +574,7 @@
       <option name="presentableId" value="LOCAL‎00063" />
       <updated>1692789808338</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -605,7 +605,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="regression2 add drug name to test" />
     <MESSAGE value="add sleep to 2 tests" />
     <MESSAGE value="change timeout to bigger" />
     <MESSAGE value="upgrade selenium 4.12.1" />
@@ -630,7 +629,8 @@
     <MESSAGE value="takePrintScreenAt00 add one test" />
     <MESSAGE value="takePrintScreenAt00 add one test -thread.sleep" />
     <MESSAGE value="add run10 - restoreBugsAt23o'clock" />
-    <option name="LAST_COMMIT_MESSAGE" value="add run10 - restoreBugsAt23o'clock" />
+    <MESSAGE value="add package patient-sheet" />
+    <option name="LAST_COMMIT_MESSAGE" value="add package patient-sheet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -706,11 +706,6 @@
           <option name="timeStamp" value="429" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/BloodProductScenario.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="442" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/extensions/Verifications.java</url>
           <line>93</line>
           <option name="timeStamp" value="509" />
@@ -754,11 +749,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/extensions/Verifications.java</url>
           <line>29</line>
           <option name="timeStamp" value="687" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="700" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/extensions/DBAction.java</url>
@@ -832,7 +822,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/utilities/ManagePages.java</url>
-          <line>80</line>
+          <line>78</line>
           <option name="timeStamp" value="917" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -900,38 +890,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="278" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/BloodProductScenario.java</url>
-          <line>21</line>
-          <properties class="sanity.UnitTest.instructionToPatient.BloodProductScenario">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="441" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/drugFlows.java</url>
-          <line>18</line>
-          <properties class="workflows.doctor.drugFlows" method="addAndSaveDrugOnceOnlyToPatient">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="453" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java</url>
-          <line>39</line>
-          <properties class="sanity.UnitTest.instructionToPatient.DrugsScenario" method="test01_addAndSaveDrugDailyToPatient">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="508" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/sanity/UnitTest/instructionToPatient/DrugsScenario.java</url>
-          <line>28</line>
-          <properties class="sanity.UnitTest.instructionToPatient.DrugsScenario" method="test00_stopAllInstructionToPatient">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="705" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,4 +1,4 @@
-package pageObjects.emr.settingGoals;
+package pageObjects.emr.icu.settingGoals;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
