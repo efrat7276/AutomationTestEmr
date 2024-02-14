@@ -6,10 +6,6 @@
         <test name="allDepartment_allInstruction">
             <classes>
                 <class name="RegressionTest.regression1">
-                    <methods>
-<!--                        <parameter name="chrome_driver_version" value="1010"></parameter>-->
-                       <include name="test01_addToPatientAllPossibilityIns"/>
-                    </methods>
                 </class>
             </classes>
         </test>
