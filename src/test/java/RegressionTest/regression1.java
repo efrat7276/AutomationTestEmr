@@ -37,50 +37,52 @@ public class regression1 extends CommonOps {
         doctorFlows.stopAllActiveInstructionToPatient();
         doctorFlows.newDrug();
         //daily drug
-//        doctorFlows.drugFormAddDrugDaily("acetylsalicylic", 20, 1, "1", false, false, false);
-//        // doctorFlows.drugFormAddDrugDaily(drugDaily.drug_desc,drugDaily.dosage,drugDaily.numberOfTime,drugDaily.routeAdmin,drugDaily.isAntibiotic,drugDaily.isFutureDate,false);
-//        //once-only drug
-//        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        UIActions.updateText(drugForm.inp_selectDrug,"   ");
-//        Thread.sleep(500);
-//        doctorFlows.drugFormAddDrugOnceOnly("INJ bevacizumab 100mg/4ml ( AVASTIN)", "20", null, null, false, false);
+        doctorFlows.drugFormAddDrugDaily("acetylsalicylic", 20, 1, "1", false, false, false);
+        // doctorFlows.drugFormAddDrugDaily(drugDaily.drug_desc,drugDaily.dosage,drugDaily.numberOfTime,drugDaily.routeAdmin,drugDaily.isAntibiotic,drugDaily.isFutureDate,false);
+        //once-only drug
+        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
+        doctorFlows.drugFormAddDrugOnceOnly("INJ bevacizumab 100mg/4ml ( AVASTIN)", "20", null, null, false, false);
 //        //sos drug
-//        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        UIActions.updateText(drugForm.inp_selectDrug,"   ");
-//        Thread.sleep(500);
-//
-//        doctorFlows.drugFormAddDrugSOS("TAB paracetamol 500mg (ACAMOL)", "20", null, 4, 3, false);
-//        //byHour drug
-//        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        UIActions.updateText(drugForm.inp_selectDrug,"   ");
-//        Thread.sleep(500);
+        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
 
-        doctorFlows.drugFormAddDrugByHour("TAB paracetamol 500mg (ACAMOL)", 48, "20", null, true);
-        //weekly drug
-//        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        Thread.sleep(1000);
-//        doctorFlows.drugFormAddDrugWeekly("TAB FLUoxetine 20mg (FLUTINE)" , 2, "20",null,false);
+        doctorFlows.drugFormAddDrugSOS("TAB paracetamol 500mg (ACAMOL)", "20", null, 4, 3, false);
+        //byHour drug
+        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
+
+        doctorFlows.drugFormAddDrugByHour("TAB paracetamol 500mg (ACAMOL)", 48, "20", null, false);
+      //  weekly drug
+        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
+
+        doctorFlows.drugFormAddDrugWeekly("TAB FLUoxetine 20mg (FLUTINE)" , 2, "20",null,true);
 
 
         ////  תרופות נוזליות
         doctorFlows.newDrug();
-//        doctorFlows.drugFormAddLiquidDrug("INJ atracrium 25mg/2.5ml (TRACRIUM)", "dextrose 5% 500ml", 11, false);
-//        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        UIActions.updateText(drugForm.inp_selectDrug,"   ");
-//        Thread.sleep(500);
+        doctorFlows.drugFormAddLiquidDrug("INJ atracrium 25mg/2.5ml (TRACRIUM)", "dextrose 5% 500ml", 11, false);
+        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
 
         doctorFlows.drugFormAddLiquidDrug("INJ aflibercept 100mg (EYLEA)", "dextrose 5% 100ml", 12, false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
         Thread.sleep(500);
 
-//        doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 11, false);
-//        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        UIActions.updateText(drugForm.inp_selectDrug,"   ");
-//        Thread.sleep(500);
+        doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 11, false);
+        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
+
+        doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 12, true);
 //
-//        doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 12, true);
-////
 
         // הוראות כלליות
         // daily - פעם ביום
@@ -107,17 +109,17 @@ public class regression1 extends CommonOps {
 
         doctorFlows.approvalInstruction();
 
-////
-////
+//
+//
 ////      //   3 דקות ללא כלום
 ////     //  Thread.sleep(240000);
         afterMethod();
-        //CommonOps.reLogin();
-//
+
+
 
         WebFlows.login('n');
         Thread.sleep(2000);
-        departmentFlows.chooseDepartment("ט'נ' כללי");
+       // departmentFlows.chooseDepartment("ט'נ' כללי");
 
         WebFlows.patientBoxEntry(patient_num);
 
@@ -137,8 +139,8 @@ public class regression1 extends CommonOps {
 //        NavigateFlows.goToSubCategory("instructionConfirmation");
 
         ////   todo לשלוח פרמטרים כמה פירוק מכל סוג
-       nurseFlows.approvalAllPossibilitiesIns(true, false);
-//
+//       nurseFlows.approvalAllPossibilitiesIns(true, false);
+////
        nurseFlows.approvalNurseSign();
         Thread.sleep(5000);
         NavigateFlows.goToCategory("cardex");
@@ -150,16 +152,6 @@ public class regression1 extends CommonOps {
 //        nurseFlows.executeAllGeneralInsAfterApprovalNurse();
        Thread.sleep(2000);
         nurseFlows.executionNurseSign();
-
-//        //עדכון תרופה
-////
-//        CommonOps.afterMethod();
-//        WebFlows.login('d');
-//        //  departmentFlows.chooseDepartment("ט'נ' כללי");
-//
-//        WebFlows.patientBoxEntry(patient_num);
-//        int indexDrug = general.searchDrugByName("acetylsalicylic");
-//        doctorFlows.editDrugDosage(indexDrug, 41);
 
 
     }
