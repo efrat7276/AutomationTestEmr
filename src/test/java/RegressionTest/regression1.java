@@ -139,7 +139,7 @@ public class regression1 extends CommonOps {
 //        NavigateFlows.goToSubCategory("instructionConfirmation");
 
         ////   todo לשלוח פרמטרים כמה פירוק מכל סוג
-//       nurseFlows.approvalAllPossibilitiesIns(true, false);
+      nurseFlows.approvalAllPossibilitiesIns(true, false);
 ////
        nurseFlows.approvalNurseSign();
         Thread.sleep(5000);
