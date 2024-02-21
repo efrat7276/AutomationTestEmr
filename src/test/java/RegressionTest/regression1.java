@@ -171,7 +171,7 @@ public class regression1 extends CommonOps {
         WebFlows.patientBoxEntry(2);
         Thread.sleep(1000);
         doctorFlows.newDrug();
-        doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (XANAX)", 100 , 3 , null , false , true , true);
+        doctorFlows.drugFormAddDrugDaily("enoxaparin", 100 , 1 , null , false , true , true);
         doctorFlows.approvalInstruction();
     }
 

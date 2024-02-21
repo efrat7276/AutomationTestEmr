@@ -172,7 +172,7 @@ public class doctorFlows extends CommonOps {
     public static void chooseFutureDay() {
         // choose the first day is enable in calender
         UIActions.click(drugFormDailyPossibility.btn_datePicker);
-        UIActions.click(drugFormDailyPossibility.enableDays_datePicker.get(0));
+        UIActions.click(drugFormDailyPossibility.tomorrow_datePicker);
     }
 
     @Step()

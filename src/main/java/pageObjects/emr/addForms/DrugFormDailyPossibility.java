@@ -17,9 +17,9 @@ public class DrugFormDailyPossibility {
     @FindBy(how=How.XPATH, using="//emr-datepicker//i")
     public WebElement btn_datePicker;
 
-    @FindBy(how=How.XPATH, using="//emr-datepicker//div[@class='ngb-dp-day ngb-dp-today']")
+    @FindBy(how=How.XPATH, using="//ngb-datepicker//div[contains(@class,'ngb-dp-today')]")
     public WebElement currentDay_datePicker;
 
-    @FindBy(how=How.XPATH, using="//emr-datepicker//div[@class='ngb-dp-day']")
-    public List<WebElement> enableDays_datePicker;
+    @FindBy(how=How.XPATH, using="//ngb-datepicker//div[contains(@class,'ngb-dp-today')]//following-sibling::div")
+    public WebElement tomorrow_datePicker;
 }
