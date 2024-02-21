@@ -14,27 +14,27 @@ public class GeneralInstructionPage {
     @FindBy(how = How.XPATH, using = "//ngb-accordion/div//button")
     public List<WebElement> generalInstructionCategoryList;
 
-    @FindBy(how = How.XPATH, using = "//div[@class='sub-list']/div")
+    @FindBy(how = How.XPATH, using = "//ngb-accordion//input")
     public List <WebElement> generalInsSubList;
 
     //רשימת הוראות שנבחרו - קיימת רק אם יש משהו שנבחר
     @FindBy(how = How.XPATH, using = "//div[@class='main-box']/ul/li")
     public List<WebElement>  listSelectedGeneralIns;
 
-    @FindBy(how = How.XPATH, using = "//div[@class='main-box']//div[@class='dropdown-regular dropdown']//label[text()='תדירות']/following-sibling::button[@class='btn selector drop-down dropdown-toggle']")
+    @FindBy(how = How.XPATH, using = "//div[@class='main-box']//label[text()='תדירות']/following-sibling::button[contains(@class,'dropdown-toggle')]")
     public WebElement btn_possbilities;
 
-    @FindBy(how = How.XPATH, using = "//div[@class='main-box']//div[@class='dropdown-regular show dropdown']//button")
+    @FindBy(how = How.XPATH, using = "//div[@class='main-box']//label[text()='תדירות']/following-sibling::div[contains(@class,'dropdown')]/button")
     public List<WebElement>  possbilityList;
 
-    @FindBy(how = How.XPATH, using = "//div[@class='main-box']//div[@class='dropdown-regular dropdown']//label[text()='פעמים']/following-sibling::button[@class='btn selector drop-down dropdown-toggle']")
+    @FindBy(how = How.XPATH, using = "//div[@class='main-box']//label[text()='פעמים']/following-sibling::button")
     public WebElement btn_numberOfTime;
 
-    @FindBy(how = How.XPATH, using = "//div[@class='main-box']//div[@class='dropdown-regular show dropdown']//button")
+    @FindBy(how = How.XPATH, using = "//div[@class='main-box']//label[text()='פעמים']/following-sibling::div[contains(@class,'dropdown')]/button")
     public List<WebElement>  numberOfTimeList;
 
 
-    @FindBy(how = How.XPATH, using = "//button[@class='btn btn-defualt btn-submit btn-click ']")
+    @FindBy(how = How.XPATH, using = "//button[contains(@class,'btn-submit')]")
     public WebElement btn_save;
 
     @FindBy(how = How.XPATH, using = "//button[@class='btn btn-defualt btn-cancel btn-click '][0]")

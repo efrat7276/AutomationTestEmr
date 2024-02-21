@@ -31,7 +31,7 @@ public class regression1 extends CommonOps {
 //        byHour - פעם ב-48 שעות
         int patient_num = 5;
         WebFlows.login('d');
-      //  departmentFlows.chooseDepartment("ט'נ' כללי");
+        departmentFlows.chooseDepartment("ט'נ' כללי");
 
         WebFlows.patientBoxEntry(patient_num);
         doctorFlows.stopAllActiveInstructionToPatient();
@@ -88,9 +88,9 @@ public class regression1 extends CommonOps {
         // daily - פעם ביום
         // onceOnly - פעם ביום
 //
-//        doctorFlows.newGeneralIns();
-//        generalInstructionFlows.generalFormAddGeneralInsDaily(1, 1, 1, false, false, false);
-//        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(2, 1, "16:00", false, true);
+        doctorFlows.newGeneralIns();
+        generalInstructionFlows.generalFormAddGeneralInsDaily(1, 1, 1, false, false, false);
+        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(2, 1, "16:00", false, true);
 
 //        // מוצרי דם
 ////        //todo  לשלוח שם וכמות מוצר דם
@@ -140,7 +140,7 @@ public class regression1 extends CommonOps {
 
         ////   todo לשלוח פרמטרים כמה פירוק מכל סוג
       nurseFlows.approvalAllPossibilitiesIns(true, false);
-////
+
        nurseFlows.approvalNurseSign();
         Thread.sleep(5000);
         NavigateFlows.goToCategory("cardex");

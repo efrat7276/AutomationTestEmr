@@ -15,10 +15,13 @@ public class generalInstructionFlows extends CommonOps {
 
 
     @Step(" go to newGeneral")
-    public static void chooseGeneralInstruction(int categoryIndex, int subCategoryIndex ) {
+    public static void chooseGeneralInstruction(int categoryIndex, int subCategoryIndex ) throws InterruptedException {
 
         UIActions.click(generalInstructionPage.generalInstructionCategoryList.get(categoryIndex-1));
-        UIActions.click(generalInstructionPage.generalInsSubList.get(subCategoryIndex-1).findElement(By.tagName("input")));
+       // UIActions.click(generalInstructionPage.generalInsSubList.get(subCategoryIndex-1).findElement(By.tagName("input")));
+        Thread.sleep(1000);
+        UIActions.click(generalInstructionPage.generalInsSubList.get(subCategoryIndex-1));
+
         try { doctorFlows.confirmModalSameInstruction();}catch (Exception ex){}
     }
 
@@ -97,7 +100,7 @@ public class generalInstructionFlows extends CommonOps {
     //GeneralInstruction
 
     @Step("fill generalForm for addNewGeneralInsDaily")
-    public static void generalFormAddGeneralInsDaily(int category, int sub_category  , int numberOfTime ,boolean isFuture , boolean withExecution , boolean addAndSave) {
+    public static void generalFormAddGeneralInsDaily(int category, int sub_category  , int numberOfTime ,boolean isFuture , boolean withExecution , boolean addAndSave) throws InterruptedException {
 
         chooseGeneralInstruction(category, sub_category);
         generalInstructionPage.listSelectedGeneralIns.get(0).findElement(By.name("itemDescrption")).sendKeys("בדיקות אוטו'");
@@ -110,7 +113,7 @@ public class generalInstructionFlows extends CommonOps {
     }
 
     @Step("fill DrugForm for addNewGeneralOnceOnly")
-    public static void generalFormAddGeneralInsOnceOnly(int category, int sub_category , String hour ,boolean isFuture, boolean addAndSave)  {
+    public static void generalFormAddGeneralInsOnceOnly(int category, int sub_category , String hour ,boolean isFuture, boolean addAndSave) throws InterruptedException {
 
         chooseGeneralInstruction(category, sub_category);
         generalInstructionPage.listSelectedGeneralIns.get(0).findElement(By.name("itemDescrption")).sendKeys("בדיקות אוטו'");
