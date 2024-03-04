@@ -19,7 +19,7 @@ public class MainMenuPage  {
     @FindBy(how = How.XPATH ,using="//ul[contains(@class,'flex-fill main-menu-list')]//span[text()='דוחות']")
     public WebElement category_reportsList;
 
-    @FindBy(how = How.XPATH ,using="//ul[contains(@class,'flex-fill main-menu-list')]//span[text()='פרוטוקול']")
+    @FindBy(how = How.XPATH ,using="//ul[contains(@class,'flex-fill main-menu-list')]//span[text()='פרוטוקולים']")
     public WebElement category_protocolList;
 
     @FindBy(how = How.XPATH ,using="//ul[contains(@class,'flex-fill main-menu-list')]//span[text()='חדר ניתוח']")

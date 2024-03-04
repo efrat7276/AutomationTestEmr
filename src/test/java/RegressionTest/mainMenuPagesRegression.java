@@ -10,20 +10,25 @@ import workflows.WebFlows;
 public class mainMenuPagesRegression extends CommonOps {
 
     @Test(description = "goToAllMainMenuDoctor")
-    public  void goToAllMainMenuDoctor() {
+    public  void goToAllMainMenuDoctor() throws InterruptedException {
 
         WebFlows.login('d');
         softAssert.assertTrue(UIActions.isExist(patientsList.patients_body));
         UIActions.click(mainMenuPage.category_dischargedList);
+        Thread.sleep(2000);
         softAssert.assertTrue(UIActions.isExist(dischargedListPage.discharged_body));
         UIActions.click(mainMenuPage.category_ordersList);
+        Thread.sleep(2000);
         softAssert.assertTrue(UIActions.isExist(orderListPage.order_body));
         UIActions.click(mainMenuPage.category_reportsList);
+        Thread.sleep(2000);
         softAssert.assertTrue(UIActions.isExist(depReport.depReport_body));
         UIActions.click(mainMenuPage.category_protocolList);
+        Thread.sleep(2000);
         softAssert.assertTrue(UIActions.isExist(protocolListPage.protocolDep_body));
         UIActions.click(mainMenuPage.category_operations);
-        softAssert.assertTrue(UIActions.isExist(orderListPage.order_body));
+        Thread.sleep(2000);
+        softAssert.assertTrue(UIActions.isExist(operationsPage.operations_body));
         softAssert.assertAll();
     }
 
