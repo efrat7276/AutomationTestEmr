@@ -11,15 +11,15 @@
 <!--            </class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="addDrugToPatient">
-    <classes>
-        <class name="restoreBugs.restoreBugs">
-            <methods>
-                <include name="addDrugToPatient"/>
-            </methods>
-        </class>
-    </classes>
-</test>
+<!--    <test name="addDrugToPatient">-->
+<!--    <classes>-->
+<!--        <class name="restoreBugs.restoreBugs">-->
+<!--            <methods>-->
+<!--                <include name="addDrugToPatient"/>-->
+<!--            </methods>-->
+<!--        </class>-->
+<!--    </classes>-->
+<!--</test>-->
     <test name="cardex_depMeushpazim_printStickers">
         <classes>
             <class name="restoreBugs.restoreBugs">
