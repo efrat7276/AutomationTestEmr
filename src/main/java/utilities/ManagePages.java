@@ -14,6 +14,7 @@ import pageObjects.emr.nurse.Execute.CardexPage;
 import pageObjects.emr.nurse.Execute.UpdateExecutionPage;
 import pageObjects.emr.nurse.prepMedicine.prepMedcinePage;
 import pageObjects.emr.nurse.approval.ApprovalInstructionPage;
+import pageObjects.emr.popUp.CardexDailyReport;
 import pageObjects.emr.popUp.ConfirmationAlert;
 
 //import pageObjects.emr.popUp.DrugConfirmationPopUp;
@@ -64,7 +65,7 @@ public class ManagePages extends Base {
            userSignModalPage = PageFactory.initElements(driver, UserSignModalPage.class);
 //
             confirmationAlert = PageFactory.initElements(driver, ConfirmationAlert.class);
-
+            cardexDailyReport = PageFactory.initElements(driver, CardexDailyReport.class);
             settingGoals = PageFactory.initElements(driver, SettingGoals.class);
             receptionTreatmentPlanMain = PageFactory.initElements(driver, ReceptionTreatmentPlanMain.class);
             nutritionPlan = PageFactory.initElements(driver, NutritionPlan.class);

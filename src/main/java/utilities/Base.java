@@ -18,6 +18,7 @@ import pageObjects.emr.nurse.Execute.UpdateExecutionPage;
 import pageObjects.emr.nurse.approval.ApprovalInstructionPage;
 import pageObjects.emr.nurse.prepMedicine.prepMedcinePage;
 
+import pageObjects.emr.popUp.CardexDailyReport;
 import pageObjects.emr.popUp.ConfirmationAlert;
 import pageObjects.emr.icu.receptionTreatmentPlan.*;
 import pageObjects.emr.icu.settingGoals.SettingGoals;
@@ -94,7 +95,10 @@ public class Base {
     protected static  prepMedcinePage prepMedcinePage;
 
     protected static UserSignModalPage userSignModalPage;
+     //popUp
     protected static ConfirmationAlert confirmationAlert;
+
+  protected static CardexDailyReport cardexDailyReport;
 
     protected static SettingGoals settingGoals;
     protected static ReceptionTreatmentPlanMain receptionTreatmentPlanMain;

@@ -305,7 +305,7 @@
                         <version>2.22.1</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <xmlFile>run10.xml</xmlFile>
+                                <xmlFile>restoreBugAt23Night.xml</xmlFile>
                             </suiteXmlFiles>
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
