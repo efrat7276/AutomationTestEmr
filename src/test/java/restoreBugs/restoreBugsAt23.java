@@ -41,7 +41,7 @@ public class restoreBugsAt23 extends CommonOps {
         nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
         nurseFlows.executionNurseSign();
         cardexPage.dailyReportIcon.click();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
         //take pic 1 - daily report
         FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+ Helpers.getFileName("clickDailyReport")+".png"));
          cardexDailyReport.btnExit.click();
