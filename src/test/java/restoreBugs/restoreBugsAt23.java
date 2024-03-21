@@ -39,6 +39,7 @@ public class restoreBugsAt23 extends CommonOps {
          Thread.sleep(7000);
         NavigateFlows.goToCategory("cardex");
         nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
+        Thread.sleep(1000);
         nurseFlows.executionNurseSign();
         cardexPage.dailyReportIcon.click();
         Thread.sleep(3000);
