@@ -330,13 +330,15 @@ public class doctorFlows extends CommonOps {
             case 11 :
                 try {
                     UIActions.click(drugForm.listRadioPossbility.get(5));
+                    fillDrugDilutedDetails(2);
                 }
                 catch (Exception exception){
                     if (exception.equals("IndexOutOfBoundsException"))
-                        UIActions.click(drugForm.listRadioPossbility.get(0));
+                        fillDrugDilutedDetails(2);
+
+                    //    UIActions.click(drugForm.listRadioPossbility.get(0));
                     else return;
                 }
-                fillDrugDilutedDetails(2);
                 break;
             case 12 :
                 try {

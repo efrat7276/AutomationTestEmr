@@ -27,9 +27,9 @@ public class regression1 extends CommonOps {
 //         daily  - פעם ביום
 //         onceOnly -
 //         weekly - פעמיים בשבוע
-//         SOS -
+//         SOS
 //        byHour - פעם ב-48 שעות
-        int patient_num = 3;
+        int patient_num = 6;
         WebFlows.login('d');
         departmentFlows.chooseDepartment("ט'נ' כללי");
 
@@ -72,7 +72,7 @@ public class regression1 extends CommonOps {
         doctorFlows.drugFormAddDrugWeekly("TAB FLUoxetine 20mg (FLUTINE)" , 2, "20",null,true);
 
 
-        ////  תרופות נוזליות
+        //  תרופות נוזליות
         doctorFlows.newDrug();
         doctorFlows.drugFormAddLiquidDrug("INJ atracrium 25mg/2.5ml (TRACRIUM)", "dextrose 5% 500ml", 11, false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
@@ -127,7 +127,7 @@ public class regression1 extends CommonOps {
 
         WebFlows.login('n');
         Thread.sleep(2000);
-       // departmentFlows.chooseDepartment("ט'נ' כללי");
+        departmentFlows.chooseDepartment("ט'נ' כללי");
 
         WebFlows.patientBoxEntry(patient_num);
 
@@ -156,8 +156,8 @@ public class regression1 extends CommonOps {
         nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
         nurseFlows.executeAllLiquidAfterApprovalNurse();
         //ביצוע הוראות כלליות לא עובד
-//        Thread.sleep(2000);
-//        nurseFlows.executeAllGeneralInsAfterApprovalNurse();
+        Thread.sleep(2000);
+        nurseFlows.executeAllGeneralInsAfterApprovalNurse();
        Thread.sleep(2000);
         nurseFlows.executionNurseSign();
 
