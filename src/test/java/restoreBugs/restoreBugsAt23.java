@@ -8,6 +8,7 @@ import utilities.CommonOps;
 import utilities.Helpers;
 import workflows.NavigateFlows;
 import workflows.WebFlows;
+import workflows.departmentFlows;
 import workflows.doctor.doctorFlows;
 import workflows.nurse.nurseFlows;
 
@@ -22,8 +23,11 @@ public class restoreBugsAt23 extends CommonOps {
      @Description("take picture cardex daily report and updateExecutionPage at 23 o'clock ")
      public void addDrug_andExecute_takePictureToDailyReportAndUpdateExecutionPage() throws InterruptedException, IOException {
          // doctor add daily drug
+         String departmentName = "חדר מיון";
         WebFlows.login('d');
         Thread.sleep(6000);
+         departmentFlows.chooseDepartment(departmentName);
+
         WebFlows.patientBoxEntry(9);
         Thread.sleep(6000);
          doctorFlows.stopAllActiveInstructionToPatient();
@@ -34,6 +38,8 @@ public class restoreBugsAt23 extends CommonOps {
          //nurse approval drug and execute
          WebFlows.login('n');
          Thread.sleep(2000);
+         departmentFlows.chooseDepartment(departmentName);
+
            WebFlows.patientBoxEntry(9);
          nurseFlows.approvalDrugsDaily(1,false);
          Thread.sleep(7000);
