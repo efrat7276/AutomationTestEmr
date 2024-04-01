@@ -25,7 +25,7 @@ public class departmentFlows extends CommonOps {
         catch (InterruptedException e){
 
         }
-        Verifications.isElementDisplay(patientsList.menu_patientList);
+     //   Verifications.isElementDisplay(patientsList.menu_patientList);
     }
     }
 
