@@ -70,7 +70,7 @@ public class CommonOps extends Base {
      //  WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        options.addArguments("--start-maximized");
+        //options.addArguments("--start-maximized");
         options.addArguments("window-size=1920,1080");
 
        // options.setBinary("C:\\Users\\chrome\\ChromeStandaloneSetup.exe");
