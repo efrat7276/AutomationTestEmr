@@ -226,11 +226,12 @@ public class nurseFlows extends CommonOps {
     }
 
     @Step("approval general-ins once only")
-    public static void approvalGeneralInsOnceOnly()  {
+    public static void approvalGeneralInsOnceOnly() throws InterruptedException {
 
             for (int i = 0; i < approvalInstructionPage.btn_gen.size(); i++) {
                 approvalInstructionPage.btn_gen.get(i).click();
                 approvalInstructionPage.ul_gen.get(i).findElements(By.tagName("li")).get(4).click();
+                Thread.sleep(1000);
                 approvalInstructionPage.btns_approveGeneral.get(i).click();
             }
             approvalNurseSign();
@@ -298,10 +299,10 @@ public class nurseFlows extends CommonOps {
 
     @Step("execution nurse sign")
     public static void executionNurseSign(){
-        if(!cardexPage.btn_approval.getText().contains("0")) {
+       // cardexPage.btn_approval.getText().contains("0")) {
             cardexPage.btn_approval.click();
             WebFlows.userSignConfirm();
-        }
+      //  }
         wait.until(ExpectedConditions.elementToBeClickable(cardexPage.btn_approval));
         Verifications.textIsContains(cardexPage.btn_approval , "0");
     }
