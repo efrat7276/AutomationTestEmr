@@ -6,8 +6,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
-//import org.sikuli.script.Screen;
 import org.testng.annotations.*;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -15,14 +15,12 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 
 import org.testng.asserts.SoftAssert;
-import org.w3c.dom.Document;
 import java.time.Duration;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 public class CommonOps extends Base {
 
      static String env = null;
+     static String sql_server = null;
     public  void initBrowser(String browserType){
         if(browserType.equalsIgnoreCase("chrome"))
             driver = initChromeDriver();
@@ -33,7 +31,6 @@ public class CommonOps extends Base {
         driver.manage().window().setPosition(new Point(0,0));
         driver.manage().window().setSize(new Dimension(1920,1080) );
         //driver.manage().window().maximize();
-
 
         //Wait
         wait = new WebDriverWait(driver, Duration.ofSeconds(Long.parseLong((Helpers.getData("Timeout")))));
@@ -53,12 +50,19 @@ public class CommonOps extends Base {
                 driver.get(Helpers.getData("url-dev"));
                 break;
 
+
+            case "automation":
+                driver.get(Helpers.getData("url-automation"));
+                break;
+
             case "production":
                 driver.get(Helpers.getData("url-production"));
                 break;
         }
       ManagePages.initEmr();
       action = new Actions(driver);
+      softAssert = new SoftAssert();
+      //  screen = new Screen();
     }
 
     public static WebDriver initChromeDriver(){
@@ -67,6 +71,8 @@ public class CommonOps extends Base {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--start-maximized");
+        options.addArguments("window-size=1920,1080");
+
        // options.setBinary("C:\\Users\\chrome\\ChromeStandaloneSetup.exe");
     //    System. setProperty("webdriver.chrome.driver", "C:\\Users\\chromedriver\\114.0.5735.90\\chromedriver.exe");
         driver = new ChromeDriver(options);
@@ -76,8 +82,8 @@ public class CommonOps extends Base {
     @BeforeMethod
     public void startSession() {
         initBrowser(Helpers.getData("BrowserName"));
-        //  screen = new Screen();
-        softAssert = new SoftAssert();
+
+
     }
      @BeforeSuite
      public void BeforeSuite() {
@@ -85,12 +91,22 @@ public class CommonOps extends Base {
         //קבלת פרמטר מהrunner על איזה סביבה להריץ טסטים
          try{
             env = System.getenv("environment");
+             sql_server = System.getenv("sql_server");
+
             if(env == null)
                 env= "qa";
+            // env= "prod";
+
+              //    env= "automation";
+
+         //   if(sql_server==null)
+
          }
         catch (SecurityException e){
            env= "qa";
         }
+
+
          switch (env){
              case "qa":
                  ManageDB.openConnection(Helpers.getData("DBUrl-qa"),Helpers.getData("DBName"),Helpers.getData("DBPassword"));
@@ -104,6 +120,10 @@ public class CommonOps extends Base {
              case "production":
                  ManageDB.openConnection(Helpers.getData("DBUrl-production"),Helpers.getData("DBName"),Helpers.getData("DBPassword"));
                  break;
+             default:
+                // ManageDB.openConnection(Helpers.getData("DBUrl-production"),Helpers.getData("DBName"),Helpers.getData("DBPassword"));
+                 ManageDB.openConnection(Helpers.getData("DBUrl-dev"),Helpers.getData("DBName"),Helpers.getData("DBPassword"));
+
          }
      }
 
