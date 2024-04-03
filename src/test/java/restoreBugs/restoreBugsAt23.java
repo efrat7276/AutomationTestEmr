@@ -26,7 +26,7 @@ public class restoreBugsAt23 extends CommonOps {
          String departmentName = "חדר מיון";
         WebFlows.login('d');
         Thread.sleep(6000);
-         departmentFlows.chooseDepartment(departmentName);
+       //  departmentFlows.chooseDepartment(departmentName);
 
         WebFlows.patientBoxEntry(9);
         Thread.sleep(6000);
