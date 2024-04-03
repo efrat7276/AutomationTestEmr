@@ -19,22 +19,36 @@ import java.io.IOException;
 public class restoreBugsAt23 extends CommonOps {
 
 
+    public void addDrug() throws InterruptedException, IOException {
+        // doctor add daily drug
+        String departmentName = "חדר מיון";
+        WebFlows.login('d');
+        Thread.sleep(6000);
+        //  departmentFlows.chooseDepartment(departmentName);
+
+        WebFlows.patientBoxEntry(9);
+        Thread.sleep(6000);
+        doctorFlows.stopAllActiveInstructionToPatient();
+        doctorFlows.newDrug();
+        doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (ALPRALID)", 100, 1, null, false, false, true);
+        doctorFlows.approvalInstruction();
+    }
      @Test(description = "take picture cardex daily report and updateExecutionPage at 23 o'clock ")
      @Description("take picture cardex daily report and updateExecutionPage at 23 o'clock ")
      public void addDrug_andExecute_takePictureToDailyReportAndUpdateExecutionPage() throws InterruptedException, IOException {
          // doctor add daily drug
          String departmentName = "חדר מיון";
-        WebFlows.login('d');
-        Thread.sleep(6000);
-       //  departmentFlows.chooseDepartment(departmentName);
-
-        WebFlows.patientBoxEntry(9);
-        Thread.sleep(6000);
-         doctorFlows.stopAllActiveInstructionToPatient();
-         doctorFlows.newDrug();
-         doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (ALPRALID)",100,1,null,false,false,true);
-          doctorFlows.approvalInstruction();
-         afterMethod();
+//        WebFlows.login('d');
+//        Thread.sleep(6000);
+//       //  departmentFlows.chooseDepartment(departmentName);
+//
+//        WebFlows.patientBoxEntry(9);
+//        Thread.sleep(6000);
+//         doctorFlows.stopAllActiveInstructionToPatient();
+//         doctorFlows.newDrug();
+//         doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (ALPRALID)",100,1,null,false,false,true);
+//          doctorFlows.approvalInstruction();
+//         afterMethod();
          //nurse approval drug and execute
          WebFlows.login('n');
          Thread.sleep(2000);
