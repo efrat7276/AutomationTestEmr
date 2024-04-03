@@ -19,6 +19,8 @@ import java.io.IOException;
 public class restoreBugsAt23 extends CommonOps {
 
 
+    @Test(description = "add drug  ")
+    @Description("add drug ")
     public void addDrug() throws InterruptedException, IOException {
         // doctor add daily drug
         String departmentName = "חדר מיון";
@@ -33,8 +35,8 @@ public class restoreBugsAt23 extends CommonOps {
         doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (ALPRALID)", 100, 1, null, false, false, true);
         doctorFlows.approvalInstruction();
     }
-     @Test(description = "take picture cardex daily report and updateExecutionPage at 23 o'clock ")
-     @Description("take picture cardex daily report and updateExecutionPage at 23 o'clock ")
+    @Test(description = "take picture cardex daily report and updateExecutionPage at 23 o'clock ")
+    @Description("take picture cardex daily report and updateExecutionPage at 23 o'clock ")
      public void addDrug_andExecute_takePictureToDailyReportAndUpdateExecutionPage() throws InterruptedException, IOException {
          // doctor add daily drug
          String departmentName = "חדר מיון";
@@ -52,7 +54,7 @@ public class restoreBugsAt23 extends CommonOps {
          //nurse approval drug and execute
          WebFlows.login('n');
          Thread.sleep(2000);
-         departmentFlows.chooseDepartment(departmentName);
+        // departmentFlows.chooseDepartment(departmentName);
 
            WebFlows.patientBoxEntry(9);
          nurseFlows.approvalDrugsDaily(1,false);
