@@ -37,7 +37,7 @@ public class nutritionFlows extends CommonOps {
 
     @Step("add nutrition continues ins")
     public static void nutritionFormAddNutritionContinues(String drugName , int rate , boolean addAndClose )  {
-        doctorFlows.drugFormAddLiquidDrug(drugName,null , 12, true);
+        doctorFlows.drugFormAddLiquidDrug(drugName,null , 12,true);
     }
 
     @Step("add nutrition continues ins")

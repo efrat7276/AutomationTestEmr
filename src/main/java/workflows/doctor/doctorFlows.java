@@ -328,25 +328,19 @@ public class doctorFlows extends CommonOps {
                  UIActions.click(drugForm.listRadioPossbility.get(2));
                 break;
             case 11 :
-                try {
+          try{
                     UIActions.click(drugForm.listRadioPossbility.get(5));
-                    fillDrugDilutedDetails(2);
                 }
-                catch (Exception exception){
-                    if (exception.equals("IndexOutOfBoundsException"))
-                        fillDrugDilutedDetails(2);
-
-                    //    UIActions.click(drugForm.listRadioPossbility.get(0));
-                    else return;
-                }
+                catch (Exception e){
+                    UIActions.click(drugForm.listRadioPossbility.get(0));}
+                fillDrugDilutedDetails(2);
                 break;
             case 12 :
-                try {
-                    UIActions.click(drugForm.listRadioPossbility.get(6));
-                }
-                catch (java.lang.IndexOutOfBoundsException exception){
-                        UIActions.click(drugForm.listRadioPossbility.get(1));
-                }
+               try {
+                   UIActions.click(drugForm.listRadioPossbility.get(6));
+               }
+               catch (Exception e){
+                    UIActions.click(drugForm.listRadioPossbility.get(1));}
                 fillDrugContinuesDetails(20);
                 break;
 

@@ -29,9 +29,11 @@ public class regression1 extends CommonOps {
 //         weekly - פעמיים בשבוע
 //         SOS
 //        byHour - פעם ב-48 שעות
-        int patient_num = 6;
+        int patient_num = 9
+                ;
+        String department ="ט'נ' כללי";
         WebFlows.login('d');
-        departmentFlows.chooseDepartment("ט'נ' כללי");
+        departmentFlows.chooseDepartment(department);
 
         WebFlows.patientBoxEntry(patient_num);
         doctorFlows.stopAllActiveInstructionToPatient();
@@ -72,17 +74,18 @@ public class regression1 extends CommonOps {
         doctorFlows.drugFormAddDrugWeekly("TAB FLUoxetine 20mg (FLUTINE)" , 2, "20",null,true);
 
 
-        //  תרופות נוזליות
+//        //  תרופות נוזליות
         doctorFlows.newDrug();
-        doctorFlows.drugFormAddLiquidDrug("INJ atracrium 25mg/2.5ml (TRACRIUM)", "dextrose 5% 500ml", 11, false);
+        doctorFlows.drugFormAddLiquidDrug("INJ atracrium 25mg/2.5ml (TRACRIUM)", "dextrose 5% 500ml", 11,false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
         Thread.sleep(500);
 
-        doctorFlows.drugFormAddLiquidDrug("INJ aflibercept 100mg (EYLEA)", "dextrose 5% 100ml", 12, false);
+        doctorFlows.drugFormAddLiquidDrug("INJ aflibercept 100mg (EYLEA)", "dextrose 5% 100ml", 12, true);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
         Thread.sleep(500);
+        doctorFlows.newDrug();
 
         doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 11, false);
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
@@ -90,18 +93,18 @@ public class regression1 extends CommonOps {
         Thread.sleep(500);
 
         doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 12, true);
-//
 
-        // הוראות כלליות
-        // daily - פעם ביום
-        // onceOnly - פעם ביום
 //
+//        // הוראות כלליות
+//        // daily - פעם ביום
+//        // onceOnly - פעם ביום
+////
         doctorFlows.newGeneralIns();
         generalInstructionFlows.generalFormAddGeneralInsDaily(1, 1, 1, false, false, false);
         generalInstructionFlows.generalFormAddGeneralInsOnceOnly(2, 1, "16:00", false, true);
-
-//        // מוצרי דם
-////        //todo  לשלוח שם וכמות מוצר דם
+//
+////        // מוצרי דם
+//////        //todo  לשלוח שם וכמות מוצר דם
         doctorFlows.newBloodProduct();
         bloodProductInstructionFlows.bloodProductFormAddBloodProduct(true);
 
@@ -117,17 +120,17 @@ public class regression1 extends CommonOps {
 
         doctorFlows.approvalInstruction();
 
+////
+////
+//////      //   3 דקות ללא כלום
+//////     //  Thread.sleep(240000);
+       afterMethod();
 //
-//
-////      //   3 דקות ללא כלום
-////     //  Thread.sleep(240000);
-        afterMethod();
-
 
 
         WebFlows.login('n');
         Thread.sleep(2000);
-        departmentFlows.chooseDepartment("ט'נ' כללי");
+        departmentFlows.chooseDepartment(department);
 
         WebFlows.patientBoxEntry(patient_num);
 
@@ -141,14 +144,12 @@ public class regression1 extends CommonOps {
 //        doctorFlows.newGeneralIns();
 //        generalInstructionFlows.generalFormAddGeneralInsDaily(1,1,1,false,false,true);
 //        doctorFlows.approvalInstruction();
-//
-//
 //        NavigateFlows.goToCategory("nurseConfirmation");
 //        NavigateFlows.goToSubCategory("instructionConfirmation");
 
         ////   todo לשלוח פרמטרים כמה פירוק מכל סוג
       nurseFlows.approvalAllPossibilitiesIns(true, false);
-
+//
        nurseFlows.approvalNurseSign();
         Thread.sleep(5000);
         NavigateFlows.goToCategory("cardex");
@@ -156,9 +157,9 @@ public class regression1 extends CommonOps {
         nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
         nurseFlows.executeAllLiquidAfterApprovalNurse();
         //ביצוע הוראות כלליות לא עובד
-        Thread.sleep(2000);
-        nurseFlows.executeAllGeneralInsAfterApprovalNurse();
-       Thread.sleep(2000);
+//        Thread.sleep(2000);
+//        nurseFlows.executeAllGeneralInsAfterApprovalNurse();
+//       Thread.sleep(2000);
         nurseFlows.executionNurseSign();
 
 
