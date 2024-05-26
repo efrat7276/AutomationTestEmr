@@ -94,8 +94,9 @@ public class CommonOps extends Base {
              sql_server = System.getenv("sql_server");
 
             if(env == null)
-             //   env= "qa";
-             env= "prod";
+              env= "qa";
+            // env= "prod";
+       //      env= "production";
 
               //    env= "automation";
 
@@ -134,6 +135,13 @@ public class CommonOps extends Base {
     }
 
     @AfterMethod
+    public static void afterMethod1() {
+
+        driver.quit();
+
+    }
+
+
     public static void afterMethod(){
 
         switch (env) {
@@ -147,6 +155,10 @@ public class CommonOps extends Base {
 
             case "dev":
                 driver.get(Helpers.getData("url-dev"));
+                break;
+
+            case "production":
+                driver.get(Helpers.getData("url-production"));
                 break;
         }
 

@@ -45,30 +45,26 @@ public class Listeners extends CommonOps  implements ITestListener {
         LogEntries entry = driver.manage().logs().get(LogType.BROWSER);
 
         List<LogEntry> logs= entry.getAll();
-        try {
-       //     FileWriter file = new FileWriter("");
-        }
-        catch (IOError e) {
-        }
-
-        if(logs.size() == 0)
-        {
-            System.out.println("No Console Logs");
-        }
-        for(LogEntry e: logs)
-        {
-            System.out.println("Message is: " +e.getMessage());
-            System.out.println("Level is: " +e.getLevel());
-            System.out.println(e);
 
 
-        }
-     //   Thread.sleep(2400000);
+//        if(logs.size() == 0)
+//        {
+//            System.out.println("No Console Logs");
+//        }
+//        for(LogEntry e: logs)
+//        {
+//           System.out.println("Message is: " +e.getMessage());
+//            System.out.println("Level is: " +e.getLevel());
+//            System.out.println(e);
+//        }
+
         saveScreenshot();
     }
 
-   @Attachment(value = "Page Screen-Shot", type = "image/png")
+   @Attachment(value = "Screen-Shot", type = "image/png")
     public byte[] saveScreenshot(){
+
+
        return ((TakesScreenshot)driver).getScreenshotAs((OutputType.BYTES));
    }
 

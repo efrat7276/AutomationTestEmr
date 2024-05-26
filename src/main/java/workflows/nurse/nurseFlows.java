@@ -5,6 +5,7 @@ import extensions.Verifications;
 import io.qameta.allure.Step;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -16,24 +17,24 @@ import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class nurseFlows extends CommonOps {
 
     @Step("approval all instruction")
-    public static void approvalAllPossibilitiesIns(boolean chooseHourCurrentDay, boolean existWeeklyDrug) throws InterruptedException, IOException {
+    public static void approvalAllPossibilitiesIns(boolean chooseHourCurrentDay, boolean existWeeklyDrug) throws InterruptedException {
 
         Date d = new Date();
         int today = d.getDay() + 1;
         int drugs_count = 0, gen_count = 0, liquid_count = 0, blood_count = 0;
-
+        List<WebElement> btnApprovalDrug =  approvalInstructionPage.btns_approveDrug ;
         //     Thread.sleep(10000);
 
         // האם צריך לבחור שעות ליום הנוכחי תרופות והוראות כלליות
         if (chooseHourCurrentDay) {
 
-            //תרופות
-            //  drugs_count = 5;
+            //תרופות לא יותר מפעם ביום
             if (approvalInstructionPage.btn_drug.size() > 0) {
                 for (int i = 0; i < approvalInstructionPage.btns_approveDrug.size(); i++) {
                    try {
@@ -48,7 +49,7 @@ public class nurseFlows extends CommonOps {
                             UIActions.click(approvalInstructionPage.days_checkBoxList.get(arrDaysNew[j]));
                         }
                     }
-                    UIActions.click(approvalInstructionPage.btns_approveDrug.get(i));
+                    UIActions.click(btnApprovalDrug.get(i));
                 }
             }
 
@@ -265,7 +266,8 @@ public class nurseFlows extends CommonOps {
 
     @Step("execute all daily_onceOnly_sos_weekly_byHour ins")
     public static void executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse() throws InterruptedException {
-                for (int i = 0; i < cardexPage.checkBoxListDrug.size(); i++)
+        Thread.sleep(1000);
+        for (int i = 0; i < cardexPage.checkBoxListDrug.size(); i++)
                     UIActions.click(cardexPage.checkBoxListDrug.get(i));
                 Thread.sleep(100);
     }
@@ -273,6 +275,7 @@ public class nurseFlows extends CommonOps {
     @Step("execute liquid drugs and blood-products")
     public static void executeAllLiquidAfterApprovalNurse() throws InterruptedException {
                  //continues and timeLimit
+        Thread.sleep(1000);
         if( cardexPage.checkBoxListSol.size()>0) {
             for (int i = 0; i < cardexPage.checkBoxListSol.size(); i++) {
                 UIActions.click(cardexPage.checkBoxListSol.get(i)); }

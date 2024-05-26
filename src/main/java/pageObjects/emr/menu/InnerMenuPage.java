@@ -18,6 +18,9 @@ public class InnerMenuPage {
     @FindBy(how = How.XPATH ,using="//div[contains(@class,'list-group-item menu-parent')]/span[text()=' מעקב רופא ']")
     public WebElement doctorfollowup;
 
+    @FindBy(how = How.XPATH ,using="//div[contains(@class,'list-group-item menu-parent')]/span[text()=' גליון מטופל ']")
+    public WebElement patientSheet;
+
     @FindBy(how = How.XPATH ,using="//div[contains(@class,'list-group-item menu-parent')]/span[text()=' אבחנות ']")
     public WebElement diagnoses;
 

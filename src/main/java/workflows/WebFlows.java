@@ -62,14 +62,14 @@ public class WebFlows extends CommonOps {
         UIActions.selectFromList(chooseRole.list , roleDescription);
     }
 
-//    @Step(" patientBoxEntry")
-//    public static void patientBoxEntry(String mispar_sherut){
-//
-//
-//        String mispar_sherut_katzar = mispar_sherut.substring(2);
-//        UIActions.searchInList(patientsList.list_patients, mispar_sherut_katzar);
-//
-//    }
+    @Step(" patientBoxEntry")
+    public static void patientBoxEntry(String mispar_sherut){
+
+
+      //  String mispar_sherut_katzar = mispar_sherut.substring(2);
+        UIActions.searchInList(patientsList.list_patients, mispar_sherut);
+
+    }
 
     @Step(" patientBoxEntry")
     public static void patientBoxEntry(int index){

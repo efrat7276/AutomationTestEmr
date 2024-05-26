@@ -88,6 +88,11 @@ public class Verifications extends CommonOps {
         assertTrue(elem.isDisplayed());
     }
 
+   // @Step("Verify The Element is Displayed")
+    public static void isTextBold(WebElement elem){
+        assertTrue(elem.getCssValue("font-weight")=="600");
+    }
+
     @Step("Verify Text Element is Not Displayed")
     public static void isNotDisplay(WebElement elem){
         try{
