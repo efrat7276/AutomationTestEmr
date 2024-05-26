@@ -18,18 +18,26 @@ import workflows.doctor.nutritionFlows;
 import workflows.general.general;
 import workflows.nurse.nurseFlows;
 import workflows.icu_department.*;
+import workflows.patientSheet.deviceDataFlows;
+import workflows.patientSheet.preliminaryActionsFlows;
+
 import java.io.IOException;
 import java.util.List;
+
+import static workflows.patientSheet.deviceDataFlows.add_an_error_comment_device_data;
 
 @Listeners(utilities.Listeners.class)
 public class regression1_icu extends CommonOps {
 
+   // String  patient_num = "24120811";
+    int  patient_num = 5;
+
+    String departmentICU = "ט'נ' כללי";
     @Test(description = "reception planning")
     @Description("reception planning")
     public void
     test01_icu_receptionPlanning() throws InterruptedException, IOException {
-        int patient_num = 3;
-        String departmentICU = "ט'נ' כללי";
+
         WebFlows.login('d');
         departmentFlows.chooseDepartment(departmentICU);
         WebFlows.patientBoxEntry(patient_num);
@@ -41,10 +49,10 @@ public class regression1_icu extends CommonOps {
         doctorFlows.approvalInstruction();
         Thread.sleep(1000);
         afterMethod();
-       // CommonOps.reLogin();
+        CommonOps.reLogin();
         WebFlows.login('n');
         departmentFlows.chooseDepartment(departmentICU);
-        WebFlows.patientBoxEntry(patient_num);
+       WebFlows.patientBoxEntry(patient_num);
         nurseFlows.approvalAllPossibilitiesIns(true,false);
         nurseFlows.approvalNurseSign();
         NavigateFlows.goToCategory("cardex");
@@ -52,30 +60,31 @@ public class regression1_icu extends CommonOps {
 
     }
 
+    @Test(description = "patient sheet")
+    @Description("patient sheet")
+    void check_patientSheet() throws InterruptedException {
 
-//
-//void aa() throws InterruptedException, IOException {
-//
-//
-//
-//    }
-//
-//
-//    @Test(description = "addToPatientTwoDrugsOneApprovedAndOneNotApproved")
-//    @Description("add to patient two drugs one approved and one not approved")
-//    public void test02_addToPatientTwoDrugsOneApprovedAndOneNotApproved(){
-//        // add to patient one drug not approved and drug approved
-//
-//        WebFlows.login('d');
-//        WebFlows.patientBoxEntry(1);
-//        doctorFlows.newDrug();
-//        doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (XANAX)", 20 , 3 , null , false , false , true);
-//        doctorFlows.approvalInstruction();
-//        doctorFlows.newDrug();
-//        doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (XANAX)", 100 , 3 , null , false , false , true);
-//    }
-//
-//
+       // preliminaryActionsFlows.addDrugs();
+       // Thread.sleep(1000);
+        WebFlows.login('d');
+        Thread.sleep(1000);
+
+
+
+
+
+       departmentFlows.chooseDepartment(departmentICU);
+       WebFlows.patientBoxEntry(patient_num);
+       NavigateFlows.goToCategory("patientSheet");
+       deviceDataFlows.confirm_device_data();
+       deviceDataFlows.make_error_device_data();
+       Thread.sleep(500);
+
+       deviceDataFlows.add_a_comment_device_data();
+        Thread.sleep(500);
+        deviceDataFlows.add_an_error_comment_device_data();
+
+    }
 
 
 

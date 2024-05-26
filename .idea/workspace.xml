@@ -19,28 +19,19 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="15.04.24">
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="26.05.24 - not big changes but commit after a long time of break">
       <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/catheter/CatheterAddPage.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/catheter/CatheterPage.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/workflows/patientSheet/deviceDataFlows.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/workflows/patientSheet/inputFlows.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/workflows/patientSheet/outputFlows.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/workflows/patientSheet/preliminaryActionsFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuration/DataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/DataConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/Verifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/Verifications.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/icu/patientSheet/patientSheetMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/icu/patientSheet/PatientSheetMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/icu/receptionTreatmentPlan/ReceptionTreatmentPlanMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/icu/receptionTreatmentPlan/ReceptionTreatmentPlanMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/mainPages/PatientsListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/mainPages/PatientsListPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/menu/InnerMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/menu/InnerMenuPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Listeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/WebFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/WebFlows.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/workflows/icu_department/planningReception.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/icu_department/planningReception.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs2.java" beforeDir="false" />
@@ -579,7 +570,7 @@
       <option name="presentableId" value="LOCAL‎00063" />
       <updated>1692789808338</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -610,7 +601,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="add package patient-sheet" />
     <MESSAGE value="regression_1 run all methods" />
     <MESSAGE value="regression_1 run all methods - fix" />
     <MESSAGE value="regression_1 comment" />
@@ -635,7 +625,8 @@
     <MESSAGE value="restore bug at 23 add function" />
     <MESSAGE value="restore bug at 23 add function - split to two function" />
     <MESSAGE value="15.04.24" />
-    <option name="LAST_COMMIT_MESSAGE" value="15.04.24" />
+    <MESSAGE value="26.05.24 - not big changes but commit after a long time of break" />
+    <option name="LAST_COMMIT_MESSAGE" value="26.05.24 - not big changes but commit after a long time of break" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
