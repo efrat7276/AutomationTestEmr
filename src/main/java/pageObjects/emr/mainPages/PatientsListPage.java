@@ -56,5 +56,7 @@ public class PatientsListPage {
     @FindBy(how= How.XPATH , using = "//button[@dontlock='true']/span")
     public WebElement span_nameDepartment;
 
+    @FindBy(how= How.XPATH , using = "//ul[contains(@class,'navbar-nav')]/li[5]//span[5]")
+    public WebElement nameUserConnect;
 
 }

@@ -40,11 +40,12 @@ public class planningReception extends CommonOps {
 //        js.executeScript("arguments[3].text='1.2';", nutritionPlan.input_nut_continous);
 //        js.executeScript("arguments[3].click;", nutritionPlan.checkBox_water);
 
+        UIActions.click(nutritionPlan.radio_glucos);
 
-      //  UIActions.click(nutritionPlan.input_economyDesc);
-//        UIActions.click(listChoices.listChoices.get(0));
-//        UIActions.updateText(nutritionPlan.input_nut_continous,"1.2");
-//        UIActions.click(nutritionPlan.checkBox_water);
+        UIActions.updateText(nutritionPlan.input_glucos,"dextrose 10% 500ml");
+        UIActions.click(listChoices.listChoices.get(0));
+        UIActions.updateText(nutritionPlan.input_glu_continous,"1.2");
+      //  UIActions.click(nutritionPlan.checkBox_water);
 
         // תוספת חלבון
 
@@ -79,7 +80,7 @@ public class planningReception extends CommonOps {
         UIActions.click(receptionTreatmentPlanMain.div_openFluidPlan);
 
 
-        UIActions.click(solutionPlan.input_solution_item);
+        UIActions.updateText(solutionPlan.input_solution_item,"heparin/saline 1000ml");
         UIActions.click(listChoices.listChoices.get(0));
         UIActions.updateText(solutionPlan.input_solution_rate,"20");
 
@@ -100,7 +101,7 @@ public class planningReception extends CommonOps {
 
         Thread.sleep(1000);
 
-        UIActions.click(solutionBolusPlan.input_solutionBolus_item);
+        UIActions.updateText(solutionBolusPlan.input_solutionBolus_item,"heparin/saline 1000ml");
         UIActions.click(listChoices.listChoices.get(0));
         //UIActions.click(solutionBolusPlan.input_solutionBolus_dosage,);
         UIActions.click(solutionBolusPlan.btn_solution_bolus_during);

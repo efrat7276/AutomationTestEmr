@@ -9,6 +9,7 @@ import pageObjects.emr.*;
 import pageObjects.emr.addForms.*;
 import pageObjects.emr.generalComponents.ListChoicesComponent;
 import pageObjects.emr.generalComponents.NumberOfTimeListComponent;
+import pageObjects.emr.icu.patientSheet.PatientSheetMain;
 import pageObjects.emr.icu.receptionTreatmentPlan.*;
 import pageObjects.emr.mainPages.*;
 import pageObjects.emr.menu.InnerMenuPage;
@@ -117,7 +118,9 @@ public class Base {
 
 
 
+   //ICU
 
+  protected static PatientSheetMain patientSheetMain;
 
 
 }

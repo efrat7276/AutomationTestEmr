@@ -23,7 +23,7 @@ public class ReceptionTreatmentPlanMain {
     @FindBy(how=How.ID, using="open-common")
     public WebElement div_openDrugCommonPlan;
 
-    @FindBy(how=How.XPATH, using="//icu-instructions/form/button[2]")
+    @FindBy(how=How.XPATH, using="//icu-instructions/form//button[2]")
     public WebElement btn_ok;
 
     @FindBy(how=How.XPATH, using="//icu-instructions/form/button[1]")
