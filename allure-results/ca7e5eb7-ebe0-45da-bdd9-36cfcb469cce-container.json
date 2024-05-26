@@ -1,0 +1,1 @@
+{"uuid":"ca7e5eb7-ebe0-45da-bdd9-36cfcb469cce","name":"regression_1","children":["eae7a6fa-0e86-4860-9af9-9d8bf3ec7e49"],"befores":[{"name":"BeforeSuite","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1697649674851,"stop":1697649675538}],"afters":[],"links":[],"start":1697649674820,"stop":1697650381363}
