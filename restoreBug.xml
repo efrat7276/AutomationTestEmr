@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="restoreBug2" parallel="false">
+
+    <test name="run at 6 and 20  o'clock - restore bugs">
+        <classes>
+            <class name="restoreBugs.restoreBugs">
+                <methods>
+                    <include name="take_pic_cardex"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

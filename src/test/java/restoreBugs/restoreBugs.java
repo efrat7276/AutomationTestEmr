@@ -58,5 +58,16 @@ public class restoreBugs extends CommonOps {
 
     }
 
+    @Test(description = "take picture cardex ")
+    @Description("take picture cardex")
+    public void take_pic_cardex() throws InterruptedException, IOException {
+        WebFlows.login('n');
+        Thread.sleep(3000);
+        WebFlows.patientBoxEntry(7);
+        Thread.sleep(5000);
+
+        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+ Helpers.getFileName("cardex")+".png"));
+    }
+
 
 }
