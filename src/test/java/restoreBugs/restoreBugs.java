@@ -62,11 +62,20 @@ public class restoreBugs extends CommonOps {
     @Description("take picture cardex")
     public void take_pic_cardex() throws InterruptedException, IOException {
         WebFlows.login('n');
-        Thread.sleep(3000);
+        Thread.sleep(6000);
         WebFlows.patientBoxEntry(7);
         Thread.sleep(5000);
 
-        FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+ Helpers.getFileName("cardex")+".png"));
+
+        //   FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+ Helpers.getFileName("cardex")+".png"));
+        try {
+
+            FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File( Helpers.getFileName("cardex") + ".png"));
+        }
+        catch (Exception e){
+            System.out.println("תמונה לא נשמרה");
+        }
+
     }
 
 
