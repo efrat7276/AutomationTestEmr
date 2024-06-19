@@ -65,16 +65,17 @@ public class restoreBugs extends CommonOps {
         Thread.sleep(6000);
         WebFlows.patientBoxEntry(7);
         Thread.sleep(5000);
-
-
-        //   FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+ Helpers.getFileName("cardex")+".png"));
-        try {
-
-            FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File( Helpers.getFileName("cardex") + ".png"));
-        }
-        catch (Exception e){
-            System.out.println("תמונה לא נשמרה");
-        }
+// נפילה מכוונת
+        doctorFlows.newDrug();
+//
+//        //   FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+ Helpers.getFileName("cardex")+".png"));
+//        try {
+//
+//            FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File( Helpers.getFileName("cardex") + ".png"));
+//        }
+//        catch (Exception e){
+//            System.out.println("תמונה לא נשמרה");
+//        }
 
     }
 
