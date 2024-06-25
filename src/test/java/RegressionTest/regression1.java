@@ -29,7 +29,7 @@ public class regression1 extends CommonOps {
 //         weekly - פעמיים בשבוע
 //         SOS
 //        byHour - פעם ב-48 שעות
-        int patient_num = 9
+        int patient_num = 5
                 ;
         String department ="ט'נ' כללי";
         WebFlows.login('d');
@@ -46,9 +46,8 @@ public class regression1 extends CommonOps {
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
         Thread.sleep(500);
 
-        //daily drug future
-        doctorFlows.drugFormAddDrugDaily("enoxaparin", 20, 1, "1", false, true, false);
-        // doctorFlows.drugFormAddDrugDaily(drugDaily.drug_desc,drugDaily.dosage,drugDaily.numberOfTime,drugDaily.routeAdmin,drugDaily.isAntibiotic,drugDaily.isFutureDate,false);
+//        //daily drug future
+//        doctorFlows.drugFormAddDrugDaily("enoxaparin", 20, 1, "1", false, true, false);
         //once-only drug
         drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
