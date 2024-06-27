@@ -3,6 +3,7 @@ import extensions.UIActions;
 import io.qameta.allure.Description;
 //import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FileUtils;
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
@@ -66,7 +67,7 @@ public class restoreBugs extends CommonOps {
         WebFlows.patientBoxEntry(7);
         Thread.sleep(5000);
 // נפילה מכוונת
-        doctorFlows.newDrug();
+        Assert.fail();
 //
 //        //   FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+ Helpers.getFileName("cardex")+".png"));
 //        try {
