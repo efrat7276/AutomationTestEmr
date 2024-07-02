@@ -29,11 +29,11 @@ public class regression1 extends CommonOps {
 //         weekly - פעמיים בשבוע
 //         SOS
 //        byHour - פעם ב-48 שעות
-        int patient_num = 5
+        int patient_num = 2;
                 ;
-        String department ="ט'נ' כללי";
+        //String department ="ט'נ' כללי";
         WebFlows.login('d');
-        departmentFlows.chooseDepartment(department);
+     //   departmentFlows.chooseDepartment(department);
 
         WebFlows.patientBoxEntry(patient_num);
         doctorFlows.stopAllActiveInstructionToPatient();
@@ -128,7 +128,7 @@ public class regression1 extends CommonOps {
 
         WebFlows.login('n');
         Thread.sleep(2000);
-        departmentFlows.chooseDepartment(department);
+      //  departmentFlows.chooseDepartment(department);
 
         WebFlows.patientBoxEntry(patient_num);
 
