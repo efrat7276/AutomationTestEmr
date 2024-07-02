@@ -110,10 +110,26 @@ public class DrugForm {
     public List<WebElement> div_newDrugs;
 
     //possibility
+    @FindBy(how = How.XPATH, using = "//input[contains(@id,'drugTimeGivingPossibilitiesID')]/following-sibling::label[text()=' Daily ']")
+    public WebElement possibilityDaily;
 
-    @FindBy(how = How.XPATH, using = "//input[contains(@id,'drugTimeGivingPossibilitiesID')]/following-sibling::label")
-    public List<WebElement> listRadioPossbility;
+    @FindBy(how = How.XPATH, using = "//input[contains(@id,'drugTimeGivingPossibilitiesID')]/following-sibling::label[text()=' SOS ']")
+    public WebElement possibilitySOS;
+    @FindBy(how = How.XPATH, using = "//input[contains(@id,'drugTimeGivingPossibilitiesID')]/following-sibling::label[text()=' Once Only ']")
+    public WebElement possibilityOnceOnly;
+    @FindBy(how = How.XPATH, using = "//input[contains(@id,'drugTimeGivingPossibilitiesID')]/following-sibling::label[text()=' By Hour ']")
+    public WebElement possibilityByHour;
+    @FindBy(how = How.XPATH, using = "//input[contains(@id,'drugTimeGivingPossibilitiesID')]/following-sibling::label[text()=' Weekly ']")
+    public WebElement possibilityWeekly;
+    @FindBy(how = How.XPATH, using = "//input[contains(@id,'drugTimeGivingPossibilitiesID')]/following-sibling::label[text()=' Cycle ']")
+    public WebElement possibilityCycle;
+    @FindBy(how = How.XPATH, using = "//input[contains(@id,'drugTimeGivingPossibilitiesID')]/following-sibling::label[text()=' Time Limit ']")
+    public WebElement possibilityTimeLimit;
+    @FindBy(how = How.XPATH, using = "//input[contains(@id,'drugTimeGivingPossibilitiesID')]/following-sibling::label[text()=' Continuous ']")
+    public WebElement possibilityContinuous ;
 
+    @FindBy(how = How.XPATH, using = "//input[contains(@id,'drugTimeGivingPossibilitiesID')]/following-sibling::label[text()=' Constant Rate ']")
+    public WebElement possibilityConstantRate ;
 
     //modals
 

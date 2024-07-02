@@ -14,6 +14,7 @@ import workflows.WebFlows;
 import javax.annotation.Nullable;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class doctorFlows extends CommonOps {
@@ -233,7 +234,7 @@ public class doctorFlows extends CommonOps {
     public static void drugFormAddDrugOnceOnly(String drugName ,String dosage, String hour , String routeAdinistration , boolean withExecute , boolean addAndClose){
 
         fillDrugsDetails(drugName, dosage,routeAdinistration);
-         UIActions.click(drugForm.listRadioPossbility.get(2));
+         UIActions.click(drugForm.possibilityOnceOnly);
         if(hour!=null)  fillDrugOnceOnlyHour(hour);
         UIActions.updateText(drugForm.input_drugComment, "בדיקות אוטו'");
         if(withExecute)  fillWithExecute();
@@ -266,7 +267,7 @@ public class doctorFlows extends CommonOps {
 
         fillDrugsDetails(drugName,dosage,routeAdinistration);
         UIActions.updateText(drugForm.input_drugComment, "בדיקות אוטו'");
-         UIActions.click(drugForm.listRadioPossbility.get(1));
+         UIActions.click(drugForm.possibilitySOS);
         fillDrugSOSDetails(max, min);
         if(addAndClose)
             drugForm.btn_addAndClose.click();
@@ -279,7 +280,7 @@ public class doctorFlows extends CommonOps {
     public static void drugFormAddDrugByHour(String drugName ,int everyXHour , String dosage, String routeAdinistration,boolean addAndClose ){
 
         fillDrugsDetails(drugName,dosage,routeAdinistration);
-         UIActions.click(drugForm.listRadioPossbility.get(3));
+         UIActions.click(drugForm.possibilityByHour);
         UIActions.updateText(drugForm.input_drugComment, "בדיקות אוטו'");
         fillEveryXHour(String.valueOf(everyXHour));
         if(addAndClose)
@@ -292,7 +293,7 @@ public class doctorFlows extends CommonOps {
     public static void drugFormAddDrugWeekly(String drugName ,int timePerWeek , String dosage, String routeAdinistration ,boolean addAndClose){
 
         fillDrugsDetails(drugName,dosage,routeAdinistration);
-         UIActions.click(drugForm.listRadioPossbility.get(4));
+         UIActions.click(drugForm.possibilityWeekly);
         UIActions.updateText(drugForm.input_drugComment, "בדיקות אוטו'");
         fillDrugWeeklyDetails(timePerWeek);
         if(addAndClose)
@@ -317,30 +318,30 @@ public class doctorFlows extends CommonOps {
         switch (possId){
 
             case 1 :
-                 UIActions.click(drugForm.listRadioPossbility.get(0));
+                UIActions.click(drugForm.possibilityDaily);
                 fillDrugNumberOfTimes(1);
-                 break;
+                break;
             case 2 :
-                 UIActions.click(drugForm.listRadioPossbility.get(1));
+                UIActions.click(drugForm.possibilitySOS);
                 fillDrugSOSDetails(3,5);
                 break;
             case 3 :
-                 UIActions.click(drugForm.listRadioPossbility.get(2));
+                UIActions.click(drugForm.possibilityOnceOnly);
                 break;
             case 11 :
           try{
-                    UIActions.click(drugForm.listRadioPossbility.get(5));
+                    UIActions.click(drugForm.possibilityTimeLimit);
                 }
                 catch (Exception e){
-                    UIActions.click(drugForm.listRadioPossbility.get(0));}
+                    UIActions.click(drugForm.possibilityDaily);}
                 fillDrugDilutedDetails(2);
                 break;
             case 12 :
                try {
-                   UIActions.click(drugForm.listRadioPossbility.get(6));
+                   UIActions.click(drugForm.possibilityContinuous);
                }
                catch (Exception e){
-                    UIActions.click(drugForm.listRadioPossbility.get(1));}
+                    UIActions.click(drugForm.possibilityDaily);}
                 fillDrugContinuesDetails(20);
                 break;
 
