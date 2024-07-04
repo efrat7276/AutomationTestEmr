@@ -29,7 +29,7 @@ public class regression1 extends CommonOps {
 //         weekly - פעמיים בשבוע
 //         SOS
 //        byHour - פעם ב-48 שעות
-        int patient_num = 2;
+        int patient_num = 3;
                 ;
         //String department ="ט'נ' כללי";
         WebFlows.login('d');
