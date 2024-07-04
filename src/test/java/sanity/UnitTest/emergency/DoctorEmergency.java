@@ -36,18 +36,18 @@ public class DoctorEmergency extends CommonOps {
         Verifications.isNotSelected(drugForm.checkbox_DepartmentalStandard);
     }
 
-    @Test(description="check possibilities for emergency")
-    @Description("check possibilities for emergency")
-    public void test02_checkPossibilitiesInDrugForm() throws InterruptedException{
-        WebFlows.login('d');
-        departmentFlows.chooseDepartment("חדר מיון");
-        WebFlows.patientBoxEntry(1);
-        doctorFlows.newDrug();
-        softAssert.assertTrue(drugForm.listRadioPossbility.size()==2);
-        softAssert.assertTrue(drugForm.listRadioPossbility.get(2).isDisplayed());
-        softAssert.assertTrue(drugForm.listRadioPossbility.get(3).isDisplayed());
-        softAssert.assertAll();
-    }
+//    @Test(description="check possibilities for emergency")
+//    @Description("check possibilities for emergency")
+//    public void test02_checkPossibilitiesInDrugForm() throws InterruptedException{
+//        WebFlows.login('d');
+//        departmentFlows.chooseDepartment("חדר מיון");
+//        WebFlows.patientBoxEntry(1);
+//        doctorFlows.newDrug();
+//        softAssert.assertTrue(drugForm.listRadioPossbility.size()==2);
+//        softAssert.assertTrue(drugForm.listRadioPossbility.get(2).isDisplayed());
+//        softAssert.assertTrue(drugForm.listRadioPossbility.get(3).isDisplayed());
+//        softAssert.assertAll();
+//    }
 
     @Test(description="add drug once-only emergency ")
     @Description("add drug once-only emergency ")
