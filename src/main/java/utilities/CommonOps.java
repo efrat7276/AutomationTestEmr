@@ -94,11 +94,11 @@ public class CommonOps extends Base {
              sql_server = System.getenv("sql_server");
 
             if(env == null)
-              env= "qa";
-            // env= "prod";
+           //   env= "qa";
+           env= "prod";
        //      env= "production";
 
-              //    env= "automation";
+                //env= "automation";
 
          //   if(sql_server==null)
 
