@@ -10,6 +10,7 @@ import utilities.CommonOps;
 import utilities.Helpers;
 import workflows.WebFlows;
 import workflows.doctor.doctorFlows;
+import workflows.nurse.nurseFlows;
 
 import java.io.File;
 import java.io.IOException;
@@ -66,7 +67,14 @@ public class restoreBugs extends CommonOps {
         Thread.sleep(6000);
         WebFlows.patientBoxEntry(7);
         Thread.sleep(5000);
+        nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
+        nurseFlows.executeAllLiquidAfterApprovalNurse();
+        // nurseFlows.executeAllGeneralInsAfterApprovalNurse();
+        Thread.sleep(1000);
+        nurseFlows.executionNurseSign();
 // נפילה מכוונת
+        Thread.sleep(1000);
+
         Assert.fail();
 //
 //        //   FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("E:\\import\\AutomationProject_emr\\temp\\"+ Helpers.getFileName("cardex")+".png"));
