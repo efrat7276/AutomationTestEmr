@@ -65,7 +65,7 @@ public class restoreBugs extends CommonOps {
     public void take_pic_cardex() throws InterruptedException, IOException {
         WebFlows.login('n');
         Thread.sleep(6000);
-        WebFlows.patientBoxEntry(7);
+        WebFlows.patientBoxEntry(1);
         Thread.sleep(5000);
         nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
         nurseFlows.executeAllLiquidAfterApprovalNurse();
