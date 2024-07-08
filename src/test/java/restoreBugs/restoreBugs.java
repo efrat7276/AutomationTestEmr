@@ -67,6 +67,9 @@ public class restoreBugs extends CommonOps {
         Thread.sleep(6000);
         WebFlows.patientBoxEntry(1);
         Thread.sleep(5000);
+        UIActions.click(cardexPage.arrowForward);
+        Thread.sleep(500);
+
         nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
         nurseFlows.executeAllLiquidAfterApprovalNurse();
         // nurseFlows.executeAllGeneralInsAfterApprovalNurse();

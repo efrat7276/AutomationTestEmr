@@ -8,8 +8,8 @@ import java.util.List;
 
 public class CardexPage {
 
-    @FindBy(how = How.XPATH , using = "//div[@class=row oneDrugLine]")
-    public List<WebElement> listDrug;
+    @FindBy(how = How.XPATH , using =  "//div[@class='oneDayLine col-sm-12 row blue-color']//button[@class='indication']/i")
+    public WebElement arrowForward;
 
 
     //just for test user
