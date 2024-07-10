@@ -282,11 +282,11 @@ public class nurseFlows extends CommonOps {
             Thread.sleep(3000);
 
         }
-                //continues and timeLimit - blood
-        if(cardexPage.checkBoxListBlood.size()>0)
-            for (int i = 0; i < cardexPage.checkBoxListBlood.size(); i++) {
-                UIActions.click(cardexPage.checkBoxListBlood.get(i)); }
-        Thread.sleep(3000);
+//                //continues and timeLimit - blood
+//        if(cardexPage.checkBoxListBlood.size()>0)
+//            for (int i = 0; i < cardexPage.checkBoxListBlood.size(); i++) {
+//                UIActions.click(cardexPage.checkBoxListBlood.get(i)); }
+//        Thread.sleep(3000);
 
     }
 
