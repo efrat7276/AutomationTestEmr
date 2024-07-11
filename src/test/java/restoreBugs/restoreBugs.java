@@ -65,18 +65,18 @@ public class restoreBugs extends CommonOps {
     public void take_pic_cardex() throws InterruptedException, IOException {
         WebFlows.login('n');
         Thread.sleep(6000);
-        WebFlows.patientBoxEntry(1);
+        WebFlows.patientBoxEntry(5);
         Thread.sleep(5000);
-        UIActions.click(cardexPage.arrowForward);
-        Thread.sleep(500);
-
-        nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
-        nurseFlows.executeAllLiquidAfterApprovalNurse();
-        // nurseFlows.executeAllGeneralInsAfterApprovalNurse();
-        Thread.sleep(1000);
-        nurseFlows.executionNurseSign();
+//        UIActions.click(cardexPage.arrowForward);
+//        Thread.sleep(500);
+//
+//        nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
+//        nurseFlows.executeAllLiquidAfterApprovalNurse();
+//        // nurseFlows.executeAllGeneralInsAfterApprovalNurse();
+//        Thread.sleep(1000);
+//        nurseFlows.executionNurseSign();
 // נפילה מכוונת
-        Thread.sleep(1000);
+      //  Thread.sleep(1000);
 
         Assert.fail();
 //
