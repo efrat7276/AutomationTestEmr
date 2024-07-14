@@ -70,11 +70,11 @@ public class restoreBugs extends CommonOps {
 //        UIActions.click(cardexPage.arrowForward);
 //        Thread.sleep(500);
 //
-//        nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
+       nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
 //        nurseFlows.executeAllLiquidAfterApprovalNurse();
 //        // nurseFlows.executeAllGeneralInsAfterApprovalNurse();
-//        Thread.sleep(1000);
-//        nurseFlows.executionNurseSign();
+    Thread.sleep(1000);
+       nurseFlows.executionNurseSign();
 // נפילה מכוונת
       //  Thread.sleep(1000);
 
