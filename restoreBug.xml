@@ -8,7 +8,7 @@
         <classes>
             <class name="restoreBugs.restoreBugs">
                 <methods>
-                    <include name="take_pic_cardex"></include>
+                    <include name="take_pic_patientList"></include>
                 </methods>
             </class>
         </classes>

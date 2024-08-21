@@ -92,4 +92,15 @@ public class restoreBugs extends CommonOps {
     }
 
 
+    @Test(description = "take picture cardex ")
+    @Description("take picture cardex")
+    public void take_pic_patientList() throws InterruptedException, IOException {
+        WebFlows.login('n');
+        Thread.sleep(6000);
+
+        Assert.fail();
+    }
+
+
+
 }
