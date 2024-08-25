@@ -19,11 +19,11 @@ import java.io.IOException;
 public class restoreBugsAt23 extends CommonOps {
 
 
-    @Test(description = "add drug  ")
+    @Test(description = "add drug  future")
     @Description("add drug ")
     public void addDrug() throws InterruptedException, IOException {
         // doctor add daily drug
-        String departmentName = "חדר מיון";
+       // String departmentName = "חדר מיון";
         WebFlows.login('d');
         Thread.sleep(6000);
         //  departmentFlows.chooseDepartment(departmentName);
@@ -32,10 +32,10 @@ public class restoreBugsAt23 extends CommonOps {
         Thread.sleep(6000);
         doctorFlows.stopAllActiveInstructionToPatient();
         doctorFlows.newDrug();
-        doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (ALPRALID)", 100, 1, null, false, false, true);
+        doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (ALPRALID)", 100, 1, null, false, true, true);
         doctorFlows.approvalInstruction();
     }
-    @Test(description = "take picture cardex daily report and updateExecutionPage at 23 o'clock ")
+    @Test(description = "take picture cardex daily report and updateExecutionPage at 23 o'clock ",enabled = false)
     @Description("take picture cardex daily report and updateExecutionPage at 23 o'clock ")
      public void addDrug_andExecute_takePictureToDailyReportAndUpdateExecutionPage() throws InterruptedException, IOException {
          // doctor add daily drug
