@@ -8,6 +8,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
 import utilities.Helpers;
+import workflows.NavigateFlows;
 import workflows.WebFlows;
 import workflows.doctor.doctorFlows;
 import workflows.nurse.nurseFlows;
@@ -101,6 +102,34 @@ public class restoreBugs extends CommonOps {
         Assert.fail();
     }
 
+    @Test(description = "add drug  continuous at 0 a'clock")
+    @Description("add rug  continuous at 0 a'clock")
+    public void addSolutionWithRate() throws InterruptedException, IOException {
+
+        int patient_num = 3;
+        WebFlows.login('d');
+        Thread.sleep(6000);
+        WebFlows.patientBoxEntry(patient_num);
+        Thread.sleep(6000);
+        doctorFlows.stopAllActiveInstructionToPatient();
+        doctorFlows.newDrug();
+        doctorFlows.drugFormAddLiquidDrug("INJ heparin 100u/ml 2ml","saline 0.9% 100ml",12,true);
+        doctorFlows.approvalInstruction();
+        afterMethod();
+
+        WebFlows.login('n');
+//        Thread.sleep(2000);
+        WebFlows.patientBoxEntry(patient_num);
+        nurseFlows.approvalAllPossibilitiesIns(true, false);
+        nurseFlows.approvalNurseSign();
+        Thread.sleep(5000);
+        NavigateFlows.goToCategory("cardex");
+        nurseFlows.executeSupervisionToSolution();
+        nurseFlows.executeAllLiquidAfterApprovalNurse();
+        nurseFlows.executionNurseSign();
+
+
+    }
 
 
 }
