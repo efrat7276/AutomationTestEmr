@@ -8,6 +8,8 @@
         <classes>
             <class name="restoreBugs.restoreBugs">
                 <methods>
+                    <include name="addDrug"></include>
+
                     <include name="addSolutionWithRate"></include>
                 </methods>
             </class>
