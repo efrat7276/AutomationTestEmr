@@ -101,20 +101,19 @@ public class restoreBugs extends CommonOps {
 
         Assert.fail();
     }
-    @Test(description = "add drug ")
+    @Test(description = "add drug")
     @Description("add drug ")
     public void addDrug() throws InterruptedException, IOException {
-        // doctor add daily drug
-        // String departmentName = "חדר מיון";
+
         WebFlows.login('d');
         Thread.sleep(6000);
         //  departmentFlows.chooseDepartment(departmentName);
 
         WebFlows.patientBoxEntry(6);
         Thread.sleep(6000);
-        doctorFlows.stopAllActiveInstructionToPatient();
+        //doctorFlows.stopAllActiveInstructionToPatient();
         doctorFlows.newDrug();
-        doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (ALPRALID)", 100, 1, null, false, false, true);
+        doctorFlows.drugFormAddDrugDaily("TAB ALPRAZolam 0.5mg (ALPRALID)", 100, 3, null, false, false, true);
         doctorFlows.approvalInstruction();
     }
 
