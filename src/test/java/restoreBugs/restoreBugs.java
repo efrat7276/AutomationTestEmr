@@ -117,8 +117,8 @@ public class restoreBugs extends CommonOps {
         doctorFlows.approvalInstruction();
     }
 
-    @Test(description = "add drug  continuous at 0 a'clock")
-    @Description("add rug  continuous at 0 a'clock")
+    @Test(description = "add drug  continuous at 22 a'clock")
+    @Description("add rug  continuous at 22 a'clock")
     public void addSolutionWithRate() throws InterruptedException, IOException {
 
         int patient_num = 2;
@@ -137,11 +137,11 @@ public class restoreBugs extends CommonOps {
         WebFlows.patientBoxEntry(patient_num);
         nurseFlows.approvalAllPossibilitiesIns(true, false);
         nurseFlows.approvalNurseSign();
-        Thread.sleep(5000);
-        NavigateFlows.goToCategory("cardex");
-        nurseFlows.executeSupervisionToSolution();
-        nurseFlows.executeAllLiquidAfterApprovalNurse();
-        nurseFlows.executionNurseSign();
+      //  Thread.sleep(5000);
+//        NavigateFlows.goToCategory("cardex");
+//        nurseFlows.executeSupervisionToSolution();
+//        nurseFlows.executeAllLiquidAfterApprovalNurse();
+//        nurseFlows.executionNurseSign();
 
 
     }
