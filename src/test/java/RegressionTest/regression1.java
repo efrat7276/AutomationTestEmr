@@ -31,7 +31,7 @@ public class regression1 extends CommonOps {
 //        byHour - פעם ב-48 שעות
         int patient_num = 3;
                 ;
-        //String department ="ט'נ' כללי";
+        String department ="ט'נ' כללי";
         WebFlows.login('d');
      //   departmentFlows.chooseDepartment(department);
 
@@ -123,7 +123,7 @@ public class regression1 extends CommonOps {
 //////      //   3 דקות ללא כלום
 //////     //  Thread.sleep(240000);
        afterMethod();
-//
+//////
 
 
         WebFlows.login('n');

@@ -32,13 +32,17 @@ public class nurseFlows extends CommonOps {
         //     Thread.sleep(10000);
 
         // האם צריך לבחור שעות ליום הנוכחי תרופות והוראות כלליות
-        if (chooseHourCurrentDay) {
-
+       if (chooseHourCurrentDay) {
+//
             //תרופות לא יותר מפעם ביום
             if (approvalInstructionPage.btn_drug.size() > 0) {
                 for (int i = 0; i < approvalInstructionPage.btns_approveDrug.size(); i++) {
                    try {
                        UIActions.click(approvalInstructionPage.btn_drug.get(i));
+                       if (approvalInstructionPage.possibilityDescDrug.get(i).getText().contains("Cycle")) {
+                           UIActions.click(approvalInstructionPage.ul_drug.get(3));
+                       }
+                       else
                        UIActions.click(approvalInstructionPage.ul_drug.get(4));
                    }
                    catch (Exception error){ }
@@ -53,6 +57,16 @@ public class nurseFlows extends CommonOps {
                 }
             }
 
+
+           // נוזלים
+           for (int i = 0; i < approvalInstructionPage.btns_approveSolution.size(); i++) {
+               Thread.sleep(1000);
+               UIActions.click(approvalInstructionPage.solution_scale_currentHourList.get(i));
+               if(UIActions.isExist(approvalInstructionPage.btn_v_solution))
+                   UIActions.click(approvalInstructionPage.btn_V_liquid);
+               UIActions.click(approvalInstructionPage.btns_approveSolution.get(i));
+           }
+
             //הוראות כלליות
 
             //  gen_count = 2;
@@ -65,14 +79,6 @@ public class nurseFlows extends CommonOps {
             // }
 
 
-            // נוזלים
-            for (int i = 0; i < approvalInstructionPage.btns_approveSolution.size(); i++) {
-                Thread.sleep(500);
-                UIActions.click(approvalInstructionPage.solution_scale_currentHourList.get(i));
-                if(approvalInstructionPage.solution_scale_details_isContinues.get(i).getText().contains("continues")==false)
-                    UIActions.click(approvalInstructionPage.btn_V_liquid);
-                UIActions.click(approvalInstructionPage.btns_approveSolution.get(i));
-            }
 
             Thread.sleep(1000);
             // מוצרי דם
@@ -86,6 +92,8 @@ public class nurseFlows extends CommonOps {
             }
 
         }
+
+
     }
 
     @Step("approval drug daily")
@@ -108,6 +116,9 @@ public class nurseFlows extends CommonOps {
             // פירוק לשעות : לשעת מתן הקורבה ולאחריה השעות מתן הקורובת ברצף לדוגמא תרופה ל3 פעמים ביום שעת הפירוק 9 בבוקר יפורק ל-10 , 12 , 14
             for (int j = 0, k=4;  j< numberInDay ; j++, k+=1) {
                 approvalInstructionPage.btn_drug.get(i+j).click();
+
+
+                //todo התג Li הוא אח של btn ולא בן
                 approvalInstructionPage.ul_drug.get(i+j).findElements(By.tagName("li")).get(k).click();
             }
             approvalInstructionPage.btns_approveDrug.get(r).click();
