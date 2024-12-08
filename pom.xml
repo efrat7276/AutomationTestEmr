@@ -139,16 +139,25 @@
                 <artifactId>aspectjweaver</artifactId>
                 <version>${aspectj.version}</version>
             </dependency>
+
+
         </dependencies>
+
+
+
+
     </plugin>
     </plugins>
+
     </pluginManagement>
+
     </build>
 
     <profiles>
         <profile>
             <id>InstructionSanity</id>
             <build>
+
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -164,6 +173,8 @@
                             </argLine>
                         </configuration>
                     </plugin>
+
+
                 </plugins>
             </build>
         </profile>
