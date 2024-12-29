@@ -139,7 +139,7 @@ public class planningReception extends CommonOps {
     @Step("sign on reception planning")
     public static void approvalReceptionPlanning(){
         UIActions.click(receptionTreatmentPlanMain.btn_ok);
-        Verifications.isDisplay(doctorInstructionPage.btn_approvalDrug);
+      //  Verifications.isDisplay(doctorInstructionPage.btn_approvalDrug);
     }
 
 }

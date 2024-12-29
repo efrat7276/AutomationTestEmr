@@ -23,10 +23,10 @@ public class ReceptionTreatmentPlanMain {
     @FindBy(how=How.ID, using="open-common")
     public WebElement div_openDrugCommonPlan;
 
-    @FindBy(how=How.XPATH, using="//icu-instructions/form//button[2]")
+    @FindBy(how=How.ID, using="saveAllData")
     public WebElement btn_ok;
 
-    @FindBy(how=How.XPATH, using="//icu-instructions/form/button[1]")
+    @FindBy(how=How.ID, using="clearAllData")
     public WebElement btn_cancel;
 
 }

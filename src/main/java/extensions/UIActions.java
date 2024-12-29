@@ -137,6 +137,15 @@ public class UIActions extends CommonOps {
     }
 
     @Step("check if the element exist ")
+    public static boolean isDisplay(WebElement elem) {
+
+           if( elem.isDisplayed())
+            return true;
+           else
+            return false;
+    }
+
+    @Step("check if the element exist ")
     public static boolean isExist(WebElement elem) {
 
         try {

@@ -19,22 +19,47 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="26.05.24 - not big changes but commit after a long time of break">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/catheter/CatheterAddPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/catheter/CatheterPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/workflows/patientSheet/deviceDataFlows.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/workflows/patientSheet/inputFlows.java" afterDir="false" />
+    <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="try">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/addForms/DrugFormCyclePossibility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/wound/BedsoreMoreFieldsToAddPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/wound/SurgicalWoundMoreFieldsToAddPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/wound/WondFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/wound/WoundPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/workflows/NavigateClientInEmrFlows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/workflows/db/InsertToDBFlows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/workflows/nurse/cardex/CardexFlows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/workflows/nurse/cathter/catheterFlows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/workflows/nurse/wouds/bedsoreWoundFlows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/workflows/nurse/wouds/surgicalWoundFlows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/workflows/nurse/wouds/woundFlows.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/workflows/patientSheet/outputFlows.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/workflows/patientSheet/preliminaryActionsFlows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/nursing/woundsRegression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuration/DataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/DataConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DDTFiles/drugsDailyNew.csv" beforeDir="false" afterPath="$PROJECT_DIR$/DDTFiles/drugsDailyNew.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/icu/patientSheet/patientSheetMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/icu/patientSheet/PatientSheetMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/DBAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/DBAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extensions/UIActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/UserSignModalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/UserSignModalPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/icu/receptionTreatmentPlan/ReceptionTreatmentPlanMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/icu/receptionTreatmentPlan/ReceptionTreatmentPlanMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/mainPages/PatientsListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/mainPages/PatientsListPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/approval/ApprovalInstructionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/approval/ApprovalInstructionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/catheter/CatheterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/nurse/catheter/CatheterPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ManageDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ManageDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ManagePages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/doctor/generalInstructionFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/doctor/generalInstructionFlows.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/workflows/icu_department/planningReception.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/icu_department/planningReception.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegressionTest/mainMenuPagesRegression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/mainMenuPagesRegression.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegressionTest/regression2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/regression2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/emergency/generalinstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/emergency/generalinstruction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/restoreBugs/restoreBugs2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/general/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/general/General.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenarios.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,38 +128,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ToolWindowStructure.ShowToolbar": "false",
-    "last_opened_file_path": "C:/Automation/AutomationProject_emr/src/test",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.general"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ToolWindowStructure.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Automation/AutomationProject_emr/src/main/java/pageObjects/emr/nurse/wound&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Automation\AutomationProject_emr\src\test" />
+      <recent name="C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\nurse\wound" />
+      <recent name="C:\Automation\AutomationProject_emr\src\main\java\pageObjects\emr\nurse" />
       <recent name="C:\Automation\AutomationProject_emr" />
+      <recent name="C:\Automation\AutomationProject_emr\src\test" />
       <recent name="C:\Automation\AutomationProject_emr\medicine_prep" />
-      <recent name="H:\Automation\AutomationProject_emr\DDTFiles\tests" />
-      <recent name="H:\Automation\AutomationProject_emr\DDTFiles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\Automation\AutomationProject_emr\DDTFiles\tests" />
       <recent name="H:\Automation\AutomationProject_emr\ImageRepository" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="pageObjects.emr.nurse.catheter" />
-      <recent name="workflows.patientSheet" />
-      <recent name="workflows.icu_department" />
-      <recent name="pageObjects.emr.popUp" />
-      <recent name="restoreBugs" />
+      <recent name="workflows.nurse.cathter" />
+      <recent name="workflows.nurse.wouds" />
+      <recent name="pageObjects.emr.nurse.wound" />
+      <recent name="workflows" />
+      <recent name="pageObjects.emr.addForms" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.regression1.test03_updateDosageApprovalDrug">
+  <component name="RunManager" selected="TestNG.regression1.test01_addToPatientAllPossibilityIns">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,10 +181,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Automation/AutomationProject_emr/regression_ICU.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="General.test09_verifyListPatients" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/regression_ICU.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sanity.general.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sanity.general" />
+      <option name="MAIN_CLASS_NAME" value="sanity.general.General" />
+      <option name="METHOD_NAME" value="test09_verifyListPatients" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -194,43 +227,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="regression1_icu.check_patientSheet" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject_emr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ICU.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ICU" />
-      <option name="MAIN_CLASS_NAME" value="ICU.regression1_icu" />
-      <option name="METHOD_NAME" value="check_patientSheet" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="regression1_icu.test01_icu_receptionPlanning" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject_emr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ICU.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ICU" />
-      <option name="MAIN_CLASS_NAME" value="ICU.regression1_icu" />
-      <option name="METHOD_NAME" value="test01_icu_receptionPlanning" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="regression1.test03_updateDosageApprovalDrug" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="regression1.test01_addToPatientAllPossibilityIns" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <extension name="coverage">
         <pattern>
@@ -240,7 +237,43 @@
       </extension>
       <option name="PACKAGE_NAME" value="RegressionTest" />
       <option name="MAIN_CLASS_NAME" value="RegressionTest.regression1" />
-      <option name="METHOD_NAME" value="test03_updateDosageApprovalDrug" />
+      <option name="METHOD_NAME" value="test01_addToPatientAllPossibilityIns" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="regression2.test01_addAndSaveAllInstructionToPatient" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RegressionTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RegressionTest" />
+      <option name="MAIN_CLASS_NAME" value="RegressionTest.regression2" />
+      <option name="METHOD_NAME" value="test01_addAndSaveAllInstructionToPatient" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="woundsRegression.test01_addToPatientClosedSurgicalWound" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RegressionTest.nursing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RegressionTest.nursing" />
+      <option name="MAIN_CLASS_NAME" value="RegressionTest.nursing.woundsRegression" />
+      <option name="METHOD_NAME" value="test01_addToPatientClosedSurgicalWound" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -251,19 +284,19 @@
     <list>
       <item itemvalue="TestNG.H:/Automation/AutomationProject_emr/ToRun.xml" />
       <item itemvalue="TestNG.doctorAddInstruction.addAndSignUnknownDrug" />
-      <item itemvalue="TestNG.regression1.test03_updateDosageApprovalDrug" />
+      <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
       <item itemvalue="TestNG.C:/Automation/AutomationProject_emr/regression_1.xml" />
-      <item itemvalue="TestNG.C:/Automation/AutomationProject_emr/regression_ICU.xml" />
-      <item itemvalue="TestNG.regression1_icu.test01_icu_receptionPlanning" />
-      <item itemvalue="TestNG.regression1_icu.check_patientSheet" />
+      <item itemvalue="TestNG.woundsRegression.test01_addToPatientClosedSurgicalWound" />
+      <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
+      <item itemvalue="TestNG.General.test09_verifyListPatients" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.regression1.test03_updateDosageApprovalDrug" />
+        <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
+        <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
+        <item itemvalue="TestNG.General.test09_verifyListPatients" />
+        <item itemvalue="TestNG.woundsRegression.test01_addToPatientClosedSurgicalWound" />
         <item itemvalue="TestNG.C:/Automation/AutomationProject_emr/regression_1.xml" />
-        <item itemvalue="TestNG.regression1_icu.check_patientSheet" />
-        <item itemvalue="TestNG.regression1_icu.test01_icu_receptionPlanning" />
-        <item itemvalue="TestNG.C:/Automation/AutomationProject_emr/regression_ICU.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -570,7 +603,7 @@
       <option name="presentableId" value="LOCAL‎00063" />
       <updated>1692789808338</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -579,6 +612,11 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -601,32 +639,32 @@
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="regression_1 run all methods" />
-    <MESSAGE value="regression_1 run all methods - fix" />
-    <MESSAGE value="regression_1 comment" />
-    <MESSAGE value="fix chooseDepartment func in angular 14" />
-    <MESSAGE value="regression1 - fix generalIns to add" />
-    <MESSAGE value="regression1 - add future drug" />
-    <MESSAGE value="departmentFlows change func" />
-    <MESSAGE value="departmentFlows fix func" />
-    <MESSAGE value="main menu regression - add sleep and fix" />
-    <MESSAGE value="restore bug 2 - add func - patient list" />
-    <MESSAGE value="restore bug 2 - add func - take_pic_patientList" />
-    <MESSAGE value="restore bug at 23 night" />
-    <MESSAGE value="restore bug at 23 night -fix" />
-    <MESSAGE value="regression 1" />
-    <MESSAGE value="restoreBugsAt23 add sleep before cardex sign" />
-    <MESSAGE value="restoreBugsAt23 - emergency patient" />
-    <MESSAGE value="chooseDepartment with not verify" />
-    <MESSAGE value="  options.addArguments(&quot;window-size=1920,1080&quot;) to test remotly" />
-    <MESSAGE value="change xpath btn_datePicker" />
-    <MESSAGE value="nurse flows add sleep" />
-    <MESSAGE value="restore bug at 23" />
-    <MESSAGE value="restore bug at 23 add function" />
-    <MESSAGE value="restore bug at 23 add function - split to two function" />
-    <MESSAGE value="15.04.24" />
-    <MESSAGE value="26.05.24 - not big changes but commit after a long time of break" />
-    <option name="LAST_COMMIT_MESSAGE" value="26.05.24 - not big changes but commit after a long time of break" />
+    <MESSAGE value="add local directory to allure report" />
+    <MESSAGE value="add restore bug fun and profil for check cardex" />
+    <MESSAGE value="add restore bug fun and profil for check cardex - fix" />
+    <MESSAGE value="regression_1" />
+    <MESSAGE value="111" />
+    <MESSAGE value="drugForm possibility element change" />
+    <MESSAGE value="regression1" />
+    <MESSAGE value="04.07.24 changes" />
+    <MESSAGE value="04.07.24 regression1" />
+    <MESSAGE value="environment" />
+    <MESSAGE value="restore bug 7.7.24" />
+    <MESSAGE value="regression1 8.7.24" />
+    <MESSAGE value="restoreBugs 8.7.24" />
+    <MESSAGE value="nurse flows - remove blood exec" />
+    <MESSAGE value="restoreBugs 14.07.24" />
+    <MESSAGE value="restoreBugs 14.07.24- fix" />
+    <MESSAGE value="restoreBugs 21.08.24- patient list" />
+    <MESSAGE value="restoreBugsAt23 25.08.24- drug future" />
+    <MESSAGE value="restoreBugs addSolutionWithRate to env PROD" />
+    <MESSAGE value="restoreBugs addDrug to env PROD" />
+    <MESSAGE value="restoreBugs addDrug to env PROD - fix name func" />
+    <MESSAGE value="restoreBugs addSolutionWithRate" />
+    <MESSAGE value="restoreBugs addSolutionWithRate qa" />
+    <MESSAGE value="regression1 - fix" />
+    <MESSAGE value="try" />
+    <option name="LAST_COMMIT_MESSAGE" value="try" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -723,12 +761,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/utilities/CommonOps.java</url>
-          <line>147</line>
+          <line>151</line>
           <option name="timeStamp" value="550" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java</url>
-          <line>91</line>
+          <line>93</line>
           <option name="timeStamp" value="660" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -748,17 +786,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/extensions/DBAction.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="714" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/extensions/DBAction.java</url>
-          <line>58</line>
+          <line>66</line>
           <option name="timeStamp" value="719" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/doctorFlows.java</url>
-          <line>107</line>
+          <line>109</line>
           <option name="timeStamp" value="744" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -768,7 +801,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java</url>
-          <line>94</line>
+          <line>99</line>
           <option name="timeStamp" value="752" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -783,17 +816,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenarios.java</url>
-          <line>122</line>
+          <line>121</line>
           <option name="timeStamp" value="766" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/utilities/ManagePages.java</url>
-          <line>83</line>
+          <line>93</line>
           <option name="timeStamp" value="917" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
-          <line>208</line>
+          <line>219</line>
           <option name="timeStamp" value="941" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -803,27 +836,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
-          <line>296</line>
+          <line>307</line>
           <option name="timeStamp" value="982" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
-          <line>297</line>
+          <line>308</line>
           <option name="timeStamp" value="983" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java</url>
-          <line>160</line>
+          <line>169</line>
           <option name="timeStamp" value="984" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="985" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java</url>
-          <line>151</line>
+          <line>156</line>
           <option name="timeStamp" value="987" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -833,17 +861,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java</url>
-          <line>89</line>
+          <line>94</line>
           <option name="timeStamp" value="995" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="1003" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ICU/regression1_icu.java</url>
-          <line>79</line>
+          <line>86</line>
           <option name="timeStamp" value="1019" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -853,13 +876,63 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java</url>
-          <line>181</line>
+          <line>190</line>
           <option name="timeStamp" value="1022" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/utilities/Listeners.java</url>
           <line>67</line>
           <option name="timeStamp" value="1024" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/generalInstructionFlows.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="1041" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/wouds/surgicalWoundFlows.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="1060" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/sanity/instructions/DrugScenarios.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="1061" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="1064" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/workflows/nurse/nurseFlows.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="1065" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="1068" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/extensions/DBAction.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="1072" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/extensions/DBAction.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="1074" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utilities/ManageDB.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="1075" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utilities/ManageDB.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1077" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/RegressionTest/nurse/nurseExecute.java</url>
@@ -894,6 +967,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="998" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/RegressionTest/regression2.java</url>
+          <line>39</line>
+          <properties class="RegressionTest.regression2" method="test01_addAndSaveAllInstructionToPatient">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1027" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

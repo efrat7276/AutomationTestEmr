@@ -79,7 +79,7 @@ public class regression2 extends CommonOps {
 
         Thread.sleep(1000);
         doctorFlows.approvalInstruction();
-afterMethod();
+       afterMethod();
       // CommonOps.reLogin();
        WebFlows.login('n');
         departmentFlows.chooseDepartment(emergencyDep);

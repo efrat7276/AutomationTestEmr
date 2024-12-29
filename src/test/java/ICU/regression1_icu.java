@@ -30,7 +30,7 @@ import static workflows.patientSheet.deviceDataFlows.add_an_error_comment_device
 public class regression1_icu extends CommonOps {
 
    // String  patient_num = "24120811";
-    int  patient_num = 5;
+    int  patient_num = 2;
 
     String departmentICU = "ט'נ' כללי";
     @Test(description = "reception planning")
@@ -41,15 +41,20 @@ public class regression1_icu extends CommonOps {
         WebFlows.login('d');
         departmentFlows.chooseDepartment(departmentICU);
         WebFlows.patientBoxEntry(patient_num);
-        doctorFlows.stopAllActiveInstructionToPatient();
+      //  doctorFlows.stopAllActiveInstructionToPatient();
+        doctorFlows.newDrug();
+        //daily drug
+    //    doctorFlows.drugFormAddDrugCycle("KCL", 20, 3, false,  true);
        planningReception.savePlanningReception();
-
-        Thread.sleep(1000);
-         ////חתימה על כל ההוראות מהקבלה
+//
+//        Thread.sleep(1000);
+//         ////חתימה על כל ההוראות מהקבלה
         doctorFlows.approvalInstruction();
         Thread.sleep(1000);
-        afterMethod();
-        CommonOps.reLogin();
+       afterMethod();
+
+
+    //   CommonOps.reLogin();
         WebFlows.login('n');
         departmentFlows.chooseDepartment(departmentICU);
        WebFlows.patientBoxEntry(patient_num);
@@ -76,6 +81,8 @@ public class regression1_icu extends CommonOps {
        departmentFlows.chooseDepartment(departmentICU);
        WebFlows.patientBoxEntry(patient_num);
        NavigateFlows.goToCategory("patientSheet");
+        Thread.sleep(1000);
+
        deviceDataFlows.confirm_device_data();
        deviceDataFlows.make_error_device_data();
        Thread.sleep(500);

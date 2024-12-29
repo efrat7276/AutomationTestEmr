@@ -13,22 +13,22 @@ public class mainMenuPagesRegression extends CommonOps {
     public  void goToAllMainMenuDoctor() throws InterruptedException {
 
         WebFlows.login('d');
-        softAssert.assertTrue(UIActions.isExist(patientsList.patients_body));
+        softAssert.assertTrue(UIActions.isDisplay(patientsList.patients_body));
         UIActions.click(mainMenuPage.category_dischargedList);
         Thread.sleep(2000);
-        softAssert.assertTrue(UIActions.isExist(dischargedListPage.discharged_body));
+        softAssert.assertTrue(UIActions.isDisplay(dischargedListPage.discharged_body));
         UIActions.click(mainMenuPage.category_ordersList);
         Thread.sleep(2000);
-        softAssert.assertTrue(UIActions.isExist(orderListPage.order_body));
+        softAssert.assertTrue(UIActions.isDisplay(orderListPage.order_body));
         UIActions.click(mainMenuPage.category_reportsList);
         Thread.sleep(2000);
-        softAssert.assertTrue(UIActions.isExist(depReport.depReport_body));
+        softAssert.assertTrue(UIActions.isDisplay(depReport.depReport_body));
         UIActions.click(mainMenuPage.category_protocolList);
         Thread.sleep(2000);
-        softAssert.assertTrue(UIActions.isExist(protocolListPage.protocolDep_body));
+        softAssert.assertTrue(UIActions.isDisplay(protocolListPage.protocolDep_body));
         UIActions.click(mainMenuPage.category_operations);
         Thread.sleep(2000);
-        softAssert.assertTrue(UIActions.isExist(operationsPage.operations_body));
+        softAssert.assertTrue(UIActions.isDisplay(operationsPage.operations_body));
         softAssert.assertAll();
     }
 

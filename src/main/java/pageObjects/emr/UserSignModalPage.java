@@ -12,9 +12,9 @@ public class UserSignModalPage {
     @FindBy(how= How.ID, using = "password")
     public WebElement input_password;
 
-    @FindBy(how= How.XPATH, using = "//form//button[2]")
+    @FindBy(how= How.XPATH, using = "//form//button[text()='אישור']")
     public WebElement btn_confirm;
 
-    @FindBy(how= How.XPATH, using = "//form//button[1]")
+    @FindBy(how= How.XPATH, using = "//form//button[text()='ביטול']")
     public WebElement btn_cancel;
 }

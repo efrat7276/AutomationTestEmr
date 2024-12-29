@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflows.NavigateFlows;
 import workflows.*;
+import workflows.db.InsertToDBFlows;
 import workflows.doctor.bloodProductInstructionFlows;
 import workflows.doctor.doctorFlows;
 import workflows.doctor.generalInstructionFlows;
@@ -14,13 +15,15 @@ import workflows.doctor.nutritionFlows;
 import workflows.nurse.nurseFlows;
 
 import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
 
 @Listeners(utilities.Listeners.class)
 public class regression1 extends CommonOps {
 
     @Test(description = "addToPatientAllPossibilityIns")
     @Description("add to patient all possibility ins ")
-    public void test01_addToPatientAllPossibilityIns() throws InterruptedException, IOException {
+    public void test01_addToPatientAllPossibilityIns() throws InterruptedException, IOException, SQLException {
 //         מוסיף למטופל תרופות , הוראות כלליות , נוזלים , מוצרי דם
 //
 //         תרופת
@@ -29,11 +32,14 @@ public class regression1 extends CommonOps {
 //         weekly - פעמיים בשבוע
 //         SOS
 //        byHour - פעם ב-48 שעות
-        int patient_num = 3;
+        int patient_num = 1;
                 ;
         String department ="ט'נ' כללי";
         WebFlows.login('d');
-     //   departmentFlows.chooseDepartment(department);
+        departmentFlows.chooseDepartment(department);
+
+
+        String str =  InsertToDBFlows.AddToPatientOrCatheter(2024324527,4);
 
         WebFlows.patientBoxEntry(patient_num);
         doctorFlows.stopAllActiveInstructionToPatient();
@@ -123,29 +129,29 @@ public class regression1 extends CommonOps {
 //////      //   3 דקות ללא כלום
 //////     //  Thread.sleep(240000);
        afterMethod();
-//////
+////
 
 
         WebFlows.login('n');
         Thread.sleep(2000);
-      //  departmentFlows.chooseDepartment(department);
+       departmentFlows.chooseDepartment(department);
 
         WebFlows.patientBoxEntry(patient_num);
 
-        ////  todo הוספת ברנולה למטופל
-
-
-        // //  הוספת הוראה סיעודית
-//        Thread.sleep(3000);
-//        NavigateFlows.goToCategory("nursing");
-//        NavigateFlows.goToSubCategory("nursingIns");
-//        doctorFlows.newGeneralIns();
-//        generalInstructionFlows.generalFormAddGeneralInsDaily(1,1,1,false,false,true);
-//        doctorFlows.approvalInstruction();
-//        NavigateFlows.goToCategory("nurseConfirmation");
-//        NavigateFlows.goToSubCategory("instructionConfirmation");
-
-        ////   todo לשלוח פרמטרים כמה פירוק מכל סוג
+//        ////  todo הוספת ברנולה למטופל
+//
+//
+//        // //  הוספת הוראה סיעודית
+////        Thread.sleep(3000);
+////        NavigateFlows.goToCategory("nursing");
+////        NavigateFlows.goToSubCategory("nursingIns");
+////        doctorFlows.newGeneralIns();
+////        generalInstructionFlows.generalFormAddGeneralInsDaily(1,1,1,false,false,true);
+////        doctorFlows.approvalInstruction();
+////        NavigateFlows.goToCategory("nurseConfirmation");
+////        NavigateFlows.goToSubCategory("instructionConfirmation");
+//
+//        ////   todo לשלוח פרמטרים כמה פירוק מכל סוג
       nurseFlows.approvalAllPossibilitiesIns(true, false);
 //
        nurseFlows.approvalNurseSign();

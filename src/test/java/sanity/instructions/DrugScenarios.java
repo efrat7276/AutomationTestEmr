@@ -95,31 +95,30 @@ public class DrugScenarios extends CommonOps {
 
 
 
-    @Test(description = "Verify additions 5 drugs daily to Patient", dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"})
+    @Test(description = "Verify additions 5 drugs daily to Patient" , dataProviderClass = ManageDDT.class , groups = {"sanity"})
     @Description("drugForm - additions 5 drugs daily to Patient")
-    public void test03_1_verifyAddDailyDrugListToPatient(int patient_num){
+    public void test03_1_verifyAddDailyDrugListToPatient(){
 
         String str; List<String> details;
         WebFlows.login('d');
-        WebFlows.patientBoxEntry(patient_num);
+        WebFlows.patientBoxEntry(1);
         doctorFlows.newDrug();
         for(int i=0; i<5 ;i++) {
             str = ManageDDT.getLineFromCSV("./DDTFiles/drugsDailyNew.csv", i);
             details = Arrays.asList(str.split(","));
-            doctorFlows.drugFormAddDrugDaily(details.get(1), 3,4, details.get(2),  false,false,false);
+            doctorFlows.drugFormAddDrugDaily(details.get(1), 3,3, details.get(2),  false,false,false);
         }
         doctorFlows.clickReturnAndApproval();
         WebFlows.userSignConfirm();
    }
 
-    @Test(description = "verify a doctor's signature on unsigned instruction ", dataProvider = "patients" , dataProviderClass = ManageDDT.class , groups = {"sanity"} )
+    @Test(description = "verify a doctor's signature on unsigned instruction " , dataProviderClass = ManageDDT.class , groups = {"sanity"} )
     @Description("a doctor signs on doctor's instruction")
-    public void  test03_2_NurseApprovalAllAndExecuteDailyDrug(int patient_num) throws InterruptedException {
+    public void  test03_2_NurseApprovalAllAndExecuteDailyDrug() throws InterruptedException {
 
-        GeneralWithDBFlow.loginWithDB();
-        WebFlows.chooseRole("אחות מוסמכת");
-        WebFlows.patientBoxEntry(patient_num);
-        nurseFlows.approvalDrugDailyList(5 , 3);
+        WebFlows.login('n');
+        WebFlows.patientBoxEntry(1);
+        nurseFlows.approvalDrugDailyList(5 , 4);
         NavigateFlows.goToCategory("cardex");
         nurseFlows.executeAllToCurrentHourFor_daily_onceOnly_sos_weekly_byHourAfterApprovalNurse();
    }

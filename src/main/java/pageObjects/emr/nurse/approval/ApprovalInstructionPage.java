@@ -22,7 +22,6 @@ public class ApprovalInstructionPage {
 
     @FindBy(how = How.NAME , using = "drugsRoutine")
     public List<WebElement>  routineList;
-
     //for daily 1 in day and once only
 
     @FindBy(how= How.XPATH , using = "//table[@class='table main-table liquidationDrug']//div[@id='div-group-current-day']//button")
@@ -72,9 +71,11 @@ public class ApprovalInstructionPage {
     @FindBy(how = How.XPATH , using ="//solution-liquidation//div[@name='solutionInstructionsTypeListStatusId2']//tr[@name='drugRow1']//td[4]//div[3]")
     public List<WebElement> solution_scale_details_isContinues;
 
-    @FindBy(how = How.XPATH , using ="//solution-liquidation//div[@name='solutionInstructionsTypeListStatusId2']//div[contains(@class,'timelineListFrame')]//div[contains(@class,'timeLineInToday')]")
+    @FindBy(how = How.XPATH , using ="//solution-liquidation//div[contains(@class,'timeLineInToday')]")
     public List<WebElement> solution_scale_currentHourList;
 
+    @FindBy(how = How.XPATH , using ="//div//button[@class='btn btn-secondary btn-xs']")
+    public WebElement btn_v_solution;
 
     @FindBy(how= How.XPATH , using = "//solution-liquidation//tr[@name='drugRow1']//button[contains(@id,'btnIsApproval')]")
     public List<WebElement>  btns_approveSolution;

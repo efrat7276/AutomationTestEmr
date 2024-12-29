@@ -3,6 +3,7 @@ import com.google.common.util.concurrent.Uninterruptibles;
 import extensions.UIActions;
 import extensions.Verifications;
 import io.qameta.allure.Step;
+import org.apache.commons.lang3.ObjectUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -261,6 +262,23 @@ public class doctorFlows extends CommonOps {
             drugForm.btn_add.click();
     }
 
+    @Step(" fill DrugForm for addNewDrugCycle")
+    public static void drugFormAddDrugCycle(String drugName , int dosage,  int numberOfTimeDaily, boolean isAntibiotic , boolean addAndClose){
+
+        fillDrugsDetails(drugName,String.valueOf(dosage),null );
+        UIActions.click(drugForm.possibilityCycle);
+        UIActions.updateText(drugForm.input_drugComment, "בדיקות אוטו'");
+        if(isAntibiotic == true )
+            fillDiagnosisToAntibiticDrug();
+        fillDrugNumberOfTimes(numberOfTimeDaily);
+
+
+        if(addAndClose)
+            drugForm.btn_addAndClose.click();
+        else
+            drugForm.btn_add.click();
+    }
+
 
     @Step(" fill DrugForm for addNewDrugSOS")
     public static void drugFormAddDrugSOS(String drugName ,String dosage, String routeAdinistration  , int max , int min,boolean addAndClose ){
@@ -392,9 +410,11 @@ public class doctorFlows extends CommonOps {
     @Step(" confirm same instruction")
     public static void confirmModalSameInstruction(){
 
-        Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
+        Uninterruptibles.sleepUninterruptibly(5, TimeUnit.MILLISECONDS);
         drugForm.btn_modalOK.click();
-
+//
+//        WebElement modal = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("btn_modalOK")));
+//        modal.click();
     }
 
     @Step("fill infection confirmation to drug by doctor")
