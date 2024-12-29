@@ -183,9 +183,6 @@
                         <configuration>
                             <suiteXmlFiles>
                                 <suiteXmlFile>Sanity_qa_stop.xml</suiteXmlFile>
-                                <!--                                <suiteXmlFile>InstructionSanity1.xml</suiteXmlFile>-->
-                                <!--                                <suiteXmlFile>InstructionSanity2.xml</suiteXmlFile>-->
-
                             </suiteXmlFiles>
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
@@ -280,6 +277,7 @@
                 </plugins>
             </build>
         </profile>
+
 
         <profile>
             <id>regression_ICU</id>
