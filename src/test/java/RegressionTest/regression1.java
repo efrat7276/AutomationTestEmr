@@ -39,7 +39,7 @@ public class regression1 extends CommonOps {
         departmentFlows.chooseDepartment(department);
 
 
-        String str =  InsertToDBFlows.AddToPatientOrCatheter(2024324527,4);
+      //  String str =  InsertToDBFlows.AddToPatientOrCatheter(2024324527,4);
 
         WebFlows.patientBoxEntry(patient_num);
         doctorFlows.stopAllActiveInstructionToPatient();
