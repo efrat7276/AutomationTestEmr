@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflows.NavigateFlows;
 import workflows.*;
-import workflows.db.InsertToDBFlows;
 import workflows.doctor.bloodProductInstructionFlows;
 import workflows.doctor.doctorFlows;
 import workflows.doctor.generalInstructionFlows;
