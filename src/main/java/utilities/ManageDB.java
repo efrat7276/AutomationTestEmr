@@ -9,7 +9,7 @@ public class ManageDB extends CommonOps {
 
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            con = DriverManager.getConnection(dbURL, user , pass);
+            con = DriverManager.getConnection(dbURL,user,pass);
             stmt = con.createStatement();
         }
         catch (Exception ex){
