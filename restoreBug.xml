@@ -8,9 +8,11 @@
         <classes>
             <class name="restoreBugs.restoreBugs">
                 <methods>
-                    <include name="addDrug"></include>
+<!--                    <include name="addDrug"></include>-->
 
                     <include name="addSolutionWithRate"></include>
+                    <include name="addSolutionWithRateWithExecution"></include>
+
                 </methods>
             </class>
         </classes>

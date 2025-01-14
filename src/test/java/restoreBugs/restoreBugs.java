@@ -147,4 +147,34 @@ public class restoreBugs extends CommonOps {
     }
 
 
+    @Test(description = "add drug  continuous at 22 a'clock")
+    @Description("add rug  continuous at 22 a'clock")
+    public void addSolutionWithRateWithExecution() throws InterruptedException, IOException {
+
+        int patient_num = 2;
+        WebFlows.login('d');
+        Thread.sleep(6000);
+        WebFlows.patientBoxEntry(patient_num);
+        Thread.sleep(6000);
+        doctorFlows.stopAllActiveInstructionToPatient();
+        doctorFlows.newDrug();
+        doctorFlows.drugFormAddLiquidDrug("INJ heparin 100u/ml 2ml","saline 0.9% 100ml",12,true);
+        doctorFlows.approvalInstruction();
+        afterMethod();
+
+        WebFlows.login('n');
+//        Thread.sleep(2000);
+        WebFlows.patientBoxEntry(patient_num);
+        nurseFlows.approvalAllPossibilitiesIns(true, false);
+        nurseFlows.approvalNurseSign();
+          Thread.sleep(5000);
+        NavigateFlows.goToCategory("cardex");
+        nurseFlows.executeSupervisionToSolution();
+        nurseFlows.executeAllLiquidAfterApprovalNurse();
+        nurseFlows.executionNurseSign();
+
+
+    }
+
+
 }
