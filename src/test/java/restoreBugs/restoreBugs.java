@@ -151,7 +151,7 @@ public class restoreBugs extends CommonOps {
     @Description("add rug  continuous at 22 a'clock")
     public void addSolutionWithRateWithExecution() throws InterruptedException, IOException {
 
-        int patient_num = 2;
+        int patient_num = 3;
         WebFlows.login('d');
         Thread.sleep(6000);
         WebFlows.patientBoxEntry(patient_num);
