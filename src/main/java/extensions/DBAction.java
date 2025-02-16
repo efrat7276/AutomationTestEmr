@@ -8,6 +8,7 @@ import utilities.CommonOps;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,12 +28,19 @@ public class DBAction extends CommonOps {
 
     @Step("insert to table")
     public static String InsertQuery(String query) throws SQLException {
-        try {
-            rs = stmt.executeQuery(query);
-            System.out.println( "the insert query succeed");
-            return "succeed";
+        try
+                (PreparedStatement p = con.prepareStatement(query))
+            {
+                p.setInt(1, 20202);
+                p.setInt(2, 1);
+                p.setInt(3, 1);
+                p.setInt(4, 3);
 
-        }
+                p.executeUpdate();
+                return "insert succeed";
+            }
+
+
         catch (Exception ex){
             System.out.println( "the insert query failed . see details: "+ ex);
             return "failed";
@@ -95,7 +103,7 @@ public class DBAction extends CommonOps {
            while(rs.next()){
 
                countRows++;
-               System.out.println(rs.getRow()+ "   "+rs.findColumn("mispar_ishpuz"));
+            //   System.out.println(rs.getRow()+ "   "+rs.findColumn("mispar_ishpuz"));
             }
         }
         catch (Exception ex){

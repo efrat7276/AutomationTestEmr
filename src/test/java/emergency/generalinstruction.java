@@ -29,8 +29,13 @@ public class generalinstruction extends CommonOps {
         WebFlows.patientBoxEntry(1);
         doctorFlows.stopAllActiveInstructionToPatient();
 
+        doctorFlows.newDrug();
+        doctorFlows.drugFormAddDrugOnceOnly("TAB acetylsalicylic acid 100mg (GODAMED)",null ,null,null ,false,true);
+
+
         doctorFlows.newGeneralIns();
         generalInstructionFlows.generalFormAddGeneralInsOnceOnly(2, 1, null, false, true);
+
         doctorFlows.approvalInstruction();
         Thread.sleep(1000);
         NavigateFlows.goToCategory("cardex");

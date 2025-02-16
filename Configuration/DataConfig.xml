@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Environment>
     <!--Timeout-->
-    <Timeout>8</Timeout>
+    <Timeout>5</Timeout>
 
     <!--Web-->
     <PlatformName>web</PlatformName>
@@ -43,8 +43,11 @@
 <!--    <DBName>test</DBName>-->
 <!--    <DBPassword>641153</DBPassword>-->
 
-        <DBName>select_user</DBName>
-        <DBPassword>natandsl</DBPassword>
+<!--        <DBName>select_user</DBName>-->
+<!--        <DBPassword>natandsl</DBPassword>-->
+
+    <DBName>ssisUser</DBName>
+    <DBPassword>Vw5XT=T4u]g~JYH9reA26xzMf</DBPassword>
 
         <userTest>test</userTest>
         <passwordTest>Te231121</passwordTest>

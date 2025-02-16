@@ -10,6 +10,7 @@ import utilities.CommonOps;
 import workflows.NavigateFlows;
 import workflows.WebFlows;
 import workflows.db.GeneralWithDBFlow;
+import workflows.departmentFlows;
 
 
 @Listeners(utilities.Listeners.class)
@@ -33,9 +34,9 @@ public class General extends CommonOps {
     public void test02_verifyChooseDepartment() throws InterruptedException {
         GeneralWithDBFlow.loginWithDB();
         WebFlows.chooseRole("רופא");
-       // chooseDepartmentFlow.chooseDepartment("פנימית א");
-        //Verifications.textIsVisible(patientsList.span_nameDepartment, "פנימית א");
-        Verifications.isElementDisplay(patientsList.menu_patientList);
+        departmentFlows.chooseDepartment("פנימית א");
+        Verifications.textIsVisible(patientsList.span_nameDepartment, "פנימית א");
+      //  Verifications.isElementDisplay(patientsList.menu_patientList);
 
     }
 
@@ -48,7 +49,10 @@ public class General extends CommonOps {
         GeneralWithDBFlow.loginWithDB();
         UIActions.selectFromList(chooseRole.list , "רופא");
         //todo כרגע size()-1 בגלל שהשורות ברשימת מטופלים מחזיר+1 כולל הכותרת
+        int b = DBAction.getCountRows(query);
+        System.out.println("מספר מטופלים בפנימית ב' ");
         Verifications.numberOfElement( patientsList.list_patients.size()-1 , DBAction.getCountRows(query));
+
     }
 
 
@@ -62,6 +66,10 @@ public class General extends CommonOps {
         NavigateFlows.goToCategory("nurseConfirmation");
         NavigateFlows.goToSubCategory("updateExecution");
         Verifications.isElementDisplay(updateExecutionPage.datePicker);
+//
+//        String query = "SELECT * FROM dbo.admission WHERE k_yechida_shichrur=10012 AND tarich_shichrur IS NULL";
+//        DBAction.InsertQuery()
+
     }
 
 }

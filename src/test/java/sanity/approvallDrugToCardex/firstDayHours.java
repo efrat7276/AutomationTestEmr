@@ -16,6 +16,7 @@ public class firstDayHours extends CommonOps {
 
         WebFlows.login('d');
         WebFlows.patientBoxEntry(1);
+        doctorFlows.stopAllActiveInstructionToPatient();
         doctorFlows.newDrug();
         doctorFlows.drugFormAddLiquidDrug("TAB ALPRAZolam 0.5mg (ALPRALID)",null,1,true);
         doctorFlows.approvalInstruction();
@@ -34,6 +35,7 @@ public class firstDayHours extends CommonOps {
         WebFlows.login('d');
         departmentFlows.chooseDepartment("ט'נ' כללי");
         WebFlows.patientBoxEntry(1);
+        doctorFlows.stopAllActiveInstructionToPatient();
         doctorFlows.newDrug();
         doctorFlows.drugFormAddLiquidDrug("INJ CARBOplatin 450mg",null,1,true);
         doctorFlows.approvalInstruction();

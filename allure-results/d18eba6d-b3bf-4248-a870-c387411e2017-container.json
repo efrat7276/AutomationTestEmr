@@ -1,0 +1,1 @@
+{"uuid":"d18eba6d-b3bf-4248-a870-c387411e2017","name":"RegressionTest.regression1","children":["7a3f45d1-4ce5-47f9-92cd-8b71ceab6db1"],"befores":[],"afters":[{"name":"closeSession","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1734251131412,"stop":1734251131412}],"links":[],"start":1734251119949,"stop":1734251131417}

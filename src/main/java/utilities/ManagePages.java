@@ -15,6 +15,10 @@ import pageObjects.emr.nurse.Execute.CardexPage;
 import pageObjects.emr.nurse.Execute.UpdateExecutionPage;
 import pageObjects.emr.nurse.prepMedicine.prepMedcinePage;
 import pageObjects.emr.nurse.approval.ApprovalInstructionPage;
+import pageObjects.emr.nurse.wound.BedsoreMoreFieldsToAddPage;
+import pageObjects.emr.nurse.wound.SurgicalWoundMoreFieldsToAddPage;
+import pageObjects.emr.nurse.wound.WondFormPage;
+import pageObjects.emr.nurse.wound.WoundPage;
 import pageObjects.emr.popUp.CardexDailyReport;
 import pageObjects.emr.popUp.ConfirmationAlert;
 
@@ -50,6 +54,7 @@ public class ManagePages extends Base {
             drugFormOnceOnlyPossibility = PageFactory.initElements(driver, DrugFormOnceOnlyPossibility.class);
             drugFormByHourPossibility = PageFactory.initElements(driver, DrugFormByHourPossibility.class);
             drugFormWeeklyPossibility = PageFactory.initElements(driver, DrugFormWeeklyPossibility.class);
+            drugFormCyclePossibility = PageFactory.initElements(driver, DrugFormCyclePossibility.class);
             drugFormTimeLimitPossibility = PageFactory.initElements(driver, DrugFormTimeLimitPossibility.class);
             drugFormContinuesPossibility = PageFactory.initElements(driver, DrugFormContinuesPossibility.class);
             drugConfirmation = PageFactory.initElements(driver, DrugConfirmation.class);
@@ -78,6 +83,11 @@ public class ManagePages extends Base {
 
 
             patientSheetMain = PageFactory.initElements(driver, PatientSheetMain.class);
+
+            woundPage = PageFactory.initElements(driver, WoundPage.class);
+            woundFormPage=PageFactory.initElements(driver, WondFormPage.class);
+            surgicalWoundMoreFieldsToAddPage= PageFactory.initElements(driver, SurgicalWoundMoreFieldsToAddPage.class);
+            bedsoreMoreFieldsToAddPage=PageFactory.initElements(driver, BedsoreMoreFieldsToAddPage.class);
 
         }
         catch (Exception fd){

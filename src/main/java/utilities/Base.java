@@ -19,9 +19,12 @@ import pageObjects.emr.nurse.Execute.UpdateExecutionPage;
 import pageObjects.emr.nurse.approval.ApprovalInstructionPage;
 import pageObjects.emr.nurse.prepMedicine.prepMedcinePage;
 
+import pageObjects.emr.nurse.wound.BedsoreMoreFieldsToAddPage;
+import pageObjects.emr.nurse.wound.SurgicalWoundMoreFieldsToAddPage;
+import pageObjects.emr.nurse.wound.WondFormPage;
+import pageObjects.emr.nurse.wound.WoundPage;
 import pageObjects.emr.popUp.CardexDailyReport;
 import pageObjects.emr.popUp.ConfirmationAlert;
-import pageObjects.emr.icu.receptionTreatmentPlan.*;
 import pageObjects.emr.icu.settingGoals.SettingGoals;
 
 import java.sql.Connection;
@@ -78,6 +81,8 @@ public class Base {
     protected static DrugFormOnceOnlyPossibility drugFormOnceOnlyPossibility ;
     protected static DrugFormByHourPossibility drugFormByHourPossibility ;
     protected static DrugFormWeeklyPossibility drugFormWeeklyPossibility ;
+
+  protected static DrugFormCyclePossibility drugFormCyclePossibility ;
     protected static DrugFormTimeLimitPossibility drugFormTimeLimitPossibility;
     protected static DrugFormContinuesPossibility drugFormContinuesPossibility;
 
@@ -122,5 +127,12 @@ public class Base {
 
   protected static PatientSheetMain patientSheetMain;
 
+  //nursing
+
+  protected static WoundPage woundPage;
+
+  protected static WondFormPage woundFormPage;
+  protected static SurgicalWoundMoreFieldsToAddPage surgicalWoundMoreFieldsToAddPage;
+  protected static BedsoreMoreFieldsToAddPage bedsoreMoreFieldsToAddPage;
 
 }

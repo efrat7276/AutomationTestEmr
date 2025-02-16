@@ -4,6 +4,8 @@ import extensions.UIActions;
 import extensions.Verifications;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import pageObjects.emr.addForms.GeneralInstructionPage;
 import utilities.CommonOps;
 import utilities.ManageDDT;

@@ -28,7 +28,7 @@ public class CatheterPage {
     @FindBy(how= How.XPATH , using = "//table[@class='table main-table liquidationDrug']//div[@id='div-group-current-day']//button")
     public List<WebElement>  btn_drug;
 
-    @FindBy(how= How.XPATH , using = "//div[@id='div-group-current-day']//button/following-sibling::ul[@class='small_dr_button dropdown-menu show']/li")
+    @FindBy(how= How.XPATH , using = "//div[@class='relative flex-full input-max-width show dropdown']/following-sibling::button[@class='dropdown-item ng-star-inserted']")
     public List<WebElement>  ul_drug;
 
     @FindBy(how= How.XPATH , using = "//drug-liquidation//tr[@name='drugRow1']/td[4]")
