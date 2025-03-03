@@ -31,11 +31,11 @@ public class regression1 extends CommonOps {
 //         weekly - פעמיים בשבוע
 //         SOS
 //        byHour - פעם ב-48 שעות
-        int patient_num = 1;
+        int patient_num = 4;
                 ;
         String department ="ט'נ' כללי";
         WebFlows.login('d');
-        departmentFlows.chooseDepartment(department);
+       departmentFlows.chooseDepartment(department);
 
 
       //  String str =  InsertToDBFlows.AddToPatientOrCatheter(2024324527,4);
@@ -85,6 +85,11 @@ public class regression1 extends CommonOps {
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
         Thread.sleep(500);
 
+        doctorFlows.drugFormAddLiquidDrug("INJ heparin 5000u/ml 5ml", "dextrose 5% 100ml", 12, false);
+        drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        Thread.sleep(500);
+
         doctorFlows.drugFormAddLiquidDrug("INJ aflibercept 100mg (EYLEA)", "dextrose 5% 100ml", 12, true);
 
         Thread.sleep(1000);
@@ -97,11 +102,11 @@ public class regression1 extends CommonOps {
 
         doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 12, true);
 
+
+        // הוראות כלליות
+        // daily - פעם ביום
+        // onceOnly - פעם ביום
 //
-//        // הוראות כלליות
-//        // daily - פעם ביום
-//        // onceOnly - פעם ביום
-////
         doctorFlows.newGeneralIns();
         generalInstructionFlows.generalFormAddGeneralInsDaily(1, 1, 1, false, false, false);
         generalInstructionFlows.generalFormAddGeneralInsOnceOnly(2, 1, "16:00", false, true);
@@ -133,7 +138,7 @@ public class regression1 extends CommonOps {
 
         WebFlows.login('n');
         Thread.sleep(2000);
-       departmentFlows.chooseDepartment(department);
+      departmentFlows.chooseDepartment(department);
 
         WebFlows.patientBoxEntry(patient_num);
 
