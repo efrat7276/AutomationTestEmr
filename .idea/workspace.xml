@@ -20,29 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8746965b-069d-4cb2-9874-a91395248767" name="Default Changelist" comment="getBrowserVersion in initBrowser">
-      <change afterPath="$PROJECT_DIR$/allure-results/01af3e35-3ddf-4960-ae66-5676765b3c5d-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/05c4e9e6-47bf-49b9-ae43-7df8505b7f7f-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/06d7161a-d4d5-4a13-b936-d76db3a9c34c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/4a809b41-d57b-45b3-af08-0383bb40503e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/56412a7b-78d4-4eb3-88c5-a95683a2bc29-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/5b5ae6ca-9959-4ccb-bb86-7254ff3aff33-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/699220da-f6ac-4fe8-867b-af2c085963fa-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/761a2d42-87af-4aa3-88fe-ee2902b6b66c-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7eab2aea-61d5-4de3-9917-ee1a3973a84c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8e4c4721-8a27-47aa-a3d4-8cf437d0c3b4-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/93c96544-c68b-4899-b361-e43d465aae74-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/96420e05-7f42-42d8-806a-6801a101e92c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a7629fb2-7e4b-43b0-adcb-7db35f7dd746-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/adb3af7a-38bc-4096-8ad5-08a22e94d1d3-attachment" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d4135bf5-c534-4bca-8459-56d66ecc212d-attachment" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d6ba9642-39f6-4ba5-af5c-79e95839b448-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/dc8ca89a-4544-459f-a03d-24b360585a7c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/de59d227-0c70-48f0-9ba3-014b77ce1d3e-container.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/addForms/BloodProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/addForms/BloodProducts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/doctor/bloodProductInstructionFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/doctor/bloodProductInstructionFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/emr/ChooseDepartmentListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/emr/ChooseDepartmentListPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workflows/departmentFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workflows/departmentFlows.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +125,7 @@
       <recent name="workflows" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.regression1.test01_addToPatientAllPossibilityIns">
+  <component name="RunManager" selected="TestNG.regression2.test01_addAndSaveAllInstructionToPatient">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,16 +133,6 @@
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Automation/AutomationProject_emr/restoreBug.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject_emr" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/restoreBug.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -249,6 +219,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="regression2.test01_addAndSaveAllInstructionToPatient" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject_emr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RegressionTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RegressionTest" />
+      <option name="MAIN_CLASS_NAME" value="RegressionTest.regression2" />
+      <option name="METHOD_NAME" value="test01_addAndSaveAllInstructionToPatient" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="woundsRegression.test01_addToPatientClosedSurgicalWound" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_emr" />
       <extension name="coverage">
@@ -270,19 +258,19 @@
     <list>
       <item itemvalue="TestNG.H:/Automation/AutomationProject_emr/ToRun.xml" />
       <item itemvalue="TestNG.doctorAddInstruction.addAndSignUnknownDrug" />
+      <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
       <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
       <item itemvalue="TestNG.firstDayHours.check_hour_list" />
       <item itemvalue="TestNG.firstDayHours.check_hour_list_ICU" />
       <item itemvalue="TestNG.woundsRegression.test01_addToPatientClosedSurgicalWound" />
-      <item itemvalue="TestNG.C:/Automation/AutomationProject_emr/restoreBug.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.regression2.test01_addAndSaveAllInstructionToPatient" />
         <item itemvalue="TestNG.regression1.test01_addToPatientAllPossibilityIns" />
         <item itemvalue="TestNG.woundsRegression.test01_addToPatientClosedSurgicalWound" />
         <item itemvalue="TestNG.firstDayHours.check_hour_list_ICU" />
         <item itemvalue="TestNG.firstDayHours.check_hour_list" />
-        <item itemvalue="TestNG.C:/Automation/AutomationProject_emr/restoreBug.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -742,21 +730,6 @@
           <option name="timeStamp" value="687" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/workflows/departmentFlows.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="981" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/workflows/WebFlows.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="1173" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/workflows/WebFlows.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="1174" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/RegressionTest/regression1.java</url>
           <line>50</line>
           <option name="timeStamp" value="1176" />
@@ -765,6 +738,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/workflows/doctor/bloodProductInstructionFlows.java</url>
           <line>29</line>
           <option name="timeStamp" value="1178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/RegressionTest/regression2.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="1179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/RegressionTest/nurse/nurseExecute.java</url>
