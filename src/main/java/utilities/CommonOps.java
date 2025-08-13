@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
@@ -72,6 +73,12 @@ public class CommonOps extends Base {
         options.addArguments("--start-minimized");
         options.addArguments("window-size=1920,1080");
         driver = new ChromeDriver(options);
+        Capabilities caps = ((RemoteWebDriver) driver).getCapabilities();
+        String browserName = caps.getBrowserName();
+        String browserVersion = caps.getBrowserVersion();
+
+        System.out.println("Browser: " + browserName);
+        System.out.println("Version: " + browserVersion);
 
         //Resulation
         driver.manage().window().setPosition(new Point(0,0));

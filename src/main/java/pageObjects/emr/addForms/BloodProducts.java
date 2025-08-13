@@ -17,6 +17,12 @@ public class BloodProducts {
     @FindBy(how= How.XPATH, using="//button[@id='solutionBagSizeCodeList']/following-sibling::ul/li")
     public List<WebElement> solutionBagSizeList;
 
+
+    @FindBy(how= How.NAME, using="solutionBagSize")
+    public WebElement input_amount;
+
+
+
     @FindBy(how=How.ID, using="solutionBagSizeCodeList")
     public WebElement btn_solutionBagSizeList;
 

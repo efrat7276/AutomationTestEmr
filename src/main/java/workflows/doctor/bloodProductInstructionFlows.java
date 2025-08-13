@@ -3,6 +3,7 @@ package workflows.doctor;
 import extensions.UIActions;
 import extensions.Verifications;
 import io.qameta.allure.Step;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import pageObjects.emr.addForms.BloodProducts;
 import utilities.CommonOps;
 
@@ -20,14 +21,16 @@ public class bloodProductInstructionFlows extends CommonOps {
     public static void bloodProductFormAddBloodProduct(boolean addAndClose) {
         UIActions.click(bloodProducts.btn_bloodProductList);
         UIActions.selectFromListByIndex(bloodProducts.bloodProductList, 3);
+
+       // UIActions.click(bloodProducts.btn_solutionBagSizeList);
+      //  UIActions.selectFromListByIndex(bloodProducts.solutionBagSizeList, 1);
+        UIActions.updateText(bloodProducts.input_amount , "3");
         UIActions.updateText(bloodProducts.inp_comment, "בדיקות אוטו'");
-        UIActions.click(bloodProducts.btn_solutionBagSizeList);
-        UIActions.selectFromListByIndex(bloodProducts.solutionBagSizeList, 1);
         if(addAndClose)
-            drugForm.btn_addAndClose.click();
+           wait.until(ExpectedConditions.visibilityOf(  drugForm.btn_addAndClose)) .click();
         else
             drugForm.btn_add.click();
-        bloodProdFormAddABloodProduct(false);
+       // bloodProdFormAddABloodProduct(false);
 
 
         // למחלקת ילדים יש הוספה..
