@@ -41,60 +41,60 @@ public class regression1 extends CommonOps {
       //  String str =  InsertToDBFlows.AddToPatientOrCatheter(2024324527,4);
 
         WebFlows.patientBoxEntry(patient_num);
-//        doctorFlows.stopAllActiveInstructionToPatient();
-//        doctorFlows.newDrug();
-//        //daily drug
-//        doctorFlows.drugFormAddDrugDaily("acetylsalicylic", 20, 1, "1", false, false, false);
+        doctorFlows.stopAllActiveInstructionToPatient();
+        doctorFlows.newDrug();
+        //daily drug
+        doctorFlows.drugFormAddDrugDaily("acetylsalicylic", 20, 1, "1", false, false, false);
+
+        //once only drug
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        doctorFlows.drugFormAddDrugOnceOnly("INJ bevacizumab 100mg/4ml ( AVASTIN)", "20", null, null, false, false);
+//        //sos drug
+        //drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+
+        doctorFlows.drugFormAddDrugSOS("TAB paracetamol 500mg (ACAMOL)", "20", null, 4, 3, false);
+        //byHour drug
+       // drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+
+        doctorFlows.drugFormAddDrugByHour("TAB paracetamol 500mg (ACAMOL)", 48, "20", null, false);
+      //  weekly drug
+       // drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+
+        doctorFlows.drugFormAddDrugWeekly("TAB FLUoxetine 20mg (FLUTINE)" , 2, "20",null,true);
+
+
+//        //  תרופות נוזליות
+        doctorFlows.newDrug();
+        doctorFlows.drugFormAddLiquidDrug("INJ atracrium 25mg/2.5ml (TRACRIUM)", "dextrose 5% 500ml", 11,false);
+        //drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+
+        doctorFlows.drugFormAddLiquidDrug("INJ heparin 5000u/ml 5ml", "dextrose 5% 100ml", 12, false);
+      //  drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+
+        doctorFlows.drugFormAddLiquidDrug("INJ aflibercept 100mg (EYLEA)", "dextrose 5% 100ml", 12, true);
+
+        doctorFlows.newDrug();
+
+        doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 11, false);
+      //  drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
+        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+
+        doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 12, true);
+
+
+        // הוראות כלליות
+        // daily - פעם ביום
+        // onceOnly - פעם ביום
 //
-//        //once only drug
-//        UIActions.updateText(drugForm.inp_selectDrug,"   ");
-//        doctorFlows.drugFormAddDrugOnceOnly("INJ bevacizumab 100mg/4ml ( AVASTIN)", "20", null, null, false, false);
-////        //sos drug
-//        //drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        UIActions.updateText(drugForm.inp_selectDrug,"   ");
+        doctorFlows.newGeneralIns();
+        generalInstructionFlows.generalFormAddGeneralInsDaily(1, 1, 1, false, false, false);
+        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(2, 1, "16:00", false, true);
 //
-//        doctorFlows.drugFormAddDrugSOS("TAB paracetamol 500mg (ACAMOL)", "20", null, 4, 3, false);
-//        //byHour drug
-//       // drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        UIActions.updateText(drugForm.inp_selectDrug,"   ");
-//
-//        doctorFlows.drugFormAddDrugByHour("TAB paracetamol 500mg (ACAMOL)", 48, "20", null, false);
-//      //  weekly drug
-//       // drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        UIActions.updateText(drugForm.inp_selectDrug,"   ");
-//
-//        doctorFlows.drugFormAddDrugWeekly("TAB FLUoxetine 20mg (FLUTINE)" , 2, "20",null,true);
-//
-//
-////        //  תרופות נוזליות
-//        doctorFlows.newDrug();
-//        doctorFlows.drugFormAddLiquidDrug("INJ atracrium 25mg/2.5ml (TRACRIUM)", "dextrose 5% 500ml", 11,false);
-//        //drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        UIActions.updateText(drugForm.inp_selectDrug,"   ");
-//
-//        doctorFlows.drugFormAddLiquidDrug("INJ heparin 5000u/ml 5ml", "dextrose 5% 100ml", 12, false);
-//      //  drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        UIActions.updateText(drugForm.inp_selectDrug,"   ");
-//
-//        doctorFlows.drugFormAddLiquidDrug("INJ aflibercept 100mg (EYLEA)", "dextrose 5% 100ml", 12, true);
-//
-//        doctorFlows.newDrug();
-//
-//        doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 11, false);
-//      //  drugForm.inp_selectDrug.equals(driver.switchTo().activeElement());
-//        UIActions.updateText(drugForm.inp_selectDrug,"   ");
-//
-//        doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 12, true);
-//
-//
-//        // הוראות כלליות
-//        // daily - פעם ביום
-//        // onceOnly - פעם ביום
-////
-//        doctorFlows.newGeneralIns();
-//        generalInstructionFlows.generalFormAddGeneralInsDaily(1, 1, 1, false, false, false);
-//        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(2, 1, "16:00", false, true);
-////
 ////        // מוצרי דם
 //////        //todo  לשלוח שם וכמות מוצר דם
         doctorFlows.newBloodProduct();
