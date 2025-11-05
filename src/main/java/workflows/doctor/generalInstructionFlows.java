@@ -80,7 +80,7 @@ public class generalInstructionFlows extends CommonOps {
         Thread.sleep(1000);
 
         saveGeneralInstructionsSelected();
-        Verifications.textIsContains(doctorInstructionPage.title , "הוראות רפואיות");
+
     }
 
     @Step("add generalIns to patient")

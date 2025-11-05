@@ -20,32 +20,25 @@ import java.util.List;
 @Listeners(utilities.Listeners.class)
 public class regression1 extends CommonOps {
 
+    /**
+     * adds by doctor all types of instruction for the patient : drugs , fluids and boluses , continuous infusions ,  general instruction and blood products.
+     * all instructions are approved by nurse
+     *  all instructions are executed by nurse in Cardex
+     */
     @Test(description = "addToPatientAllPossibilityIns")
     @Description("add to patient all possibility ins ")
-    public void test01_addToPatientAllPossibilityIns() throws InterruptedException, IOException, SQLException {
-//         מוסיף למטופל תרופות , הוראות כלליות , נוזלים , מוצרי דם
-//
-//         תרופת
-//         daily  - פעם ביום
-//         onceOnly -
-//         weekly - פעמיים בשבוע
-//         SOS
-//        byHour - פעם ב-48 שעות
+    public void test01_addToPatientAllPossibilityIns() throws InterruptedException {
         int patient_num = 5;
                 ;
-      //  String department ="ט'נ' כללי";
+       String department ="ט'נ' כללי";
         WebFlows.login('d');
      //  departmentFlows.chooseDepartment(department);
-
-
-      //  String str =  InsertToDBFlows.AddToPatientOrCatheter(2024324527,4);
 
         WebFlows.patientBoxEntry(patient_num);
         doctorFlows.stopAllActiveInstructionToPatient();
         doctorFlows.newDrug();
         //daily drug
         doctorFlows.drugFormAddDrugDaily("acetylsalicylic", 20, 1, "1", false, false, false);
-
         //once only drug
         UIActions.updateText(drugForm.inp_selectDrug,"   ");
         doctorFlows.drugFormAddDrugOnceOnly("INJ bevacizumab 100mg/4ml ( AVASTIN)", "20", null, null, false, false);
@@ -87,7 +80,7 @@ public class regression1 extends CommonOps {
         doctorFlows.drugFormAddLiquidDrug("INF dextrose 5% 100ml (GLUCOSE)", null, 12, true);
 
 
-        // הוראות כלליות
+        // general instruction
         // daily - פעם ביום
         // onceOnly - פעם ביום
 //
@@ -119,7 +112,7 @@ public class regression1 extends CommonOps {
        afterMethod();
 ////
 
-
+//
         WebFlows.login('n');
         Thread.sleep(2000);
      // departmentFlows.chooseDepartment(department);
@@ -166,7 +159,6 @@ public class regression1 extends CommonOps {
     public void test02_addToPatientFutureDrug() throws InterruptedException {
         WebFlows.login('d');
         WebFlows.patientBoxEntry(2);
-        Thread.sleep(1000);
         doctorFlows.newDrug();
         doctorFlows.drugFormAddDrugDaily("enoxaparin", 100 , 1 , null , false , true , true);
         doctorFlows.approvalInstruction();

@@ -27,6 +27,9 @@ public class CommonOps extends Base {
     @BeforeSuite
     public void BeforeSuite() {
 
+        // הגדרת סביבת הרצה והתחברות לDB של אותה סביבה
+
+
         //קבלת פרמטר מהrunner על איזה סביבה להריץ טסטים
         try{
             env = System.getenv("environment");
@@ -65,6 +68,12 @@ public class CommonOps extends Base {
                 ManageDB.openConnection(Helpers.getData("DBUrl-dev"),Helpers.getData("DBName"),Helpers.getData("DBPassword"));
 
         }
+    }
+
+    @BeforeMethod
+    public void startSession() {
+        initBrowser(Helpers.getData("BrowserName"));
+
     }
     public  void initBrowser(String browserType){
 
@@ -132,11 +141,7 @@ public class CommonOps extends Base {
 //        return driver;
 //    }
 
-    @BeforeMethod
-    public void startSession() {
-        initBrowser(Helpers.getData("BrowserName"));
 
-    }
 
 
     @AfterClass

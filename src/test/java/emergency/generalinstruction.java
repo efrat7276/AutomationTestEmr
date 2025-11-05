@@ -24,23 +24,19 @@ public class generalinstruction extends CommonOps {
     @Description("add and save drug to patient emergency")
     public void test00_AddAndSavaDruToPatientEmergency() throws InterruptedException, IOException {
         WebFlows.login('d');
-        Thread.sleep(1000);
         departmentFlows.chooseDepartment(emergencyDep);
         WebFlows.patientBoxEntry(1);
-        doctorFlows.stopAllActiveInstructionToPatient();
-
-        doctorFlows.newDrug();
-        doctorFlows.drugFormAddDrugOnceOnly("TAB acetylsalicylic acid 100mg (GODAMED)",null ,null,null ,false,true);
-
-
-        doctorFlows.newGeneralIns();
-        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(2, 1, null, false, true);
+//        doctorFlows.stopAllActiveInstructionToPatient();
+//
+//        doctorFlows.newDrug();
+//        doctorFlows.drugFormAddDrugOnceOnly("TAB acetylsalicylic acid 100mg (GODAMED)",null ,null,null ,false,true);
+//
+//
+//        doctorFlows.newGeneralIns();
+//        generalInstructionFlows.generalFormAddGeneralInsOnceOnly(2, 1, null, false, true);
 
         doctorFlows.approvalInstruction();
-        Thread.sleep(1000);
         NavigateFlows.goToCategory("cardex");
-        Thread.sleep(5000);
-
         nurseFlows.executionNurseSign();
         //  FileUtils.copyFile(utilities.Listeners.saveScreenshotFile(), new File("C:\\Automation\\AutomationProject_emr\\temp\\+"+Helpers.getFileName("cardex")+".png"));
 

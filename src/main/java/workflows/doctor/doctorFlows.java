@@ -65,6 +65,7 @@ public class doctorFlows extends CommonOps {
     public static void approvalInstruction(){
 
       UIActions.waitForDigit(doctorInstructionPage.btn_approvalDrug.findElements(By.tagName("span")).get(0));
+        wait.until(ExpectedConditions.visibilityOf(doctorInstructionPage.btn_approvalDrug));
       WebFlows.userSignConfirm();
 
     }
@@ -133,7 +134,7 @@ public class doctorFlows extends CommonOps {
 
         try{ confirmModalSameInstruction();}catch (Exception ex){}
 
-        if(dosage!=null)
+        if(dosage!=null && dosage!="null")
         {
             drugForm.input_drugDosage.clear();
             drugForm.input_drugDosage.sendKeys(dosage);
@@ -245,8 +246,18 @@ public class doctorFlows extends CommonOps {
         drugForm.btn_add.click();
     }
 
+    /**
+     *
+     * @param drugName fghhgfhg
+     * @param dosage
+     * @param numberOfTimeDaily
+     * @param routeAdinistration
+     * @param isAntibiotic
+     * @param isFuture
+     * @param addAndClose
+     */
     @Step(" fill DrugForm for addNewDrugDaily")
-    public static void drugFormAddDrugDaily(String drugName , int dosage,  int numberOfTimeDaily, String routeAdinistration, boolean isAntibiotic , boolean isFuture , boolean addAndClose){
+    public static void drugFormAddDrugDaily(String drugName ,@Nullable Integer dosage ,  int numberOfTimeDaily, String routeAdinistration, boolean isAntibiotic , boolean isFuture , boolean addAndClose){
 
         fillDrugsDetails(drugName,String.valueOf(dosage),routeAdinistration);
         UIActions.updateText(drugForm.input_drugComment, "בדיקות אוטו'");
