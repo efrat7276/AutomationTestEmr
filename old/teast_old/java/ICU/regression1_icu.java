@@ -1,0 +1,86 @@
+package ICU;
+
+import io.qameta.allure.Description;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import utilities.CommonOps;
+import workflows.NavigateFlows;
+import workflows.WebFlows;
+import workflows.departmentFlows;
+import workflows.doctor.doctorFlows;
+import workflows.nurse.nurseFlows;
+import workflows.icu_department.*;
+import workflows.patientSheet.deviceDataFlows;
+
+import java.io.IOException;
+
+@Listeners(utilities.Listeners.class)
+public class regression1_icu extends CommonOps {
+
+   // String  patient_num = "24120811";
+    int  patient_num = 2;
+
+    String departmentICU = "ט'נ' כללי";
+    @Test(description = "reception planning")
+    @Description("reception planning")
+    public void
+    test01_icu_receptionPlanning() throws InterruptedException, IOException {
+
+        WebFlows.login('d');
+        departmentFlows.chooseDepartment(departmentICU);
+        WebFlows.patientBoxEntry(patient_num);
+      //  doctorFlows.stopAllActiveInstructionToPatient();
+        doctorFlows.newDrug();
+        //daily drug
+    //    doctorFlows.drugFormAddDrugCycle("KCL", 20, 3, false,  true);
+       planningReception.savePlanningReception();
+//
+//        Thread.sleep(1000);
+//         ////חתימה על כל ההוראות מהקבלה
+        doctorFlows.approvalInstruction();
+        Thread.sleep(1000);
+       afterMethod();
+
+
+    //   CommonOps.reLogin();
+        WebFlows.login('n');
+        departmentFlows.chooseDepartment(departmentICU);
+       WebFlows.patientBoxEntry(patient_num);
+        nurseFlows.approvalAllPossibilitiesIns(true,false);
+        nurseFlows.approvalNurseSign();
+        NavigateFlows.goToCategory("cardex");
+        nurseFlows.executeAndSupervisionAllCardexIns();
+
+    }
+
+    @Test(description = "patient sheet")
+    @Description("patient sheet")
+    void check_patientSheet() throws InterruptedException {
+
+       // preliminaryActionsFlows.addDrugs();
+       // Thread.sleep(1000);
+        WebFlows.login('d');
+        Thread.sleep(1000);
+
+
+
+
+
+       departmentFlows.chooseDepartment(departmentICU);
+       WebFlows.patientBoxEntry(patient_num);
+       NavigateFlows.goToCategory("patientSheet");
+        Thread.sleep(1000);
+
+       deviceDataFlows.confirm_device_data();
+       deviceDataFlows.make_error_device_data();
+       Thread.sleep(500);
+
+       deviceDataFlows.add_a_comment_device_data();
+        Thread.sleep(500);
+        deviceDataFlows.add_an_error_comment_device_data();
+
+    }
+
+
+
+}

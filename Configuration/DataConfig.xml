@@ -16,28 +16,28 @@
 
 <!--    <qa>-->
         <DBUrl-qa>jdbc:sqlserver://lansqltest;databaseName=laniadoQa</DBUrl-qa>
-        <url-qa>https://lanwebapptest.laniado.org.il/emr2/</url-qa>
+        <qa>https://lanwebapptest.laniado.org.il/emr2/</qa>
 <!--    </qa>-->
 
 <!--    <prod>-->
         <DBUrl-prod>jdbc:sqlserver://lansqltest;databaseName=laniadoProd</DBUrl-prod>
-        <url-prod>https://lanwebapp.laniado.org.il/emr2/</url-prod>
+        <prod>https://lanwebapp.laniado.org.il/emr2/</prod>
 <!--    </prod>-->
 <!--    <dev>-->
         <DBUrl-dev>jdbc:sqlserver://lansqltest;databaseName=laniado_dev</DBUrl-dev>
-        <url-dev>https://landev16.laniado.org.il/emr2/</url-dev>
+        <dev>https://landev16.laniado.org.il/emr2/</dev>
 <!--    </dev>-->
 
 
     <!--    <automation>-->
     <DBUrl-dev>jdbc:sqlserver://lansqltest;databaseName=laniado_dev</DBUrl-dev>
-    <url-automation>https://laniis19.laniado.org.il/emr2/</url-automation>
+    <automation>https://laniis19.laniado.org.il/emr2/</automation>
     <!--    </automation>-->
 
 
     <!--    <production>-->
        <DBUrl-production>jdbc:sqlserver://lansql05;databaseName=laniado</DBUrl-production>
-       <url-production>https://emr.laniado.org.il/emr2/</url-production>
+       <production>https://emr.laniado.org.il/emr2/#/login</production>
     <!--    </production>-->
 
 <!--    <DBName>test</DBName>-->

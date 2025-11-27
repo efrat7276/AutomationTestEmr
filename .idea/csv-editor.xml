@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\DDTFiles\DrugsInfectiousDiseaseSpecial.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\DDTFiles\DrugsList.csv">
           <value>
             <Attribute>
@@ -25,6 +32,13 @@
           </value>
         </entry>
         <entry key="\DDTFiles\Patients.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DDTFiles\data.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
