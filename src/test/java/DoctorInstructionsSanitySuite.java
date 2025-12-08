@@ -1,4 +1,6 @@
 import org.testng.annotations.Test;
+
+import actionUtilies.DBExecuter;
 import pages.*;
 import pages.addForms.DrugFormPage;
 import pages.mainPages.PatientsListPage;
@@ -56,7 +58,9 @@ public class DoctorInstructionsSanitySuite extends BaseTest {
 
     @Test(description = "Sanity: Adding a medicine")
     public void testAddMedicine() {
-        loginAsDoctor();
+      String result = DBExecuter.executeQuery("SELECT * FROM cpoe.cpoeIinstructionTypeCode AS citc").toString();
+       System.out.println(result);
+      loginAsDoctor();
         selectFirstPatient();
         System.out.println("Starting test: Adding a medicine");
         doctorInstructionPage.addMedicineFull("dep", "daily", "20", "1", doctorUsername, doctorPassword);

@@ -2,24 +2,52 @@ package actionUtilies;
 
 import io.qameta.allure.Step;
 
-
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-// public class DBAction extends CommonOps {
+import helpers.ManageDB;
 
-//     @Step("get count list")
-//     public  static String countRow(String query) throws SQLException {
-//         try {
-//             rs = stmt.executeQuery(query);
-//         }
-//         catch (Exception ex){
-//             System.out.println("the data didn't reach . see details: "+ ex);
-//         }
-//         return rs.getString(1);
-//     }
+public class DBExecuter {
+
+    /**
+     * מבצע query למסד הנתונים ומחזיר את התוצאה כ-String.
+     * במקרה של תוצאה מרובה שורות, מחזיר את העמודה הראשונה של השורה הראשונה.
+     * 
+     * @param query שאילתת SQL לביצוע
+     * @return תוצאת ה-query כ-String, או null במקרה של שגיאה
+     */
+    @Step("Execute query: {query}")
+    public static String executeQuery(String query) {
+        Statement stmt = null;
+        ResultSet rs = null;
+        
+        try {
+            stmt = ManageDB.getStatement();
+            rs = stmt.executeQuery(query);
+            
+            if (rs.next()) {
+                return rs.getString(1);
+            }
+            return null;
+            
+        } catch (Exception ex) {
+            System.out.println("Query execution failed. Query: " + query + " | Error: " + ex.getMessage());
+            ex.printStackTrace();
+            return null;
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (stmt != null) stmt.close();
+            } catch (SQLException e) {
+                System.out.println("Error closing resources: " + e.getMessage());
+            }
+        }
+    }
+}
 
 //     @Step("insert to table")
 //     public static String InsertQuery(String query) throws SQLException {
