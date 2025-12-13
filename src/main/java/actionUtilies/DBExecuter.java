@@ -47,7 +47,35 @@ public class DBExecuter {
             }
         }
     }
+
+    /**
+     * For update/delete queries
+     * @param query
+     * @return
+     */
+    public static int executeUpdateQuery(String query) {
+        Statement stmt = null;
+        try {
+            stmt = ManageDB.getStatement();
+            int affectedRows = stmt.executeUpdate(query); // מתאים ל-INSERT/UPDATE/DELETE
+            return affectedRows;
+        } catch (Exception ex) {
+            System.out.println("Update/Delete query failed. Query: " + query + " | Error: " + ex.getMessage());
+            ex.printStackTrace();
+            return -1;
+        } finally {
+            try {
+                if (stmt != null) stmt.close();
+            } catch (SQLException e) {
+                System.out.println("Error closing statement: " + e.getMessage());
+            }
+        }
+    }
+
 }
+
+
+
 
 //     @Step("insert to table")
 //     public static String InsertQuery(String query) throws SQLException {

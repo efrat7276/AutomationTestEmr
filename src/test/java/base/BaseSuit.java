@@ -1,5 +1,6 @@
 package base;
 
+import actionUtilies.DBExecuter;
 import drivers.DriverManager;
 import helpers.Constants;
 import org.testng.annotations.AfterTest;
@@ -27,5 +28,14 @@ public class BaseSuit {
     protected void choosePatient(int patientIndex) {
         patientsListPage.choosePatient(patientIndex);
     }
+
+    protected void removePatientDataBeforeEachTest(String query) {
+        int result = DBExecuter.executeUpdateQuery(query);
+        if(result!=-1){
+            System.out.println("Patient removed successfully");
+        }
+    }
+
+
 
 }

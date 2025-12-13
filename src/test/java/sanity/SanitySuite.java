@@ -2,6 +2,8 @@ package sanity;
 
 import base.BaseSuit;
 import helpers.Constants;
+import helpers.QueriesUtils;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.*;
 import pages.addForms.DrugFormPage;
@@ -26,6 +28,11 @@ public class SanitySuite extends BaseSuit {
     UserSignModalPage userSignModalPage = new UserSignModalPage();
     InnerMenuPage innerMenuPage = new InnerMenuPage();
     private DrugFormPage drugForm = new DrugFormPage();
+
+    @BeforeTest
+    public void preTest(){
+        removePatientDataBeforeEachTest( QueriesUtils.removePatient_from_tbl );
+    }
 
     /**
      * check login is succeeded
