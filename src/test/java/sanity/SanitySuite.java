@@ -1,3 +1,7 @@
+package sanity;
+
+import base.BaseSuit;
+import helpers.Constants;
 import org.testng.annotations.Test;
 import pages.*;
 import pages.addForms.DrugFormPage;
@@ -8,35 +12,18 @@ import pages.nurse.Execute.CardexPage;
 import pages.nurse.approval.ApprovalInstructionPage;
 
 import static org.testng.Assert.assertTrue;
-public class SanitySuite extends BaseTest {
+public class SanitySuite extends BaseSuit {
 
-    private static final String DOCTOR_ROLE = "רופא";
-    private static final String NURSE_ROLE = "אחות";
-    
-    private static final String DOCTOR_USERNAME = "test";
-    private static final String DOCTOR_PASSWORD = "Te231121";
-    
-    private static final String NURSE_USERNAME = "test";
-    private static final String NURSE_PASSWORD = "Te231121";
 
     private static final int PATIENT_1 = 1;
     private static final int PATIENT_2 = 2;
 
-    LoginPage loginPage=new LoginPage();
     MainMenuPage mainMenuPage=new MainMenuPage();
-
-    PatientsListPage patientsListPage = new PatientsListPage();
-
     PatientBoxPage patientBoxPage = new PatientBoxPage();
-
     DoctorInstructionPage doctorInstructionPage = new DoctorInstructionPage();
-
     ApprovalInstructionPage approvalInstructionPage = new ApprovalInstructionPage();
-
     CardexPage cardexPage = new CardexPage();
-
     UserSignModalPage userSignModalPage = new UserSignModalPage();
-
     InnerMenuPage innerMenuPage = new InnerMenuPage();
     private DrugFormPage drugForm = new DrugFormPage();
 
@@ -48,20 +35,22 @@ public class SanitySuite extends BaseTest {
         loginAsDoctor();
         mainMenuPage.verificationPatientListTabExisting();
     }
+
     @Test(description = "adding a medicine")
     public void test02_addingMedicine(){
         loginAsDoctor();
         choosePatient(PATIENT_1);
         patientBoxPage.verifyPatientDetailsExisting();
-        doctorInstructionPage.addMedicineFull("dep", "daily", "20", "1", DOCTOR_USERNAME, DOCTOR_PASSWORD);
+        doctorInstructionPage.addMedicineFull("dep", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
+
     @Test(description = "approval medicine by nurse")
     public void test03_approvalMedicineByNurse(){
         loginAsNurse();
         choosePatient(PATIENT_1);
         patientBoxPage.verifyPatientDetailsExisting();
         approvalInstructionPage.approveDrugsSelectFourthCurrentDayHour();
-        approvalInstructionPage.approvalAllInstructionByNurse(NURSE_USERNAME, NURSE_PASSWORD);
+        approvalInstructionPage.approvalAllInstructionByNurse(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
 
     @Test(description = "execute medicine by nurse")
@@ -70,7 +59,7 @@ public class SanitySuite extends BaseTest {
         choosePatient(PATIENT_1);
         patientBoxPage.verifyPatientDetailsExisting();
         cardexPage.executeAllDrugsToThisShift();
-        cardexPage.approvalAllExecution(NURSE_USERNAME, NURSE_PASSWORD);
+        cardexPage.approvalAllExecution(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
 
     // הוספת הוראה כללית בתור טסט מעצמו ??
@@ -91,20 +80,8 @@ public class SanitySuite extends BaseTest {
         loginAsDoctor();
         choosePatient(PATIENT_1);
         patientBoxPage.verifyPatientDetailsExisting();
-        doctorInstructionPage.addFluidFull("INF", "Continuous", "500", "1000", DOCTOR_USERNAME, DOCTOR_PASSWORD);
+        doctorInstructionPage.addFluidFull("INF", "Continuous", "500", "1000", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 
-    // helper methods to reduce duplication and centralize credentials / actions
-    private void loginAsDoctor() {
-        loginPage.login(DOCTOR_USERNAME, DOCTOR_PASSWORD, DOCTOR_ROLE);
-    }
-
-    private void loginAsNurse() {
-        loginPage.login(NURSE_USERNAME, NURSE_PASSWORD, NURSE_ROLE);
-    }
-
-    private void choosePatient(int patientIndex) {
-        patientsListPage.choosePatient(patientIndex);
-    }
 
 }

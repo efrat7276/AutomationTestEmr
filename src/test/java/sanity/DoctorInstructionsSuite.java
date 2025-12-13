@@ -1,3 +1,6 @@
+package sanity;
+import base.BaseSuit;
+import helpers.Constants;
 import org.testng.annotations.Test;
 
 import actionUtilies.DBExecuter;
@@ -5,16 +8,13 @@ import pages.*;
 import pages.addForms.DrugFormPage;
 import pages.mainPages.PatientsListPage;
 
-public class DoctorInstructionsSanitySuite extends BaseTest {
-    LoginPage loginPage = new LoginPage();
+public class DoctorInstructionsSuite extends BaseSuit {
+
     PatientsListPage patientsListPage = new PatientsListPage();
     PatientBoxPage patientBoxPage = new PatientBoxPage();
     DoctorInstructionPage doctorInstructionPage = new DoctorInstructionPage();
     DrugFormPage drugForm = new DrugFormPage();
 
-
-    private final String doctorUsername = "test";
-    private final String doctorPassword = "Te231121";
     
     public void openInstructionForm(InstructionType type) {
         switch(type) {
@@ -47,9 +47,6 @@ public class DoctorInstructionsSanitySuite extends BaseTest {
                 break;
         }
     }
-    private void loginAsDoctor() {
-        loginPage.login(doctorUsername, doctorPassword, "רופא");
-    }
 
     private void selectFirstPatient() {
         patientsListPage.choosePatient(1);
@@ -63,7 +60,7 @@ public class DoctorInstructionsSanitySuite extends BaseTest {
       loginAsDoctor();
         selectFirstPatient();
         System.out.println("Starting test: Adding a medicine");
-        doctorInstructionPage.addMedicineFull("dep", "daily", "20", "1", doctorUsername, doctorPassword);
+        doctorInstructionPage.addMedicineFull("dep", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
         System.out.println("Finished test: Adding a medicine");
     }
 
@@ -72,7 +69,7 @@ public class DoctorInstructionsSanitySuite extends BaseTest {
         loginAsDoctor();
         selectFirstPatient();
         System.out.println("Starting test: Adding a fluid");
-        doctorInstructionPage.addFluidFull("INF", "continuous", "50", "1L", doctorUsername, doctorPassword);
+        doctorInstructionPage.addFluidFull("INF", "continuous", "50", "1L", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
         System.out.println("Finished test: Adding a fluid");
     }
 
@@ -81,7 +78,7 @@ public class DoctorInstructionsSanitySuite extends BaseTest {
         loginAsDoctor();
         selectFirstPatient();
         System.out.println("Starting test: Adding a blood product");
-        doctorInstructionPage.addBloodProductFull("דם דחוס", "1", doctorUsername, doctorPassword);
+        doctorInstructionPage.addBloodProductFull("דם דחוס", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
         System.out.println("Finished test: Adding a blood product");
     }
 
@@ -108,8 +105,8 @@ public class DoctorInstructionsSanitySuite extends BaseTest {
     public void testAddContinuousFluid() {
         loginAsDoctor();
         selectFirstPatient();
-        doctorInstructionPage.addFluidFull("INF", "Continuous", "500", "1000", doctorUsername, doctorPassword);
-        doctorInstructionPage.approveAndVerifyInstructions(doctorUsername, doctorPassword);
+        doctorInstructionPage.addFluidFull("INF", "Continuous", "500", "1000", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+        doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 
     // @Test(description = "Adding nutrition")
