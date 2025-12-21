@@ -72,6 +72,10 @@ public class DrugFormPage extends BasePage {
     private By btn_durationList = By.xpath("//button[@name='solutionDurationList']");  // כפתור בחירת משך הטיפול
     private By durationList = By.xpath("//button[@name='solutionDurationList']/following-sibling::ul/li");  // רשימת אפשרויות משך הטיפול
 
+    
+    // כפתור ביצוע בתוך טופס התרופה (מנוסח באופן גנרי לפי טקסט)
+    private By btn_executeInForm = By.id("instructionWithExecution");
+
     // ----------------------------------------------------------------------------------
     // הפונקציה הראשית: addMedicine
     /**
@@ -81,7 +85,6 @@ public class DrugFormPage extends BasePage {
      * @param nameMed שם התרופה להזנה בשדה החיפוש.
      * @param possibility התדירות הנבחרת (לדוגמה: "Daily", "SOS", "Once Only").
      * @param dosage מינון התרופה (שדה גנרי) - אופציונלי.
-     * @param routeAdministration דרך מתן התרופה (שדה גנרי) - אופציונלי.
      * @param timesDaily מספר הפעמים ביום עבור תדירות "Daily" - אופציונלי.
      * @param hourToGive שעת מתן מדויקת עבור תדירות "Once Only" - אופציונלי.
      * @param maxTimesPerDay מספר מירבי של פעמים ביום עבור תדירות "SOS" - אופציונלי.
@@ -91,18 +94,18 @@ public class DrugFormPage extends BasePage {
      * @param everyXTime תדירות לפי שעות (לדוגמה: "6 שעות") עבור תדירות "By Hour" - אופציונלי.
      */
     // ----------------------------------------------------------------------------------
-    public void addOneMedicine(
+        public void addOneMedicine(
             String nameMed,
             String possibility,
             @Nullable String dosage,
-            @Nullable String routeAdministration,
             @Nullable String timesDaily,
             @Nullable String hourToGive,
             @Nullable String maxTimesPerDay,
             @Nullable String minInterval,
             @Nullable String timesPerWeek,
             @Nullable List<String> daysOfWeek,
-            @Nullable String everyXTime
+            @Nullable String everyXTime,
+            boolean alsoExecute
     ) {
         // 1. המתנה (Hard Wait) והזנת שם התרופה
         try {
@@ -118,7 +121,7 @@ public class DrugFormPage extends BasePage {
         UIActions.click(possibilityLocator);
 
         // 3. מילוי פרטים כללים
-        fillCommonFields(dosage, routeAdministration);
+        fillCommonFields(dosage);
 
         // 4. קריאה לפונקציה לפי תדרות
         callPossibilityFunction(
@@ -132,10 +135,25 @@ public class DrugFormPage extends BasePage {
                 everyXTime
         );
 
-        // 5. לחיצה על כפתור 'הוספה וסגירה'
+        // 5. ביצוע מיידי מתוך הטופס (אופציונלי)
+        if (alsoExecute) {
+            tryExecuteInForm();
+        }
+
+        // 6. לחיצה על כפתור 'הוספה וסגירה'
         UIActions.click(btn_addAndClose);
         //
 
+    }
+
+    private void tryExecuteInForm() {
+        try {
+            if (UIActions.isElementDisplayed(btn_executeInForm)) {
+                UIActions.click(btn_executeInForm);
+            }
+        } catch (Exception e) {
+            System.out.println("Execute-in-form button not found or not visible: " + e.getMessage());
+        }
     }
 
     /**
@@ -167,7 +185,7 @@ public class DrugFormPage extends BasePage {
         UIActions.click(possibilityLocator);
 
         // 3. מילוי פרטים כללים
-        fillCommonFields(dosage, null);
+        fillCommonFields(dosage);
 
         // 4. קריאה לפונקציה הטיפול הספציפית לנוזל
         handleFluidType(possibility, flowRateOrTimes);
@@ -252,19 +270,14 @@ public class DrugFormPage extends BasePage {
      * @param dosage מינון התרופה - אופציונלי.
      * @param routeAdministration דרך מתן התרופה - אופציונלי.
      */
-    private void fillCommonFields(@Nullable String dosage, @Nullable String routeAdministration) {
+    private void fillCommonFields(@Nullable String dosage) {
         // 1. הזנת מינון
         if (dosage != null && !dosage.isEmpty()) {
             UIActions.clearText(input_drugDosage);
             UIActions.typeText(input_drugDosage, dosage);
             // TODO: לוגיקה לבחירת יחידות מידה
         }
-
-        // 2. בחירת דרך מתן
-        if (routeAdministration != null && !routeAdministration.isEmpty()) {
-            UIActions.click(btn_dropdownRouteAdministration);
-            UIActions.selectFromList(routeAdministrationList, routeAdministration);
-        }
+      
     }
     /**
      * מטפלת בלוגיקה הספציפית לתדירות "Daily" (יומי).

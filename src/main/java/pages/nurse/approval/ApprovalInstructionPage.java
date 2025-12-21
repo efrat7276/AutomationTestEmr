@@ -58,8 +58,6 @@ public class ApprovalInstructionPage extends BasePage {
         }
         System.out.println("סיום תהליך אישור התרופות.");
 
-        System.out.println("חתימת אחות על אישור התרופות ובחירת השעות ");
-        UIActions.click(btnApproval);
     }
 
     /**

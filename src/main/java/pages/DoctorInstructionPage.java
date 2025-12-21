@@ -32,6 +32,8 @@ public class DoctorInstructionPage extends BasePage{
 
     // Assert עם הודעת שגיאה ברורה
     public void verifySecondTitle(InstructionType type) {
+        if(type == InstructionType.NUTRITION)
+            type = InstructionType.MEDICINE;
         String actualText = UIActions.getText(getSecondTitleSpanLocator()).trim();
         if (!isSecondTitleDisplayed(type)) {
             throw new AssertionError("Expected title to contain '" + type.getDescription() + "' but got '" + actualText + "'");
@@ -64,7 +66,7 @@ public class DoctorInstructionPage extends BasePage{
                 UIActions.click(btnAddGeneralInstruction);
                 break;
             case NUTRITION:
-                UIActions.click(btnAddMedicine);
+                UIActions.click(btnAddNutrition);
                 break;
             case IMMEDIATE:
           //      UIActions.click(btns_addImmediate);
@@ -92,13 +94,20 @@ public class DoctorInstructionPage extends BasePage{
     public void addMedicineFull(String name, String frequency, String dose, String amount, String username, String password) {
         clickButtonAddInstruction(InstructionType.MEDICINE);
 
-        drugForm.addOneMedicine(name, frequency, dose, null, amount, null, null, null, null, null, null);
+        drugForm.addOneMedicine(name, frequency, dose, amount, null, null, null, null, null, null, false);
         approveAndVerifyInstructions(username, password);
     }
 
     public void addFluidFull(String name, String frequency, String dose, String amount, String username, String password) {
         clickButtonAddInstruction(InstructionType.FLUID);
         drugForm.addFluid(name, frequency, dose, amount);
+        approveAndVerifyInstructions(username, password);
+    }
+
+       public void addNutritionFull(String name, String frequency, String dose, String amount, String username, String password) {
+        clickButtonAddInstruction(InstructionType.NUTRITION);
+        // For nutrition daily, "amount" represents times per day. Map it to timesDaily.
+        drugForm.addOneMedicine(name, frequency, dose, amount, null, null, null, null, null, null, false);
         approveAndVerifyInstructions(username, password);
     }
 

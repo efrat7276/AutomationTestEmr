@@ -55,8 +55,6 @@ public class DoctorInstructionsSuite extends BaseSuit {
 
     @Test(description = "Sanity: Adding a medicine")
     public void testAddMedicine() {
-      String result = DBExecuter.executeQuery("SELECT * FROM cpoe.cpoeIinstructionTypeCode AS citc").toString();
-       System.out.println(result);
       loginAsDoctor();
         selectFirstPatient();
         System.out.println("Starting test: Adding a medicine");

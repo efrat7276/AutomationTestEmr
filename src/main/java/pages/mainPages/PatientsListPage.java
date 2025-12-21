@@ -15,7 +15,19 @@ public class PatientsListPage {
     public void choosePatient(int index){
 
         List<WebElement> list = getPatientRows();
-        list.get(index).click();
+        list.get(index-1).click();
+    }
+
+    /**
+     * Returns true if the patients list is visible and has at least one row.
+     */
+    public boolean verifyPatientsListVisible() {
+        try {
+            List<WebElement> rows = getPatientRows();
+            return rows != null && !rows.isEmpty();
+        } catch (Exception e) {
+            return false;
+        }
     }
 
 }

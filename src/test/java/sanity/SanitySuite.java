@@ -13,12 +13,10 @@ import pages.menu.MainMenuPage;
 import pages.nurse.Execute.CardexPage;
 import pages.nurse.approval.ApprovalInstructionPage;
 
-import static org.testng.Assert.assertTrue;
 public class SanitySuite extends BaseSuit {
 
 
     private static final int PATIENT_1 = 1;
-    private static final int PATIENT_2 = 2;
 
     MainMenuPage mainMenuPage=new MainMenuPage();
     PatientBoxPage patientBoxPage = new PatientBoxPage();
@@ -27,7 +25,9 @@ public class SanitySuite extends BaseSuit {
     CardexPage cardexPage = new CardexPage();
     UserSignModalPage userSignModalPage = new UserSignModalPage();
     InnerMenuPage innerMenuPage = new InnerMenuPage();
-    private DrugFormPage drugForm = new DrugFormPage();
+    DrugFormPage drugForm = new DrugFormPage();
+    PatientsListPage patientsListPage = new PatientsListPage();
+    ChooseDepartmentListPage chooseDepartmentListPage = new ChooseDepartmentListPage();
 
     @BeforeTest
     public void preTest(){
@@ -38,13 +38,13 @@ public class SanitySuite extends BaseSuit {
      * check login is succeeded
      */
     @Test(description = "login")
-    public void test01_login(){
+    public void test_01_login(){
         loginAsDoctor();
         mainMenuPage.verificationPatientListTabExisting();
     }
 
     @Test(description = "adding a medicine")
-    public void test02_addingMedicine(){
+    public void test_02_addingMedicine(){
         loginAsDoctor();
         choosePatient(PATIENT_1);
         patientBoxPage.verifyPatientDetailsExisting();
@@ -52,7 +52,7 @@ public class SanitySuite extends BaseSuit {
     }
 
     @Test(description = "approval medicine by nurse")
-    public void test03_approvalMedicineByNurse(){
+    public void test_03_approvalMedicineByNurse(){
         loginAsNurse();
         choosePatient(PATIENT_1);
         patientBoxPage.verifyPatientDetailsExisting();
@@ -61,7 +61,7 @@ public class SanitySuite extends BaseSuit {
     }
 
     @Test(description = "execute medicine by nurse")
-    public void test04_executeMedicine(){
+    public void test_04_executeMedicine(){
         loginAsNurse();
         choosePatient(PATIENT_1);
         patientBoxPage.verifyPatientDetailsExisting();
@@ -69,26 +69,57 @@ public class SanitySuite extends BaseSuit {
         cardexPage.approvalAllExecution(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
 
-    // הוספת הוראה כללית בתור טסט מעצמו ??
-    @Test(description = "view documents")
-    public void test05_viewDocuments(){
-        loginAsDoctor();
-        choosePatient(PATIENT_2);
+     @Test(description = "adding a nutrition")
+    public void test_05_addingNutrition(){
+        loginAsNutritionist();
+        choosePatient(PATIENT_1);
         patientBoxPage.verifyPatientDetailsExisting();
-        innerMenuPage.navigateToMenuEntry("מנהל חולים");
-        innerMenuPage.navigateToMenuEntry("מסמכים");
-        assertTrue(innerMenuPage.isMenuEntryDisplayed("מסמכים"));
-
-
+       doctorInstructionPage.addNutritionFull("Nut", "daily", "200", "1", Constants.NUTRITIONIST_USERNAME, Constants.NUTRITIONIST_PASSWORD);
     }
 
-    @Test(description = "adding a fluid instruction")
-    public void test06_addingFluidInstruction(){
+  
+
+    @Test(description = "Adding a fluid")
+    public void test_06_addingFluid() {
+        loginAsDoctor();
+        choosePatient(PATIENT_1);
+        patientBoxPage.verifyPatientDetailsExisting();
+        doctorInstructionPage.addFluidFull("INJ", "continuous", "50", "1L", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+    }
+
+    @Test(description = "Adding a blood product")
+    public void test_07_addingBloodProduct() {
+        loginAsDoctor();
+        choosePatient(PATIENT_1);
+        patientBoxPage.verifyPatientDetailsExisting();
+        doctorInstructionPage.addBloodProductFull("דם דחוס", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+    }
+
+    @Test(description = "Adding a continuous fluid")
+    public void test_08_addingContinuousFluid() {
         loginAsDoctor();
         choosePatient(PATIENT_1);
         patientBoxPage.verifyPatientDetailsExisting();
         doctorInstructionPage.addFluidFull("INF", "Continuous", "500", "1000", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+        doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 
+    @Test(description = "Adding and executing immediate instruction by ER doctor")
+    public void test_09_addingAndExecutingImmediateInstructionER() {
+        loginAsDoctor();
+        chooseDepartment(Constants.EMERGENCY_ROOM_DEPARTMENT_STRING);
+        patientsListPage.verifyPatientsListVisible();
+        choosePatient(PATIENT_1);
+        patientBoxPage.verifyPatientDetailsExisting();
+        doctorInstructionPage.clickButtonAddInstruction(InstructionType.MEDICINE);
+        drugForm.addOneMedicine("Aspirin", "once only", "500mg", null, null, null, null, null, null, null, true);
+        doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+    }
+
+    
+
+
+    
+ 
 
 }

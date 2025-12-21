@@ -1,18 +1,22 @@
 package pages;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
-
-import java.util.List;
-
+import actionUtilies.UIActions;
+import org.openqa.selenium.By;
 
 public class ChooseDepartmentListPage {
 
-    @FindBy(how= How.XPATH , using = "//ngb-typeahead-window[contains(@id,'ngb-typeahead')]/button/ngb-highlight")
-    public List<WebElement> departmentList;
+    private By departmentList = By.xpath("//ngb-typeahead-window[contains(@id,'ngb-typeahead')]/button");
 
-    @FindBy(how= How.XPATH , using = "//input[@id='dropdownBasic1']")
-    public WebElement btn_li_department;
+    private By btn_li_department = By.xpath("//input[@id='dropdownBasic1']");
 
+    /**
+     * Opens the department dropdown and selects the given department name.
+     * @param departmentName the visible text of the department to select
+     */
+    public void selectDepartment(String departmentName) {
+        UIActions.click(btn_li_department);
+        UIActions.selectFromList(departmentList, departmentName);
+    }
+
+    
 }

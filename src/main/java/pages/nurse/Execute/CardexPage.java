@@ -134,8 +134,6 @@ private final By btn_approval = By.id("btnApproval");
         for (int i=0 ; i<allCheckBoxDrug.size(); i++){
            allCheckBoxDrug.get(i).click();
         }
-
-
     }
 
     public void approvalAllExecution(String username, String password){

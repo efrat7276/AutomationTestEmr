@@ -1,16 +1,21 @@
 package pages.nurse.wound;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
+import actionUtilies.UIActions;
+import org.openqa.selenium.By;
 
 public class WoundPage {
+ 
+    private final By button_addWound = By.id("btnAddMedicine");
+    private final By button_saveWound = By.xpath("//div[@class='action-bottom-bar']/button[contains(@class, 'ng-star-inserted')][3]");
 
-    @FindBy(how = How.ID , using = "btnAddMedicine")
-    public WebElement button_addWound;
+    public void clickAddWound() {
+        UIActions.click(button_addWound);
+    }
 
-    @FindBy(how = How.XPATH , using = "//div[@class='action-bottom-bar']/button[contains(@class, 'ng-star-inserted')][3]")
-    public WebElement  button_saveWound;
-
-
+    public void clickSaveWound() {
+        UIActions.click(button_saveWound);
+    }
 }
+
+
+
