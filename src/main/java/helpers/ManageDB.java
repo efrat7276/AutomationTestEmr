@@ -28,7 +28,7 @@ public class ManageDB {
         try {
             if (con == null || con.isClosed()) {
                 // Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-                con = DriverManager.getConnection(FilesHelper.getData("DBUrl-qa"), FilesHelper.getData("DBName"),
+                con = DriverManager.getConnection(FilesHelper.getData("DB-prod"), FilesHelper.getData("DBUserName"),
                         FilesHelper.getData("DBPassword"));
             }
         } catch (SQLException e) {

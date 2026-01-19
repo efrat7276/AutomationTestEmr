@@ -15,28 +15,28 @@
 
 
 <!--    <qa>-->
-        <DBUrl-qa>jdbc:sqlserver://lansqltest;databaseName=laniadoQa</DBUrl-qa>
+        <DB-qa>jdbc:sqlserver://lansqltest;databaseName=laniadoQa</DB-qa>
         <qa>https://lanwebapptest.laniado.org.il/emr2/</qa>
 <!--    </qa>-->
 
 <!--    <prod>-->
-        <DBUrl-prod>jdbc:sqlserver://lansqltest;databaseName=laniadoProd</DBUrl-prod>
+        <DB-prod>jdbc:sqlserver://lansqltest;databaseName=laniadoProd</DB-prod>
         <prod>https://lanwebapp.laniado.org.il/emr2/</prod>
 <!--    </prod>-->
 <!--    <dev>-->
-        <DBUrl-dev>jdbc:sqlserver://lansqltest;databaseName=laniado_dev</DBUrl-dev>
+        <DB-dev>jdbc:sqlserver://lansqltest;databaseName=laniado_dev</DB-dev>
         <dev>https://landev16.laniado.org.il/emr2/</dev>
 <!--    </dev>-->
 
 
     <!--    <automation>-->
-    <DBUrl-dev>jdbc:sqlserver://lansqltest;databaseName=laniado_dev</DBUrl-dev>
+    <DB-automation>jdbc:sqlserver://lansqltest;databaseName=laniado_dev</DB-automation>
     <automation>https://laniis19.laniado.org.il/emr2/</automation>
     <!--    </automation>-->
 
 
     <!--    <production>-->
-       <DBUrl-production>jdbc:sqlserver://lansql05;databaseName=laniado</DBUrl-production>
+       <DB-production>jdbc:sqlserver://lansql05;databaseName=laniado</DB-production>
        <production>https://emr.laniado.org.il/emr2/#/login</production>
     <!--    </production>-->
 
@@ -46,9 +46,12 @@
 <!--        <DBName>select_user</DBName>-->
 <!--        <DBPassword>natandsl</DBPassword>-->
 
-    <DBName>ssisUser</DBName>
+    <DBUserName>ssisUser</DBUserName>
     <DBPassword>Vw5XT=T4u]g~JYH9reA26xzMf</DBPassword>
 
-        <userTest>test</userTest>
-        <passwordTest>Te231121</passwordTest>
+    <userTest>test</userTest>
+    <passwordTest>Te231121</passwordTest>
+
+
+
 </Environment>

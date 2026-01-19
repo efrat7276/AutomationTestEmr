@@ -1,13 +1,15 @@
 package pages.nurse.wound;
 
 import actionUtilies.UIActions;
+import pages.UserSignModalPage;
+
 import org.openqa.selenium.By;
 
 import javax.annotation.Nullable;
-import java.util.List;
 
 public class WondFormPage {
 
+      UserSignModalPage userSignModalPage =new UserSignModalPage();
     //הגדרת הפצע
 
     // Dropdown button for selecting wound type (סוג הפצע)
@@ -98,18 +100,17 @@ public class WondFormPage {
 
     public By checkbox_closedInstruction = By.xpath("//input[@formcontrolname='closedInstruction']");
 
-
-    public void addNewWound(String woundDescription,
+    // Save/Sign button in wound form (text: חתימה)
+    public By button_save = By.xpath("//div[@class='action-bottom-bar']/button[contains(@class, 'ng-star-inserted')][3]");
+     public void addNewWound(String woundDescription,
                             @Nullable Integer closeOrOpen,
                             @Nullable Integer degree,
                             @Nullable Integer treatmentInstructionCount) {
-        WoundPage woundPage = new WoundPage();
-        woundPage.clickAddWound();
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
+        // try {
+        //     Thread.sleep(500);
+        // } catch (InterruptedException e) {
+        //     Thread.currentThread().interrupt();
+        // }
         UIActions.click(button_woundToAddList);
         UIActions.selectFromList(options_woundType, woundDescription);
 
@@ -132,14 +133,20 @@ public class WondFormPage {
     ////יש להוסיף התיחסות לפצע ניתוחי ופצע לחץ 
     }
 
-    public void addAnsSaveWound() {
-        WoundPage woundPage = new WoundPage();
-        woundPage.clickSaveWound();
+ private void clickSaveWound() {
+     UIActions.click(button_save);
     }
 
-    public void addAnsSaveWound(String username, String password) {
-        addAnsSaveWound();
+    public void saveWound(String username, String password) {
+          clickSaveWound();
+        
+          userSignModalPage.signModal(username, password);
+
     }
+
+
+
+   
 
 
 }

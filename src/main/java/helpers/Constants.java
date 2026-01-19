@@ -1,5 +1,7 @@
 package helpers;
 
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 public class Constants {
 
     public static final String DOCTOR_ROLE = "רופא";
@@ -17,5 +19,7 @@ public class Constants {
     public static final String NUTRITIONIST_PASSWORD = "Te231121";
 
     public static final String EMERGENCY_ROOM_DEPARTMENT_STRING = "חדר מיון";
+    public static final String DEPARTMENT_NUM_STRING = "10012";    
+
 
 }

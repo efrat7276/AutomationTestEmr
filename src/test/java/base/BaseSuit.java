@@ -4,6 +4,9 @@ import actionUtilies.DBExecuter;
 import drivers.DriverManager;
 import helpers.Constants;
 
+import java.sql.SQLException;
+import java.util.List;
+
 import javax.print.Doc;
 
 import org.testng.annotations.AfterTest;
@@ -89,13 +92,15 @@ public class BaseSuit {
  
 
 
-    protected void removePatientDataBeforeEachTest(String query) {
-        int result = DBExecuter.executeUpdateQuery(query);
-        if(result!=-1){
-            System.out.println("Patient removed successfully");
-        }
+    public static List<String> getDetailsFirstPatient(String query) throws SQLException {
+       List<String> patientDetails = DBExecuter.executeSelectFirstRow(query);
+       return patientDetails;
     }
 
-
+    public static boolean removePatientDataBeforeTest(String query, String param) throws SQLException {
+    String formattedQuery = String.format(query, param);
+    return DBExecuter.isExecutionSuccessful(formattedQuery);
+}
+    
 
 }

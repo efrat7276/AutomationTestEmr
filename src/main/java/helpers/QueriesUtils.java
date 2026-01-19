@@ -1,26 +1,24 @@
 package helpers;
 
 public class QueriesUtils {
+
+  
+    public static final String any_update_query =
+            "UPDATE cpoe.drugInstructions \n" +
+            "SET dose = '500mg' \n" +
+            "WHERE cpoeInstructionID = 3835935";
+        
+        
+    public static final String getDetailsFirstPatient =
+    "SELECT TOP 1 a.mispar_ishpuz, teudat_zeut FROM dbo.admission AS a " + 
+                        "LEFT JOIN dbo.k_lan_dep_beds AS kldb " + 
+                        "ON kldb.mispar_ishpuz = a.mispar_ishpuz " + 
+                        "WHERE k_yechida_shichrur= "+ Constants.DEPARTMENT_NUM_STRING + " "+
+                        "AND tarich_shichrur IS NULL " + 
+                        "AND a.bitul =0 " + 
+                        "ORDER BY kldb.dep_bed_sort ASC ";
+                        
     public static final String removePatient_from_tbl =
-            "INSERT INTO cpoe.drugInstructionExecution(\n" +
-            "\tcpoeInstructionID, tzantar_id, executionDateTime, shiftExecutionDate, timesID, nextTimeId ,\n" +
-            "\tInstructionExecutedID , executedInstructionGivenDose, drugUnitMeasureID ,\n" +
-            "\tinstructionExecutionCommentsID , batchNumber, executedInstructionComment, ins_user, ins_date\n" +
-            ")\n" +
-            "VALUES(\n" +
-            "\t3835699 ,\t\t\t\t\t\t\t\t-- cpoeInstructionID - bigint\n" +
-            "\tNULL ,\t\t\t\t\t\t\t\t\t-- tzantar_id - int\n" +
-            "\t'2025-12-14 10:50:42' ,\t\t\t\t\t\t-- executionDateTime - smalldatetime\n" +
-            "\tNULL ,\t\t\t\t\t\t\t\t\t-- shiftExecutionDate - date\n" +
-            "\t12 ,\t\t\t\t\t\t\t\t\t\t-- timesID - tinyint\n" +
-            "\tNULL ,\t\t\t\t\t\t\t\t\t-- nextTimeId - tinyint\n" +
-            "\tDEFAULT ,\t\t\t\t\t\t\t\t-- InstructionExecutedID - tinyint\n" +
-            "\tNULL ,\t\t\t\t\t\t\t\t\t-- executedInstructionGivenDose - real\n" +
-            "\tNULL ,\t\t\t\t\t\t\t\t\t-- drugUnitMeasureID - tinyint\n" +
-            "\tNULL ,\t\t\t\t\t\t\t\t\t-- instructionExecutionCommentsID - smallint\n" +
-            "\tNULL ,\t\t\t\t\t\t\t\t\t-- batchNumber - varchar(20)\n" +
-            "\tNULL ,\t\t\t\t\t\t\t\t\t-- executedInstructionComment - varchar(500)\n" +
-            "\t0 ,\t\t\t\t\t\t\t\t\t\t-- ins_user - int\n" +
-            "\t'2025-12-14 10:50:42'\t-- ins_date - smalldatetime\n" +
-            ")";
+             "EXEC cpoe.delete_Instruction_Efrat @mispar_ishpuz = %s, @typeid = NULL";
+             // "DELETE FROM cpoe.drugInstructionExecution WHERE cpoeInstructionID = 3835541";
 }

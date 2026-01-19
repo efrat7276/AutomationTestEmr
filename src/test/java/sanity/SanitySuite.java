@@ -1,22 +1,33 @@
 package sanity;
-
 import base.BaseSuit;
 import helpers.Constants;
 import helpers.QueriesUtils;
+
+import java.lang.reflect.Array;
+import java.sql.SQLException;
+import java.util.List;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.*;
 import pages.addForms.DrugFormPage;
+import pages.mainPages.BloodOrders;
+import pages.mainPages.DischargedPatientListPage;
 import pages.mainPages.PatientsListPage;
 import pages.menu.InnerMenuPage;
 import pages.menu.MainMenuPage;
 import pages.nurse.Execute.CardexPage;
+import pages.doctor.FollowupPage;
 import pages.nurse.approval.ApprovalInstructionPage;
+import pages.nurse.wound.WondFormPage;
+import pages.nurse.wound.WoundPage;
 
 public class SanitySuite extends BaseSuit {
 
 
     private static final int PATIENT_1 = 1;
+    private static final int PATIENT_3 = 3;
+    String patientMisparIshpuz =null; 
 
     MainMenuPage mainMenuPage=new MainMenuPage();
     PatientBoxPage patientBoxPage = new PatientBoxPage();
@@ -28,10 +39,16 @@ public class SanitySuite extends BaseSuit {
     DrugFormPage drugForm = new DrugFormPage();
     PatientsListPage patientsListPage = new PatientsListPage();
     ChooseDepartmentListPage chooseDepartmentListPage = new ChooseDepartmentListPage();
-
+    WoundPage woundPage = new WoundPage();
+    WondFormPage woundFormPage = new WondFormPage();
+    FollowupPage followupPage = new FollowupPage();
+    DischargedPatientListPage dischargedPatientListPage = new DischargedPatientListPage();
+    BloodOrders bloodOrders = new BloodOrders();
     @BeforeTest
-    public void preTest(){
-        removePatientDataBeforeEachTest( QueriesUtils.removePatient_from_tbl );
+    public void preTest() throws SQLException{
+
+       getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient).get(0);
+       removePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
     }
 
     /**
@@ -41,6 +58,7 @@ public class SanitySuite extends BaseSuit {
     public void test_01_login(){
         loginAsDoctor();
         mainMenuPage.verificationPatientListTabExisting();
+
     }
 
     @Test(description = "adding a medicine")
@@ -48,7 +66,7 @@ public class SanitySuite extends BaseSuit {
         loginAsDoctor();
         choosePatient(PATIENT_1);
         patientBoxPage.verifyPatientDetailsExisting();
-        doctorInstructionPage.addMedicineFull("dep", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+        doctorInstructionPage.addMedicineFull("CARBOplatin", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 
     @Test(description = "approval medicine by nurse")
@@ -69,15 +87,14 @@ public class SanitySuite extends BaseSuit {
         cardexPage.approvalAllExecution(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
 
-     @Test(description = "adding a nutrition")
+
+    @Test(description = "adding a nutrition")
     public void test_05_addingNutrition(){
         loginAsNutritionist();
         choosePatient(PATIENT_1);
         patientBoxPage.verifyPatientDetailsExisting();
        doctorInstructionPage.addNutritionFull("Nut", "daily", "200", "1", Constants.NUTRITIONIST_USERNAME, Constants.NUTRITIONIST_PASSWORD);
     }
-
-  
 
     @Test(description = "Adding a fluid")
     public void test_06_addingFluid() {
@@ -116,10 +133,59 @@ public class SanitySuite extends BaseSuit {
         doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 
-    
 
+    @Test(description = "Nurse navigates to wounds, fills form, and adds wound")
+    public void test_10_nurseAddWound() {
+        loginAsNurse();
+        choosePatient(PATIENT_1);
+        patientBoxPage.verifyPatientDetailsExisting();
+        //בהנחה שבבחירת המטופל נכנס למסך קרדקס
+        cardexPage.clickArrowForwardToInnerMenu();
+        innerMenuPage.navigateToMenuEntry("סיעוד");
+        innerMenuPage.navigateToMenuEntry("פצעים");
+        
+        // Fill minimal wound details and save
+        woundFormPage.addNewWound("פצע ניתוחי", 1, null, null);
+       // woundFormPage.saveWound();
+        System.out.println("נפתח טופס הוספת פצע בהצלחה.");
+    }
+
+    @Test(description = "Doctor fills follow-up notes and saves")
+    public void test_11_doctorFillFollowup() {
+        loginAsDoctor();
+        choosePatient(PATIENT_3);
+        patientBoxPage.verifyPatientDetailsExisting();
+        innerMenuPage.navigateToMenuEntry("FollowUp");
+        followupPage.addFollowup("111", "222", "333", "444", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+        System.out.println("Follow-up notes added and saved successfully.");
+    }
+
+    @Test(description = "discharged patient list visibility")
+    public void test_12_dischargedPatientList() {
+        loginAsDoctor();
+        innerMenuPage.navigateToMenuEntry("רשימת משוחררים");
+        dischargedPatientListPage.verifyIsDischargedPatientsListVisible();
+    }
+
+    @Test(description = "lab orders visibility")
+    public void test_13_labOrdersList() {
+        loginAsDoctor();
+        innerMenuPage.navigateToMenuEntry("לקיחת דמים");
+    //    bloodOrders
+    }
+
+    @Test(description = "print IV label from cardex")
+    public void test_14_printIVLabelFromCardex() {
+        loginAsNurse();
+        choosePatient(PATIENT_1);
+        patientBoxPage.verifyPatientDetailsExisting();
+        cardexPage.printIVLabelForFirstFluidInCardex();
+    }
+}
+
+    
 
     
  
 
-}
+
