@@ -86,10 +86,9 @@ public class ApprovalInstructionPage extends BasePage {
     }
 
 
-    public void approvalAllInstructionByNurse(String username, String password){
+    public void approvalAllInstructionByNurseAndVerify(String username, String password){
         UIActions.click(btnApproval);
-
         userSignModalPage.signModal(username,password);
-
+       //
    }
 }

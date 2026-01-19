@@ -1,7 +1,5 @@
 package helpers;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
-
 public class Constants {
 
     public static final String DOCTOR_ROLE = "רופא";

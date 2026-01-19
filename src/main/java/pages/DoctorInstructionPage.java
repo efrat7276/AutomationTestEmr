@@ -91,7 +91,7 @@ public class DoctorInstructionPage extends BasePage{
 
 
     // פונקציות Full Action – דוגמה למספר סוגי הוראות
-    public void addMedicineFull(String name, String frequency, String dose, String amount, String username, String password) {
+    public void addMedicineFullAndVerify(String name, String frequency, String dose, String amount, String username, String password) {
         clickButtonAddInstruction(InstructionType.MEDICINE);
 
         drugForm.addOneMedicine(name, frequency, dose, amount, null, null, null, null, null, null, false);

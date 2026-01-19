@@ -20,7 +20,7 @@ public class restoreBugsAt23 extends CommonOps {
 
 
     @Test(description = "add drug  future")
-    @Description("add drug ")
+    @Description("add drug")
     public void addDrug() throws InterruptedException, IOException {
         // doctor add daily drug
        // String departmentName = "חדר מיון";

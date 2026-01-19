@@ -58,7 +58,7 @@ public class DoctorInstructionsSuite extends BaseSuit {
       loginAsDoctor();
         selectFirstPatient();
         System.out.println("Starting test: Adding a medicine");
-        doctorInstructionPage.addMedicineFull("dep", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+        doctorInstructionPage.addMedicineFullAndVerify("dep", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
         System.out.println("Finished test: Adding a medicine");
     }
 

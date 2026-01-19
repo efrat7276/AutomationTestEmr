@@ -7,6 +7,7 @@ import java.lang.reflect.Array;
 import java.sql.SQLException;
 import java.util.List;
 
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.*;
@@ -44,7 +45,7 @@ public class SanitySuite extends BaseSuit {
     FollowupPage followupPage = new FollowupPage();
     DischargedPatientListPage dischargedPatientListPage = new DischargedPatientListPage();
     BloodOrders bloodOrders = new BloodOrders();
-    @BeforeTest
+    @BeforeClass
     public void preTest() throws SQLException{
 
        getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient).get(0);
@@ -66,7 +67,7 @@ public class SanitySuite extends BaseSuit {
         loginAsDoctor();
         choosePatient(PATIENT_1);
         patientBoxPage.verifyPatientDetailsExisting();
-        doctorInstructionPage.addMedicineFull("CARBOplatin", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+        doctorInstructionPage.addMedicineFullAndVerify("CARBOplatin", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 
     @Test(description = "approval medicine by nurse")
@@ -75,7 +76,7 @@ public class SanitySuite extends BaseSuit {
         choosePatient(PATIENT_1);
         patientBoxPage.verifyPatientDetailsExisting();
         approvalInstructionPage.approveDrugsSelectFourthCurrentDayHour();
-        approvalInstructionPage.approvalAllInstructionByNurse(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
+        approvalInstructionPage.approvalAllInstructionByNurseAndVerify(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
 
     @Test(description = "execute medicine by nurse")
@@ -134,7 +135,7 @@ public class SanitySuite extends BaseSuit {
     }
 
 
-    @Test(description = "Nurse navigates to wounds, fills form, and adds wound")
+    @Test(description = "Nurse navigates to wounds screen, fills form, and adds wound")
     public void test_10_nurseAddWound() {
         loginAsNurse();
         choosePatient(PATIENT_1);

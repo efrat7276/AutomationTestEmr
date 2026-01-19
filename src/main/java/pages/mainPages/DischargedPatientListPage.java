@@ -13,7 +13,8 @@ public class DischargedPatientListPage {
 
    private  By list_dischargedPatients = By.xpath("//p-table[contains(@class,'depMeushpazim-table patients-table')]");
 
-public boolean verifyIsDischargedPatientsListVisible() {
-      assertTrue(UIActions.isElementDisplayed(list_dischargedPatients)); "רשימת מטופלים משוחררים לא מוצגת");
-   }
+public void verifyIsDischargedPatientsListVisible() {
+      assertTrue(UIActions.isElementDisplayed(list_dischargedPatients));  
+   
+}
 }
