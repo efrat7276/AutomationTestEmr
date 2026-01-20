@@ -1,4 +1,4 @@
-package sanity.UnitTest.instructionToPatient;
+package old.sanity.UnitTest.instructionToPatient;
 
 import extensions.UIActions;
 import io.qameta.allure.Description;

@@ -5,7 +5,7 @@
     <test name="stopPatientInstruction">
 <!--        <parameter name="patient_num" value="7"></parameter>-->
         <classes>
-            <class name="sanity.UnitTest.instructionToPatient.DrugsScenario">
+            <class name="old.sanity.UnitTest.instructionToPatient.DrugsScenario">
                 <methods>
                     <include name="test00_stopAllInstructionToPatient"></include>
                 </methods>
