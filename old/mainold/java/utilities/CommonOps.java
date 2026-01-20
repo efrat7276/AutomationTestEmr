@@ -132,6 +132,7 @@ public class CommonOps extends Base {
        } 
     }
 
+    @AfterMethod
     public void afterMethod(){
 
         switch (env) {
