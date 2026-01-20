@@ -122,36 +122,15 @@ public class CommonOps extends Base {
       //  screen = new Screen();
     }
 
-//    public static WebDriver initChromeDriver(){
-//
-//     //  WebDriverManager.chromedriver().setup();
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--remote-allow-origins=*");
-//        options.addArguments("--start-minimized");
-//        options.addArguments("window-size=1920,1080");
-//
-//       // options.setBinary("C:\\Users\\chrome\\ChromeStandaloneSetup.exe");
-//    //    System. setProperty("webdriver.chrome.driver", "C:\\Users\\chromedriver\\114.0.5735.90\\chromedriver.exe");
-//        driver = new ChromeDriver(options);
-//        return driver;
-//    }
-
-
-
-
     @AfterClass
     public void closeSession(){
       //  ManageDB.closeConnection();
+       try {
         driver.quit();
+       } catch (Exception e) {
+        // TODO: handle exception
+       } 
     }
-
-    @AfterMethod
-    public static void afterMethod1() {
-
-        driver.quit();
-
-    }
-
 
     public static void afterMethod(){
 
@@ -181,8 +160,8 @@ public class CommonOps extends Base {
         catch (Exception ex){
 
         }
-        UIActions.clearText(emrLogin.txt_username);
-        UIActions.clearText(emrLogin.txt_password);
+        driver.quit();
+ 
     }
 
 
