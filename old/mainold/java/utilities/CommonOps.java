@@ -132,7 +132,7 @@ public class CommonOps extends Base {
        } 
     }
 
-    public static void afterMethod(){
+    public void afterMethod(){
 
         switch (env) {
             case "qa":
