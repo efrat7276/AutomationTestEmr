@@ -1,4 +1,4 @@
-package old.teast_old.java;
+package teast_old.java;
 import extensions.UIActions;
 import actionUtilies.Verifications;
 import org.testng.annotations.Test;
