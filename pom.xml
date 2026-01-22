@@ -121,6 +121,25 @@
 <!--            <url>https://atidcollege.co.il/downloads/libs</url>-->
 <!--        </repository>-->
 <!--    </repositories>-->
+<plugin>
+  <groupId>org.codehaus.mojo</groupId>
+  <artifactId>build-helper-maven-plugin</artifactId>
+  <version>3.3.0</version>
+  <executions>
+    <execution>
+      <id>add-old-test-sources</id>
+      <phase>generate-test-sources</phase>
+      <goals>
+        <goal>add-test-source</goal>
+      </goals>
+      <configuration>
+        <sources>
+          <source>old/test_old/java</source>
+        </sources>
+      </configuration>
+    </execution>
+  </executions>
+</plugin>
 <build>
     <pluginManagement>
     <plugins>
