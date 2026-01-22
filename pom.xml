@@ -16,7 +16,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!--  עבור אלור -->
-        <aspectj.version>1.9.2</aspectj.version>
+        <aspectj.version>1.9.19</aspectj.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
