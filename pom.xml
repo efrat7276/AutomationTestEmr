@@ -122,53 +122,34 @@
 <!--        </repository>-->
 <!--    </repositories>-->
 
-    <pluginManagement>
-    <plugins>
-    <plugin>
-  <groupId>org.codehaus.mojo</groupId>
-  <artifactId>build-helper-maven-plugin</artifactId>
-  <version>3.3.0</version>
-  <executions>
-    <execution>
-      <id>add-old-test-sources</id>
-      <phase>generate-test-sources</phase>
-      <goals>
-        <goal>add-test-source</goal>
-      </goals>
-      <configuration>
-        <sources>
-          <source>old/test_old/java</source>
-        </sources>
-      </configuration>
-    </execution>
-  </executions>
-</plugin>
 <build>
-    <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.1.2</version>
-        <configuration>
-            <argLine>
-                -javaagent:"C:\Users\efeldman\.m2\repository/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-            </argLine>
-        </configuration>
-        <dependencies>
-            <dependency>
-                <groupId>org.aspectj</groupId>
-                <artifactId>aspectjweaver</artifactId>
-                <version>${aspectj.version}</version>
-            </dependency>
-        </dependencies>
-    </plugin>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.10.1</version>
-        </plugin>
-    </plugins>
+    <pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
+                <configuration>
+                    <argLine>
+                        -javaagent:"C:\Users\efeldman\.m2\repository/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+            </plugin>
+        </plugins>
     </pluginManagement>
-    </build>
+</build>
 
     <profiles>
         <profile>
