@@ -52,6 +52,14 @@ public class SanitySuite extends BaseSuit {
        removePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
     }
 
+    @Test(description = "renew instruction to spetif patient for Bug -solutinInstructionTimes")
+    public void test_00_renewInstructionToSpetifPatient() throws SQLException {
+       loginAsDoctor();
+       chooseDepartment(Constants.ICU_DEPARTMENT_STRING);
+       choosePatient(1);
+         patientBoxPage.verifyPatientDetailsExisting();
+         doctorInstructionPage
+    }
     /**
      * check login is succeeded
      */

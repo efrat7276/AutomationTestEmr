@@ -1,12 +1,18 @@
 package pages;
 
 import actionUtilies.UIActions;
+import helpers.Constants;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 import pages.addForms.DrugFormPage;
 import pages.addForms.GeneralInstructionPage;
 import pages.addForms.BloodProductsPage;
 
 import static org.testng.Assert.assertTrue;
+
+import java.util.List;
 
 
 public class DoctorInstructionPage extends BasePage{
@@ -47,6 +53,9 @@ public class DoctorInstructionPage extends BasePage{
     private By btnImportMedicine = By.id("btnImportMedicine");          // יבוא תרופה
     private By btnAddFluid = By.id("btnAddMedicine");                      // נוזל / דילול
     private By btn_approvalDrug = By.id("approvalDrug");
+    private By chekBoxList = By.id("Renew");
+
+
 
     /**
      * click add medicine drug
@@ -140,6 +149,16 @@ public class DoctorInstructionPage extends BasePage{
     public void approveAndVerifyInstructions(String username, String password) {
         approvalAllInstruction(username, password);
         verifyDoctorApproval();
+    }
+
+    public void renewAllInstructions(){
+        List<WebElement> allCheckBoxes = UIActions.findElementsWithWait(chekBoxList);
+        for (WebElement checkBox : allCheckBoxes) {
+            if (!checkBox.isSelected()) {
+                checkBox.click();
+            }
+        }
+        approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 
     public void verifyDoctorApproval(){

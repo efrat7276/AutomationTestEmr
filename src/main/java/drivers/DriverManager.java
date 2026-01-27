@@ -18,8 +18,9 @@ public class DriverManager {
             options.addArguments("--remote-allow-origins=*");
             options.addArguments("--start-minimized");
             options.addArguments("window-size=1920,1080");
-            String projectPath = System.getProperty("user.dir");      
-            System.setProperty("webdriver.chrome.driver", projectPath + "/src/main/java/resources/chromedriver.exe");
+           ////todo לדבר עם רינה
+            // String projectPath = System.getProperty("user.dir");      
+            // System.setProperty("webdriver.chrome.driver", projectPath + "/src/main/java/resources/chromedriver.exe");
             driver=new ChromeDriver(options);
 
           initBrowser();
