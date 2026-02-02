@@ -58,12 +58,12 @@ public class SanitySuite extends BaseSuit {
        chooseDepartment(Constants.ICU_DEPARTMENT_STRING);
        choosePatient(1);
          patientBoxPage.verifyPatientDetailsExisting();
-         doctorInstructionPage
+         doctorInstructionPage.renewAllInstructions();
     }
     /**
      * check login is succeeded
      */
-    @Test(description = "login")
+    @Test(description = "login as doctor and verify patient list tab existing")
     public void test_01_login(){
         loginAsDoctor();
         mainMenuPage.verificationPatientListTabExisting();
@@ -162,7 +162,7 @@ public class SanitySuite extends BaseSuit {
     @Test(description = "Doctor fills follow-up notes and saves")
     public void test_11_doctorFillFollowup() {
         loginAsDoctor();
-        choosePatient(PATIENT_3);
+        choosePatient(PATIENT_1);
         patientBoxPage.verifyPatientDetailsExisting();
         innerMenuPage.navigateToMenuEntry("FollowUp");
         followupPage.addFollowup("111", "222", "333", "444", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);

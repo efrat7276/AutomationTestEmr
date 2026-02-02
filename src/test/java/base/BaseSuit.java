@@ -45,6 +45,7 @@ public class BaseSuit {
 
     protected void choosePatient(int patientIndex) {
         patientsListPage.choosePatient(patientIndex);
+        
     }
 
 

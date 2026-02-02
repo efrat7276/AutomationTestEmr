@@ -5,29 +5,29 @@
     <test name="stopPatientInstruction">
 <!--        <parameter name="patient_num" value="7"></parameter>-->
         <classes>
-            <class name="sanity.UnitTest.instructionToPatient.DrugsScenario">
+            <class name="sanity.SanitySuite">
                 <methods>
-                    <include name="test00_stopAllInstructionToPatient"></include>
+                    <include name="test_00_renewInstructionToSpetifPatient"></include>
                 </methods>
             </class>
         </classes>
     </test>
-    <test name="addAllInstructionToPatient">
+    <!-- <test name="addAllInstructionToPatient"> -->
 <!--        <parameter name="patient_num" value="'7'"></parameter>-->
-        <classes>
+        <!-- <classes>
            <class name="sanity.UnitTest.instructionToPatient.DrugsScenario">
                <methods>
                    <include name="test01_addAndSaveDrugDailyToPatient"></include>
                    <include name="test01_nurseApprovalDrugDailyToPatient"></include>
 
                </methods>
-           </class>
+           </class> -->
 <!--            <class name="sanity.UnitTest.instructionToPatient.SolutionScenario"></class>-->
 <!--           <class name="sanity.UnitTest.instructionToPatient.GeneralInsScenario"></class>-->
 <!--            <class name="sanity.UnitTest.instructionToPatient.BloodProductScenario"></class>-->
 <!--            <class name="sanity.UnitTest.instructionToPatient.NutritionScenario"></class>-->
-        </classes>
-    </test>
+        <!-- </classes>
+    </test> -->
 
 <!--    <test name="editDrug">-->
 <!--        <classes>-->

@@ -13,7 +13,7 @@ public class QueriesUtils {
     "SELECT TOP 1 a.mispar_ishpuz, teudat_zeut FROM dbo.admission AS a " + 
                         "LEFT JOIN dbo.k_lan_dep_beds AS kldb " + 
                         "ON kldb.mispar_ishpuz = a.mispar_ishpuz " + 
-                        "WHERE k_yechida_shichrur= "+ Constants.DEPARTMENT_NUM_STRING + " "+
+                        "WHERE k_yechida_shichrur= "+ Constants.DEFAULT_DEPARTMENT_NUM_STRING + " "+
                         "AND tarich_shichrur IS NULL " + 
                         "AND a.bitul =0 " + 
                         "ORDER BY kldb.dep_bed_sort ASC ";
