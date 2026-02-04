@@ -17,6 +17,10 @@ import java.util.List;
 
 public class DoctorInstructionPage extends BasePage{
 
+    public DoctorInstructionPage() {
+        UIActions.waitForSpinnerToDisappear();
+    }
+
 
     DrugFormPage drugForm =new DrugFormPage();
     GeneralInstructionPage generalInstructionForm = new GeneralInstructionPage();
@@ -53,7 +57,7 @@ public class DoctorInstructionPage extends BasePage{
     private By btnImportMedicine = By.id("btnImportMedicine");          // יבוא תרופה
     private By btnAddFluid = By.id("btnAddMedicine");                      // נוזל / דילול
     private By btn_approvalDrug = By.id("approvalDrug");
-    private By chekBoxList = By.id("Renew");
+    private By chekBoxList = By.xpath("//*[@id='Renew']//label[input[@type='checkbox']]"); // כל ה-checkbox של חידוש הוראות
 
 
 
@@ -150,15 +154,26 @@ public class DoctorInstructionPage extends BasePage{
         approvalAllInstruction(username, password);
         verifyDoctorApproval();
     }
-
-    public void renewAllInstructions(){
-        List<WebElement> allCheckBoxes = UIActions.findElementsWithWait(chekBoxList);
-        for (WebElement checkBox : allCheckBoxes) {
-            if (!checkBox.isSelected()) {
-                checkBox.click();
-            }
-        }
-        approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+   public void renewAllInstructions() {
+     int index=0;
+    //לבדוק בכלל אם יש רשימה ולא הכול
+    int count = UIActions.findElementsWithWait(chekBoxList).size();
+    do{
+     List<WebElement> checkBoxes = UIActions.findElementsWithWait(chekBoxList);
+      WebElement cb =  checkBoxes.get(0);
+        if (!cb.isSelected()) {
+            UIActions.click(cb);
+   
+            index++;
+            System.out.println("Checkbox selected: " + index);         
+            if(count==1)
+                break;
+        } 
+     count = UIActions.findElementsWithWait(chekBoxList).size();
+     System.out.println("Remaining checkboxes: " + count);
+     }
+     while(count>0);
+     approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 
     public void verifyDoctorApproval(){

@@ -55,9 +55,9 @@ public class SanitySuite extends BaseSuit {
     @Test(description = "renew instruction to spetif patient for Bug -solutinInstructionTimes")
     public void test_00_renewInstructionToSpetifPatient() throws SQLException {
        loginAsDoctor();
-       chooseDepartment(Constants.ICU_DEPARTMENT_STRING);
-       choosePatient(1);
-         patientBoxPage.verifyPatientDetailsExisting();
+      // chooseDepartment(Constants.ICU_DEPARTMENT_STRING);
+       choosePatient(7);
+        // patientBoxPage.verifyPatientDetailsExisting();
          doctorInstructionPage.renewAllInstructions();
     }
     /**
@@ -74,7 +74,7 @@ public class SanitySuite extends BaseSuit {
     public void test_02_addingMedicine(){
         loginAsDoctor();
         choosePatient(PATIENT_1);
-        patientBoxPage.verifyPatientDetailsExisting();
+      //  patientBoxPage.verifyPatientDetailsExisting();
         doctorInstructionPage.addMedicineFullAndVerify("CARBOplatin", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 

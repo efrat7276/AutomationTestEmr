@@ -5,7 +5,12 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
+
 public class PatientsListPage {
+
+    public PatientsListPage() {
+        UIActions.waitForSpinnerToDisappear();
+    }
 
    private  By list_patients = By.xpath("//p-table[contains(@class,'depMeushpazim-table patients-table')]//tr//td[1]");
 

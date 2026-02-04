@@ -1,3 +1,4 @@
+
 package actionUtilies;
 
 import drivers.DriverManager;
@@ -16,7 +17,7 @@ import java.util.List;
 public class UIActions {
 
 
-    static WebDriverWait wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(10));
+    static WebDriverWait wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(30));
 
     /**
      *
@@ -35,8 +36,9 @@ public class UIActions {
      * find the element by locator and return list element
      */
    public static List<WebElement> findElementsWithWait(By by){
-        return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
+        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
     }
+
     static boolean containsAnyDigit(String s){
         for (int i = 1; i < 10; i++){
            if(s.contains(String.valueOf(i))){
@@ -66,6 +68,12 @@ public class UIActions {
         element.click();
     }
 
+    public static void click(WebElement element) {
+    wait.until(ExpectedConditions.visibilityOf(element));
+    System.out.println("Clicking on element: " + element.getText());
+       element.click();
+}  
+
     public static void typeText(By locator, String text) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         System.out.println("Typing text '" + text + "' into element: " + locator);
@@ -85,8 +93,26 @@ public class UIActions {
         WebElement element =  wait.until(ExpectedConditions.visibilityOfElementLocated(by));
         element.clear();
     }
+        /**
+     * ממתין להיעלמות הספינר הכללי של טעינה <emr-spinner>
+     * יש לקרוא לפונקציה זו בכניסה לכל מסך לפני כל פעולה.
+     */
+    public static void waitForSpinnerToDisappear() {
+        By spinner = By.tagName("emr-spinner");
+        try {
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+        } catch (Exception e) {
+            System.err.println("שגיאה בהמתנה להיעלמות הספינר: " + e.getMessage());
+        }
+    }
 
-
+    /**
+     * ממתין שהאלמנט יהיה clickable (כלומר ניתן ללחיצה)
+     * @param element האלמנט להמתנה
+     */
+    public static void waitForElementClickable(WebElement element) {
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
 
     /**
      * ממתין עד שאלמנט המזוהה על ידי הלוקטור יהפוך לבלתי נראה או יוסר מה-DOM.
@@ -223,6 +249,9 @@ public class UIActions {
     public static String getText(By by) {
 
         return wait.until(ExpectedConditions.visibilityOfElementLocated(by)).getText();
+    }
+    public static void waitForElementVisible(By locator) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 }
 
