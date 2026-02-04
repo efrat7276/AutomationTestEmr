@@ -55,8 +55,8 @@ public class SanitySuite extends BaseSuit {
     @Test(description = "renew instruction to spetif patient for Bug -solutinInstructionTimes")
     public void test_00_renewInstructionToSpetifPatient() throws SQLException {
        loginAsDoctor();
-      // chooseDepartment(Constants.ICU_DEPARTMENT_STRING);
-       choosePatient(7);
+       chooseDepartment(Constants.ICU_DEPARTMENT_STRING);
+       choosePatient(1);
         // patientBoxPage.verifyPatientDetailsExisting();
          doctorInstructionPage.renewAllInstructions();
     }
