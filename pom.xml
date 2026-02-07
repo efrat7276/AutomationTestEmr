@@ -110,10 +110,20 @@
             <version>4.6</version>
         </dependency>
 
-    </dependencies>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.5.13</version>
+        </dependency>
 
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok-maven-plugin</artifactId>
+        <version>1.18.20.0</version>
+        <scope>compile</scope>
+    </dependency>
     <!--Reposetory for Sikuli -->
-
+</dependencies>
 <!--    <repositories>-->
 <!--        <repository>-->
 <!--            <id>sikulix-atid-college</id>-->
