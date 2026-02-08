@@ -145,13 +145,11 @@ public class DoctorInstructionPage extends BasePage{
         //  assertTrue(UIActions.findElement())
     }
 
-    public void approvalAllInstruction(String username, String password){
-     clickButtonSign();
-     userSignModalPage.signModal(username, password);
-    }
 
     public void approveAndVerifyInstructions(String username, String password) {
-        approvalAllInstruction(username, password);
+        clickButtonSign();
+        userSignModalPage.signModal(username, password);
+        UIActions.waitForVisible(btn_approvalDrug);
         verifyDoctorApproval();
     }
    public void renewAllInstructions() {

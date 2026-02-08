@@ -250,9 +250,10 @@ public class UIActions {
 
         return wait.until(ExpectedConditions.visibilityOfElementLocated(by)).getText();
     }
-    public static void waitForElementVisible(By locator) {
+    public static void waitForVisible(By locator) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
+
 }
 
 
