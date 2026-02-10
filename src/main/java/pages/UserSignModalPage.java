@@ -26,19 +26,13 @@ public class UserSignModalPage {
     public  void signModal(String username, String password ) {
         try {
             UIActions.clearText(inputUserName);
-            // 1. מילוי שדה שם המשתמש
             UIActions.typeText(inputUserName, username);
-            // 2. מילוי שדה הסיסמה
             UIActions.typeText(inputPassword, password);
-            // 3. לחיצה על כפתור האישור
             UIActions.click(btnConfirm);
-
-            // אופציונלי: ודא שהמודל נסגר, בהנחה שיש ל-UIActions מתודה כזו
-             UIActions.waitForInvisibility(btnConfirm);
+            UIActions.waitForInvisibility(btnConfirm);
 
         } catch (Exception e) {
             System.err.println("❌ כשל בתהליך החתימה במודל. שגיאה: " + e.getMessage());
-            // זורקים שגיאת זמן ריצה כדי להפיל את המקרה (Case)
             throw new RuntimeException("כשל בחתימה/התחברות במודל החתימה", e);
         }
     }

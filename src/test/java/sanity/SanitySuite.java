@@ -18,6 +18,7 @@ import pages.mainPages.PatientsListPage;
 import pages.menu.InnerMenuPage;
 import pages.menu.MainMenuPage;
 import pages.nurse.Execute.CardexPage;
+import pages.nurse.Execute.CardexPageNew;
 import pages.doctor.FollowupPage;
 import pages.nurse.approval.ApprovalInstructionPage;
 import pages.nurse.wound.WondFormPage;
@@ -34,7 +35,9 @@ public class SanitySuite extends BaseSuit {
     PatientBoxPage patientBoxPage = new PatientBoxPage();
     DoctorInstructionPage doctorInstructionPage = new DoctorInstructionPage();
     ApprovalInstructionPage approvalInstructionPage = new ApprovalInstructionPage();
+    CardexPageNew cardexPageNew = new CardexPageNew();
     CardexPage cardexPage = new CardexPage();
+
     UserSignModalPage userSignModalPage = new UserSignModalPage();
     InnerMenuPage innerMenuPage = new InnerMenuPage();
     DrugFormPage drugForm = new DrugFormPage();
@@ -92,8 +95,9 @@ public class SanitySuite extends BaseSuit {
         loginAsNurse();
         choosePatient(PATIENT_1);
         patientBoxPage.verifyPatientDetailsExisting();
-        cardexPage.executeAllDrugsToThisShift();
-        cardexPage.approvalAllExecution(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
+        cardexPageNew.executeAndApproveAllToThisShift(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
+       // cardexPage.executeAllDrugsToThisShift();
+       // cardexPage.approvalAllExecution(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
 
 
