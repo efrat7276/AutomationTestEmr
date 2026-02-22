@@ -12,7 +12,7 @@ public class PatientsListPage {
         UIActions.waitForSpinnerToDisappear();
     }
 
-   private  By list_patients = By.xpath("//p-table[contains(@class,'depMeushpazim-table patients-table')]//tr//td[1]");
+   public  By list_patients = By.xpath("//p-table[contains(@class,'depMeushpazim-table patients-table')]//tr//td[1]");
 
     public List<WebElement> getPatientRows() {
         return UIActions.findElementsWithWait(list_patients);

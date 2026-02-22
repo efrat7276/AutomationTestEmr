@@ -1,1 +1,0 @@
-{"uuid":"8681c95f-c9b7-455d-905d-ae7608ad5457","name":"SanityTest","children":["f50b3daf-b31f-400d-9e57-b763e45c5f98"],"befores":[],"afters":[{"name":"closeSession","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1762243818255,"stop":1762243818256}],"links":[],"start":1762243799694,"stop":1762243818261}

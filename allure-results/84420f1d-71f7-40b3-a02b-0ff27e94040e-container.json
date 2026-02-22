@@ -1,1 +1,0 @@
-{"uuid":"84420f1d-71f7-40b3-a02b-0ff27e94040e","name":"ICU.regression1_icu","children":["c100054e-0529-46f0-a1f6-833d39e76909"],"befores":[],"afters":[{"name":"closeSession","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1713181898243,"stop":1713181899041}],"links":[],"start":1713181842205,"stop":1713181899108}

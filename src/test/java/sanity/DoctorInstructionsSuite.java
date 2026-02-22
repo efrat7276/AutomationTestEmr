@@ -2,19 +2,17 @@ package sanity;
 import base.BaseSuit;
 import helpers.Constants;
 import org.testng.annotations.Test;
-
-import actionUtilies.DBExecuter;
 import pages.*;
 import pages.addForms.DrugFormPage;
 import pages.mainPages.PatientsListPage;
 
 public class DoctorInstructionsSuite extends BaseSuit {
 
-    PatientsListPage patientsListPage = new PatientsListPage();
-    PatientBoxPage patientBoxPage = new PatientBoxPage();
-    DoctorInstructionPage doctorInstructionPage = new DoctorInstructionPage();
-    DrugFormPage drugForm = new DrugFormPage();
-
+  
+     PatientsListPage    patientsListPage = new PatientsListPage();
+     PatientBoxPage patientBoxPage = new PatientBoxPage();
+     DoctorInstructionPage doctorInstructionPage = new DoctorInstructionPage();
+     DrugFormPage drugForm = new DrugFormPage();
     
     public void openInstructionForm(InstructionType type) {
         switch(type) {

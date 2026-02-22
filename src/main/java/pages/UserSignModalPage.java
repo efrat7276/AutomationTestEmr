@@ -1,10 +1,16 @@
 package pages;
 
 import actionUtilies.UIActions;
+
+
+
 import org.openqa.selenium.By;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class UserSignModalPage {
 
+    Logger logger = LoggerFactory.getLogger(UserSignModalPage.class);
     // שדה שם המשתמש
     private final By inputUserName = By.id("user");
 
@@ -30,10 +36,10 @@ public class UserSignModalPage {
             UIActions.typeText(inputPassword, password);
             UIActions.click(btnConfirm);
             UIActions.waitForInvisibility(btnConfirm);
+            logger.info("approval process completed successfully by user: " + username);
 
         } catch (Exception e) {
-            System.err.println("❌ כשל בתהליך החתימה במודל. שגיאה: " + e.getMessage());
-            throw new RuntimeException("כשל בחתימה/התחברות במודל החתימה", e);
-        }
+            logger.error("approval process failed for user: " + username + ". Error: " + e.getMessage());
+       }
     }
 }

@@ -3,11 +3,22 @@ package pages.addForms;
 import actionUtilies.UIActions;
 import org.openqa.selenium.By;
 import pages.BasePage;
+import pages.DoctorInstructionPage;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.annotation.Nullable;
 import java.util.List;
 
 public class DrugFormPage extends BasePage {
+
+    protected static final Logger logger = LoggerFactory.getLogger(DrugFormPage.class);
+
+    public DrugFormPage() {
+       
+        UIActions.waitForSpinnerToDisappear();
+    }
 
     // inputs
     private By inp_selectDrug = By.id("selectDrug");
@@ -107,6 +118,9 @@ public class DrugFormPage extends BasePage {
             @Nullable String everyXTime,
             boolean alsoExecute
     ) {
+       
+        logger.info("Attempting to fill details of medicine - Name: {}, Possibility: {}, Dosage: {}, TimesDaily: {}, HourToGive: {}, MaxTimesPerDay: {}, MinInterval: {}, TimesPerWeek: {}, DaysOfWeek: {}, EveryXTime: {}, AlsoExecute: {}",
+                nameMed, possibility, dosage, timesDaily, hourToGive, maxTimesPerDay, minInterval, timesPerWeek, daysOfWeek, everyXTime, alsoExecute);
         // 1. המתנה (Hard Wait) והזנת שם התרופה
         try {
             Thread.sleep(5000);
@@ -147,12 +161,13 @@ public class DrugFormPage extends BasePage {
     }
 
     private void tryExecuteInForm() {
+        logger.info("Attempting to click 'Execute in Form' button if available...");
         try {
             if (UIActions.isElementDisplayed(btn_executeInForm)) {
                 UIActions.click(btn_executeInForm);
             }
         } catch (Exception e) {
-            System.out.println("Execute-in-form button not found or not visible: " + e.getMessage());
+            logger.warn("Execute-in-form button not found or not visible: {}", e.getMessage());
         }
     }
 
@@ -171,6 +186,7 @@ public class DrugFormPage extends BasePage {
             @Nullable String dosage,
             @Nullable String flowRateOrTimes
     ) {
+        logger.info("Attempting to fill details of fluid - Name: {}, Possibility: {}, Dosage: {}, FlowRateOrTimes: {}", nameFluid, possibility, dosage, flowRateOrTimes);
         // 1. המתנה והזנת שם הנוזל
         try {
             Thread.sleep(3000);  // המתנה קטנה יותר לנוזלים
@@ -205,7 +221,8 @@ public class DrugFormPage extends BasePage {
             case "sos": return possibilitySOS;
             case "by hour": return possibilityByHour;
             case "weekly": return possibilityWeekly;
-            default: throw new IllegalArgumentException("Invalid possibility: " + possibility);
+            default:  logger.error("Invalid possibility: {}", possibility);
+                      throw new IllegalArgumentException("Invalid possibility: " + possibility);
         }
     }
 
@@ -220,6 +237,7 @@ public class DrugFormPage extends BasePage {
             case "time limit":
                 return possibilityTimeLimit;
             default:
+                logger.error("Invalid fluid possibility: {}", possibility);
                 throw new IllegalArgumentException("Invalid fluid possibility: " + possibility + ". Use 'Continuous' or 'Time Limit'");
         }
     }

@@ -4,12 +4,22 @@ import actionUtilies.UIActions;
 import drivers.DriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import pages.BasePage;
+import pages.UserSignModalPage;
 
 import java.util.List;
 
 public class ApprovalInstructionPage extends BasePage {
 
+    Logger logger =LoggerFactory.getLogger(ApprovalInstructionPage.class);
+UserSignModalPage userSignModalPage;
+    public ApprovalInstructionPage() {
+       
+        userSignModalPage = new UserSignModalPage();
+    }
     // ==========================================================
     // Drug Locators 💊
     // ==========================================================
@@ -22,41 +32,46 @@ public class ApprovalInstructionPage extends BasePage {
 
     private final By btnApproval = By.xpath("//button[@id='approvalDrug']");
 
-    public void approveDrugsSelectFourthCurrentDayHour() {
+    public void approveDrugsSelectFourthCurrentDayHourAndVerify(String username, String password) {
 
         List<WebElement> allDrugToApprovalRows = UIActions.findElementsWithWait(drugToApprovalRow);
 
         if (allDrugToApprovalRows.isEmpty()) {
-            System.out.println("אין תרופות ממתינות לפירוק.");
+           logger.info("No drugs pending approval found.");     
             return;
         }
-
-        System.out.println("נמצאו " + allDrugToApprovalRows.size() + " תרופות לאישור.");
-
+        logger.info("Found {} drugs pending approval.", allDrugToApprovalRows.size());
         for (int i = 0; i < allDrugToApprovalRows.size(); i++) {
             WebElement currentRow = allDrugToApprovalRows.get(i);
 
             try {
                 // 1. מציאת כפתור בחירת שעה יומית יחסית לשורה הנוכחית
                 WebElement currentDayBtn = currentRow.findElement(btnChooseHourCurrentDay);
-
                 // 2. בחירת האופציה הרביעית (אינדקס 3) מהרשימה הנפתחת
                 selectNthOptionFromDropdown(currentDayBtn, 4); // 3 = רביעי
-
+                logger.info("Selected the fourth current day hour for drug in row {}.", i + 1);
                 // 3. לחיצה על כפתור האישור הסופי (יחסי לשורה)
                 WebElement approvalBtn = currentRow.findElement(btnApproveDrugInRow);
-              //  wait.until(ExpectedConditions.elementToBeClickable(approvalBtn));
+                
                 approvalBtn.click();
-
-                System.out.println("✅ תרופה " + (i + 1) + " אושרה בהצלחה.");
+                logger.info("Clicked approve for drug in row {}.", i + 1); 
 
             } catch (Exception e) {
-                System.err.println("❌ כשל באישורים עבור תרופה " + (i + 1) + ". שגיאה: " + e.getMessage());
                 // ממשיכים לתרופה הבאה
+                logger.error("Error processing drug in row {}: {}", i + 1, e.getMessage());
                 continue;
             }
         }
-        System.out.println("סיום תהליך אישור התרופות.");
+
+       UIActions.waitForVisible(btnApproval); 
+       UIActions.click(btnApproval);
+        userSignModalPage.signModal(username,password);
+       if( UIActions.waitForInvisibility(btnApproval)){
+        logger.info("All drugs approved successfully.");
+       }
+       else{
+        logger.error("Failed to approve drugs.");
+       }
 
     }
 

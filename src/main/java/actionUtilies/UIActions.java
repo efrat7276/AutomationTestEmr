@@ -3,21 +3,27 @@ package actionUtilies;
 
 import drivers.DriverManager;
 import io.qameta.allure.Step;
+import pages.addForms.DrugFormPage;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 import java.util.List;
 
 public class UIActions {
 
+    protected static final Logger logger = LoggerFactory.getLogger(DrugFormPage.class);
 
-    static WebDriverWait wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(30));
+    static WebDriverWait wait = DriverManager.getWait();
 
     /**
      *
@@ -56,23 +62,69 @@ public class UIActions {
     }
 
     @Step("Wait for text in element")
-    public static void waitForText(WebElement elem , String text){
+    public static boolean waitForText(By elem , String text){
 
-        //wait.until(ExpectedConditions.textToBePresentInElement(elem, text));
-        elem.click();
+         wait.until(x -> (findElementWithWait(elem).getText()).contains(text));
+         try{
+           click(elem);
+           return true;
+         }catch (Exception e){
+             return false;
+         }
+       
+
     }
 
     public static void click(By locator) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-        System.out.println("Clicking element: " + locator);
         element.click();
     }
 
     public static void click(WebElement element) {
     wait.until(ExpectedConditions.visibilityOf(element));
-    System.out.println("Clicking on element: " + element.getText());
        element.click();
 }  
+
+    /**
+     * Safe click by locator with retries for transient UI errors (stale/intercepted).
+     * Throws RuntimeException if all attempts fail.
+     */
+    public static void safeClick(By locator) {
+        int attempts = 0;
+        while (attempts < 3) {
+            try {
+                WebElement el = wait.until(ExpectedConditions.elementToBeClickable(locator));
+                el.click();
+                return;
+            } catch (StaleElementReferenceException | ElementClickInterceptedException | TimeoutException e) {
+                attempts++;
+                logger.warn("safeClick attempt {} failed for {}: {}", attempts, locator, e.toString());
+                waitForSpinnerToDisappear();
+                try { Thread.sleep(200); } catch (InterruptedException ie) { Thread.currentThread().interrupt(); }
+            }
+        }
+        throw new RuntimeException("safeClick failed after retries for: " + locator);
+    }
+
+    /**
+     * Click a WebElement with retry handling for StaleElementReferenceException.
+     * The caller should provide a locator to re-find element if it becomes stale.
+     */
+    public static void clickWithRetry(WebElement element, By locator) {
+        int attempts = 0;
+        while (attempts < 2) {
+            try {
+                wait.until(ExpectedConditions.elementToBeClickable(element));
+                element.click();
+                return;
+            } catch (StaleElementReferenceException e) {
+                attempts++;
+                logger.warn("clickWithRetry stale element - refinding using locator: {} (attempt {})", locator, attempts);
+                element = findElementWithWait(locator);
+            }
+        }
+        throw new RuntimeException("clickWithRetry failed for locator: " + locator);
+    }
 
     public static void typeText(By locator, String text) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -105,12 +157,12 @@ public class UIActions {
             System.err.println("שגיאה בהמתנה להיעלמות הספינר: " + e.getMessage());
         }
     }
-
-    /**
-     * ממתין שהאלמנט יהיה clickable (כלומר ניתן ללחיצה)
-     * @param element האלמנט להמתנה
-     */
+    
     public static void waitForElementClickable(WebElement element) {
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
+    public static void waitForElementClickable(By element) {
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
@@ -123,13 +175,12 @@ public class UIActions {
      */
     public static boolean waitForInvisibility(By locator) {
         try {
-            System.out.println("מתחיל המתנה להיעלמות האלמנט: " + locator.toString());
 
             // המתנה מפורשת (Explicit Wait)
             // ExpectedConditions.invisibilityOfElementLocated מטפל גם באלמנט שמוסר מה-DOM וגם באלמנט שהופך לבלתי נראה (opacity: 0, visibility: hidden, display: none).
             wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
 
-            System.out.println("✔ האלמנט נעלם בהצלחה.");
+         logger.info("Element located by " + locator + " has become invisible or removed from DOM.");
             return true;
 
         } catch (TimeoutException e) {
@@ -138,7 +189,7 @@ public class UIActions {
             // throw e;
             return false;
         } catch (Exception e) {
-            System.err.println("❌ אירעה שגיאה בלתי צפויה בזמן ההמתנה: " + e.getMessage());
+            logger.error("Unexpected error while waiting for element to become invisible: " + e.getMessage());
             return false;
         }
     }
@@ -250,8 +301,14 @@ public class UIActions {
 
         return wait.until(ExpectedConditions.visibilityOfElementLocated(by)).getText();
     }
-    public static void waitForVisible(By locator) {
+    public static boolean waitForVisible(By locator) {
+        try {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+            return true;
+        } catch (Exception e) {
+            logger.error("❌ אירעה שגיאה בלתי צפויה בזמן ההמתנה: " + e.getMessage());
+            return false;
+        }
     }
 
 }

@@ -1,1 +1,0 @@
-{"uuid":"8bbd2aef-ae28-45cd-97c4-0c0c3e972c7b","name":"AutomationProject_emr","children":["2c7f3f9a-3db3-4b9b-8410-06663f1889ec"],"befores":[],"afters":[{"name":"closeBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1763543282155,"stop":1763543282649}],"links":[],"start":1763543268666,"stop":1763543282649}

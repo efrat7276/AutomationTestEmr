@@ -1,1 +1,0 @@
-{"uuid":"c5f41f9d-d4eb-4130-8295-4d82d10be97a","name":"sanity.general.General","children":["c846b8a4-e043-4fa9-90a2-c9016816f31f"],"befores":[],"afters":[{"name":"closeSession","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1729850215841,"stop":1729850215841}],"links":[],"start":1729850208721,"stop":1729850215846}

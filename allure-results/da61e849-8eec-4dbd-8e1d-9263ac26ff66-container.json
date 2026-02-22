@@ -1,1 +1,0 @@
-{"uuid":"da61e849-8eec-4dbd-8e1d-9263ac26ff66","name":"regression_ICU","children":["34a4edec-e9a2-4baf-a415-a149289427ce"],"befores":[{"name":"BeforeSuite","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1709297442911,"stop":1709297443630}],"afters":[],"links":[],"start":1709297442880,"stop":1709297465224}

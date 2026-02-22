@@ -4,7 +4,13 @@ package pages;
 import actionUtilies.UIActions;
 import drivers.DriverManager;
 import helpers.FilesHelper;
+import pages.mainPages.PatientsListPage;
+
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.By;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class LoginPage extends BasePage{
 
@@ -12,8 +18,8 @@ public class LoginPage extends BasePage{
     private By txt_password = By.id("password");
     private By btn_submitBtn = By.id("submitBtn");
     private By btn_clearBtn = By.cssSelector("button.btn.btn-default.clear");
-    private By spn_message = By.xpath("//form/div[2]/span");
-
+    PatientsListPage patientsListPage = new PatientsListPage();
+ private static final Logger logger = LoggerFactory.getLogger(LoginPage.class);
 
     /**
      * navigate to url system
@@ -31,7 +37,6 @@ public class LoginPage extends BasePage{
             ChooseRolePage chooseRolePage=new ChooseRolePage();
             chooseRolePage.chooseRole(role);
         }
-
     }
     private void insertUserAndPass(String user, String pass) {
         UIActions.clearText(txt_username);

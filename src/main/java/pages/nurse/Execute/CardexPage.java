@@ -4,11 +4,17 @@ import actionUtilies.UIActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pages.BasePage;
+import pages.UserSignModalPage;
 
 import java.util.List;
 
 public class CardexPage extends BasePage {
 
+    UserSignModalPage userSignModalPage;
+    public CardexPage() {
+        super();
+        userSignModalPage = new UserSignModalPage();
+     }
     // Navigation arrow to inner menu
     private final By arrowForward = By.xpath("//div[@class='oneDayLine col-sm-12 row blue-color']//button[@class='indication']/i");
 

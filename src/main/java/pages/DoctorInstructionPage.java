@@ -3,13 +3,18 @@ package pages;
 import actionUtilies.UIActions;
 import helpers.Constants;
 
+import org.checkerframework.checker.units.qual.g;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.bidi.log.Log;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.annotations.BeforeMethod;
 
 import pages.addForms.DrugFormPage;
 import pages.addForms.GeneralInstructionPage;
 import pages.addForms.BloodProductsPage;
-
+import actionUtilies.UIActions;
 import static org.testng.Assert.assertTrue;
 
 import java.util.List;
@@ -17,14 +22,19 @@ import java.util.List;
 
 public class DoctorInstructionPage extends BasePage{
 
-    public DoctorInstructionPage() {
+  
+   protected static final Logger logger = LoggerFactory.getLogger(DoctorInstructionPage.class);
+       
+       DrugFormPage drugForm = new DrugFormPage();
+        GeneralInstructionPage generalInstructionForm = new GeneralInstructionPage();
+        BloodProductsPage bloodForm = new BloodProductsPage();
+        public DoctorInstructionPage() {
         UIActions.waitForSpinnerToDisappear();
     }
 
+    
 
-    DrugFormPage drugForm =new DrugFormPage();
-    GeneralInstructionPage generalInstructionForm = new GeneralInstructionPage();
-    BloodProductsPage bloodForm = new BloodProductsPage();
+
     //title locator
     private By doctorInstructionsTitle = By.xpath("//span[contains(@class,'lan-title-ng-view-Hierarchy-a') and text()='הוראות רופא']");
 
@@ -36,7 +46,7 @@ public class DoctorInstructionPage extends BasePage{
     // בדיקה אם הטקסט בצד השני של הכותרת מתאים
     public boolean isSecondTitleDisplayed(InstructionType type) {
         String actualText = UIActions.getText(getSecondTitleSpanLocator()).trim();
-        System.out.println("DEBUG: actualText = '" + actualText + "' | expected = '" + type.getDescription() + "'");
+        logger.debug("DEBUG: actualText = '{}' | expected = '{}'", actualText, type.getDescription());
         return actualText.contains(type.getDescription());
     }
 
@@ -65,6 +75,7 @@ public class DoctorInstructionPage extends BasePage{
      * click add medicine drug
      */
     public void clickButtonAddInstruction(InstructionType type) {
+        logger.info("Clicking 'Add' button for instruction type: {}", type);
         switch (type) {
             case MEDICINE:
                 UIActions.click(btnAddMedicine);
@@ -105,8 +116,8 @@ public class DoctorInstructionPage extends BasePage{
 
     // פונקציות Full Action – דוגמה למספר סוגי הוראות
     public void addMedicineFullAndVerify(String name, String frequency, String dose, String amount, String username, String password) {
+      logger.info("Attempting to add medicine with details - Name: {}, Frequency: {}, Dose: {}, Amount: {}", name, frequency, dose, amount);
         clickButtonAddInstruction(InstructionType.MEDICINE);
-
         drugForm.addOneMedicine(name, frequency, dose, amount, null, null, null, null, null, null, false);
         approveAndVerifyInstructions(username, password);
     }
@@ -147,12 +158,14 @@ public class DoctorInstructionPage extends BasePage{
 
 
     public void approveAndVerifyInstructions(String username, String password) {
+        logger.info("Approving instructions with username: {}", username);
         clickButtonSign();
         userSignModalPage.signModal(username, password);
         UIActions.waitForVisible(btn_approvalDrug);
         verifyDoctorApproval();
     }
    public void renewAllInstructions() {
+    logger.info("Renewing all instructions...");
      int index=0;
     //לבדוק בכלל אם יש רשימה ולא הכול
     int count = UIActions.findElementsWithWait(chekBoxList).size();
@@ -160,22 +173,26 @@ public class DoctorInstructionPage extends BasePage{
      List<WebElement> checkBoxes = UIActions.findElementsWithWait(chekBoxList);
       WebElement cb =  checkBoxes.get(0);
         if (!cb.isSelected()) {
-            UIActions.click(cb);
+            UIActions.waitForElementClickable(cb);
+            UIActions.clickWithRetry(cb, chekBoxList);
    
             index++;
-            System.out.println("Checkbox selected: " + index);         
             if(count==1)
                 break;
         } 
      count = UIActions.findElementsWithWait(chekBoxList).size();
-     System.out.println("Remaining checkboxes: " + count);
      }
      while(count>0);
      approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 
-    public void verifyDoctorApproval(){
-        assertTrue(driver.findElement(btn_approvalDrug).getText().contains("0"));
+    public void verifyDoctorApproval() {
+         if (UIActions.getText(btn_approvalDrug).contains("0")) {
+            logger.info("All instructions approved successfully.");
+            assertTrue(true);
+        } else {
+            logger.error("Some instructions were not approved.");
+            assertTrue(false);
     }
-
+    }
 }

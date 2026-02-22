@@ -2,7 +2,11 @@ package pages.menu;
 
 import actionUtilies.UIActions;
 import drivers.DriverManager;
+
 import org.openqa.selenium.By;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import pages.BasePage;
 
 public class InnerMenuPage extends BasePage {
@@ -13,7 +17,7 @@ public class InnerMenuPage extends BasePage {
     private final String MENU_ITEM_XPATH_TEMPLATE =
             "//*[normalize-space(text())='%s']";
 
-
+  Logger logger = LoggerFactory.getLogger(InnerMenuPage.class);
 
     /**
      * מקבלת את שם כניסת התפריט בעברית ולוחצת על הכניסה המתאימה.
@@ -26,17 +30,17 @@ public class InnerMenuPage extends BasePage {
         // 2. יצירת אובייקט By
         By targetLocator = By.xpath(dynamicXpath);
 
-        System.out.println("מנווט לכניסה: " + entryName + " באמצעות XPath: " + dynamicXpath);
+        logger.info("Navigating to menu entry: " + entryName + " using XPath: " + dynamicXpath);
 
         try {
             // 3. שימוש ב-UIActions ללחיצה (הכוללת המתנה מובנית)
             // הערה: אם יש בעיית לחיצה, ננסה להשתמש ב-JavaScript Executor (אם צריך).
             UIActions.click(targetLocator);
-            System.out.println("✔ כניסה '" + entryName + "' נלחצה בהצלחה.");
+            logger.info("Navigation to menu entry '" + entryName + "' was successful.");
 
         } catch (Exception e) {
-            System.err.println("❌ כשל בניווט לכניסה '" + entryName + "'. ודא שהשם מדויק. שגיאה: " + e.getMessage());
-            throw new RuntimeException("כשל בניווט בתפריט הניווט הפנימי", e);
+            logger.error("❌ Failed to navigate to menu entry '" + entryName + "'. Ensure the name is correct. Error: " + e.getMessage());
+            throw new RuntimeException("Failed to navigate in the inner menu", e);
         }
     }
 

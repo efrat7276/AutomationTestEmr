@@ -1,1 +1,0 @@
-{"uuid":"97806bc7-55a7-49b5-9674-f6dcd5160f52","name":"emergency.generalinstruction","children":["2370a43c-d57c-4981-8593-9245722dbc9a"],"befores":[],"afters":[{"name":"closeSession","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1705270831265,"stop":1705270831715}],"links":[],"start":1705270779418,"stop":1705270831764}

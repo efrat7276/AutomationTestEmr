@@ -9,7 +9,12 @@ import java.util.List;
 
 import javax.print.Doc;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 
 import pages.ChooseDepartmentListPage;
 import pages.DoctorInstructionPage;
@@ -20,32 +25,59 @@ import pages.mainPages.PatientsListPage;
 
 public class BaseSuit {
 
-    @AfterTest()
+    protected static final Logger logger = LoggerFactory.getLogger(BaseSuit.class);
+    protected LoginPage loginPage;
+    protected PatientsListPage patientsListPage;
+    protected PatientBoxPage patientBoxPage;
+    protected DoctorInstructionPage doctorInstructionPage;
+    protected ChooseDepartmentListPage chooseDepartmentListPage;
+    @BeforeMethod
+    public void setUp() {
+    logger.info(">>> Starting Test Setup");
+    DriverManager.getInstance(); 
+    
+    logger.info(">>> Initializing pages with active driver");
+    loginPage = new LoginPage();
+    patientsListPage = new PatientsListPage();
+    patientBoxPage = new PatientBoxPage();
+    doctorInstructionPage = new DoctorInstructionPage();
+    chooseDepartmentListPage = new ChooseDepartmentListPage();
+    
+    logger.info(">>> Test Setup Complete");
+  }
+
+    @AfterMethod // עדיף AfterMethod כדי לסגור דפדפן אחרי כל טסט בנפרד
     public void closeBrowser(){
-        DriverManager.getInstance().quit();
+        logger.info("<<< Closing browser and cleaning up");
+        logger.info("<<< Closing browser. Driver instance: " + DriverManager.getInstance());
     }
 
-    LoginPage loginPage=new LoginPage();
-    PatientsListPage patientsListPage = new PatientsListPage();
-    PatientBoxPage patientBoxPage = new PatientBoxPage();
-    DoctorInstructionPage doctorInstructionPage = new DoctorInstructionPage();
-    ChooseDepartmentListPage chooseDepartmentListPage = new ChooseDepartmentListPage();
+    @AfterClass
+    public void tearDown() {
+        logger.info("<<< Quitting driver and cleaning up resources");
+        DriverManager.quitDriver();
+    }
+    
     protected void loginAsDoctor() {
+        logger.info("Performing Login as DOCTOR: {}", Constants.DOCTOR_USERNAME);
         loginPage.login(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD, Constants.DOCTOR_ROLE);
     }
 
     protected void loginAsNurse() {
+        logger.info("Performing Login as NURSE: {}", Constants.NURSE_USERNAME);
         loginPage.login(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD, Constants.NURSE_ROLE);
     }
 
     
     protected void loginAsNutritionist() {
+        logger.info("Performing Login as NUTRITIONIST: {}", Constants.NUTRITIONIST_USERNAME);
         loginPage.login(Constants.NUTRITIONIST_USERNAME, Constants.NUTRITIONIST_PASSWORD, Constants.NUTRITIONIST_ROLE);
     }
 
     protected void choosePatient(int patientIndex) {
+        logger.info("Choosing patient at index: {}", patientIndex);
         patientsListPage.choosePatient(patientIndex);
-        
+        patientBoxPage.verifyPatientDetailsExisting();
     }
 
 
@@ -55,10 +87,12 @@ public class BaseSuit {
     }
 
     protected void chooseDepartment(String departmentName) {
+        logger.info("Choosing department: {}", departmentName);
         chooseDepartmentListPage.selectDepartment(departmentName);
     }
 
       public void openInstructionForm(InstructionType type) {
+        logger.info("Opening instruction form for type: {}", type);
         switch(type) {
             case MEDICINE:
                doctorInstructionPage.clickButtonAddInstruction(type);
