@@ -1,10 +1,12 @@
 package pages.doctor;
 
 import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 import pages.BasePage;
 import pages.UserSignModalPage;
 
+@Slf4j
 public class FollowupPage extends BasePage {
 
   UserSignModalPage userSignModalPage;
@@ -29,7 +31,7 @@ public class FollowupPage extends BasePage {
 
     public void addFollowup(String notes_Subjec , String notes_Objective ,
                             String notes_Aassesment , String notes_Plan, String username, String password) {
-     logger.info("Attempting to add follow-up");
+     log.info("Attempting to add follow-up");
      UIActions.typeText(textArea_subjective, notes_Subjec);
      UIActions.typeText(textArea_objective, notes_Objective);
      UIActions.typeText(textArea_aassesment, notes_Aassesment);
@@ -41,10 +43,10 @@ public class FollowupPage extends BasePage {
 
   public void verifyFollowupSaved() {
     if(UIActions.waitForVisible(buttonTrash)) {
-      logger.info("✔ הפולו-אפ נשמר בהצלחה והופיע בהיסטוריה.");
+      log.info("✔ הפולו-אפ נשמר בהצלחה והופיע בהיסטוריה.\");
     } else {
-      logger.error("❌ כשל בשמירת הפולו-אפ או בהצגתו בהיסטוריה.");
-      throw new AssertionError("כשל בשמירת הפולו-אפ או בהצגתו בהיסטוריה.");
+      log.error("❌ כשל בשמירת הפולו-אפ או בהצגתו בהיסטוריה.\");
+      throw new AssertionError("כשל בשמירת הפולו-אפ או בהצגתו בהיסטוריה.\");
     }
   } 
 }

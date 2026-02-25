@@ -2,13 +2,11 @@ package pages;
 
 import actionUtilies.UIActions;
 import helpers.Constants;
-
+import lombok.extern.slf4j.Slf4j;
 import org.checkerframework.checker.units.qual.g;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.bidi.log.Log;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.annotations.BeforeMethod;
 
 import pages.addForms.DrugFormPage;
@@ -19,11 +17,8 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.List;
 
-
-public class DoctorInstructionPage extends BasePage{
-
-  
-   protected static final Logger logger = LoggerFactory.getLogger(DoctorInstructionPage.class);
+@Slf4j
+public class DoctorInstructionPage extends BasePage {
        
        DrugFormPage drugForm = new DrugFormPage();
         GeneralInstructionPage generalInstructionForm = new GeneralInstructionPage();
@@ -46,7 +41,7 @@ public class DoctorInstructionPage extends BasePage{
     // בדיקה אם הטקסט בצד השני של הכותרת מתאים
     public boolean isSecondTitleDisplayed(InstructionType type) {
         String actualText = UIActions.getText(getSecondTitleSpanLocator()).trim();
-        logger.debug("DEBUG: actualText = '{}' | expected = '{}'", actualText, type.getDescription());
+        log.debug("DEBUG: actualText = '{}' | expected = '{}'", actualText, type.getDescription());
         return actualText.contains(type.getDescription());
     }
 
@@ -75,7 +70,7 @@ public class DoctorInstructionPage extends BasePage{
      * click add medicine drug
      */
     public void clickButtonAddInstruction(InstructionType type) {
-        logger.info("Clicking 'Add' button for instruction type: {}", type);
+        log.info("Clicking 'Add' button for instruction type: {}", type);
         switch (type) {
             case MEDICINE:
                 UIActions.click(btnAddMedicine);
@@ -116,7 +111,7 @@ public class DoctorInstructionPage extends BasePage{
 
     // פונקציות Full Action – דוגמה למספר סוגי הוראות
     public void addMedicineFullAndVerify(String name, String frequency, String dose, String amount, String username, String password) {
-      logger.info("Attempting to add medicine with details - Name: {}, Frequency: {}, Dose: {}, Amount: {}", name, frequency, dose, amount);
+      log.info("Attempting to add medicine with details - Name: {}, Frequency: {}, Dose: {}, Amount: {}", name, frequency, dose, amount);
         clickButtonAddInstruction(InstructionType.MEDICINE);
         drugForm.addOneMedicine(name, frequency, dose, amount, null, null, null, null, null, null, false);
         approveAndVerifyInstructions(username, password);
@@ -158,14 +153,14 @@ public class DoctorInstructionPage extends BasePage{
 
 
     public void approveAndVerifyInstructions(String username, String password) {
-        logger.info("Approving instructions with username: {}", username);
+        log.info("Approving instructions with username: {}", username);
         clickButtonSign();
         userSignModalPage.signModal(username, password);
         UIActions.waitForVisible(btn_approvalDrug);
         verifyDoctorApproval();
     }
    public void renewAllInstructions() {
-    logger.info("Renewing all instructions...");
+    log.info("Renewing all instructions...");
      int index=0;
     //לבדוק בכלל אם יש רשימה ולא הכול
     int count = UIActions.findElementsWithWait(chekBoxList).size();
@@ -187,12 +182,7 @@ public class DoctorInstructionPage extends BasePage{
     }
 
     public void verifyDoctorApproval() {
-         if (UIActions.getText(btn_approvalDrug).contains("0")) {
-            logger.info("All instructions approved successfully.");
-            assertTrue(true);
-        } else {
-            logger.error("Some instructions were not approved.");
-            assertTrue(false);
-    }
+          assertTrue(UIActions.getText(btn_approvalDrug).contains("0"),"Expected approval button text to contain '0' but got '" + UIActions.getText(btn_approvalDrug) + "'");
+    
     }
 }

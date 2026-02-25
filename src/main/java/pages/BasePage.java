@@ -2,18 +2,17 @@ package pages;
 
 import actionUtilies.UIActions;
 import drivers.DriverManager;
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import java.time.Duration;
 
+@Slf4j
 public class BasePage {
 
     protected WebDriver driver;
     protected WebDriverWait wait;
-    protected static final Logger logger = LoggerFactory.getLogger(BasePage.class);
     protected UserSignModalPage userSignModalPage;
     protected MedicinePrep medicinePrep;
 

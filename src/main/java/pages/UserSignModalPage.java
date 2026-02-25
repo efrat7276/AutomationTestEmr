@@ -1,16 +1,11 @@
 package pages;
 
 import actionUtilies.UIActions;
-
-
-
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
+@Slf4j
 public class UserSignModalPage {
-
-    Logger logger = LoggerFactory.getLogger(UserSignModalPage.class);
     // שדה שם המשתמש
     private final By inputUserName = By.id("user");
 
@@ -36,10 +31,10 @@ public class UserSignModalPage {
             UIActions.typeText(inputPassword, password);
             UIActions.click(btnConfirm);
             UIActions.waitForInvisibility(btnConfirm);
-            logger.info("approval process completed successfully by user: " + username);
+            log.info("approval process completed successfully by user: " + username);
 
         } catch (Exception e) {
-            logger.error("approval process failed for user: " + username + ". Error: " + e.getMessage());
+            log.error("approval process failed for user: " + username + ". Error: " + e.getMessage());
        }
     }
 }

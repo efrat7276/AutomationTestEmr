@@ -14,7 +14,7 @@ public class DischargedPatientListPage {
    private  By list_dischargedPatients = By.xpath("//p-table[contains(@class,'depMeushpazim-table patients-table')]");
 
 public void verifyIsDischargedPatientsListVisible() {
-      assertTrue(UIActions.isElementDisplayed(list_dischargedPatients));  
+      assertTrue(UIActions.isElementDisplayed(list_dischargedPatients),"Discharged patients list should be visible but it's not.");  
    
 }
 }

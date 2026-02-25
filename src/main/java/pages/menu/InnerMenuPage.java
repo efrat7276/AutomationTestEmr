@@ -2,13 +2,12 @@ package pages.menu;
 
 import actionUtilies.UIActions;
 import drivers.DriverManager;
-
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import pages.BasePage;
 
+@Slf4j
 public class InnerMenuPage extends BasePage {
 
     // לוקטור בסיס, משמש לתבנית XPath.
@@ -16,8 +15,6 @@ public class InnerMenuPage extends BasePage {
     // 2. מחפש כל אלמנט שמכיל את הטקסט, כדי להיות גמיש.
     private final String MENU_ITEM_XPATH_TEMPLATE =
             "//*[normalize-space(text())='%s']";
-
-  Logger logger = LoggerFactory.getLogger(InnerMenuPage.class);
 
     /**
      * מקבלת את שם כניסת התפריט בעברית ולוחצת על הכניסה המתאימה.
@@ -30,16 +27,16 @@ public class InnerMenuPage extends BasePage {
         // 2. יצירת אובייקט By
         By targetLocator = By.xpath(dynamicXpath);
 
-        logger.info("Navigating to menu entry: " + entryName + " using XPath: " + dynamicXpath);
+        log.info("Navigating to menu entry: " + entryName + " using XPath: " + dynamicXpath);
 
         try {
             // 3. שימוש ב-UIActions ללחיצה (הכוללת המתנה מובנית)
             // הערה: אם יש בעיית לחיצה, ננסה להשתמש ב-JavaScript Executor (אם צריך).
             UIActions.click(targetLocator);
-            logger.info("Navigation to menu entry '" + entryName + "' was successful.");
+            log.info("Navigation to menu entry '" + entryName + "' was successful.");
 
         } catch (Exception e) {
-            logger.error("❌ Failed to navigate to menu entry '" + entryName + "'. Ensure the name is correct. Error: " + e.getMessage());
+            log.error("❌ Failed to navigate to menu entry '" + entryName + "'. Ensure the name is correct. Error: " + e.getMessage());
             throw new RuntimeException("Failed to navigate in the inner menu", e);
         }
     }

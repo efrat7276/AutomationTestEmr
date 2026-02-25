@@ -2,19 +2,17 @@ package pages.nurse.approval;
 
 import actionUtilies.UIActions;
 import drivers.DriverManager;
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import pages.BasePage;
 import pages.UserSignModalPage;
 
 import java.util.List;
 
+@Slf4j
 public class ApprovalInstructionPage extends BasePage {
-
-    Logger logger =LoggerFactory.getLogger(ApprovalInstructionPage.class);
 UserSignModalPage userSignModalPage;
     public ApprovalInstructionPage() {
        
@@ -37,10 +35,10 @@ UserSignModalPage userSignModalPage;
         List<WebElement> allDrugToApprovalRows = UIActions.findElementsWithWait(drugToApprovalRow);
 
         if (allDrugToApprovalRows.isEmpty()) {
-           logger.info("No drugs pending approval found.");     
+           log.info("No drugs pending approval found.");     
             return;
         }
-        logger.info("Found {} drugs pending approval.", allDrugToApprovalRows.size());
+        log.info("Found {} drugs pending approval.", allDrugToApprovalRows.size());
         for (int i = 0; i < allDrugToApprovalRows.size(); i++) {
             WebElement currentRow = allDrugToApprovalRows.get(i);
 
@@ -49,16 +47,16 @@ UserSignModalPage userSignModalPage;
                 WebElement currentDayBtn = currentRow.findElement(btnChooseHourCurrentDay);
                 // 2. בחירת האופציה הרביעית (אינדקס 3) מהרשימה הנפתחת
                 selectNthOptionFromDropdown(currentDayBtn, 4); // 3 = רביעי
-                logger.info("Selected the fourth current day hour for drug in row {}.", i + 1);
+                log.info("Selected the fourth current day hour for drug in row {}.", i + 1);
                 // 3. לחיצה על כפתור האישור הסופי (יחסי לשורה)
                 WebElement approvalBtn = currentRow.findElement(btnApproveDrugInRow);
                 
                 approvalBtn.click();
-                logger.info("Clicked approve for drug in row {}.", i + 1); 
+                log.info("Clicked approve for drug in row {}.", i + 1); 
 
             } catch (Exception e) {
                 // ממשיכים לתרופה הבאה
-                logger.error("Error processing drug in row {}: {}", i + 1, e.getMessage());
+                log.error("Error processing drug in row {}: {}", i + 1, e.getMessage());
                 continue;
             }
         }
@@ -67,10 +65,10 @@ UserSignModalPage userSignModalPage;
        UIActions.click(btnApproval);
         userSignModalPage.signModal(username,password);
        if( UIActions.waitForInvisibility(btnApproval)){
-        logger.info("All drugs approved successfully.");
+        log.info("All drugs approved successfully.");
        }
        else{
-        logger.error("Failed to approve drugs.");
+        log.error("Failed to approve drugs.");
        }
 
     }

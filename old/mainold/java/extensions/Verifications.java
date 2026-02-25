@@ -1,6 +1,8 @@
 package extensions;
 
 import io.qameta.allure.Step;
+import lombok.extern.slf4j.Slf4j;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 //import org.sikuli.script.FindFailed;
@@ -10,7 +12,7 @@ import java.util.List;
 
 import static org.testng.Assert.*;
 import static org.testng.Assert.assertTrue;
-
+@Slf4j
 public class Verifications extends CommonOps {
 
     public static Object existInList;
@@ -50,13 +52,15 @@ public class Verifications extends CommonOps {
 
     @Step("Verify Text in Element")
     public static void textIsContains(WebElement elem , String expected){
+        log.info("verifying text in element: {}", elem);
         wait.until(ExpectedConditions.urlContains("main"));
-        assertTrue(elem.getText().contains(expected));
-      //  System.out.println(elem.getText());
+        assertTrue(elem.getText().contains(expected),"Expected text to contain '" + expected + "' but got '" + elem.getText() + "'");
+
     }
 
     @Step("Verify Element is Display On Screen")
     public static void isElementDisplay(WebElement elem){
+        log.info("verifying element is displayed: {}", elem);
         assertTrue(elem.isDisplayed());
     }
 

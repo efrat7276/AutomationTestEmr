@@ -1,19 +1,16 @@
 package pages.addForms;
 
 import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 import pages.BasePage;
 import pages.DoctorInstructionPage;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import javax.annotation.Nullable;
 import java.util.List;
 
+@Slf4j
 public class DrugFormPage extends BasePage {
-
-    protected static final Logger logger = LoggerFactory.getLogger(DrugFormPage.class);
 
     public DrugFormPage() {
        
@@ -119,7 +116,7 @@ public class DrugFormPage extends BasePage {
             boolean alsoExecute
     ) {
        
-        logger.info("Attempting to fill details of medicine - Name: {}, Possibility: {}, Dosage: {}, TimesDaily: {}, HourToGive: {}, MaxTimesPerDay: {}, MinInterval: {}, TimesPerWeek: {}, DaysOfWeek: {}, EveryXTime: {}, AlsoExecute: {}",
+        log.info("Attempting to fill details of medicine - Name: {}, Possibility: {}, Dosage: {}, TimesDaily: {}, HourToGive: {}, MaxTimesPerDay: {}, MinInterval: {}, TimesPerWeek: {}, DaysOfWeek: {}, EveryXTime: {}, AlsoExecute: {}",
                 nameMed, possibility, dosage, timesDaily, hourToGive, maxTimesPerDay, minInterval, timesPerWeek, daysOfWeek, everyXTime, alsoExecute);
         // 1. המתנה (Hard Wait) והזנת שם התרופה
         try {
@@ -161,13 +158,13 @@ public class DrugFormPage extends BasePage {
     }
 
     private void tryExecuteInForm() {
-        logger.info("Attempting to click 'Execute in Form' button if available...");
+        log.info("Attempting to click 'Execute in Form' button if available...");
         try {
             if (UIActions.isElementDisplayed(btn_executeInForm)) {
                 UIActions.click(btn_executeInForm);
             }
         } catch (Exception e) {
-            logger.warn("Execute-in-form button not found or not visible: {}", e.getMessage());
+            log.warn("Execute-in-form button not found or not visible: {}", e.getMessage());
         }
     }
 
@@ -186,7 +183,7 @@ public class DrugFormPage extends BasePage {
             @Nullable String dosage,
             @Nullable String flowRateOrTimes
     ) {
-        logger.info("Attempting to fill details of fluid - Name: {}, Possibility: {}, Dosage: {}, FlowRateOrTimes: {}", nameFluid, possibility, dosage, flowRateOrTimes);
+        log.info("Attempting to fill details of fluid - Name: {}, Possibility: {}, Dosage: {}, FlowRateOrTimes: {}", nameFluid, possibility, dosage, flowRateOrTimes);
         // 1. המתנה והזנת שם הנוזל
         try {
             Thread.sleep(3000);  // המתנה קטנה יותר לנוזלים
@@ -221,7 +218,7 @@ public class DrugFormPage extends BasePage {
             case "sos": return possibilitySOS;
             case "by hour": return possibilityByHour;
             case "weekly": return possibilityWeekly;
-            default:  logger.error("Invalid possibility: {}", possibility);
+            default:  log.error("Invalid possibility: {}", possibility);
                       throw new IllegalArgumentException("Invalid possibility: " + possibility);
         }
     }
@@ -237,7 +234,7 @@ public class DrugFormPage extends BasePage {
             case "time limit":
                 return possibilityTimeLimit;
             default:
-                logger.error("Invalid fluid possibility: {}", possibility);
+                log.error("Invalid fluid possibility: {}", possibility);
                 throw new IllegalArgumentException("Invalid fluid possibility: " + possibility + ". Use 'Continuous' or 'Time Limit'");
         }
     }

@@ -3,6 +3,7 @@ package actionUtilies;
 
 import drivers.DriverManager;
 import io.qameta.allure.Step;
+import lombok.extern.slf4j.Slf4j;
 import pages.addForms.DrugFormPage;
 
 import org.openqa.selenium.By;
@@ -13,15 +14,14 @@ import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 import java.time.Duration;
 import java.util.List;
 
+@Slf4j
 public class UIActions {
 
-    protected static final Logger logger = LoggerFactory.getLogger(DrugFormPage.class);
 
     static WebDriverWait wait = DriverManager.getWait();
 
@@ -98,7 +98,7 @@ public class UIActions {
                 return;
             } catch (StaleElementReferenceException | ElementClickInterceptedException | TimeoutException e) {
                 attempts++;
-                logger.warn("safeClick attempt {} failed for {}: {}", attempts, locator, e.toString());
+                log.warn("safeClick attempt {} failed for {}: {}", attempts, locator, e.toString());
                 waitForSpinnerToDisappear();
                 try { Thread.sleep(200); } catch (InterruptedException ie) { Thread.currentThread().interrupt(); }
             }
@@ -119,7 +119,7 @@ public class UIActions {
                 return;
             } catch (StaleElementReferenceException e) {
                 attempts++;
-                logger.warn("clickWithRetry stale element - refinding using locator: {} (attempt {})", locator, attempts);
+                log.warn("clickWithRetry stale element - refinding using locator: {} (attempt {})", locator, attempts);
                 element = findElementWithWait(locator);
             }
         }
@@ -180,7 +180,7 @@ public class UIActions {
             // ExpectedConditions.invisibilityOfElementLocated מטפל גם באלמנט שמוסר מה-DOM וגם באלמנט שהופך לבלתי נראה (opacity: 0, visibility: hidden, display: none).
             wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
 
-         logger.info("Element located by " + locator + " has become invisible or removed from DOM.");
+         log.info("Element located by " + locator + " has become invisible or removed from DOM.");
             return true;
 
         } catch (TimeoutException e) {
@@ -189,7 +189,7 @@ public class UIActions {
             // throw e;
             return false;
         } catch (Exception e) {
-            logger.error("Unexpected error while waiting for element to become invisible: " + e.getMessage());
+            log.error("Unexpected error while waiting for element to become invisible: " + e.getMessage());
             return false;
         }
     }
@@ -306,7 +306,7 @@ public class UIActions {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
             return true;
         } catch (Exception e) {
-            logger.error("❌ אירעה שגיאה בלתי צפויה בזמן ההמתנה: " + e.getMessage());
+            log.error("❌ אירעה שגיאה בלתי צפויה בזמן ההמתנה: " + e.getMessage());
             return false;
         }
     }

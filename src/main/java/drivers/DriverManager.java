@@ -5,11 +5,14 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import lombok.extern.slf4j.Slf4j;
+
 import java.time.Duration;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
+@Slf4j
 public class DriverManager {
 
     private static WebDriver driver ;
@@ -36,12 +39,13 @@ public class DriverManager {
      * @return
      */
     public static WebDriver initBrowser() {
+      log.info("Initializing browser with set capabilities and window size");
         Capabilities caps = ((RemoteWebDriver) driver).getCapabilities();
         String browserName = caps.getBrowserName();
         String browserVersion = caps.getBrowserVersion();
 
-        System.out.println("Browser: " + browserName);
-        System.out.println("Version: " + browserVersion);
+        log.info("Browser: {}", browserName);
+        log.info("Version: {}", browserVersion);
 
         //Resulation
         driver.manage().window().setPosition(new Point(0, 0));
@@ -51,7 +55,9 @@ public class DriverManager {
     }
 
     public static void quitDriver() {
+
     if (driver != null) {
+        log.info("Quitting driver and cleaning up resources");
         driver.quit();
         driver = null;
     }

@@ -1,30 +1,25 @@
 package pages.nurse.wound;
 
 import actionUtilies.UIActions;
+import pages.BasePage;
 import pages.UserSignModalPage;
 
 import org.openqa.selenium.By;
 
 import javax.annotation.Nullable;
 
-public class WondFormPage {
+public class WondFormPage extends BasePage {
 
-      UserSignModalPage userSignModalPage =new UserSignModalPage();
-    //הגדרת הפצע
 
-    // Dropdown button for selecting wound type (סוג הפצע)
-    public By button_woundToAddList = By.id("dropdownBasic1");
+    public By button_woundToAddList = By.id("btnAddMedicine");
 
-    // Dynamic list of wound types (each wound option in the dropdown)
-    public By options_woundType = By.xpath("//div[@class='kind-options dropdown-menu show']/button");
+    public By options_woundType = By.name("kind");
+                                                                  // public By options_woundLocation = By.name("location");
 
-    // Radio buttons for wound situation (מצב הפצע)
     public By radio_woundSituation = By.name("situation");
 
-    // Label for the wound situation radio buttons
     public By label_woundSituation = By.xpath("//label[contains(text(), 'מצב הפצע')]");
 
-    // Dropdown button for closing wound edges (סגירת חתך)
     public By dropdown_closeOfEdges = By.id("closeOfEdges");
 
     // Dynamic list of closure options for wound edges (סגירת חתך)
@@ -106,11 +101,7 @@ public class WondFormPage {
                             @Nullable Integer closeOrOpen,
                             @Nullable Integer degree,
                             @Nullable Integer treatmentInstructionCount) {
-        // try {
-        //     Thread.sleep(500);
-        // } catch (InterruptedException e) {
-        //     Thread.currentThread().interrupt();
-        // }
+     
         UIActions.click(button_woundToAddList);
         UIActions.selectFromList(options_woundType, woundDescription);
 

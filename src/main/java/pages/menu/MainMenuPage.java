@@ -1,20 +1,18 @@
 package pages.menu;
 
 import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import pages.BasePage;
 
 import static org.testng.Assert.assertTrue;
 
+@Slf4j
 public class MainMenuPage extends BasePage {
-
-    Logger logger = LoggerFactory.getLogger(MainMenuPage.class);
     private By category_drugPreparation = By.xpath("//ul[contains(@class,'flex-fill main-menu-list')]//span[text()='הכנת תרופות']");
     private By category_dischargedList = By.xpath("//ul[contains(@class,'flex-fill main-menu-list')]//span[text()='רשימת משוחררים']");
     private By category_ordersList = By.xpath("//ul[contains(@class,'flex-fill main-menu-list')]//span[text()='הזמנות']");
@@ -26,14 +24,7 @@ public class MainMenuPage extends BasePage {
 
 
     public void verificationPatientListTabExisting(){ 
-       if(UIActions.findElementWithWait (category_patientList).isDisplayed()){
-        assertTrue(true);
-        logger.info("Patient list category is displayed in main menu.");
-       }
-       else{
-        logger.error("Patient list category is NOT displayed in main menu.");
-        assertTrue(false);
-       }    
+        assertTrue(UIActions.findElementWithWait (category_patientList).isDisplayed(),"Patient list category should be displayed in main menu but it's not.");   
     }
 
 }

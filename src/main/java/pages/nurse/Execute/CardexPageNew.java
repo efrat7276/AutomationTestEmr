@@ -1,5 +1,6 @@
 package pages.nurse.Execute;
 import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
 
 import static org.testng.Assert.assertTrue;
 
@@ -10,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pages.BasePage;
 import pages.UserSignModalPage;
+@Slf4j
 public class CardexPageNew extends BasePage {
 
     public CardexPageNew() {
@@ -32,7 +34,7 @@ private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ
      private final By i_arrow = By.xpath("//app-patient-detail/app-inner-menu/div/div/div[1]/span/i");
     private final By stickers = By.xpath("//button[3][contains(@class, 'btn-secondary')]");
    public void executeAllDrugsToThisShift() {
-        logger.info("Starting execution of all drug instructions to this shift.");
+        log.info("Starting execution of all drug instructions to this shift.");
         List<WebElement> drugs = driver.findElements(By.xpath("//input[@type='checkbox' and starts-with(@id, 'drugInsDayModeCheckbox')]"));
         for (WebElement el : drugs) {
             UIActions.waitForElementClickable(el);
@@ -40,7 +42,7 @@ private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ
         }
     }
     public void executeAllGeneralsToThisShift(){
-        logger.info("Starting execution of all general instructions to this shift.");
+        log.info("Starting execution of all general instructions to this shift.");
         List<WebElement> generals = UIActions.findElementsWithWait(generalCheckboxes);
         for (WebElement el : generals){
             UIActions.waitForElementClickable(el);
@@ -48,7 +50,7 @@ private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ
         }
     }
     public void executeAllSolutionsToThisShift(){
-        logger.info("Starting execution of all solutions to this shift.");
+        log.info("Starting execution of all solutions to this shift.");
         List<WebElement> sols = UIActions.findElementsWithWait(solCheckboxes);
         for (WebElement el : sols){
             UIActions.waitForElementClickable(el);
@@ -56,7 +58,7 @@ private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ
         }
     }
     public void executeAllBloodsToThisShift(){
-        logger.info("Starting execution of all blood products to this shift.");
+        log.info("Starting execution of all blood products to this shift.");
         List<WebElement> bloods = UIActions.findElementsWithWait(bloodCheckboxes);
         for (WebElement el : bloods){
             UIActions.waitForElementClickable(el);
@@ -64,7 +66,7 @@ private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ
         }
     }
     public void executeAllToThisShift(){
-        logger.info("Starting execution of all instructions to this shift.");
+        log.info("Starting execution of all instructions to this shift.");
         List<WebElement> all = UIActions.findElementsWithWait(allShiftCheckboxes);
         for (WebElement el : all){
             UIActions.waitForElementClickable(el);
@@ -74,7 +76,7 @@ private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ
   
 
     public void executeAndApproveAllToThisShiftAndApproval(String username, String password) {
-        logger.info("Starting execution and approval of all instructions to this shift.");
+        log.info("Starting execution and approval of all instructions to this shift.");
         executeAllToThisShift();
          UIActions.click(btn_approvalDrug);
         userSignModalPage.signModal(username, password);
@@ -86,42 +88,36 @@ private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ
          UIActions.click(nav_instructionForApproval);
     }
 
-    public void clickNavCardex() {
-         logger.info("Attempting to click on nav cardex.");
-        try {
-            UIActions.click(nav_cardex);
-            logger.info("Clicked on Cardex navigation successfully.");
-        } catch (Exception e) {
-            logger.error("Failed to click on Cardex navigation. Error: " + e.getMessage());
-            throw new RuntimeException("Failed to navigate to Cardex", e);
-        }
-    }
+    // public void clickNavCardex() {
+    //      log.info("Attempting to click on nav cardex.");
+    //     try {
+    //         UIActions.click(navCardex);
+    //         log.info("Clicked on Cardex navigation successfully.");
+    //     } catch (Exception e) {
+    //         log.error("Failed to click on Cardex navigation. Error: " + e.getMessage());
+    //         throw new RuntimeException("Failed to navigate to Cardex", e);
+    //     }
+    // }
     
     public void clickArrowForwardToInnerMenu() {
         UIActions.click(i_arrow);
     }
 
     public void printIVLabelForFirstFluidInCardex() {
-        logger.info("Attempting to print IV label for the first fluid in cardex.");
+        log.info("Attempting to print IV label for the first fluid in cardex.");
         UIActions.waitForSpinnerToDisappear();
         UIActions.waitForElementClickable(nav_cardex);
-       clickNavCardex();
+     //  clickNavCardex();
        UIActions.waitForElementClickable(stickers);
         UIActions.click(stickers);
        if (medicinePrep.isMedicinePrepDisplayed()) {
-        logger.info("IV label printed successfully.");
+        log.info("IV label printed successfully.");
          } else {
-        logger.error("Failed to print IV label.");
+        log.error("Failed to print IV label.");
          }
     }
 
     public void verifyExecuted() {
-       if (UIActions.waitForText(btn_approvalDrug,"0" )) {
-           assertTrue(true);
-           logger.info("All instructions executed and approved successfully.");
-       } else {
-           assertTrue(false);
-         logger.error("Failed to execute and approve all instructions.");
-       }
+           assertTrue(UIActions.waitForText(btn_approvalDrug,"0" ),"Expected approval button text to contain '0' but got '" + UIActions.getText(btn_approvalDrug) + "'");
     }
 }

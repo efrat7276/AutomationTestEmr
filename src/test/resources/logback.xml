@@ -1,0 +1,23 @@
+
+<configuration>
+    <logger name="io.netty" level="ERROR" /> 
+    <logger name="org.asynchttpclient" level="ERROR" />
+    <logger name="org.openqa.selenium" level="ERROR" />
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{25}) [%yellow(%F:%L)] [%magenta(%X{sessionId})] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="Allure" class="helpers.AllureLogAppender">
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="Allure" />
+    </root>
+</configuration>

@@ -52,7 +52,7 @@ public class SanitySuite extends BaseSuit {
     // public void preTest() throws SQLException{
 
     //    getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient).get(0);
-    //    removePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
+       // removePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
     // }
 
     @Test(description = "renew instruction to spetif patient for Bug -solutinInstructionTimes", enabled = false)
@@ -79,14 +79,14 @@ public class SanitySuite extends BaseSuit {
         doctorInstructionPage.addMedicineFullAndVerify("CARBOplatin", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 
-    @Test(description = "approval medicine by nurse")
+    @Test(description = "approval medicine by nurse", dependsOnMethods = "test_02_addingMedicine")
     public void test_03_approvalMedicineByNurse(){
         loginAsNurse();
         choosePatient(PATIENT_1);
         approvalInstructionPage.approveDrugsSelectFourthCurrentDayHourAndVerify(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
 
-    @Test(description = "execute medicine by nurse")
+    @Test(description = "execute medicine by nurse",)
     public void test_04_executeMedicine(){
         loginAsNurse();
         choosePatient(PATIENT_1);
@@ -135,7 +135,7 @@ public class SanitySuite extends BaseSuit {
     }
 
 
-    @Test(description = "Nurse navigates to wounds screen, fills form, and adds wound", enabled = false)
+    @Test(description = "Nurse navigates to wounds screen, fills form, and adds wound")
     public void test_10_nurseAddWound() {
         loginAsNurse();
         choosePatient(PATIENT_1);
