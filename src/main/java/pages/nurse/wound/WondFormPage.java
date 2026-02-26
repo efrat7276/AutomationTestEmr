@@ -1,116 +1,73 @@
 package pages.nurse.wound;
 
 import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
 import pages.BasePage;
 import pages.UserSignModalPage;
 
+import org.checkerframework.checker.units.qual.s;
 import org.openqa.selenium.By;
 
 import javax.annotation.Nullable;
-
+@Slf4j
 public class WondFormPage extends BasePage {
 
-
-    public By button_woundToAddList = By.id("btnAddMedicine");
-
-    public By options_woundType = By.name("kind");
-                                                                  // public By options_woundLocation = By.name("location");
-
+public By button_addWound =By.id("btnAddMedicine");
+   
+    public By button_woundType = By.xpath("//button[@id='dropdownBasic1' and @name='kind']");
+    public By options_woundType = By.xpath("//div[contains(@class,'kind-options dropdown-menu')]//button");                                                           // public By options_woundLocation = By.name("location");
     public By radio_woundSituation = By.name("situation");
-
     public By label_woundSituation = By.xpath("//label[contains(text(), 'מצב הפצע')]");
-
     public By dropdown_closeOfEdges = By.id("closeOfEdges");
-
-    // Dynamic list of closure options for wound edges (סגירת חתך)
     public By options_closeOfEdges = By.cssSelector("div[ngbDropdownMenu] button[ngbDropdownItem]");
-
-    // ---- Wound Location (מיקום הפצע) ----
-
-    // Label for Wound Location
     public By label_woundLocation = By.xpath("//label[@for='location']");
-
-    // Dropdown button for selecting wound location (when wound type is not equal to 1)
     public By dropdown_woundLocation = By.id("location");
-
-    // Wound location options (appears when dropdown is open)
     public By options_woundLocation = By.xpath("//button[@id='location']/following-sibling::div/button");
-
-    // First option for wound location (helper for quick selection)
     public By option_woundLocationFirst = By.xpath("(//button[@id='location']/following-sibling::div/button)[1]");
-
-    // Input field for wound location (when wound type is equal to 1)
     public By input_woundLocation = By.cssSelector("input[formControlName='location']");
-
-    // ---- Wound Side (צד הפצע) ----
-
-    // Label for Wound Side
     public By label_woundSide = By.xpath("//label[@for='side']");
-
-    // Dropdown button for selecting wound side
     public By dropdown_woundSide = By.id("side");
-
-    // Wound side options (appears when dropdown is open)
     public By option_woundSide = By.xpath("//button[@id='side']/following-sibling::div/button");
-
-    // ---- Wound Facia (facia פתוחה / סגורה עם רשת) ----
-
-    // Radio button for 'facia פתוחה' (Open Facia)
     public By radio_faciaOpen = By.xpath("//input[@formcontrolname='facia' and @value='open']");
-
-    // Radio button for 'facia סגורה עם רשת' (Closed Facia with Mesh)
     public By radio_faciaClose = By.xpath("//input[@formcontrolname='facia' and @value='close']");
-
-    // Label for 'facia פתוחה'
     public By label_faciaOpen = By.xpath("//label[contains(text(), 'facia פתוחה')]");
-
-    // Label for 'facia סגורה עם רשת'
     public By label_faciaClose = By.xpath("//label[contains(text(), 'facia סגורה עם רשת')]");
-
-    // Label for the Comment Textarea
     public By label_comments = By.xpath("//label[@for='definationComment']");
-
-    // Textarea for entering comments
     public By textarea_comments = By.name("definationComment");
-
     public By button_provisionAmount = By.xpath("//button[@id='provisionAmount']");
-
     public By option_provisionAmount = By.xpath("//button[@id='provisionAmount']/following-sibling::div/button");
-
     public By button_provisionType = By.xpath("//*[@id='provisionType']");
-
     public By option_provisionType = By.xpath("//*[@id='provisionType']/following-sibling::div/button");
-
     public By input_provisionTypeComment = By.xpath("//input[@formcontrolname='provisionTypeComment']");
-
-
     public By button_woundColor = By.xpath("//button[@id='tissueColor ']");
-
     public By option_woundColor = By.xpath("//button[@id='tissueColor ']/following-sibling::div/button");
-
     public By button_skinAround = By.xpath("//button[@id='skinAround']");
-
     public By option_skinAround = By.xpath("//button[@id='skinAround']/following-sibling::div//input[@type='checkbox']");
-
-
     public By checkbox_closedInstruction = By.xpath("//input[@formcontrolname='closedInstruction']");
-
-    // Save/Sign button in wound form (text: חתימה)
     public By button_save = By.xpath("//div[@class='action-bottom-bar']/button[contains(@class, 'ng-star-inserted')][3]");
-     public void addNewWound(String woundDescription,
+    
+    public void addNewWound(String woundDescription,
                             @Nullable Integer closeOrOpen,
                             @Nullable Integer degree,
                             @Nullable Integer treatmentInstructionCount) {
-     
-        UIActions.click(button_woundToAddList);
+
+      log.info("Attempting to add new wound with description: {}, closeOrOpen: {}, degree: {}, treatmentInstructionCount: {}",
+      woundDescription, closeOrOpen, degree, treatmentInstructionCount);
+       UIActions.click(button_addWound);
+       UIActions.waitForSpinnerToDisappear();
+       UIActions.click(button_woundType);
         UIActions.selectFromList(options_woundType, woundDescription);
-
-
 
         if (UIActions.isElementDisplayed(dropdown_woundLocation)) {
             UIActions.click(dropdown_woundLocation);
             UIActions.click(option_woundLocationFirst);
         }
+        else if (UIActions.isElementDisplayed(input_woundLocation)) {
+            UIActions.typeText(input_woundLocation, "יד");
+        }
+        UIActions.click(radio_woundSituation);
+        log.info("Selected wound situation.");
+
         if (UIActions.isElementDisplayed(dropdown_woundSide)) {
             UIActions.click(dropdown_woundSide);
             UIActions.click(option_woundSide);
@@ -121,7 +78,7 @@ public class WondFormPage extends BasePage {
             UIActions.click(options_closeOfEdges);
         }
 
-    ////יש להוסיף התיחסות לפצע ניתוחי ופצע לחץ 
+
     }
 
  private void clickSaveWound() {

@@ -76,10 +76,23 @@ public class UIActions {
     }
 
     public static void click(By locator) {
-        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    try {
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+        log.info("Clicking element: {}", locator);
         element.click();
+    } catch (StaleElementReferenceException e) {
+        log.warn("Stale element found, retrying click for: {}", locator);
+        // Retry once
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+        element.click();
+    } catch (ElementClickInterceptedException e) {
+        log.warn("Element click intercepted, using safeClick for: {}", locator);
+        safeClick(locator);
+    } catch (TimeoutException e) {
+        log.error("Timeout waiting for element to be clickable: {}", locator);
+        throw new RuntimeException("Failed to click element: " + locator, e);
     }
-
+}
     public static void click(WebElement element) {
     wait.until(ExpectedConditions.visibilityOf(element));
        element.click();
@@ -106,36 +119,19 @@ public class UIActions {
         throw new RuntimeException("safeClick failed after retries for: " + locator);
     }
 
-    /**
-     * Click a WebElement with retry handling for StaleElementReferenceException.
-     * The caller should provide a locator to re-find element if it becomes stale.
-     */
-    public static void clickWithRetry(WebElement element, By locator) {
-        int attempts = 0;
-        while (attempts < 2) {
-            try {
-                wait.until(ExpectedConditions.elementToBeClickable(element));
-                element.click();
-                return;
-            } catch (StaleElementReferenceException e) {
-                attempts++;
-                log.warn("clickWithRetry stale element - refinding using locator: {} (attempt {})", locator, attempts);
-                element = findElementWithWait(locator);
-            }
-        }
-        throw new RuntimeException("clickWithRetry failed for locator: " + locator);
-    }
+   
+  
 
     public static void typeText(By locator, String text) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-        System.out.println("Typing text '" + text + "' into element: " + locator);
+        log.info("Typing text '{}' into element: {}", text, locator);
         element.clear();
         element.sendKeys(text);
     }
     public static boolean isElementDisplayed(By locator) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         boolean displayed = element.isDisplayed();
-        System.out.println("Checking if element " + locator + " is displayed: " + displayed);
+        log.info("Checking if element {} is displayed: {}", locator, displayed);
         return displayed;
     }
 
@@ -154,7 +150,7 @@ public class UIActions {
         try {
             wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
         } catch (Exception e) {
-            System.err.println("שגיאה בהמתנה להיעלמות הספינר: " + e.getMessage());
+            log.error("Error while waiting for spinner to disappear: {}", e.getMessage());
         }
     }
     
@@ -216,6 +212,7 @@ public class UIActions {
     @Step("Select text from List")
     public static void selectFromList(By list , String text){
 
+        log.info("select from list :{} , text to select: {}", list, text);
         List<WebElement>elemntsList= wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(list));
         for(WebElement li : elemntsList){
 

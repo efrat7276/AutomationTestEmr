@@ -156,7 +156,7 @@ public class DoctorInstructionPage extends BasePage {
         log.info("Approving instructions with username: {}", username);
         clickButtonSign();
         userSignModalPage.signModal(username, password);
-        UIActions.waitForVisible(btn_approvalDrug);
+        UIActions.waitForElementClickable(btn_approvalDrug);
         verifyDoctorApproval();
     }
    public void renewAllInstructions() {
@@ -166,10 +166,11 @@ public class DoctorInstructionPage extends BasePage {
     int count = UIActions.findElementsWithWait(chekBoxList).size();
     do{
      List<WebElement> checkBoxes = UIActions.findElementsWithWait(chekBoxList);
-      WebElement cb =  checkBoxes.get(0);
-        if (!cb.isSelected()) {
-            UIActions.waitForElementClickable(cb);
-            UIActions.clickWithRetry(cb, chekBoxList);
+     // WebElement cb =  checkBoxes.get(0);
+        if (!checkBoxes.get(0).isSelected()) {
+            UIActions.waitForElementClickable(checkBoxes.get(0));
+            UIActions.click(checkBoxes.get(0));
+             log.info("Selected checkbox at index: {}", index);
    
             index++;
             if(count==1)
@@ -182,6 +183,8 @@ public class DoctorInstructionPage extends BasePage {
     }
 
     public void verifyDoctorApproval() {
+        UIActions.waitForSpinnerToDisappear();
+
           assertTrue(UIActions.getText(btn_approvalDrug).contains("0"),"Expected approval button text to contain '0' but got '" + UIActions.getText(btn_approvalDrug) + "'");
     
     }

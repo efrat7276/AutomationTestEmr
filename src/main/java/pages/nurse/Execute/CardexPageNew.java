@@ -38,7 +38,7 @@ private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ
         List<WebElement> drugs = driver.findElements(By.xpath("//input[@type='checkbox' and starts-with(@id, 'drugInsDayModeCheckbox')]"));
         for (WebElement el : drugs) {
             UIActions.waitForElementClickable(el);
-            UIActions.clickWithRetry(el, drugCheckboxes);
+            UIActions.click(el);
         }
     }
     public void executeAllGeneralsToThisShift(){
@@ -46,7 +46,7 @@ private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ
         List<WebElement> generals = UIActions.findElementsWithWait(generalCheckboxes);
         for (WebElement el : generals){
             UIActions.waitForElementClickable(el);
-            UIActions.clickWithRetry(el, generalCheckboxes);
+            UIActions.click(el);
         }
     }
     public void executeAllSolutionsToThisShift(){
@@ -54,7 +54,7 @@ private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ
         List<WebElement> sols = UIActions.findElementsWithWait(solCheckboxes);
         for (WebElement el : sols){
             UIActions.waitForElementClickable(el);
-            UIActions.clickWithRetry(el, solCheckboxes);
+            UIActions.click(el);
         }
     }
     public void executeAllBloodsToThisShift(){
@@ -62,7 +62,7 @@ private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ
         List<WebElement> bloods = UIActions.findElementsWithWait(bloodCheckboxes);
         for (WebElement el : bloods){
             UIActions.waitForElementClickable(el);
-            UIActions.clickWithRetry(el, bloodCheckboxes);
+            UIActions.click(el);
         }
     }
     public void executeAllToThisShift(){
@@ -70,7 +70,7 @@ private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ
         List<WebElement> all = UIActions.findElementsWithWait(allShiftCheckboxes);
         for (WebElement el : all){
             UIActions.waitForElementClickable(el);
-            UIActions.clickWithRetry(el, allShiftCheckboxes);
+            UIActions.click(el);
         }
     }
   
@@ -106,7 +106,7 @@ private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ
     public void printIVLabelForFirstFluidInCardex() {
         log.info("Attempting to print IV label for the first fluid in cardex.");
         UIActions.waitForSpinnerToDisappear();
-        UIActions.waitForElementClickable(nav_cardex);
+      //  UIActions.waitForElementClickable(nav_cardex);
      //  clickNavCardex();
        UIActions.waitForElementClickable(stickers);
         UIActions.click(stickers);

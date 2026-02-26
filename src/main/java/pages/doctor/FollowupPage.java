@@ -2,6 +2,9 @@ package pages.doctor;
 
 import actionUtilies.UIActions;
 import lombok.extern.slf4j.Slf4j;
+
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.By;
 import pages.BasePage;
 import pages.UserSignModalPage;
@@ -29,7 +32,7 @@ public class FollowupPage extends BasePage {
 
 
 
-    public void addFollowup(String notes_Subjec , String notes_Objective ,
+    public void addFollowupAndVerify(String notes_Subjec , String notes_Objective ,
                             String notes_Aassesment , String notes_Plan, String username, String password) {
      log.info("Attempting to add follow-up");
      UIActions.typeText(textArea_subjective, notes_Subjec);
@@ -42,11 +45,6 @@ public class FollowupPage extends BasePage {
   }
 
   public void verifyFollowupSaved() {
-    if(UIActions.waitForVisible(buttonTrash)) {
-      log.info("✔ הפולו-אפ נשמר בהצלחה והופיע בהיסטוריה.\");
-    } else {
-      log.error("❌ כשל בשמירת הפולו-אפ או בהצגתו בהיסטוריה.\");
-      throw new AssertionError("כשל בשמירת הפולו-אפ או בהצגתו בהיסטוריה.\");
-    }
+    assertTrue(UIActions.waitForVisible(buttonTrash), "❌ כשל בשמירת הפולו-אפ או בהצגתו בהיסטוריה.");
   } 
 }

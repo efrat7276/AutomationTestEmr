@@ -22,9 +22,12 @@ public class MainMenuPage extends BasePage {
     private By category_patientList = By.xpath("//ul[contains(@class,'flex-fill main-menu-list')]//span[text()='רשימת מטופלים']");
 
 
+    public MainMenuPage() {
+        UIActions.waitForSpinnerToDisappear();
+    }
 
     public void verificationPatientListTabExisting(){ 
-        assertTrue(UIActions.findElementWithWait (category_patientList).isDisplayed(),"Patient list category should be displayed in main menu but it's not.");   
+        assertTrue(UIActions.findElementWithWait(category_patientList).isDisplayed(),"Patient list category should be displayed in main menu but it's not.");   
     }
 
 }
