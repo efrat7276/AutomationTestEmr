@@ -78,18 +78,14 @@ public class UIActions {
     public static void click(By locator) {
     try {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
-        log.info("Clicking element: {}", locator);
         element.click();
     } catch (StaleElementReferenceException e) {
-        log.warn("Stale element found, retrying click for: {}", locator);
         // Retry once
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
         element.click();
     } catch (ElementClickInterceptedException e) {
-        log.warn("Element click intercepted, using safeClick for: {}", locator);
         safeClick(locator);
     } catch (TimeoutException e) {
-        log.error("Timeout waiting for element to be clickable: {}", locator);
         throw new RuntimeException("Failed to click element: " + locator, e);
     }
 }
@@ -111,7 +107,6 @@ public class UIActions {
                 return;
             } catch (StaleElementReferenceException | ElementClickInterceptedException | TimeoutException e) {
                 attempts++;
-                log.warn("safeClick attempt {} failed for {}: {}", attempts, locator, e.toString());
                 waitForSpinnerToDisappear();
                 try { Thread.sleep(200); } catch (InterruptedException ie) { Thread.currentThread().interrupt(); }
             }
@@ -124,14 +119,14 @@ public class UIActions {
 
     public static void typeText(By locator, String text) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-        log.info("Typing text '{}' into element: {}", text, locator);
+       // log.info("Typing text '{}' into element: {}", text, locator);
         element.clear();
         element.sendKeys(text);
     }
     public static boolean isElementDisplayed(By locator) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         boolean displayed = element.isDisplayed();
-        log.info("Checking if element {} is displayed: {}", locator, displayed);
+      //  log.info("Checking if element {} is displayed: {}", locator, displayed);
         return displayed;
     }
 
@@ -150,7 +145,7 @@ public class UIActions {
         try {
             wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
         } catch (Exception e) {
-            log.error("Error while waiting for spinner to disappear: {}", e.getMessage());
+     //       log.error("Error while waiting for spinner to disappear: {}", e.getMessage());
         }
     }
     
@@ -176,7 +171,7 @@ public class UIActions {
             // ExpectedConditions.invisibilityOfElementLocated מטפל גם באלמנט שמוסר מה-DOM וגם באלמנט שהופך לבלתי נראה (opacity: 0, visibility: hidden, display: none).
             wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
 
-         log.info("Element located by " + locator + " has become invisible or removed from DOM.");
+  //       log.info("Element located by " + locator + " has become invisible or removed from DOM.");
             return true;
 
         } catch (TimeoutException e) {
@@ -185,7 +180,7 @@ public class UIActions {
             // throw e;
             return false;
         } catch (Exception e) {
-            log.error("Unexpected error while waiting for element to become invisible: " + e.getMessage());
+       //     log.error("Unexpected error while waiting for element to become invisible: " + e.getMessage());
             return false;
         }
     }
