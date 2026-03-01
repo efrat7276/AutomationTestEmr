@@ -46,7 +46,6 @@ public class BloodProductsPage extends BasePage {
     }
 
     public void setComment(String comment) {
-        UIActions.clearText(inp_comment);
         UIActions.typeText(inp_comment, comment);
     }
 
@@ -56,11 +55,11 @@ public class BloodProductsPage extends BasePage {
      */
     public void addBloodProduct(String productName, String amount) {
         // small wait for dropdown to load if needed
-        try { Thread.sleep(1000); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+        try { Thread.sleep(300); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
 
         selectBloodProduct(productName);
         setAmount(amount);
-
+        setComment("בדיקות אוטומטית - הוספת מוצר דם");
         // finalize
         UIActions.click(btn_addAndClose);
     }

@@ -122,12 +122,14 @@ public class BaseSuit {
 
 
     public static List<String> getDetailsFirstPatient(String query) throws SQLException {
+       log.info("Fetching details for the first patient with query: {}", query);    
        List<String> patientDetails = DBExecuter.executeSelectFirstRow(query);
        return patientDetails;
     }
 
     public static boolean removePatientDataBeforeTest(String query, String param) throws SQLException {
-    String formattedQuery = String.format(query, param);
+    log.info("Executing pre-test data cleanup for patient with parameter: {}", param);
+        String formattedQuery = String.format(query, param);
     return DBExecuter.isExecutionSuccessful(formattedQuery);
 }
     

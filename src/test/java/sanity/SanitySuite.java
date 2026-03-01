@@ -56,8 +56,7 @@ public class SanitySuite extends BaseSuit {
         log.info("* Starting Pre-Test Setup: Cleaning up patient data and preparing test environment");
        patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient).get(0);
        removePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
-    ////todo 
-    /// מחיקת פצעים וצנתרים למטופל לפני הריצה
+         log.info("* Pre-Test Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
     }
 
     @Test(description = "renew instruction to spetif patient for Bug -solutinInstructionTimes")
@@ -138,8 +137,8 @@ public class SanitySuite extends BaseSuit {
     public void test_06_addingFluid() {
         log.info("* Starting test_06_addingFluid: Adding a fluid instruction for the patient");
         loginAsDoctor();
-        choosePatient(PATIENT_1);
-        doctorInstructionPage.addFluidFull("INJ furosemide 20mg/2ml (FUSID)", "continuous", "50", "1L", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+        choosePatient(1);
+        doctorInstructionPage.addFluidFull("INJ furosemide 250mg/25ml (FUROVENIR)", "continuous", "50", "1L", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 
     @Test(description = "Adding a blood product")

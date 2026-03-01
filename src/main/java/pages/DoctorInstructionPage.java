@@ -171,7 +171,11 @@ public class DoctorInstructionPage extends BasePage {
             UIActions.waitForElementClickable(checkBoxes.get(0));
             UIActions.click(checkBoxes.get(0));
              log.info("Selected checkbox at index: {}", index);
-   
+             try {
+                Thread.sleep(300); // המתנה קצרה כדי לוודא שהפעולה מתבצעת
+            } catch (InterruptedException e) {
+                log.error("InterruptedException occurred while waiting: {}", e.getMessage());
+            }
             index++;
             if(count==1)
                 break;
@@ -183,9 +187,9 @@ public class DoctorInstructionPage extends BasePage {
     }
 
     public void verifyDoctorApproval() {
+        log.info("Verifying doctor approval");
         UIActions.waitForSpinnerToDisappear();
-
-          assertTrue(UIActions.getText(btn_approvalDrug).contains("0"),"Expected approval button text to contain '0' but got '" + UIActions.getText(btn_approvalDrug) + "'");
+        assertTrue(UIActions.getText(btn_approvalDrug).contains("0"),"Expected approval button text to contain '0' but got '" + UIActions.getText(btn_approvalDrug) + "'");
     
     }
 }
