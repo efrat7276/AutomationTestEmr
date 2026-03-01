@@ -109,7 +109,7 @@ public class SanitySuite extends BaseSuit {
         cardexPageNew.printIVLabelForFirstFluidInCardex();
     }
 
-    @Test(description = "Nurse navigates to wounds screen, fills form, and adds wound", enabled = false)
+    @Test(description = "Nurse navigates to wounds screen, fills form, and adds wound")
     public void test_04_2_nurseAddWound() {
         log.info("* Starting test_04_2_nurseAddWound: Nurse navigates to wounds screen, fills form, and adds wound");
         loginAsNurse();
@@ -118,10 +118,12 @@ public class SanitySuite extends BaseSuit {
         cardexPage.clickArrowForwardToInnerMenu();
         innerMenuPage.navigateToMenuEntry("סיעוד");
         innerMenuPage.navigateToMenuEntry("פצעים");
-        
+        woundPage.clickAddWound();
+         // מילוי פרטי פצע ושמירה
+         // כאן אפשר למלא פרטים נוספים לפי הצורך, כרגע ממוקד בתיאור בלבד
+         woundFormPage.addNewWound("פצע איסכמי", null, null, null);
         // Fill minimal wound details and save
-        woundFormPage.addNewWound("פצע ניתוחי", 1, null, null);
-       // woundFormPage.saveWound();
+        woundFormPage.saveWound(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
 
 

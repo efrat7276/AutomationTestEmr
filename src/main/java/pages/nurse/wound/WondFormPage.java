@@ -8,6 +8,8 @@ import pages.UserSignModalPage;
 import org.checkerframework.checker.units.qual.s;
 import org.openqa.selenium.By;
 
+import static org.testng.Assert.assertTrue;
+
 import javax.annotation.Nullable;
 @Slf4j
 public class WondFormPage extends BasePage {
@@ -53,7 +55,7 @@ public By button_addWound =By.id("btnAddMedicine");
 
       log.info("Attempting to add new wound with description: {}, closeOrOpen: {}, degree: {}, treatmentInstructionCount: {}",
       woundDescription, closeOrOpen, degree, treatmentInstructionCount);
-       UIActions.click(button_addWound);
+     //  UIActions.click(button_addWound);
        UIActions.waitForSpinnerToDisappear();
        UIActions.click(button_woundType);
         UIActions.selectFromList(options_woundType, woundDescription);
@@ -65,8 +67,26 @@ public By button_addWound =By.id("btnAddMedicine");
         else if (UIActions.isElementDisplayed(input_woundLocation)) {
             UIActions.typeText(input_woundLocation, "יד");
         }
-        UIActions.click(radio_woundSituation);
-        log.info("Selected wound situation.");
+        // if(UIActions.isElementDisplayed(radio_woundSituation)) {
+        //     UIActions.click(radio_woundSituation);
+        // }
+
+        //  if (degree != null) {
+        //      UIActions.click(button_provisionAmount);
+        //      UIActions.selectFromList(option_provisionAmount, degree.toString());
+        //  }
+
+        //  if (treatmentInstructionCount != null) {
+        //      UIActions.click(button_provisionType);
+        //      UIActions.selectFromList(option_provisionType, "הוראות טיפול");
+        //      UIActions.typeText(input_provisionTypeComment, "מספר הוראות טיפול: " + treatmentInstructionCount);
+        //  }
+
+        //  if (closeOrOpen != null) {
+        //      UIActions.click(dropdown_closeOfEdges);
+        //      UIActions.click(options_closeOfEdges);
+        //  }
+
 
         if (UIActions.isElementDisplayed(dropdown_woundSide)) {
             UIActions.click(dropdown_woundSide);
@@ -86,11 +106,19 @@ public By button_addWound =By.id("btnAddMedicine");
     }
 
     public void saveWound(String username, String password) {
-          clickSaveWound();
+        log.info("Saving wound and signing with username: {}", username);  
+        clickSaveWound();
         
           userSignModalPage.signModal(username, password);
+         assertTrue(verificationTitleIsDisplay("פצעים"), "Title 'פצעים' is not displayed after saving wound, expected to be on the wounds page");
+          log.info("Wound saved and verified successfully");
 
     }
+    // public void verifyWoundSaved() {
+    //     log.info("Verifying wound was saved successfully");
+    //     By savedWoundLocator = By.xpath("//div[contains(@class,'wound-list')]//div[contains(text(),'פצע איסכמי')]");
+    //     UIActions.ver(savedWoundLocator);
+    // }
 
 
 
