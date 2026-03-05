@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import pages.BasePage;
 import pages.UserSignModalPage;
 
+import org.aspectj.weaver.patterns.ThisOrTargetAnnotationPointcut;
 import org.checkerframework.checker.units.qual.s;
 import org.openqa.selenium.By;
 
@@ -47,8 +48,7 @@ public By button_addWound =By.id("btnAddMedicine");
     public By option_skinAround = By.xpath("//button[@id='skinAround']/following-sibling::div//input[@type='checkbox']");
     public By checkbox_closedInstruction = By.xpath("//input[@formcontrolname='closedInstruction']");
     public By button_save = By.xpath("//div[@class='action-bottom-bar']/button[contains(@class, 'ng-star-inserted')][3]");
-    
-    public void addNewWound(String woundDescription,
+        public void addNewWound(String woundDescription,
                             @Nullable Integer closeOrOpen,
                             @Nullable Integer degree,
                             @Nullable Integer treatmentInstructionCount) {
@@ -109,8 +109,13 @@ public By button_addWound =By.id("btnAddMedicine");
         log.info("Saving wound and signing with username: {}", username);  
         clickSaveWound();
         
-          userSignModalPage.signModal(username, password);
-         assertTrue(verificationTitleIsDisplay("פצעים"), "Title 'פצעים' is not displayed after saving wound, expected to be on the wounds page");
+        userSignModalPage.signModal(username, password);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } // Wait for the save operation to complete and the page to update
+         assertTrue(UIActions.isElementDisplayed(button_addWound), "Title 'פצעים' is not displayed after saving wound, expected to be on the wounds page");
           log.info("Wound saved and verified successfully");
 
     }

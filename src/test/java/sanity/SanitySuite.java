@@ -56,7 +56,8 @@ public class SanitySuite extends BaseSuit {
         log.info("* Starting Pre-Test Setup: Cleaning up patient data and preparing test environment");
        patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient).get(0);
        removePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
-         log.info("* Pre-Test Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
+     // cancelAllWoundsForPatient(QueriesUtils.cancelAllWoundsForPatient, patientMisparIshpuz);
+       log.info("* Pre-Test Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
     }
 
     @Test(description = "renew instruction to spetif patient for Bug -solutinInstructionTimes")
@@ -64,7 +65,7 @@ public class SanitySuite extends BaseSuit {
       log.info("* Starting test_00_renewInstructionToSpetifPatient: Renewing instructions for patient with misparIshpuz = {}", patientMisparIshpuz);
         loginAsDoctor();
        chooseDepartment(Constants.ICU_DEPARTMENT_STRING);
-       choosePatient(1);
+       choosePatient(3);
       doctorInstructionPage.renewAllInstructions();
     }
     /**
@@ -77,12 +78,23 @@ public class SanitySuite extends BaseSuit {
         mainMenuPage.verificationPatientListTabExisting();
     }
 
+
+
     @Test(description = "adding a medicine")
     public void test_02_addingMedicine(){
         log.info("* Starting test_02_addingMedicine: Adding a medicine instruction for the patient");
         loginAsDoctor();
         choosePatient(PATIENT_1);
         doctorInstructionPage.addMedicineFullAndVerify("CARBOplatin", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+    }
+
+     @Test(description = "Doctor fills follow-up notes and saves")
+      public void test_02_2_doctorFillFollowupByDoctor() {
+        log.info("* Starting test_02_2_doctorFillFollowupByDoctor: Doctor fills follow-up notes and saves");
+        loginAsDoctor();
+        choosePatient(PATIENT_1);
+        innerMenuPage.navigateToMenuEntry("FollowUp");
+        followupPage.addFollowupAndVerify("111", "222", "333", "444", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 
     @Test(description = "approval medicine by nurse",dependsOnMethods = {"test_02_addingMedicine"})
@@ -175,14 +187,7 @@ public class SanitySuite extends BaseSuit {
 
    
 
-    @Test(description = "Doctor fills follow-up notes and saves")
-    public void test_11_doctorFillFollowupByDoctor() {
-        log.info("* Starting test_11_doctorFillFollowupByDoctor: Doctor fills follow-up notes and saves");
-        loginAsDoctor();
-        choosePatient(PATIENT_1);
-        innerMenuPage.navigateToMenuEntry("FollowUp");
-        followupPage.addFollowupAndVerify("111", "222", "333", "444", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
-    }
+    
 
     @Test(description = "discharged patient list visibility")
     public void test_12_dischargedPatientList() {
