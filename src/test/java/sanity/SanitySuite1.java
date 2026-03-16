@@ -180,7 +180,7 @@ public class SanitySuite1 extends BaseSuit {
         cardexPageNew.executeAndApproveAllToThisShiftAndApproval(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
      
-    @Test(description = "print IV label from cardex", dependsOnMethods = {"test_11_executeAllInstructionByNurse"})
+    @Test(description = "print IV label from cardex")
     public void test_14_printIVLabelFromCardex() {
         log.info("* Starting test_14_printIVLabelFromCardex: Printing IV label from cardex");
         loginAsNurse();

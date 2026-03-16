@@ -30,6 +30,9 @@ public class FilesHelper {
             System.out.println("Exception in reading XMLfile: "+ e);
         }
         doc.getDocumentElement().normalize();
+        if (doc.getElementsByTagName(nodeName).item(0) == null) {
+        throw new RuntimeException("Error: The node '" + nodeName + "' was not found in DataConfig.xml!");
+    }
         return  doc.getElementsByTagName(nodeName).item(0).getTextContent();
     }
 
