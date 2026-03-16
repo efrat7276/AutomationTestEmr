@@ -117,10 +117,35 @@ public class DoctorInstructionPage extends BasePage {
         approveAndVerifyInstructions(username, password);
     }
 
+    public void addMedicineToList(String name, String frequency, String dose, String amount) {
+        clickButtonAddInstruction(InstructionType.MEDICINE);
+        drugForm.addOneMedicine(name, frequency, dose, amount, null, null, null, null, null, null, false);
+        UIActions.click(drugForm.btn_add); // הוספה לרשימה בלי סגירת הטופס
+    }
+
+    public void addMedicineAndClose(String name, String frequency, String dose, String amount) {
+        clickButtonAddInstruction(InstructionType.MEDICINE);
+        drugForm.addOneMedicine(name, frequency, dose, amount, null, null, null, null, null, null, false);
+        UIActions.click(drugForm.btn_add); // הוספה וסגירת הטופס
+    }
+
+    
+
     public void addFluidFull(String name, String frequency, String dose, String amount, String username, String password) {
         clickButtonAddInstruction(InstructionType.FLUID);
         drugForm.addFluid(name, frequency, dose, amount);
         approveAndVerifyInstructions(username, password);
+    }
+
+    public void addFluidToList(String name, String frequency, String dose, String amount) {
+        clickButtonAddInstruction(InstructionType.FLUID);
+        drugForm.addFluid(name, frequency, dose, amount);
+        UIActions.click(drugForm.btn_add); // הוספה לרשימה בלי סגירת הטופס
+    }
+
+    public void addFluidAndClose(String name, String frequency, String dose, String amount) {
+        clickButtonAddInstruction(InstructionType.FLUID);
+        drugForm.addFluid(name, frequency, dose, amount);
     }
 
        public void addNutritionFull(String name, String frequency, String dose, String amount, String username, String password) {
@@ -136,12 +161,27 @@ public class DoctorInstructionPage extends BasePage {
         approveAndVerifyInstructions(username, password);
     }
 
+    public void addBloodProductToList(String name, String amount) {
+        clickButtonAddInstruction(InstructionType.BLOOD);
+        bloodForm.addBloodProduct(name, amount); // לדוגמה, פונקציה ב-BloodForm
+        UIActions.click(bloodForm.btn_add); // הוספה לרשימה בלי סגירת הטופס
+    }
+
+    public void addBloodProductAndClose(String name, String amount) {
+        clickButtonAddInstruction(InstructionType.BLOOD);
+        bloodForm.addBloodProduct(name, amount); // לדוגמה, פונקציה ב-BloodForm
+    }
+
     public void addGeneralInstructionFull(String instructionText, String username, String password) {
         clickButtonAddInstruction(InstructionType.GENERAL);
-     //  generalInstructionForm.addGeneralInstruction(instructionText);
+       generalInstructionForm.addGeneralInstructionAndClose();
         approveAndVerifyInstructions(username, password);
     }
 
+    public void addGeneralInstructionAndClose( ) {
+        clickButtonAddInstruction(InstructionType.GENERAL);
+        generalInstructionForm.addGeneralInstructionAndClose();
+    }
 
     /**
      * sign all the instruction

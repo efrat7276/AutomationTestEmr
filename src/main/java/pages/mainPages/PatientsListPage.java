@@ -20,6 +20,7 @@ public class PatientsListPage {
     public void choosePatient(int index){
 
         List<WebElement> list = getPatientRows();
+        UIActions.waitForListToHaveElements(list);
         list.get(index-1).click();
     }
 

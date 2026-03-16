@@ -4,13 +4,13 @@ public enum InstructionType {
     MEDICINE("תרופה"),
     BLOOD("מוצר דם"),
     FLUID("תרופה"),
-    GENERAL("General instruction"),
-    NUTRITION("Nutrition instruction"),
-    IMMEDIATE("Immediate instruction"),
-    TREATMENT_PROTOCOL("Treatment protocol"),
-    MEDICINE_PROTOCOL("Medicine protocol"),
-    IMPORT_MEDICINE("Import medicine"),
-    OTC("OTC instruction");
+    GENERAL("כלליות"),
+    NUTRITION("תזונה"),
+    IMMEDIATE("מיידית"),
+    TREATMENT_PROTOCOL("פרוטוקול טיפול"),
+    MEDICINE_PROTOCOL("פרוטוקול תרופתי"),
+    IMPORT_MEDICINE("ייבוא תרופה"),
+    OTC("הוראת OTC");
     private final String description;
 
     InstructionType(String description) {

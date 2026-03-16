@@ -21,8 +21,8 @@ public class BloodProductsPage extends BasePage {
     private By inp_comment = By.id("drugComment");
 
     // Reuse common add buttons used in other forms
-    private By btn_add = By.id("btnAdd");
-    private By btn_addAndClose = By.id("btnAddAndClose");
+    public By btn_add = By.id("btnAdd");
+    public By btn_addAndClose = By.id("btnAddAndClose");
 
     // Open product dropdown and select
     public void selectBloodProduct(String productName) {

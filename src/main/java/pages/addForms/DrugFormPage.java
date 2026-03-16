@@ -30,8 +30,8 @@ public class DrugFormPage extends BasePage {
     private By routeAdministrationList = By.xpath("//button[@id='dropdownRouteAdministrationID']/following-sibling::ul/li");
 
     // buttons
-    private By btn_add = By.id("btnAdd"); // כפתור הוסף;
-    private By btn_addAndClose = By.id("btnAddAndClose"); // כפתור הוסף וסגור;
+    public By btn_add = By.id("btnAdd"); // כפתור הוסף;
+    public By btn_addAndClose = By.id("btnAddAndClose"); // כפתור הוסף וסגור;
 
     // possibility (Radio Buttons)
     private By possibilityDaily = By.xpath("//input[contains(@id,'drugTimeGivingPossibilitiesID')]/following-sibling::label[text()=' Daily ']");
@@ -83,6 +83,7 @@ public class DrugFormPage extends BasePage {
     
     // כפתור ביצוע בתוך טופס התרופה (מנוסח באופן גנרי לפי טקסט)
     private By btn_executeInForm = By.id("instructionWithExecution");
+
 
     // ----------------------------------------------------------------------------------
     // הפונקציה הראשית: addMedicine

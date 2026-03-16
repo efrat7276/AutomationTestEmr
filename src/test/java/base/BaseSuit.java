@@ -80,9 +80,11 @@ public class BaseSuit {
         patientBoxPage.verifyPatientDetailsExisting();
     }
 
-    protected void chooseDepartment(String departmentName) {
+    protected void chooseDepartmentVerifyListPatients(String departmentName) {
         log.info("Choosing department: {}", departmentName);
         chooseDepartmentListPage.selectDepartment(departmentName);
+        log.info("Verifying patients list is visible for department: {}", departmentName);
+       patientsListPage.verifyPatientsListVisible();
     }
 
       public void openInstructionForm(InstructionType type) {
@@ -132,6 +134,11 @@ public class BaseSuit {
         String formattedQuery = String.format(query, param);
     return DBExecuter.isExecutionSuccessful(formattedQuery);
 }
-    
+
+   public static boolean cancelAllWoundsForPatient(String query, String param) throws SQLException {
+    log.info("Cancelling all wounds for patient with parameter: {}", param);
+        String formattedQuery = String.format(query, param);
+    return DBExecuter.isExecutionSuccessful(formattedQuery);
+   }
 
 }

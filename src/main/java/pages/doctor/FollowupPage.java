@@ -31,7 +31,6 @@ public class FollowupPage extends BasePage {
     private By buttonTrash = By.xpath("//followup-history//div[@class='history-line']//i[contains(@class, 'trash')]");
 
 
-
     public void addFollowupAndVerify(String notes_Subjec , String notes_Objective ,
                             String notes_Aassesment , String notes_Plan, String username, String password) {
      log.info("Attempting to add follow-up");

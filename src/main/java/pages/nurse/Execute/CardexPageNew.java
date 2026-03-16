@@ -24,9 +24,10 @@ public class CardexPageNew extends BasePage {
         private final By bloodCheckboxes = By.xpath("//input[@type='checkbox' and starts-with(@id, 'bloodProductInsDayModeCheckbox')]");
         private final By allShiftCheckboxes = By.xpath("//input[@type='checkbox' and contains(@id, 'InsDayModeCheckbox')] | //input[@type='checkbox' and contains(@id, 'solExec') and not(@disabled)]");
 
+        private final By cardexMainListBox = By.xpath("//div[@class='cardex-main-list-box']");
+        private final By namesDrugBy = By.xpath("//div[@class='cardex-main-list-box']//div[@class='drug-name']/p");
 
-private final By nav_cardex = By.xpath("//a[@id='ngb-nav-6']");
-private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ");
+        private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ");
 
 
 
@@ -84,9 +85,6 @@ private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ
          UIActions.waitForText(btn_approvalDrug,"0" );
     }
 
-    public void clickNavInstructionForApproval() {
-         UIActions.click(nav_instructionForApproval);
-    }
 
     // public void clickNavCardex() {
     //      log.info("Attempting to click on nav cardex.");
@@ -120,4 +118,16 @@ private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ
     public void verifyExecuted() {
            assertTrue(UIActions.waitForText(btn_approvalDrug,"0" ),"Expected approval button text to contain '0' but got '" + UIActions.getText(btn_approvalDrug) + "'");
     }
+
+    public void verifyDrugExecuted(String drugName) {
+        List<WebElement> drugNames = UIActions.findElementsWithWait(namesDrugBy);
+        boolean found = false;
+        for (WebElement el : drugNames) {
+            if (el.getText().equalsIgnoreCase(drugName)) {
+                found = true;
+                break;
+            }
+        }
+        assertTrue(found, "Expected to find drug name '" + drugName + "' in cardex, but it was not found.");
+}
 }

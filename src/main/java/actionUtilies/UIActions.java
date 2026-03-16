@@ -14,9 +14,6 @@ import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-
-import java.time.Duration;
 import java.util.List;
 
 @Slf4j
@@ -43,6 +40,14 @@ public class UIActions {
      */
    public static List<WebElement> findElementsWithWait(By by){
         return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
+    }
+
+    public static String getElementText(By by){
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(by)).getText();
+    }
+    
+   public static void waitForListToHaveElements(List<WebElement> list){
+        wait.until(driver -> list.size() > 0);
     }
 
     static boolean containsAnyDigit(String s){
@@ -91,7 +96,8 @@ public class UIActions {
 }
     public static void click(WebElement element) {
     wait.until(ExpectedConditions.visibilityOf(element));
-       element.click();
+    wait.until(ExpectedConditions.elementToBeClickable(element));
+    element.click();
 }  
 
     /**

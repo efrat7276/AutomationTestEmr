@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import actionUtilies.UIActions;
+
 import java.util.List;
 
 public class GeneralInstructionPage {
@@ -30,4 +32,12 @@ public class GeneralInstructionPage {
     public By btn_clear = By.xpath("//button[@class='btn btn-defualt btn-cancel btn-click '][0]");
 
     public By btn_back = By.xpath("//button[@class='btn btn-defual']");
+
+    public void addGeneralInstructionAndClose() {
+        UIActions.click(generalInstructionCategoryList);
+        UIActions.click(generalInsSubList);
+        UIActions.click(btn_possbilities);
+         UIActions.selectFromList(possbilityList, "Once Only");
+        UIActions.click(btn_save);
+    }
 }
