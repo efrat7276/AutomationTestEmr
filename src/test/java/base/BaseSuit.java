@@ -53,18 +53,18 @@ public class BaseSuit {
     }
     
     protected void loginAsDoctor() {
-        log.info("Performing Login as DOCTOR: {}", Constants.DOCTOR_USERNAME);
+        log.info(" login as DOCTOR: {}", Constants.DOCTOR_USERNAME);
         loginPage.login(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD, Constants.DOCTOR_ROLE);
     }
 
     protected void loginAsNurse() {
-        log.info("Performing Login as NURSE: {}", Constants.NURSE_USERNAME);
+        log.info(" login as NURSE: {}", Constants.NURSE_USERNAME);
         loginPage.login(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD, Constants.NURSE_ROLE);
     }
 
     
     protected void loginAsNutritionist() {
-        log.info("Performing Login as NUTRITIONIST: {}", Constants.NUTRITIONIST_USERNAME);
+        log.info(" login as NUTRITIONIST: {}", Constants.NUTRITIONIST_USERNAME);
         loginPage.login(Constants.NUTRITIONIST_USERNAME, Constants.NUTRITIONIST_PASSWORD, Constants.NUTRITIONIST_ROLE);
     }
 

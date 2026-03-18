@@ -23,7 +23,7 @@ public class LoginPage extends BasePage {
      * navigate to url system
      */
     public void navigateToEMR(){
-        String env =  System.getProperty("env" , "prod");
+        String env =  System.getProperty("env" , "qa");
         driver= DriverManager.getInstance();
         driver.get(FilesHelper.getData(env));
     }

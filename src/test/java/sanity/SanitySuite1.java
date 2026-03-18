@@ -53,15 +53,15 @@ public class SanitySuite1 extends BaseSuit {
     BloodOrders bloodOrders= new BloodOrders();
            
     
-    @BeforeClass
-    public void preTest() throws SQLException{
+    // @BeforeClass
+    // public void preTest() throws SQLException{
 
-        log.info("* Starting Pre-Test Setup: Cleaning up patient data and preparing test environment");
-       patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient).get(0);
-       removePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
-     // cancelAllWoundsForPatient(QueriesUtils.cancelAllWoundsForPatient, patientMisparIshpuz);
-       log.info("* Pre-Test Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
-    }
+    //     log.info("* Starting Pre-Test Setup: Cleaning up patient data and preparing test environment");
+    //    patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient).get(0);
+    //    removePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
+    //  // cancelAllWoundsForPatient(QueriesUtils.cancelAllWoundsForPatient, patientMisparIshpuz);
+    //    log.info("* Pre-Test Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
+    // }
 
     @Test(description = "renew instruction to spetif patient for Bug -solutinInstructionTimes", enabled = false)
     public void test_00_renewInstructionToSpetifPatient() throws SQLException {
@@ -148,7 +148,7 @@ public class SanitySuite1 extends BaseSuit {
         }
 
 
-    @Test(description = "approval all instruction by nurse")
+    @Test(description = "approval all instruction by nurse",dependsOnMethods={ "test_07_addingMedicine","test_09_doctorAddingFluidGeneralBloodProductAndApprove"})
     public void test_10_approvalAllInstructionByNurse(){
             log.info("* Starting test_10_approvalAllInstructionByNurse: Approving all instructions for the patient");
             loginAsNurse();
@@ -162,7 +162,7 @@ public class SanitySuite1 extends BaseSuit {
       log.info("* Starting test_11_addSimpleWoundByNurse: Adding a simple wound for the patient");
       loginAsNurse();
       choosePatient(PATIENT_1);
-      //בהנחה שבבחירת המטופל נכנס למסך קרדקס
+      //בהנחה שבבחירת המטופל נJava: Configure Java Runtimeכנס למסך קרדקס
       cardexPage.clickArrowForwardToInnerMenu();
       innerMenuPage.navigateToMenuEntry("סיעוד");
       innerMenuPage.navigateToMenuEntry("פצעים");

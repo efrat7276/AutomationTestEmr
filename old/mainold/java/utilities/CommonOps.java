@@ -29,8 +29,8 @@ public class CommonOps extends Base {
             sql_server = System.getenv("sql_server");
 
             if(env == null)
-                //    env= "qa";
-                env= "prod";
+                   env= "qa";
+               // env= "prod";
             //      env= "production";
 
             //env= "automation";
@@ -62,11 +62,11 @@ public class CommonOps extends Base {
 
         }
     }
-
-    @BeforeMethod
+@BeforeMethod(alwaysRun = true)
     public void startSession() {
         initBrowser(Helpers.getData("BrowserName"));
-
+        if(env == null)
+            env = "qa"; 
     }
     public  void initBrowser(String browserType){
 
@@ -165,5 +165,9 @@ public class CommonOps extends Base {
  
     }
 
-
+@BeforeClass
+    public void beforeTest(){
+       if(env==null)
+        env= "qa";
+    }
 }

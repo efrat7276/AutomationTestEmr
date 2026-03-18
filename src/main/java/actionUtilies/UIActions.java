@@ -59,14 +59,12 @@ public class UIActions {
         return false;
     }
 
-    @Step("Wait for text in element")
     public static void waitForDigit(WebElement elem){
 
         //wait.until(x -> containsAnyDigit(elem.getText()));
         elem.click();
     }
 
-    @Step("Wait for text in element")
     public static boolean waitForText(By elem , String text){
 
          wait.until(x -> (findElementWithWait(elem).getText()).contains(text));
@@ -125,18 +123,15 @@ public class UIActions {
 
     public static void typeText(By locator, String text) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-       // log.info("Typing text '{}' into element: {}", text, locator);
         element.clear();
         element.sendKeys(text);
     }
     public static boolean isElementDisplayed(By locator) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         boolean displayed = element.isDisplayed();
-      //  log.info("Checking if element {} is displayed: {}", locator, displayed);
         return displayed;
     }
 
-    @Step("Clear Text Element")
     public static void  clearText(By by){
 
         WebElement element =  wait.until(ExpectedConditions.visibilityOfElementLocated(by));
@@ -151,7 +146,6 @@ public class UIActions {
         try {
             wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
         } catch (Exception e) {
-     //       log.error("Error while waiting for spinner to disappear: {}", e.getMessage());
         }
     }
     
@@ -177,7 +171,6 @@ public class UIActions {
             // ExpectedConditions.invisibilityOfElementLocated מטפל גם באלמנט שמוסר מה-DOM וגם באלמנט שהופך לבלתי נראה (opacity: 0, visibility: hidden, display: none).
             wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
 
-  //       log.info("Element located by " + locator + " has become invisible or removed from DOM.");
             return true;
 
         } catch (TimeoutException e) {
@@ -186,11 +179,9 @@ public class UIActions {
             // throw e;
             return false;
         } catch (Exception e) {
-       //     log.error("Unexpected error while waiting for element to become invisible: " + e.getMessage());
             return false;
         }
     }
-    @Step("Select text from Dropdown")
     public static void  updateDropdown(WebElement elem, String text){
 
         wait.until(ExpectedConditions.visibilityOf(elem));
@@ -198,22 +189,18 @@ public class UIActions {
         dropdown.selectByVisibleText(text);
     }
 
-    @Step("Mouse Hover Element")
     public static void mouseHover(WebElement elem1){
 
        // action.moveToElement(elem1).click().build().perform();
     }
 
-   @Step("Mouse Hover two Elements")
     public static void mouseHover(WebElement elem1, WebElement elem2){
 
         //action.moveToElement(elem1).moveToElement(elem2).click().build().perform();
     }
 
-    @Step("Select text from List")
     public static void selectFromList(By list , String text){
 
-        log.info("select from list :{} , text to select: {}", list, text);
         List<WebElement>elemntsList= wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(list));
         for(WebElement li : elemntsList){
 
@@ -224,7 +211,6 @@ public class UIActions {
         }
     }
 
-    @Step("Search text from List")
     public static void searchInList(List<WebElement> list , String text){
 
         for(WebElement li : list){
@@ -234,7 +220,6 @@ public class UIActions {
             }
         }
     }
-    @Step("Select text from ListInsideAnotherTag")
     public static void selectFromListInsideAnotherTag(List<WebElement> list , String text){
 
         for(WebElement li : list){
@@ -256,14 +241,12 @@ public class UIActions {
 //        }
 //    }
 
-    @Step("Select from List by index")
     public static void selectFromListByIndex(List<WebElement> list , int index){
 
         list.get(index).click();
 
     }
 
-    @Step("check if the element exist ")
     public static boolean isDisplay(WebElement elem) {
 
            if( elem.isDisplayed())
@@ -272,7 +255,6 @@ public class UIActions {
             return false;
     }
 
-    @Step("check if the element exist ")
     public static boolean isExist(WebElement elem) {
 
         try {
@@ -283,7 +265,6 @@ public class UIActions {
         }
     }
 
-    @Step("check if the element exist ")
     public static boolean isExist(List< WebElement> elem) {
 
         try {
@@ -304,7 +285,7 @@ public class UIActions {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
             return true;
         } catch (Exception e) {
-            log.error("❌ אירעה שגיאה בלתי צפויה בזמן ההמתנה: " + e.getMessage());
+            log.error("❌ אירעה שגיאה בלתי צפויה בזמן ההמתנה לאלמנט על המסך: " + e.getMessage());
             return false;
         }
     }

@@ -117,8 +117,6 @@ public class DrugFormPage extends BasePage {
             boolean alsoExecute
     ) {
        
-        log.info("Attempting to fill details of medicine - Name: {}, Possibility: {}, Dosage: {}, TimesDaily: {}, HourToGive: {}, MaxTimesPerDay: {}, MinInterval: {}, TimesPerWeek: {}, DaysOfWeek: {}, EveryXTime: {}, AlsoExecute: {}",
-                nameMed, possibility, dosage, timesDaily, hourToGive, maxTimesPerDay, minInterval, timesPerWeek, daysOfWeek, everyXTime, alsoExecute);
         // 1. המתנה (Hard Wait) והזנת שם התרופה
         try {
             Thread.sleep(5000);
@@ -155,6 +153,7 @@ public class DrugFormPage extends BasePage {
         // 6. לחיצה על כפתור 'הוספה וסגירה'
         UIActions.click(btn_addAndClose);
         //
+        log.info("Added medicine '{}' with possibility '{}'. Dosage: {}. Also executed: {}.", nameMed, possibility, dosage, alsoExecute);
 
     }
 

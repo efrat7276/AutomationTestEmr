@@ -63,6 +63,7 @@ public class MainMenuPage extends BasePage {
     }
 
     public void logout(){
+        log.info("Logging out from the application.");
         UIActions.click(iconToExitBy);
         
       UIActions.waitForElementClickable(By.xpath("//app-msg-modal//button[contains(@class,'btn-submit')]"));

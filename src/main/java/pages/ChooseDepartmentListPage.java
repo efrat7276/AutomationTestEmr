@@ -18,9 +18,9 @@ public class ChooseDepartmentListPage {
      * @param departmentName the visible text of the department to select
      */
     public void selectDepartment(String departmentName) {
-        log.info("Selecting department: {}", departmentName);
         UIActions.click(btn_li_department);
         UIActions.selectFromList(departmentList, departmentName);
+        log.info("Selected department: {}", departmentName);
     }
 
     
