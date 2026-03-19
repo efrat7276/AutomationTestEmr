@@ -2,6 +2,7 @@ package base;
 
 import actionUtilies.DBExecuter;
 import drivers.DriverManager;
+import enums.InstructionType;
 import helpers.Constants;
 import lombok.extern.slf4j.Slf4j;
 
@@ -17,7 +18,6 @@ import org.testng.annotations.BeforeMethod;
 
 import pages.ChooseDepartmentListPage;
 import pages.DoctorInstructionPage;
-import pages.InstructionType;
 import pages.LoginPage;
 import pages.PatientBoxPage;
 import pages.mainPages.PatientsListPage;

@@ -2,6 +2,8 @@ package pages;
 
 import actionUtilies.UIActions;
 import drivers.DriverManager;
+import enums.HospitalDepartment;
+import helpers.Constants;
 import helpers.FilesHelper;
 import lombok.extern.slf4j.Slf4j;
 import pages.mainPages.PatientsListPage;
@@ -24,8 +26,26 @@ public class LoginPage extends BasePage {
      */
     public void navigateToEMR(){
         String env =  System.getProperty("env" , "qa");
-        driver= DriverManager.getInstance();
-        driver.get(FilesHelper.getData(env));
+        String deptNameParam = System.getProperty("department" , "פנימית ב'");
+       
+        // טיפול בהגדרת מחלקה דיפולטיבית
+        HospitalDepartment foundDept = HospitalDepartment.getByHebrewName(deptNameParam);
+        if (foundDept != null) {
+        Constants.DEFAULT_DEPARTMENT = foundDept;
+        log.info("Successfully set department to: {} (Code: {})", 
+                 Constants.DEFAULT_DEPARTMENT.getDisplayName(), 
+                 Constants.DEFAULT_DEPARTMENT.getCode());
+       } 
+       else {
+        log.error("Department '{}' not found in Enum! Using default: {}", 
+                  deptNameParam, Constants.DEFAULT_DEPARTMENT.getDisplayName());
+    }
+
+     //הגדרת דפדפן 
+    driver= DriverManager.getInstance();
+    // ניווט ל-URL של המערכת 
+    driver.get(FilesHelper.getData(env));
+
     }
 
     public void login(String user , String pass , String role){

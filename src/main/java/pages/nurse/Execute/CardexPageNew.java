@@ -120,6 +120,7 @@ public class CardexPageNew extends BasePage {
     }
 
     public void verifyDrugExecuted(String drugName) {
+         UIActions.waitForVisible(cardexMainListBox);
         List<WebElement> drugNames = UIActions.findElementsWithWait(namesDrugBy);
         boolean found = false;
         for (WebElement el : drugNames) {

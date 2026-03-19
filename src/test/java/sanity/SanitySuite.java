@@ -1,5 +1,6 @@
 package sanity;
 import base.BaseSuit;
+import enums.InstructionType;
 import helpers.Constants;
 import helpers.QueriesUtils;
 import lombok.extern.slf4j.Slf4j;

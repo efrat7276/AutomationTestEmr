@@ -1,5 +1,6 @@
 package sanity;
 import base.BaseSuit;
+import enums.InstructionType;
 import helpers.Constants;
 import org.testng.annotations.Test;
 import pages.*;

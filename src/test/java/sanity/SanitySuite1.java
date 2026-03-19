@@ -1,5 +1,7 @@
 package sanity;
 import base.BaseSuit;
+import enums.HospitalDepartment;
+import enums.InstructionType;
 import helpers.Constants;
 import helpers.QueriesUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -74,9 +76,9 @@ public class SanitySuite1 extends BaseSuit {
     /**
      * check login is succeeded
      */
-    @Test(description = "login as doctor and verify patient list tab existing")
+    @Test(description = "login as doctor and verify role name is displayed")
     public void test_01_login(){
-        log.info("* Starting test_01_login: Logging in as doctor and verifying patient list tab");
+        log.info("* Starting test_01_login: Logging in as doctor and verifying role name");
         loginAsDoctor();
         mainMenuPage.verifyRoleIsDisplayed("רופא");
     }
@@ -97,9 +99,10 @@ public class SanitySuite1 extends BaseSuit {
     }
 
     @Test(description = "login as doctor and verify patient list is displayed")
-    public void test_04_patientListisDisplayed(){
-        log.info("* Starting test_04_patientListisDisplayed: Logging in as doctor and verifying patient list tab");
+    public void test_04_patientListIsDisplayed(){
+        log.info("* Starting test_04_patientListIsDisplayed: Logging in as doctor and verifying patient list tab");
         loginAsDoctor();
+        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
         mainMenuPage.verifyPatientTableIsDisplayed();
     }
 
@@ -107,6 +110,7 @@ public class SanitySuite1 extends BaseSuit {
     public void test_05_dischargedPatientListVisibility() {
         log.info("* Starting test_05_dischargedPatientListVisibility: Logging in as doctor and verifying discharged patient list visibility");
         loginAsDoctor();
+        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
         innerMenuPage.navigateToMenuEntry("רשימת משוחררים");
         dischargedPatientListPage.verifyIsDischargedPatientsListVisible();
     }
@@ -115,6 +119,7 @@ public class SanitySuite1 extends BaseSuit {
     public void test_06_enterToPatientBox() {
         log.info("* Starting test_06_enterToPatientBox: Logging in as doctor and entering patient box");
         loginAsDoctor();
+        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
         choosePatient(PATIENT_1);
         // Add verification for patient box here
     }
@@ -123,6 +128,7 @@ public class SanitySuite1 extends BaseSuit {
     public void test_07_addingMedicine(){
         log.info("* Starting test_07_addingMedicine: Adding a medicine instruction for the patient");
         loginAsDoctor();
+        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
         choosePatient(PATIENT_1);
         doctorInstructionPage.addMedicineFullAndVerify("CARBOplatin", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
@@ -131,15 +137,17 @@ public class SanitySuite1 extends BaseSuit {
       public void test_08_doctorFillFollowupByDoctor() {
         log.info("* Starting test_08_doctorFillFollowupByDoctor: Doctor fills follow-up notes and saves");
         loginAsDoctor();
+        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
         choosePatient(PATIENT_1);
         innerMenuPage.navigateToMenuEntry("FollowUp");
         followupPage.addFollowupAndVerify("111", "222", "333", "444", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 
-    @Test(description = "doctor adding fluid instruction, general instruction and blood product instruction and approve them to patient")
+    @Test(description = "doctor adding fluid instruction, general instruction and blood product instruction")
     public void test_09_doctorAddingFluidGeneralBloodProductAndApprove() {
-        log.info("* Starting test_09_doctorAddingFluidGeneralBloodProductAndApprove: Doctor's adding fluid instruction, general instruction and blood product instruction and approve them to patient");
+        log.info("* Starting test_09_doctorAddingFluidGeneralBloodProductAndApprove: Doctor's adding fluid instruction, general instruction and blood product instruction");
         loginAsDoctor();
+        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
         choosePatient(PATIENT_1);   
         doctorInstructionPage.addFluidAndClose("INJ furosemide 250mg/25ml (FUROVENIR)", "continuous", "50", "1000");
         doctorInstructionPage.addGeneralInstructionAndClose();
@@ -152,6 +160,7 @@ public class SanitySuite1 extends BaseSuit {
     public void test_10_approvalAllInstructionByNurse(){
             log.info("* Starting test_10_approvalAllInstructionByNurse: Approving all instructions for the patient");
             loginAsNurse();
+            chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
             choosePatient(PATIENT_1);
             approvalInstructionPage.approveAllInstructions(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
@@ -161,6 +170,7 @@ public class SanitySuite1 extends BaseSuit {
   public void test_11_addSimpleWoundByNurse() {
       log.info("* Starting test_11_addSimpleWoundByNurse: Adding a simple wound for the patient");
       loginAsNurse();
+      chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
       choosePatient(PATIENT_1);
       //בהנחה שבבחירת המטופל נJava: Configure Java Runtimeכנס למסך קרדקס
       cardexPage.clickArrowForwardToInnerMenu();
@@ -176,14 +186,16 @@ public class SanitySuite1 extends BaseSuit {
     public void test_13_executeAllInstructionByNurse(){
         log.info("* Starting test_13_executeAllInstructionByNurse: Executing all instructions for the patient");
         loginAsNurse();
+        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
         choosePatient(PATIENT_1);
         cardexPageNew.executeAndApproveAllToThisShiftAndApproval(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
      
-    @Test(description = "print IV label from cardex")
+    @Test(description = "print IV label from cardex", dependsOnMethods = {"test_13_executeAllInstructionByNurse"})
     public void test_14_printIVLabelFromCardex() {
         log.info("* Starting test_14_printIVLabelFromCardex: Printing IV label from cardex");
         loginAsNurse();
+        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
         choosePatient(PATIENT_1);
         cardexPageNew.printIVLabelForFirstFluidInCardex();
     }
@@ -194,6 +206,7 @@ public class SanitySuite1 extends BaseSuit {
     public void test_15_addingNutrition(){
         log.info("* Starting test_15_addingNutrition: Adding a nutrition instruction for the patient");
         loginAsNutritionist();
+        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
         choosePatient(PATIENT_1);
        doctorInstructionPage.addNutritionFull("Nut", "daily", "200", "1", Constants.NUTRITIONIST_USERNAME, Constants.NUTRITIONIST_PASSWORD);
     }
@@ -203,7 +216,7 @@ public class SanitySuite1 extends BaseSuit {
     public void test_16_addingAndExecutingImmediateInstructionER() {
         log.info("* Starting test_16_addingAndExecutingImmediateInstructionER: Adding and executing immediate instruction by ER doctor");
         loginAsDoctor();
-        chooseDepartmentVerifyListPatients(Constants.EMERGENCY_ROOM_DEPARTMENT_STRING);
+        chooseDepartmentListPage.selectDepartment(HospitalDepartment.getByHebrewName("חדר מיון").getDisplayName());
        try {
         Thread.sleep(1000);
        } catch (InterruptedException e) {
@@ -219,14 +232,8 @@ public class SanitySuite1 extends BaseSuit {
 
     }
 
-    @Test(description = "discharged patient list visibility")
-    public void test_17_dischargedPatientList() {
-        log.info("* Starting test_17_dischargedPatientList: Discharged patient list visibility");
-        loginAsDoctor();
-        innerMenuPage.navigateToMenuEntry("רשימת משוחררים");
-        dischargedPatientListPage.verifyIsDischargedPatientsListVisible();
-    }
-
+    
+   
     @Test(description = "lab orders visibility")
     public void test_18_labOrdersList() {
         log.info("* Starting test_18_labOrdersList: Lab orders visibility");

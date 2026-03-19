@@ -1,4 +1,4 @@
-package pages;
+package enums;
 
 public enum InstructionType {
     MEDICINE("תרופה"),

@@ -1,5 +1,7 @@
 package helpers;
 
+import enums.HospitalDepartment;
+
 public class Constants {
 
     public static final String DOCTOR_ROLE = "רופא";
@@ -19,8 +21,19 @@ public class Constants {
     public static final String EMERGENCY_ROOM_DEPARTMENT_STRING = "חדר מיון";
     public static final String ICU_DEPARTMENT_STRING = "ט'נ' כללי";
     
-    public static final String DEFAULT_DEPARTMENT_STRING = "פנימית ב'";        
-    public static final String DEFAULT_DEPARTMENT_NUM_STRING = "10012";    
+    //public static final String DEFAULT_DEPARTMENT_STRING = "פנימית ב'";        
+   // public static final String DEFAULT_DEPARTMENT_NUM_STRING = "10012";  
+    
+    
+    public static HospitalDepartment DEFAULT_DEPARTMENT = HospitalDepartment.INTERNAL_B; // ברירת מחדל התחלתית
+
+    public static String getDeptName() {
+        return DEFAULT_DEPARTMENT.getDisplayName();
+    }
+
+    public static String getDeptCode() {
+        return String.valueOf(DEFAULT_DEPARTMENT.getCode());
+    }
 
 
 }

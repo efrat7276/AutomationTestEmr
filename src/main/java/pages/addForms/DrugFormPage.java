@@ -194,6 +194,7 @@ public class DrugFormPage extends BasePage {
         UIActions.click(inp_selectDrugTopList);
         // 2. בחירת התדירות
         By possibilityLocator = getFluidPossibilityLocator(possibility);
+        UIActions.waitForElementClickable(possibilityLocator);
         UIActions.click(possibilityLocator);
 
         // 3. מילוי פרטים כללים

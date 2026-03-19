@@ -32,6 +32,8 @@ public class InnerMenuPage extends BasePage {
         try {
             // 3. שימוש ב-UIActions ללחיצה (הכוללת המתנה מובנית)
             // הערה: אם יש בעיית לחיצה, ננסה להשתמש ב-JavaScript Executor (אם צריך).
+            UIActions.waitForSpinnerToDisappear();
+            UIActions.waitForElementClickable(targetLocator);
             UIActions.click(targetLocator);
             log.info("Navigation to menu entry '" + entryName + " using XPath: " + dynamicXpath + "' was successful.");
 

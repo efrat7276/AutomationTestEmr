@@ -1,6 +1,7 @@
 package pages;
 
 import actionUtilies.UIActions;
+import enums.InstructionType;
 import helpers.Constants;
 import lombok.extern.slf4j.Slf4j;
 import org.checkerframework.checker.units.qual.g;
