@@ -58,7 +58,22 @@ public class SanitySuite1 extends BaseSuit {
     @BeforeClass
     public void preTest() throws SQLException{
 
-        log.info("* Starting Pre-Test Setup: Cleaning up patient data and preparing test environment");
+      Constants.ENV = System.getProperty("env", "qa");
+     String deptNameParam = System.getProperty("department" , "פנימית ב'");
+   // טיפול בהגדרת מחלקה דיפולטיבית
+        HospitalDepartment foundDept = HospitalDepartment.getByHebrewName(deptNameParam);
+        if (foundDept != null) {
+        Constants.DEFAULT_DEPARTMENT = foundDept;
+        log.info("Successfully set department to: {} (Code: {})", 
+                 Constants.DEFAULT_DEPARTMENT.getDisplayName(), 
+                 Constants.DEFAULT_DEPARTMENT.getCode());
+       } 
+       else {
+        log.error("Department '{}' not found in Enum! Using default: {}", 
+                  deptNameParam, Constants.DEFAULT_DEPARTMENT.getDisplayName());
+    }
+
+    log.info("* Starting Pre-Test Setup: Cleaning up patient data and preparing test environment");
        patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient).get(0);
        removePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
      // cancelAllWoundsForPatient(QueriesUtils.cancelAllWoundsForPatient, patientMisparIshpuz);

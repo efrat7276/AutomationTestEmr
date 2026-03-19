@@ -25,26 +25,11 @@ public class LoginPage extends BasePage {
      * navigate to url system
      */
     public void navigateToEMR(){
-        String env =  System.getProperty("env" , "qa");
-        String deptNameParam = System.getProperty("department" , "פנימית ב'");
        
-        // טיפול בהגדרת מחלקה דיפולטיבית
-        HospitalDepartment foundDept = HospitalDepartment.getByHebrewName(deptNameParam);
-        if (foundDept != null) {
-        Constants.DEFAULT_DEPARTMENT = foundDept;
-        log.info("Successfully set department to: {} (Code: {})", 
-                 Constants.DEFAULT_DEPARTMENT.getDisplayName(), 
-                 Constants.DEFAULT_DEPARTMENT.getCode());
-       } 
-       else {
-        log.error("Department '{}' not found in Enum! Using default: {}", 
-                  deptNameParam, Constants.DEFAULT_DEPARTMENT.getDisplayName());
-    }
-
      //הגדרת דפדפן 
     driver= DriverManager.getInstance();
     // ניווט ל-URL של המערכת 
-    driver.get(FilesHelper.getData(env));
+    driver.get(FilesHelper.getData(Constants.ENV));
 
     }
 

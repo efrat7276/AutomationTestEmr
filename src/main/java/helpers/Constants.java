@@ -23,7 +23,7 @@ public class Constants {
     
     //public static final String DEFAULT_DEPARTMENT_STRING = "פנימית ב'";        
    // public static final String DEFAULT_DEPARTMENT_NUM_STRING = "10012";  
-    
+    public static String ENV = System.getProperty("env", "qa");
     
     public static HospitalDepartment DEFAULT_DEPARTMENT = HospitalDepartment.INTERNAL_B; // ברירת מחדל התחלתית
 
