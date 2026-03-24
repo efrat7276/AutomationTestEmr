@@ -37,24 +37,24 @@ public class SanitySuite1 extends BaseSuit {
 
 
     private static final int PATIENT_1 = 1;
-    private static final int PATIENT_3 = 3;
     String patientMisparIshpuz =null; 
-    MainMenuPage mainMenuPage= new MainMenuPage();
-    ApprovalInstructionPage1 approvalInstructionPage= new ApprovalInstructionPage1(); 
-    CardexPageNew cardexPageNew= new CardexPageNew();
-    CardexPage cardexPage = new CardexPage();
-    UserSignModalPage userSignModalPage= new UserSignModalPage(); 
-    InnerMenuPage innerMenuPage= new InnerMenuPage();
-    DrugFormPage drugForm= new DrugFormPage();
-    PatientsListPage patientsListPageLocal= new PatientsListPage();
-    ChooseDepartmentListPage chooseDepartmentListPageLocal= new ChooseDepartmentListPage();
-    WoundPage woundPage= new WoundPage();
-    WondFormPage woundFormPage= new WondFormPage();
-    FollowupPage followupPage= new FollowupPage();
-    DischargedPatientListPage dischargedPatientListPage= new DischargedPatientListPage();
-    BloodOrders bloodOrders= new BloodOrders();
+    MainMenuPage mainMenuPage;
+    ApprovalInstructionPage1 approvalInstructionPage; 
+    CardexPageNew cardexPageNew;
+    CardexPage cardexPage;
+    UserSignModalPage userSignModalPage; 
+    InnerMenuPage innerMenuPage;
+    DrugFormPage drugForm;
+    PatientsListPage patientsListPageLocal ;
+    ChooseDepartmentListPage chooseDepartmentListPageLocal;
+    WoundPage woundPage;
+    WondFormPage woundFormPage;
+    FollowupPage followupPage;
+    DischargedPatientListPage dischargedPatientListPage;
+    BloodOrders bloodOrders;
            
     
+
     @BeforeClass
     public void preTest() throws SQLException{
 
@@ -80,6 +80,22 @@ public class SanitySuite1 extends BaseSuit {
        log.info("* Pre-Test Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
     }
 
+    @BeforeMethod
+    public void setUp(){
+        super.setUp();
+        mainMenuPage= new MainMenuPage();
+        approvalInstructionPage= new ApprovalInstructionPage1();    
+        cardexPageNew= new CardexPageNew();
+        cardexPage = new CardexPage();
+        userSignModalPage= new UserSignModalPage();
+        innerMenuPage= new InnerMenuPage();
+        drugForm= new DrugFormPage();
+        patientsListPageLocal= new PatientsListPage();
+        chooseDepartmentListPageLocal= new ChooseDepartmentListPage();
+        woundPage= new WoundPage();
+        woundFormPage= new WondFormPage();
+
+    }
     @Test(description = "renew instruction to spetif patient for Bug -solutinInstructionTimes", enabled = false)
     public void test_00_renewInstructionToSpetifPatient() throws SQLException {
       log.info("* Starting test_00_renewInstructionToSpetifPatient: Renewing instructions for patient with misparIshpuz = {}", patientMisparIshpuz);
