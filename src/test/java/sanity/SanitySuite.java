@@ -55,7 +55,7 @@ public class SanitySuite extends BaseSuit {
     public void preTest() throws SQLException{
 
         log.info("* Starting Pre-Test Setup: Cleaning up patient data and preparing test environment");
-       patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient).get(0);
+       patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient(10012)).get(0);
        removePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
      // cancelAllWoundsForPatient(QueriesUtils.cancelAllWoundsForPatient, patientMisparIshpuz);
        log.info("* Pre-Test Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);

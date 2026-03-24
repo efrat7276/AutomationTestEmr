@@ -29,7 +29,7 @@ public class LoginPage extends BasePage {
      //הגדרת דפדפן 
     driver= DriverManager.getInstance();
     // ניווט ל-URL של המערכת 
-    driver.get(FilesHelper.getData(Constants.ENV));
+    driver.get(FilesHelper.getData(Constants.DEFAULT_ENV));
 
     }
 
