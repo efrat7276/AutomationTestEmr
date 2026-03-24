@@ -15,6 +15,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
 import pages.ChooseDepartmentListPage;
 import pages.DoctorInstructionPage;
@@ -31,7 +32,15 @@ public class BaseSuit {
     protected PatientBoxPage patientBoxPage;
     protected DoctorInstructionPage doctorInstructionPage;
     protected ChooseDepartmentListPage chooseDepartmentListPage;
-   
+
+    protected String env; 
+
+    @BeforeSuite
+    public void setupEnvironment() {
+        this.env = System.getProperty("env", Constants.DEFAULT_ENV);
+        log.info("--- Execution Environment: {} ---", env);
+    }
+
     @BeforeMethod
     public void setUp() {
     log.info(">>> Starting Test Setup");

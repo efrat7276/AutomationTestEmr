@@ -51,28 +51,25 @@ public class SanitySuite1 extends BaseSuit {
     WondFormPage woundFormPage;
     FollowupPage followupPage;
     DischargedPatientListPage dischargedPatientListPage;
-    BloodOrders bloodOrders;
-           
-    
+    BloodOrders bloodOrders;      
+
+    HospitalDepartment currentDept; 
 
     @BeforeClass
     public void preTest() throws SQLException{
 
-      Constants.ENV = System.getProperty("env", "qa");
-     String deptNameParam = System.getProperty("department" , "פנימית ב'");
-   // טיפול בהגדרת מחלקה דיפולטיבית
-        HospitalDepartment foundDept = HospitalDepartment.getByHebrewName(deptNameParam);
-        if (foundDept != null) {
-        Constants.DEFAULT_DEPARTMENT = foundDept;
+    String deptNameParam = System.getProperty("department", "פנימית ב'");
+    HospitalDepartment foundDept = HospitalDepartment.getByHebrewName(deptNameParam);
+    
+    if (foundDept != null) {
+        this.currentDept = foundDept;
         log.info("Successfully set department to: {} (Code: {})", 
-                 Constants.DEFAULT_DEPARTMENT.getDisplayName(), 
-                 Constants.DEFAULT_DEPARTMENT.getCode());
-       } 
-       else {
-        log.error("Department '{}' not found in Enum! Using default: {}", 
-                  deptNameParam, Constants.DEFAULT_DEPARTMENT.getDisplayName());
+                 currentDept.getDisplayName(), currentDept.getCode());
+    } else {
+        this.currentDept = HospitalDepartment.INTERNAL_B;
+        log.error("Department '{}' not found! Using default: {}", 
+                  deptNameParam, currentDept.getDisplayName());
     }
-
     log.info("* Starting Pre-Test Setup: Cleaning up patient data and preparing test environment");
        patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient).get(0);
        removePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
@@ -133,7 +130,7 @@ public class SanitySuite1 extends BaseSuit {
     public void test_04_patientListIsDisplayed(){
         log.info("* Starting test_04_patientListIsDisplayed: Logging in as doctor and verifying patient list tab");
         loginAsDoctor();
-        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
+        chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         mainMenuPage.verifyPatientTableIsDisplayed();
     }
 
@@ -141,7 +138,7 @@ public class SanitySuite1 extends BaseSuit {
     public void test_05_dischargedPatientListVisibility() {
         log.info("* Starting test_05_dischargedPatientListVisibility: Logging in as doctor and verifying discharged patient list visibility");
         loginAsDoctor();
-        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
+        chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         innerMenuPage.navigateToMenuEntry("רשימת משוחררים");
         dischargedPatientListPage.verifyIsDischargedPatientsListVisible();
     }
@@ -150,7 +147,7 @@ public class SanitySuite1 extends BaseSuit {
     public void test_06_enterToPatientBox() {
         log.info("* Starting test_06_enterToPatientBox: Logging in as doctor and entering patient box");
         loginAsDoctor();
-        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
+        chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);
         // Add verification for patient box here
     }
@@ -159,7 +156,7 @@ public class SanitySuite1 extends BaseSuit {
     public void test_07_addingMedicine(){
         log.info("* Starting test_07_addingMedicine: Adding a medicine instruction for the patient");
         loginAsDoctor();
-        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
+        chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);
         doctorInstructionPage.addMedicineFullAndVerify("CARBOplatin", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
@@ -168,7 +165,7 @@ public class SanitySuite1 extends BaseSuit {
       public void test_08_doctorFillFollowupByDoctor() {
         log.info("* Starting test_08_doctorFillFollowupByDoctor: Doctor fills follow-up notes and saves");
         loginAsDoctor();
-        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
+        chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);
         innerMenuPage.navigateToMenuEntry("FollowUp");
         followupPage.addFollowupAndVerify("111", "222", "333", "444", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
@@ -178,7 +175,7 @@ public class SanitySuite1 extends BaseSuit {
     public void test_09_doctorAddingFluidGeneralBloodProductAndApprove() {
         log.info("* Starting test_09_doctorAddingFluidGeneralBloodProductAndApprove: Doctor's adding fluid instruction, general instruction and blood product instruction");
         loginAsDoctor();
-        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
+        chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);   
         doctorInstructionPage.addFluidAndClose("INJ furosemide 250mg/25ml (FUROVENIR)", "continuous", "50", "1000");
         doctorInstructionPage.addGeneralInstructionAndClose();
@@ -191,7 +188,7 @@ public class SanitySuite1 extends BaseSuit {
     public void test_10_approvalAllInstructionByNurse(){
             log.info("* Starting test_10_approvalAllInstructionByNurse: Approving all instructions for the patient");
             loginAsNurse();
-            chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
+            chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
             choosePatient(PATIENT_1);
             approvalInstructionPage.approveAllInstructions(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
@@ -201,7 +198,7 @@ public class SanitySuite1 extends BaseSuit {
   public void test_11_addSimpleWoundByNurse() {
       log.info("* Starting test_11_addSimpleWoundByNurse: Adding a simple wound for the patient");
       loginAsNurse();
-      chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
+      chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
       choosePatient(PATIENT_1);
       //בהנחה שבבחירת המטופל נJava: Configure Java Runtimeכנס למסך קרדקס
       cardexPage.clickArrowForwardToInnerMenu();
@@ -217,7 +214,7 @@ public class SanitySuite1 extends BaseSuit {
     public void test_13_executeAllInstructionByNurse(){
         log.info("* Starting test_13_executeAllInstructionByNurse: Executing all instructions for the patient");
         loginAsNurse();
-        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
+        chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);
         cardexPageNew.executeAndApproveAllToThisShiftAndApproval(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
@@ -226,7 +223,7 @@ public class SanitySuite1 extends BaseSuit {
     public void test_14_printIVLabelFromCardex() {
         log.info("* Starting test_14_printIVLabelFromCardex: Printing IV label from cardex");
         loginAsNurse();
-        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
+        chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);
         cardexPageNew.printIVLabelForFirstFluidInCardex();
     }
@@ -237,7 +234,7 @@ public class SanitySuite1 extends BaseSuit {
     public void test_15_addingNutrition(){
         log.info("* Starting test_15_addingNutrition: Adding a nutrition instruction for the patient");
         loginAsNutritionist();
-        chooseDepartmentListPage.selectDepartment(Constants.DEFAULT_DEPARTMENT.getDisplayName());
+        chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);
        doctorInstructionPage.addNutritionFull("Nut", "daily", "200", "1", Constants.NUTRITIONIST_USERNAME, Constants.NUTRITIONIST_PASSWORD);
     }
