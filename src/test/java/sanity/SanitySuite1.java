@@ -31,7 +31,7 @@ import pages.nurse.wound.WoundPage;
 public class SanitySuite1 extends BaseSuit {
 
 
-    private static final int PATIENT_1 = 1;
+    private static final int PATIENT_1 = 2;
     String patientMisparIshpuz =null; 
     MainMenuPage mainMenuPage;
     ApprovalInstructionPage1 approvalInstructionPage; 
