@@ -21,6 +21,8 @@ public class LoginPage extends BasePage {
     private By btn_clearBtn = By.cssSelector("button.btn.btn-default.clear");
     PatientsListPage patientsListPage = new PatientsListPage();
 
+
+
     /**
      * navigate to url system
      */
@@ -29,11 +31,25 @@ public class LoginPage extends BasePage {
      //הגדרת דפדפן 
     driver= DriverManager.getInstance();
     // ניווט ל-URL של המערכת 
-    driver.get(FilesHelper.getData(Constants.DEFAULT_ENV));
+String envKey = System.getProperty("env", "qa");
 
+    // 3. שליפת ה-URL האמיתי מה-XML באמצעות ה-FilesHelper
+    String actualUrl = FilesHelper.getData(envKey);
+
+    // 4. ניווט ל-URL האמיתי
+    driver.get(actualUrl);
+    log.info("Navigated to URL: {}", actualUrl);
     }
 
     public void login(String user , String pass , String role){
+
+    String env = System.getProperty("env", "qa");
+String valueFromXml = FilesHelper.getData(env);
+log.info("Environment: {}", env);
+log.info("Value from FilesHelper: {}", valueFromXml);
+log.info("--- DEBUG END ---");
+
+driver.get(valueFromXml);
         navigateToEMR();
         insertUserAndPass(user,pass);
         if(user.equals("test")){

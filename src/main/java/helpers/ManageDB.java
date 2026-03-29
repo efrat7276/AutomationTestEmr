@@ -5,10 +5,22 @@ import java.sql.SQLException;
 import java.sql.Connection;
 import java.sql.Statement;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class ManageDB {
 
     private static ManageDB instance = null;
     private static java.sql.Connection con = null;
+
+    private static String dbKey;
+
+    static {
+        String env = System.getProperty("env", "qa"); 
+        dbKey = "DB-" + env;
+        log.info("DEBUG: Database environment set to: {}", dbKey);
+    }
+
 
     /**
      * Returns the single instance of ManageDB (Singleton).
@@ -25,10 +37,12 @@ public class ManageDB {
      * exists.
      */
     public static Connection getConnections() {
+
+        
         try {
             if (con == null || con.isClosed()) {
                 // Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-                con = DriverManager.getConnection(FilesHelper.getData("DB-prod"), FilesHelper.getData("DBUserName"),
+                con = DriverManager.getConnection(FilesHelper.getData(dbKey), FilesHelper.getData("DBUserName"),
                         FilesHelper.getData("DBPassword"));
             }
         } catch (SQLException e) {

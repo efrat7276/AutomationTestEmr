@@ -6,14 +6,10 @@ import helpers.Constants;
 import helpers.QueriesUtils;
 import lombok.extern.slf4j.Slf4j;
 
-import java.lang.reflect.Array;
 import java.sql.SQLException;
-import java.util.List;
 
-import org.checkerframework.checker.units.qual.A;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import actionUtilies.UIActions;
@@ -58,7 +54,7 @@ public class SanitySuite1 extends BaseSuit {
     @BeforeClass
     public void preTest() throws SQLException{
 
-    String deptNameParam = System.getProperty("department", "פנימית ב'");
+    String deptNameParam = System.getProperty("department", "אורטופדיה");
     HospitalDepartment foundDept = HospitalDepartment.getByHebrewName(deptNameParam);
     
     if (foundDept != null) {

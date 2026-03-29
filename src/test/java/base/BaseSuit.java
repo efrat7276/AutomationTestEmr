@@ -9,11 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.sql.SQLException;
 import java.util.List;
 
-import javax.print.Doc;
-
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
@@ -37,7 +33,7 @@ public class BaseSuit {
 
     @BeforeSuite
     public void setupEnvironment() {
-        this.env = System.getProperty("env", Constants.DEFAULT_ENV);
+        this.env = System.getProperty("env", Constants.CURRENT_ENV);
         log.info("--- Execution Environment: {} ---", env);
     }
 
@@ -80,12 +76,6 @@ public class BaseSuit {
     protected void choosePatient(int patientIndex) {
         log.info("Choosing patient at index: {}", patientIndex);
         patientsListPage.choosePatient(patientIndex);
-        patientBoxPage.verifyPatientDetailsExisting();
-    }
-
-
-    private void selectFirstPatient() {
-        patientsListPage.choosePatient(1);
         patientBoxPage.verifyPatientDetailsExisting();
     }
 
