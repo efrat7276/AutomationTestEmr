@@ -1,6 +1,7 @@
 package base;
 
 import actionUtilies.DBExecuter;
+import actionUtilies.UIActions;
 import drivers.DriverManager;
 import enums.InstructionType;
 import helpers.Constants;
@@ -33,7 +34,13 @@ public class BaseSuit {
 
     @BeforeSuite
     public void setupEnvironment() {
-        this.env = System.getProperty("env", Constants.CURRENT_ENV);
+        this.env = System.getProperty("env");
+        log.info(">>> Setting up test environment: {}", env);
+        if (env == null || env.isEmpty()) {
+            log.warn("No environment specified. Defaulting to 'prod'.");
+            this.env = "prod";
+        }
+
         log.info("--- Execution Environment: {} ---", env);
     }
 
@@ -74,7 +81,9 @@ public class BaseSuit {
     }
 
     protected void choosePatient(int patientIndex) {
+         UIActions.waitForSpinnerToDisappear();
         log.info("Choosing patient at index: {}", patientIndex);
+        UIActions.waitForVisible(patientsListPage.list_patients);
         patientsListPage.choosePatient(patientIndex);
         patientBoxPage.verifyPatientDetailsExisting();
     }

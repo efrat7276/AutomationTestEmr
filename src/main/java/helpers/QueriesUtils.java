@@ -13,9 +13,8 @@ public class QueriesUtils {
            "LEFT JOIN dbo.k_lan_dep_beds AS kldb ON kldb.mispar_ishpuz = a.mispar_ishpuz " + 
            "WHERE k_yechida_shichrur = " + deptCode + " " +
            "AND tarich_shichrur IS NULL " + 
-           "AND a.bitul = 0 " ;
-           //+ 
-          // "ORDER BY kldb.dep_bed_sort ASC";
+           "AND a.bitul = 0 " +
+          "ORDER BY kldb.dep_bed_sort ASC";
 }
                         
     public static final String removePatient_from_tbl =

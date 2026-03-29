@@ -2,14 +2,12 @@ package pages;
 
 import actionUtilies.UIActions;
 import drivers.DriverManager;
-import enums.HospitalDepartment;
 import helpers.Constants;
 import helpers.FilesHelper;
 import lombok.extern.slf4j.Slf4j;
 import pages.mainPages.PatientsListPage;
 
-import static org.testng.Assert.assertTrue;
-
+import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.By;
 
 @Slf4j
@@ -26,12 +24,12 @@ public class LoginPage extends BasePage {
     /**
      * navigate to url system
      */
-    public void navigateToEMR(){
+    public void navigateToEMR(String env){
        
      //הגדרת דפדפן 
     driver= DriverManager.getInstance();
     // ניווט ל-URL של המערכת 
-String envKey = System.getProperty("env", "qa");
+    String envKey = System.getProperty("env", env);
 
     // 3. שליפת ה-URL האמיתי מה-XML באמצעות ה-FilesHelper
     String actualUrl = FilesHelper.getData(envKey);
@@ -43,14 +41,13 @@ String envKey = System.getProperty("env", "qa");
 
     public void login(String user , String pass , String role){
 
-    String env = System.getProperty("env", "qa");
+    String env = Constants.CURRENT_ENV;
 String valueFromXml = FilesHelper.getData(env);
 log.info("Environment: {}", env);
 log.info("Value from FilesHelper: {}", valueFromXml);
 log.info("--- DEBUG END ---");
 
-driver.get(valueFromXml);
-        navigateToEMR();
+        navigateToEMR(env);
         insertUserAndPass(user,pass);
         if(user.equals("test")){
             ChooseRolePage chooseRolePage=new ChooseRolePage();

@@ -2,6 +2,7 @@ package pages.menu;
 
 import actionUtilies.UIActions;
 import drivers.DriverManager;
+import enums.InstructionType;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 
@@ -35,12 +36,19 @@ public class InnerMenuPage extends BasePage {
             UIActions.waitForSpinnerToDisappear();
             UIActions.waitForElementClickable(targetLocator);
             UIActions.click(targetLocator);
-            log.info("Navigation to menu entry '" + entryName + " using XPath: " + dynamicXpath + "' was successful.");
-
-        } catch (Exception e) {
+        }
+        //   if(isTitleDisplayed(entryName)) {
+        //       log.info("Navigation to menu entry '" + entryName + " using XPath: " + dynamicXpath + "' was successful.");
+        //   }
+        //    else {
+        //       log.warn("Navigation to menu entry '" + entryName + "' may have failed. Title does not match expected.");
+        //   }
+        // }
+     catch (Exception e) {
             log.error("❌ Failed to navigate to menu entry '" + entryName + "'. Ensure the name is correct. Error: " + e.getMessage());
             throw new RuntimeException("Failed to navigate in the inner menu", e);
         }
+        UIActions.waitForSpinnerToDisappear();
     }
 
     /**
@@ -54,6 +62,15 @@ public class InnerMenuPage extends BasePage {
         } catch (Exception e) {
             return false;
         }
+    }
+
+     private By getTitleSpanLocator() {
+        return By.xpath("(//span[contains(@class,'lan-title-ng-view-Hierarchy-a')])[1]");
+    }
+     public boolean isTitleDisplayed(String expectedTitle) {
+        String actualText = UIActions.getText(getTitleSpanLocator()).trim();
+        log.debug("DEBUG: actualText = '{}' | expected = '{}'", actualText, expectedTitle);
+        return actualText.contains(expectedTitle);
     }
 
 

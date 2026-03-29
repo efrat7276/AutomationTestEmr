@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import static org.testng.Assert.assertTrue;
 
+import org.checkerframework.checker.guieffect.qual.UI;
 import org.openqa.selenium.By;
 import pages.BasePage;
 import pages.UserSignModalPage;
@@ -33,7 +34,8 @@ public class FollowupPage extends BasePage {
 
     public void addFollowupAndVerify(String notes_Subjec , String notes_Objective ,
                             String notes_Aassesment , String notes_Plan, String username, String password) {
-     log.info("Attempting to add follow-up");
+     UIActions.waitForSpinnerToDisappear();
+                              log.info("Attempting to add follow-up");
      UIActions.typeText(textArea_subjective, notes_Subjec);
      UIActions.typeText(textArea_objective, notes_Objective);
      UIActions.typeText(textArea_aassesment, notes_Aassesment);

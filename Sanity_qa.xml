@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="SanityTest">
+    <!-- Define environment parameter for the entire suite -->
+    <parameter name="env" value="prod"></parameter>
+    
     <test name="stopPatientInstruction">
 <!--        <parameter name="patient_num" value="7"></parameter>-->
         <classes>

@@ -23,7 +23,6 @@ import pages.menu.MainMenuPage;
 import pages.nurse.Execute.CardexPage;
 import pages.nurse.Execute.CardexPageNew;
 import pages.doctor.FollowupPage;
-import pages.nurse.approval.ApprovalInstructionPage;
 import pages.nurse.approval.ApprovalInstructionPage1;
 import pages.nurse.wound.WondFormPage;
 import pages.nurse.wound.WoundPage;
@@ -68,8 +67,13 @@ public class SanitySuite1 extends BaseSuit {
     }
     log.info("* Starting Pre-Test Setup: Cleaning up patient data and preparing test environment");
        patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient(currentDept.getCode())).get(0);
-       removePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
-     // cancelAllWoundsForPatient(QueriesUtils.cancelAllWoundsForPatient, patientMisparIshpuz);
+       boolean isRemoved = removePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
+         if (isRemoved) {
+              log.info("* Patient data removed successfully for misparIshpuz = {}", patientMisparIshpuz);
+         } else {
+              log.warn("* No patient data found to remove for misparIshpuz = {}", patientMisparIshpuz);
+         }
+       // cancelAllWoundsForPatient(QueriesUtils.cancelAllWoundsForPatient, patientMisparIshpuz);
        log.info("* Pre-Test Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
     }
 

@@ -120,6 +120,7 @@ public class CardexPageNew extends BasePage {
     }
 
     public void verifyDrugExecuted(String drugName) {
+        UIActions.waitForSpinnerToDisappear();
          UIActions.waitForVisible(cardexMainListBox);
         List<WebElement> drugNames = UIActions.findElementsWithWait(namesDrugBy);
         boolean found = false;
@@ -130,5 +131,5 @@ public class CardexPageNew extends BasePage {
             }
         }
         assertTrue(found, "Expected to find drug name '" + drugName + "' in cardex, but it was not found.");
-}
+    }
 }

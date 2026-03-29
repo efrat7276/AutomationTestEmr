@@ -20,6 +20,7 @@ public class ChooseDepartmentListPage {
     public void selectDepartment(String departmentName) {
         UIActions.click(btn_li_department);
         UIActions.selectFromList(departmentList, departmentName);
+        UIActions.waitForSpinnerToDisappear();
         log.info("Selected department: {}", departmentName);
     }
 

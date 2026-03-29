@@ -22,6 +22,6 @@ public class Constants {
     public static final String ICU_DEPARTMENT_STRING = "ט'נ' כללי";
     
 //    public static final String DEFAULT_ENV = "qa";
-public static final String CURRENT_ENV = System.getProperty("env", "qa");
+public static final String CURRENT_ENV = System.getProperty("env", "prod");
 }
 
