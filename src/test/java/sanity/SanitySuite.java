@@ -200,7 +200,7 @@ public class SanitySuite extends BaseSuit {
         log.info("* Starting test_12_dischargedPatientList: Discharged patient list visibility");
         loginAsDoctor();
         innerMenuPage.navigateToMenuEntry("רשימת משוחררים");
-        dischargedPatientListPage.verifyIsDischargedPatientsListVisible();
+        dischargedPatientListPage.verifydischargedPatientsListVisible();
     }
 
     @Test(description = "lab orders visibility")

@@ -31,7 +31,7 @@ import pages.nurse.wound.WoundPage;
 public class SanitySuite1 extends BaseSuit {
 
 
-    private static final int PATIENT_1 = 2;
+    private static final int PATIENT_1 = 3;
     String patientMisparIshpuz =null; 
     MainMenuPage mainMenuPage;
     ApprovalInstructionPage1 approvalInstructionPage; 
@@ -88,9 +88,12 @@ public class SanitySuite1 extends BaseSuit {
         innerMenuPage= new InnerMenuPage();
         drugForm= new DrugFormPage();
         patientsListPageLocal= new PatientsListPage();
+        dischargedPatientListPage= new DischargedPatientListPage();
         chooseDepartmentListPageLocal= new ChooseDepartmentListPage();
         woundPage= new WoundPage();
         woundFormPage= new WondFormPage();
+        followupPage= new FollowupPage();
+        bloodOrders= new BloodOrders();
 
     }
     @Test(description = "renew instruction to spetif patient for Bug -solutinInstructionTimes", enabled = false)
@@ -140,7 +143,7 @@ public class SanitySuite1 extends BaseSuit {
         loginAsDoctor();
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         innerMenuPage.navigateToMenuEntry("רשימת משוחררים");
-        dischargedPatientListPage.verifyIsDischargedPatientsListVisible();
+        dischargedPatientListPage.verifydischargedPatientsListVisible();
     }
 
     @Test(description = "entire to patient box")
@@ -166,7 +169,7 @@ public class SanitySuite1 extends BaseSuit {
         log.info("* Starting test_08_doctorFillFollowupByDoctor: Doctor fills follow-up notes and saves");
         loginAsDoctor();
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
-        choosePatient(PATIENT_1);
+        choosePatient(2);
         innerMenuPage.navigateToMenuEntry("FollowUp");
         followupPage.addFollowupAndVerify("111", "222", "333", "444", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
