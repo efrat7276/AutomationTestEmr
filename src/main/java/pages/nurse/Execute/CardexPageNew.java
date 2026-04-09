@@ -116,6 +116,7 @@ public class CardexPageNew extends BasePage {
     }
 
     public void verifyExecuted() {
+            log.info("Verifying that instructions have been executed and approval button text is updated.");
            assertTrue(UIActions.waitForText(btn_approvalDrug,"0" ),"Expected approval button text to contain '0' but got '" + UIActions.getText(btn_approvalDrug) + "'");
     }
 

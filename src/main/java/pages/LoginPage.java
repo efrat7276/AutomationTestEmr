@@ -42,17 +42,13 @@ public class LoginPage extends BasePage {
     public void login(String user , String pass , String role){
 
     String env = Constants.CURRENT_ENV;
-String valueFromXml = FilesHelper.getData(env);
-log.info("Environment: {}", env);
-log.info("Value from FilesHelper: {}", valueFromXml);
-log.info("--- DEBUG END ---");
-
-        navigateToEMR(env);
-        insertUserAndPass(user,pass);
-        if(user.equals("test")){
-            ChooseRolePage chooseRolePage=new ChooseRolePage();
-            chooseRolePage.chooseRole(role);
-        }
+    log.info("Environment: {}", env);
+     navigateToEMR(env);
+     insertUserAndPass(user,pass);
+  if(user.equals("test")){
+          ChooseRolePage chooseRolePage=new ChooseRolePage();
+          chooseRolePage.chooseRole(role);
+ }
     }
     private void insertUserAndPass(String user, String pass) {
         UIActions.clearText(txt_username);

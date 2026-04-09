@@ -14,6 +14,7 @@ public class PatientBoxPage {
     private By bar_deatails_patient = By.xpath("//app-patient-detail/div");
 
     public void verifyPatientDetailsExisting(){
+        log.info("Verifying patient details bar is displayed");
          assertTrue(UIActions.findElementWithWait(bar_deatails_patient).isDisplayed(),"patient details bar should be displayed but it's not.");
     }
 }

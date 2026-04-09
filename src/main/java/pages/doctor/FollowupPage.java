@@ -36,10 +36,15 @@ public class FollowupPage extends BasePage {
                             String notes_Aassesment , String notes_Plan, String username, String password) {
      UIActions.waitForSpinnerToDisappear();
                               log.info("Attempting to add follow-up");
+                              log.info("Follow-up details - Subjective: {}", notes_Subjec);
      UIActions.typeText(textArea_subjective, notes_Subjec);
+     log.info("Follow-up details - Objective: {}", notes_Objective);
      UIActions.typeText(textArea_objective, notes_Objective);
+      log.info("Follow-up details - Assessment: {}", notes_Aassesment);
      UIActions.typeText(textArea_aassesment, notes_Aassesment);
+      log.info("Follow-up details - Plan: {}", notes_Plan);
      UIActions.typeText(textArea_pplan, notes_Plan);
+     log.info("Saving follow-up and signing with user: {}", username);
      UIActions.click(saveButton);
      userSignModalPage.signModal(username, password);
      verifyFollowupSaved();

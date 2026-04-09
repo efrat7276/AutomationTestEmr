@@ -48,15 +48,13 @@ public class BaseSuit {
     public void setUp() {
     log.info(">>> Starting Test Setup");
     DriverManager.getInstance(); 
-    
-    log.info(">>> Initializing pages with active driver");
     loginPage = new LoginPage();
     patientsListPage = new PatientsListPage();
     patientBoxPage = new PatientBoxPage();
     doctorInstructionPage = new DoctorInstructionPage();
     chooseDepartmentListPage = new ChooseDepartmentListPage();
     
-    log.info(">>> Test Setup Complete");
+   //log.info(">>> Test Setup Complete");
   }
     @AfterClass
     public void tearDown() {
