@@ -81,7 +81,8 @@ public class DrugFormPage extends BasePage {
     private By btn_durationList = By.xpath("//button[@name='solutionDurationList']");  // כפתור בחירת משך הטיפול
     private By durationList = By.xpath("//button[@name='solutionDurationList']/following-sibling::ul/li");  // רשימת אפשרויות משך הטיפול
 
-    
+    private By duplicateInstructionModal = By.xpath("//duplicate-instruction-modal");
+    private By duplicateInstructionModalConfirmButton = By.xpath("//duplicate-instruction-modal//button[@id='buttonImport']");
     // כפתור ביצוע בתוך טופס התרופה (מנוסח באופן גנרי לפי טקסט)
     private By btn_executeInForm = By.id("instructionWithExecution");
 
@@ -128,6 +129,8 @@ public class DrugFormPage extends BasePage {
         UIActions.typeText(inp_selectDrug, nameMed);
         log.info("Waiting for medicine search results to load and clicking the top result");
         UIActions.click(inp_selectDrugTopList);
+        if(UIActions.waitForVisible(duplicateInstructionModal))
+          UIActions.click(duplicateInstructionModalConfirmButton);
 
         // 2. בחירת התדירות
         By possibilityLocator = getDrugPossibilityLocator(possibility);
