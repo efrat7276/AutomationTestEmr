@@ -134,10 +134,11 @@ public class DrugFormPage extends BasePage {
 
         // 2. בחירת התדירות
         By possibilityLocator = getDrugPossibilityLocator(possibility);
+        if(!possibility.equals("Daily")){
         UIActions.waitForElementClickable(possibilityLocator);
          log.info("Selecting possibility: {}", possibility);    
         UIActions.click(possibilityLocator);
-
+        }
         // 3. מילוי פרטים כללים
         fillCommonFields(dosage);
 
