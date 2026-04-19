@@ -16,10 +16,7 @@ public class LoginPage extends BasePage {
     private By txt_username = By.id("user_name");
     private By txt_password = By.id("password");
     private By btn_submitBtn = By.id("submitBtn");
-    private By btn_clearBtn = By.cssSelector("button.btn.btn-default.clear");
     PatientsListPage patientsListPage = new PatientsListPage();
-
-
 
     /**
      * navigate to url system

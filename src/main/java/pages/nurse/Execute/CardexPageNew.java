@@ -36,7 +36,7 @@ public class CardexPageNew extends BasePage {
     private final By stickers = By.xpath("//button[3][contains(@class, 'btn-secondary')]");
    public void executeAllDrugsToThisShift() {
         log.info("Starting execution of all drug instructions to this shift.");
-        List<WebElement> drugs = driver.findElements(By.xpath("//input[@type='checkbox' and starts-with(@id, 'drugInsDayModeCheckbox')]"));
+        List<WebElement> drugs = UIActions.findElementsWithWait(drugCheckboxes);
         for (WebElement el : drugs) {
             UIActions.waitForElementClickable(el);
             UIActions.click(el);

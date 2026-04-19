@@ -8,8 +8,10 @@ import helpers.Constants;
 import lombok.extern.slf4j.Slf4j;
 
 import java.sql.SQLException;
+import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -23,6 +25,7 @@ import pages.mainPages.PatientsListPage;
 @Slf4j
 public class BaseSuit {
 
+    protected WebDriverWait wait;
     
     protected LoginPage loginPage;
     protected PatientsListPage patientsListPage;
@@ -33,15 +36,17 @@ public class BaseSuit {
     protected String env; 
 
     @BeforeSuite
-    public void setupEnvironment() {
+    public void setupBeforeSuite() {
         this.env = System.getProperty("env");
         log.info(">>> Setting up test environment: {}", env);
         if (env == null || env.isEmpty()) {
             log.warn("No environment specified. Defaulting to 'prod'.");
             this.env = "prod";
         }
-
         log.info("--- Execution Environment: {} ---", env);
+        log.info("setup duration of waitting");
+        int waitDuration = env.equals("qa") ? 60 : 30;
+        this.wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(waitDuration));
     }
 
     @BeforeMethod
