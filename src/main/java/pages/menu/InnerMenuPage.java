@@ -15,7 +15,7 @@ public class InnerMenuPage extends BasePage {
     // 1. מחפש את ה-<span> הספציפי כפי שמופיע בדוגמה ששלחת.
     // 2. מחפש כל אלמנט שמכיל את הטקסט, כדי להיות גמיש.
     private final String MENU_ITEM_XPATH_TEMPLATE =
-            "//*[normalize-space(text())='%s']";
+            "//*[normalize-space(text())='%s']/parent::div";
 
     /**
      * מקבלת את שם כניסת התפריט בעברית ולוחצת על הכניסה המתאימה.
