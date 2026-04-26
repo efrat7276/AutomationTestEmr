@@ -1,13 +1,15 @@
 package pages.nurse.Execute;
 
 import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pages.BasePage;
 import pages.UserSignModalPage;
 
 import java.util.List;
-
+@Slf4j
 public class CardexPage extends BasePage {
 
     UserSignModalPage userSignModalPage;
@@ -74,15 +76,21 @@ public class CardexPage extends BasePage {
     }
 
     public void approvalAllExecution(String username, String password){
+        log.info("Approving all executions with username: {}", username);
         UIActions.click(btn_approval);
         userSignModalPage.signModal(username,password);
     }
 
     public void clickArrowForwardToInnerMenu() {
+        log.info("Clicking the forward arrow to open the inner menu.");
         UIActions.click(i_arrow);
     }
 
     public void printIVLabelForFirstFluidInCardex() {
+        log.info("Attempting to print IV label for the first fluid in cardex.");
+        UIActions.click(btn_printStickers);
+        UIActions.waitForElementClickable(exit_printStickers);
+        UIActions.click(exit_printStickers);
        UIActions.click(arrowForward);
     }
 

@@ -6,8 +6,6 @@ import helpers.Constants;
 import helpers.FilesHelper;
 import lombok.extern.slf4j.Slf4j;
 import pages.mainPages.PatientsListPage;
-
-import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.By;
 
 @Slf4j
@@ -22,18 +20,10 @@ public class LoginPage extends BasePage {
      * navigate to url system
      */
     public void navigateToEMR(String env){
-       
-     //הגדרת דפדפן 
     driver= DriverManager.getInstance();
-    // ניווט ל-URL של המערכת 
     String envKey = System.getProperty("env", env);
-
-    // 3. שליפת ה-URL האמיתי מה-XML באמצעות ה-FilesHelper
     String actualUrl = FilesHelper.getData(envKey);
-
-    // 4. ניווט ל-URL האמיתי
     driver.get(actualUrl);
-    log.info("Navigated to URL: {}", actualUrl);
     }
 
     public void login(String user , String pass , String role){

@@ -3,10 +3,12 @@ import base.BaseSuit;
 import enums.InstructionType;
 import helpers.Constants;
 import org.testng.annotations.Test;
+import org.testng.annotations.Listeners;
 import pages.*;
 import pages.addForms.DrugFormPage;
 import pages.mainPages.PatientsListPage;
 
+@org.testng.annotations.Listeners(helpers.Listeners.class)
 public class DoctorInstructionsSuite extends BaseSuit {
 
   

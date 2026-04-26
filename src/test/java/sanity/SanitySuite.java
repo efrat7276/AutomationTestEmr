@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.annotations.Listeners;
 import pages.*;
 import pages.addForms.DrugFormPage;
 import pages.mainPages.BloodOrders;
@@ -29,6 +30,7 @@ import pages.nurse.wound.WondFormPage;
 import pages.nurse.wound.WoundPage;
 
 @Slf4j
+@org.testng.annotations.Listeners(helpers.Listeners.class)
 public class SanitySuite extends BaseSuit {
 
 

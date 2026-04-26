@@ -84,7 +84,7 @@ public class BaseSuit {
     }
 
     protected void choosePatient(int patientIndex) {
-         UIActions.waitForSpinnerToDisappear();
+        UIActions.waitForSpinnerToDisappear();
         log.info("Choosing patient at index: {}", patientIndex);
         UIActions.waitForVisible(patientsListPage.list_patients);
         patientsListPage.choosePatient(patientIndex);

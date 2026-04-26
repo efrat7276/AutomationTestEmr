@@ -4,6 +4,7 @@ import enums.HospitalDepartment;
 import enums.InstructionType;
 import helpers.Constants;
 import helpers.QueriesUtils;
+import io.qameta.allure.Description;
 import lombok.extern.slf4j.Slf4j;
 
 import java.sql.SQLException;
@@ -28,6 +29,7 @@ import pages.nurse.wound.WondFormPage;
 import pages.nurse.wound.WoundPage;
 
 @Slf4j
+@org.testng.annotations.Listeners(helpers.Listeners.class)
 public class SanitySuite1 extends BaseSuit {
 
 
@@ -187,7 +189,7 @@ public class SanitySuite1 extends BaseSuit {
         }
 
 
-    @Test(description = "approval all instruction by nurse",dependsOnMethods={ "test_07_addingMedicine","test_09_doctorAddingFluidGeneralBloodProductAndApprove"})
+    @Test(description = "approval all instruction by nurse")
     public void test_10_approvalAllInstructionByNurse(){
             log.info("* Starting test_10_approvalAllInstructionByNurse: Approving all instructions for the patient");
             loginAsNurse();
@@ -204,7 +206,7 @@ public class SanitySuite1 extends BaseSuit {
       chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
       choosePatient(PATIENT_1);
       //בהנחה שבבחירת המטופל נJava: Configure Java Runtimeכנס למסך קרדקס
-      cardexPage.clickArrowForwardToInnerMenu();
+      cardexPageNew.clickArrowForwardToInnerMenu();
       innerMenuPage.navigateToMenuEntry("סיעוד");
       innerMenuPage.navigateToMenuEntry("פצעים");
       woundPage.clickAddWound();

@@ -84,20 +84,9 @@ public class CardexPageNew extends BasePage {
         verifyExecuted();
          UIActions.waitForText(btn_approvalDrug,"0" );
     }
-
-
-    // public void clickNavCardex() {
-    //      log.info("Attempting to click on nav cardex.");
-    //     try {
-    //         UIActions.click(navCardex);
-    //         log.info("Clicked on Cardex navigation successfully.");
-    //     } catch (Exception e) {
-    //         log.error("Failed to click on Cardex navigation. Error: " + e.getMessage());
-    //         throw new RuntimeException("Failed to navigate to Cardex", e);
-    //     }
-    // }
     
     public void clickArrowForwardToInnerMenu() {
+        log.info("Clicking the forward arrow to open the inner menu.");
         UIActions.click(i_arrow);
     }
 
