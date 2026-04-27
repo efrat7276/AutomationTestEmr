@@ -2,6 +2,7 @@ package helpers;
 
 import drivers.DriverManager;
 import io.qameta.allure.Attachment;
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.logging.LogEntries;
@@ -14,70 +15,98 @@ import org.testng.ITestResult;
 import java.io.File;
 import java.util.List;
 
+@Slf4j
 public class Listeners implements ITestListener {
 
     public void onStart(ITestContext result) {
-        System.out.println("--------------------Starting Execution--------------------");
+        log.info("--------------------Starting Execution--------------------");
     }
 
     public void onFinish(ITestContext result) {
-        System.out.println("--------------------Ending Execution--------------------");
+        log.info("--------------------Ending Execution--------------------");
     }
 
     public void onTestStart(ITestResult result) {
-        System.out.println("--------Starting Test: " + result.getName() + "------------");
+        log.info("--------Starting Test: {} -----------", result.getName());
     }
 
     public void onTestSkipped(ITestResult result) {
-        System.out.println("--------Skipping Test: " + result.getName() + "------------");
+        log.info("--------Skipping Test: {} -----------", result.getName());
     }
 
     public void onTestSuccess(ITestResult result) {
-        System.out.println("-------- Test: " + result.getName() + " Passed -----------");
+        log.info("-------- Test: {} Passed -----------", result.getName());
     }
 
     public void onTestFailure(ITestResult result) {
         System.out.println("-------- Test: " + result.getName() + " Failed -----------");
+        System.out.println("Failure message: " + result.getThrowable());
+        
         try {
             LogEntries entry = DriverManager.getInstance().manage().logs().get(LogType.BROWSER);
             List<LogEntry> logs = entry.getAll();
             
             if (logs.isEmpty()) {
-                System.out.println("No Console Logs");
+                log.info("No Console Logs");
             } else {
                 for (LogEntry e : logs) {
-                    System.out.println("Message is: " + e.getMessage());
-                    System.out.println("Level is: " + e.getLevel());
+                    log.info("Message is: {}", e.getMessage());
+                    log.info("Level is: {}", e.getLevel());
                 }
             }
         } catch (Exception e) {
-            System.out.println("Could not retrieve browser logs: " + e.getMessage());
+            log.error("Could not retrieve browser logs: {}", e.getMessage());
         }
+        
         // טייק צילום מסך ושמור ל-Allure
+        log.info(">>> Calling saveScreenshot() for Allure...");
         saveScreenshot();
         
         // טייק צילום מסך ושמור לתיקייה על הדיסק
+        log.info(">>> Calling saveScreenshotFile() to save to disk...");
         try {
             File screenshotFile = saveScreenshotFile();
             if (screenshotFile != null) {
-                System.out.println("Screenshot saved to: " + screenshotFile.getAbsolutePath());
+                log.info("✓ Screenshot file saved successfully to: {}", screenshotFile.getAbsolutePath());
+            } else {
+                log.error("✗ Screenshot file is null - driver may have been closed");
             }
         } catch (Exception e) {
-            System.out.println("Could not save screenshot file: " + e.getMessage());
+            log.error("✗ Could not save screenshot file: {}", e.getMessage());
         }
     }
 
     @Attachment(value = "Screen-Shot", type = "image/png")
     public byte[] saveScreenshot() {
-        if (DriverManager.getInstance() != null) {
-            return ((TakesScreenshot) DriverManager.getInstance()).getScreenshotAs(OutputType.BYTES);
+        try {
+            if (DriverManager.getInstance() != null) {
+                log.info("Taking screenshot for Allure...");
+                return ((TakesScreenshot) DriverManager.getInstance()).getScreenshotAs(OutputType.BYTES);
+            }
+        } catch (Exception e) {
+            log.error("Error taking screenshot for Allure: {}", e.getMessage());
         }
         return new byte[0];
     }
 
     public static File saveScreenshotFile() {
-        if (DriverManager.getInstance() != null) {
-            return ((TakesScreenshot) DriverManager.getInstance()).getScreenshotAs(OutputType.FILE);
+        try {
+            if (DriverManager.getInstance() != null) {
+                log.info("Saving screenshot file to temp directory...");
+                File screenshotFile = ((TakesScreenshot) DriverManager.getInstance()).getScreenshotAs(OutputType.FILE);
+                
+                if (screenshotFile != null && screenshotFile.exists()) {
+                    log.info("Screenshot file created successfully at: {}", screenshotFile.getAbsolutePath());
+                    log.info("File size: {} bytes", screenshotFile.length());
+                    return screenshotFile;
+                } else {
+                    log.error("Screenshot file was not created or does not exist");
+                }
+            } else {
+                log.error("Driver instance is null, cannot take screenshot");
+            }
+        } catch (Exception e) {
+            log.error("Error saving screenshot file: {}", e.getMessage());
         }
         return null;
     }
