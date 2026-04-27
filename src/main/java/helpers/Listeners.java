@@ -53,7 +53,18 @@ public class Listeners implements ITestListener {
         } catch (Exception e) {
             System.out.println("Could not retrieve browser logs: " + e.getMessage());
         }
+        // טייק צילום מסך ושמור ל-Allure
         saveScreenshot();
+        
+        // טייק צילום מסך ושמור לתיקייה על הדיסק
+        try {
+            File screenshotFile = saveScreenshotFile();
+            if (screenshotFile != null) {
+                System.out.println("Screenshot saved to: " + screenshotFile.getAbsolutePath());
+            }
+        } catch (Exception e) {
+            System.out.println("Could not save screenshot file: " + e.getMessage());
+        }
     }
 
     @Attachment(value = "Screen-Shot", type = "image/png")
