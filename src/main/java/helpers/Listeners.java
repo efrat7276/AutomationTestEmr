@@ -13,6 +13,9 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
 
 @Slf4j
@@ -98,7 +101,21 @@ public class Listeners implements ITestListener {
                 if (screenshotFile != null && screenshotFile.exists()) {
                     log.info("Screenshot file created successfully at: {}", screenshotFile.getAbsolutePath());
                     log.info("File size: {} bytes", screenshotFile.length());
-                    return screenshotFile;
+                    
+                    // Copy file to our temp directory
+                    File tempDir = new File("temp");
+                    if (!tempDir.exists()) {
+                        tempDir.mkdirs();
+                        log.info("Created temp directory: {}", tempDir.getAbsolutePath());
+                    }
+                    
+                    String fileName = "screenshot_" + System.currentTimeMillis() + ".png";
+                    File destFile = new File(tempDir, fileName);
+                    
+                    Files.copy(screenshotFile.toPath(), destFile.toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING);
+                    log.info("✓ Screenshot copied to: {}", destFile.getAbsolutePath());
+                    
+                    return destFile;
                 } else {
                     log.error("Screenshot file was not created or does not exist");
                 }
