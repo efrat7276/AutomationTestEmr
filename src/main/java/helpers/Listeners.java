@@ -38,7 +38,7 @@ public class Listeners implements ITestListener {
 
     public void onTestFailure(ITestResult result) {   
         log.info(">>> Capturing and saving screenshot for Allure...");
-        captureAndSaveScreenshot(result.getName());
+        captureAndSaveScreenshot(result.getName(),result.getTestClass().getName());
     }
 
     /**
@@ -46,7 +46,7 @@ public class Listeners implements ITestListener {
      * Called from onTestFailure when a test fails.
      */
     @Attachment(value = "Screen-Shot", type = "image/png")
-    public byte[] captureAndSaveScreenshot(String testName) {
+    public byte[] captureAndSaveScreenshot(String testName,String className) {
         try {
             var driver = DriverManager.getInstance();
             if (driver == null) {
@@ -55,7 +55,7 @@ public class Listeners implements ITestListener {
             }
             
             var screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            var allureDir = new File("allure-results");
+            var allureDir = new File("allure-results"+File.separator+className);
             if (!allureDir.exists()) allureDir.mkdirs();
             
             var fileName = FilesHelper.getFileName(testName) + ".png";
