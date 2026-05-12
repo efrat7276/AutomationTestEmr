@@ -145,6 +145,7 @@
                         -Dallure.results.directory=test-Allure/sanity
                     </argLine>
                 </configuration>
+
                 <dependencies>
                     <dependency>
                         <groupId>org.aspectj</groupId>
