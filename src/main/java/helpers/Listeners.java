@@ -55,7 +55,9 @@ public class Listeners implements ITestListener {
             }
             
             var screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            var allureDir = new File("allure-results"+File.separator+className);
+          //  var allureDir = new File("allure-results"+File.separator+className);
+          
+            var allureDir = new File("allure-results/SanitySuite1");
             if (!allureDir.exists()) allureDir.mkdirs();
             
             var fileName = FilesHelper.getFileName(testName) + ".png";
