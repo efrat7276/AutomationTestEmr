@@ -2,7 +2,6 @@ package drivers;
 
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -21,37 +20,41 @@ public class DriverManager {
         if(driver==null){
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
-            options.addArguments("--start-minimized");
-            options.addArguments("window-size=1920,1080");
-           ////todo לדבר עם רינה
-            // String projectPath = System.getProperty("user.dir");      
-            // System.setProperty("webdriver.chrome.driver", projectPath + "/src/main/java/resources/chromedriver.exe");
-            driver=new ChromeDriver(options);
-
-          initBrowser();
+            options.addArguments("--start-maximized");  // Maximize on startup
+            options.addArguments("--no-first-run");
+            options.addArguments("--no-default-browser-check");
+            driver = new ChromeDriver(options);
+            initBrowser();
         }
         return driver;
     }
 
     /**
-     * init Chrome browser
-     *
-     * @return
+     * Initialize Chrome browser with maximum resolution for both local and remote machines.
      */
     public static WebDriver initBrowser() {
-      log.info("Initializing browser with set capabilities and window size");
-        Capabilities caps = ((RemoteWebDriver) driver).getCapabilities();
-        String browserName = caps.getBrowserName();
-        String browserVersion = caps.getBrowserVersion();
-
-        log.info("Browser: {}", browserName);
-        log.info("Version: {}", browserVersion);
-
-        //Resulation
-        driver.manage().window().setPosition(new Point(0, 0));
-        driver.manage().window().setSize(new Dimension(1920, 1080));
-        //driver.manage().window().maximize();
-        return driver;
+        log.info("Initializing browser with maximum resolution");
+        
+        try {
+            Capabilities caps = ((RemoteWebDriver) driver).getCapabilities();
+            String browserName = caps.getBrowserName();
+            String browserVersion = caps.getBrowserVersion();
+            
+            log.info("Browser: {}", browserName);
+            log.info("Version: {}", browserVersion);
+            
+            // Maximize window - works for both local and remote machines
+            driver.manage().window().maximize();
+            
+            // Get actual screen size after maximization
+            Dimension windowSize = driver.manage().window().getSize();
+            log.info("Window size: {}x{}", windowSize.getWidth(), windowSize.getHeight());
+            
+            return driver;
+        } catch (Exception e) {
+            log.error("Error initializing browser: {}", e.getMessage());
+            return driver;
+        }
     }
 
     public static void quitDriver() {
