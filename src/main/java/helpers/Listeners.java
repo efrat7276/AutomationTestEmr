@@ -1,6 +1,7 @@
 package helpers;
 
 import drivers.DriverManager;
+import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import lombok.extern.slf4j.Slf4j;
 
@@ -11,6 +12,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 
 @Slf4j
@@ -38,36 +40,29 @@ public class Listeners implements ITestListener {
 
     public void onTestFailure(ITestResult result) {   
         log.info(">>> Capturing and saving screenshot for Allure...");
-        captureAndSaveScreenshot(result.getName(),result.getTestClass().getName());
+        captureAndSaveScreenshot();
     }
 
-    /**
-     * Captures screenshot and saves it to allure-results directory.
-     * Called from onTestFailure when a test fails.
-     */
-    @Attachment(value = "Screen-Shot", type = "image/png")
-    public byte[] captureAndSaveScreenshot(String testName,String className) {
-        try {
-            var driver = DriverManager.getInstance();
-            if (driver == null) {
-                log.error("Driver instance is null");
-                return new byte[0];
-            }
-            
-            var screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-          //  var allureDir = new File("allure-results"+File.separator+className);
-          
-            var allureDir = new File("allure-results/SanitySuite1");
-            if (!allureDir.exists()) allureDir.mkdirs();
-            
-            var fileName = FilesHelper.getFileName(testName) + ".png";
-            FileUtils.writeByteArrayToFile(new File(allureDir, fileName), screenshotBytes);
-            log.info("✓ Screenshot saved: {}", fileName);
-            
-            return screenshotBytes;
-        } catch (Exception e) {
-            log.error("Error capturing screenshot: {}", e.getMessage());
-            return new byte[0];
-        }
+ 
+    
+    public void captureAndSaveScreenshot() { // הורדתי פרמטרים מיותרים ל-Allure
+    try {
+        var driver = DriverManager.getInstance();
+        if (driver == null) return;
+        
+        // 1. צילום המסך
+        byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+        
+        // 2. הפקודה הישירה של Allure - זה תמיד עובד!
+        Allure.addAttachment("Failed Screen", new ByteArrayInputStream(screenshotBytes));
+        
+        // 3. אופציונלי: תשאירי את השמירה הידנית שלך לתיקייה נפרדת (לא של אלור) אם את צריכה
+        // FileUtils.writeByteArrayToFile(new File("C:/Temp/snap.png"), screenshotBytes);
+        
+        log.info("✓ Screenshot attached to Allure");
+        
+    } catch (Exception e) {
+        log.error("Error: {}", e.getMessage());
     }
+}
 }
