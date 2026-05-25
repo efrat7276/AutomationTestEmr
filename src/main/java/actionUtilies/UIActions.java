@@ -8,9 +8,11 @@ import pages.addForms.DrugFormPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -21,7 +23,7 @@ public class UIActions {
 
 
     static WebDriverWait wait = DriverManager.getWait();
-
+    static WebDriver driver = DriverManager.getInstance();
     /**
      *
      * @param by locator to find element
@@ -79,17 +81,33 @@ public class UIActions {
     }
 
     public static void click(By locator) {
-    try {
-        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
-        element.click();
-    } catch (StaleElementReferenceException e) {
-        // Retry once
-        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
-        element.click();
-    } catch (ElementClickInterceptedException e) {
-        safeClick(locator);
-    } catch (TimeoutException e) {
-        throw new RuntimeException("Failed to click element: " + locator, e);
+    int attempts = 0;
+    int maxAttempts = 3; // נסיונות חוזרים למקרים של Stale או שינויים דינמיים בדף
+
+    while (attempts < maxAttempts) {
+        try {
+            WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+            element.click();
+            return;
+            
+        } catch (StaleElementReferenceException e) {
+            attempts++;
+            if (attempts >= maxAttempts) {
+                throw new RuntimeException("אלמנט נשאר Stale לאחר " + maxAttempts + " נסיונות: " + locator, e);
+            }
+            
+        } catch (ElementClickInterceptedException e) {
+            try {
+                WebElement element = driver.findElement(locator);
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+                return; // לחיצת ה-JS הצליחה
+            } catch (Exception jsException) {
+                throw new RuntimeException("נכשל ניסיון לחיצה רגיל (Intercepted) וגם ניסיון JavaScript עבור: " + locator, jsException);
+            }
+            
+        } catch (TimeoutException e) {
+            throw new RuntimeException("הזמן קצב (Timeout) עבר. האלמנט לא הפך לזמין ללחיצה: " + locator, e);
+        }
     }
 }
     public static void click(WebElement element) {
