@@ -171,7 +171,7 @@ public class SanitySuite1 extends BaseSuit {
         log.info("* Starting test_08_doctorFillFollowupByDoctor: Doctor fills follow-up notes and saves");
         loginAsDoctor();
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
-        choosePatient(2);
+        choosePatient(PATIENT_1);
         innerMenuPage.navigateToMenuEntry("FollowUp");
         followupPage.addFollowupAndVerify("111", "222", "333", "444", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
@@ -215,7 +215,7 @@ public class SanitySuite1 extends BaseSuit {
 
      }
 
-     @Test(description = "execute all instruction by nurse", dependsOnMethods = {"test_10_approvalAllInstructionByNurse"})
+     @Test(description = "execute all instruction by nurse")
     public void test_13_executeAllInstructionByNurse(){
         log.info("* Starting test_13_executeAllInstructionByNurse: Executing all instructions for the patient");
         loginAsNurse();
@@ -224,7 +224,7 @@ public class SanitySuite1 extends BaseSuit {
         cardexPageNew.executeAndApproveAllToThisShiftAndApproval(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
      
-    @Test(description = "print IV label from cardex", dependsOnMethods = {"test_13_executeAllInstructionByNurse"})
+    @Test(description = "print IV label from cardex")
     public void test_14_printIVLabelFromCardex() {
         log.info("* Starting test_14_printIVLabelFromCardex: Printing IV label from cardex");
         loginAsNurse();
