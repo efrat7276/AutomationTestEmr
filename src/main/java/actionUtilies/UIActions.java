@@ -229,6 +229,18 @@ public class UIActions {
         }
     }
 
+     public static boolean findInList(By list , String text){
+
+        List<WebElement>elemntsList= wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(list));
+        for(WebElement li : elemntsList){
+
+            if(li.getText().equalsIgnoreCase(text)){
+             return true;
+            }
+        }
+        return false;
+    }
+
     public static void searchInList(List<WebElement> list , String text){
 
         for(WebElement li : list){

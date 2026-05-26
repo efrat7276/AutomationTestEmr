@@ -7,6 +7,8 @@ import helpers.QueriesUtils;
 import io.qameta.allure.Description;
 import lombok.extern.slf4j.Slf4j;
 
+import static org.testng.Assert.assertTrue;
+
 import java.sql.SQLException;
 
 import org.testng.annotations.BeforeClass;
@@ -25,6 +27,8 @@ import pages.nurse.Execute.CardexPage;
 import pages.nurse.Execute.CardexPageNew;
 import pages.doctor.FollowupPage;
 import pages.nurse.approval.ApprovalInstructionPage1;
+import pages.nurse.catheter.CatheterAddPage;
+import pages.nurse.catheter.CatheterPage;
 import pages.nurse.wound.WondFormPage;
 import pages.nurse.wound.WoundPage;
 
@@ -33,7 +37,7 @@ import pages.nurse.wound.WoundPage;
 public class SanitySuite1 extends BaseSuit {
 
 
-    private static final int PATIENT_1 = 3;
+    private static final int PATIENT_1 = 1;
     String patientMisparIshpuz =null; 
     MainMenuPage mainMenuPage;
     ApprovalInstructionPage1 approvalInstructionPage; 
@@ -48,7 +52,8 @@ public class SanitySuite1 extends BaseSuit {
     WondFormPage woundFormPage;
     FollowupPage followupPage;
     DischargedPatientListPage dischargedPatientListPage;
-    BloodOrders bloodOrders;      
+    BloodOrders bloodOrders;  
+    CatheterPage catheterPage;    
 
     HospitalDepartment currentDept; 
 
@@ -96,9 +101,10 @@ public class SanitySuite1 extends BaseSuit {
         woundFormPage= new WondFormPage();
         followupPage= new FollowupPage();
         bloodOrders= new BloodOrders();
+        catheterPage = new CatheterPage();
 
     }
-    @Test(description = "renew instruction to spetif patient for Bug -solutinInstructionTimes", enabled = false)
+    @Test(description = "renew instruction to spetif patient for Bug -solutinInstructionTimes")
     public void test_00_renewInstructionToSpetifPatient() throws SQLException {
       log.info("* Starting test_00_renewInstructionToSpetifPatient: Renewing instructions for patient with misparIshpuz = {}", patientMisparIshpuz);
        loginAsDoctor();
@@ -214,7 +220,17 @@ public class SanitySuite1 extends BaseSuit {
       woundFormPage.saveWound(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
 
      }
-
+     @Test(description = "add catheter by nurse")
+     public void test_12_addCatheterByNurse() {
+         log.info("* Starting test_12_addCatheterByNurse: Adding a catheter for the patient");
+         loginAsNurse();
+         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
+         choosePatient(PATIENT_1);
+         cardexPageNew.clickArrowForwardToInnerMenu();
+         innerMenuPage.navigateToMenuEntry("סיעוד");
+         innerMenuPage.navigateToMenuEntry("נקזים וצנתרים");
+         catheterPage.addCatheterBranola(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
+     }
      @Test(description = "execute all instruction by nurse")
     public void test_13_executeAllInstructionByNurse(){
         log.info("* Starting test_13_executeAllInstructionByNurse: Executing all instructions for the patient");
