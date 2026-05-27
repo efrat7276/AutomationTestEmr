@@ -143,7 +143,8 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
             }
         }
     }
-        
+     log.info("click on approval button for all"); 
+     UIActions.waitForElementClickable(btnApprovalAll);
      UIActions.click(btnApprovalAll);
      userSignModalPage.signModal(username,password);
      verifyAllInstructionsApproved();
