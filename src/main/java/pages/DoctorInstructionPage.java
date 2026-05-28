@@ -71,7 +71,6 @@ public class DoctorInstructionPage extends BasePage {
      * click add medicine drug
      */
     public void clickButtonAddInstruction(InstructionType type) {
-        log.info("Clicking 'Add' button for instruction type: {}", type);
         switch (type) {
             case MEDICINE:
                 UIActions.click(btnAddMedicine);
@@ -112,7 +111,6 @@ public class DoctorInstructionPage extends BasePage {
 
     // פונקציות Full Action – דוגמה למספר סוגי הוראות
     public void addMedicineFullAndVerify(String name, String frequency, String dose, String amount, String username, String password) {
-      log.info("Attempting to add medicine with details - Name: {}, Frequency: {}, Dose: {}, Amount: {}", name, frequency, dose, amount);
         clickButtonAddInstruction(InstructionType.MEDICINE);
         drugForm.addOneMedicine(name, frequency, dose, amount, null, null, null, null, null, null, false);
         approveAndVerifyInstructions(username, password);
@@ -194,7 +192,6 @@ public class DoctorInstructionPage extends BasePage {
 
 
     public void approveAndVerifyInstructions(String username, String password) {
-        log.info("Approving instructions with username: {}", username);
         clickButtonSign();
         userSignModalPage.signModal(username, password);
         UIActions.waitForElementClickable(btn_approvalDrug);

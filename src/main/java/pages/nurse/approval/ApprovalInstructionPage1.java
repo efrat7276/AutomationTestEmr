@@ -36,10 +36,10 @@ private final By btnApprovalAll = By.xpath("//button[@id='approvalDrug']");
 public void approveDrugsAndGeneralSelectCurrentDayHour(){
     List<WebElement> allToApprovalRows = UIActions.findElementsWithWait(btnChooseHourCurrentDayDrugAndGeneralBy);
     for (WebElement currentRow : allToApprovalRows) {
-         selectNthOptionFromDropdown(currentRow, 4); // 3 = רביעי
-         log.info("Selected the fourth current day hour for drug instruction.");
-  
+         selectNthOptionFromDropdown(currentRow, 4); 
     }
+         log.info("selected the first hour in current day for all drug instructions.");
+
 }
   
 
@@ -50,19 +50,16 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
            log.info("No liquid instructions found in the timeline.");     
             return;
         }
-        log.info("Found {} liquid instructions in the timeline.", allLiquidTimeline.size());
         for (int i = 0; i < allLiquidTimeline.size(); i++) {
         WebElement currentTimelineRow = allLiquidTimeline.get(i);
         try {
                 currentTimelineRow.findElements(By.xpath("//div[contains(@class,'timeLineInToday ')]")).get(i).click();
-                    log.info("Clicked on timeline entry for liquid instruction in row {}.", i + 1);
-        
-                    // log.info("Clicked approve for liquid instruction in timeline row {}.", i + 1); 
             } catch (Exception e) {
                 log.error("Error processing liquid instruction in timeline row {}: {}", i + 1, e.getMessage());
                 continue;
             }
         }
+        log.info("Clicked on all liquid instruction timelines.");
      }
 
      
@@ -73,7 +70,6 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
            log.info("No blood product instructions found in the timeline.");     
             return;
         }
-        log.info("Found {} blood product instructions in the timeline.", allBloodProductTimeline.size());
         for (int i = 0; i < allBloodProductTimeline.size(); i++) {
             WebElement currentTimelineRow = allBloodProductTimeline.get(i);
             try {
@@ -86,6 +82,7 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
                 continue;
             }
         }
+        log.info("Clicked on all blood product instruction timelines and approved them.");
      }
 
     /**
@@ -99,10 +96,8 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
          if (options.isEmpty()) {
              throw new RuntimeException("לא נמצאו אפשרויות ברשימה הנפתחת.");
          }
-         log.info("Attempting to select option at index {}.", index);
         if (options.size() > index) {
           UIActions.click(options.get(index));
-            log.info("Selected option at index {} successfully.", index);
         } else {
             throw new RuntimeException("לא נמצאה אפשרות באינדקס " + index + ". נמצאו רק " + options.size() + " אפשרויות.");
         }
@@ -132,7 +127,6 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
                 ((JavascriptExecutor) DriverManager.getInstance()).executeScript("arguments[0].scrollIntoView({block: 'center'});", btn);
                 wait.until(ExpectedConditions.elementToBeClickable(btn));
                 btn.click();
-                log.info("Clicked on approval button #" + (i + 1));
             }
             catch (ElementClickInterceptedException e) {
                 log.warn("Click intercepted for button " + i + ". Trying JS click as fallback.");
@@ -142,14 +136,11 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
                 log.error("Failed to click button " + i + ": " + e.getMessage());
             }
         }
-    }
-     log.info("click on approval button for all"); 
-     UIActions.waitForElementClickable(btnApprovalAll);
-     UIActions.click(btnApprovalAll);
+            log.info("Clicked on all individual approval buttons.");
+            UIActions.click(btnApprovalAll);
+     log.info("Clicked on approval button for all"); 
      userSignModalPage.signModal(username,password);
-     verifyAllInstructionsApproved();
-       
-
+    }
     }
    
 
@@ -165,6 +156,6 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
     public void approvalAllInstructionByNurseAndVerify(String username, String password){
         UIActions.click(btnApprovalAll);
         userSignModalPage.signModal(username,password);
-       //
+        verifyAllInstructionsApproved();
    }
 }

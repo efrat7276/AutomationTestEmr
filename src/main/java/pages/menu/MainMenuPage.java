@@ -63,8 +63,9 @@ public class MainMenuPage extends BasePage {
     }
 
     public void logout(){
-        log.info("Logging out from the application.");
         UIActions.click(iconToExitBy);
+        log.info("Logging out from the application successfully.");
+
         
       UIActions.waitForElementClickable(By.xpath("//app-msg-modal//button[contains(@class,'btn-submit')]"));
         UIActions.click(By.xpath("//app-msg-modal//button[contains(@class,'btn-submit')]"));
@@ -73,6 +74,7 @@ public class MainMenuPage extends BasePage {
     public void verifyPatientTableIsDisplayed() {
         UIActions.waitForListToHaveElements(UIActions.findElementsWithWait(patientTableBy));
         assertTrue(UIActions.findElementWithWait(patientTableBy).isDisplayed(), "Patient table should be displayed but it's not.");
+        log.info("Patient table is displayed successfully.");
     }
 
 }

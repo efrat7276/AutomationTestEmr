@@ -13,8 +13,6 @@ import java.util.List;
 public class DrugFormPage extends BasePage {
 
     public DrugFormPage() {
-       
-        log.info("Waiting for drug form to load");
         UIActions.waitForSpinnerToDisappear();
     }
 
@@ -125,9 +123,7 @@ public class DrugFormPage extends BasePage {
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
-        log.info("Choosing medicine: {}", nameMed);
         UIActions.typeText(inp_selectDrug, nameMed);
-        log.info("Waiting for medicine search results to load and clicking the top result");
         UIActions.click(inp_selectDrugTopList);
         if(UIActions.waitForVisible(duplicateInstructionModal))
           UIActions.click(duplicateInstructionModalConfirmButton);
@@ -300,7 +296,6 @@ public class DrugFormPage extends BasePage {
     private void fillCommonFields(@Nullable String dosage) {
         // 1. הזנת מינון
         if (dosage != null && !dosage.isEmpty()) {
-            log.info("Filling dosage: {}", dosage);
             UIActions.clearText(input_drugDosage);
             UIActions.typeText(input_drugDosage, dosage);
             // TODO: לוגיקה לבחירת יחידות מידה
@@ -313,7 +308,6 @@ public class DrugFormPage extends BasePage {
      * @param timesDaily מספר הפעמים ביום לבחירה (כמחרוזת, לדוגמה "2") - אופציונלי.
      */
     private void handleDaily(@Nullable String timesDaily) {
-        log.info("Handling 'Daily' possibility with timesDaily: {}", timesDaily);
         if (timesDaily != null && !timesDaily.isEmpty()) {
             UIActions.click(btn_numberOfTimesDaily);
             UIActions.selectFromList(numberOfTimesDaily, timesDaily);
@@ -321,7 +315,6 @@ public class DrugFormPage extends BasePage {
     }
 
     private void handleOnceOnly(@Nullable String hourToGive) {
-        log.info("Handling 'Once Only' possibility with hourToGive: {}", hourToGive);
         if (hourToGive != null && !hourToGive.isEmpty()) {
             UIActions.click(btn_hour);
             UIActions.selectFromList(hourList, hourToGive);
@@ -337,7 +330,6 @@ public class DrugFormPage extends BasePage {
             @Nullable String maxTimesPerDay,
             @Nullable String minInterval
     ) {
-        log.info("Handling 'SOS' possibility with maxTimesPerDay: {} and minInterval: {}", maxTimesPerDay, minInterval);
         // 1. הזנת מספר מקסימלי לפעמים ביום
         if (maxTimesPerDay != null && !maxTimesPerDay.isEmpty()) {
             UIActions.typeText(btn_sosMaxTimesPerDay, maxTimesPerDay);
@@ -359,7 +351,6 @@ public class DrugFormPage extends BasePage {
             @Nullable String timesPerWeek,
             @Nullable List<String> daysOfWeek
     ) {
-        log.info("Handling 'Weekly' possibility with timesPerWeek: {} and daysOfWeek: {}", timesPerWeek, daysOfWeek);
         // 1. בחירת מספר הפעמים בשבוע
         if (timesPerWeek != null && !timesPerWeek.isEmpty()) {
             UIActions.click(btn_WeekNumberOfTimes);
@@ -378,7 +369,6 @@ public class DrugFormPage extends BasePage {
      * @param everyXTime תדירות לבחירה מהרשימה (לדוגמה: "6 שעות") - אופציונלי.
      */
     private void handleByHour(@Nullable String everyXTime) {
-        log.info("Handling 'By Hour' possibility with everyXTime: {}", everyXTime);
         if (everyXTime != null && !everyXTime.isEmpty()) {
             UIActions.click(btn_everyXTime);
             UIActions.selectFromList(everyXTimeList, everyXTime);
@@ -408,7 +398,6 @@ public class DrugFormPage extends BasePage {
      * @param flowRate קצב הזרימה (מ"ל לשעה) - אופציונלי.
      */
     private void handleContinuousFluid(@Nullable String flowRate) {
-        log.info("Handling 'Continuous' fluid with flowRate: {}", flowRate);
         if (flowRate != null && !flowRate.isEmpty()) {
             UIActions.typeText(inp_flowRate, flowRate);
         }
@@ -420,7 +409,6 @@ public class DrugFormPage extends BasePage {
      * @param timesPerDay מספר פעמים ביום - אופציונלי.
      */
     private void handleTimeLimitFluid(@Nullable String timesPerDay) {
-        log.info("Handling 'Time Limit' fluid with timesPerDay: {}", timesPerDay);
         if (timesPerDay != null && !timesPerDay.isEmpty()) {
             UIActions.click(btn_durationList);
             UIActions.selectFromList(durationList, timesPerDay);

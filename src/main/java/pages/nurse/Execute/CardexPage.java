@@ -76,7 +76,6 @@ public class CardexPage extends BasePage {
     }
 
     public void approvalAllExecution(String username, String password){
-        log.info("Approving all executions with username: {}", username);
         UIActions.click(btn_approval);
         userSignModalPage.signModal(username,password);
     }

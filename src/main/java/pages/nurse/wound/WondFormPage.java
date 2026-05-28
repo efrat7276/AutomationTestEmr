@@ -67,26 +67,6 @@ public By button_addWound =By.id("btnAddMedicine");
         else if (UIActions.isElementDisplayed(input_woundLocation)) {
             UIActions.typeText(input_woundLocation, "יד");
         }
-        // if(UIActions.isElementDisplayed(radio_woundSituation)) {
-        //     UIActions.click(radio_woundSituation);
-        // }
-
-        //  if (degree != null) {
-        //      UIActions.click(button_provisionAmount);
-        //      UIActions.selectFromList(option_provisionAmount, degree.toString());
-        //  }
-
-        //  if (treatmentInstructionCount != null) {
-        //      UIActions.click(button_provisionType);
-        //      UIActions.selectFromList(option_provisionType, "הוראות טיפול");
-        //      UIActions.typeText(input_provisionTypeComment, "מספר הוראות טיפול: " + treatmentInstructionCount);
-        //  }
-
-        //  if (closeOrOpen != null) {
-        //      UIActions.click(dropdown_closeOfEdges);
-        //      UIActions.click(options_closeOfEdges);
-        //  }
-
 
         if (UIActions.isElementDisplayed(dropdown_woundSide)) {
             UIActions.click(dropdown_woundSide);
@@ -106,7 +86,6 @@ public By button_addWound =By.id("btnAddMedicine");
     }
 
     public void saveWound(String username, String password) {
-        log.info("Saving wound and signing with username: {}", username);  
         clickSaveWound();
         
         userSignModalPage.signModal(username, password);
@@ -116,7 +95,7 @@ public By button_addWound =By.id("btnAddMedicine");
             e.printStackTrace();
         } // Wait for the save operation to complete and the page to update
          assertTrue(UIActions.isElementDisplayed(button_addWound), "Title 'פצעים' is not displayed after saving wound, expected to be on the wounds page");
-          log.info("Wound saved and verified successfully");
+          log.info("wound saved successfully");
 
     }
     // public void verifyWoundSaved() {

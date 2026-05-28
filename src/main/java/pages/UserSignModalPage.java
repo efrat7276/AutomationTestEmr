@@ -35,9 +35,6 @@ public class UserSignModalPage {
             UIActions.typeText(inputPassword, password);
             UIActions.waitForVisible(btnConfirm);
             UIActions.click(btnConfirm);
-           
-            log.info("approval process completed successfully by user: " + username);
-
         } catch (Exception e) {
             log.error("approval process failed for user: " + username + ". Error: " + e.getMessage());
        }

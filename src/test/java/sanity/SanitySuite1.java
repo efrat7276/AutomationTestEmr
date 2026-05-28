@@ -72,14 +72,14 @@ public class SanitySuite1 extends BaseSuit {
         log.error("Department '{}' not found! Using default: {}", 
                   deptNameParam, currentDept.getDisplayName());
     }
-    log.info("* Starting Pre-Test Setup: Cleaning up patient data and preparing test environment");
-       patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient(currentDept.getCode())).get(0);
-       boolean isRemoved = removePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
-         if (isRemoved) {
-              log.info("* Patient data removed successfully for misparIshpuz = {}", patientMisparIshpuz);
-         } else {
-              log.warn("* No patient data found to remove for misparIshpuz = {}", patientMisparIshpuz);
-         }
+ //   log.info("* Starting Pre-Test Setup: Cleaning up patient data and preparing test environment");
+  //     patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient(currentDept.getCode())).get(0);
+  //     boolean isRemoved = removePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
+        //  if (isRemoved) {
+        //       log.info("* Patient data removed successfully for misparIshpuz = {}", patientMisparIshpuz);
+        //  } else {
+        //       log.warn("* No patient data found to remove for misparIshpuz = {}", patientMisparIshpuz);
+        //  }
        // cancelAllWoundsForPatient(QueriesUtils.cancelAllWoundsForPatient, patientMisparIshpuz);
        log.info("* Pre-Test Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
     }
@@ -131,15 +131,14 @@ public class SanitySuite1 extends BaseSuit {
 
     @Test(description = "logout and verify login page")
     public void test_03_logout(){
-        log.info("* Starting test_03_logout: Logging out and verifying login page");
+        log.info("* Starting test_03_logout: Logging out");
         loginAsDoctor();
         mainMenuPage.logout();
-        // Add verification for login page here
     }
 
     @Test(description = "login as doctor and verify patient list is displayed")
     public void test_04_patientListIsDisplayed(){
-        log.info("* Starting test_04_patientListIsDisplayed: Logging in as doctor and verifying patient list tab");
+        log.info("* Starting test_04_patientListIsDisplayed: Logging in as doctor");
         loginAsDoctor();
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         mainMenuPage.verifyPatientTableIsDisplayed();
@@ -147,7 +146,7 @@ public class SanitySuite1 extends BaseSuit {
 
     @Test(description="discharded patient list visibility")
     public void test_05_dischargedPatientListVisibility() {
-        log.info("* Starting test_05_dischargedPatientListVisibility: Logging in as doctor and verifying discharged patient list visibility");
+        log.info("* Starting test_05_dischargedPatientListVisibility: Logging in as doctor ");
         loginAsDoctor();
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         innerMenuPage.navigateToMenuEntry("רשימת משוחררים");
@@ -160,7 +159,6 @@ public class SanitySuite1 extends BaseSuit {
         loginAsDoctor();
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);
-        // Add verification for patient box here
     }
 
     @Test(description = "adding a medicine")
@@ -170,6 +168,8 @@ public class SanitySuite1 extends BaseSuit {
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);
         doctorInstructionPage.addMedicineFullAndVerify("CARBOplatin", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+      log.info("Added medicine instruction successfully.");
+    
     }
 
      @Test(description = "Doctor fills follow-up notes and saves")
@@ -192,8 +192,7 @@ public class SanitySuite1 extends BaseSuit {
         doctorInstructionPage.addGeneralInstructionAndClose();
         doctorInstructionPage.addBloodProductAndClose("דם דחוס", "1");
         doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
-        }
-
+    }
 
     @Test(description = "approval all instruction by nurse")
     public void test_10_approvalAllInstructionByNurse(){
@@ -204,19 +203,17 @@ public class SanitySuite1 extends BaseSuit {
             approvalInstructionPage.approveAllInstructions(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
 
-  
   @Test(description ="add a simple wound by nurse")
   public void test_11_addSimpleWoundByNurse() {
       log.info("* Starting test_11_addSimpleWoundByNurse: Adding a simple wound for the patient");
       loginAsNurse();
       chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
       choosePatient(PATIENT_1);
-      //בהנחה שבבחירת המטופל נJava: Configure Java Runtimeכנס למסך קרדקס
       cardexPageNew.clickArrowForwardToInnerMenu();
       innerMenuPage.navigateToMenuEntry("סיעוד");
       innerMenuPage.navigateToMenuEntry("פצעים");
       woundPage.clickAddWound();
-       woundFormPage.addNewWound("פצע איסכמי", null, null, null);
+      woundFormPage.addNewWound("פצע איסכמי", null, null, null);
       woundFormPage.saveWound(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
 
      }
@@ -231,7 +228,8 @@ public class SanitySuite1 extends BaseSuit {
          innerMenuPage.navigateToMenuEntry("נקזים וצנתרים");
          catheterPage.addCatheterBranola(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
      }
-     @Test(description = "execute all instruction by nurse")
+
+    @Test(description = "execute all instruction by nurse")
     public void test_13_executeAllInstructionByNurse(){
         log.info("* Starting test_13_executeAllInstructionByNurse: Executing all instructions for the patient");
         loginAsNurse();
