@@ -140,7 +140,7 @@ public class BaseSuit {
        return patientDetails;
     }
 
-    public static boolean removePatientDataBeforeTest(String query, String param) throws SQLException {
+    public static boolean preparePatientDataBeforeTest(String query, String param) throws SQLException {
     log.info("Executing pre-test data cleanup for patient with parameter: {}", param);
         String formattedQuery = String.format(query, param);
     return DBExecuter.isExecutionSuccessful(formattedQuery);
