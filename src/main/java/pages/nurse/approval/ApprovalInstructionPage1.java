@@ -118,11 +118,12 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
       approvalAllbloodProduct();
     WebDriverWait wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(10));
     List<WebElement> approvalAllBtn = DriverManager.getInstance().findElements(btnApprovalBy);
+   int expectedButtons = approvalAllBtn.size();
     if (approvalAllBtn.isEmpty()) {
         log.warn("Approval All button is not displayed after processing individual instructions.");
     } 
     else {
-        for (int i = 0; i < approvalAllBtn.size(); i++) {
+        for (int i = 0,j=0; i < approvalAllBtn.size(); i++,j++) {
             try {
                 WebElement btn = DriverManager.getInstance().findElements(btnApprovalBy).get(i);
                 ((JavascriptExecutor) DriverManager.getInstance()).executeScript("arguments[0].scrollIntoView({block: 'center'});", btn);
@@ -136,8 +137,15 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
             } catch (Exception e) {
                 log.error("Failed to click button " + i + ": " + e.getMessage());
             }
+            if(j==expectedButtons-1){
+                log.info("Clicked on all individual approval buttons.");
+            }
+            else {
+                log.info("Clicked on approval button {} of {}.", i + 1, expectedButtons);
+            }
         }
-            log.info("Clicked on all individual approval buttons.");
+       
+           // log.info("Clicked on all individual approval buttons.");
             UIActions.click(btnApprovalAll);
      log.info("Clicked on approval button for all"); 
      userSignModalPage.signModal(username,password);
