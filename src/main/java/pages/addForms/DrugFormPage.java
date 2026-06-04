@@ -162,6 +162,7 @@ public class DrugFormPage extends BasePage {
 
     }
     public void editMedicine(@Nullable String possibility, @Nullable String dosage) {
+         UIActions.waitForElementClickable(possibilityDaily);
         log.info("Editing medicine - Possibility: {}, Dosage: {}", possibility, dosage);
         if (possibility != null && !possibility.isEmpty()) {
             By possibilityLocator = getDrugPossibilityLocator(possibility);
