@@ -36,7 +36,8 @@ private final By btnApprovalAll = By.xpath("//button[@id='approvalDrug']");
 public void approveDrugsAndGeneralSelectCurrentDayHour(){
     List<WebElement> allToApprovalRows = UIActions.findElementsWithWait(btnChooseHourCurrentDayDrugAndGeneralBy);
     for (WebElement currentRow : allToApprovalRows) {
-         selectNthOptionFromDropdown(currentRow, 4); 
+        if(currentRow.isEnabled())
+           selectNthOptionFromDropdown(currentRow, 4); 
     }
          log.info("selected the first hour in current day for all drug instructions.");
 

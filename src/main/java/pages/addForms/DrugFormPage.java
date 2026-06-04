@@ -188,7 +188,6 @@ public class DrugFormPage extends BasePage {
             @Nullable String dosage,
             @Nullable String flowRateOrTimes
     ) {
-        log.info("Attempting to fill details of fluid - Name: {}, Possibility: {}, Dosage: {}, FlowRateOrTimes: {}", nameFluid, possibility, dosage, flowRateOrTimes);
         // 1. המתנה והזנת שם הנוזל
         try {
             Thread.sleep(3000);  // המתנה קטנה יותר לנוזלים
@@ -199,20 +198,13 @@ public class DrugFormPage extends BasePage {
         UIActions.click(inp_selectDrugTopList);
          if(UIActions.waitForVisible(duplicateInstructionModal))
           UIActions.click(duplicateInstructionModalConfirmButton);
-
-        // 2. בחירת התדירות
         By possibilityLocator = getFluidPossibilityLocator(possibility);
         UIActions.waitForElementClickable(possibilityLocator);
         UIActions.click(possibilityLocator);
-
-        // 3. מילוי פרטים כללים
         fillCommonFields(dosage);
-
-        // 4. קריאה לפונקציה הטיפול הספציפית לנוזל
         handleFluidType(possibility, flowRateOrTimes);
-
-        // 5. לחיצה על כפתור 'הוספה וסגירה'
         UIActions.click(btn_addAndClose);
+        log.info("Added fluid '{}' with possibility '{}'. Dosage: {}.", nameFluid, possibility, dosage);
     }
 
     // ----------------------------------------------------------------------------------

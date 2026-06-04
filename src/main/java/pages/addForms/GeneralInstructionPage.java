@@ -6,9 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
-
+@Slf4j
 public class GeneralInstructionPage {
 
     public By generalInsMenu = By.tagName("general-ins-menu");
@@ -35,5 +36,6 @@ public class GeneralInstructionPage {
         UIActions.click(btn_possbilities);
          UIActions.selectFromList(possbilityList, "Once Only");
         UIActions.click(btn_save);
+        log.info("general instruction added and form closed.");
     }
 }

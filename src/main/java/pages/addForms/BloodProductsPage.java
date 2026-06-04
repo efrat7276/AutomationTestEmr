@@ -1,9 +1,11 @@
 package pages.addForms;
 
 import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
+
 import org.openqa.selenium.By;
 import pages.BasePage;
-
+@Slf4j
 public class BloodProductsPage extends BasePage {
 
     // Locators copied from previous BloodProducts helper
@@ -62,6 +64,7 @@ public class BloodProductsPage extends BasePage {
         setComment("בדיקות אוטומטית - הוספת מוצר דם");
         // finalize
         UIActions.click(btn_addAndClose);
+        log.info("Blood product '{}' with amount '{}' added and form closed.", productName, amount);
     }
 
 }

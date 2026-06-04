@@ -18,9 +18,7 @@ public class QueriesUtils {
 }
                         
     public static final String removePatient_from_tbl =
-             "EXEC cpoe.delete_Instruction_Efrat @mispar_ishpuz = %s, @typeid = NULL";
+             "EXEC cpoe.preparePatientBeforeTest @mispar_ishpuz = %s, @typeid = NULL";
              // "DELETE FROM cpoe.drugInstructionExecution WHERE cpoeInstructionID = 3835541";
 
-   public static final String cancelAllWoundsForPatient =
-            "EXEC sp_ClosePetza @MisparIshpuz = %s";
 }
