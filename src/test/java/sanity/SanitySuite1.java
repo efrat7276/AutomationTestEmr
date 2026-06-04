@@ -58,7 +58,7 @@ public class SanitySuite1 extends BaseSuit {
     HospitalDepartment currentDept; 
 
     @BeforeClass
-    public void preTest() throws SQLException{
+    public void preClass() throws SQLException{
 
     String deptNameParam = System.getProperty("department", "אורטופדיה");
     HospitalDepartment foundDept = HospitalDepartment.getByHebrewName(deptNameParam);
@@ -80,7 +80,7 @@ public class SanitySuite1 extends BaseSuit {
          } else {
               log.warn("* No patient data found to remove for misparIshpuz = {}", patientMisparIshpuz);
          }
-       log.info("* Pre-Test Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
+       log.info("* Pre-Class Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
     }
 
     @BeforeMethod

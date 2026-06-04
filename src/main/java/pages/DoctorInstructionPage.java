@@ -202,6 +202,13 @@ public class DoctorInstructionPage extends BasePage {
      int index=0;
     //לבדוק בכלל אם יש רשימה ולא הכול
     int count = UIActions.findElementsWithWait(chekBoxList).size();
+    if(count==0)   
+        {log.info("No instructions found to renew.");
+         return;
+      }
+        else {
+            log.info("Found {} instructions to renew.", count);
+        }
     do{
      List<WebElement> checkBoxes = UIActions.findElementsWithWait(chekBoxList);
      // WebElement cb =  checkBoxes.get(0);
