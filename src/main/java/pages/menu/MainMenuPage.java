@@ -15,6 +15,9 @@ import org.checkerframework.checker.guieffect.qual.UI;
 
 @Slf4j
 public class MainMenuPage extends BasePage {
+
+      private By txt_username = By.id("user_name");
+    private By txt_password = By.id("password");
     private By roleUserBy = By.xpath("//div//li[@class='hebrewName']//span[@class='dataBase'][2]");
     private By numVersionBy = By.xpath("//div//li[@class='hebrewName']//div/button[@id='dropdownBasic1']");
     private By iconToExitBy = By.xpath("//div//ul/li[@class='top-icons']//i");
@@ -65,10 +68,11 @@ public class MainMenuPage extends BasePage {
     public void logout(){
         UIActions.click(iconToExitBy);
         log.info("Logging out from the application successfully.");
-
-        
       UIActions.waitForElementClickable(By.xpath("//app-msg-modal//button[contains(@class,'btn-submit')]"));
         UIActions.click(By.xpath("//app-msg-modal//button[contains(@class,'btn-submit')]"));
+        assertTrue(UIActions.waitForVisible(txt_username), "Username field should be visible after logout but it's not.");
+
+    
     }
 
     public void verifyPatientTableIsDisplayed() {

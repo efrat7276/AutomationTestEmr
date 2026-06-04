@@ -161,6 +161,19 @@ public class DrugFormPage extends BasePage {
         log.info("Added medicine '{}' with possibility '{}'. Dosage: {}. Also executed: {}.", nameMed, possibility, dosage, alsoExecute);
 
     }
+    public void editMedicine(@Nullable String possibility, @Nullable String dosage) {
+        log.info("Editing medicine - Possibility: {}, Dosage: {}", possibility, dosage);
+        if (possibility != null && !possibility.isEmpty()) {
+            By possibilityLocator = getDrugPossibilityLocator(possibility);
+            UIActions.waitForElementClickable(possibilityLocator);
+            UIActions.click(possibilityLocator);
+        }
+        if (dosage != null && !dosage.isEmpty()) {
+            fillCommonFields(dosage);
+        }
+        UIActions.click(btn_add);
+        
+    }
 
     private void tryExecuteInForm() {
         log.info("Attempting to click 'Execute in Form' button if available...");

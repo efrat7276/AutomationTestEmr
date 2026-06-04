@@ -73,15 +73,15 @@ public class SanitySuite1 extends BaseSuit {
                   deptNameParam, currentDept.getDisplayName());
     }
       patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient(currentDept.getCode())).get(0);
-      boolean isSucceeded =
-       preparePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
+     boolean isSucceeded=
+      preparePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
          if (isSucceeded) {
               log.info("* Patient data removed successfully for misparIshpuz = {}", patientMisparIshpuz);
          } else {
               log.warn("* No patient data found to remove for misparIshpuz = {}", patientMisparIshpuz);
          }
        log.info("* Pre-Class Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
-    }
+     }
 
     @BeforeMethod
     public void setUp(){
@@ -276,6 +276,15 @@ public class SanitySuite1 extends BaseSuit {
         UIActions.waitForSpinnerToDisappear();
         cardexPageNew.verifyDrugExecuted("Aspirin");
 
+    }
+
+    @Test(description = "edit drug")
+    public void test_17_editDrug() {
+        log.info("* Starting test_17_editDrug: Editing a drug instruction for the patient");
+        loginAsDoctor();
+        chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
+        choosePatient(PATIENT_1);
+        doctorInstructionPage.editFirstDrugInstruction(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD, null, "250");
     }
 
     

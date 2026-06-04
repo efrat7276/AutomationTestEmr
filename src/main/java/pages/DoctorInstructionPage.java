@@ -16,6 +16,7 @@ import pages.addForms.BloodProductsPage;
 import actionUtilies.UIActions;
 import static org.testng.Assert.assertTrue;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 @Slf4j
@@ -60,12 +61,12 @@ public class DoctorInstructionPage extends BasePage {
     private By btnAddGeneralInstruction = By.xpath("//section[@id='generalIns']//button"); // הוראה כללית
     private By btnAddNutrition = By.xpath("//section[@id='nutrition']//button[@id='btnAddMedicine']"); // תזונה
     private By btnAddBloodProduct = By.xpath("//section[@id='blood-product']//button"); // מוצר דם
-    private By btnImportMedicine = By.id("btnImportMedicine");          // יבוא תרופה
     private By btnAddFluid = By.id("btnAddMedicine");                      // נוזל / דילול
     private By btn_approvalDrug = By.id("approvalDrug");
     private By chekBoxList = By.xpath("//*[@id='Renew']//label[input[@type='checkbox']]"); // כל ה-checkbox של חידוש הוראות
-
-
+    private By btn_editFirstDrug = By.xpath("//button[contains(@id, 'עדכן')][1]"); // כפתור עריכה של ההוראה הראשונה ברשימה, לדוגמה
+    private By btn_stopFirstDrug = By.xpath("//button[contains(@id, 'עצור')][1]"); // כפתור עצור של ההוראה הראשונה ברשימה, לדוגמה
+    private By btn_pauseFirstDrug = By.xpath("//button[contains(@id, 'השהה')][1]"); // כפתור השהה של ההוראה הראשונה ברשימה, לדוגמה
 
     /**
      * click add medicine drug
@@ -230,6 +231,17 @@ public class DoctorInstructionPage extends BasePage {
      while(count>0);
      approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
+    public void editFirstDrugInstruction(String username, String password, @Nullable String possibility, @Nullable String dose) {
+        log.info("Editing first drug instruction - Possibility: {}, Dose: {}", possibility, dose);
+        UIActions.click(btn_editFirstDrug);
+        UIActions.waitForSpinnerToDisappear();
+     //   verifySecondTitle(InstructionType.MEDICINE);
+        drugForm.editMedicine( possibility, dose);
+        
+        log.info("Approving edited drug instruction...");
+        approveAndVerifyInstructions(username, password);
+    }
+    
 
     public void verifyDoctorApproval() {
         log.info("Verifying doctor approval");
@@ -237,4 +249,5 @@ public class DoctorInstructionPage extends BasePage {
         assertTrue(UIActions.getText(btn_approvalDrug).contains("0"),"Expected approval button text to contain '0' but got '" + UIActions.getText(btn_approvalDrug) + "'");
     
     }
+
 }
