@@ -74,7 +74,7 @@ public class SanitySuite1 extends BaseSuit {
     }
       patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient(currentDept.getCode())).get(0);
      boolean isSucceeded=
-      preparePatientDataBeforeTest(QueriesUtils.removePatient_from_tbl, patientMisparIshpuz);
+      preparePatientDataBeforeTest(QueriesUtils.preparePatientData, patientMisparIshpuz);
          if (isSucceeded) {
               log.info("* Patient data removed successfully for misparIshpuz = {}", patientMisparIshpuz);
          } else {

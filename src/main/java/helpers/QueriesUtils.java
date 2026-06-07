@@ -17,7 +17,7 @@ public class QueriesUtils {
           "ORDER BY kldb.dep_bed_sort ASC";
 }
                         
-    public static final String removePatient_from_tbl =
+    public static final String preparePatientData =
              "EXEC cpoe.preparePatientBeforeTest @mispar_ishpuz = %s, @typeid = NULL, @isHasaraTzantar = 1, @isBitulPetza = 1";
              // "DELETE FROM cpoe.drugInstructionExecution WHERE cpoeInstructionID = 3835541";
 
