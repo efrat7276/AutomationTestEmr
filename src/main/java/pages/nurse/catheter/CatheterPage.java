@@ -45,6 +45,8 @@ public class CatheterPage {
     private void saveCatheter(String username, String password){
         UIActions.click(submitButtonBy);
         userSignModalPage.signModal(username, password);
+        UIActions.waitForSpinnerToDisappear();
+        UIActions.waitForInvisibility(submitButtonBy);
     }
 
     public void isCatheterInActiveTable(String catheterName){

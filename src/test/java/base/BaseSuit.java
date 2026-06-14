@@ -84,11 +84,17 @@ public class BaseSuit {
     }
 
     protected void choosePatient(int patientIndex) {
-        UIActions.waitForSpinnerToDisappear();
-        log.info("Choosing patient at index: {}", patientIndex);
-        UIActions.waitForVisible(patientsListPage.list_patients);
-        patientsListPage.choosePatient(patientIndex);
-        patientBoxPage.verifyPatientDetailsExisting();
+        try {
+            UIActions.waitForSpinnerToDisappear();
+            log.info("Choosing patient at index: {}", patientIndex);
+            UIActions.waitForVisible(patientsListPage.list_patients);
+            patientsListPage.choosePatient(patientIndex);
+            log.info("✓ Successfully selected patient at index {}", patientIndex);
+            patientBoxPage.verifyPatientDetailsExisting();
+        } catch (Exception e) {
+            log.error("✗ FAILED to choose patient at index {}: {}", patientIndex, e.getMessage(), e);
+            throw new RuntimeException("Patient selection failed at index " + patientIndex, e);
+        }
     }
 
     protected void chooseDepartmentVerifyListPatients(String departmentName) {
