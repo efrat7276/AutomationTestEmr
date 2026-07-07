@@ -2,7 +2,14 @@ package pages;
 
 import actionUtilies.UIActions;
 import lombok.extern.slf4j.Slf4j;
+
+import java.time.Duration;
+import org.openqa.selenium.WebDriver;
+import drivers.DriverManager;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 @Slf4j
 public class UserSignModalPage {
@@ -35,8 +42,16 @@ public class UserSignModalPage {
             UIActions.typeText(inputPassword, password);
             UIActions.waitForVisible(btnConfirm);
             UIActions.click(btnConfirm);
+            waitForModalToClosed();
+            
         } catch (Exception e) {
             log.error("approval process failed for user: " + username + ". Error: " + e.getMessage());
        }
+    }
+
+       private void waitForModalToClosed() {
+        WebDriverWait wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//app-user-sign-modal")));
+        log.info("Modal closed successfully after signing");
     }
 }

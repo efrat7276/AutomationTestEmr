@@ -31,6 +31,8 @@ import pages.nurse.catheter.CatheterAddPage;
 import pages.nurse.catheter.CatheterPage;
 import pages.nurse.wound.WondFormPage;
 import pages.nurse.wound.WoundPage;
+import pages.patient_admin.DocumentsPage;
+import pages.patient_admin.ImagingPage;
 
 @Slf4j
 @org.testng.annotations.Listeners(helpers.Listeners.class)
@@ -48,6 +50,8 @@ public class SanitySuite1 extends BaseSuit {
     DrugFormPage drugForm;
     PatientsListPage patientsListPageLocal ;
     ChooseDepartmentListPage chooseDepartmentListPageLocal;
+    DocumentsPage documentsPage;
+    ImagingPage imagingPage;
     WoundPage woundPage;
     WondFormPage woundFormPage;
     FollowupPage followupPage;
@@ -72,16 +76,20 @@ public class SanitySuite1 extends BaseSuit {
         log.error("Department '{}' not found! Using default: {}", 
                   deptNameParam, currentDept.getDisplayName());
     }
-      patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient(currentDept.getCode())).get(0);
-     boolean isSucceeded=
-      preparePatientDataBeforeTest(QueriesUtils.preparePatientData, patientMisparIshpuz);
-         if (isSucceeded) {
-              log.info("* Patient data removed successfully for misparIshpuz = {}", patientMisparIshpuz);
-         } else {
-              log.warn("* No patient data found to remove for misparIshpuz = {}", patientMisparIshpuz);
-         }
-       log.info("* Pre-Class Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
-     }
+    //   patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient(currentDept.getCode())).get(0);
+    //  boolean isSucceeded=
+    //   preparePatientDataBeforeTest(QueriesUtils.preparePatientData, patientMisparIshpuz);
+    //      if (isSucceeded) {
+    //           log.info("* Patient data removed successfully for misparIshpuz = {}", patientMisparIshpuz);
+    //      } else {
+    //           log.warn("* No patient data found to remove for misparIshpuz = {}", patientMisparIshpuz);
+    //      }
+    //    log.info("* Pre-Class Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
+    
+    
+    }
+
+  
 
     @BeforeMethod
     public void setUp(){
@@ -101,6 +109,8 @@ public class SanitySuite1 extends BaseSuit {
         followupPage= new FollowupPage();
         bloodOrders= new BloodOrders();
         catheterPage = new CatheterPage();
+        documentsPage= new DocumentsPage();
+        imagingPage= new ImagingPage();
 
     }
     @Test(description = "renew instruction to spetif patient for Bug -solutinInstructionTimes")
@@ -199,9 +209,22 @@ public class SanitySuite1 extends BaseSuit {
             loginAsNurse();
             chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
             choosePatient(PATIENT_1);
-            approvalInstructionPage.approveAllInstructions(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
-    }
+            approvalInstructionPage.approveAllInstructionsAndVerify(false, true, false , Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
+  
+        }
 
+    // @Test(description = "approval blood product  by nurse for only blood product instruction")
+    // public void test_10_approvalBloodProductByNurse() {
+    //     log.info("* Starting test_10_approvalBloodProductByNurse: Approving blood product instruction for the patient");
+    //     loginAsNurse();
+    //     chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
+    //     choosePatient(PATIENT_1);
+    //     approvalInstructionPage.approvalAllbloodProduct();
+
+    //  userSignModalPage.signModal(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
+
+
+    // }
   @Test(description ="add a simple wound by nurse")
   public void test_11_addSimpleWoundByNurse() {
       log.info("* Starting test_11_addSimpleWoundByNurse: Adding a simple wound for the patient");
@@ -296,6 +319,80 @@ public class SanitySuite1 extends BaseSuit {
         innerMenuPage.navigateToMenuEntry("לקיחת דמים");
     //    bloodOrders
     }
+
+  @Test(description = "adding a single dose medicine and verify it was added to patient drugs")
+  public void test_19_addAndApprovalByNurseSingleOnceOnlyMedicineAndVerify() {
+      log.info("* Starting test_19_addAndApprovalByNurseSingleOnceOnlyMedicineAndVerify: Adding a single dose medicine for the patient");
+      
+      // Step 1: Doctor adds the medicine
+      loginAsDoctor();
+      chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
+      choosePatient(PATIENT_1);
+      doctorInstructionPage.clickButtonAddInstruction(InstructionType.MEDICINE);
+      drugForm.addOneMedicine("ACAMOL", "once only", "500", null, null, null, null, null, null, null, false);
+      doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+      log.info("Single dose medicine ACAMOL added successfully to patient");
+      
+      // Step 2: Nurse approves the medicine (ONLY drugs - no liquids or blood products)
+      log.info("* Nurse approving the ACAMOL medicine instruction");
+      loginAsNurse();
+      chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
+      choosePatient(PATIENT_1);
+      approvalInstructionPage.approveDrugsOnly(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
+      log.info("* Successfully: Nurse approved ACAMOL medicine instruction");
+  }
+
+  @Test(description = "view patient documents from patient medical record")
+  public void test_20_viewPatientDocuments() {
+      try {
+          loginAsDoctor();
+          chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
+          choosePatient(PATIENT_1);
+          
+          documentsPage.navigateToDocuments();
+          
+          assertTrue(documentsPage.isOnDocumentsPage(), "Should be on documents page");
+          
+          int docCount = documentsPage.getDocumentsCount();
+          assertTrue(docCount > 0, "Should have at least one document available");
+          
+          documentsPage.openFirstDocument();
+          
+          assertTrue(documentsPage.isDocumentViewerOpened(), "Document viewer should open");
+          
+          log.info("✓ Test passed: Document viewed successfully");
+          
+      } catch (Exception e) {
+          log.error("✗ Test failed: {}", e.getMessage());
+          assertTrue(false, "Failed to view document: " + e.getMessage());
+      }
+  }
+
+  @Test(description = "view patient imaging in PACS viewer")
+  public void test_21_viewImagingInPacs() {
+      try {
+          loginAsDoctor();
+          chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
+          choosePatient(PATIENT_1);
+          
+          imagingPage.navigateToImaging();
+          
+          assertTrue(imagingPage.isOnImagingPage(), "Should be on imaging page");
+          
+          int imagingCount = imagingPage.getImagingCount();
+          assertTrue(imagingCount > 0, "Should have at least one imaging study available");
+          
+          imagingPage.openFirstImagingInPacs();
+          
+          assertTrue(imagingPage.isPacsViewerOpened(), "PACS viewer should open");
+          
+          log.info("✓ Test passed: Imaging viewed in PACS successfully");
+          
+      } catch (Exception e) {
+          log.error("✗ Test failed: {}", e.getMessage());
+          assertTrue(false, "Failed to view imaging in PACS: " + e.getMessage());
+      }
+  }
 
   
 }
