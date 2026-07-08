@@ -27,7 +27,6 @@ import pages.nurse.Execute.CardexPage;
 import pages.nurse.Execute.CardexPageNew;
 import pages.doctor.FollowupPage;
 import pages.nurse.approval.ApprovalInstructionPage1;
-import pages.nurse.catheter.CatheterAddPage;
 import pages.nurse.catheter.CatheterPage;
 import pages.nurse.wound.WondFormPage;
 import pages.nurse.wound.WoundPage;
@@ -76,15 +75,15 @@ public class SanitySuite1 extends BaseSuit {
         log.error("Department '{}' not found! Using default: {}", 
                   deptNameParam, currentDept.getDisplayName());
     }
-    //   patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient(currentDept.getCode())).get(0);
-    //  boolean isSucceeded=
-    //   preparePatientDataBeforeTest(QueriesUtils.preparePatientData, patientMisparIshpuz);
-    //      if (isSucceeded) {
-    //           log.info("* Patient data removed successfully for misparIshpuz = {}", patientMisparIshpuz);
-    //      } else {
-    //           log.warn("* No patient data found to remove for misparIshpuz = {}", patientMisparIshpuz);
-    //      }
-    //    log.info("* Pre-Class Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
+      patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient(currentDept.getCode())).get(0);
+     boolean isSucceeded=
+      preparePatientDataBeforeTest(QueriesUtils.preparePatientData, patientMisparIshpuz);
+         if (isSucceeded) {
+              log.info("* Patient data removed successfully for misparIshpuz = {}", patientMisparIshpuz);
+         } else {
+              log.warn("* No patient data found to remove for misparIshpuz = {}", patientMisparIshpuz);
+         }
+       log.info("* Pre-Class Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
     
     
     }
