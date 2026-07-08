@@ -208,7 +208,7 @@ public class SanitySuite1 extends BaseSuit {
             loginAsNurse();
             chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
             choosePatient(PATIENT_1);
-            approvalInstructionPage.approveAllInstructionsAndVerify(false, true, false , Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
+            approvalInstructionPage.approveAllInstructionsAndVerify(true, true, true , Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
   
         }
 
