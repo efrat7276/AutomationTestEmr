@@ -7,8 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import pages.BasePage;
 import pages.UserSignModalPage;
@@ -24,13 +24,11 @@ UserSignModalPage userSignModalPage;
         userSignModalPage = new UserSignModalPage();
     }
 private final By btnChooseHourCurrentDayDrugAndGeneralBy = By.xpath("//tr[@class='collapse show ng-star-inserted']//div[@id='div-group-current-day']//button");
-private final By timesHourBy = By.xpath("//tr[@class='collapse show ng-star-inserted']//div[@id='div-group-current-day']//button/following-sibling::ul");
-
 private final By timelineLiquidBy = By.xpath("//tr[@name='drugRow2'][td]/td[@colspan='8']//div[contains(@class,'timeLineInToday')]");
 private final By timelineBloodProductBy = By.xpath("//tr[@name='drugRow2'][td]/td[@colspan='6']//div[contains(@class,'timeLineInToday')]");
 private final By btnVforBloodProductBy = By.xpath("//form[@name='popContentSolutionBagSizeCode']//button[@type='submit']");
 private final By btnApprovalBy = By.xpath("//button[contains(@id,'btnIsApproval')]");
-
+private final By tabInstructionForApprovalBy = By.xpath("//li[@id='ngbNav_patient_sheet1']//span[2]");
 private final By btnApprovalAll = By.xpath("//button[@id='approvalDrug']");
 
 public void approveDrugsAndGeneralSelectCurrentDayHour(){
@@ -52,9 +50,7 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
             return;
         }
         for (int i = 0; i < allLiquidTimeline.size(); i++) {
-        WebElement currentTimelineRow = allLiquidTimeline.get(i);
         try {
-               // List<WebElement> divElements = currentTimelineRow.findElements(By.xpath(".//div[contains(@class,'timeLineInToday ')]"));
                 if (!allLiquidTimeline.isEmpty()) {
                     allLiquidTimeline.get(0).click();
                     log.info("Clicked on timeline entry for liquid instruction in row {}.", i + 1);
@@ -67,7 +63,6 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
         log.info("Clicked on all liquid instruction timelines.");
     }
      }
-
      
     public void approvalAllbloodProduct(){
         List<WebElement> allBloodProductTimeline = UIActions.findElementsWithWait(timelineBloodProductBy);
@@ -77,9 +72,7 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
             return;
         }
         for (int i = 0; i < allBloodProductTimeline.size(); i++) {
-            WebElement currentTimelineRow = allBloodProductTimeline.get(i);
             try {
-              //  List<WebElement> divElements = currentTimelineRow.findElements(By.xpath(".//div[contains(@class,'timeLineInToday ')]"));
                 if (!allBloodProductTimeline.isEmpty()) {
                     allBloodProductTimeline.get(0).click();
                     log.info("Clicked on timeline entry for blood product instruction in row {}.", i + 1);
@@ -130,7 +123,6 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
      if (bloodProduct) {
          approvalAllbloodProduct();
      }
-    WebDriverWait wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(10));
     List<WebElement> approvalAllBtn = DriverManager.getInstance().findElements(btnApprovalBy);
     if (approvalAllBtn.isEmpty()) {
         log.warn("Approval All button is not displayed after processing individual instructions.");
@@ -140,21 +132,16 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
             try {
                 UIActions.click(approvalAllBtn.get(i));
             }
-            catch (ElementClickInterceptedException e) {
-                log.warn("Click intercepted for button " + i + ". Trying JS click as fallback.");
-                WebElement btn = approvalAllBtn.get(i);
-                ((JavascriptExecutor) DriverManager.getInstance()).executeScript("arguments[0].click();", btn);
-            } catch (Exception e) {
+             catch (Exception e) {
                 log.error("Failed to click button " + i + ": " + e.getMessage());
             }
-           
-        }
-       
-           // log.info("Clicked on all individual approval buttons.");
+      }
      UIActions.click(btnApprovalAll);
-     log.info("Clicked on approval button for all"); 
      userSignModalPage.signModal(username,password);
-        
+     UIActions.waitForSpinnerToDisappear();
+     String text = DriverManager.getInstance().findElement(tabInstructionForApprovalBy).getText();
+     Assert.assertTrue(text.contains("0"), "Some instructions were not approved. Remaining count: " + text);
+     log.info("Clicked on approval button for all"); 
      }
     }
    
