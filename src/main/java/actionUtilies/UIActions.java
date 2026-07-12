@@ -66,7 +66,7 @@ public class UIActions {
 
     }
     public static boolean waitForAnyText(By elem) {
-        wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(elem, "")));
+        wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(elem, " ")));
         return true;
     }
     
