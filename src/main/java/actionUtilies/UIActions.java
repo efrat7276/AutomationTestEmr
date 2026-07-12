@@ -52,20 +52,6 @@ public class UIActions {
         wait.until(driver -> list.size() > 0);
     }
 
-    static boolean containsAnyDigit(String s){
-        for (int i = 1; i < 10; i++){
-           if(s.contains(String.valueOf(i))){
-               return true;
-           }
-        }
-        return false;
-    }
-
-    public static void waitForDigit(WebElement elem){
-
-        //wait.until(x -> containsAnyDigit(elem.getText()));
-        elem.click();
-    }
 
     public static boolean waitForText(By elem , String text){
 
@@ -79,7 +65,11 @@ public class UIActions {
        
 
     }
-
+    public static boolean waitForAnyText(By elem) {
+        wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(elem, "")));
+        return true;
+    }
+    
     public static void click(By locator) {
     int attempts = 0;
     int maxAttempts = 3; // נסיונות חוזרים למקרים של Stale או שינויים דינמיים בדף

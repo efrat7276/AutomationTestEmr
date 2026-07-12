@@ -235,7 +235,7 @@ public class DoctorInstructionPage extends BasePage {
         log.info("Editing first drug instruction - Possibility: {}, Dose: {}", possibility, dose);
         UIActions.click(btn_editFirstDrug);
         UIActions.waitForSpinnerToDisappear();
-        
+
      //   verifySecondTitle(InstructionType.MEDICINE);
         drugForm.editMedicine( possibility, dose);
         
