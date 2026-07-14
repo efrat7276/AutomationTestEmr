@@ -23,14 +23,8 @@ public class CardexPageNew extends BasePage {
         private final By solCheckboxes = By.xpath("//input[@type='checkbox' and starts-with(@id, 'solExec')  and not(@disabled)]");
         private final By bloodCheckboxes = By.xpath("//input[@type='checkbox' and starts-with(@id, 'bloodProductInsDayModeCheckbox')]");
         private final By allShiftCheckboxes = By.xpath("//input[@type='checkbox' and contains(@id, 'InsDayModeCheckbox')] | //input[@type='checkbox' and contains(@id, 'solExec') and not(@disabled)]");
-
         private final By cardexMainListBox = By.xpath("//div[@class='cardex-main-list-box']");
         private final By namesDrugBy = By.xpath("//div[@class='cardex-main-list-box']//div[@class='drug-name']/p");
-
-        private final By nav_instructionForApproval = By.xpath("//a[@id='ngb-nav-0']ׁׁ");
-
-
-
    private final By btn_approvalDrug = By.xpath("//button[contains(@class, 'btn-submit')]");
      private final By i_arrow = By.xpath("//app-patient-detail/app-inner-menu/div/div/div[1]/span/i");
     private final By stickers = By.xpath("//button[3][contains(@class, 'btn-secondary')]");
@@ -93,9 +87,7 @@ public class CardexPageNew extends BasePage {
     public void printIVLabelForFirstFluidInCardex() {
         log.info("Attempting to print IV label for the first fluid in cardex.");
         UIActions.waitForSpinnerToDisappear();
-      //  UIActions.waitForElementClickable(nav_cardex);
-     //  clickNavCardex();
-       UIActions.waitForElementClickable(stickers);
+        UIActions.waitForElementClickable(stickers);
         UIActions.click(stickers);
        if (medicinePrep.isMedicinePrepDisplayed()) {
         log.info("IV label printed successfully.");
@@ -111,7 +103,7 @@ public class CardexPageNew extends BasePage {
 
     public void verifyDrugExecuted(String drugName) {
         UIActions.waitForSpinnerToDisappear();
-         UIActions.waitForVisible(cardexMainListBox);
+        UIActions.waitForVisible(cardexMainListBox);
         List<WebElement> drugNames = UIActions.findElementsWithWait(namesDrugBy);
         boolean found = false;
         for (WebElement el : drugNames) {

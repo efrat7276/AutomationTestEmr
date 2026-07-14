@@ -65,8 +65,6 @@ public class CardexPage extends BasePage {
     private final By btn_printStickers = By.xpath("//button[text()='הדפסת מדבקות']");
     private final By exit_printStickers = By.xpath("//app-pdf-modal/div[1]/button/span");
 
-    // after execute
-    private final By drugsSignGaveList = By.xpath("//img[@src='assets/images/cardexIcons/checkmark-24.png']");
 
     public void executeAllDrugsToThisShift(){
         List<WebElement> allCheckBoxDrug = UIActions.findElementsWithWait(checkBoxListDrug);

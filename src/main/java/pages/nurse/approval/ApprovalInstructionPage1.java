@@ -27,7 +27,7 @@ private final By btnChooseHourCurrentDayDrugAndGeneralBy = By.xpath("//tr[@class
 private final By timelineLiquidBy = By.xpath("//tr[@name='drugRow2'][td]/td[@colspan='8']//div[contains(@class,'timeLineInToday')]");
 private final By timelineBloodProductBy = By.xpath("//tr[@name='drugRow2'][td]/td[@colspan='6']//div[contains(@class,'timeLineInToday')]");
 private final By btnVforBloodProductBy = By.xpath("//form[@name='popContentSolutionBagSizeCode']//button[@type='submit']");
-private final By btnApprovalBy = By.xpath("//button[contains(@id,'btnIsApproval')]");
+private final  By btnApprovalBy = By.xpath("//button[contains(@id,'btnIsApproval')]");
 private final By tabInstructionForApprovalBy = By.xpath("//li[@id='ngbNav_patient_sheet1']//span[2]");
 private final By btnApprovalAll = By.xpath("//button[@id='approvalDrug']");
 
@@ -37,7 +37,7 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
         if(currentRow.isEnabled())
            selectNthOptionFromDropdown(currentRow, 4); 
     }
-         log.info("selected the first hour in current day for all drug instructions.");
+         log.info("selected the first hour in current day for  drug and general instructions.");
 
 }
   
@@ -123,18 +123,18 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
      if (bloodProduct) {
          approvalAllbloodProduct();
      }
-    List<WebElement> approvalAllBtn = DriverManager.getInstance().findElements(btnApprovalBy);
-    if (approvalAllBtn.isEmpty()) {
-        log.warn("Approval All button is not displayed after processing individual instructions.");
-    } 
-    else {
-        for (int i = 0; i < approvalAllBtn.size(); i++) {
-            try {
-                UIActions.click(approvalAllBtn.get(i));
-            }
-             catch (Exception e) {
-                log.error("Failed to click button " + i + ": " + e.getMessage());
-            }
+    List<WebElement> approvalAllBtn = UIActions.findElementsWithWait(btnApprovalBy);
+    // if (approvalAllBtn.isEmpty()) {
+    //     log.warn("No individual approval buttons found.");
+    // } 
+    
+     for (int i = 0; i < approvalAllBtn.size(); i++) {
+        try {
+            UIActions.click(approvalAllBtn.get(i));
+        }
+            catch (Exception e) {
+            log.error("Failed to click approval button " + i + ": " + e.getMessage());
+        }
       }
      UIActions.click(btnApprovalAll);
      userSignModalPage.signModal(username,password);
@@ -143,15 +143,13 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
      Assert.assertTrue(text.contains("0"), "Some instructions were not approved. Remaining count: " + text);
      log.info("Clicked on approval button for all"); 
      }
-    }
+    
    
 
     public void approveDrugsOnly(String username, String password){
         log.info("* Approving ONLY drug instructions (no liquids or blood products)");
         UIActions.waitForSpinnerToDisappear();
         approveDrugsAndGeneralSelectCurrentDayHour();
-        
-        WebDriverWait wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(10));
         List<WebElement> approvalAllBtn = DriverManager.getInstance().findElements(btnApprovalBy);
         int expectedButtons = approvalAllBtn.size();
         
