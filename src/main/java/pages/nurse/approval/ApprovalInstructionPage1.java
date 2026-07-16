@@ -3,6 +3,8 @@ package pages.nurse.approval;
 import actionUtilies.UIActions;
 import drivers.DriverManager;
 import lombok.extern.slf4j.Slf4j;
+
+import org.checkerframework.checker.guieffect.qual.UI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
@@ -23,9 +25,9 @@ UserSignModalPage userSignModalPage;
        
         userSignModalPage = new UserSignModalPage();
     }
-private final By btnChooseHourCurrentDayDrugAndGeneralBy = By.xpath("//tr[@class='collapse show ng-star-inserted']//div[@id='div-group-current-day']//button");
-private final By timelineLiquidBy = By.xpath("//tr[@name='drugRow2'][td]/td[@colspan='8']//div[contains(@class,'timeLineInToday')]");
-private final By timelineBloodProductBy = By.xpath("//tr[@name='drugRow2'][td]/td[@colspan='6']//div[contains(@class,'timeLineInToday')]");
+private final By btnChooseHourCurrentDayDrugAndGeneralBy = By.xpath("//td[@name='drugsCurrentDay']//button");
+private final By boxCurrentHourForLiquidBy = By.xpath("//tr[@name='drugRow2'][td]/td[@colspan='8']//div[contains(@class,'timeLineInToday')]");
+private final By boxCurrentHourForBloodProductBy = By.xpath("//tr[@name='drugRow2'][td]/td[@colspan='6']//div[contains(@class,'timeLineInToday')]");
 private final By btnVforBloodProductBy = By.xpath("//form[@name='popContentSolutionBagSizeCode']//button[@type='submit']");
 private final  By btnApprovalBy = By.xpath("//button[contains(@id,'btnIsApproval')]");
 private final By tabInstructionForApprovalBy = By.xpath("//li[@id='ngbNav_patient_sheet1']//span[2]");
@@ -33,27 +35,24 @@ private final By btnApprovalAll = By.xpath("//button[@id='approvalDrug']");
 
 public void approveDrugsAndGeneralSelectCurrentDayHour(){
     List<WebElement> allToApprovalRows = UIActions.findElementsWithWait(btnChooseHourCurrentDayDrugAndGeneralBy);
+    int rowCount = allToApprovalRows.size();
     for (WebElement currentRow : allToApprovalRows) {
         if(UIActions.isExist(currentRow) && currentRow.isEnabled())
-           selectNthOptionFromDropdown(currentRow, 4);
-
+          { 
+            selectNthOptionFromDropdown(currentRow, 4);
+            log.info("selected the first hour in current day for  drug and general instructions.");
+          }  
     }
-     log.info("selected the first hour in current day for  drug and general instructions.");
-
+    log.info("Selected the first hour in current day for {} drug and general instructions", rowCount);
 }
-  
 
  public void approvalAllLiquidInstruction(){  {
-        List<WebElement> allLiquidTimeline = UIActions.findElementsWithWait(timelineLiquidBy);
-
-        if (allLiquidTimeline.isEmpty()) {
-           log.info("No liquid instructions found in the timeline.");     
-            return;
-        }
+        List<WebElement> allLiquidTimeline = UIActions.findElementsWithWait(boxCurrentHourForLiquidBy);
+        int rowCount = allLiquidTimeline.size();
         for (int i = 0; i < allLiquidTimeline.size(); i++) {
         try {
                 if (!allLiquidTimeline.isEmpty()) {
-                    allLiquidTimeline.get(0).click();
+                    allLiquidTimeline.get(i).click();
                     log.info("Clicked on timeline entry for liquid instruction in row {}.", i + 1);
                 }
             } catch (Exception e) {
@@ -61,12 +60,13 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
                 continue;
             }
         }
-        log.info("Clicked on all liquid instruction timelines.");
-    }
+        log.info("Clicked on all liquid instruction timelines");
+}
+
      }
      
     public void approvalAllbloodProduct(){
-        List<WebElement> allBloodProductTimeline = UIActions.findElementsWithWait(timelineBloodProductBy);
+        List<WebElement> allBloodProductTimeline = UIActions.findElementsWithWait(boxCurrentHourForBloodProductBy);
 
         if (allBloodProductTimeline.isEmpty()) {
            log.info("No blood product instructions found in the timeline.");     
@@ -114,7 +114,6 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
 
     public void approveAllInstructionsAndVerify(boolean drugOrGeneral, boolean liquid, boolean bloodProduct, String username, String password){
      UIActions.waitForSpinnerToDisappear();
-
      if (drugOrGeneral) {
          approveDrugsAndGeneralSelectCurrentDayHour();
      }
@@ -124,12 +123,10 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
      if (bloodProduct) {
          approvalAllbloodProduct();
      }
+
+
     List<WebElement> approvalAllBtn = UIActions.findElementsWithWait(btnApprovalBy);
-    // if (approvalAllBtn.isEmpty()) {
-    //     log.warn("No individual approval buttons found.");
-    // } 
-    
-     for (int i = 0; i < approvalAllBtn.size(); i++) {
+    for (int i = 0; i < approvalAllBtn.size(); i++) {
         try {
             UIActions.click(approvalAllBtn.get(i));
         }

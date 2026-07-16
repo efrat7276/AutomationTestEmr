@@ -80,19 +80,17 @@ public class SanitySuite1 extends BaseSuit {
                   deptNameParam, currentDept.getDisplayName());
     }
       patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient(currentDept.getCode())).get(0);
-    //  boolean isSucceeded=
-    //   preparePatientDataBeforeTest(QueriesUtils.preparePatientData, patientMisparIshpuz);
-    //      if (isSucceeded) {
-    //           log.info("* Patient data removed successfully for misparIshpuz = {}", patientMisparIshpuz);
-    //      } else {
-    //           log.warn("* No patient data found to remove for misparIshpuz = {}", patientMisparIshpuz);
-    //      }
-    //    log.info("* Pre-Class Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
-    
+     boolean isSucceeded=
+      preparePatientDataBeforeTest(QueriesUtils.preparePatientData, patientMisparIshpuz);
+         if (isSucceeded) {
+              log.info("* Patient data removed successfully for misparIshpuz = {}", patientMisparIshpuz);
+         } else {
+              log.warn("* No patient data found to remove for misparIshpuz = {}", patientMisparIshpuz);
+         }
+       log.info("* Pre-Class Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
     
      }
 
-  
 
     @BeforeMethod
     public void setUp(){
@@ -117,7 +115,7 @@ public class SanitySuite1 extends BaseSuit {
 
     }
     @Feature("Functional Tests")
-    @Story("Renew instruction to patient due to Bug -solutinInstructionTimes")
+    @Story("Renewing instruction to patient due to Bug -solutinInstructionTimes")
     @Test()
     public void test_00_renewInstructionToSpetifPatient() throws SQLException {
       log.info("* Starting test_00_renewInstructionToSpetifPatient: Renewing instructions for patient with misparIshpuz = {}", patientMisparIshpuz);
@@ -128,7 +126,7 @@ public class SanitySuite1 extends BaseSuit {
     }
  
     @Feature("Visual Tests")
-    @Story("Login as doctor and verify role name is displayed")   
+    @Story("Logging in as doctor and verify role name is displayed")
     @Test()
     public void test_01_login(){
         log.info("* Starting test_01_login: Logging in as doctor and verifying role name");
@@ -138,7 +136,7 @@ public class SanitySuite1 extends BaseSuit {
     
     @Feature("Visual Tests")
     @Story("Num version existing in main menu")
-    @Test(description = "Num version existing in main menu", enabled = false)
+    @Test(enabled = false)
     public void test_02_numVersionExisting(){
         log.info("* Starting test_02_numVersionExisting: Verifying version number in main menu");
         loginAsDoctor();
@@ -146,7 +144,7 @@ public class SanitySuite1 extends BaseSuit {
     }
 
     @Feature("Navigation Tests")
-    @Story("User logout and verify login page is displayed")
+    @Story("Logging out and verify login page is displayed")
     @Test()
     public void test_03_logout(){
         log.info("* Starting test_03_logout: Logging out");
@@ -154,9 +152,9 @@ public class SanitySuite1 extends BaseSuit {
         mainMenuPage.logout();
     }
 
-    @Feature("Functional Tests")
-    @Story("Login as doctor and verify patient list is displayed")
-    @Test(description = "login as doctor and verify patient list is displayed")
+    @Feature("Visual Tests")
+    @Story("Logging in as doctor and verify patient list is displayed")
+    @Test()
     public void test_04_patientListIsDisplayed(){
         log.info("* Starting test_04_patientListIsDisplayed: Logging in as doctor");
         loginAsDoctor();
@@ -164,7 +162,9 @@ public class SanitySuite1 extends BaseSuit {
         mainMenuPage.verifyPatientTableIsDisplayed();
     }
 
-    @Test(description="discharded patient list visibility")
+    @Feature("Visual Tests")
+    @Story("Discharged patient list is visible after navigating to the menu entry")
+    @Test()
     public void test_05_dischargedPatientListVisibility() {
         log.info("* Starting test_05_dischargedPatientListVisibility: Logging in as doctor ");
         loginAsDoctor();
@@ -173,7 +173,9 @@ public class SanitySuite1 extends BaseSuit {
         dischargedPatientListPage.verifydischargedPatientsListVisible();
     }
 
-    @Test(description = "entire to patient box")
+    @Feature("Functional Tests")
+    @Story("Entering to patient box")
+    @Test(enabled = false)
     public void test_06_enterToPatientBox() {
         log.info("* Starting test_06_enterToPatientBox: Logging in as doctor and entering patient box");
         loginAsDoctor();
@@ -181,7 +183,9 @@ public class SanitySuite1 extends BaseSuit {
         choosePatient(PATIENT_1);
     }
 
-    @Test(description = "adding a medicine")
+    @Feature("Functional Tests")
+    @Story("Adding a medicine instruction by doctor")
+    @Test()
     public void test_07_addingMedicine(){
         log.info("* Starting test_07_addingMedicine: Adding a medicine instruction for the patient");
         loginAsDoctor();
@@ -192,17 +196,21 @@ public class SanitySuite1 extends BaseSuit {
     
     }
 
-    //  @Test(description = "Doctor fills follow-up notes and saves")
-    //   public void test_08_doctorFillFollowupByDoctor() {
-    //     log.info("* Starting test_08_doctorFillFollowupByDoctor: Doctor fills follow-up notes and saves");
-    //     loginAsDoctor();
-    //     chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
-    //     choosePatient(PATIENT_1);
-    //     innerMenuPage.navigateToMenuEntry("FollowUp");
-    //     followupPage.addFollowupAndVerify("111", "222", "333", "444", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
-    // }
+    @Feature("Functional Tests")
+    @Story("Filling follow-up and saving by doctor")
+     @Test()
+      public void test_08_doctorFillFollowupByDoctor() {
+        log.info("* Starting test_08_doctorFillFollowupByDoctor: Doctor fills follow-up notes and saves");
+        loginAsDoctor();
+        chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
+        choosePatient(PATIENT_1);
+        innerMenuPage.navigateToMenuEntry("FollowUp");
+        followupPage.addFollowupAndVerify("111", "222", "333", "444", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+    }
 
-     @Test(description = "doctor adding fluid instruction, general instruction and blood product instruction")
+    @Feature("Functional Tests")
+    @Story("Adding fluid instruction, general instruction and blood product instruction by doctor")
+    @Test()
     public void test_09_doctorAddingFluidGeneralBloodProductAndApprove() {
         log.info("* Starting test_09_doctorAddingFluidGeneralBloodProductAndApprove: Doctor's adding fluid instruction, general instruction and blood product instruction");
         loginAsDoctor();
@@ -214,7 +222,9 @@ public class SanitySuite1 extends BaseSuit {
         doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 
-    @Test(description = "approval all instruction by nurse")
+    @Feature("Functional Tests")
+    @Story("Approving instructions and moving to cardex by nurse")
+    @Test()
     public void test_10_approvalAllInstructionByNurse(){
             log.info("* Starting test_10_approvalAllInstructionByNurse: Approving all instructions for the patient");
             loginAsNurse();
@@ -222,22 +232,12 @@ public class SanitySuite1 extends BaseSuit {
             choosePatient(PATIENT_1);
             approvalInstructionPage.approveAllInstructionsAndVerify(true, true, true , Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
   
-        }
+     }
 
-    // @Test(description = "approval blood product  by nurse for only blood product instruction")
-    // public void test_10_approvalBloodProductByNurse() {
-    //     log.info("* Starting test_10_approvalBloodProductByNurse: Approving blood product instruction for the patient");
-    //     loginAsNurse();
-    //     chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
-    //     choosePatient(PATIENT_1);
-    //     approvalInstructionPage.approvalAllbloodProduct();
-
-    //  userSignModalPage.signModal(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
-
-
-    // }
-  @Test(description ="add a simple wound by nurse")
-  public void test_11_addSimpleWoundByNurse() {
+    @Feature("Functional Tests")
+    @Story("Adding a simple wound by nurse")
+    @Test()
+     public void test_11_addSimpleWoundByNurse() {
       log.info("* Starting test_11_addSimpleWoundByNurse: Adding a simple wound for the patient");
       loginAsNurse();
       chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
@@ -250,6 +250,8 @@ public class SanitySuite1 extends BaseSuit {
       woundFormPage.saveWound(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
 
      }
+     @Feature("Functional Tests")
+    @Story("Adding a catheter by nurse")
      @Test(description = "add catheter by nurse")
      public void test_12_addCatheterByNurse() {
          log.info("* Starting test_12_addCatheterByNurse: Adding a catheter for the patient");
@@ -262,7 +264,9 @@ public class SanitySuite1 extends BaseSuit {
          catheterPage.addCatheterBranola(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
      }
 
-    @Test(description = "Execute all instruction by nurse in cardex")
+    @Feature("Functional Tests")
+    @Story("Executing all active instructions by nurse in cardex")
+    @Test()
     public void test_13_executeAllInstructionByNurse(){
         log.info("* Starting test_13_executeAllInstructionByNurse: Executing all instructions for the patient");
         loginAsNurse();
@@ -270,8 +274,10 @@ public class SanitySuite1 extends BaseSuit {
         choosePatient(PATIENT_1);
         cardexPageNew.executeAndApproveAllToThisShiftAndApproval(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
     }
-     
-    @Test(description = "Print IV label from cardex")
+    
+    @Feature("Functional Tests")
+    @Story("Printing IV label from cardex")
+    @Test()
     public void test_14_printIVLabelFromCardex() {
         log.info("* Starting test_14_printIVLabelFromCardex: Printing IV label from cardex");
         loginAsNurse();
@@ -292,8 +298,9 @@ public class SanitySuite1 extends BaseSuit {
        doctorInstructionPage.addNutritionFull("Nut", "daily", "200", "1", Constants.NUTRITIONIST_USERNAME, Constants.NUTRITIONIST_PASSWORD);
     }
 
-  
-    @Test(description = "Adding and executing immediate instruction by ER doctor")
+    @Feature("Functional Tests")
+    @Story("Adding and executing immediate instruction by ER doctor")
+    @Test()
     public void test_16_addingAndExecutingImmediateInstructionER() {
         log.info("* Starting test_16_addingAndExecutingImmediateInstructionER: Adding and executing immediate instruction by ER doctor");
         loginAsDoctor();
@@ -302,7 +309,7 @@ public class SanitySuite1 extends BaseSuit {
         Thread.sleep(1000);
        } catch (InterruptedException e) {
         e.printStackTrace();
-    }
+      }
         choosePatient(1);
         doctorInstructionPage.clickButtonAddInstruction(InstructionType.MEDICINE);
         drugForm.addOneMedicine("Aspirin", "once only", "500mg", null, null, null, null, null, null, null, true);
@@ -313,7 +320,9 @@ public class SanitySuite1 extends BaseSuit {
 
     }
 
-    @Test(description = "edit drug")
+    @Feature("Functional Tests")
+    @Story("Editing a dosage drug instruction by doctor")
+    @Test()
     public void test_17_editDrug() {
         log.info("* Starting test_17_editDrug: Editing a drug instruction for the patient");
         loginAsDoctor();
@@ -324,7 +333,9 @@ public class SanitySuite1 extends BaseSuit {
 
     
    
-    @Test(description = "lab orders visibility")
+    @Feature("Visual Tests")
+    @Story("Lab orders visibility")
+    @Test()
     public void test_18_labOrdersList() {
         log.info("* Starting test_18_labOrdersList: Lab orders visibility");
         loginAsDoctor();
@@ -332,11 +343,11 @@ public class SanitySuite1 extends BaseSuit {
     //    bloodOrders
     }
 
-  @Test(description = "adding a single dose medicine and verify it was added to patient drugs")
-  public void test_19_addAndApprovalByNurseSingleOnceOnlyMedicineAndVerify() {
+    @Feature("Functional Tests")
+    @Story("Adding and approving a single dose medicine by nurse")
+    @Test(enabled = false)
+     public void test_19_addAndApprovalByNurseSingleOnceOnlyMedicineAndVerify() {
       log.info("* Starting test_19_addAndApprovalByNurseSingleOnceOnlyMedicineAndVerify: Adding a single dose medicine for the patient");
-      
-      // Step 1: Doctor adds the medicine
       loginAsDoctor();
       chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
       choosePatient(PATIENT_1);
@@ -354,24 +365,21 @@ public class SanitySuite1 extends BaseSuit {
       log.info("* Successfully: Nurse approved ACAMOL medicine instruction");
   }
 
-  @Test(description = "view patient documents from patient medical record")
-  public void test_20_viewPatientDocuments() {
+  
+    @Feature("Visual Tests")
+    @Story("viewing a patient's document")
+    @Test()
+    public void test_20_viewPatientDocuments() {
       try {
           loginAsDoctor();
           chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
           choosePatient(PATIENT_1);
-          
-          documentsPage.navigateToDocuments();
-          
-          assertTrue(documentsPage.isOnDocumentsPage(), "Should be on documents page");
-          
+          documentsPage.navigateToDocuments(); 
+          assertTrue(documentsPage.isOnDocumentsPage(), "Should be on documents page"); 
           int docCount = documentsPage.getDocumentsCount();
-          assertTrue(docCount > 0, "Should have at least one document available");
-          
-          documentsPage.openFirstDocument();
-          
-          assertTrue(documentsPage.isDocumentViewerOpened(), "Document viewer should open");
-          
+          assertTrue(docCount > 0, "Should have at least one document available"); 
+          documentsPage.openFirstDocument(); 
+          assertTrue(documentsPage.isDocumentViewerOpened(), "Document viewer should open"); 
           log.info("✓ Test passed: Document viewed successfully");
           
       } catch (Exception e) {
@@ -380,33 +388,27 @@ public class SanitySuite1 extends BaseSuit {
       }
   }
 
-  @Test(description = "view patient imaging in PACS viewer")
+  @Feature("Functional Tests")
+  @Story("viewing a patient's imaging in PACS viewer")
+  @Test()
   public void test_21_viewImagingInPacs() {
       try {
           loginAsDoctor();
           chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
-          choosePatient(PATIENT_1);
-          
-          imagingPage.navigateToImaging();
-          
-          assertTrue(imagingPage.isOnImagingPage(), "Should be on imaging page");
-          
+          choosePatient(PATIENT_1);   
+          imagingPage.navigateToImaging(); 
+          assertTrue(imagingPage.isOnImagingPage(), "Should be on imaging page");  
           int imagingCount = imagingPage.getImagingCount();
           assertTrue(imagingCount > 0, "Should have at least one imaging study available");
-          
-          imagingPage.openFirstImagingInPacs();
-          
-          assertTrue(imagingPage.isPacsViewerOpened(), "PACS viewer should open");
-          
+          imagingPage.openFirstImagingInPacs();   
+          assertTrue(imagingPage.isPacsViewerOpened(), "PACS viewer should open");  
           log.info("✓ Test passed: Imaging viewed in PACS successfully");
-          
+         
       } catch (Exception e) {
           log.error("✗ Test failed: {}", e.getMessage());
           assertTrue(false, "Failed to view imaging in PACS: " + e.getMessage());
       }
-  }
-
-  
+  }  
 }
 
     
