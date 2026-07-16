@@ -124,11 +124,14 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
          approvalAllbloodProduct();
      }
 
-
     List<WebElement> approvalAllBtn = UIActions.findElementsWithWait(btnApprovalBy);
+     log.info("Found {} approval buttons to click.", approvalAllBtn.size());
+    UIActions.waitForElementClickable(approvalAllBtn.get(0));
+    log.info("Waiting for {} approval buttons to be clickable.", approvalAllBtn.size());
     for (int i = 0; i < approvalAllBtn.size(); i++) {
         try {
             UIActions.click(approvalAllBtn.get(i));
+            log.info("Clicked on approval button {} of {}.", i + 1, approvalAllBtn.size());
         }
             catch (Exception e) {
             log.error("Failed to click approval button " + i + ": " + e.getMessage());
