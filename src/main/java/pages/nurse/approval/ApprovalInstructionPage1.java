@@ -127,16 +127,30 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
     List<WebElement> approvalAllBtn = UIActions.findElementsWithWait(btnApprovalBy);
      log.info("Found {} approval buttons to click.", approvalAllBtn.size());
     UIActions.waitForElementClickable(approvalAllBtn.get(0));
-    log.info("Waiting for {} approval buttons to be clickable.", approvalAllBtn.size());
-    for (int i = 0; i < approvalAllBtn.size(); i++) {
-        try {
-            UIActions.click(approvalAllBtn.get(i));
-            log.info("Clicked on approval button {} of {}.", i + 1, approvalAllBtn.size());
-        }
-            catch (Exception e) {
-            log.error("Failed to click approval button " + i + ": " + e.getMessage());
-        }
+   int expectedButtons = approvalAllBtn.size(); 
+   int index = 0;
+    log.info("Waiting for {} approval buttons to be clickable.", expectedButtons);
+    if(expectedButtons==0)   
+        {log.info("No instructions found to renew.");
+         return;
       }
+        else {
+            log.info("Found {} instructions to renew.", expectedButtons);
+        }
+    do{
+    List<WebElement> allApprovalBtn = UIActions.findElementsWithWait(btnApprovalBy);
+        if (!allApprovalBtn.get(0).isSelected()) {
+            UIActions.waitForElementClickable(allApprovalBtn.get(0));
+            UIActions.click(allApprovalBtn.get(0));
+             log.info("Clicked approval button at index: {}", index);
+            }
+            index++;
+            if(expectedButtons==1)
+                break;
+     expectedButtons = UIActions.findElementsWithWait(btnApprovalBy).size();
+     }
+     while(expectedButtons>0);
+   
      UIActions.click(btnApprovalAll);
      userSignModalPage.signModal(username,password);
      UIActions.waitForSpinnerToDisappear();
