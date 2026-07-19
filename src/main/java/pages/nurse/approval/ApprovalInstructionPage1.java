@@ -32,7 +32,7 @@ private final By btnChooseHourCurrentDayDrugAndGeneralBy = By.xpath("//td[@name=
 private final By boxCurrentHourForLiquidBy = By.xpath("//tr[@name='drugRow2'][td]/td[@colspan='8']//div[contains(@class,'timeLineInToday')]");
 private final By boxCurrentHourForBloodProductBy = By.xpath("//tr[@name='drugRow2'][td]/td[@colspan='6']//div[contains(@class,'timeLineInToday')]");
 private final By btnVforBloodProductBy = By.xpath("//form[@name='popContentSolutionBagSizeCode']//button[@type='submit']");
-private final  By btnApprovalBy = By.xpath("//button[contains(@id,'btnIsApproval')]");
+private final  By btnApprovalBy = By.xpath("//button[contains(@id,'btnIsApproval') and .//span[contains(text(), 'אישור')]]");
 private final By tabInstructionForApprovalBy = By.xpath("//li[@id='ngbNav_patient_sheet1']//span[2]");
 private final By btnApprovalAll = By.xpath("//button[@id='approvalDrug']");
 
@@ -52,7 +52,7 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
  public void approvalAllLiquidInstruction(){  {
         List<WebElement> allLiquidTimeline = UIActions.findElementsWithWait(boxCurrentHourForLiquidBy);
         int rowCount = allLiquidTimeline.size();
-        for (int i = 0; i < allLiquidTimeline.size(); i++) {
+        for (int i = 0; i <rowCount; i++) {
         try {
                 if (!allLiquidTimeline.isEmpty()) {
                     allLiquidTimeline.get(i).click();
@@ -78,7 +78,7 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
         for (int i = 0; i < allBloodProductTimeline.size(); i++) {
             try {
                 if (!allBloodProductTimeline.isEmpty()) {
-                    allBloodProductTimeline.get(0).click();
+                    allBloodProductTimeline.get(i).click();
                     log.info("Clicked on timeline entry for blood product instruction in row {}.", i + 1);
                     UIActions.click(btnVforBloodProductBy);
                 }
@@ -134,43 +134,38 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
    int index = 0;
     log.info("Waiting for {} approval buttons to be clickable.", expectedButtons);
     if(expectedButtons==0)   
-        {log.info("No instructions found to renew.");
+        {log.info("No approval buttons found.");
          return;
       }
         else {
-            log.info("Found {} instructions to renew.", expectedButtons);
+            log.info("Found {} approval buttons.", expectedButtons);
         }
 
-int currentCount = UIActions.findElementsWithWait(btnApprovalBy).size();
+  int currentCount = expectedButtons;
 
 do {
     List<WebElement> allApprovalBtn = UIActions.findElementsWithWait(btnApprovalBy);
     
-    // הגנה קטנה למקרה שהרשימה התרוקנה תוך כדי
     if (allApprovalBtn.isEmpty()) {
         break;
     }
 
-    if (!allApprovalBtn.get(0).isSelected()) {
-        UIActions.waitForElementClickable(allApprovalBtn.get(0));
-        
+    //if (!allApprovalBtn.get(0).isSelected()) {
+        UIActions.waitForElementClickable(allApprovalBtn.get(0));  
         WebElement button = allApprovalBtn.get(0);
         WebDriver driver = DriverManager.getInstance();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", button);
         
         log.info("Clicked approval button at index: {}", index);
-        try {
-            new WebDriverWait(driver, Duration.ofSeconds(5))
-                .until(ExpectedConditions.numberOfElementsToBeLessThan(btnApprovalBy, currentCount));
-        } catch (TimeoutException e) {
-            log.warn("The number of buttons did not decrease after click.");
-        }
-    }
-    
+        // try {
+        //     new WebDriverWait(driver, Duration.ofSeconds(5))
+        //         .until(ExpectedConditions.numberOfElementsToBeLessThan(btnApprovalBy, currentCount));
+        // } catch (TimeoutException e) {
+        //     log.warn("The number of buttons did not decrease after click.");
+        // }
+  //  }
     index++;
-    
-    // 3. עדכון הכמות הנוכחית לסיבוב הבא
     currentCount = UIActions.findElementsWithWait(btnApprovalBy).size();
 
 } while (currentCount > 0); 
