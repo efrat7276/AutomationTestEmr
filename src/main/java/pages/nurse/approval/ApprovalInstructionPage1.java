@@ -8,6 +8,7 @@ import org.checkerframework.checker.guieffect.qual.UI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -137,19 +138,23 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
         else {
             log.info("Found {} instructions to renew.", expectedButtons);
         }
-    do{
+    do {
     List<WebElement> allApprovalBtn = UIActions.findElementsWithWait(btnApprovalBy);
-        if (!allApprovalBtn.get(0).isSelected()) {
-            UIActions.waitForElementClickable(allApprovalBtn.get(0));
-            UIActions.click(allApprovalBtn.get(0));
-             log.info("Clicked approval button at index: {}", index);
-            }
-            index++;
-            if(expectedButtons==1)
-                break;
-     expectedButtons = UIActions.findElementsWithWait(btnApprovalBy).size();
-     }
-     while(expectedButtons>0);
+    if (!allApprovalBtn.get(0).isSelected()) {
+        UIActions.waitForElementClickable(allApprovalBtn.get(0));
+        WebElement button = allApprovalBtn.get(0);
+        WebDriver driver = DriverManager.getInstance();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", button);
+        
+        log.info("Clicked approval button at index: {}", index);
+    }
+    index++;
+    if (expectedButtons == 1) {
+        break;
+    }
+    expectedButtons = UIActions.findElementsWithWait(btnApprovalBy).size();
+} while (expectedButtons > 0);
    
      UIActions.click(btnApprovalAll);
      userSignModalPage.signModal(username,password);

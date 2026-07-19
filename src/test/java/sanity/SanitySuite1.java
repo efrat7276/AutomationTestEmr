@@ -216,7 +216,7 @@ public class SanitySuite1 extends BaseSuit {
         loginAsDoctor();
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);   
-        doctorInstructionPage.addFluidAndClose("INJ furosemide 250mg/25ml (FUROVENIR)", "continuous", "50", "1000");
+        doctorInstructionPage.addFluidAndClose("INJ furosemide 250mg/25ml (FUROVENIR)", "continuous", "50", "10");
         doctorInstructionPage.addGeneralInstructionAndClose();
         doctorInstructionPage.addBloodProductAndClose("דם דחוס", "1");
         doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
