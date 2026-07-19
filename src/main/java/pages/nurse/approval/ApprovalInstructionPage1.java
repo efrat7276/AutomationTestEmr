@@ -10,7 +10,9 @@ import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.TimeoutException;
 import org.testng.Assert;
 
 import pages.BasePage;
@@ -138,24 +140,43 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
         else {
             log.info("Found {} instructions to renew.", expectedButtons);
         }
-    do {
+
+int currentCount = UIActions.findElementsWithWait(btnApprovalBy).size();
+
+do {
     List<WebElement> allApprovalBtn = UIActions.findElementsWithWait(btnApprovalBy);
+    
+    // הגנה קטנה למקרה שהרשימה התרוקנה תוך כדי
+    if (allApprovalBtn.isEmpty()) {
+        break;
+    }
+
     if (!allApprovalBtn.get(0).isSelected()) {
         UIActions.waitForElementClickable(allApprovalBtn.get(0));
+        
         WebElement button = allApprovalBtn.get(0);
         WebDriver driver = DriverManager.getInstance();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", button);
         
         log.info("Clicked approval button at index: {}", index);
+        try {
+            new WebDriverWait(driver, Duration.ofSeconds(5))
+                .until(ExpectedConditions.numberOfElementsToBeLessThan(btnApprovalBy, currentCount));
+        } catch (TimeoutException e) {
+            log.warn("The number of buttons did not decrease after click.");
+        }
     }
+    
     index++;
-    if (expectedButtons == 1) {
-        break;
-    }
-    expectedButtons = UIActions.findElementsWithWait(btnApprovalBy).size();
-} while (expectedButtons > 0);
-   
+    
+    // 3. עדכון הכמות הנוכחית לסיבוב הבא
+    currentCount = UIActions.findElementsWithWait(btnApprovalBy).size();
+
+} while (currentCount > 0); 
+
+
+  
      UIActions.click(btnApprovalAll);
      userSignModalPage.signModal(username,password);
      UIActions.waitForSpinnerToDisappear();
