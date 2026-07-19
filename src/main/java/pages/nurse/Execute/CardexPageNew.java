@@ -71,7 +71,7 @@ public class CardexPageNew extends BasePage {
   
 
     public void executeAndApproveAllToThisShiftAndApproval(String username, String password) {
-        log.info("Starting execution and approval of all instructions to this shift.");
+        UIActions.waitForSpinnerToDisappear();
         executeAllToThisShift();
          UIActions.click(btn_approvalDrug);
         userSignModalPage.signModal(username, password);

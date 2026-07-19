@@ -1,6 +1,7 @@
 package pages;
 
 import actionUtilies.UIActions;
+import drivers.DriverManager;
 import enums.InstructionType;
 import helpers.Constants;
 import lombok.extern.slf4j.Slf4j;
@@ -17,6 +18,7 @@ import actionUtilies.UIActions;
 import static org.testng.Assert.assertTrue;
 
 import javax.annotation.Nullable;
+
 import java.util.List;
 
 @Slf4j
@@ -201,8 +203,7 @@ public class DoctorInstructionPage extends BasePage {
    public void renewAllInstructions() {
     log.info("Renewing all instructions...");
      int index=0;
-    //לבדוק בכלל אם יש רשימה ולא הכול
-    int count = UIActions.findElementsWithWait(chekBoxList).size();
+    int count = DriverManager.getInstance().findElements(chekBoxList).size();
     if(count==0)   
         {log.info("No instructions found to renew.");
          return;
@@ -211,7 +212,7 @@ public class DoctorInstructionPage extends BasePage {
             log.info("Found {} instructions to renew.", count);
         }
     do{
-     List<WebElement> checkBoxes = UIActions.findElementsWithWait(chekBoxList);
+     List<WebElement> checkBoxes = DriverManager.getInstance().findElements(chekBoxList);
      // WebElement cb =  checkBoxes.get(0);
         if (!checkBoxes.get(0).isSelected()) {
             UIActions.waitForElementClickable(checkBoxes.get(0));
