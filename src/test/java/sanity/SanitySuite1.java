@@ -89,7 +89,7 @@ public class SanitySuite1 extends BaseSuit {
          }
        log.info("* Pre-Class Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
     
-     }
+      }
 
 
     @BeforeMethod
