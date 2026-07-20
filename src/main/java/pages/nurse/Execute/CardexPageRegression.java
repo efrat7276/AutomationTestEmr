@@ -60,7 +60,7 @@ public class CardexPageRegression extends BasePage {
                 return displayed;
             } catch (org.openqa.selenium.StaleElementReferenceException e) {
                 if (attempt < 2) {
-                    log.warn("  Stale element on attempt {}, retrying...", attempt + 1);
+                    log.warn("Stale element on attempt {}, retrying...", attempt + 1);
                     continue;
                 } else {
                     log.error("✗ Cardex tab - stale element after retries");
@@ -158,10 +158,10 @@ public class CardexPageRegression extends BasePage {
             // Try to find ALL buttons for debugging
             try {
                 List<WebElement> allButtons = UIActions.findElementsWithWait(By.tagName("button"));
-                log.info("  DEBUG: Found {} buttons total. Texts:", allButtons.size());
-                allButtons.stream().limit(5).forEach(btn -> log.info("    - {}", btn.getText()));
+                log.info("Found {} buttons total. Texts:", allButtons.size());
+                allButtons.stream().limit(5).forEach(btn -> log.info("  - {}", btn.getText()));
             } catch (Exception ex) {
-                log.error("  DEBUG: Failed to list buttons");
+                log.error("Failed to list buttons");
             }
             return false;
         }

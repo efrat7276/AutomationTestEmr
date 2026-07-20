@@ -30,8 +30,8 @@ public class ImagingPage extends BasePage {
      */
     public void navigateToImaging() {
         try {
-            innerMenuPage.navigateToMenuEntry("מנהל חולים");
-            innerMenuPage.navigateToMenuEntry("הדמיה");
+            innerMenuPage.navigateToMenuEntry("מנהל חולים",false);
+            innerMenuPage.navigateToMenuEntry("הדמיה",true);
             log.info("✓ Successfully navigated to Imaging section");
         } catch (Exception e) {
             log.error("✗ Error while navigating to Imaging: {}", e.getMessage());

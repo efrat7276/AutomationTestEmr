@@ -305,7 +305,7 @@ public class UIActions {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
             return true;
         } catch (Exception e) {
-            log.error("❌ אירעה שגיאה בלתי צפויה בזמן ההמתנה לאלמנט על המסך: " + e.getMessage());
+            log.error("שגיאה בהמתנה לאלמנט על המסך: {}", e.getMessage());
             return false;
         }
     }

@@ -17,7 +17,7 @@ public class MedicinePrep {
         if(UIActions.findElementWithWait(buttonPrintAllBy) != null) {
             boolean isDisplayed = UIActions.findElementWithWait(buttonPrintAllBy).isDisplayed();
             if (isDisplayed) {
-                log.info("medicine prep - is displayed.");
+                log.info("Medicine prep - is displayed.");
             }
             return isDisplayed;
         }

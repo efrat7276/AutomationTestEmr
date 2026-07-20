@@ -6,11 +6,9 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.List;
 
-import org.checkerframework.checker.guieffect.qual.UI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pages.BasePage;
-import pages.UserSignModalPage;
 @Slf4j
 public class CardexPageNew extends BasePage {
 
@@ -80,7 +78,7 @@ public class CardexPageNew extends BasePage {
     }
     
     public void clickArrowForwardToInnerMenu() {
-        log.info("Clicking the forward arrow to open the inner menu.");
+        log.info("Cardex screen: Clicking the forward arrow to open the inner menu.");
         UIActions.click(i_arrow);
     }
 

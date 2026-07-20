@@ -43,7 +43,7 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
         if(UIActions.isExist(currentRow) && currentRow.isEnabled())
           { 
             selectNthOptionFromDropdown(currentRow, 4);
-            log.info("selected the first hour in current day for  drug and general instructions.");
+            log.info("Selected the first hour in current day for drug and general instructions.");
           }  
     }
     log.info("Selected the first hour in current day for {} drug and general instructions", rowCount);

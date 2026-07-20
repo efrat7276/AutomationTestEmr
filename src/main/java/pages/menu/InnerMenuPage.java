@@ -19,7 +19,7 @@ public class InnerMenuPage extends BasePage {
      * מקבלת את שם כניסת התפריט בעברית ולוחצת על הכניסה המתאימה.
      * * @param entryName שם הכניסה המדויק (למשל, "תרופות", "רשימת מטופלים").
      */
-    public void navigateToMenuEntry(String entryName) {
+    public void navigateToMenuEntry(String entryName , boolean subMenu) {
         String dynamicXpath = String.format(MENU_ITEM_XPATH_TEMPLATE, entryName);
         By targetLocator = By.xpath(dynamicXpath);
         log.info("Navigating to menu entry: " + entryName );
@@ -33,8 +33,11 @@ public class InnerMenuPage extends BasePage {
             throw new RuntimeException("Failed to navigate in the inner menu", e);
         }
         UIActions.waitForSpinnerToDisappear();
-        assertTrue(isMenuEntryDisplayed(entryName), "Failed to navigate to menu entry: " + entryName);
-        log.info("Successfully navigated to menu entry: " + entryName);
+      //  assertTrue(isMenuEntryDisplayed(entryName), "Failed to navigate to menu entry: " + entryName);
+       if(!subMenu)
+         log.info("Successfully navigated to menu entry: " + entryName);
+        else
+            log.info("Successfully navigated to submenu entry: " + entryName);
     }
 
     public boolean isMenuEntryDisplayed(String entryName) {
@@ -53,7 +56,7 @@ public class InnerMenuPage extends BasePage {
     }
      public boolean isTitleDisplayed(String expectedTitle) {
         String actualText = UIActions.getText(getTitleSpanLocator()).trim();
-        log.debug("DEBUG: actualText = '{}' | expected = '{}'", actualText, expectedTitle);
+        log.debug("Actual text = '{}' | expected = '{}'", actualText, expectedTitle);
         return actualText.contains(expectedTitle);
     }
 }

@@ -4,7 +4,6 @@ import enums.HospitalDepartment;
 import enums.InstructionType;
 import helpers.Constants;
 import helpers.QueriesUtils;
-import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
@@ -79,8 +78,11 @@ public class SanitySuite1 extends BaseSuit {
         log.error("Department '{}' not found! Using default: {}", 
                   deptNameParam, currentDept.getDisplayName());
     }
+     if (Boolean.parseBoolean(System.getenv("JENKINS_RUN")) && System.getenv("JENKINS_ENV") != null) {
+         log.info("* Pre-Class Setup: Cleaning patient data for department: {} (Code: {})", 
+                  currentDept.getDisplayName(), currentDept.getCode());
       patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient(currentDept.getCode())).get(0);
-     boolean isSucceeded=
+      boolean isSucceeded=
       preparePatientDataBeforeTest(QueriesUtils.preparePatientData, patientMisparIshpuz);
          if (isSucceeded) {
               log.info("* Patient data removed successfully for misparIshpuz = {}", patientMisparIshpuz);
@@ -88,8 +90,8 @@ public class SanitySuite1 extends BaseSuit {
               log.warn("* No patient data found to remove for misparIshpuz = {}", patientMisparIshpuz);
          }
        log.info("* Pre-Class Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
-    
-      }
+     }
+   }
 
 
     @BeforeMethod
@@ -136,7 +138,7 @@ public class SanitySuite1 extends BaseSuit {
     
     @Feature("Visual Tests")
     @Story("Num version existing in main menu")
-    @Test(enabled = false)
+    @Test(groups = {"ignore"})
     public void test_02_numVersionExisting(){
         log.info("* Starting test_02_numVersionExisting: Verifying version number in main menu");
         loginAsDoctor();
@@ -169,13 +171,13 @@ public class SanitySuite1 extends BaseSuit {
         log.info("* Starting test_05_dischargedPatientListVisibility: Logging in as doctor ");
         loginAsDoctor();
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
-        innerMenuPage.navigateToMenuEntry("רשימת משוחררים");
+        innerMenuPage.navigateToMenuEntry("רשימת משוחררים", false);
         dischargedPatientListPage.verifydischargedPatientsListVisible();
     }
 
     @Feature("Functional Tests")
     @Story("Entering to patient box")
-    @Test(enabled = false)
+    @Test( groups = {"ignore"})
     public void test_06_enterToPatientBox() {
         log.info("* Starting test_06_enterToPatientBox: Logging in as doctor and entering patient box");
         loginAsDoctor();
@@ -204,7 +206,7 @@ public class SanitySuite1 extends BaseSuit {
         loginAsDoctor();
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);
-        innerMenuPage.navigateToMenuEntry("FollowUp");
+        innerMenuPage.navigateToMenuEntry("FollowUp", false);
         followupPage.addFollowupAndVerify("111", "222", "333", "444", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 
@@ -243,8 +245,8 @@ public class SanitySuite1 extends BaseSuit {
       chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
       choosePatient(PATIENT_1);
       cardexPageNew.clickArrowForwardToInnerMenu();
-      innerMenuPage.navigateToMenuEntry("סיעוד");
-      innerMenuPage.navigateToMenuEntry("פצעים");
+      innerMenuPage.navigateToMenuEntry("סיעוד", false);
+      innerMenuPage.navigateToMenuEntry("פצעים", true);
       woundPage.clickAddWound();
       woundFormPage.addNewWound("פצע איסכמי", null, null, null);
       woundFormPage.saveWound(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
@@ -259,8 +261,8 @@ public class SanitySuite1 extends BaseSuit {
          chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
          choosePatient(PATIENT_1);
          cardexPageNew.clickArrowForwardToInnerMenu();
-         innerMenuPage.navigateToMenuEntry("סיעוד");
-         innerMenuPage.navigateToMenuEntry("נקזים וצנתרים");
+         innerMenuPage.navigateToMenuEntry("סיעוד", false);
+         innerMenuPage.navigateToMenuEntry("נקזים וצנתרים", true);
          catheterPage.addCatheterBranola(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
      }
 
@@ -314,7 +316,7 @@ public class SanitySuite1 extends BaseSuit {
         doctorInstructionPage.clickButtonAddInstruction(InstructionType.MEDICINE);
         drugForm.addOneMedicine("Aspirin", "once only", "500mg", null, null, null, null, null, null, null, true);
         doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
-        innerMenuPage.navigateToMenuEntry("קרדקס");
+        innerMenuPage.navigateToMenuEntry("קרדקס", false);
         UIActions.waitForSpinnerToDisappear();
         cardexPageNew.verifyDrugExecuted("Aspirin");
 
@@ -339,13 +341,13 @@ public class SanitySuite1 extends BaseSuit {
     public void test_18_labOrdersList() {
         log.info("* Starting test_18_labOrdersList: Lab orders visibility");
         loginAsDoctor();
-        innerMenuPage.navigateToMenuEntry("לקיחת דמים");
+        innerMenuPage.navigateToMenuEntry("לקיחת דמים", false);
     //    bloodOrders
     }
 
     @Feature("Functional Tests")
     @Story("Adding and approving a single dose medicine by nurse")
-    @Test(enabled = false)
+    @Test(groups = {"ignore"})
      public void test_19_addAndApprovalByNurseSingleOnceOnlyMedicineAndVerify() {
       log.info("* Starting test_19_addAndApprovalByNurseSingleOnceOnlyMedicineAndVerify: Adding a single dose medicine for the patient");
       loginAsDoctor();

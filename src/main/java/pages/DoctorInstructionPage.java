@@ -45,7 +45,7 @@ public class DoctorInstructionPage extends BasePage {
     // בדיקה אם הטקסט בצד השני של הכותרת מתאים
     public boolean isSecondTitleDisplayed(InstructionType type) {
         String actualText = UIActions.getText(getSecondTitleSpanLocator()).trim();
-        log.debug("DEBUG: actualText = '{}' | expected = '{}'", actualText, type.getDescription());
+        log.debug("Actual text = '{}' | expected = '{}'", actualText, type.getDescription());
         return actualText.contains(type.getDescription());
     }
 

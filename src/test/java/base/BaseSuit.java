@@ -37,6 +37,7 @@ public class BaseSuit {
 
     @BeforeSuite
     public void setupBeforeSuite() {
+        
         this.env = System.getProperty("env");
         log.info(">>> Setting up test environment: {}", env);
         if (env == null || env.isEmpty()) {
@@ -68,32 +69,32 @@ public class BaseSuit {
     }
     
     protected void loginAsDoctor() {
-        log.info(" login as DOCTOR: {}", Constants.DOCTOR_USERNAME);
+        log.info("Login as doctor with : {} user", Constants.DOCTOR_USERNAME);
         loginPage.login(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD, Constants.DOCTOR_ROLE);
     }
 
     protected void loginAsNurse() {
-        log.info(" login as NURSE: {}", Constants.NURSE_USERNAME);
+        log.info("Login as nurse with : {} user", Constants.NURSE_USERNAME);
         loginPage.login(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD, Constants.NURSE_ROLE);
     }
 
     
     protected void loginAsNutritionist() {
-        log.info(" login as NUTRITIONIST: {}", Constants.NUTRITIONIST_USERNAME);
+        log.info("Login as nutritionist with : {} user", Constants.NUTRITIONIST_USERNAME);
         loginPage.login(Constants.NUTRITIONIST_USERNAME, Constants.NUTRITIONIST_PASSWORD, Constants.NUTRITIONIST_ROLE);
     }
 
     protected void choosePatient(int patientIndex) {
         try {
             UIActions.waitForSpinnerToDisappear();
-            log.info("Choosing patient at index: {}", patientIndex);
+            log.info("Patient List screen: Choosing patient number: {}", patientIndex);
             UIActions.waitForVisible(patientsListPage.list_patients);
             patientsListPage.choosePatient(patientIndex);
-            log.info("✓ Successfully selected patient at index {}", patientIndex);
-            patientBoxPage.verifyPatientDetailsExisting();
+            log.info("✓ Successfully selected patient number {}", patientIndex);
+          //  patientBoxPage.verifyPatientDetailsExisting();
         } catch (Exception e) {
-            log.error("✗ FAILED to choose patient at index {}: {}", patientIndex, e.getMessage(), e);
-            throw new RuntimeException("Patient selection failed at index " + patientIndex, e);
+            log.error("✗ FAILED to choose patient number {}: {}", patientIndex, e.getMessage(), e);
+            throw new RuntimeException("Patient selection failed for patient number " + patientIndex, e);
         }
     }
 

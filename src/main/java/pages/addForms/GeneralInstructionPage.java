@@ -36,6 +36,6 @@ public class GeneralInstructionPage {
         UIActions.click(btn_possbilities);
          UIActions.selectFromList(possbilityList, "Once Only");
         UIActions.click(btn_save);
-        log.info("general instruction added and form closed.");
+        log.info("General instruction added and form closed.");
     }
 }

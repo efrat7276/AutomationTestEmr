@@ -18,7 +18,7 @@ public class ManageDB {
     static {
         String env = Constants.CURRENT_ENV; 
         dbKey = "DB-" + env;
-        log.info("DEBUG: Database environment set to: {}", dbKey);
+        log.info("Database environment set to: {}", dbKey);
     }
 
 

@@ -29,10 +29,10 @@ public class LoginPage extends BasePage {
     public void login(String user , String pass , String role){
 
     String env = Constants.CURRENT_ENV;
-    log.info("Environment: {}", env);
+    log.info("Environment: {}", env );
      navigateToEMR(env);
      insertUserAndPass(user,pass);
-  if(user.equals("test")){
+     if(user.equals("test")){
           ChooseRolePage chooseRolePage=new ChooseRolePage();
           chooseRolePage.chooseRole(role);
  }

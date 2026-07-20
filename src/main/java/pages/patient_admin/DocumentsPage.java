@@ -30,10 +30,10 @@ public class DocumentsPage extends BasePage {
     public void navigateToDocuments() {
         try {
             // Use innerMenuPage to navigate to "מנהל חולים" menu
-            innerMenuPage.navigateToMenuEntry("מנהל חולים");
+            innerMenuPage.navigateToMenuEntry("מנהל חולים",false);
             
             // Use innerMenuPage to navigate to "מסמכים" submenu
-            innerMenuPage.navigateToMenuEntry("מסמכים");
+            innerMenuPage.navigateToMenuEntry("מסמכים",true);
             
             log.info("✓ Successfully navigated to Documents section");
         } catch (Exception e) {
