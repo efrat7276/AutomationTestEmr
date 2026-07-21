@@ -7,9 +7,13 @@ import enums.InstructionType;
 import helpers.Constants;
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.sql.SQLException;
 import java.time.Duration;
 import java.util.List;
+import java.util.Properties;
 
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
@@ -49,6 +53,27 @@ public class BaseSuit {
         int waitDuration = env.equals("qa") ? 60 : 30;
         this.wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(waitDuration));
     }
+
+    public void createAllureEnvironmentFile() {
+
+    Properties properties = new Properties();
+    properties.setProperty("Environment", env);
+   // אפשר להוסיף לפה עוד פרמטרים שתרצי להציג, למשל:
+  //  properties.setProperty("URL", currentUrl);
+    //properties.setProperty("Runner", Boolean.parseBoolean(System.getProperty("JENKINS_RUN")) ? "Jenkins" : "Local");
+
+    File allureResultsDir = new File("allure-results");
+    if (!allureResultsDir.exists()) {
+        allureResultsDir.mkdirs();
+    }
+
+    try (FileOutputStream fos = new FileOutputStream(new File(allureResultsDir, "environment.properties"))) {
+        properties.store(fos, "Allure Environment Properties");
+        log.info("Successfully generated Allure environment.properties with env: {}", env);
+    } catch (IOException e) {
+        log.error("Failed to create Allure environment.properties", e);
+    }
+}
 
     @BeforeMethod
     public void setUp() {

@@ -26,7 +26,7 @@ public class AllureLogAppender extends AppenderBase<ILoggingEvent> {
         Status status = mapStatus(event.getLevel());
 
         Allure.step(
-                event.getLevel() + " - " + message,
+                message,
                 () -> {
                     if (status != Status.PASSED) {
                         Allure.getLifecycle().updateStep(s -> s.setStatus(status));
