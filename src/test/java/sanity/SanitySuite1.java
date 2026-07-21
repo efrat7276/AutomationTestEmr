@@ -78,7 +78,7 @@ public class SanitySuite1 extends BaseSuit {
         log.error("Department '{}' not found! Using default: {}", 
                   deptNameParam, currentDept.getDisplayName());
     }
-     if (Boolean.parseBoolean(System.getenv("JENKINS_RUN")) && System.getenv("JENKINS_RUN") != null) {
+    if (Boolean.parseBoolean(System.getProperty("JENKINS_RUN"))) {
          log.info("* Pre-Class Setup: Cleaning patient data for department: {} (Code: {})", 
                   currentDept.getDisplayName(), currentDept.getCode());
       patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient(currentDept.getCode())).get(0);
