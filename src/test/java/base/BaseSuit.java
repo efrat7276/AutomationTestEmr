@@ -42,7 +42,7 @@ public class BaseSuit {
     @BeforeSuite
     public void setupBeforeSuite() {
 
-        createAllureEnvironmentFile();
+       // createAllureEnvironmentFile();
         this.env = System.getProperty("env");
         log.info(">>> Setting up test environment: {}", env);
         if (env == null || env.isEmpty()) {
