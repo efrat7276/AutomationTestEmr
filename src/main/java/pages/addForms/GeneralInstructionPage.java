@@ -30,7 +30,7 @@ public class GeneralInstructionPage {
     public void addGeneralInstructionAndClose() {
         UIActions.click(generalInstructionCategoryList);
         UIActions.click(generalInsSubList);
-        if(UIActions.waitForVisible(duplicateInstructionModal))
+        if(UIActions.isPopupAppeared(duplicateInstructionModal))
           UIActions.click(duplicateInstructionModalConfirmButton);
 
         UIActions.click(btn_possbilities);

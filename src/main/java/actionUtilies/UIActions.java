@@ -308,12 +308,22 @@ public class UIActions {
 
         return wait.until(ExpectedConditions.visibilityOfElementLocated(by)).getText();
     }
+
+     public static boolean isPopupAppeared(By locator) {
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
     public static boolean waitForVisible(By locator) {
         try {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
             return true;
         } catch (Exception e) {
-            log.error("שגיאה בהמתנה לאלמנט על המסך: {}", e.getMessage());
+            log.error("waiting for element to be visible failed: " + locator.toString() + ". Error: " + e.getMessage());
             return false;
         }
     }

@@ -125,7 +125,7 @@ public class DrugFormPage extends BasePage {
         }
         UIActions.typeText(inp_selectDrug, nameMed);
         UIActions.click(inp_selectDrugTopList);
-        if(UIActions.waitForVisible(duplicateInstructionModal))
+        if(UIActions.isPopupAppeared(duplicateInstructionModal))
           UIActions.click(duplicateInstructionModalConfirmButton);
 
         // 2. בחירת התדירות
@@ -211,7 +211,7 @@ public class DrugFormPage extends BasePage {
         }
         UIActions.typeText(inp_selectDrug, nameFluid);
         UIActions.click(inp_selectDrugTopList);
-         if(UIActions.waitForVisible(duplicateInstructionModal))
+        if(UIActions.isPopupAppeared(duplicateInstructionModal))
           UIActions.click(duplicateInstructionModalConfirmButton);
         By possibilityLocator = getFluidPossibilityLocator(possibility);
         UIActions.waitForElementClickable(possibilityLocator);
