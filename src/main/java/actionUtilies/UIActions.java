@@ -101,9 +101,17 @@ public class UIActions {
     }
 }
     public static void click(WebElement element) {
-    wait.until(ExpectedConditions.visibilityOf(element));
-    wait.until(ExpectedConditions.elementToBeClickable(element));
-    element.click();
+    try {
+        wait.until(ExpectedConditions.visibilityOf(element));
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+        element.click();
+    } catch (ElementClickInterceptedException e) {
+        try {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+        } catch (Exception jsException) {
+            throw new RuntimeException("Failed to click element (standard and JavaScript attempts): " + element, jsException);
+        }
+    }
 }  
 
     /**

@@ -37,12 +37,12 @@ public class BaseSuit {
 
     @BeforeSuite
     public void setupBeforeSuite() {
-        
+
         this.env = System.getProperty("env");
         log.info(">>> Setting up test environment: {}", env);
         if (env == null || env.isEmpty()) {
-            log.warn("No environment specified. Defaulting to 'prod'.");
-            this.env = "prod";
+            log.warn("No environment specified. Defaulting to 'qa'.");
+            this.env = "qa";
         }
         log.info("--- Execution Environment: {} ---", env);
         log.info("setup duration of waitting");
