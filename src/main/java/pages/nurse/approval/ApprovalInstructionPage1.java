@@ -129,17 +129,17 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
 
     List<WebElement> approvalAllBtn = UIActions.findElementsWithWait(btnApprovalBy);
      log.info("Found {} approval buttons to click.", approvalAllBtn.size());
-    UIActions.waitForElementClickable(approvalAllBtn.get(0));
+    UIActions.waitForElementVisible(btnApprovalBy);
    int expectedButtons = approvalAllBtn.size(); 
    int index = 0;
-    log.info("Waiting for {} approval buttons to be clickable.", expectedButtons);
-    if(expectedButtons==0)   
-        {log.info("No approval buttons found.");
-         return;
-      }
-        else {
-            log.info("Found {} approval buttons.", expectedButtons);
-        }
+//   //  log.info("Waiting for {} approval buttons to be clickable.", expectedButtons);
+//     if(expectedButtons==0)   
+//         {log.info("No approval buttons found.");
+//          return;
+//       }
+//         else {
+//             log.info("Found {} approval buttons.", expectedButtons);
+//         }
 
   int currentCount = expectedButtons;
 

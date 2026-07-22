@@ -173,6 +173,10 @@ public class UIActions {
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
+    public static void waitForElementVisible(By element) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+    }
+
     /**
      * ממתין עד שאלמנט המזוהה על ידי הלוקטור יהפוך לבלתי נראה או יוסר מה-DOM.
      * שימושי במיוחד לאחר לחיצה על כפתור שסוגר מודל או מסיר ספינר טעינה.
