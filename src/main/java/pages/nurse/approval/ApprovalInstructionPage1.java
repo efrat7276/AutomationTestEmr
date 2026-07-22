@@ -150,7 +150,7 @@ do {
         break;
     }
 
-        UIActions.waitForElementClickable(allApprovalBtn.get(0));  
+        UIActions.waitForElementVisibleBy(allApprovalBtn.get(0));
         WebElement button = allApprovalBtn.get(0);
         WebDriver driver = DriverManager.getInstance();
         JavascriptExecutor js = (JavascriptExecutor) driver;
