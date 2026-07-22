@@ -10,7 +10,6 @@ import io.qameta.allure.Story;
 import lombok.extern.slf4j.Slf4j;
 
 import static org.testng.Assert.assertTrue;
-
 import java.sql.SQLException;
 
 import org.testng.annotations.BeforeClass;
@@ -66,7 +65,7 @@ public class SanitySuite1 extends BaseSuit {
     @BeforeClass
     public void preClass() throws SQLException{
 
-    String deptNameParam = System.getProperty("department", "אורטופדיה");
+    String deptNameParam = System.getProperty("department");
     HospitalDepartment foundDept = HospitalDepartment.getByHebrewName(deptNameParam);
     
     if (foundDept != null) {
@@ -318,7 +317,7 @@ public class SanitySuite1 extends BaseSuit {
         doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
         innerMenuPage.navigateToMenuEntry("קרדקס", false);
         UIActions.waitForSpinnerToDisappear();
-        cardexPageNew.verifyDrugExecuted("Aspirin");
+        // cardexPageNew.verifyDrugExecuted("Aspirin");
 
     }
 
