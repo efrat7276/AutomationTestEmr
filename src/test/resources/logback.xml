@@ -15,7 +15,7 @@
            <pattern>%msg%</pattern>
         </encoder>
     </appender>
-<!-- 
+
     <appender name="Allure" class="helpers.AllureLogAppender">
      <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>INFO</level>
@@ -23,7 +23,7 @@
         <encoder>
            <pattern>%msg%</pattern>
         </encoder>
-    </appender> -->
+    </appender>
 
     <root level="INFO">
         <appender-ref ref="STDOUT" />
