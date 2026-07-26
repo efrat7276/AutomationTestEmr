@@ -168,7 +168,7 @@ do {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", button);
         
-        log.info("Clicked approval button at index: {}", index);
+        log.info("Clicked approval button at index: {}", index+1);
         index++;
         if(index >= expectedButtons) {
            currentCount = 0;
@@ -176,17 +176,18 @@ do {
         }
         else {
             currentCount = UIActions.findElementsWithWait(btnApprovalBy).size();
-            log.info("Remaining approval buttons after click: {}", currentCount);
+            log.info("Remaining approval buttons after click: {}", expectedButtons - index);
         }
     } 
     while (currentCount > 0); 
-  
+    
      UIActions.click(btnApprovalAll);
+     log.info("Clicked on approval button for all"); 
+  
      userSignModalPage.signModal(username,password);
      UIActions.waitForSpinnerToDisappear();
    //  String text = DriverManager.getInstance().findElement(tabInstructionForApprovalBy).getText();
    //  Assert.assertTrue(text.contains("0"), "Some instructions were not approved. Remaining count: " + text);
-     log.info("Clicked on approval button for all"); 
      }
     
    

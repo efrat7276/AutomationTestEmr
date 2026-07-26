@@ -45,7 +45,8 @@ public class UserSignModalPage {
             waitForModalToClosed();
             
         } catch (Exception e) {
-            log.error("Approval process failed for user: " + username + ". Error: " + e.getMessage());
+            assert false : "Approval process failed for user: " + username + ". Error: " + e.getMessage();
+          //  log.error("Approval process failed for user: " + username + ". Error: " + e.getMessage());
        }
     }
 
