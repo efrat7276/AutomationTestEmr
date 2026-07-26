@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Sanity Suite">
-    <test name="Sanity Tests" preserve-order="true" timeout="300000" >
+    <test name="Sanity Tests" preserve-order="true" timeout="120000" >
     <groups>
         <run>
             <exclude name="ignore"/>
