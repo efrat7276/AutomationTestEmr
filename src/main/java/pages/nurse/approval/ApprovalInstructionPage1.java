@@ -166,7 +166,11 @@ do {
         WebElement button = allApprovalBtn.get(0);
         WebDriver driver = DriverManager.getInstance();
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", button);
+        try {
+            js.executeScript("arguments[0].click();", button);
+        } catch (Exception e) {
+            log.error("Failed to click approval button at index {}: {}", index+1, e.getMessage());
+        }
         
         log.info("Clicked approval button at index: {}", index+1);
         index++;
@@ -180,7 +184,7 @@ do {
         }
     } 
     while (currentCount > 0); 
-    
+
      UIActions.click(btnApprovalAll);
      log.info("Clicked on approval button for all"); 
   
