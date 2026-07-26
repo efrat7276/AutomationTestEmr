@@ -39,6 +39,11 @@ private final By btnApprovalAll = By.xpath("//button[@id='approvalDrug']");
 public void approveDrugsAndGeneralSelectCurrentDayHour(){
     List<WebElement> allToApprovalRows = UIActions.findElementsWithWait(btnChooseHourCurrentDayDrugAndGeneralBy);
     int rowCount = allToApprovalRows.size();
+    if (rowCount == 0) {
+        log.info("No drug or general instructions found for the current day.");
+        return;
+    }
+    log.info("Found {} drug and general instructions for the current day to approve.", rowCount);
     for (WebElement currentRow : allToApprovalRows) {
         if(UIActions.isExist(currentRow) && currentRow.isEnabled())
           { 
@@ -46,48 +51,55 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
             log.info("Selected the first hour in current day for drug and general instructions.");
           }  
     }
-    log.info("Selected the first hour in current day for {} drug and general instructions", rowCount);
+   // log.info("Selected the first hour in current day for {} drug and general instructions", rowCount);
 }
 
  public void approvalAllLiquidInstruction(){  {
         List<WebElement> allLiquidTimeline = UIActions.findElementsWithWait(boxCurrentHourForLiquidBy);
         int rowCount = allLiquidTimeline.size();
+        if (rowCount == 0) {
+            log.info("No liquid instructions found in the timeline.");
+            return;
+        }
+        log.info("Found {} liquid instructions to approve.", rowCount);
         for (int i = 0; i <rowCount; i++) {
         try {
                 if (!allLiquidTimeline.isEmpty()) {
-                    allLiquidTimeline.get(i).click();
-                    log.info("Clicked on timeline entry for liquid instruction in row {}.", i + 1);
+                    UIActions.click(allLiquidTimeline.get(i));
+                    log.info("Clicked on liquid instruction timeline number {} ", i + 1);
                 }
             } catch (Exception e) {
                 log.error("Error processing liquid instruction in timeline row {}: {}", i + 1, e.getMessage());
                 continue;
             }
         }
-        log.info("Clicked on all liquid instruction timelines");
+       // log.info("Clicked on all liquid instruction timelines");
 }
 
      }
      
     public void approvalAllbloodProduct(){
         List<WebElement> allBloodProductTimeline = UIActions.findElementsWithWait(boxCurrentHourForBloodProductBy);
-
-        if (allBloodProductTimeline.isEmpty()) {
+int rowCount = allBloodProductTimeline.size();
+        if (rowCount == 0) {
            log.info("No blood product instructions found in the timeline.");     
             return;
         }
-        for (int i = 0; i < allBloodProductTimeline.size(); i++) {
+        for (int i = 0; i < rowCount; i++) {
             try {
-                if (!allBloodProductTimeline.isEmpty()) {
-                    allBloodProductTimeline.get(i).click();
-                    log.info("Clicked on timeline entry for blood product instruction in row {}.", i + 1);
+                // WebElement element = driver.findElement(By.xpath("//tr[@name='drugRow2'][td]/td[@colspan='6']//div[contains(@class,'timeLineInToday')]"));
+                // JavascriptExecutor js = (JavascriptExecutor) driver;
+                // js.executeScript("arguments[0].click();", element);
+                
+                   UIActions.click(allBloodProductTimeline.get(i));
+                    log.info("Clicked on blood product instruction timeline number {} ", i + 1);
                     UIActions.click(btnVforBloodProductBy);
+                } catch (Exception e) {
+                    log.error("Error processing blood product instruction in timeline row {}: {}", i + 1, e.getMessage());
+                    continue;
                 }
-            } catch (Exception e) {
-                log.error("Error processing blood product instruction in timeline row {}: {}", i + 1, e.getMessage());
-                continue;
-            }
         }
-        log.info("Clicked on all blood product instruction timelines and approved them.");
+        //log.info("Clicked on all blood product instruction timelines and approved them.");
      }
 
     /**
@@ -168,8 +180,6 @@ do {
         }
     } 
     while (currentCount > 0); 
-
-
   
      UIActions.click(btnApprovalAll);
      userSignModalPage.signModal(username,password);
