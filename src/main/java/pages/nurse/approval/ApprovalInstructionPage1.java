@@ -158,7 +158,8 @@ do {
         
         log.info("Clicked approval button at index: {}", index);
         index++;
-        currentCount = DriverManager.getInstance().findElements(btnApprovalBy).size();
+        currentCount = UIActions.findElementsWithWait(btnApprovalBy).size();
+        log.info("Remaining approval buttons after click: {}", currentCount);
 
     } 
     while (currentCount > 0); 
