@@ -51,6 +51,16 @@ public class BaseSuit {
         log.info("setup duration of waitting");
         int waitDuration = env.equals("qa") ? 60 : 30;
         this.wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(waitDuration));
+   
+        Properties properties = new Properties();
+        properties.setProperty("Environment", "allure-results/" + env.toUpperCase());
+
+        File envFile = new File("allure-results/" + env.toUpperCase(), "environment.properties");
+        try (FileOutputStream fos = new FileOutputStream(envFile)) {
+            properties.store(fos, "Allure Environment Properties");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @BeforeMethod
