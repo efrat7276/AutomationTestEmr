@@ -158,6 +158,10 @@ do {
         
         log.info("Clicked approval button at index: {}", index);
         index++;
+        if(index >= expectedButtons) {
+            log.info("All approval buttons clicked.");
+            break;
+        }
         currentCount = UIActions.findElementsWithWait(btnApprovalBy).size();
         log.info("Remaining approval buttons after click: {}", currentCount);
 
