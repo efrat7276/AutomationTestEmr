@@ -42,9 +42,7 @@ public class BaseSuit {
     @BeforeSuite
     public void setupBeforeSuite() {
 
-       // createAllureEnvironmentFile();
         this.env = System.getProperty("env");
-        log.info(">>> Setting up test environment: {}", env);
         if (env == null || env.isEmpty()) {
             log.warn("No environment specified. Defaulting to 'qa'.");
             this.env = "qa";
@@ -54,27 +52,6 @@ public class BaseSuit {
         int waitDuration = env.equals("qa") ? 60 : 30;
         this.wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(waitDuration));
     }
-
-    public void createAllureEnvironmentFile() {
-
-    Properties properties = new Properties();
-    properties.setProperty("Environment", env);
-   // אפשר להוסיף לפה עוד פרמטרים שתרצי להציג, למשל:
-  //  properties.setProperty("URL", currentUrl);
-    //properties.setProperty("Runner", Boolean.parseBoolean(System.getProperty("JENKINS_RUN")) ? "Jenkins" : "Local");
-
-    File allureResultsDir = new File("allure-results");
-    if (!allureResultsDir.exists()) {
-        allureResultsDir.mkdirs();
-    }
-
-    try (FileOutputStream fos = new FileOutputStream(new File(allureResultsDir, "environment.properties"))) {
-        properties.store(fos, "Allure Environment Properties");
-        log.info("Successfully generated Allure environment.properties with env: {}", env);
-    } catch (IOException e) {
-        log.error("Failed to create Allure environment.properties", e);
-    }
-}
 
     @BeforeMethod
     public void setUp() {

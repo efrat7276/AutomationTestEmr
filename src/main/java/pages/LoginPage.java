@@ -24,6 +24,7 @@ public class LoginPage extends BasePage {
     String envKey = System.getProperty("env", env);
     String actualUrl = FilesHelper.getData(envKey);
     driver.get(actualUrl);
+    log.info("Setting up test environment: {}, Navigated to EMR URL: {}", envKey, actualUrl);
     }
 
     public void login(String user , String pass , String role){
