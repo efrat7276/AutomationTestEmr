@@ -118,8 +118,8 @@ public class SanitySuite1 extends BaseSuit {
     @Feature("Functional Tests")
     @Story("Renewing instruction to patient due to Bug -solutinInstructionTimes")
     @Test()
-    public void test_00_renewInstructionToSpetifPatient() throws SQLException {
-      log.info("* Starting test_00_renewInstructionToSpetifPatient: Renewing instructions for patient with misparIshpuz = {}", patientMisparIshpuz);
+    public void test_00_renewInstructionToPatient() throws SQLException {
+      log.info("* Starting test_00_renewInstructionToPatient: Renewing instructions for patient with misparIshpuz = {}", patientMisparIshpuz);
        loginAsDoctor();
        chooseDepartmentVerifyListPatients(Constants.ICU_DEPARTMENT_STRING);
        choosePatient(3);

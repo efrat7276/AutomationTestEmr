@@ -88,9 +88,9 @@ public class CardexPageNew extends BasePage {
         UIActions.waitForElementClickable(stickers);
         UIActions.click(stickers);
        if (medicinePrep.isMedicinePrepDisplayed()) {
-        log.info("IV label printed successfully.");
+        log.info("IV label is displayed successfully.");
          } else {
-        log.error("Failed to print IV label.");
+        log.error("Failed to display IV label.");
          }
     }
 

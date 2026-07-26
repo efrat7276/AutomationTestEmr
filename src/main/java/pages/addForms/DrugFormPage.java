@@ -126,8 +126,10 @@ public class DrugFormPage extends BasePage {
         UIActions.typeText(inp_selectDrug, nameMed);
         UIActions.click(inp_selectDrugTopList);
         if(UIActions.isPopupAppeared(duplicateInstructionModal))
+        {
           UIActions.click(duplicateInstructionModalConfirmButton);
-
+          log.info("Duplicate instruction modal appeared. Confirmed to import existing instruction.");
+        }
         // 2. בחירת התדירות
         By possibilityLocator = getDrugPossibilityLocator(possibility);
         if(!possibility.equals("Daily")){

@@ -5,6 +5,8 @@ import drivers.DriverManager;
 import enums.InstructionType;
 import helpers.Constants;
 import lombok.extern.slf4j.Slf4j;
+
+import org.checkerframework.checker.guieffect.qual.UI;
 import org.checkerframework.checker.units.qual.g;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -201,9 +203,10 @@ public class DoctorInstructionPage extends BasePage {
         verifyDoctorApproval();
     }
    public void renewAllInstructions() {
+    UIActions.waitForSpinnerToDisappear();
     log.info("Renewing all instructions...");
      int index=0;
-    int count = DriverManager.getInstance().findElements(chekBoxList).size();
+    int count = UIActions.findElementsWithWait(chekBoxList).size();
     if(count==0)   
         {log.info("No instructions found to renew.");
          return;
