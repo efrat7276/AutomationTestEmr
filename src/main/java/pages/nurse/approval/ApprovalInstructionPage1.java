@@ -171,7 +171,13 @@ do {
         } catch (Exception e) {
             log.error("Failed to click approval button at index {}: {}", index+1, e.getMessage());
         }
-        
+    
+        String buttonText = button.getText();
+        if(!buttonText.contains("ערוך")) {
+            log.error("Button at index {} does not contain 'ערוך'. Actual text: {}", index+1, buttonText);
+            throw new AssertionError("the click action failed for approval button at index " + (index+1));
+      
+        }
         log.info("Clicked approval button at index: {}", index+1);
         index++;
         if(index >= expectedButtons) {
