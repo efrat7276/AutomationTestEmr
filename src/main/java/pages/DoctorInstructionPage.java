@@ -69,12 +69,7 @@ public class DoctorInstructionPage extends BasePage {
     private By btn_approvalDrug = By.id("approvalDrug");
     private By chekBoxList = By.xpath("//*[@id='Renew']//label[input[@type='checkbox']]"); // כל ה-checkbox של חידוש הוראות
     private By btn_editFirstDrug = By.xpath("//button[contains(@id, 'עדכן')][1]"); // כפתור עריכה של ההוראה הראשונה ברשימה, לדוגמה
-    private By btn_stopFirstDrug = By.xpath("//button[contains(@id, 'עצור')][1]"); // כפתור עצור של ההוראה הראשונה ברשימה, לדוגמה
-    private By btn_pauseFirstDrug = By.xpath("//button[contains(@id, 'השהה')][1]"); // כפתור השהה של ההוראה הראשונה ברשימה, לדוגמה
 
-    /**
-     * click add medicine drug
-     */
     public void clickButtonAddInstruction(InstructionType type) {
         switch (type) {
             case MEDICINE:

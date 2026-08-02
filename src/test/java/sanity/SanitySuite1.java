@@ -65,7 +65,8 @@ public class SanitySuite1 extends BaseSuit {
     @BeforeClass
     public void preClass() throws SQLException{
 
-    String deptNameParam = System.getProperty("department");
+    String deptNameParamFromJenkins = System.getProperty("department");
+    String deptNameParam = deptNameParamFromJenkins.replace('_', ' ');
     HospitalDepartment foundDept = HospitalDepartment.getByHebrewName(deptNameParam);
     
     if (foundDept != null) {
@@ -119,7 +120,7 @@ public class SanitySuite1 extends BaseSuit {
     @Story("Renewing instruction to patient due to Bug -solutinInstructionTimes")
     @Test()
     public void test_00_renewInstructionToPatient() throws SQLException {
-      log.info("* Starting test_00_renewInstructionToPatient: Renewing instructions for patient with misparIshpuz = {}", patientMisparIshpuz);
+      log.info("* Starting test_00_renewInstructionToPatient: Renewing instructions for patient");
        loginAsDoctor();
        chooseDepartmentVerifyListPatients(Constants.ICU_DEPARTMENT_STRING);
        choosePatient(3);
@@ -127,7 +128,7 @@ public class SanitySuite1 extends BaseSuit {
     }
  
     @Feature("Visual Tests")
-    @Story("Logging in as doctor and verify role name is displayed")
+    @Story("Logging in as doctor")
     @Test()
     public void test_01_login(){
         log.info("* Starting test_01_login: Logging in as doctor and verifying role name");

@@ -21,7 +21,7 @@ public class ChooseDepartmentListPage {
         UIActions.click(btn_li_department);
         UIActions.selectFromList(departmentList, departmentName);
         UIActions.waitForSpinnerToDisappear();
-        log.info("Selected department: {}", departmentName);
+  //      log.info("Selected department: {}", departmentName);
     }
 
     
