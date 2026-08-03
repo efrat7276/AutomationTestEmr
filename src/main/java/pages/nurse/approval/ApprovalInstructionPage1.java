@@ -166,6 +166,26 @@ int rowCount = allBloodProductTimeline.size();
             JavascriptExecutor js = (JavascriptExecutor) DriverManager.getInstance();
             js.executeScript("arguments[0].click();", button);
             log.info("Clicked approval button at index: {}/{}", index + 1, expectedButtons);
+            int expectedButtonsAfterClick = DriverManager.getInstance().findElements(By.xpath("//button[contains(@id,'btnIsApproval') and .//span[contains(text(), 'ערוך')]]")).size();
+            if(index == 0 && DriverManager.getInstance().findElements(By.xpath("//button[contains(@id,'btnIsApproval') and .//span[contains(text(), 'ערוך')]]")).size()==1){
+                log.info(" 1 instruction approved.");
+            }
+            else{ 
+                if (index == expectedButtons - 1 && expectedButtonsAfterClick == expectedButtons) {
+                log.info("All instructions approved.");
+             }
+            
+            else {
+                if (DriverManager.getInstance().findElements(By.xpath("//button[contains(@id,'btnIsApproval') and .//span[contains(text(), 'ערוך')]]")).size() < expectedButtons) {
+                    log.info("{} instructions approved.", index + 1);
+                }
+                else {
+                    log.info("error in approval process, please check.");
+                    Assert.fail("Error in approval process, please check.");
+                }
+            }
+            }
+
         } catch (Exception e) {
             log.error("Failed to click approval button at index {}: {}", index + 1, e.getMessage());
             throw e; // הפלת הטסט אם הלחיצה נכשלה
