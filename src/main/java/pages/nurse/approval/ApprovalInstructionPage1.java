@@ -139,60 +139,54 @@ int rowCount = allBloodProductTimeline.size();
          approvalAllbloodProduct();
      }
 
-    List<WebElement> approvalAllBtn = UIActions.findElementsWithWait(btnApprovalBy);
-     log.info("Found {} approval buttons to click.", approvalAllBtn.size());
-    UIActions.waitForElementVisible(btnApprovalBy);
-   int expectedButtons = approvalAllBtn.size(); 
-   int index = 0;
-//   //  log.info("Waiting for {} approval buttons to be clickable.", expectedButtons);
-//     if(expectedButtons==0)   
-//         {log.info("No approval buttons found.");
-//          return;
-//       }
-//         else {
-//             log.info("Found {} approval buttons.", expectedButtons);
-//         }
+   // 1. קבלת כמות הכפתורים הראשונית
+   List<WebElement> approvalButtons = UIActions.findElementsWithWait(btnApprovalBy);
 
-  int currentCount = expectedButtons;
+   if (approvalButtons.isEmpty()) {
+      log.info("No approval buttons found to click.");
+   } else {
+    int expectedButtons = approvalButtons.size();
+    log.info("Found {} approval buttons to click.", expectedButtons);
 
-do {
-    List<WebElement> allApprovalBtn = UIActions.findElementsWithWait(btnApprovalBy);
-    
-    if (allApprovalBtn.isEmpty()) {
-        break;
-    }
+    int index = 0;
+    while (index < expectedButtons) {
+        // שליפת האלמנטים העדכניים בכל סיבוב (למניעת Stale Element)
+        List<WebElement> currentButtons = DriverManager.getInstance().findElements(btnApprovalBy);
 
-        UIActions.waitForElementVisibleBy(allApprovalBtn.get(0));
-        WebElement button = allApprovalBtn.get(0);
-        WebDriver driver = DriverManager.getInstance();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        try {
-            js.executeScript("arguments[0].click();", button);
-        } catch (Exception e) {
-            log.error("Failed to click approval button at index {}: {}", index+1, e.getMessage());
-        }
-    
-        String buttonText = button.getText();
-        if(!buttonText.contains("ערוך")) {
-            log.error("Button at index {} does not contain 'ערוך'. Actual text: {}", index+1, buttonText);
-            throw new AssertionError("the click action failed for approval button at index " + (index+1));
-      
-        }
-        log.info("Clicked approval button at index: {}", index+1);
-        index++;
-        if(index >= expectedButtons) {
-           currentCount = 0;
+        if (currentButtons.isEmpty() || index >= currentButtons.size()) {
+            log.warn("No more buttons found on page at index {}", index + 1);
             break;
         }
-        else {
-            currentCount = UIActions.findElementsWithWait(btnApprovalBy).size();
-            log.info("Remaining approval buttons after click: {}", expectedButtons - index);
-        }
-    } 
-    while (currentCount > 0); 
 
-     UIActions.click(btnApprovalAll);
-     log.info("Clicked on approval button for all"); 
+        WebElement button = currentButtons.get(0); // או get(index) במידה והכפתורים לא נעלמים מהמסך
+        UIActions.waitForElementVisibleBy(button);
+
+        // 2. ביצוע הלחיצה ב-JS
+        try {
+            JavascriptExecutor js = (JavascriptExecutor) DriverManager.getInstance();
+            js.executeScript("arguments[0].click();", button);
+            log.info("Clicked approval button at index: {}/{}", index + 1, expectedButtons);
+        } catch (Exception e) {
+            log.error("Failed to click approval button at index {}: {}", index + 1, e.getMessage());
+            throw e; // הפלת הטסט אם הלחיצה נכשלה
+        }
+
+        // 3. שליפת הטקסט העדכני לאחר הלחיצה (שליפה מחדש למניעת Stale Element)
+        String buttonText = UIActions.findElementsWithWait(btnApprovalBy).get(0).getText();
+
+        if (!buttonText.contains("ערוך")) {
+            log.error("Button at index {} does not contain 'ערוך'. Actual text: '{}'", index + 1, buttonText);
+            throw new AssertionError("The click action failed for approval button at index " + (index + 1));
+        }
+
+        index++;
+      //  log.info("Clicked & verified approval button at index: {}/{}", index, expectedButtons);
+    }
+}
+
+// 4. לחיצה על כפתור 'אישור הכל' בסיום
+UIActions.click(btnApprovalAll);
+log.info("Clicked on approval button for all");
   
      userSignModalPage.signModal(username,password);
      UIActions.waitForSpinnerToDisappear();
