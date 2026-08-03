@@ -197,38 +197,35 @@ public class DoctorInstructionPage extends BasePage {
         UIActions.waitForElementClickable(btn_approvalDrug);
         verifyDoctorApproval();
     }
-   public void renewAllInstructions() {
-    UIActions.waitForSpinnerToDisappear();
-    log.info("Renewing all instructions...");
-     int index=0;
-    int count = UIActions.findElementsWithWait(chekBoxList).size();
-    if(count==0)   
-        {log.info("No instructions found to renew.");
-         return;
-      }
-        else {
-            log.info("Found {} instructions to renew.", count);
+    public void renewAllInstructions() {
+
+        UIActions.waitForSpinnerToDisappear();
+        int index = 0;   
+        // מוצאים את כל ה-CheckBoxes שנמצאים במסך ברגע זה
+        List<WebElement> checkBoxes = DriverManager.getInstance().findElements(chekBoxList);
+        if (checkBoxes.isEmpty()) {
+            log.info("No instructions found to renew.");
+            return;
         }
-    do{
-     List<WebElement> checkBoxes = DriverManager.getInstance().findElements(chekBoxList);
-     // WebElement cb =  checkBoxes.get(0);
-        if (!checkBoxes.get(0).isSelected()) {
-            UIActions.waitForElementClickable(checkBoxes.get(0));
-            UIActions.click(checkBoxes.get(0));
-             log.info("Selected checkbox at index: {}", index);
-             try {
-                Thread.sleep(300); // המתנה קצרה כדי לוודא שהפעולה מתבצעת
-            } catch (InterruptedException e) {
-                log.error("InterruptedException occurred while waiting: {}", e.getMessage());
-            }
+    // log.info("Found {} instructions to renew.", checkBoxes.size());
+        log.info("Renewing all instructions...");
+
+    // כל עוד יש CheckBoxes ברשימה - מטפלים בראשון ומרעננים
+     while (!checkBoxes.isEmpty()) {
+        WebElement cb = checkBoxes.get(0);
+
+        if (!cb.isSelected()) {
+            UIActions.waitForElementClickable(cb);
+            UIActions.click(cb);
+            log.info("Selected checkbox at index: {}", index);
             index++;
-            if(count==1)
-                break;
-        } 
-     count = UIActions.findElementsWithWait(chekBoxList).size();
-     }
-     while(count>0);
+        }
+
+        // מרעננים את הרשימה לבדיקה הבאה בלולאה
+        checkBoxes = DriverManager.getInstance().findElements(chekBoxList);
+    }
      approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+
     }
     public void editFirstDrugInstruction(String username, String password, @Nullable String possibility, @Nullable String dose) {
         log.info("Editing first drug instruction - Possibility: {}, Dose: {}", possibility, dose);
