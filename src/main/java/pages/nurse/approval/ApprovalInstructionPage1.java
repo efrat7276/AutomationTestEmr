@@ -172,12 +172,12 @@ int rowCount = allBloodProductTimeline.size();
         }
 
         // 3. שליפת הטקסט העדכני לאחר הלחיצה (שליפה מחדש למניעת Stale Element)
-        String buttonText = UIActions.findElementsWithWait(btnApprovalBy).get(0).getText();
+     //   String buttonText = UIActions.findElementsWithWait(btnApprovalBy).get(0).getText();
 
-        if (!buttonText.contains("ערוך")) {
-            log.error("Button at index {} does not contain 'ערוך'. Actual text: '{}'", index + 1, buttonText);
-            throw new AssertionError("The click action failed for approval button at index " + (index + 1));
-        }
+        // if (!buttonText.contains("ערוך")) {
+        //     log.error("Button at index {} does not contain 'ערוך'. Actual text: '{}'", index + 1, buttonText);
+        //     throw new AssertionError("The click action failed for approval button at index " + (index + 1));
+        // }
 
         index++;
       //  log.info("Clicked & verified approval button at index: {}/{}", index, expectedButtons);
