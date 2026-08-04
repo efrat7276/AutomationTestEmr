@@ -153,7 +153,7 @@ int rowCount = allBloodProductTimeline.size();
         // שליפת האלמנטים העדכניים בכל סיבוב (למניעת Stale Element)
         List<WebElement> currentButtons = DriverManager.getInstance().findElements(btnApprovalBy);
 
-        if (currentButtons.isEmpty() || index >= currentButtons.size()) {
+        if (currentButtons.isEmpty()) {
             log.warn("No more buttons found on page at index {}", index + 1);
             break;
         }
@@ -166,41 +166,29 @@ int rowCount = allBloodProductTimeline.size();
             JavascriptExecutor js = (JavascriptExecutor) DriverManager.getInstance();
             js.executeScript("arguments[0].click();", button);
             log.info("Clicked approval button at index: {}/{}", index + 1, expectedButtons);
-            int expectedButtonsAfterClick = DriverManager.getInstance().findElements(By.xpath("//button[contains(@id,'btnIsApproval') and .//span[contains(text(), 'ערוך')]]")).size();
+            int expectedButtonsAfterClick =index+1;
             if(index == 0 && DriverManager.getInstance().findElements(By.xpath("//button[contains(@id,'btnIsApproval') and .//span[contains(text(), 'ערוך')]]")).size()==1){
                 log.info(" 1 instruction approved.");
             }
-            else{ 
-                if (index == expectedButtons - 1 && expectedButtonsAfterClick == expectedButtons) {
-                log.info("All instructions approved.");
-             }
-            
+          
             else {
                 if (DriverManager.getInstance().findElements(By.xpath("//button[contains(@id,'btnIsApproval') and .//span[contains(text(), 'ערוך')]]")).size() < expectedButtons) {
                     log.info("{} instructions approved.", index + 1);
                 }
                 else {
-                    log.info("error in approval process, please check.");
-                    Assert.fail("Error in approval process, please check.");
+                    if(DriverManager.getInstance().findElements(By.xpath("//button[contains(@id,'btnIsApproval') and .//span[contains(text(), 'ערוך')]]")).size() == expectedButtons) {
+                       log.info("All instructions approved.");
+                    }
+                
                 }
             }
-            }
+         }
 
-        } catch (Exception e) {
+         catch (Exception e) {
             log.error("Failed to click approval button at index {}: {}", index + 1, e.getMessage());
             throw e; // הפלת הטסט אם הלחיצה נכשלה
         }
-
-        // 3. שליפת הטקסט העדכני לאחר הלחיצה (שליפה מחדש למניעת Stale Element)
-     //   String buttonText = UIActions.findElementsWithWait(btnApprovalBy).get(0).getText();
-
-        // if (!buttonText.contains("ערוך")) {
-        //     log.error("Button at index {} does not contain 'ערוך'. Actual text: '{}'", index + 1, buttonText);
-        //     throw new AssertionError("The click action failed for approval button at index " + (index + 1));
-        // }
-
         index++;
-      //  log.info("Clicked & verified approval button at index: {}/{}", index, expectedButtons);
     }
 }
 

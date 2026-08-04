@@ -53,7 +53,7 @@ public class BaseSuit {
         this.wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(waitDuration));
    
         Properties properties = new Properties();
-        properties.setProperty("Environment",env.toLowerCase());
+        properties.setProperty("Execution Environment",env.toUpperCase());
 
         File envFile = new File("allure-results/SanitySuite/"  + env.toLowerCase(), "environment.properties");
         try (FileOutputStream fos = new FileOutputStream(envFile)) {
