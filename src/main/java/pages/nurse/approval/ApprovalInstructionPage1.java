@@ -54,7 +54,7 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
    // log.info("Selected the first hour in current day for {} drug and general instructions", rowCount);
 }
 
- public void approvalAllLiquidInstruction(){  {
+ public void approvalAllLiquidInstruction() {
         List<WebElement> allLiquidTimeline = UIActions.findElementsWithWait(boxCurrentHourForLiquidBy);
         int rowCount = allLiquidTimeline.size();
         if (rowCount == 0) {
@@ -62,45 +62,61 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
             return;
         }
         log.info("Found {} liquid instructions to approve.", rowCount);
-        for (int i = 0; i <rowCount; i++) {
-        try {
-                if (!allLiquidTimeline.isEmpty()) {
-                    UIActions.click(allLiquidTimeline.get(i));
-                    log.info("Clicked on liquid instruction timeline number {} ", i + 1);
+        
+        for (int i = 0; i < rowCount; i++) {
+            try {
+                // Re-fetch elements לתמנעות Stale Element Exception
+                List<WebElement> currentLiquidElements = DriverManager.getInstance().findElements(boxCurrentHourForLiquidBy);
+                if (currentLiquidElements.isEmpty()) {
+                    log.warn("No more liquid instructions found at index {}", i + 1);
+                    break;
                 }
+                
+                WebElement liquidElement = currentLiquidElements.get(0);
+                UIActions.waitForElementVisibleBy(liquidElement);
+                UIActions.click(liquidElement);
+                log.info("Clicked on liquid instruction timeline number {} ", i + 1);
             } catch (Exception e) {
                 log.error("Error processing liquid instruction in timeline row {}: {}", i + 1, e.getMessage());
                 continue;
             }
         }
-       // log.info("Clicked on all liquid instruction timelines");
-}
-
-     }
+        log.info("Completed processing all liquid instructions.");
+    }
      
     public void approvalAllbloodProduct(){
         List<WebElement> allBloodProductTimeline = UIActions.findElementsWithWait(boxCurrentHourForBloodProductBy);
-int rowCount = allBloodProductTimeline.size();
+        int rowCount = allBloodProductTimeline.size();
         if (rowCount == 0) {
            log.info("No blood product instructions found in the timeline.");     
             return;
         }
+        log.info("Found {} blood product instructions to approve.", rowCount);
+        
         for (int i = 0; i < rowCount; i++) {
             try {
-                // WebElement element = driver.findElement(By.xpath("//tr[@name='drugRow2'][td]/td[@colspan='6']//div[contains(@class,'timeLineInToday')]"));
-                // JavascriptExecutor js = (JavascriptExecutor) driver;
-                // js.executeScript("arguments[0].click();", element);
-                
-                   UIActions.click(allBloodProductTimeline.get(i));
-                    log.info("Clicked on blood product instruction timeline number {} ", i + 1);
-                    UIActions.click(btnVforBloodProductBy);
-                } catch (Exception e) {
-                    log.error("Error processing blood product instruction in timeline row {}: {}", i + 1, e.getMessage());
-                    continue;
+                // Re-fetch elements לתמנעות Stale Element Exception
+                List<WebElement> currentBloodElements = DriverManager.getInstance().findElements(boxCurrentHourForBloodProductBy);
+                if (currentBloodElements.isEmpty()) {
+                    log.warn("No more blood product instructions found at index {}", i + 1);
+                    break;
                 }
+                
+                WebElement bloodElement = currentBloodElements.get(0);
+                UIActions.waitForElementVisibleBy(bloodElement);
+                UIActions.click(bloodElement);
+                log.info("Clicked on blood product instruction timeline number {} ", i + 1);
+                
+                //WebElement approveBtn = UIActions.waitForElementClickable(btnVforBloodProductBy);
+                UIActions.click(btnVforBloodProductBy);
+                log.info("Approved blood product instruction {}", i + 1);
+            } catch (Exception e) {
+                log.error("Error processing blood product instruction in timeline row {}: {}", i + 1, e.getMessage());
+                continue;
+            }
         }
-        //log.info("Clicked on all blood product instruction timelines and approved them.");
-     }
+        log.info("Completed processing all blood product instructions.");
+    }
 
     /**
      * פותח Dropdown שנפתח על ידי אלמנט, ובוחר את הפריט באינדקס הנתון.
@@ -134,9 +150,9 @@ int rowCount = allBloodProductTimeline.size();
      }
      if (liquid) {
          approvalAllLiquidInstruction();
-     }
      if (bloodProduct) {
          approvalAllbloodProduct();
+
      }
 
    // 1. קבלת כמות הכפתורים הראשונית
@@ -144,6 +160,7 @@ int rowCount = allBloodProductTimeline.size();
 
    if (approvalButtons.isEmpty()) {
       log.info("No approval buttons found to click.");
+
    } else {
     int expectedButtons = approvalButtons.size();
     log.info("Found {} approval buttons to click.", expectedButtons);
@@ -193,13 +210,13 @@ int rowCount = allBloodProductTimeline.size();
 }
 
 // 4. לחיצה על כפתור 'אישור הכל' בסיום
-UIActions.click(btnApprovalAll);
-log.info("Clicked on approval button for all");
+     UIActions.click(btnApprovalAll);
+    log.info("Clicked on approval button for all");
   
      userSignModalPage.signModal(username,password);
      UIActions.waitForSpinnerToDisappear();
-   //  String text = DriverManager.getInstance().findElement(tabInstructionForApprovalBy).getText();
-   //  Assert.assertTrue(text.contains("0"), "Some instructions were not approved. Remaining count: " + text);
+     log.info("All instructions approved successfully!"); 
+} 
      }
     
    
