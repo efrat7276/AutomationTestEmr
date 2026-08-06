@@ -1,20 +1,20 @@
 package pages;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
+import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
+import org.openqa.selenium.By;
+import pages.BasePage;
 
-public class DrugsSection {
+@Slf4j
+public class DrugsSection extends BasePage {
 
+    public DrugsSection() {
+        UIActions.waitForSpinnerToDisappear();
+    }
 
-    @FindBy(how = How.ID, using="btnAddMedicine")
-    public WebElement btns_addDrug;
-
-    @FindBy(how = How.ID, using="btnImportMedicine")
-    public WebElement btn_importDrug;
-
-    @FindBy(how = How.ID, using="btnDilution")
-    public WebElement btn_addDilution;
+    private final By btns_addDrug = By.id("btnAddMedicine");
+    private final By btn_importDrug = By.id("btnImportMedicine");
+    private final By btn_addDilution = By.id("btnDilution");
 
 
 }

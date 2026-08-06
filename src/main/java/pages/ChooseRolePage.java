@@ -1,15 +1,15 @@
 package pages;
 
 import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 
-import java.util.List;
+@Slf4j
+public class ChooseRolePage extends BasePage {
 
-public class ChooseRolePage {
-
+    public ChooseRolePage() {
+        UIActions.waitForSpinnerToDisappear();
+    }
 
     private By listRole = By.xpath("//ul[@class='list-group']/li");
 

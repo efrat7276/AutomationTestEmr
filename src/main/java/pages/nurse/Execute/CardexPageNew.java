@@ -14,7 +14,6 @@ public class CardexPageNew extends BasePage {
 
     public CardexPageNew() {
         UIActions.waitForSpinnerToDisappear();
-       // userSignModalPage = new UserSignModalPage();
         }
         private final By drugCheckboxes = By.xpath("//input[@type='checkbox' and starts-with(@id, 'drugInsDayModeCheckbox')]");
         private final By generalCheckboxes = By.xpath("//input[@type='checkbox' and starts-with(@id, 'generalInsDayModeCheckbox')]");

@@ -1,11 +1,18 @@
 package pages.addForms;
 
+import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
+import pages.BasePage;
 
-public class DrugFormCyclePossibility {
+@Slf4j
+public class DrugFormCyclePossibility extends BasePage {
 
+    public DrugFormCyclePossibility() {
+        UIActions.waitForSpinnerToDisappear();
+    }
 
-    public By numberOfTimesCycle = By.xpath("//ul[@aria-labelledby='numberOfTimes_daily']/li");
+    private By numberOfTimesCycle = By.xpath("//ul[@aria-labelledby='numberOfTimes_daily']/li");
 
-    public By btn_numberOfTimesCycle = By.id("numberOfTimes_daily");
+    private By btn_numberOfTimesCycle = By.id("numberOfTimes_daily");
 }

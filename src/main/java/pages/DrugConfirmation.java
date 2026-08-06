@@ -1,34 +1,25 @@
 package pages;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
+import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
+import org.openqa.selenium.By;
+import pages.BasePage;
 
 import java.util.List;
 
-public class DrugConfirmation {
+@Slf4j
+public class DrugConfirmation extends BasePage {
 
-    @FindBy(how= How.ID , using = "confirmationKeyWithNoSelectesd")
-    public WebElement confKey_inp;
+    public DrugConfirmation() {
+        UIActions.waitForSpinnerToDisappear();
+    }
 
-    @FindBy(how= How.ID , using = "confirmationCommentDoctorTemporary")
-    public WebElement comment_inp;
-
-    @FindBy(how= How.ID , using = "confirmationCommentReceiverTemporary")
-    public WebElement commentRecive_inp;
-
-    @FindBy(how= How.ID , using = "drugConfirmationsClear")
-    public WebElement clear_button;
-
-    @FindBy(how= How.ID , using = "drugConfirmationsCancel")
-    public WebElement cancel_button;
-
-    @FindBy(how= How.ID , using = "drugConfirmationsSave")
-    public WebElement save_button;
-
-    @FindBy(how= How.ID , using = "drugConfirmationStatusID")
-    public WebElement letter_buttonList;
-
-    @FindBy(how= How.XPATH , using = "//*[@id='drugConfirmationStatusID']/following-sibling::ul/li")
-    public List<WebElement> letter_List;
+    private final By confKey_inp = By.id("confirmationKeyWithNoSelectesd");
+    private final By comment_inp = By.id("confirmationCommentDoctorTemporary");
+    private final By commentRecive_inp = By.id("confirmationCommentReceiverTemporary");
+    private final By clear_button = By.id("drugConfirmationsClear");
+    private final By cancel_button = By.id("drugConfirmationsCancel");
+    private final By save_button = By.id("drugConfirmationsSave");
+    private final By letter_buttonList = By.id("drugConfirmationStatusID");
+    private final By letter_List = By.xpath("//*[@id='drugConfirmationStatusID']/following-sibling::ul/li");
 }

@@ -22,7 +22,7 @@ public class ImagingPage extends BasePage {
     private final By pacsModalBy = By.xpath("//div[role='dialog']//iframe");
 
     public ImagingPage() {
-        // Constructor without super() to avoid issues with other class structures
+        UIActions.waitForSpinnerToDisappear();
     }
 
     /**

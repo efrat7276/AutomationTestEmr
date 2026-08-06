@@ -24,7 +24,6 @@ import pages.mainPages.DischargedPatientListPage;
 import pages.mainPages.PatientsListPage;
 import pages.menu.InnerMenuPage;
 import pages.menu.MainMenuPage;
-import pages.nurse.Execute.CardexPage;
 import pages.nurse.Execute.CardexPageNew;
 import pages.doctor.FollowupPage;
 import pages.nurse.approval.ApprovalInstructionPage1;
@@ -45,7 +44,6 @@ public class SanitySuite1 extends BaseSuit {
     MainMenuPage mainMenuPage;
     ApprovalInstructionPage1 approvalInstructionPage; 
     CardexPageNew cardexPageNew;
-    CardexPage cardexPage;
     UserSignModalPage userSignModalPage; 
     InnerMenuPage innerMenuPage;
     DrugFormPage drugForm;
@@ -100,7 +98,6 @@ public class SanitySuite1 extends BaseSuit {
         mainMenuPage= new MainMenuPage();
         approvalInstructionPage= new ApprovalInstructionPage1();    
         cardexPageNew= new CardexPageNew();
-        cardexPage = new CardexPage();
         userSignModalPage= new UserSignModalPage();
         innerMenuPage= new InnerMenuPage();
         drugForm= new DrugFormPage();
@@ -134,6 +131,15 @@ public class SanitySuite1 extends BaseSuit {
         log.info("* Starting test_01_login: Logging in as doctor and verifying role name");
         loginAsDoctor();
         mainMenuPage.verifyRoleIsDisplayed("רופא");
+    }
+    
+    @Feature("Visual Tests")
+    @Story("Doctor Login - Welcome Greeting")
+    @Test()
+    public void test_01b_doctorWelcomeGreeting(){
+        log.info("* Starting test_01b_doctorWelcomeGreeting");
+        loginAsDoctor();
+        assertTrue(mainMenuPage.isWelcomeGreetingDisplayed(), "Welcome greeting should be displayed");
     }
     
     @Feature("Visual Tests")

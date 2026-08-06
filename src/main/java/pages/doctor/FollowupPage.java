@@ -15,7 +15,7 @@ public class FollowupPage extends BasePage {
 
   UserSignModalPage userSignModalPage;
   public FollowupPage() {
-        super();
+        UIActions.waitForSpinnerToDisappear();
         userSignModalPage = new UserSignModalPage();
     }
 

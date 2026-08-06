@@ -1,24 +1,23 @@
 package pages;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
+import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
+import org.openqa.selenium.By;
+import pages.BasePage;
 
 import java.util.List;
 
-public class DemogeDataBarPage {
+@Slf4j
+public class DemogeDataBarPage extends BasePage {
 
-    @FindBy(how= How.XPATH , using = "//demog-data-bar/div/div[1]/div/div[2]/div/div[2]/div[2]/i")
-    public WebElement btn_collapse_patient_deatiles;
+    public DemogeDataBarPage() {
+        UIActions.waitForSpinnerToDisappear();
+    }
 
-    @FindBy(how= How.XPATH , using = "//span[@class='value-label']")
-    public WebElement  sherut_label;
-
-    @FindBy(how= How.XPATH , using = "//div[@class='line-number']/span[2]")
-    public WebElement  sherut_number;
-
-    @FindBy(how= How.XPATH , using = "//span[@class='value-label ']")
-    public List<WebElement>  labels_value;
+    private final By btn_collapse_patient_deatiles = By.xpath("//demog-data-bar/div/div[1]/div/div[2]/div/div[2]/div[2]/i");
+    private final By sherut_label = By.xpath("//span[@class='value-label']");
+    private final By sherut_number = By.xpath("//div[@class='line-number']/span[2]");
+    private final By labels_value = By.xpath("//span[@class='value-label ']");
 
     //::following-sibling::brother
 }

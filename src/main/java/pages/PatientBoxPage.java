@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import static org.testng.Assert.assertTrue;
 
 @Slf4j
-public class PatientBoxPage {
+public class PatientBoxPage extends BasePage {
     public PatientBoxPage() {
         UIActions.waitForSpinnerToDisappear();
     }

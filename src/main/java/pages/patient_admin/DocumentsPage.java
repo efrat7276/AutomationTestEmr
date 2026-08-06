@@ -21,7 +21,7 @@ public class DocumentsPage extends BasePage {
     private final By documentIframeBy = By.xpath("//iframe");
 
     public DocumentsPage() {
-        // Constructor without super() to avoid issues with other class structures
+        UIActions.waitForSpinnerToDisappear();
     }
 
     /**

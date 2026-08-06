@@ -15,6 +15,10 @@ import javax.annotation.Nullable;
 @Slf4j
 public class WondFormPage extends BasePage {
 
+public WondFormPage() {
+    UIActions.waitForSpinnerToDisappear();
+}
+
 public By button_addWound =By.id("btnAddMedicine");
    
     public By button_woundType = By.xpath("//button[@id='dropdownBasic1' and @name='kind']");

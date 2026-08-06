@@ -1,12 +1,20 @@
 package pages.nurse.Execute;
 
+import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import pages.BasePage;
 
 import java.util.List;
 
-public class UpdateExecutionPage {
+@Slf4j
+public class UpdateExecutionPage extends BasePage {
+    
+    public UpdateExecutionPage() {
+        UIActions.waitForSpinnerToDisappear();
+    }
 
 
     @FindBy(how = How.TAG_NAME, using = "emr-datepicker")

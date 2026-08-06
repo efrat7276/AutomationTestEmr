@@ -1,18 +1,26 @@
 package pages.addForms;
 
+import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
+import pages.BasePage;
 
-public class DrugFormContinuesPossibility {
+@Slf4j
+public class DrugFormContinuesPossibility extends BasePage {
 
-    public By generalInsMenu = By.tagName("general-ins-menu");
+    public DrugFormContinuesPossibility() {
+        UIActions.waitForSpinnerToDisappear();
+    }
 
-    public By generalInstructionCategoryList = By.xpath("//ngb-accordion/div//button");
+    private By generalInsMenu = By.tagName("general-ins-menu");
 
-    public By generalInsSubList = By.xpath("//ngb-accordion//input");
+    private By generalInstructionCategoryList = By.xpath("//ngb-accordion/div//button");
 
-    public By listSelectedGeneralIns = By.xpath("//div[@class='main-box']/ul/li");
+    private By generalInsSubList = By.xpath("//ngb-accordion//input");
 
-    public By btn_possbilities = By.xpath("//div[@class='main-box']//label[text()='תדירות']/following-sibling::button[contains(@class,'dropdown-toggle')]");
+    private By listSelectedGeneralIns = By.xpath("//div[@class='main-box']/ul/li");
+
+    private By btn_possbilities = By.xpath("//div[@class='main-box']//label[text()='תדירות']/following-sibling::button[contains(@class,'dropdown-toggle')]");
 
     public By possbilityList = By.xpath("//div[@class='main-box']//label[text()='תדירות']/following-sibling::div[contains(@class,'dropdown')]/button");
 

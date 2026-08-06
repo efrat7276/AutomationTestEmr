@@ -1,17 +1,21 @@
 package pages.nurse.prepMedicine;
 
+import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
+import pages.BasePage;
 
 import java.util.List;
 
-public class prepMedcinePage {
+@Slf4j
+public class prepMedcinePage extends BasePage {
 
-    @FindBy(how= How.XPATH , using = "//medicine-prep-filter//div/label[text()='שעה']/parent::div")
-    public WebElement filterHourBtn;
+    public prepMedcinePage() {
+        UIActions.waitForSpinnerToDisappear();
+    }
 
-    @FindBy(how= How.XPATH , using = "//medicine-prep-filter//div/label[text()='שעה']/parent::div//ul/p-dropdownitem/li")
-    public List< WebElement>  filterHourList;
+    private final By filterHourBtn = By.xpath("//medicine-prep-filter//div/label[text()='שעה']/parent::div");
+    private final By filterHourList = By.xpath("//medicine-prep-filter//div/label[text()='שעה']/parent::div//ul/p-dropdownitem/li");
 
 }

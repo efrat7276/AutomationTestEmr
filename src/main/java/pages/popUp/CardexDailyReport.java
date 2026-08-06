@@ -1,13 +1,18 @@
 package pages.popUp;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
+import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
+import org.openqa.selenium.By;
+import pages.BasePage;
 
-public class CardexDailyReport {
+@Slf4j
+public class CardexDailyReport extends BasePage {
 
-    @FindBy(how= How.XPATH , using = "//cardex-daily-report//span")
-    public WebElement btnExit;
+    public CardexDailyReport() {
+        UIActions.waitForSpinnerToDisappear();
+    }
+
+    private final By btnExit = By.xpath("//cardex-daily-report//span");
 
 
 

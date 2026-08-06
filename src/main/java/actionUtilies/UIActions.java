@@ -114,34 +114,13 @@ public class UIActions {
     }
 }  
 
-    /**
-     * Safe click by locator with retries for transient UI errors (stale/intercepted).
-     * Throws RuntimeException if all attempts fail.
-     */
-    public static void safeClick(By locator) {
-        int attempts = 0;
-        while (attempts < 3) {
-            try {
-                WebElement el = wait.until(ExpectedConditions.elementToBeClickable(locator));
-                el.click();
-                return;
-            } catch (StaleElementReferenceException | ElementClickInterceptedException | TimeoutException e) {
-                attempts++;
-                waitForSpinnerToDisappear();
-                try { Thread.sleep(200); } catch (InterruptedException ie) { Thread.currentThread().interrupt(); }
-            }
-        }
-        throw new RuntimeException("safeClick failed after retries for: " + locator);
-    }
-
-   
   
-
     public static void typeText(By locator, String text) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         element.clear();
         element.sendKeys(text);
     }
+    
     public static boolean isElementDisplayed(By locator) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         boolean displayed = element.isDisplayed();

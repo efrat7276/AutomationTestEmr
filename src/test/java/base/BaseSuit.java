@@ -111,6 +111,12 @@ public class BaseSuit {
         }
     }
 
+    protected void chooseDepartment(String departmentName) {
+        log.info("Choosing department: {}", departmentName);
+        chooseDepartmentListPage.selectDepartment(departmentName);
+        UIActions.waitForSpinnerToDisappear();
+    }
+
     protected void chooseDepartmentVerifyListPatients(String departmentName) {
         log.info("Choosing department: {}", departmentName);
         chooseDepartmentListPage.selectDepartment(departmentName);
@@ -165,11 +171,5 @@ public class BaseSuit {
         String formattedQuery = String.format(query, param);
     return DBExecuter.isExecutionSuccessful(formattedQuery);
 }
-
-   public static boolean cancelAllWoundsForPatient(String query, String param) throws SQLException {
-    log.info("Cancelling all wounds for patient with parameter: {}", param);
-        String formattedQuery = String.format(query, param);
-    return DBExecuter.isExecutionSuccessful(formattedQuery);
-   }
 
 }

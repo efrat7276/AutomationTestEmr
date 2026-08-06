@@ -9,8 +9,9 @@ import org.openqa.selenium.WebElement;
 
 import actionUtilies.UIActions;
 import lombok.extern.slf4j.Slf4j;
+import pages.BasePage;
 @Slf4j
-public class DischargedPatientListPage {
+public class DischargedPatientListPage extends BasePage {
   public DischargedPatientListPage() {
             UIActions.waitForSpinnerToDisappear();
     }

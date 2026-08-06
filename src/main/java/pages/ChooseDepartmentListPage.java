@@ -2,13 +2,15 @@ package pages;
 
 import actionUtilies.UIActions;
 import lombok.extern.slf4j.Slf4j;
-
 import org.openqa.selenium.By;
 
 @Slf4j
-public class ChooseDepartmentListPage {
+public class ChooseDepartmentListPage extends BasePage {
 
-  
+    public ChooseDepartmentListPage() {
+        UIActions.waitForSpinnerToDisappear();
+    }
+
     private By departmentList = By.xpath("//ngb-typeahead-window[contains(@id,'ngb-typeahead')]/button");
 
     private By btn_li_department = By.xpath("//input[@id='dropdownBasic1']");

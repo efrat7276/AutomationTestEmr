@@ -19,6 +19,7 @@ public class MainMenuPage extends BasePage {
       private By txt_username = By.id("user_name");
     private By txt_password = By.id("password");
     private By roleUserBy = By.xpath("//div//li[@class='hebrewName']//span[@class='dataBase'][2]");
+    private By welcomeGreetingBy = By.xpath("//span[contains(text(), 'בס\"ד, שלום')]");
     private By numVersionBy = By.xpath("//div//li[@class='hebrewName']//div/button[@id='dropdownBasic1']");
     private By iconToExitBy = By.xpath("//div//ul/li[@class='top-icons']//i");
     private By category_drugPreparation = By.xpath("//ul[contains(@class,'flex-fill main-menu-list')]//span[text()='הכנת תרופות']");
@@ -38,6 +39,15 @@ public class MainMenuPage extends BasePage {
 
     public String getUserRole() {
         return UIActions.getElementText(roleUserBy);
+    }
+
+    public boolean isWelcomeGreetingDisplayed() {
+        try {
+            return UIActions.findElementWithWait(welcomeGreetingBy).isDisplayed();
+        } catch (Exception e) {
+            log.error("Welcome greeting not found: {}", e.getMessage());
+            return false;
+        }
     }
 
     public void verificationPatientListTabExisting(){ 

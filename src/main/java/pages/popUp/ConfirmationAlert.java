@@ -1,16 +1,19 @@
 package pages.popUp;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
+import actionUtilies.UIActions;
+import lombok.extern.slf4j.Slf4j;
+import org.openqa.selenium.By;
+import pages.BasePage;
 
-public class ConfirmationAlert {
+@Slf4j
+public class ConfirmationAlert extends BasePage {
 
-    @FindBy(how= How.ID , using = "buttonImport")
-    public WebElement btnOk;
+    public ConfirmationAlert() {
+        UIActions.waitForSpinnerToDisappear();
+    }
 
-    @FindBy(how= How.ID , using = "buttonCancle")
-    public WebElement btnCancel;
+    private final By btnOk = By.id("buttonImport");
+    private final By btnCancel = By.id("buttonCancle");
 
 
 

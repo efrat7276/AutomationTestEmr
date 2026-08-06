@@ -2,11 +2,16 @@ package pages.nurse.wound;
 
 import actionUtilies.UIActions;
 import lombok.extern.slf4j.Slf4j;
-
 import org.openqa.selenium.By;
+import pages.BasePage;
+
 @Slf4j
-public class WoundPage {
+public class WoundPage extends BasePage {
  
+    public WoundPage() {
+        UIActions.waitForSpinnerToDisappear();
+    }
+
     private final By button_addWound = By.id("btnAddMedicine");
     private final By button_saveWound = By.xpath("//div[@class='action-bottom-bar']/button[contains(@class, 'ng-star-inserted')][3]");
 
