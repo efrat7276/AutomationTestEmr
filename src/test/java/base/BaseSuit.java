@@ -52,11 +52,40 @@ public class BaseSuit {
         int waitDuration = env.equals("qa") ? 60 : 30;
         this.wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(waitDuration));
    
-        Properties properties = new Properties();
-        properties.setProperty("Execution Environment",env.toUpperCase());
+        // חילוץ נתוני הדרייבר והדפדפן
+String browserName = "Chrome";
+String browserVersion = "Unknown";
+String driverVersion = "Unknown";
 
-        File envFile = new File("allure-results/SanitySuite/"  + env.toLowerCase(), "environment.properties");
-        try (FileOutputStream fos = new FileOutputStream(envFile)) {
+try {
+    org.openqa.selenium.Capabilities caps = ((org.openqa.selenium.remote.RemoteWebDriver) DriverManager.getInstance()).getCapabilities();
+    browserName = caps.getBrowserName();
+    browserVersion = caps.getBrowserVersion();
+
+    @SuppressWarnings("unchecked")
+    java.util.Map<String, Object> chromeMap = (java.util.Map<String, Object>) caps.getCapability("chrome");
+    if (chromeMap != null && chromeMap.containsKey("chromedriverVersion")) {
+        driverVersion = chromeMap.get("chromedriverVersion").toString().split(" ")[0];
+    }
+} catch (Exception e) {
+    log.error("Failed to extract browser/driver capabilities: {}", e.getMessage());
+}
+
+// חילוץ נתוני מערכת ההפעלה
+String osName = System.getProperty("os.name");
+String osVersion = System.getProperty("os.version");
+String osInfo = osName + " (" + osVersion + ")";
+
+       Properties properties = new Properties();
+properties.setProperty("Execution Environment", env.toUpperCase());
+properties.setProperty("Operating System", osInfo);
+properties.setProperty("Browser", browserName);
+properties.setProperty("Browser Version", browserVersion);
+properties.setProperty("ChromeDriver Version", driverVersion);
+
+
+        File envFileForAllure = new File("allure-results/SanitySuite/"  + env.toLowerCase(), "environment.properties");
+        try (FileOutputStream fos = new FileOutputStream(envFileForAllure)) {
             properties.store(fos, "Allure Environment Properties");
         } catch (IOException e) {
             e.printStackTrace();

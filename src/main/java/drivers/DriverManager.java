@@ -24,6 +24,15 @@ public class DriverManager {
             options.addArguments("--no-first-run");
             options.addArguments("--no-default-browser-check");
             driver = new ChromeDriver(options);
+            
+            // זיהוי אם הריצה מתבצעת ב-Jenkins והוספת תמיכה ב-Headless
+            boolean isJenkins = System.getenv("JENKINS_URL") != null || System.getenv("BUILD_NUMBER") != null;
+            if (isJenkins) {
+                options.addArguments("--headless=new");
+                options.addArguments("--disable-gpu");
+                options.addArguments("--window-size=1920,1080");
+            }
+            
             initBrowser();
         }
         return driver;
