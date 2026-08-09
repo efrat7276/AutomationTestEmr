@@ -32,91 +32,10 @@ private final By btnChooseHourCurrentDayDrugAndGeneralBy = By.xpath("//td[@name=
 private final By boxCurrentHourForLiquidBy = By.xpath("//tr[@name='drugRow2'][td]/td[@colspan='8']//div[contains(@class,'timeLineInToday')]");
 private final By boxCurrentHourForBloodProductBy = By.xpath("//tr[@name='drugRow2'][td]/td[@colspan='6']//div[contains(@class,'timeLineInToday')]");
 private final By btnVforBloodProductBy = By.xpath("//form[@name='popContentSolutionBagSizeCode']//button[@type='submit']");
-private final  By btnApprovalBy = By.xpath("//button[contains(@id,'btnIsApproval') and .//span[contains(text(), 'אישור')]]");
-private final By tabInstructionForApprovalBy = By.xpath("//li[@id='ngbNav_patient_sheet1']//span[2]");
 private final By btnApprovalAll = By.xpath("//button[@id='approvalDrug']");
+private final By btnApprovalBy = By.xpath("//button[contains(@id,'btnIsApproval') and .//span[contains(text(), 'אישור')]]");
+private final By btnEditBy = By.xpath("//button[contains(@id,'btnIsApproval') and .//span[contains(text(), 'ערוך')]]");
 
-public void approveDrugsAndGeneralSelectCurrentDayHour(){
-    List<WebElement> allToApprovalRows = UIActions.findElementsWithWait(btnChooseHourCurrentDayDrugAndGeneralBy);
-    int rowCount = allToApprovalRows.size();
-    if (rowCount == 0) {
-        log.info("No drug or general instructions found for the current day.");
-        return;
-    }
-    log.info("Found {} drug and general instructions for the current day to approve.", rowCount);
-    for (WebElement currentRow : allToApprovalRows) {
-        if(UIActions.isExist(currentRow) && currentRow.isEnabled())
-          { 
-            selectNthOptionFromDropdown(currentRow, 4);
-            log.info("Selected the first hour in current day for drug and general instructions.");
-          }  
-    }
-   // log.info("Selected the first hour in current day for {} drug and general instructions", rowCount);
-}
-
- public void approvalAllLiquidInstruction() {
-        List<WebElement> allLiquidTimeline = UIActions.findElementsWithWait(boxCurrentHourForLiquidBy);
-        int rowCount = allLiquidTimeline.size();
-        if (rowCount == 0) {
-            log.info("No liquid instructions found in the timeline.");
-            return;
-        }
-        log.info("Found {} liquid instructions to approve.", rowCount);
-        
-        for (int i = 0; i < rowCount; i++) {
-            try {
-                // Re-fetch elements לתמנעות Stale Element Exception
-                List<WebElement> currentLiquidElements = DriverManager.getInstance().findElements(boxCurrentHourForLiquidBy);
-                if (currentLiquidElements.isEmpty()) {
-                    log.warn("No more liquid instructions found at index {}", i + 1);
-                    break;
-                }
-                
-                WebElement liquidElement = currentLiquidElements.get(0);
-                UIActions.waitForElementVisibleBy(liquidElement);
-                UIActions.click(liquidElement);
-                log.info("Clicked on liquid instruction timeline number {} ", i + 1);
-            } catch (Exception e) {
-                log.error("Error processing liquid instruction in timeline row {}: {}", i + 1, e.getMessage());
-                continue;
-            }
-        }
-        log.info("Completed processing all liquid instructions.");
-    }
-     
-    public void approvalAllbloodProduct(){
-        List<WebElement> allBloodProductTimeline = UIActions.findElementsWithWait(boxCurrentHourForBloodProductBy);
-        int rowCount = allBloodProductTimeline.size();
-        if (rowCount == 0) {
-           log.info("No blood product instructions found in the timeline.");     
-            return;
-        }
-        log.info("Found {} blood product instructions to approve.", rowCount);
-        
-        for (int i = 0; i < rowCount; i++) {
-            try {
-                // Re-fetch elements לתמנעות Stale Element Exception
-                List<WebElement> currentBloodElements = DriverManager.getInstance().findElements(boxCurrentHourForBloodProductBy);
-                if (currentBloodElements.isEmpty()) {
-                    log.warn("No more blood product instructions found at index {}", i + 1);
-                    break;
-                }
-                
-                WebElement bloodElement = currentBloodElements.get(0);
-                UIActions.waitForElementVisibleBy(bloodElement);
-                UIActions.click(bloodElement);
-                log.info("Clicked on blood product instruction timeline number {} ", i + 1);
-                
-                //WebElement approveBtn = UIActions.waitForElementClickable(btnVforBloodProductBy);
-                UIActions.click(btnVforBloodProductBy);
-                log.info("Approved blood product instruction {}", i + 1);
-            } catch (Exception e) {
-                log.error("Error processing blood product instruction in timeline row {}: {}", i + 1, e.getMessage());
-                continue;
-            }
-        }
-        log.info("Completed processing all blood product instructions.");
-    }
 
     /**
      * פותח Dropdown שנפתח על ידי אלמנט, ובוחר את הפריט באינדקס הנתון.
@@ -143,83 +62,141 @@ public void approveDrugsAndGeneralSelectCurrentDayHour(){
        
     }
 
-    public void approveAllInstructionsAndVerify(boolean drugOrGeneral, boolean liquid, boolean bloodProduct, String username, String password){
-     UIActions.waitForSpinnerToDisappear();
-     if (drugOrGeneral) {
-         approveDrugsAndGeneralSelectCurrentDayHour();
-     }
-     if (liquid) {
-         approvalAllLiquidInstruction();
-     if (bloodProduct) {
-         approvalAllbloodProduct();
+ 
+public void approveAllInstructionsAndVerify(boolean drugOrGeneral, boolean liquid, boolean bloodProduct, String username, String password) {
+    UIActions.waitForSpinnerToDisappear();
 
-     }
+    // 1. טיפול בכל סוג הוראה בנפרד (תיקון הסוגריים)
+    if (drugOrGeneral) {
+        approveDrugsAndGeneralSelectCurrentDayHour();
+    }
+    if (liquid) {
+        approvalAllLiquidInstruction();
+    }
+    if (bloodProduct) {
+        approvalAllbloodProduct();
+    }
 
-   // 1. קבלת כמות הכפתורים הראשונית
-   List<WebElement> approvalButtons = UIActions.findElementsWithWait(btnApprovalBy);
+    UIActions.waitForSpinnerToDisappear();
 
-   if (approvalButtons.isEmpty()) {
-      log.info("No approval buttons found to click.");
+    // 2. קבלת כמות הכפתורים הראשונית
+    List<WebElement> approvalButtons = UIActions.findElementsWithWait(btnApprovalBy);
 
-   } else {
-    int expectedButtons = approvalButtons.size();
-    log.info("Found {} approval buttons to click.", expectedButtons);
+    if (approvalButtons.isEmpty()) {
+        log.info("No approval buttons found to click.");
+    } else {
+        int expectedButtons = approvalButtons.size();
+        log.info("Found {} approval buttons to click.", expectedButtons);
 
-    int index = 0;
-    while (index < expectedButtons) {
-        // שליפת האלמנטים העדכניים בכל סיבוב (למניעת Stale Element)
-        List<WebElement> currentButtons = DriverManager.getInstance().findElements(btnApprovalBy);
+        for (int i = 0; i < expectedButtons; i++) {
+            // שליפה מחדש של הכפתורים שטרם אושרו למניעת Stale Element
+            List<WebElement> currentButtons = DriverManager.getInstance().findElements(btnApprovalBy);
 
-        if (currentButtons.isEmpty()) {
-            log.warn("No more buttons found on page at index {}", index + 1);
-            break;
-        }
+            if (currentButtons.isEmpty()) {
+                log.warn("No more 'אישור' buttons found at index {}", i + 1);
+                break;
+            }
 
-        WebElement button = currentButtons.get(0); // או get(index) במידה והכפתורים לא נעלמים מהמסך
-        UIActions.waitForElementVisibleBy(button);
+            WebElement button = currentButtons.get(0);
+            UIActions.waitForElementVisibleBy(button);
 
-        // 2. ביצוע הלחיצה ב-JS
-        try {
+            // לחיצה ב-JS
             JavascriptExecutor js = (JavascriptExecutor) DriverManager.getInstance();
             js.executeScript("arguments[0].click();", button);
-            log.info("Clicked approval button at index: {}/{}", index + 1, expectedButtons);
-            int expectedButtonsAfterClick =index+1;
-            if(index == 0 && DriverManager.getInstance().findElements(By.xpath("//button[contains(@id,'btnIsApproval') and .//span[contains(text(), 'ערוך')]]")).size()==1){
-                log.info(" 1 instruction approved.");
-            }
-          
-            else {
-                if (DriverManager.getInstance().findElements(By.xpath("//button[contains(@id,'btnIsApproval') and .//span[contains(text(), 'ערוך')]]")).size() < expectedButtons) {
-                    log.info("{} instructions approved.", index + 1);
-                }
-                else {
-                    if(DriverManager.getInstance().findElements(By.xpath("//button[contains(@id,'btnIsApproval') and .//span[contains(text(), 'ערוך')]]")).size() == expectedButtons) {
-                       log.info("All instructions approved.");
-                    }
-                
-                }
-            }
-         }
+            log.info("Clicked approval button {}/{}", i + 1, expectedButtons);
 
-         catch (Exception e) {
-            log.error("Failed to click approval button at index {}: {}", index + 1, e.getMessage());
-            throw e; // הפלת הטסט אם הלחיצה נכשלה
+            // סנכרון: המתנה להיעלמות ספינר ולעדכון ה-DOM
+            UIActions.waitForSpinnerToDisappear();
+            
+            // אימות שהכפתור אכן הפך ל'ערוך'
+            int currentEditButtonsCount = DriverManager.getInstance().findElements(btnEditBy).size();
+            log.info("Progress: {} instructions approved out of {}.", currentEditButtonsCount, expectedButtons);
         }
-        index++;
+    }
+
+    // 3. חתימה ואישור סופי
+    UIActions.click(btnApprovalAll);
+    log.info("Clicked on approval button for all.");
+
+    userSignModalPage.signModal(username, password);
+    UIActions.waitForSpinnerToDisappear();
+    log.info("All instructions approved successfully!");
+}
+
+public void approveDrugsAndGeneralSelectCurrentDayHour() {
+    List<WebElement> allToApprovalRows = UIActions.findElementsWithWait(btnChooseHourCurrentDayDrugAndGeneralBy);
+    int rowCount = allToApprovalRows.size();
+
+    if (rowCount == 0) {
+        log.info("No drug or general instructions found for the current day.");
+        return;
+    }
+    log.info("Found {} drug and general instructions to process.", rowCount);
+
+    for (int i = 0; i < rowCount; i++) {
+        // שליפה מחדש למניעת Stale Element Reference
+        List<WebElement> rows = DriverManager.getInstance().findElements(btnChooseHourCurrentDayDrugAndGeneralBy);
+        if (rows.size() > i && rows.get(i).isEnabled()) {
+            selectNthOptionFromDropdown(rows.get(i), 4);
+            UIActions.waitForSpinnerToDisappear();
+            log.info("Selected hour for drug/general instruction {}", i + 1);
+        }
     }
 }
 
-// 4. לחיצה על כפתור 'אישור הכל' בסיום
-     UIActions.click(btnApprovalAll);
-    log.info("Clicked on approval button for all");
-  
-     userSignModalPage.signModal(username,password);
-     UIActions.waitForSpinnerToDisappear();
-     log.info("All instructions approved successfully!"); 
-} 
-     }
-    
-   
+public void approvalAllLiquidInstruction() {
+    List<WebElement> allLiquidTimeline = UIActions.findElementsWithWait(boxCurrentHourForLiquidBy);
+    int rowCount = allLiquidTimeline.size();
+
+    if (rowCount == 0) {
+        log.info("No liquid instructions found in the timeline.");
+        return;
+    }
+    log.info("Found {} liquid instructions to approve.", rowCount);
+
+    for (int i = 0; i < rowCount; i++) {
+        List<WebElement> currentLiquidElements = DriverManager.getInstance().findElements(boxCurrentHourForLiquidBy);
+        if (currentLiquidElements.isEmpty()) {
+            log.warn("No more liquid instructions found at index {}", i + 1);
+            break;
+        }
+
+        WebElement liquidElement = currentLiquidElements.get(0);
+        UIActions.waitForElementVisibleBy(liquidElement);
+        UIActions.click(liquidElement);
+        UIActions.waitForSpinnerToDisappear(); // סנכרון לאחר בלחיצה
+        log.info("Clicked on liquid instruction number {}", i + 1);
+    }
+    log.info("Completed processing all liquid instructions.");
+}
+
+public void approvalAllbloodProduct() {
+    List<WebElement> allBloodProductTimeline = UIActions.findElementsWithWait(boxCurrentHourForBloodProductBy);
+    int rowCount = allBloodProductTimeline.size();
+
+    if (rowCount == 0) {
+        log.info("No blood product instructions found in the timeline.");
+        return;
+    }
+    log.info("Found {} blood product instructions to approve.", rowCount);
+
+    for (int i = 0; i < rowCount; i++) {
+        List<WebElement> currentBloodElements = DriverManager.getInstance().findElements(boxCurrentHourForBloodProductBy);
+        if (currentBloodElements.isEmpty()) {
+            log.warn("No more blood product instructions found at index {}", i + 1);
+            break;
+        }
+
+        WebElement bloodElement = currentBloodElements.get(0);
+        UIActions.waitForElementVisibleBy(bloodElement);
+        UIActions.click(bloodElement);
+
+        UIActions.click(btnVforBloodProductBy);
+        UIActions.waitForSpinnerToDisappear(); // סנכרון לאחר אישור מוצר דם
+        log.info("Approved blood product instruction {}", i + 1);
+    }
+    log.info("Completed processing all blood product instructions.");
+}
 
     public void approveDrugsOnly(String username, String password){
         log.info("* Approving ONLY drug instructions (no liquids or blood products)");
