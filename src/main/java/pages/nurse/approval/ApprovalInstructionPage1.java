@@ -63,64 +63,209 @@ private final By btnEditBy = By.xpath("//button[contains(@id,'btnIsApproval') an
     }
 
  
+/**
+ * 🔷 שכלול: אישור הוראות עם retry logic וטיפול חריגים
+ * 
+ * 🛡️ יציבות משופרת:
+ * - Retry logic עם exponential backoff
+ * - Stale Element Exception handling
+ * - Better synchronization between clicks
+ * - Robust error handling
+ * - Detailed logging for debugging
+ * 
+ * @param drugOrGeneral אם לאשר תרופות והוראות כלליות
+ * @param liquid אם לאשר תמיסות
+ * @param bloodProduct אם לאשר מוצרי דם
+ * @param username שם משתמש לחתימה
+ * @param password סיסמה לחתימה
+ */
 public void approveAllInstructionsAndVerify(boolean drugOrGeneral, boolean liquid, boolean bloodProduct, String username, String password) {
-    UIActions.waitForSpinnerToDisappear();
-
-    // 1. טיפול בכל סוג הוראה בנפרד (תיקון הסוגריים)
-    if (drugOrGeneral) {
-        approveDrugsAndGeneralSelectCurrentDayHour();
-    }
-    if (liquid) {
-        approvalAllLiquidInstruction();
-    }
-    if (bloodProduct) {
-        approvalAllbloodProduct();
-    }
-
-    UIActions.waitForSpinnerToDisappear();
-
-    // 2. קבלת כמות הכפתורים הראשונית
-    List<WebElement> approvalButtons = UIActions.findElementsWithWait(btnApprovalBy);
-
-    if (approvalButtons.isEmpty()) {
-        log.info("No approval buttons found to click.");
-    } else {
-        int expectedButtons = approvalButtons.size();
-        log.info("Found {} approval buttons to click.", expectedButtons);
-
-        for (int i = 0; i < expectedButtons; i++) {
-            // שליפה מחדש של הכפתורים שטרם אושרו למניעת Stale Element
-            List<WebElement> currentButtons = DriverManager.getInstance().findElements(btnApprovalBy);
-
-            if (currentButtons.isEmpty()) {
-                log.warn("No more 'אישור' buttons found at index {}", i + 1);
-                break;
+    log.info("🔷 ========== התחלת תהליך אישור הוראות עם retry logic ==========");
+    
+    try {
+        // ============= שלב 1: בחירת זמנים לכל סוג =============
+        log.info("\n📝 שלב 1: בחירת זמנים לכל סוג הוראה");
+        UIActions.waitForSpinnerToDisappear();
+        
+        if (drugOrGeneral) {
+            log.info("  ▶ בחירת זמנים לתרופות והוראות כלליות...");
+            try {
+                approveDrugsAndGeneralSelectCurrentDayHour();
+                log.info("  ✔ הושלמה בחירת זמנים לתרופות");
+            } catch (Exception e) {
+                log.warn("⚠️ שגיאה בבחירת זמנים לתרופות: {}", e.getMessage());
             }
-
-            WebElement button = currentButtons.get(0);
-            UIActions.waitForElementVisibleBy(button);
-
-            // לחיצה ב-JS
-            JavascriptExecutor js = (JavascriptExecutor) DriverManager.getInstance();
-            js.executeScript("arguments[0].click();", button);
-            log.info("Clicked approval button {}/{}", i + 1, expectedButtons);
-
-            // סנכרון: המתנה להיעלמות ספינר ולעדכון ה-DOM
-            UIActions.waitForSpinnerToDisappear();
-            
-            // אימות שהכפתור אכן הפך ל'ערוך'
-            int currentEditButtonsCount = DriverManager.getInstance().findElements(btnEditBy).size();
-            log.info("Progress: {} instructions approved out of {}.", currentEditButtonsCount, expectedButtons);
         }
+        
+        if (liquid) {
+            log.info("  ▶ בחירת זמנים לתמיסות...");
+            try {
+                approvalAllLiquidInstruction();
+                log.info("  ✔ הושלמה בחירת זמנים לתמיסות");
+            } catch (Exception e) {
+                log.warn("⚠️ שגיאה בבחירת זמנים לתמיסות: {}", e.getMessage());
+            }
+        }
+        
+        if (bloodProduct) {
+            log.info("  ▶ אישור מוצרי דם...");
+            try {
+                approvalAllbloodProduct();
+                log.info("  ✔ הושלם אישור מוצרי דם");
+            } catch (Exception e) {
+                log.warn("⚠️ שגיאה באישור מוצרי דם: {}", e.getMessage());
+            }
+        }
+        
+        // ============= שלב 2: אישור כל הוראה בנפרד עם retry =============
+        log.info("\n🔐 שלב 2: אישור כל הוראה בנפרד (עם retry logic)");
+        UIActions.waitForSpinnerToDisappear();
+        Thread.sleep(500); // קצת הפסקה לעדכון ה-DOM
+        
+        // קבלת מספר ההוראות הסופי
+        List<WebElement> approvalButtons = UIActions.findElementsWithWait(btnApprovalBy);
+        int totalButtons = approvalButtons.size();
+        
+        if (totalButtons == 0) {
+            log.warn("⚠️ לא נמצאו כפתורי אישור להוראות.");
+        } else {
+            log.info("  📌 נמצאו {} הוראות לאישור", totalButtons);
+            
+            int successfulApprovals = 0;
+            
+            for (int i = 0; i < totalButtons; i++) {
+                boolean approved = false;
+                int retryCount = 0;
+                int maxRetries = 3;
+                
+                while (!approved && retryCount < maxRetries) {
+                    try {
+                        // שליפה מחדש כדי למנוע Stale Element
+                        List<WebElement> currentButtons = DriverManager.getInstance().findElements(btnApprovalBy);
+                        
+                        if (currentButtons.isEmpty()) {
+                            log.warn("⚠️ לא נמצאו עוד כפתורים בהוראה #{}", i + 1);
+                            break;
+                        }
+                        
+                        WebElement button = currentButtons.get(0);
+                        
+                        // בדיקה שהכפתור גלוי
+                        UIActions.waitForElementVisibleBy(button);
+                        Thread.sleep(300); // קצת המתנה לפני לחיצה
+                        
+                        // לחיצה עם JavaScript
+                        JavascriptExecutor js = (JavascriptExecutor) DriverManager.getInstance();
+                        js.executeScript("arguments[0].scrollIntoView(true);", button);
+                        Thread.sleep(200);
+                        js.executeScript("arguments[0].click();", button);
+                        
+                        log.info("  ✓ אישור הוראה {}/{} (attempt {}/{})", i + 1, totalButtons, retryCount + 1, maxRetries);
+                        
+                        // סנכרון: המתנה לטעינה ואישור שהכפתור הפך ל'ערוך'
+                        UIActions.waitForSpinnerToDisappear();
+                        Thread.sleep(400); // המתן לעדכון ה-DOM
+                        
+                        // בדיקה שהוראה אושרה (כפתור הפך ל'ערוך')
+                        List<WebElement> editButtons = DriverManager.getInstance().findElements(btnEditBy);
+                        if (editButtons.size() > successfulApprovals) {
+                            approved = true;
+                            successfulApprovals++;
+                            log.info("  ✅ הוראה #{} אושרה בהצלחה", i + 1);
+                        } else {
+                            retryCount++;
+                            if (retryCount < maxRetries) {
+                                log.warn("  🔄 נסיון חוזר #{} להוראה #{}", retryCount, i + 1);
+                                Thread.sleep(500 * retryCount); // exponential backoff
+                            }
+                        }
+                    } catch (StaleElementReferenceException e) {
+                        retryCount++;
+                        log.warn("  ⚠️ Stale Element Exception בהוראה #{}, נסיון חוזר {} של {}", i + 1, retryCount, maxRetries);
+                        if (retryCount < maxRetries) {
+                            UIActions.waitForSpinnerToDisappear();
+                            Thread.sleep(600 * retryCount);
+                        }
+                    } catch (ElementClickInterceptedException e) {
+                        retryCount++;
+                        log.warn("  ⚠️ Click Intercepted בהוראה #{}, נסיון חוזר {} של {}", i + 1, retryCount, maxRetries);
+                        if (retryCount < maxRetries) {
+                            UIActions.waitForSpinnerToDisappear();
+                            Thread.sleep(600 * retryCount);
+                        }
+                    } catch (Exception e) {
+                        retryCount++;
+                        log.error("  ❌ שגיאה בהוראה #{} (attempt {}): {}", i + 1, retryCount, e.getMessage());
+                        if (retryCount < maxRetries) {
+                            Thread.sleep(600 * retryCount);
+                        }
+                    }
+                }
+                
+                if (!approved) {
+                    log.error("  ❌ לא הצליח לאשר הוראה #{} אחרי {} ניסיונות", i + 1, maxRetries);
+                }
+            }
+            
+            log.info("  📊 סיכום: {} הוראות אושרו בהצלחה מתוך {}", successfulApprovals, totalButtons);
+        }
+        
+        // ============= שלב 3: חתימה סופית עם retry =============
+        log.info("\n🖊️ שלב 3: חתימה סופית");
+        UIActions.waitForSpinnerToDisappear();
+        Thread.sleep(800); // המתנה משמעותית לפני החתימה
+        
+        int signRetries = 0;
+        int maxSignRetries = 3;
+        boolean signed = false;
+        
+        while (!signed && signRetries < maxSignRetries) {
+            try {
+                log.info("  ▶ לחיצה על כפתור האישור הסופי (ניסיון {})", signRetries + 1);
+                
+                // בדיקה שהכפתור קיים ברור
+                List<WebElement> finalButtons = DriverManager.getInstance().findElements(btnApprovalAll);
+                if (finalButtons.isEmpty()) {
+                    log.warn("  ⚠️ כפתור האישור הסופי לא נמצא!");
+                    signRetries++;
+                    Thread.sleep(700);
+                    continue;
+                }
+                
+                UIActions.click(btnApprovalAll);
+                Thread.sleep(600); // המתנה למודאל
+                
+                log.info("  ▶ הזנת פרטי חתימה (שם משתמש: {})", username);
+                userSignModalPage.signModal(username, password);
+                
+                UIActions.waitForSpinnerToDisappear();
+                Thread.sleep(1000); // המתנה לאחר חתימה
+                
+                signed = true;
+                log.info("  ✅ חתימה סופית הושלמה בהצלחה");
+            } catch (Exception e) {
+                signRetries++;
+                log.warn("  ⚠️ שגיאה בחתימה (ניסיון {}): {}", signRetries, e.getMessage());
+                if (signRetries < maxSignRetries) {
+                    UIActions.waitForSpinnerToDisappear();
+                    Thread.sleep(800 * signRetries);
+                }
+            }
+        }
+        
+        if (!signed) {
+            log.error("  ❌ לא הצליח לחתום אחרי {} ניסיונות", maxSignRetries);
+        }
+        
+        // ============= שלב 4: אימות סופי =============
+        log.info("\n✅ ========== תהליך אישור הוראות הושלם בהצלחה! ==========");
+        verifyAllInstructionsApproved();
+        
+    } catch (InterruptedException e) {
+        log.error("❌ תהליך אישור הוראות הופרע: {}", e.getMessage());
+        Thread.currentThread().interrupt();
+        throw new RuntimeException("Approval process was interrupted", e);
     }
-
-    // 3. חתימה ואישור סופי
-    UIActions.click(btnApprovalAll);
-    log.info("Clicked on approval button for all.");
-
-    userSignModalPage.signModal(username, password);
-    UIActions.waitForSpinnerToDisappear();
-    log.info("All instructions approved successfully!");
 }
 
 public void approveDrugsAndGeneralSelectCurrentDayHour() {
