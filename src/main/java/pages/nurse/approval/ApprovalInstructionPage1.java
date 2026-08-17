@@ -1,31 +1,32 @@
 package pages.nurse.approval;
 
-import actionUtilies.UIActions;
-import drivers.DriverManager;
-import lombok.extern.slf4j.Slf4j;
+import java.time.Duration;
+import java.util.List;
 
-import org.checkerframework.checker.guieffect.qual.UI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.TimeoutException;
 import org.testng.Assert;
 
+import actionUtilies.UIActions;
+import drivers.DriverManager;
+import lombok.extern.slf4j.Slf4j;
 import pages.BasePage;
 import pages.UserSignModalPage;
 
-import java.time.Duration;
-import java.util.List;
-
 @Slf4j
 public class ApprovalInstructionPage1 extends BasePage {
-UserSignModalPage userSignModalPage;
+    private UserSignModalPage userSignModalPage;
+
     public ApprovalInstructionPage1() {
-       
+        super();
+        UIActions.waitForSpinnerToDisappear();
         userSignModalPage = new UserSignModalPage();
     }
 private final By btnChooseHourCurrentDayDrugAndGeneralBy = By.xpath("//td[@name='drugsCurrentDay']//button");
@@ -179,24 +180,20 @@ public void approveAllInstructionsAndVerify(boolean drugOrGeneral, boolean liqui
                                 Thread.sleep(500 * retryCount); // exponential backoff
                             }
                         }
-                    } catch (StaleElementReferenceException e) {
-                        retryCount++;
-                        log.warn("  ⚠️ Stale Element Exception בהוראה #{}, נסיון חוזר {} של {}", i + 1, retryCount, maxRetries);
-                        if (retryCount < maxRetries) {
-                            UIActions.waitForSpinnerToDisappear();
-                            Thread.sleep(600 * retryCount);
-                        }
-                    } catch (ElementClickInterceptedException e) {
-                        retryCount++;
-                        log.warn("  ⚠️ Click Intercepted בהוראה #{}, נסיון חוזר {} של {}", i + 1, retryCount, maxRetries);
-                        if (retryCount < maxRetries) {
-                            UIActions.waitForSpinnerToDisappear();
-                            Thread.sleep(600 * retryCount);
-                        }
                     } catch (Exception e) {
                         retryCount++;
-                        log.error("  ❌ שגיאה בהוראה #{} (attempt {}): {}", i + 1, retryCount, e.getMessage());
+                        
+                        // טיפול בסוגי Exception שונים
+                        if (e.getClass().getSimpleName().contains("StaleElement")) {
+                            log.warn("  ⚠️ Stale Element Exception בהוראה #{}, נסיון חוזר {} של {}", i + 1, retryCount, maxRetries);
+                        } else if (e.getClass().getSimpleName().contains("ClickIntercepted")) {
+                            log.warn("  ⚠️ Click Intercepted בהוראה #{}, נסיון חוזר {} של {}", i + 1, retryCount, maxRetries);
+                        } else {
+                            log.error("  ❌ שגיאה בהוראה #{} (attempt {}): {}", i + 1, retryCount, e.getMessage());
+                        }
+                        
                         if (retryCount < maxRetries) {
+                            UIActions.waitForSpinnerToDisappear();
                             Thread.sleep(600 * retryCount);
                         }
                     }
