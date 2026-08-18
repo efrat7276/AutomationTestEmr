@@ -81,13 +81,8 @@ public class UIActions {
             element.click();
             return;
             
-        } catch (StaleElementReferenceException e) {
-            attempts++;
-            if (attempts >= maxAttempts) {
-                throw new RuntimeException("אלמנט נשאר Stale לאחר " + maxAttempts + " נסיונות: " + locator, e);
-            }
+        } catch (Exception e) {
             
-        } catch (ElementClickInterceptedException e) {
             try {
                 WebElement element = driver.findElement(locator);
                 ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
@@ -95,10 +90,8 @@ public class UIActions {
             } catch (Exception jsException) {
                 throw new RuntimeException("נכשל ניסיון לחיצה רגיל (Intercepted) וגם ניסיון JavaScript עבור: " + locator, jsException);
             }
-            
-        } catch (TimeoutException e) {
-            throw new RuntimeException("הזמן קצב (Timeout) עבר. האלמנט לא הפך לזמין ללחיצה: " + locator, e);
         }
+               
     }
 }
     public static void click(WebElement element) {
