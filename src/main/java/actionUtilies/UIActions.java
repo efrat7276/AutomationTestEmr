@@ -76,7 +76,8 @@ public class UIActions {
 
     while (attempts < maxAttempts) {
         try {
-            WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+            //changed from elementToBeClickable to elementToBeVisible. 
+            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
             element.click();
             return;
             
@@ -303,6 +304,10 @@ public class UIActions {
         } catch (Exception e) {
             return false;
         }
+    }
+    public static boolean isElementPresentAndVisible(By by) {
+        List<WebElement> elements = DriverManager.getInstance().findElements(by);
+        return !elements.isEmpty() && elements.get(0).isDisplayed();
     }
 
     public static boolean waitForVisible(By locator) {

@@ -238,7 +238,7 @@ public class SanitySuite1 extends BaseSuit {
             loginAsNurse();
             chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
             choosePatient(PATIENT_1);
-            approvalInstructionPage.approveAllInstructionsAndVerify(true, true, true , Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
+            approvalInstructionPage.approveAllInstructionsByNurseAndVerify(true, true, true,true , Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
   
      }
 
@@ -369,7 +369,7 @@ public class SanitySuite1 extends BaseSuit {
       loginAsNurse();
       chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
       choosePatient(PATIENT_1);
-      approvalInstructionPage.approveAllInstructionsAndVerify(true, false, false, Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
+      approvalInstructionPage.approveAllInstructionsByNurseAndVerify(true, false, false, false, Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
       log.info("* Successfully: Nurse approved ACAMOL medicine instruction");
   }
 
