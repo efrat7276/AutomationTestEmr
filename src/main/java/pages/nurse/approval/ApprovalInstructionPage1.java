@@ -96,7 +96,12 @@ private final By btnEditBy = By.xpath("//button[contains(@id,'btnIsApproval') an
             log.info("✅ Blood product instructions processed: {}", bloodProductProcessed);
         }
 
-        assertTrue(UIActions.findElementWithWait(btnApprovalAll).getText().contains(String.valueOf(totalProcessed)), "לא כל ההוראות אושרו בהצלחה! יש הוראות שנותרו לא מאושרות.");
+        // Log: הצגת הטקסט של כפתור האישור הסופי
+        String btnApprovalText = UIActions.findElementWithWait(btnApprovalAll).getText();
+        log.info("📋 btnApprovalAll button text: '{}'", btnApprovalText);
+        
+       assertTrue(UIActions.findElementWithWait(btnApprovalAll).getText().contains(String.valueOf(totalProcessed)),  "לא כל ההוראות אושרו בהצלחה! יש הוראות שנותרו לא מאושרות. מספר ההוראות שאושרו : ");
+        
         UIActions.click(btnApprovalAll);
         userSignModalPage.signModal(username, password);
     }
