@@ -1,18 +1,11 @@
 package pages.nurse.approval;
 
-import java.time.Duration;
+import static org.testng.Assert.assertTrue;
+
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.ElementClickInterceptedException;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import actionUtilies.UIActions;
 import drivers.DriverManager;
@@ -80,47 +73,59 @@ private final By btnEditBy = By.xpath("//button[contains(@id,'btnIsApproval') an
 
     public void approveAllInstructionsByNurseAndVerify( boolean drug, boolean liquid, boolean general, boolean bloodProduct, String username, String password) {
        
+        int totalProcessed = 0;
+        
         if (drug ) {
-            handleDrugApprovalOnly();
+            int drugsProcessed = handleDrugApprovalOnly();
+            totalProcessed += drugsProcessed;
+            log.info("✅ Drug instructions processed: {}", drugsProcessed);
         }
         if (general) {
-            handleGeneralApprovalOnly();
+            int generalProcessed = handleGeneralApprovalOnly();
+            totalProcessed += generalProcessed;
+            log.info("✅ General instructions processed: {}", generalProcessed);
         }
         if (liquid) {
-            handleLiquidApprovalOnly();
+            int liquidProcessed = handleLiquidApprovalOnly();
+            totalProcessed += liquidProcessed;
+            log.info("✅ Liquid instructions processed: {}", liquidProcessed);
         }
         if (bloodProduct) {
-            handleBloodProductApprovalOnly();
+            int bloodProductProcessed = handleBloodProductApprovalOnly();
+            totalProcessed += bloodProductProcessed;
+            log.info("✅ Blood product instructions processed: {}", bloodProductProcessed);
         }
 
+        assertTrue(UIActions.findElementWithWait(btnApprovalAll).getText().contains(String.valueOf(totalProcessed)), "לא כל ההוראות אושרו בהצלחה! יש הוראות שנותרו לא מאושרות.");
         UIActions.click(btnApprovalAll);
         userSignModalPage.signModal(username, password);
     }
 
-public void handleDrugApprovalOnly() {
-    executeTwoStepApproval(btnChooseHourCurrentDayDrugBy, approvalDrugBy, "drug");
+/** אישור תרופות בלבד - מחזיר את מספר התרופות שטופלו */
+public int handleDrugApprovalOnly() {
+    return executeTwoStepApproval(btnChooseHourCurrentDayDrugBy, approvalDrugBy, "drug");
 }
 
-/** אישור הוראות כלליות בלבד */
-public void handleGeneralApprovalOnly() {
-    executeTwoStepApproval(btnChooseHourCurrentDayGeneralBy, approvalGeneralBy, "general");
+/** אישור הוראות כלליות בלבד - מחזיר את מספר ההוראות שטופלו */
+public int handleGeneralApprovalOnly() {
+    return executeTwoStepApproval(btnChooseHourCurrentDayGeneralBy, approvalGeneralBy, "general");
 }
 
-/** אישור נוזלים בלבד */
-public void handleLiquidApprovalOnly() {
-    executeTwoStepApproval(boxCurrentHourForLiquidBy, approvalLiquidBy, "liquid");
+/** אישור נוזלים בלבד - מחזיר את מספר הנוזלים שטופלו */
+public int handleLiquidApprovalOnly() {
+    return executeTwoStepApproval(boxCurrentHourForLiquidBy, approvalLiquidBy, "liquid");
 }
 
-/** אישור מוצרי דם בלבד */
-public void handleBloodProductApprovalOnly() {
-    executeTwoStepApproval(boxCurrentHourForBloodProductBy, approvalBloodProductBy, "blood product");
+/** אישור מוצרי דם בלבד - מחזיר את מספר מוצרי הדם שטופלו */
+public int handleBloodProductApprovalOnly() {
+    return executeTwoStepApproval(boxCurrentHourForBloodProductBy, approvalBloodProductBy, "blood product");
 }    
-private void executeTwoStepApproval(By chooseHourBy, By approvalBy, String typeName) {
-    List<WebElement> chooseHourBtn = UIActions.findElementsWithWait(chooseHourBy);
+private int executeTwoStepApproval(By chooseHourBy, By approvalBy, String typeName) {
+        List<WebElement> chooseHourBtn = UIActions.findElementsWithWait(chooseHourBy);
 
-    if (chooseHourBtn.isEmpty()) {
-        log.info("No {} instructions found for the current day.", typeName);
-        return;
+        if (chooseHourBtn.isEmpty()) {
+            log.info("No {} instructions found for the current day.", typeName);
+            return 0;
     }
     log.info("Found {} {} instructions to process.", chooseHourBtn.size(), typeName);
 
@@ -130,22 +135,31 @@ private void executeTwoStepApproval(By chooseHourBy, By approvalBy, String typeN
 
         if (currentButtons.size() > i && currentButtons.get(i).isEnabled()) {
             
-            // 1. התפצלות לפי סוג ההוראה
-            if ("drug".equalsIgnoreCase(typeName) || "general".equalsIgnoreCase(typeName)) {
-                selectNthOptionFromDropdown(currentButtons.get(i), 4);
-            } else {
-                // נוזלים ומוצרי דם: לחיצה על האלמנט עצמו
-                UIActions.click(currentButtons.get(i));
-                UIActions.waitForSpinnerToDisappear(); // סנכרון פתיחת פאנל/טעינה
-
-                // 2. תנאי דינמי עם ממתין מפורש מניעת מרוץ זמנים (Race Condition)
-                if ("blood product".equalsIgnoreCase(typeName)) {
+            // 1. התפצלות לפי סוג ההוראה - Switch Case
+            switch (typeName) {
+                case "drug":
+                case "general":
+                    selectNthOptionFromDropdown(currentButtons.get(i), 4);
+                    break;
+                    
+                case "liquid":
+                    // נוזלים: לחיצה על האלמנט וברירת נוזלים
+                    UIActions.click(currentButtons.get(i));
+                    if (UIActions.isElementPresentAndVisible(btnVforLiquidBy)) {
+                        UIActions.click(btnVforLiquidBy);
+                    }
+                    break;
+                    
+                case "blood product":
+                    // מוצרי דם: לחיצה על האלמנט וברירת מוצר דם
+                    UIActions.click(currentButtons.get(i));
+                    // 2. תנאי דינמי עם ממתין מפורש מניעת מרוץ זמנים (Race Condition)
                     UIActions.click(btnVforBloodProductBy);
-                    UIActions.waitForSpinnerToDisappear();
-                } else if ("liquid".equalsIgnoreCase(typeName) && UIActions.isElementPresentAndVisible(btnVforLiquidBy)) {
-                    UIActions.click(btnVforLiquidBy);
-                    UIActions.waitForSpinnerToDisappear();
-                }
+                    break;
+                    
+                default:
+                    log.warn("⚠️ Unknown instruction type: {}", typeName);
+                    break;
             }
 
             // 3. אישור - שליפה בלייב רק ברגע שמוכנים ללחוץ!
@@ -153,26 +167,19 @@ private void executeTwoStepApproval(By chooseHourBy, By approvalBy, String typeN
 
             // בנוזלים/פופאפ הדינמי לוקחים את הכפתור הפעיל/הגלוי שנפתח ברגע זה
             WebElement targetApprovalBtn = null;
-            if ("liquid".equalsIgnoreCase(typeName) || "blood product".equalsIgnoreCase(typeName)) {
-                targetApprovalBtn = currentApprovalBtns.stream()
-                        .filter(WebElement::isDisplayed)
-                        .findFirst()
-                        .orElse(null);
-            } else if (currentApprovalBtns.size() > i) {
-                targetApprovalBtn = currentApprovalBtns.get(i);
-            }
-
-            if (targetApprovalBtn != null) {
-                UIActions.waitForElementVisibleBy(targetApprovalBtn);
+            targetApprovalBtn = currentApprovalBtns.get(i);
+            
+            if (targetApprovalBtn != null)
                 UIActions.click(targetApprovalBtn);
-                UIActions.waitForSpinnerToDisappear();
                 log.info("Selected hour for {} instruction {} and approved.", typeName, i + 1);
             } else {
                 log.warn("No approval button found for {} instruction {}.", typeName, i + 1);
             }
         }
+        
+        log.info("✅ Completed processing {} {} instructions. Count: {}", chooseHourBtn.size(), typeName, chooseHourBtn.size());
+        return chooseHourBtn.size();
     }
-}
 
 
  
