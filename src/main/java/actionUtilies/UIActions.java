@@ -252,7 +252,11 @@ public class UIActions {
 
     public static void selectFromListByIndex(List<WebElement> list , int index){
 
-        list.get(index).click();
+        wait.until(ExpectedConditions.visibilityOfAllElements(list));
+        if(list.size() > 0)
+           list.get(index).click();
+        else
+            log.warn("⚠️ List is empty, cannot select index {}", index);
 
     }
 
