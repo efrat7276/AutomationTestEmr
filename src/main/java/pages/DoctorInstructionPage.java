@@ -53,8 +53,6 @@ public class DoctorInstructionPage extends BasePage {
 
     // Assert עם הודעת שגיאה ברורה
     public void verifySecondTitle(InstructionType type) {
-        if(type == InstructionType.NUTRITION)
-            type = InstructionType.MEDICINE;
         String actualText = UIActions.getText(getSecondTitleSpanLocator()).trim();
         if (!isSecondTitleDisplayed(type)) {
             throw new AssertionError("Expected title to contain '" + type.getDescription() + "' but got '" + actualText + "'");
