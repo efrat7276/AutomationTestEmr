@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.util.List;
 
+import org.checkerframework.checker.guieffect.qual.UI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -127,7 +128,7 @@ public int handleBloodProductApprovalOnly() {
 }    
 private int executeTwoStepApproval(By chooseHourBy, By approvalBy, String typeName) {
         List<WebElement> chooseHourBtn = UIActions.findElementsWithWait(chooseHourBy);
-
+          int countInstructionApproved=0;
         if (chooseHourBtn.isEmpty()) {
             log.info("No {} instructions found for the current day.", typeName);
             return 0;
@@ -175,16 +176,21 @@ private int executeTwoStepApproval(By chooseHourBy, By approvalBy, String typeNa
             targetApprovalBtn = currentApprovalBtns.get(i);
             
             if (targetApprovalBtn != null)
+             { 
                 UIActions.click(targetApprovalBtn);
-                log.info("Selected hour for {} instruction {} and approved.", typeName, i + 1);
-            } else {
-                log.warn("No approval button found for {} instruction {}.", typeName, i + 1);
-            }
+               if( targetApprovalBtn.getText().contains("ערוך"))
+                    countInstructionApproved++;
+                    log.info("approved instructions button text is contains 'ערוך'");
+
+               }
+               else
+                log.info("approved instructions button text does not contain 'ערוך' so the click button is skipped");
+
         }
-        
-        log.info("✅ Completed processing {} {} instructions. Count: {}", chooseHourBtn.size(), typeName, chooseHourBtn.size());
-        return chooseHourBtn.size();
     }
+        
+        return countInstructionApproved;
+ }
 
 
  
