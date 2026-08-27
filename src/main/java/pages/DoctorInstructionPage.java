@@ -71,21 +71,27 @@ public class DoctorInstructionPage extends BasePage {
     public void clickButtonAddInstruction(InstructionType type) {
         switch (type) {
             case MEDICINE:
+                log.info("Clicking on 'Add Medicine' button");
                 UIActions.click(btnAddMedicine);
                 break;
             case BLOOD:
+                log.info("Clicking on 'Add Blood Product' button");
                 UIActions.click(btnAddBloodProduct);
                 break;
             case FLUID:
+                log.info("Clicking on 'Add Fluid' button");
                 UIActions.click(btnAddFluid);
                 break;
             case GENERAL:
+                log.info("Clicking on 'Add General Instruction' button");
                 UIActions.click(btnAddGeneralInstruction);
                 break;
             case NUTRITION:
+                log.info("Clicking on 'Add Nutrition' button");
                 UIActions.click(btnAddNutrition);
                 break;
             case IMMEDIATE:
+            //    log.info("Clicking on 'Add Immediate' button");
           //      UIActions.click(btns_addImmediate);
                 break;
             case TREATMENT_PROTOCOL:
@@ -179,18 +185,11 @@ public class DoctorInstructionPage extends BasePage {
         clickButtonAddInstruction(InstructionType.GENERAL);
         generalInstructionForm.addGeneralInstructionAndClose();
     }
-
-    /**
-     * sign all the instruction
-     */
-    public void clickButtonSign(){
-        UIActions.click(btn_approvalDrug);
-        //  assertTrue(UIActions.findElement())
-    }
-
+ 
 
     public void approveAndVerifyInstructions(String username, String password) {
-        clickButtonSign();
+       log.info("Approving instructions");
+        UIActions.click(btn_approvalDrug);
         userSignModalPage.signModal(username, password);
         UIActions.waitForElementClickable(btn_approvalDrug);
         verifyDoctorApproval();

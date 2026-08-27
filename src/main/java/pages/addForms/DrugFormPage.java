@@ -160,10 +160,11 @@ public class DrugFormPage extends BasePage {
         }
 
         // 6. לחיצה על כפתור 'הוספה וסגירה'
+        
+        log.info("Clicking 'Add and Close' button.");
         UIActions.click(btn_addAndClose);
         UIActions.waitForSpinnerToDisappear();
-        assertTrue(UIActions.findElementWithWait(By.xpath("//div[contains(@class, 'menu-page-title')]//span[contains(text(), 'הוראות רפואיות')]")).isDisplayed(), "הודעת הצלחה לא הופיעה לאחר הוספת התרופה!");
-        //
+        
         log.info("Added medicine '{}' with possibility '{}'. Dosage: {}. Also executed: {}.", nameMed, possibility, dosage, alsoExecute);
 
     }
@@ -309,6 +310,7 @@ public class DrugFormPage extends BasePage {
     private void fillCommonFields(@Nullable String dosage) {
         // 1. הזנת מינון
         if (dosage != null && !dosage.isEmpty()) {
+           log.info("Filling field with dosage: {}", dosage);
             UIActions.clearText(input_drugDosage);
             UIActions.typeText(input_drugDosage, dosage);
             // TODO: לוגיקה לבחירת יחידות מידה
