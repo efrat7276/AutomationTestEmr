@@ -2,11 +2,14 @@ package pages.nurse.approval;
 
 import static org.testng.Assert.assertTrue;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.checkerframework.checker.guieffect.qual.UI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import actionUtilies.UIActions;
 import drivers.DriverManager;
@@ -103,6 +106,9 @@ private final By btnEditBy = By.xpath("//button[contains(@id,'btnIsApproval') an
         
        assertTrue(UIActions.findElementWithWait(btnApprovalAll).getText().contains(String.valueOf(totalProcessed)),  "לא כל ההוראות אושרו בהצלחה! יש הוראות שנותרו לא מאושרות. מספר ההוראות שאושרו : ");
         
+       WebDriverWait wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(10));
+ wait.until(ExpectedConditions.visibilityOfElementLocated(btnApprovalAll));
+
         UIActions.click(btnApprovalAll);
         userSignModalPage.signModal(username, password);
     }
@@ -178,6 +184,8 @@ private int executeTwoStepApproval(By chooseHourBy, By approvalBy, String typeNa
             if (targetApprovalBtn != null)
              { 
                 UIActions.click(targetApprovalBtn);
+                 WebDriverWait wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(10));
+                wait.until(ExpectedConditions.visibilityOfElementLocated(approvalBy));
                if( targetApprovalBtn.getText().contains("ערוך"))
                     countInstructionApproved++;
                     log.info("approved instructions button text is contains 'ערוך'");
