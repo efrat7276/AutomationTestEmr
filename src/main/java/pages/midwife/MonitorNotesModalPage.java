@@ -48,7 +48,7 @@ public class MonitorNotesModalPage extends BasePage {
         // type into typeahead and press Enter to add
         UIActions.typeText(noteInputBy, note);
         // Press Enter to accept the typeahead suggestion / submit text
-        UIActions.sendKeys(noteInputBy, org.openqa.selenium.Keys.ENTER);
+     //   UIActions.sendKeys(noteInputBy, org.openqa.selenium.Keys.ENTER);
         UIActions.waitForSpinnerToDisappear();
 
         UIActions.click(submitButtonBy);

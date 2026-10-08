@@ -115,11 +115,11 @@ public class DatePickerPage extends BasePage {
         }
 
         // Navigate to correct month/year
-        boolean navigated = navigateToMonthYear(month, year);
-        if (!navigated) {
-            log.error("failed to navigate to month {}/{}", month, year);
-            return false;
-        }
+        // boolean navigated = navigateToMonthYear(month, year);
+        // if (!navigated) {
+        //     log.error("failed to navigate to month {}/{}", month, year);
+        //     return false;
+        // }
 
         // Select the day
         boolean daySelected = selectDay(day);
@@ -154,41 +154,7 @@ public class DatePickerPage extends BasePage {
         return selectDate(date.getDayOfMonth(), date.getMonthValue(), date.getYear());
     }
 
-    // ============ Month & Year Navigation ============
-
-    /**
-     * Navigate to a specific month and year
-     * @param month The month (1-12)
-     * @param year The year
-     * @return true if navigation was successful, false otherwise
-     */
-    public boolean navigateToMonthYear(int month, int year) {
-        log.info("navigating to month: {}, year: {}", month, year);
-
-        // Get current month/year
-        YearMonth current = getCurrentMonthYear();
-        YearMonth target = YearMonth.of(year, month);
-
-        log.info("current: {}, target: {}", current, target);
-
-        // Use month/year dropdowns if available
-        boolean success = selectMonthYearViaDropdown(month, year);
-        if (success) {
-            log.info("navigated to {}/{} via dropdown", month, year);
-            return true;
-        }
-
-        // Fallback: Use Previous/Next navigation buttons
-        success = navigateViaButtons(current, target);
-        if (success) {
-            log.info("navigated to {}/{} via navigation buttons", month, year);
-            return true;
-        }
-
-        log.error("failed to navigate to {}/{}", month, year);
-        return false;
-    }
-
+  
     /**
      * Select month and year using dropdown selects
      * @param month The month (1-12)
@@ -219,34 +185,6 @@ public class DatePickerPage extends BasePage {
         }
 
         UIActions.waitForSpinnerToDisappear();
-        return true;
-    }
-
-    /**
-     * Navigate using Previous/Next buttons
-     * @param current Current YearMonth
-     * @param target Target YearMonth
-     * @return true if navigation was successful, false otherwise
-     */
-    private boolean navigateViaButtons(YearMonth current, YearMonth target) {
-        int monthsDiff = current.until(target).getMonths();
-        
-        if (monthsDiff > 0) {
-            // Navigate forward (next month)
-            for (int i = 0; i < monthsDiff; i++) {
-                UIActions.click(nextMonthButtonBy);
-                UIActions.waitForSpinnerToDisappear();
-            }
-            log.info("navigated forward {} months", monthsDiff);
-        } else if (monthsDiff < 0) {
-            // Navigate backward (previous month)
-            for (int i = 0; i < Math.abs(monthsDiff); i++) {
-                UIActions.click(previousMonthButtonBy);
-                UIActions.waitForSpinnerToDisappear();
-            }
-            log.info("navigated backward {} months", Math.abs(monthsDiff));
-        }
-
         return true;
     }
 
@@ -359,7 +297,7 @@ public class DatePickerPage extends BasePage {
      * @return true if datepicker appeared within timeout, false otherwise
      */
     public boolean waitForDatePickerToAppear(int timeoutSeconds) {
-        UIActions.waitForElement(datePickerContainerBy, timeoutSeconds);
+       // UIActions.waitForElement(datePickerContainerBy, timeoutSeconds);
         log.info("datepicker appeared within {} seconds", timeoutSeconds);
         return isDatePickerOpen();
     }
