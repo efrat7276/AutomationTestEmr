@@ -5,32 +5,23 @@ import drivers.DriverManager;
 import enums.InstructionType;
 import helpers.Constants;
 import lombok.extern.slf4j.Slf4j;
-
-import org.checkerframework.checker.guieffect.qual.UI;
-import org.checkerframework.checker.units.qual.g;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.bidi.log.Log;
-import org.testng.annotations.BeforeMethod;
-
 import pages.addForms.DrugFormPage;
 import pages.addForms.GeneralInstructionPage;
 import pages.addForms.BloodProductsPage;
-import actionUtilies.UIActions;
 import static org.testng.Assert.assertTrue;
-
 import javax.annotation.Nullable;
-
 import java.util.List;
 
 @Slf4j
 public class DoctorInstructionPage extends BasePage {
-       
+
        DrugFormPage drugForm = new DrugFormPage();
         GeneralInstructionPage generalInstructionForm = new GeneralInstructionPage();
         BloodProductsPage bloodForm = new BloodProductsPage();
         public DoctorInstructionPage() {
-        UIActions.waitForSpinnerToDisappear();
+      //  UIActions.waitForSpinnerToDisappear();
     }
 
     
@@ -73,22 +64,33 @@ public class DoctorInstructionPage extends BasePage {
             case MEDICINE:
                 log.info("Clicking on 'Add Medicine' button");
                 UIActions.click(btnAddMedicine);
+                UIActions.waitForSpinnerToDisappear();
+                verifySecondTitle(InstructionType.MEDICINE);
+
                 break;
             case BLOOD:
                 log.info("Clicking on 'Add Blood Product' button");
                 UIActions.click(btnAddBloodProduct);
+                UIActions.waitForSpinnerToDisappear();
+                verifySecondTitle(InstructionType.BLOOD);
                 break;
             case FLUID:
                 log.info("Clicking on 'Add Fluid' button");
                 UIActions.click(btnAddFluid);
+                UIActions.waitForSpinnerToDisappear();
+                verifySecondTitle(InstructionType.FLUID);
                 break;
             case GENERAL:
                 log.info("Clicking on 'Add General Instruction' button");
                 UIActions.click(btnAddGeneralInstruction);
+                UIActions.waitForSpinnerToDisappear();
+                verifySecondTitle(InstructionType.GENERAL);
                 break;
             case NUTRITION:
                 log.info("Clicking on 'Add Nutrition' button");
                 UIActions.click(btnAddNutrition);
+                UIActions.waitForSpinnerToDisappear();
+                verifySecondTitle(InstructionType.NUTRITION);
                 break;
             case IMMEDIATE:
             //    log.info("Clicking on 'Add Immediate' button");
@@ -114,48 +116,83 @@ public class DoctorInstructionPage extends BasePage {
 
 
     // פונקציות Full Action – דוגמה למספר סוגי הוראות
-    public void addMedicineFullAndVerify(String name, String frequency, String dose, String amount, String username, String password) {
+    public void addMedicineFullAndVerify(String name, String frequency, String dose, String amount,String comments, String username, String password) {
         clickButtonAddInstruction(InstructionType.MEDICINE);
-        drugForm.addOneMedicine(name, frequency, dose, amount, null, null, null, null, null, null, false);
+        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
         approveAndVerifyInstructions(username, password);
     }
 
-    public void addMedicineToList(String name, String frequency, String dose, String amount) {
+    public void addMedicineToListTheFisrtTime(String name, String frequency, String dose, String amount,String comments) {
         clickButtonAddInstruction(InstructionType.MEDICINE);
-        drugForm.addOneMedicine(name, frequency, dose, amount, null, null, null, null, null, null, false);
-        UIActions.click(drugForm.btn_add); // הוספה לרשימה בלי סגירת הטופס
+        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.clickAddButton(); // הוספה לרשימה בלי סגירת הטופס
     }
 
-    public void addMedicineAndClose(String name, String frequency, String dose, String amount) {
+    public void addMedicineToList(String name, String frequency, String dose, String amount,String comments) {
+        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.clickAddButton(); // הוספה לרשימה בלי סגירת הטופס
+    }
+
+     public void addMedicineToListAndClose(String name, String frequency, String dose, String amount,String comments) {
+        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.clickAddAndCloseButton(); // הוספה לרשימה וסגירת הטופס
+    }
+
+    public void addMedicineAndClose(String name, String frequency, String dose, String amount,String comments) {
         clickButtonAddInstruction(InstructionType.MEDICINE);
-        drugForm.addOneMedicine(name, frequency, dose, amount, null, null, null, null, null, null, false);
-        UIActions.click(drugForm.btn_add); // הוספה וסגירת הטופס
+        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.clickAddAndCloseButton(); // הוספה וסגירת הטופס
     }
 
     
 
-    public void addFluidFull(String name, String frequency, String dose, String amount, String username, String password) {
+    public void addFluidFull(String name, String frequency, String dose, String amount,String comments, String username, String password) {
         clickButtonAddInstruction(InstructionType.FLUID);
-        drugForm.addFluid(name, frequency, dose, amount);
+        drugForm.addFluid(name, frequency, dose, amount,comments);
         approveAndVerifyInstructions(username, password);
     }
 
-    public void addFluidToList(String name, String frequency, String dose, String amount) {
+    public void addFluidToList(String name, String frequency, String dose, String amount,String comments) {
         clickButtonAddInstruction(InstructionType.FLUID);
-        drugForm.addFluid(name, frequency, dose, amount);
-        UIActions.click(drugForm.btn_add); // הוספה לרשימה בלי סגירת הטופס
+        drugForm.addFluid(name, frequency, dose, amount,comments);
+        drugForm.clickAddButton(); // הוספה לרשימה בלי סגירת הטופס
     }
 
-    public void addFluidAndClose(String name, String frequency, String dose, String amount) {
+     public void addFluidToListAndClose(String name, String frequency, String dose, String amount,String comments) {
         clickButtonAddInstruction(InstructionType.FLUID);
-        drugForm.addFluid(name, frequency, dose, amount);
+        drugForm.addFluid(name, frequency, dose, amount,comments);
+        drugForm.clickAddButton(); // הוספה לרשימה בלי סגירת הטופס
     }
 
-       public void addNutritionFull(String name, String frequency, String dose, String amount, String username, String password) {
+    public void addFluidAndClose(String name, String frequency, String dose, String amount,String comments) {
+        clickButtonAddInstruction(InstructionType.FLUID);
+        drugForm.addFluid(name, frequency, dose, amount,comments);
+    }
+
+       public void addNutritionFull(String name, String frequency, String dose, String amount,String comments, String username, String password) {
         clickButtonAddInstruction(InstructionType.NUTRITION);
-        // For nutrition daily, "amount" represents times per day. Map it to timesDaily.
-        drugForm.addOneMedicine(name, frequency, dose, amount, null, null, null, null, null, null, false);
+        // For nutrition daily, "amount" represents times per day.
+        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
         approveAndVerifyInstructions(username, password);
+    }
+
+    public void addNutritionToList(String name, String frequency, String dose, String amount,String comments) {
+        clickButtonAddInstruction(InstructionType.NUTRITION);
+        // For nutrition daily, "amount" represents times per day.
+        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.clickAddButton(); // הוספה לרשימה בלי סגירת הטופס
+    }
+
+    public void addNutritionFullAndClose(String name, String frequency, String dose, String amount,String comments) {
+        clickButtonAddInstruction(InstructionType.NUTRITION);
+        // For nutrition daily, "amount" represents times per day.
+        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
+    }
+
+    public void addNutritionAndClose(String name, String frequency, String dose, String amount,String comments) {
+        clickButtonAddInstruction(InstructionType.NUTRITION);
+        // For nutrition daily, "amount" represents times per day.
+        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
     }
 
     public void addBloodProductFull(String name, String amount, String username, String password) {

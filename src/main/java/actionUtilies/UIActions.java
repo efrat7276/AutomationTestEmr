@@ -2,15 +2,13 @@
 package actionUtilies;
 
 import drivers.DriverManager;
-import io.qameta.allure.Step;
 import lombok.extern.slf4j.Slf4j;
-import pages.addForms.DrugFormPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -111,7 +109,21 @@ public class UIActions {
   
     public static void typeText(By locator, String text) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-        element.clear();
+        // Wait until element is clickable/editable
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
+        // Use JavaScript to clear the field (more reliable)
+        try {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].value = '';", element);
+        } catch (Exception e) {
+            log.warn("Failed to clear field with JavaScript, attempting standard clear()");
+            try {
+                element.clear();
+            } catch (Exception clearException) {
+                log.warn("Failed to clear field with clear(), attempting to select all and delete");
+                element.sendKeys(Keys.CONTROL + "a");
+                element.sendKeys(Keys.DELETE);
+            }
+        }
         element.sendKeys(text);
     }
     

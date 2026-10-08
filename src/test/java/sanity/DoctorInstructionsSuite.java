@@ -59,7 +59,7 @@ public class DoctorInstructionsSuite extends BaseSuit {
       loginAsDoctor();
         selectFirstPatient();
         System.out.println("Starting test: Adding a medicine");
-        doctorInstructionPage.addMedicineFullAndVerify("dep", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+        doctorInstructionPage.addMedicineFullAndVerify("dep", "daily", "20", "1","automation test", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
         System.out.println("Finished test: Adding a medicine");
     }
 
@@ -68,7 +68,7 @@ public class DoctorInstructionsSuite extends BaseSuit {
         loginAsDoctor();
         selectFirstPatient();
         System.out.println("Starting test: Adding a fluid");
-        doctorInstructionPage.addFluidFull("INF", "continuous", "50", "1L", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+        doctorInstructionPage.addFluidFull("INF", "continuous", "50", "1L", "automation test", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
         System.out.println("Finished test: Adding a fluid");
     }
 
@@ -104,7 +104,7 @@ public class DoctorInstructionsSuite extends BaseSuit {
     public void testAddContinuousFluid() {
         loginAsDoctor();
         selectFirstPatient();
-        doctorInstructionPage.addFluidFull("INF", "Continuous", "500", "1000", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+        doctorInstructionPage.addFluidFull("INF", "Continuous", "500", "1000", "automation test", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
         doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
     }
 

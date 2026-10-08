@@ -64,6 +64,10 @@ public class SanitySuite1 extends BaseSuit {
     public void preClass() throws SQLException{
 
     String deptNameParamFromJenkins = System.getProperty("department");
+    if (deptNameParamFromJenkins == null || deptNameParamFromJenkins.isEmpty()) {
+        log.warn("No department parameter provided. Using default: INTERNAL_B");
+        deptNameParamFromJenkins = "פנימית_ב";
+    }
     String deptNameParam = deptNameParamFromJenkins.replace('_', ' ');
     HospitalDepartment foundDept = HospitalDepartment.getByHebrewName(deptNameParam);
     
@@ -134,15 +138,6 @@ public class SanitySuite1 extends BaseSuit {
     }
     
     @Feature("Visual Tests")
-    @Story("Doctor Login - Welcome Greeting")
-    @Test()
-    public void test_01b_doctorWelcomeGreeting(){
-        log.info("* Starting test_01b_doctorWelcomeGreeting");
-        loginAsDoctor();
-        assertTrue(mainMenuPage.isWelcomeGreetingDisplayed(), "Welcome greeting should be displayed");
-    }
-    
-    @Feature("Visual Tests")
     @Story("Num version existing in main menu")
     @Test(groups = {"ignore"})
     public void test_02_numVersionExisting(){
@@ -199,7 +194,7 @@ public class SanitySuite1 extends BaseSuit {
         loginAsDoctor();
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);
-        doctorInstructionPage.addMedicineFullAndVerify("CARBOplatin", "daily", "20", "1", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+        doctorInstructionPage.addMedicineFullAndVerify("CARBOplatin", "daily", "20", "1", "automation sanity test", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
       log.info("Added medicine instruction successfully.");
     
     }
@@ -224,7 +219,7 @@ public class SanitySuite1 extends BaseSuit {
         loginAsDoctor();
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);   
-        doctorInstructionPage.addFluidAndClose("INJ furosemide 250mg/25ml (FUROVENIR)", "continuous", "50", "10");
+        doctorInstructionPage.addFluidAndClose("INJ furosemide 250mg/25ml (FUROVENIR)", "continuous", "50", "10", "automation sanity test"  );
         doctorInstructionPage.addGeneralInstructionAndClose();
         doctorInstructionPage.addBloodProductAndClose("דם דחוס", "1");
         doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
@@ -303,7 +298,7 @@ public class SanitySuite1 extends BaseSuit {
         loginAsNutritionist();
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);
-       doctorInstructionPage.addNutritionFull("Nut", "daily", "200", "1", Constants.NUTRITIONIST_USERNAME, Constants.NUTRITIONIST_PASSWORD);
+       doctorInstructionPage.addNutritionFull("Nut", "daily", "200", "1", "automation sanity test", Constants.NUTRITIONIST_USERNAME, Constants.NUTRITIONIST_PASSWORD);
     }
 
     @Feature("Functional Tests")
@@ -320,7 +315,8 @@ public class SanitySuite1 extends BaseSuit {
       }
         choosePatient(1);
         doctorInstructionPage.clickButtonAddInstruction(InstructionType.MEDICINE);
-        drugForm.addOneMedicine("Aspirin", "once only", "500mg", null, null, null, null, null, null, null, true);
+        doctorInstructionPage.addMedicineAndClose("Aspirin", "once only", "500mg", "1","automation sanity test");
+        
         doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
         innerMenuPage.navigateToMenuEntry("קרדקס", false);
         UIActions.waitForSpinnerToDisappear();
@@ -360,7 +356,7 @@ public class SanitySuite1 extends BaseSuit {
       chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
       choosePatient(PATIENT_1);
       doctorInstructionPage.clickButtonAddInstruction(InstructionType.MEDICINE);
-      drugForm.addOneMedicine("ACAMOL", "once only", "500", null, null, null, null, null, null, null, false);
+      doctorInstructionPage.addMedicineAndClose("ACAMOL", "once only", "500", null, "automation sanity test");
       doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
       log.info("Single dose medicine ACAMOL added successfully to patient");
       

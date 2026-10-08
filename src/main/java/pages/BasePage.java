@@ -19,8 +19,8 @@ public class BasePage {
 
     public BasePage() {
       
-        this.userSignModalPage = new UserSignModalPage();
-        this.medicinePrep = new MedicinePrep();
+     //   this.userSignModalPage = new UserSignModalPage();
+        //this.medicinePrep = new MedicinePrep();
     }
 
     public Boolean verificationTitleIsDisplay(String titleText){

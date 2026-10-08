@@ -39,6 +39,17 @@ public class Listeners implements ITestListener {
     }
 
     public void onTestFailure(ITestResult result) {   
+        // Print failure message and stacktrace early so it's visible before driver teardown
+        Throwable t = result.getThrowable();
+        if (t != null) {
+            try {
+                System.err.println("Test failed: " + result.getName() + " - " + t.getMessage());
+                t.printStackTrace(System.err);
+            } catch (Exception e) {
+                log.warn("Failed to print throwable message: {}", e.getMessage());
+            }
+        }
+
         log.info(">>> Capturing and saving screenshot for Allure...");
         captureAndSaveScreenshot();
     }

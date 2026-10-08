@@ -173,11 +173,11 @@ public class DBExecuter {
 public static Object handleAnyQuery(String sql) throws SQLException {
     List<Object> allResults = new ArrayList<>();
      Statement stmt = null;
+     String formattedSql = sql;
 
     try {
         stmt = ManageDB.getStatement();
-        boolean isResultSet = stmt.execute(sql);
-
+        boolean isResultSet = stmt.execute(formattedSql);
         while (true) {
             if (isResultSet) {
                 // טיפול ב-SELECT

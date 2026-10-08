@@ -5,7 +5,7 @@
 ### שלב 1: פתיחת דפדפן
 עבור ללינק הבא:
 ```
-https://lanwebapp.laniado.org.il/emr2/#/login
+https://lanwebapptest.laniado.org.il/emr2/#/login
 ```
 
 ### שלב 2: הזנת פרטי הכניסה

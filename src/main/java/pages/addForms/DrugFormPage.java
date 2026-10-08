@@ -3,6 +3,9 @@ package pages.addForms;
 import actionUtilies.UIActions;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import pages.BasePage;
 import pages.DoctorInstructionPage;
 
@@ -22,6 +25,7 @@ public class DrugFormPage extends BasePage {
     private By inp_selectDrug = By.id("selectDrug");
     private By inp_selectDrugTopList = By.xpath("//div[@class='form-group code-list']//button");
     private By input_drugDosage = By.id("drugDosage");
+    private By input_comments = By.id("drugComment");
     // ... (שאר האלמנטים)
 
     // dropdowns
@@ -31,8 +35,8 @@ public class DrugFormPage extends BasePage {
     private By routeAdministrationList = By.xpath("//button[@id='dropdownRouteAdministrationID']/following-sibling::ul/li");
 
     // buttons
-    public By btn_add = By.id("btnAdd"); // כפתור הוסף;
-    public By btn_addAndClose = By.id("btnAddAndClose"); // כפתור הוסף וסגור;
+    private By btn_add = By.id("btnAdd"); // כפתור הוסף;
+    private By btn_addAndClose = By.id("btnAddAndClose"); // כפתור הוסף וסגור;
 
     // possibility (Radio Buttons)
     private By possibilityDaily = By.xpath("//input[contains(@id,'drugTimeGivingPossibilitiesID')]/following-sibling::label[text()=' Daily ']");
@@ -42,28 +46,29 @@ public class DrugFormPage extends BasePage {
     private By possibilityWeekly = By.xpath("//input[contains(@id,'drugTimeGivingPossibilitiesID')]/following-sibling::label[text()=' Weekly ']");
     // ...
     //daily
-    public By btn_numberOfTimesDaily = By.id("numberOfTimes_daily");
-    public By numberOfTimesDaily = By.xpath("//ul[@aria-labelledby='numberOfTimes_daily']/li");
+    private By btn_numberOfTimesDaily = By.id("numberOfTimes_daily");
+    private By numberOfTimesDaily = By.xpath("//ul[@aria-labelledby='numberOfTimes_daily']/li");
 
     // once-only
-    public By hourList = By.xpath("//button[@id='btnHourToGive']/following-sibling::ul/li");
-    public By btn_hour = By.id("btnHourToGive");
+    private By hourList = By.xpath("//button[@id='btnHourToGive']/following-sibling::ul/li");
+    private By btn_hour = By.id("btnHourToGive");
 
     //sos
-    public By btn_sosMaxTimesPerDay = By.id("sosMaxTimesPerDay");
-
-    public By sosMinTimesPerDayList = By.xpath("//button[@id='sosMinTimesPerDay']/following-sibling::ul/li");
+    private By  btn_sosMaxTimesPerDay = By.xpath("//button[@id='sosMaxTimesPerDay']");
+    private By btn_sosMinTimesPerDay = By.xpath("//button[@id='sosMinTimesPerDay']");
+    private By sosMaxTimesPerDayList = By.xpath("//button[@id='sosMaxTimesPerDay']/following-sibling::ul/li");
+    private By sosMinTimesPerDayList = By.xpath("//button[@id='sosMinTimesPerDay']/following-sibling::ul/li");
 
     //weekly
 
-    public By weekNumberOfTimesList = By.xpath("//button[@id='WeekNumberOfTimes']/following-sibling::ul/li");
+    private By weekNumberOfTimesList = By.xpath("//button[@id='WeekNumberOfTimes']/following-sibling::ul/li");
 
-    public By btn_WeekNumberOfTimes = By.id("WeekNumberOfTimes");
+    private By btn_WeekNumberOfTimes = By.id("WeekNumberOfTimes");
 
     // by-hour
 
-    public By everyXTimeList = By.xpath("//button[@id='everyXtimeGivingPossibiltyDetail']/following-sibling::ul/li");
-    public By btn_everyXTime = By.id("everyXtimeGivingPossibiltyDetail");
+    private By everyXTimeList = By.xpath("//button[@id='everyXtimeGivingPossibiltyDetail']/following-sibling::ul/li");
+    private By btn_everyXTime = By.xpath("//button[@id='everyXtimeGivingPossibiltyDetail']");
 
     // ============================================================================
     // FLUID SPECIFIC LOCATORS - לוקטורים ספציפיים לנוזלים
@@ -87,39 +92,142 @@ public class DrugFormPage extends BasePage {
     private By btn_executeInForm = By.id("instructionWithExecution");
 
 
+    //private WebDriver driver;
+    private WebDriverWait wait;
     // ----------------------------------------------------------------------------------
-    // הפונקציה הראשית: addMedicine
+    // Public Methods: תרופות לפי תדירויות שונות
+    // ----------------------------------------------------------------------------------
+
     /**
-     * מוסיפה תרופה למערכת על ידי הזנת נתונים כלליים וספציפיים לתדירות.
-     * הפונקציה כוללת המתנה קבועה קצרה לטעינת רשימת התרופות ולחיצה על כפתור ההוספה הסופי.
-     *
-     * @param nameMed שם התרופה להזנה בשדה החיפוש.
-     * @param possibility התדירות הנבחרת (לדוגמה: "Daily", "SOS", "Once Only").
-     * @param dosage מינון התרופה (שדה גנרי) - אופציונלי.
-     * @param timesDaily מספר הפעמים ביום עבור תדירות "Daily" - אופציונלי.
-     * @param hourToGive שעת מתן מדויקת עבור תדירות "Once Only" - אופציונלי.
-     * @param maxTimesPerDay מספר מירבי של פעמים ביום עבור תדירות "SOS" - אופציונלי.
-     * @param minInterval מרווח מינימלי בין מנות עבור תדירות "SOS" - אופציונלי.
-     * @param timesPerWeek מספר הפעמים בשבוע עבור תדירות "Weekly" - אופציונלי.
-     * @param daysOfWeek רשימת ימי השבוע (כמחרוזות) עבור תדירות "Weekly" - אופציונלי.
-     * @param everyXTime תדירות לפי שעות (לדוגמה: "6 שעות") עבור תדירות "By Hour" - אופציונלי.
+     * Dispatcher method - קוראת לפונקציה הנכונה בהתאם לתדירות המבוקשת
+     * שימושי כאשר התדירות נקבעת בזמן ריצה
+     * 
+     * @param nameMed שם התרופה/מוצר
+     * @param frequency התדירות (Daily, Once Only, SOS, By Hour, Weekly)
+     * @param dosage מינון
+     * @param frequencyParam פרמטר ספציפי לתדירות (timesDaily, hourToGive, וכו')
+     * @param comments הערות
+     * @param alsoExecute ביצוע מיידי
      */
-    // ----------------------------------------------------------------------------------
-        public void addOneMedicine(
-            String nameMed,
-            String possibility,
-            @Nullable String dosage,
-            @Nullable String timesDaily,
-            @Nullable String hourToGive,
-            @Nullable String maxTimesPerDay,
-            @Nullable String minInterval,
-            @Nullable String timesPerWeek,
-            @Nullable List<String> daysOfWeek,
-            @Nullable String everyXTime,
-            boolean alsoExecute
-    ) {
+    public void addMedicineByFrequency(String nameMed, String frequency, String dosage, 
+                                       String frequencyParam, @Nullable String comments, 
+                                       boolean alsoExecute) {
+        switch (frequency.toLowerCase().trim()) {
+            case "daily":
+                addDailyMedicine(nameMed, dosage, frequencyParam, comments, alsoExecute);
+                break;
+            case "once only":
+                addOnceOnlyMedicine(nameMed, dosage, frequencyParam, comments, alsoExecute);
+                break;
+            case "sos":
+                addSOSMedicine(nameMed, dosage, frequencyParam, null, comments);
+                break;
+            case "by hour":
+                addByHourMedicine(nameMed, dosage, frequencyParam, comments, alsoExecute);
+                break;
+            case "weekly":
+                addWeeklyMedicine(nameMed, dosage, frequencyParam, null, comments, alsoExecute);
+                break;
+            default:
+                log.error("Unknown frequency: {}", frequency);
+                throw new IllegalArgumentException("Unknown frequency: " + frequency);
+        }
+    }
+
+    /**
+     * הוספת תרופה יומית (Daily)
+     * @param nameMed שם התרופה
+     * @param dosage מינון התרופה
+     * @param timesDaily מספר הפעמים ביום
+     * @param comments הערות - אופציונלי
+     * @param alsoExecute האם לבצע מיידית מתוך הטופס
+     */
+    public void addDailyMedicine(String nameMed, String dosage, String timesDaily, 
+                                 @Nullable String comments, boolean alsoExecute) {
+        log.info("Adding daily medicine: {} - {} times per day", nameMed, timesDaily);
+        selectAndConfigureDrug(nameMed, "Daily", dosage, comments);
+        handleDaily(timesDaily);
+        finalizeMedicineAdd(alsoExecute, nameMed, "Daily", dosage);
+    }
+
+    /**
+     * הוספת תרופה חד פעמית (Once Only)
+     * @param nameMed שם התרופה
+     * @param dosage מינון התרופה
+     * @param hourToGive שעת מתן התרופה
+     * @param comments הערות - אופציונלי
+     * @param alsoExecute האם לבצע מיידית מתוך הטופס
+     */
+    public void addOnceOnlyMedicine(String nameMed, String dosage, String hourToGive,
+                                    @Nullable String comments, boolean alsoExecute) {
+        log.info("Adding once only medicine: {} - at {}", nameMed, hourToGive);
+        selectAndConfigureDrug(nameMed, "Once Only", dosage, comments);
+        //handleOnceOnly(hourToGive);
+        finalizeMedicineAdd(alsoExecute, nameMed, "Once Only", dosage);
+    }
+
+    /**
+     * הוספת תרופה SOS (במידת הצורך)
+     * @param nameMed שם התרופה
+     * @param dosage מינון התרופה
+     * @param maxTimesPerDay מספר מקסימלי לפעמים ביום
+     * @param minInterval מרווח מינימלי בין מנות - אופציונלי
+     * @param comments הערות - אופציונלי
+     */
+    public void addSOSMedicine(String nameMed, String dosage, String maxTimesPerDay,
+                               @Nullable String minInterval, @Nullable String comments) {
+        log.info("Adding SOS medicine: {} - max {} times per day", nameMed, maxTimesPerDay);
+        selectAndConfigureDrug(nameMed, "SOS", dosage, comments);
        
-        // 1. המתנה (Hard Wait) והזנת שם התרופה
+        handleSOS(maxTimesPerDay, minInterval);
+        finalizeMedicineAdd(false, nameMed, "SOS", dosage);
+    }
+
+    /**
+     * הוספת תרופה לפי שעה (By Hour)
+     * @param nameMed שם התרופה
+     * @param dosage מינון התרופה
+     * @param everyXTime תדירות לפי שעות (למשל: "6 שעות")
+     * @param comments הערות - אופציונלי
+     * @param alsoExecute האם לבצע מיידית מתוך הטופס
+     */
+    public void addByHourMedicine(String nameMed, String dosage, String everyXTime,
+                                  @Nullable String comments, boolean alsoExecute) {
+        log.info("Adding by-hour medicine: {} - every {}", nameMed, everyXTime);
+        selectAndConfigureDrug(nameMed, "By Hour", dosage, comments);
+       
+        handleByHour(everyXTime);
+        finalizeMedicineAdd(alsoExecute, nameMed, "By Hour", dosage);
+    }
+
+    /**
+     * הוספת תרופה שבועית (Weekly)
+     * @param nameMed שם התרופה
+     * @param dosage מינון התרופה
+     * @param timesPerWeek מספר הפעמים בשבוע
+     * @param daysOfWeek רשימת ימי השבוע - אופציונלי
+     * @param comments הערות - אופציונלי
+     * @param alsoExecute האם לבצע מיידית מתוך הטופס
+     */
+    public void addWeeklyMedicine(String nameMed, String dosage, String timesPerWeek,
+                                  @Nullable List<String> daysOfWeek, @Nullable String comments,
+                                  boolean alsoExecute) {
+        log.info("Adding weekly medicine: {} - {} times per week", nameMed, timesPerWeek);
+        selectAndConfigureDrug(nameMed, "Weekly", dosage, comments);
+        handleWeekly(timesPerWeek, daysOfWeek);
+        finalizeMedicineAdd(alsoExecute, nameMed, "Weekly", dosage);
+    }
+
+    // ----------------------------------------------------------------------------------
+    // Private Helper Methods
+    // ----------------------------------------------------------------------------------
+
+    /**
+     * בחירה של התרופה ובחירת התדירות
+     */
+    private void selectAndConfigureDrug(String nameMed, String possibility, 
+                                       @Nullable String dosage, @Nullable String comments) {
+        // 1. המתנה והזנת שם התרופה
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
@@ -127,46 +235,36 @@ public class DrugFormPage extends BasePage {
         }
         UIActions.typeText(inp_selectDrug, nameMed);
         UIActions.click(inp_selectDrugTopList);
-        if(UIActions.isPopupAppeared(duplicateInstructionModal))
-        {
-          UIActions.click(duplicateInstructionModalConfirmButton);
-          log.info("Duplicate instruction modal appeared. Confirmed to import existing instruction.");
-        }
+        
+        // if(UIActions.isPopupAppeared(duplicateInstructionModal)) {
+        //     UIActions.click(duplicateInstructionModalConfirmButton);
+        //     log.info("Duplicate instruction modal appeared. Confirmed to import existing instruction.");
+        // }
+        
         // 2. בחירת התדירות
         By possibilityLocator = getDrugPossibilityLocator(possibility);
-        if(!possibility.equals("Daily")){
-        UIActions.waitForElementClickable(possibilityLocator);
-         log.info("Selecting possibility: {}", possibility);    
-        UIActions.click(possibilityLocator);
+        if(!possibility.equals("Daily")) {
+            UIActions.waitForElementClickable(possibilityLocator);
+            log.info("Selecting possibility: {}", possibility);    
+            UIActions.click(possibilityLocator);
         }
+        
         // 3. מילוי פרטים כללים
-        fillCommonFields(dosage);
+        fillCommonFields(dosage, comments);
+    }
 
-        // 4. קריאה לפונקציה לפי תדרות
-        callPossibilityFunction(
-                possibility,
-                timesDaily,
-                hourToGive,
-                maxTimesPerDay,
-                minInterval,
-                timesPerWeek,
-                daysOfWeek,
-                everyXTime
-        );
-
-        // 5. ביצוע מיידי מתוך הטופס (אופציונלי)
+    /**
+     * סיום הוספת תרופה - ביצוע וסגירה
+     */
+    private void finalizeMedicineAdd(boolean alsoExecute, String nameMed, String possibility, String dosage) {
+        // 1. ביצוע מיידי מתוך הטופס (אופציונלי)
         if (alsoExecute) {
             tryExecuteInForm();
         }
-
-        // 6. לחיצה על כפתור 'הוספה וסגירה'
         
-        log.info("Clicking 'Add and Close' button.");
-        UIActions.click(btn_addAndClose);
-        UIActions.waitForSpinnerToDisappear();
+       
         
-        log.info("Added medicine '{}' with possibility '{}'. Dosage: {}. Also executed: {}.", nameMed, possibility, dosage, alsoExecute);
-
+     //   log.info("Successfully added medicine '{}' with possibility '{}'. Dosage: {}.", nameMed, possibility, dosage);
     }
     public void editMedicine(@Nullable String possibility, @Nullable String dosage) {
         UIActions.waitForAnyText(inp_selectDrug);
@@ -178,7 +276,7 @@ public class DrugFormPage extends BasePage {
             UIActions.click(possibilityLocator);
         }
         if (dosage != null && !dosage.isEmpty()) {
-            fillCommonFields(dosage);
+            fillCommonFields(dosage, null);
         }
         UIActions.click(btn_add);
         
@@ -208,7 +306,8 @@ public class DrugFormPage extends BasePage {
             String nameFluid,
             String possibility,
             @Nullable String dosage,
-            @Nullable String flowRateOrTimes
+            @Nullable String flowRateOrTimes,
+            @Nullable String comments
     ) {
         // 1. המתנה והזנת שם הנוזל
         try {
@@ -220,13 +319,13 @@ public class DrugFormPage extends BasePage {
         UIActions.click(inp_selectDrugTopList);
         if(UIActions.isPopupAppeared(duplicateInstructionModal))
           UIActions.click(duplicateInstructionModalConfirmButton);
+        
         By possibilityLocator = getFluidPossibilityLocator(possibility);
         UIActions.waitForElementClickable(possibilityLocator);
         UIActions.click(possibilityLocator);
-        fillCommonFields(dosage);
+        fillCommonFields(dosage, comments);
         handleFluidType(possibility, flowRateOrTimes);
-        UIActions.click(btn_addAndClose);
-        log.info("Added fluid '{}' with possibility '{}'. Dosage: {}.", nameFluid, possibility, dosage);
+        log.info("Fluid configuration complete. Awaiting button click from calling method.");
     }
 
     // ----------------------------------------------------------------------------------
@@ -262,52 +361,12 @@ public class DrugFormPage extends BasePage {
     }
 
     /**
-     * מפעילה את פונקציית הטיפול הספציפית (handleX) בהתאם לתדירות שנבחרה.
-     *
-     * @param possibility שם התדירות (מחרוזת).
-     * @param timesDaily מספר הפעמים ביום עבור Daily.
-     * @param hourToGive שעת מתן מדויקת עבור Once Only.
-     * @param maxTimesPerDay מספר מירבי של פעמים ביום עבור SOS.
-     * @param minInterval מרווח מינימלי בין מנות עבור SOS.
-     * @param timesPerWeek מספר הפעמים בשבוע עבור Weekly.
-     * @param daysOfWeek רשימת ימי השבוע עבור Weekly.
-     * @param everyXTime תדירות לפי שעות עבור By Hour.
-     */
-    private void callPossibilityFunction(
-            String possibility,
-            @Nullable String timesDaily,
-            @Nullable String hourToGive,
-            @Nullable String maxTimesPerDay,
-            @Nullable String minInterval,
-            @Nullable String timesPerWeek,
-            @Nullable List<String> daysOfWeek,
-            @Nullable String everyXTime
-    ) {
-        switch (possibility.toLowerCase()) {
-            case "daily":
-                handleDaily(timesDaily);
-                break;
-            case "once only":
-                handleOnceOnly(hourToGive);
-                break;
-            case "sos":
-                handleSOS(maxTimesPerDay, minInterval);
-                break;
-            case "by hour":
-                handleByHour(everyXTime);
-                break;
-            case "weekly":
-                handleWeekly(timesPerWeek, daysOfWeek);
-                break;
-        }
-    }
-    /**
      * ממלאת שדות קלט שמשותפים לכלל התדירויות (מינון ודרך מתן).
      *
      * @param dosage מינון התרופה - אופציונלי.
      * @param routeAdministration דרך מתן התרופה - אופציונלי.
      */
-    private void fillCommonFields(@Nullable String dosage) {
+    private void fillCommonFields(@Nullable String dosage, @Nullable String comments) {
         // 1. הזנת מינון
         if (dosage != null && !dosage.isEmpty()) {
            log.info("Filling field with dosage: {}", dosage);
@@ -315,7 +374,13 @@ public class DrugFormPage extends BasePage {
             UIActions.typeText(input_drugDosage, dosage);
             // TODO: לוגיקה לבחירת יחידות מידה
         }
-      
+        // 2. הזנת הערות
+        if (comments != null && !comments.isEmpty()) {
+           log.info("Filling field with comments: {}", comments);
+            UIActions.clearText(input_comments);
+            UIActions.typeText(input_comments, comments);
+        }
+        UIActions.waitForSpinnerToDisappear();
     }
     /**
      * מטפלת בלוגיקה הספציפית לתדירות "Daily" (יומי).
@@ -345,9 +410,15 @@ public class DrugFormPage extends BasePage {
             @Nullable String maxTimesPerDay,
             @Nullable String minInterval
     ) {
+        log.info("Handling SOS frequency with maxTimesPerDay: {} and minInterval: {}", maxTimesPerDay, minInterval);
+        
+        //  UIActions.waitForSpinnerToDisappear();
         // 1. הזנת מספר מקסימלי לפעמים ביום
-        if (maxTimesPerDay != null && !maxTimesPerDay.isEmpty()) {
-            UIActions.typeText(btn_sosMaxTimesPerDay, maxTimesPerDay);
+        if (maxTimesPerDay != null) {
+       // wait.until(ExpectedConditions.elementToBeClickable(btn_sosMaxTimesPerDay));
+
+            UIActions.click(btn_sosMaxTimesPerDay);
+            UIActions.selectFromList(sosMaxTimesPerDayList, maxTimesPerDay);
         }
 
 //        // 2. בחירת מרווח מינימלי (מינימום פעמים ביום)
@@ -384,6 +455,7 @@ public class DrugFormPage extends BasePage {
      * @param everyXTime תדירות לבחירה מהרשימה (לדוגמה: "6 שעות") - אופציונלי.
      */
     private void handleByHour(@Nullable String everyXTime) {
+        log.info("Handling 'By Hour' frequency with everyXTime: {}", everyXTime);
         if (everyXTime != null && !everyXTime.isEmpty()) {
             UIActions.click(btn_everyXTime);
             UIActions.selectFromList(everyXTimeList, everyXTime);
@@ -428,6 +500,25 @@ public class DrugFormPage extends BasePage {
             UIActions.click(btn_durationList);
             UIActions.selectFromList(durationList, timesPerDay);
         }
+    }
+
+    /**
+     * לוחצת על כפתור "הוסף" להוספת התרופה/הנוזל לרשימה
+     * מבלי לסגור את הפורם (יאפשר הוספת מספר פריטים)
+     */
+    public void clickAddButton() {
+        log.info("Clicking 'Add' button.");
+        UIActions.click(btn_add);
+        UIActions.waitForSpinnerToDisappear();
+    }
+
+    /**
+     * לוחצת על כפתור "הוסף וסגור" להוספת התרופה/הנוזל לרשימה וסגירת הפורם
+     */
+    public void clickAddAndCloseButton() {
+        log.info("Clicking 'Add and Close' button.");
+        UIActions.click(btn_addAndClose);
+        UIActions.waitForSpinnerToDisappear();
     }
 
 }

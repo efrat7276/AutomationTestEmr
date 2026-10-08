@@ -82,22 +82,22 @@ private final By btnEditBy = By.xpath("//button[contains(@id,'btnIsApproval') an
         if (drug ) {
             int drugsProcessed = handleDrugApprovalOnly();
             totalProcessed += drugsProcessed;
-            log.info("✅ Drug instructions processed: {}", drugsProcessed);
+            log.info("✅{} drug instructions approved", drugsProcessed);
         }
         if (general) {
             int generalProcessed = handleGeneralApprovalOnly();
             totalProcessed += generalProcessed;
-            log.info("✅ General instructions processed: {}", generalProcessed);
+            log.info("✅{} general instructions approved", generalProcessed);
         }
         if (liquid) {
             int liquidProcessed = handleLiquidApprovalOnly();
             totalProcessed += liquidProcessed;
-            log.info("✅ Liquid instructions processed: {}", liquidProcessed);
+            log.info("✅{} liquid instructions approved", liquidProcessed);
         }
         if (bloodProduct) {
             int bloodProductProcessed = handleBloodProductApprovalOnly();
             totalProcessed += bloodProductProcessed;
-            log.info("✅ Blood product instructions processed: {}", bloodProductProcessed);
+            log.info("✅{} blood product instructions approved", bloodProductProcessed);
         }
 
         // Log: הצגת הטקסט של כפתור האישור הסופי
@@ -139,7 +139,7 @@ private int executeTwoStepApproval(By chooseHourBy, By approvalBy, String typeNa
             log.info("No {} instructions found for the current day.", typeName);
             return 0;
     }
-    log.info("Found {} {} instructions to process.", chooseHourBtn.size(), typeName);
+    log.info("Found {} {} instructions to approve.", chooseHourBtn.size(), typeName);
 
     for (int i = 0; i < chooseHourBtn.size(); i++) {
         // שליפה מחדש בלולאה של רשימת האלמנטים המקורית

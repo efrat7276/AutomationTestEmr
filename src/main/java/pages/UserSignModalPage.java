@@ -20,9 +20,6 @@ public class UserSignModalPage {
     // כפתור אישור
     private final By btnConfirm = By.xpath("//app-user-sign-modal//button[contains(@class,'btn-ok')]");
 
-    // כפתור ביטול
-    private final By btnCancel = By.xpath("//app-user-sign-modal//button[contains(@class,'btn-cancel')]");
-
      public UserSignModalPage() {
         UIActions.waitForSpinnerToDisappear();
     }

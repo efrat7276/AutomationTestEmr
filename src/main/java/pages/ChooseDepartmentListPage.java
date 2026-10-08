@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 public class ChooseDepartmentListPage extends BasePage {
 
     public ChooseDepartmentListPage() {
-        UIActions.waitForSpinnerToDisappear();
+     //   UIActions.waitForSpinnerToDisappear();
     }
 
     private By departmentList = By.xpath("//ngb-typeahead-window[contains(@id,'ngb-typeahead')]/button");
