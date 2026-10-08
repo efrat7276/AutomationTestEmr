@@ -30,20 +30,15 @@ public class UserSignModalPage {
      * * @param username שם המשתמש/קוד חותם
      * @param password סיסמת החתימה
      */
-    public  void signModal(String username, String password ) {
-        try {
+    public  void signModal(String username, String password ){
+        log.info("Signing modal with username: {}", username);
             UIActions.clearText(inputUserName);
             UIActions.typeText(inputUserName, username);
             UIActions.typeText(inputPassword, password);
             UIActions.waitForVisible(btnConfirm);
             UIActions.click(btnConfirm);
             waitForModalToClosed();
-            
-        } catch (Exception e) {
-            assert false : "Approval process failed for user: " + username + ". Error: " + e.getMessage();
-          //  log.error("Approval process failed for user: " + username + ". Error: " + e.getMessage());
-       }
-    }
+     }
 
        private void waitForModalToClosed() {
         WebDriverWait wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(10));

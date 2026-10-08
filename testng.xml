@@ -8,7 +8,7 @@
     </groups>
     
     <classes>
-            <class name="sanity.SanitySuite1"/>
+            <class name="sanity.SanitySuite"/>
      </classes>
 </test>
     

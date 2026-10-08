@@ -14,6 +14,7 @@ import java.sql.SQLException;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import actionUtilies.UIActions;
@@ -36,7 +37,7 @@ import pages.patient_admin.ImagingPage;
 @Slf4j
 @org.testng.annotations.Listeners(helpers.Listeners.class)
 @Epic("Sanity Suite")
-public class SanitySuite1 extends BaseSuit {
+public class SanitySuite extends BaseSuit {
 
 
     private static final int PATIENT_1 = 1;
@@ -60,7 +61,7 @@ public class SanitySuite1 extends BaseSuit {
 
     HospitalDepartment currentDept; 
 
-    @BeforeClass
+    @BeforeSuite 
     public void preClass() throws SQLException{
 
     String deptNameParamFromJenkins = System.getProperty("department");

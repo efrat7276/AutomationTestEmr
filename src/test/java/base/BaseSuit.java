@@ -76,21 +76,22 @@ String osName = System.getProperty("os.name");
 String osVersion = System.getProperty("os.version");
 String osInfo = osName + " (" + osVersion + ")";
 
-       Properties properties = new Properties();
-properties.setProperty("Execution Environment", env.toUpperCase());
-properties.setProperty("Operating System", osInfo);
-properties.setProperty("Browser", browserName);
-properties.setProperty("Browser Version", browserVersion);
-properties.setProperty("ChromeDriver Version", driverVersion);
+// בגנקינס 2.580 לא מציג את הנתונים , כמו"כ גם נופל על הניתוב לתיקיה 
+//        Properties properties = new Properties();
+// properties.setProperty("Execution Environment", env.toUpperCase());
+// properties.setProperty("Operating System", osInfo);
+// properties.setProperty("Browser", browserName);
+// properties.setProperty("Browser Version", browserVersion);
+// properties.setProperty("ChromeDriver Version", driverVersion);
 
 
-        File envFileForAllure = new File("allure-results/SanitySuite/"  + env.toLowerCase(), "environment.properties");
-        try (FileOutputStream fos = new FileOutputStream(envFileForAllure)) {
-            properties.store(fos, "Allure Environment Properties");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//         File envFileForAllure = new File("allure-results/SanitySuite/"  + env.toLowerCase(), "environment.properties");
+//         try (FileOutputStream fos = new FileOutputStream(envFileForAllure)) {
+//             properties.store(fos, "Allure Environment Properties");
+//         } catch (IOException e) {
+//             e.printStackTrace();
+//         }
+     }
 
     @BeforeMethod
     public void setUp() {
