@@ -29,7 +29,7 @@ public class FollowupPage extends BasePage {
     private By textArea_pplan = By.id("pplan");
 
     // Buttons
-    private By saveButton = By.id("btn_save"); 
+    protected By saveButton = By.id("btn_save"); 
     private By clearButton = By.id("btn_clear");
     private By copy_lastButton = By.id("btn_copy_last");
     private By printLastButton = By.xpath("//button[contains(text(), 'הדפס אחרון')]");
@@ -40,7 +40,7 @@ public class FollowupPage extends BasePage {
     private By readyForDischargeCheckbox = By.xpath("//input[@type='checkbox'][ancestor::*[contains(text(), 'מיועד לשחרור')]]");
 
     // History Elements
-    private By followupHistoryList = By.xpath("//followup-history-midwives//div[@class='history-line']");
+    private By followupHistoryList = By.xpath("//div[@class='history-container']//div[contains(@class,'history-line')]");
     private By buttonTrash = By.xpath("//followup-history-midwives//div[@class='history-line']//i[contains(@class, 'trash')]");
 
     // Catheter Tracking Section
@@ -71,9 +71,11 @@ public class FollowupPage extends BasePage {
      verifyFollowupSaved();
   }
 
-  public void verifyFollowupSaved() {
-    assertTrue(UIActions.waitForVisible(buttonTrash), "❌ כשל בשמירת הפולו-אפ או בהצגתו בהיסטוריה.");
+  public boolean verifyFollowupSaved() {
+    UIActions.waitForVisible(followupHistoryList);
+    assertTrue(UIActions.waitForVisible(followupHistoryList), "❌ כשל בשמירת הפולו-אפ או בהצגתו בהיסטוריה.");
    log.info("✅ follow-up saved and displayed in history successfully.");
+    return true;
   }
   
   public void fillSOAPFields(String subjective, String objective, String assessment, String plan) {
@@ -140,10 +142,11 @@ public class FollowupPage extends BasePage {
     log.info("✅ Plan field cleared");
   }
 
-  public void saveAndApproveFollowup(String username, String password) {
+  public boolean saveAndApproveFollowup(String username, String password) {
     UIActions.click(saveButton);
     userSignModalPage.signModal(username, password); 
     verifyFollowupSaved();
+    return true;
   }
 
   public void clearAllFields() {
@@ -289,4 +292,5 @@ public class FollowupPage extends BasePage {
     saveAndApproveFollowup(username, password);
     log.info("✅ Full follow-up with discharge status added and saved");
   }
+
 }

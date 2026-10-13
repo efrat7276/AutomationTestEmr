@@ -103,9 +103,14 @@ public class EpiduralModalPage extends BasePage {
             // Fill anesthesiologist dropdown
             log.info("✅ Filling Epidural form fields");
 
+         
             UIActions.click(epiduralChoiceYesCheckboxBy);
-           UIActions.click(fluidsCheckboxBy);
+            if(!driver.findElement(fluidsCheckboxBy).isSelected()) {
+                UIActions.click(fluidsCheckboxBy);
+            }
+            if(!driver.findElement(normalBloodCountCheckboxBy).isSelected()) {
             UIActions.click(normalBloodCountCheckboxBy);
+            }
             
             // Click submit button
             //UIActions.click(epiduralSubmitButtonBy);

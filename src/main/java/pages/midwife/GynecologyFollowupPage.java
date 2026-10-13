@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import pages.doctor.FollowupPage;
 
 import drivers.DriverManager;
+import helpers.Constants;
+
 import java.util.List;
 
 /**
@@ -35,7 +37,7 @@ public class GynecologyFollowupPage extends FollowupPage {
 
     // ============ Element Locators ============
     
-    private final By medicalNursingHeadingBy = By.xpath("//heading[contains(text(), 'מעקב רפואי סיעודי')]");
+    private final By medicalNursingHeadingBy = By.xpath("//h2/*[contains(text(), 'מעקב רפואי סיעודי')]");
     private final By monitorNoteButtonBy = By.xpath("//button[contains(text(), 'הערה למוניטור')]");
    // private final By monitorNotesButtonBy = By.xpath("//button[contains(text(), 'הערות למוניטור')]");
 
@@ -409,7 +411,7 @@ public class GynecologyFollowupPage extends FollowupPage {
      * @return true if all PV elements were filled successfully, false otherwise
      */
     public boolean fillPVSection() {
-        try {
+      
             log.info("🔄 Starting to fill PV Section with default (first) options...");
             
             // Step 1: Click on PV Tab (בדיקת PV)
@@ -450,17 +452,16 @@ public class GynecologyFollowupPage extends FollowupPage {
             
             boolean allFilled = locationFilled && fetalPositionFilled && headHeightFilled && textureFilled && presentationFilled && inputFieldsFilled;
             
-            if (allFilled) {
-                log.info("✅ Successfully filled all PV section elements");
+         //save the followup after filling all fields
+        boolean saveSuccessful = saveAndApproveFollowup(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
+
+            if (allFilled && saveSuccessful) {
+                log.info("✅ Successfully filled all PV section elements and saved the follow-up successfully");
             } else {
                 log.error("❌ Some PV section elements were NOT filled successfully");
             }
             
             return allFilled;
-        } catch (Exception e) {
-            log.error("❌ Error filling PV section: {}", e.getMessage());
-            return false;
-        }
     }
     
     /**
@@ -818,4 +819,7 @@ public class GynecologyFollowupPage extends FollowupPage {
             return "";
         }
     }
+
+   
+
 }

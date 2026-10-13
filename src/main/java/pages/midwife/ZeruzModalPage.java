@@ -190,66 +190,67 @@ public class ZeruzModalPage extends BasePage {
 public void fillAndSaveZeruz(String desiredType) {
     // UIActions.waitForSpinnerToDisappear();
 
-    // // Open Zeruz type dropdown (if closed)
-    // UIActions.click(zeruzTypeInputOpenOptionsBy);
+     // Open Zeruz type dropdown (if closed)
+      UIActions.click(zeruzTypeInputOpenOptionsBy);
 
-    // List<WebElement> zeruzTypeCheckboxes = DriverManager.getInstance().findElements(zeruzTypeInputOptionsListBy);
-     String selectedTypeText = "בלון";
+     List<WebElement> zeruzTypeCheckboxes = DriverManager.getInstance().findElements(zeruzTypeInputOptionsListBy);
+     String selectedTypeText = desiredType;
 
-    // if (zeruzTypeCheckboxes.isEmpty()) {
-    //     throw new AssertionError("No Zeruz types available to select");
-    // }
+    if (zeruzTypeCheckboxes.isEmpty()) {
+        throw new AssertionError("No Zeruz types available to select");
+    }
 
-    // // Determine type selection logic
-    // if (desiredType == null || desiredType.trim().isEmpty()) {
-    //     selectedTypeText = selectZeruzReasonFirst(zeruzTypeCheckboxes);
-    // } else {
-    //     boolean matched = false;
-    //     for (WebElement cb : zeruzTypeCheckboxes) {
-    //         try {
-    //             Thread.sleep(200); // Small delay to ensure the label text is properly rendered
-    //         } catch (InterruptedException e) {
-    //             Thread.currentThread().interrupt();
-    //         }
-    //         String labelText = getLabelTextForCheckbox(cb).trim();
-    //         if (!labelText.isEmpty() && (labelText.equalsIgnoreCase(desiredType) || labelText.contains(desiredType))) {
-    //             UIActions.click(cb);
-    //             selectedTypeText = labelText;
-    //             matched = true;
 
-    //             // Release dropdown focus cleanly using ESCAPE key
-    //             DriverManager.getInstance().findElement(By.tagName("body")).sendKeys(org.openqa.selenium.Keys.ESCAPE);
-    //             break;
-    //         }
-    //     }
+    // Determine type selection logic
+    if (desiredType == null || desiredType.trim().isEmpty()) {
+        selectedTypeText = selectZeruzReasonFirst(zeruzTypeCheckboxes);
+    } else {
+        boolean matched = false;
+        for (WebElement cb : zeruzTypeCheckboxes) {
+            try {
+                Thread.sleep(200); // Small delay to ensure the label text is properly rendered
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+            String labelText = getLabelTextForCheckbox(cb).trim();
+            if (!labelText.isEmpty() && (labelText.equalsIgnoreCase(desiredType) || labelText.contains(desiredType))) {
+                UIActions.click(cb);
+                selectedTypeText = labelText;
+                matched = true;
 
-    //     if (!matched) {
-    //         // Fallback: select first option if requested text was not matched
-    //         selectedTypeText = selectZeruzReasonFirst(zeruzTypeCheckboxes);
-    //     }
-    // }
+                // Release dropdown focus cleanly using ESCAPE key
+                DriverManager.getInstance().findElement(By.tagName("body")).sendKeys(org.openqa.selenium.Keys.ESCAPE);
+                break;
+            }
+        }
 
-    // // Open and select first reason (best-effort)
-    // try {
-    //     UIActions.click(zeruzReasonInputOpenOptionsBy);
-    //     List<WebElement> zeruzReasonCheckboxes = DriverManager.getInstance().findElements(zeruzReasonInputOptionsListBy);
-    //     if (!zeruzReasonCheckboxes.isEmpty()) {
-    //         UIActions.click(zeruzReasonCheckboxes.get(0));
-    //         DriverManager.getInstance().findElement(By.tagName("body")).sendKeys(org.openqa.selenium.Keys.ESCAPE);
-    //     }
-    // } catch (Exception ignored) {
-    //     // Optional step fallback
-    // }
+        if (!matched) {
+            // Fallback: select first option if requested text was not matched
+            selectedTypeText = selectZeruzReasonFirst(zeruzTypeCheckboxes);
+        }
+    }
 
-    // // Select priority and fill comment
-    // selectPriorityButton(0);
-    // UIActions.typeText(commentsInputBy, "Automated test: " + selectedTypeText);
+    // Open and select first reason (best-effort)
+    try {
+        UIActions.click(zeruzReasonInputOpenOptionsBy);
+        List<WebElement> zeruzReasonCheckboxes = DriverManager.getInstance().findElements(zeruzReasonInputOptionsListBy);
+        if (!zeruzReasonCheckboxes.isEmpty()) {
+            UIActions.click(zeruzReasonCheckboxes.get(0));
+            DriverManager.getInstance().findElement(By.tagName("body")).sendKeys(org.openqa.selenium.Keys.ESCAPE);
+        }
+    } catch (Exception ignored) {
+        // Optional step fallback
+    }
+
+    // Select priority and fill comment
+    selectPriorityButton(0);
+    UIActions.typeText(commentsInputBy, "Automated test: " + selectedTypeText);
 
     
 
-    // // Confirm form and wait for processing
-    // confirmForm();
-    // UIActions.waitForSpinnerToDisappear();
+    // Confirm form and wait for processing
+    confirmForm();
+    UIActions.waitForSpinnerToDisappear();
 
     // Verify the chosen directive appears in the "הנחיות שניתנו" area inside the modal
     boolean found = false;

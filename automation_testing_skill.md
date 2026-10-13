@@ -274,3 +274,18 @@ This construction follows the project's POM, dynamic wait, and UIActions pattern
     ```
     or other long line-of-characters dividers.
   - Keep log content concise and meaningful — use logs to provide necessary context, not to trace every low-level action.
+
+---
+
+## 12. TestNG Listeners & Reporting Configuration
+
+### 12.1 Mandatory Listeners Annotation on All Test Classes
+* **Every TestNG test class MUST declare the Listeners annotation** directly above the class definition.
+* This annotation enables integration with Allure reporting, automatic screenshot capture on failures, and custom test lifecycle management.
+* **Required Format:**
+  ```java
+  @org.testng.annotations.Listeners(helpers.Listeners.class)
+  public class YourTestSuiteClass extends BaseSuite {
+      // test methods...
+  }
+  ```
