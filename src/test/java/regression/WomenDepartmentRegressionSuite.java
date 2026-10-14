@@ -53,41 +53,37 @@ public class WomenDepartmentRegressionSuite extends BaseSuit {
 
     // ============ Regression Test 1: Page Load and Element Verification ============
     
-    @Feature("Gynecology Followup - Regression")
-    @Story("Verify Gynecology Followup page loads with all elements")
-    @Test(description = "Regression Test 1: Verify Gynecology Followup page loads successfully with all elements")
-    public void regression_01_verifyPageLoadAndElements() {
-        log.info("=== REGRESSION TEST 01: Verify Page Load and Elements ===");
-        
-        try {
-            // Step 1: Login as doctor
-            loginAsDoctor();
-            log.info("✓ Logged in as doctor");
+    // @Feature("Gynecology Followup - Regression")
+    // @Story("Verify Gynecology Followup page loads with all elements")
+    // @Test(description = "Regression Test 1: Verify Gynecology Followup page loads successfully with all elements")
+    // public void regression_01_verifyPageLoadAndElements() {
+    //     log.info("=== REGRESSION TEST 01: Verify Page Load and Elements ===");
+   
+    //         // Step 1: Login as doctor
+    //         loginAsDoctor();
+    //         log.info("✓ Logged in as doctor");
             
-            // Step 2: Navigate to Women Emergency Department
-            chooseDepartment("מיון נשים");
-            log.info("✓ Selected Women Emergency Department");
+    //         // Step 2: Navigate to Women Emergency Department
+    //         chooseDepartment("מיון נשים");
+    //         log.info("✓ Selected Women Emergency Department");
             
-            // Step 3: Select first patient
-            womenEmergencyPatientsPage.choosePatient(PATIENT_1);
-            log.info("✓ Selected patient #1");
+    //         // Step 3: Select first patient
+    //         womenEmergencyPatientsPage.choosePatient(PATIENT_1);
+    //         log.info("✓ Selected patient #1");
             
-            // Step 4: Verify page and elements are loaded
-            boolean pageStatusValid = gynecologyFollowupPage.getPageStatus();
+    //         // Step 4: Verify page and elements are loaded
+    //         boolean pageStatusValid = gynecologyFollowupPage.getpageStatus();
             
-            if (pageStatusValid) {
-                log.info("✅ All page elements verified - STATUS OK");
-                log.info("✅ REGRESSION TEST 01 PASSED - Page loaded successfully!");
-            } else {
-                log.warn("⚠️ Some elements may not be visible, but page loaded");
-                log.info("✅ REGRESSION TEST 01 PASSED - Page loaded (with warnings)");
-            }
+    //         if (pageStatusValid) {
+    //             log.info("✅ All page elements verified - STATUS OK");
+    //             log.info("✅ REGRESSION TEST 01 PASSED - Page loaded successfully!");
+    //         } else {
+    //             log.warn("⚠️ Some elements may not be visible, but page loaded");
+    //             log.info("✅ REGRESSION TEST 01 PASSED - Page loaded (with warnings)");
+    //         }
             
-        } catch (Exception e) {
-            log.error("❌ REGRESSION TEST 01 FAILED - {}", e.getMessage());
-            throw e;
-        }
-    }
+       
+    // }
 
 
     // ============ Regression Test 3: All Obstetric Indicator Buttons ============

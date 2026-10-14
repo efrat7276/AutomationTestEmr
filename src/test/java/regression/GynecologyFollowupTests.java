@@ -106,7 +106,7 @@ public class GynecologyFollowupTests extends BaseSuit {
         UIActions.waitForSpinnerToDisappear();
 
         // Fill Monitoring section (BL=140, Frequency=10, Rhythm=Regular, Accelerations=Yes)
-        boolean monitoringFilled = gynecologyFollowupPage.fillMonitoringSectionAndSave();
+        boolean monitoringFilled = gynecologyFollowupPage.fillMonitoringSection();
         Assert.assertTrue(monitoringFilled, "Expected fillMonitoringSection to return true");
 
     }
