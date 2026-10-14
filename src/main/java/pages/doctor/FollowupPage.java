@@ -11,6 +11,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pages.BasePage;
 import pages.UserSignModalPage;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Slf4j
@@ -72,10 +75,16 @@ public class FollowupPage extends BasePage {
   }
 
   public boolean verifyFollowupSaved() {
-    UIActions.waitForVisible(followupHistoryList);
-    assertTrue(UIActions.waitForVisible(followupHistoryList), "❌ כשל בשמירת הפולו-אפ או בהצגתו בהיסטוריה.");
-   log.info("✅ follow-up saved and displayed in history successfully.");
-    return true;
+
+    assertTrue(UIActions.waitForVisible(followupHistoryList), "Follow-up history list is not visible");
+
+    String latest = getLatestFollowupHistoryText();
+    log.info("Latest followup history text: {}", latest);
+
+    //   history contains today's date (format in UI is HH:mm dd/MM/yyyy)
+    String today = LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+    boolean historyContainsDate = latest != null && latest.contains(today);
+    return historyContainsDate;
   }
   
   public void fillSOAPFields(String subjective, String objective, String assessment, String plan) {
@@ -108,6 +117,10 @@ public class FollowupPage extends BasePage {
 
   public String getSubjectiveText() {
     return UIActions.getElementText(textArea_subjective);
+  }
+
+  public String getSubjectiveValue() {
+    return UIActions.findElementWithWait(textArea_subjective).getAttribute("value");
   }
 
   public String getObjectiveText() {
@@ -266,6 +279,15 @@ public class FollowupPage extends BasePage {
       log.warn("Could not read latest followup history text: {}", e.getMessage());
     }
     return "";
+  }
+
+  public String getFollowupHistoryTextAtIndex(int index) {
+    List<WebElement> historyLines = UIActions.findElementsWithWait(followupHistoryList);
+    if (index < 0 || index >= historyLines.size()) {
+      return "";
+    }
+    String text = historyLines.get(index).getAttribute("textContent");
+    return text == null ? "" : text.trim();
   }
 
   public void deleteFollowupAtIndex(int index) {

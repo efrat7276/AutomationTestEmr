@@ -231,16 +231,13 @@ public void fillAndSaveZeruz(String desiredType) {
     }
 
     // Open and select first reason (best-effort)
-    try {
+    
         UIActions.click(zeruzReasonInputOpenOptionsBy);
         List<WebElement> zeruzReasonCheckboxes = DriverManager.getInstance().findElements(zeruzReasonInputOptionsListBy);
         if (!zeruzReasonCheckboxes.isEmpty()) {
             UIActions.click(zeruzReasonCheckboxes.get(0));
             DriverManager.getInstance().findElement(By.tagName("body")).sendKeys(org.openqa.selenium.Keys.ESCAPE);
         }
-    } catch (Exception ignored) {
-        // Optional step fallback
-    }
 
     // Select priority and fill comment
     selectPriorityButton(0);

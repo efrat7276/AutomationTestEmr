@@ -20,6 +20,8 @@ public class UserSignModalPage {
     // כפתור אישור
     private final By btnConfirm = By.xpath("//app-user-sign-modal//button[contains(@class,'btn-ok')]");
 
+    private final By signModalBy = By.xpath("//app-user-sign-modal");
+
      public UserSignModalPage() {
         UIActions.waitForSpinnerToDisappear();
     }
@@ -39,6 +41,10 @@ public class UserSignModalPage {
             UIActions.click(btnConfirm);
             waitForModalToClosed();
      }
+
+    public boolean isSignModalVisible() {
+        return UIActions.isElementPresentAndVisible(signModalBy);
+    }
 
        private void waitForModalToClosed() {
         WebDriverWait wait = new WebDriverWait(DriverManager.getInstance(), Duration.ofSeconds(10));

@@ -7,14 +7,18 @@ import org.openqa.selenium.WebElement;
 import pages.BasePage;
 import drivers.DriverManager;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 @Slf4j
 public class MonitorNotesModalPage extends BasePage {
 
     public MonitorNotesModalPage() {
         super();
+        userSignModalPage = new pages.UserSignModalPage();
         UIActions.waitForSpinnerToDisappear();
         log.info("✅ MonitorNotesModalPage initialized");
     }
@@ -23,6 +27,8 @@ public class MonitorNotesModalPage extends BasePage {
     private final By modalContainerBy = By.xpath("//ngb-modal-window[contains(@class,'modal') and contains(@class,'show')]");
     private final By modalTitleBy = By.xpath("//ngb-modal-window//h5[contains(normalize-space(.),'הערות למוניטור')]");
     private final By noteInputBy = By.id("comment-typeahead");
+    private final By usernameInputBy = By.id("user");
+    private final By passwordInputBy = By.id("password");
     private final By submitButtonBy = By.xpath("//ngb-modal-window//div[contains(@class,'modal-body')]//button[contains(@class,'btn-primary')]");
     private final By closeButtonBy = By.xpath("//ngb-modal-window//button[@aria-label='Close']");
     private final By notesTableRowsBy = By.xpath("//ngb-modal-window//table[contains(@class,'history-table')]//tbody//tr");
@@ -47,19 +53,14 @@ public class MonitorNotesModalPage extends BasePage {
 
         // type into typeahead and press Enter to add
         UIActions.typeText(noteInputBy, note);
-        // Press Enter to accept the typeahead suggestion / submit text
-     //   UIActions.sendKeys(noteInputBy, org.openqa.selenium.Keys.ENTER);
-        UIActions.waitForSpinnerToDisappear();
+  
+       //save
+       UIActions.typeText(usernameInputBy, username);
+       UIActions.typeText(passwordInputBy, password);
 
         UIActions.click(submitButtonBy);
-        UIActions.waitForSpinnerToDisappear();
+     
 
-        // If signing modal appears, use existing helper
-        if (userSignModalPage != null && username != null && password != null) {
-            userSignModalPage.signModal(username, password);
-        }
-
-        UIActions.waitForSpinnerToDisappear();
         log.info("✅ Monitor note submitted");
     }
 
@@ -73,18 +74,26 @@ public class MonitorNotesModalPage extends BasePage {
     }
 
     /**
+     * Verify that the latest monitor note contains today's date and a valid HH:mm time.
+     */
+    public boolean verifyMonitorNoteSaved() {
+        UIActions.waitForSpinnerToDisappear();
+        String latest = UIActions.findElementWithWait(notesTableRowsBy).getText();
+        String today = LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+        boolean containsTime = Pattern.compile("(?<!\\d)(?:[01]\\d|2[0-3]):[0-5]\\d(?!\\d)")
+            .matcher(latest).find();
+        return latest.contains(today) && containsTime;
+    }
+
+    /**
      * Return the list of visible monitor notes texts inside the modal (best-effort)
      */
     public List<String> getMonitorNotesHistory() {
         List<String> notes = new ArrayList<>();
         List<WebElement> rows = DriverManager.getInstance().findElements(notesTableRowsBy);
         for (WebElement row : rows) {
-            try {
                 WebElement td = row.findElement(org.openqa.selenium.By.xpath("./td[1]"));
                 notes.add(td.getText().trim());
-            } catch (Exception e) {
-                notes.add(row.getText().trim());
-            }
         }
         return notes;
     }

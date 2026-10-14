@@ -284,7 +284,7 @@ public class GynecologyFollowupPage extends FollowupPage {
             
             // Step 2: Fill PV Section
             log.info("🔍 Step 2: Filling PV Section...");
-            boolean pvFilled = fillPVSection();
+            boolean pvFilled = fillPVSectionAndSave();
             
             if (!pvFilled) {
                 log.error("❌ PV Section filling FAILED - aborting save");
@@ -326,7 +326,7 @@ public class GynecologyFollowupPage extends FollowupPage {
             fillPlan(defaultPlan);
             
             // Step 2: Fill PV Section
-            boolean pvFilled = fillPVSection();
+            boolean pvFilled = fillPVSectionAndSave();
             
             if (!pvFilled) {
                 log.error("❌ PV Section filling FAILED - aborting save");
@@ -410,7 +410,7 @@ public class GynecologyFollowupPage extends FollowupPage {
      * בוחר תמיד את האפשרות הראשונה בכל dropdown
      * @return true if all PV elements were filled successfully, false otherwise
      */
-    public boolean fillPVSection() {
+    public boolean fillPVSectionAndSave() {
       
             log.info("🔄 Starting to fill PV Section with default (first) options...");
             
@@ -605,8 +605,9 @@ public class GynecologyFollowupPage extends FollowupPage {
      * בדוק אם כל האלמנטים בעמוד המיילדותי נמצאים על המסך
      * @return true אם כל האלמנטים נמצאים, false אחרת
      */
-    public boolean getPageStatus() {
+    public boolean getPageStatus()  throws InterruptedException {
         UIActions.waitForSpinnerToDisappear();
+        Thread.sleep(400); // Give the page a moment to stabilize before checking element visibility
         boolean medicalNursingTrackingVisible = isMedicalNursingTrackingVisible();
         boolean monitorCircleVisible = UIActions.isElementPresentAndVisible(monitorCircleButtonBy);
         boolean waterCircleVisible = UIActions.isElementPresentAndVisible(waterCircleButtonBy);
