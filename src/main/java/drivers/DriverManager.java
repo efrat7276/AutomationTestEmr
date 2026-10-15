@@ -8,6 +8,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -36,7 +39,13 @@ public class DriverManager {
             }
              driver = new ChromeDriver(options);
            //   driver.manage().window().setSize(new Dimension(1920, 1080));
-
+if (isJenkins) {
+    Map<String, Object> metrics = new HashMap<>();
+    metrics.put("width", 1920);
+    metrics.put("height", 1080);
+    metrics.put("deviceScaleFactor", 1);
+    ((ChromeDriver) driver).executeCdpCommand("Emulation.setDeviceMetricsOverride", metrics);
+}
             initBrowser();
         }
         return driver;
