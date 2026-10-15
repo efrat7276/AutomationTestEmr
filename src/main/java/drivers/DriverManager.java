@@ -30,10 +30,9 @@ public class DriverManager {
             boolean isJenkins = System.getenv("JENKINS_URL") != null || System.getenv("BUILD_NUMBER") != null;
             if (isJenkins) {
                 options.addArguments("--window-size=1920,1080");
-
                 options.addArguments("--headless=new");
                 options.addArguments("--disable-gpu");
-              //  options.addArguments("--start-maximized");
+                options.addArguments("--force-device-scale-factor=1");
             }
              driver = new ChromeDriver(options);
            //   driver.manage().window().setSize(new Dimension(1920, 1080));
