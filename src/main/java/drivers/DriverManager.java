@@ -29,7 +29,7 @@ public class DriverManager {
             // זיהוי אם הריצה מתבצעת ב-Jenkins והוספת תמיכה ב-Headless
             boolean isJenkins = System.getenv("JENKINS_URL") != null || System.getenv("BUILD_NUMBER") != null;
             if (isJenkins) {
-                options.addArguments("--headless=new");
+               // options.addArguments("--headless=new");
                 options.addArguments("--disable-gpu");
                 options.addArguments("--window-size=1920,1080");
                 options.addArguments("--start-maximized");
