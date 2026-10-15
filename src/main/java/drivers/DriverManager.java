@@ -39,11 +39,13 @@ public class DriverManager {
             }
              driver = new ChromeDriver(options);
            //   driver.manage().window().setSize(new Dimension(1920, 1080));
+
 if (isJenkins) {
     Map<String, Object> metrics = new HashMap<>();
     metrics.put("width", 1920);
     metrics.put("height", 1080);
-    metrics.put("deviceScaleFactor", 1);
+    metrics.put("deviceScaleFactor", 1.0);
+    metrics.put("mobile", false);
     ((ChromeDriver) driver).executeCdpCommand("Emulation.setDeviceMetricsOverride", metrics);
 }
             initBrowser();
