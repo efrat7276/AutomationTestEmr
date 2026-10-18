@@ -77,7 +77,7 @@ private final By btnEditBy = By.xpath("//button[contains(@id,'btnIsApproval') an
 
     public void approveAllInstructionsByNurseAndVerify( boolean drug, boolean liquid, boolean general, boolean bloodProduct, String username, String password) throws InterruptedException {
        
-        Thread.sleep(3000);
+        Thread.sleep(10000);
         int totalProcessed = 0;
         
         if (drug && !DriverManager.getInstance().findElements(approvalDrugBy).isEmpty()) {
