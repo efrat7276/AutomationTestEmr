@@ -3,17 +3,10 @@ package pages.addForms;
 import actionUtilies.UIActions;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import pages.BasePage;
-import pages.DoctorInstructionPage;
-
 import javax.annotation.Nullable;
 import java.util.List;
-import static org.testng.Assert.assertTrue;
-
-
 @Slf4j
 public class DrugFormPage extends BasePage {
 
@@ -275,7 +268,7 @@ public class DrugFormPage extends BasePage {
         if (dosage != null && !dosage.isEmpty()) {
             fillCommonFields(dosage, null);
         }
-        UIActions.click(btn_add);
+        clickAddButton();
         
     }
 
@@ -318,7 +311,6 @@ public class DrugFormPage extends BasePage {
         UIActions.click(possibilityLocator);
         fillCommonFields(dosage, comments);
         handleFluidType(possibility, flowRateOrTimes);
-        log.info("Fluid configuration complete. Awaiting button click from calling method.");
     }
 
     // ----------------------------------------------------------------------------------

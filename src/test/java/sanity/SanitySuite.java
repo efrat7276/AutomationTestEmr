@@ -190,7 +190,7 @@ public class SanitySuite extends BaseSuit {
     @Feature("Functional Tests")
     @Story("Adding a medicine instruction by doctor")
     @Test()
-    public void test_07_addingMedicine(){
+    public void test_07_addingMedicineFullAndVerify(){
         log.info("* Starting test_07_addingMedicine: Adding a medicine instruction for the patient");
         loginAsDoctor();
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
@@ -229,7 +229,7 @@ public class SanitySuite extends BaseSuit {
     @Feature("Functional Tests")
     @Story("Approving instructions and moving to cardex by nurse")
     @Test()
-    public void test_10_approvalAllInstructionByNurse(){
+    public void test_10_approvalAllInstructionByNurse() throws InterruptedException {
             log.info("* Starting test_10_approvalAllInstructionByNurse: Approving all instructions for the patient");
             loginAsNurse();
             chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
@@ -294,19 +294,19 @@ public class SanitySuite extends BaseSuit {
     @Feature("Functional Tests")
     @Story("Adding a nutrition instruction by nutritionist")
     @Test()
-    public void test_15_addingNutrition(){
-        log.info("* Starting test_15_addingNutrition: Adding a nutrition instruction for the patient");
+    public void test_15_addingNutritionFullAndVerify(){
+        log.info("* Starting test_15_addingNutritionFullAndVerify: Adding a nutrition instruction for the patient");
         loginAsNutritionist();
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);
-       doctorInstructionPage.addNutritionFull("Nut", "daily", "200", "1", "automation sanity test", Constants.NUTRITIONIST_USERNAME, Constants.NUTRITIONIST_PASSWORD);
+       doctorInstructionPage.addNutritionFullAndVerify("Nut", "daily", "200", "1", "automation sanity test", Constants.NUTRITIONIST_USERNAME, Constants.NUTRITIONIST_PASSWORD);
     }
 
     @Feature("Functional Tests")
     @Story("Adding and executing immediate instruction by ER doctor")
     @Test()
-    public void test_16_addingAndExecutingImmediateInstructionER() {
-        log.info("* Starting test_16_addingAndExecutingImmediateInstructionER: Adding and executing immediate instruction by ER doctor");
+    public void test_16_addingFullMedicineAndExecutingImmediateDepartmentER() {
+        log.info("* Starting test_16_addingFullMedicineAndExecutingImmediateDepartmentER: Adding and executing immediate instruction by ER doctor");
         loginAsDoctor();
         chooseDepartmentListPage.selectDepartment(HospitalDepartment.getByHebrewName("חדר מיון").getDisplayName());
        try {
@@ -315,10 +315,7 @@ public class SanitySuite extends BaseSuit {
         e.printStackTrace();
       }
         choosePatient(1);
-        doctorInstructionPage.clickButtonAddInstruction(InstructionType.MEDICINE);
-        doctorInstructionPage.addMedicineAndClose("Aspirin", "once only", "500mg", "1","automation sanity test");
-        
-        doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+        doctorInstructionPage.addMedicineFullAndVerify("Aspirin", "once only", "500mg", "1","automation sanity test", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
         innerMenuPage.navigateToMenuEntry("קרדקס", false);
         UIActions.waitForSpinnerToDisappear();
         // cardexPageNew.verifyDrugExecuted("Aspirin");
@@ -351,7 +348,7 @@ public class SanitySuite extends BaseSuit {
     @Feature("Functional Tests")
     @Story("Adding and approving a single dose medicine by nurse")
     @Test(groups = {"ignore"})
-     public void test_19_addAndApprovalByNurseSingleOnceOnlyMedicineAndVerify() {
+     public void test_19_addAndApprovalByNurseSingleOnceOnlyMedicineAndVerify()throws InterruptedException {
       log.info("* Starting test_19_addAndApprovalByNurseSingleOnceOnlyMedicineAndVerify: Adding a single dose medicine for the patient");
       loginAsDoctor();
       chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());

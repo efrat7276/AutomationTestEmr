@@ -75,26 +75,27 @@ private final By btnEditBy = By.xpath("//button[contains(@id,'btnIsApproval') an
        
     }
 
-    public void approveAllInstructionsByNurseAndVerify( boolean drug, boolean liquid, boolean general, boolean bloodProduct, String username, String password) {
+    public void approveAllInstructionsByNurseAndVerify( boolean drug, boolean liquid, boolean general, boolean bloodProduct, String username, String password) throws InterruptedException {
        
+        Thread.sleep(3000);
         int totalProcessed = 0;
         
-        if (drug ) {
+        if (drug && !DriverManager.getInstance().findElements(approvalDrugBy).isEmpty()) {
             int drugsProcessed = handleDrugApprovalOnly();
             totalProcessed += drugsProcessed;
             log.info("✅{} drug instructions approved", drugsProcessed);
         }
-        if (general) {
+        if (general && !DriverManager.getInstance().findElements(approvalGeneralBy).isEmpty()) {
             int generalProcessed = handleGeneralApprovalOnly();
             totalProcessed += generalProcessed;
             log.info("✅{} general instructions approved", generalProcessed);
         }
-        if (liquid) {
+        if (liquid && !DriverManager.getInstance().findElements(approvalLiquidBy).isEmpty()) {
             int liquidProcessed = handleLiquidApprovalOnly();
             totalProcessed += liquidProcessed;
             log.info("✅{} liquid instructions approved", liquidProcessed);
         }
-        if (bloodProduct) {
+        if (bloodProduct && !DriverManager.getInstance().findElements(approvalBloodProductBy).isEmpty()) {
             int bloodProductProcessed = handleBloodProductApprovalOnly();
             totalProcessed += bloodProductProcessed;
             log.info("✅{} blood product instructions approved", bloodProductProcessed);

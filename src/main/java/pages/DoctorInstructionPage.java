@@ -123,6 +123,16 @@ public class DoctorInstructionPage extends BasePage {
         approveAndVerifyInstructions(username, password);
     }
 
+
+   
+    // פונקציות Full Action – דוגמה למספר סוגי הוראות
+    public void addNutritionFullAndVerify(String name, String frequency, String dose, String amount,String comments, String username, String password) {
+        clickButtonAddInstruction(InstructionType.NUTRITION);
+        drugForm.fillMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.clickAddAndCloseButton();
+        approveAndVerifyInstructions(username, password);
+    }
+
     public void addMedicineToListTheFisrtTime(String name, String frequency, String dose, String amount,String comments) {
         clickButtonAddInstruction(InstructionType.MEDICINE);
         drugForm.fillMedicineByFrequency(name, frequency, dose, amount, comments, false);
@@ -168,7 +178,7 @@ public class DoctorInstructionPage extends BasePage {
     public void addFluidAndClose(String name, String frequency, String dose, String amount,String comments) {
         clickButtonAddInstruction(InstructionType.FLUID);
         drugForm.addFluid(name, frequency, dose, amount,comments);
-
+        drugForm.clickAddAndCloseButton(); // הוספה וסגירת הטופס
     }
 
        public void addNutritionFull(String name, String frequency, String dose, String amount,String comments, String username, String password) {
