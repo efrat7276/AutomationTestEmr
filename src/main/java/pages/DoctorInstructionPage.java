@@ -118,29 +118,30 @@ public class DoctorInstructionPage extends BasePage {
     // פונקציות Full Action – דוגמה למספר סוגי הוראות
     public void addMedicineFullAndVerify(String name, String frequency, String dose, String amount,String comments, String username, String password) {
         clickButtonAddInstruction(InstructionType.MEDICINE);
-        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.fillMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.clickAddAndCloseButton();
         approveAndVerifyInstructions(username, password);
     }
 
     public void addMedicineToListTheFisrtTime(String name, String frequency, String dose, String amount,String comments) {
         clickButtonAddInstruction(InstructionType.MEDICINE);
-        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.fillMedicineByFrequency(name, frequency, dose, amount, comments, false);
         drugForm.clickAddButton(); // הוספה לרשימה בלי סגירת הטופס
     }
 
     public void addMedicineToList(String name, String frequency, String dose, String amount,String comments) {
-        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.fillMedicineByFrequency(name, frequency, dose, amount, comments, false);
         drugForm.clickAddButton(); // הוספה לרשימה בלי סגירת הטופס
     }
 
      public void addMedicineToListAndClose(String name, String frequency, String dose, String amount,String comments) {
-        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.fillMedicineByFrequency(name, frequency, dose, amount, comments, false);
         drugForm.clickAddAndCloseButton(); // הוספה לרשימה וסגירת הטופס
     }
 
     public void addMedicineAndClose(String name, String frequency, String dose, String amount,String comments) {
         clickButtonAddInstruction(InstructionType.MEDICINE);
-        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.fillMedicineByFrequency(name, frequency, dose, amount, comments, false);
         drugForm.clickAddAndCloseButton(); // הוספה וסגירת הטופס
     }
 
@@ -161,38 +162,39 @@ public class DoctorInstructionPage extends BasePage {
      public void addFluidToListAndClose(String name, String frequency, String dose, String amount,String comments) {
         clickButtonAddInstruction(InstructionType.FLUID);
         drugForm.addFluid(name, frequency, dose, amount,comments);
-        drugForm.clickAddButton(); // הוספה לרשימה בלי סגירת הטופס
+        drugForm.clickAddAndCloseButton(); // הוספה לרשימה וסגירת הטופס
     }
 
     public void addFluidAndClose(String name, String frequency, String dose, String amount,String comments) {
         clickButtonAddInstruction(InstructionType.FLUID);
         drugForm.addFluid(name, frequency, dose, amount,comments);
+
     }
 
        public void addNutritionFull(String name, String frequency, String dose, String amount,String comments, String username, String password) {
         clickButtonAddInstruction(InstructionType.NUTRITION);
         // For nutrition daily, "amount" represents times per day.
-        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.fillMedicineByFrequency(name, frequency, dose, amount, comments, false);
         approveAndVerifyInstructions(username, password);
     }
 
     public void addNutritionToList(String name, String frequency, String dose, String amount,String comments) {
         clickButtonAddInstruction(InstructionType.NUTRITION);
         // For nutrition daily, "amount" represents times per day.
-        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.fillMedicineByFrequency(name, frequency, dose, amount, comments, false);
         drugForm.clickAddButton(); // הוספה לרשימה בלי סגירת הטופס
     }
 
     public void addNutritionFullAndClose(String name, String frequency, String dose, String amount,String comments) {
         clickButtonAddInstruction(InstructionType.NUTRITION);
         // For nutrition daily, "amount" represents times per day.
-        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.fillMedicineByFrequency(name, frequency, dose, amount, comments, false);
     }
 
     public void addNutritionAndClose(String name, String frequency, String dose, String amount,String comments) {
         clickButtonAddInstruction(InstructionType.NUTRITION);
         // For nutrition daily, "amount" represents times per day.
-        drugForm.addMedicineByFrequency(name, frequency, dose, amount, comments, false);
+        drugForm.fillMedicineByFrequency(name, frequency, dose, amount, comments, false);
     }
 
     public void addBloodProductFull(String name, String amount, String username, String password) {

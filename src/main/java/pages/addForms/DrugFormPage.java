@@ -109,7 +109,7 @@ public class DrugFormPage extends BasePage {
      * @param comments הערות
      * @param alsoExecute ביצוע מיידי
      */
-    public void addMedicineByFrequency(String nameMed, String frequency, String dosage, 
+    public void fillMedicineByFrequency(String nameMed, String frequency, String dosage, 
                                        String frequencyParam, @Nullable String comments, 
                                        boolean alsoExecute) {
         switch (frequency.toLowerCase().trim()) {
@@ -147,7 +147,9 @@ public class DrugFormPage extends BasePage {
         log.info("Adding daily medicine: {} - {} times per day", nameMed, timesDaily);
         selectAndConfigureDrug(nameMed, "Daily", dosage, comments);
         handleDaily(timesDaily);
-        finalizeMedicineAdd(alsoExecute, nameMed, "Daily", dosage);
+        if (alsoExecute) {
+            executeImmediately();
+        }
     }
 
     /**
@@ -163,7 +165,9 @@ public class DrugFormPage extends BasePage {
         log.info("Adding once only medicine: {} - at {}", nameMed, hourToGive);
         selectAndConfigureDrug(nameMed, "Once Only", dosage, comments);
         //handleOnceOnly(hourToGive);
-        finalizeMedicineAdd(alsoExecute, nameMed, "Once Only", dosage);
+        if (alsoExecute) {
+            executeImmediately();
+        }
     }
 
     /**
@@ -180,7 +184,7 @@ public class DrugFormPage extends BasePage {
         selectAndConfigureDrug(nameMed, "SOS", dosage, comments);
        
         handleSOS(maxTimesPerDay, minInterval);
-        finalizeMedicineAdd(false, nameMed, "SOS", dosage);
+        // SOS medicine is not executed immediately, so no need to check alsoExecute here.  
     }
 
     /**
@@ -197,7 +201,9 @@ public class DrugFormPage extends BasePage {
         selectAndConfigureDrug(nameMed, "By Hour", dosage, comments);
        
         handleByHour(everyXTime);
-        finalizeMedicineAdd(alsoExecute, nameMed, "By Hour", dosage);
+        if (alsoExecute) {
+            executeImmediately();
+        }
     }
 
     /**
@@ -215,7 +221,9 @@ public class DrugFormPage extends BasePage {
         log.info("Adding weekly medicine: {} - {} times per week", nameMed, timesPerWeek);
         selectAndConfigureDrug(nameMed, "Weekly", dosage, comments);
         handleWeekly(timesPerWeek, daysOfWeek);
-        finalizeMedicineAdd(alsoExecute, nameMed, "Weekly", dosage);
+        if (alsoExecute) {
+            executeImmediately();
+        }
     }
 
     // ----------------------------------------------------------------------------------
@@ -236,10 +244,11 @@ public class DrugFormPage extends BasePage {
         UIActions.typeText(inp_selectDrug, nameMed);
         UIActions.click(inp_selectDrugTopList);
         
-        // if(UIActions.isPopupAppeared(duplicateInstructionModal)) {
-        //     UIActions.click(duplicateInstructionModalConfirmButton);
-        //     log.info("Duplicate instruction modal appeared. Confirmed to import existing instruction.");
-        // }
+          if(UIActions.isPopupAppeared(duplicateInstructionModal))
+        {
+          UIActions.click(duplicateInstructionModalConfirmButton);
+          log.info("Duplicate instruction modal appeared. Confirmed to import existing instruction.");
+        }
         
         // 2. בחירת התדירות
         By possibilityLocator = getDrugPossibilityLocator(possibility);
@@ -252,20 +261,8 @@ public class DrugFormPage extends BasePage {
         // 3. מילוי פרטים כללים
         fillCommonFields(dosage, comments);
     }
+        
 
-    /**
-     * סיום הוספת תרופה - ביצוע וסגירה
-     */
-    private void finalizeMedicineAdd(boolean alsoExecute, String nameMed, String possibility, String dosage) {
-        // 1. ביצוע מיידי מתוך הטופס (אופציונלי)
-        if (alsoExecute) {
-            tryExecuteInForm();
-        }
-        
-       
-        
-     //   log.info("Successfully added medicine '{}' with possibility '{}'. Dosage: {}.", nameMed, possibility, dosage);
-    }
     public void editMedicine(@Nullable String possibility, @Nullable String dosage) {
         UIActions.waitForAnyText(inp_selectDrug);
          UIActions.waitForElementClickable(possibilityDaily);
@@ -282,15 +279,11 @@ public class DrugFormPage extends BasePage {
         
     }
 
-    private void tryExecuteInForm() {
+    private void executeImmediately() {
         log.info("Attempting to click 'Execute in Form' button if available...");
-        try {
             if (UIActions.isElementDisplayed(btn_executeInForm)) {
                 UIActions.click(btn_executeInForm);
             }
-        } catch (Exception e) {
-            log.warn("Execute-in-form button not found or not visible: {}", e.getMessage());
-        }
     }
 
     /**
@@ -516,9 +509,9 @@ public class DrugFormPage extends BasePage {
      * לוחצת על כפתור "הוסף וסגור" להוספת התרופה/הנוזל לרשימה וסגירת הפורם
      */
     public void clickAddAndCloseButton() {
-        log.info("Clicking 'Add and Close' button.");
         UIActions.click(btn_addAndClose);
         UIActions.waitForSpinnerToDisappear();
+        log.info("Clicked 'Add and Close' button.");
     }
 
 }

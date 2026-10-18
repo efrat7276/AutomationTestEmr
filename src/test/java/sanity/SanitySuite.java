@@ -196,7 +196,7 @@ public class SanitySuite extends BaseSuit {
         chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
         choosePatient(PATIENT_1);
         doctorInstructionPage.addMedicineFullAndVerify("CARBOplatin", "daily", "20", "1", "automation sanity test", Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
-      log.info("Added medicine instruction successfully.");
+       log.info("Added medicine instruction successfully.");
     
     }
 

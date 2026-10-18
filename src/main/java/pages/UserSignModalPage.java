@@ -13,18 +13,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class UserSignModalPage {
     // שדה שם המשתמש
     private final By inputUserName = By.id("user");
-
-    // שדה הסיסמה
+     // שדה הסיסמה
     private final By inputPassword = By.id("password");
-
     // כפתור אישור
     private final By btnConfirm = By.xpath("//app-user-sign-modal//button[contains(@class,'btn-ok')]");
-
     private final By signModalBy = By.xpath("//app-user-sign-modal");
 
-     public UserSignModalPage() {
-        UIActions.waitForSpinnerToDisappear();
-    }
 
     /**
      * מזינה שם משתמש וסיסמה למודל החתימה ולוחצת על כפתור האישור,

@@ -11,8 +11,6 @@ import lombok.NoArgsConstructor;
  */
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
-@Builder
 public class GynecologyPatient {
     
     // Core Patient Identifiers
