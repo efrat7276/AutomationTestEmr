@@ -81,19 +81,19 @@ public class SanitySuite extends BaseSuit {
         log.error("Department '{}' not found! Using default: {}", 
                   deptNameParam, currentDept.getDisplayName());
     }
-    // if (Boolean.parseBoolean(System.getProperty("JENKINS_RUN"))) {
-    //      log.info("* Pre-Class Setup: Cleaning patient data for department: {} (Code: {})", 
-    //               currentDept.getDisplayName(), currentDept.getCode());
-    //   patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient(currentDept.getCode())).get(0);
-    //   boolean isSucceeded=
-    //   preparePatientDataBeforeTest(QueriesUtils.preparePatientData, patientMisparIshpuz);
-    //      if (isSucceeded) {
-    //           log.info("* Patient data removed successfully for misparIshpuz = {}", patientMisparIshpuz);
-    //      } else {
-    //           log.warn("* No patient data found to remove for misparIshpuz = {}", patientMisparIshpuz);
-    //      }
-    //    log.info("* Pre-Class Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
-    //  }
+    if (Boolean.parseBoolean(System.getProperty("JENKINS_RUN"))) {
+         log.info("* Pre-Class Setup: Cleaning patient data for department: {} (Code: {})", 
+                  currentDept.getDisplayName(), currentDept.getCode());
+      patientMisparIshpuz = getDetailsFirstPatient(QueriesUtils.getDetailsFirstPatient(currentDept.getCode())).get(0);
+      boolean isSucceeded=
+      preparePatientDataBeforeTest(QueriesUtils.preparePatientData, patientMisparIshpuz);
+         if (isSucceeded) {
+              log.info("* Patient data removed successfully for misparIshpuz = {}", patientMisparIshpuz);
+         } else {
+              log.warn("* No patient data found to remove for misparIshpuz = {}", patientMisparIshpuz);
+         }
+       log.info("* Pre-Class Setup Complete: Patient data cleaned for misparIshpuz = {}", patientMisparIshpuz);
+     }
    }
 
 
