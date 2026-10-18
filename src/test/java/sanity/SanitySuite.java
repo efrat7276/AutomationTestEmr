@@ -140,7 +140,6 @@ public class SanitySuite extends BaseSuit {
     
     @Feature("Visual Tests")
     @Story("Num version existing in main menu")
-    @Test(groups = {"ignore"})
     public void test_02_numVersionExisting(){
         log.info("* Starting test_02_numVersionExisting: Verifying version number in main menu");
         loginAsDoctor();
@@ -179,7 +178,6 @@ public class SanitySuite extends BaseSuit {
 
     @Feature("Functional Tests")
     @Story("Entering to patient box")
-    @Test( groups = {"ignore"})
     public void test_06_enterToPatientBox() {
         log.info("* Starting test_06_enterToPatientBox: Logging in as doctor and entering patient box");
         loginAsDoctor();
@@ -347,15 +345,13 @@ public class SanitySuite extends BaseSuit {
 
     @Feature("Functional Tests")
     @Story("Adding and approving a single dose medicine by nurse")
-    @Test(groups = {"ignore"})
      public void test_19_addAndApprovalByNurseSingleOnceOnlyMedicineAndVerify()throws InterruptedException {
       log.info("* Starting test_19_addAndApprovalByNurseSingleOnceOnlyMedicineAndVerify: Adding a single dose medicine for the patient");
       loginAsDoctor();
       chooseDepartmentListPage.selectDepartment(this.currentDept.getDisplayName());
       choosePatient(PATIENT_1);
-      doctorInstructionPage.clickButtonAddInstruction(InstructionType.MEDICINE);
-      doctorInstructionPage.addMedicineAndClose("ACAMOL", "once only", "500", null, "automation sanity test");
-      doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+      doctorInstructionPage.addMedicineFullAndVerify("ACAMOL", "once only", "500", null, "automation sanity test",Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
+    //  doctorInstructionPage.approveAndVerifyInstructions(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD);
       log.info("Single dose medicine ACAMOL added successfully to patient");
       
       // Step 2: Nurse approves the medicine (ONLY drugs - no liquids or blood products)

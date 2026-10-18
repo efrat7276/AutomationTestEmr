@@ -5,7 +5,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.BasePage;
+import pages.DoctorInstructionPage;
+
 import javax.annotation.Nullable;
+
+import static org.testng.Assert.assertTrue;
+
 import java.util.List;
 @Slf4j
 public class DrugFormPage extends BasePage {
@@ -503,7 +508,8 @@ public class DrugFormPage extends BasePage {
     public void clickAddAndCloseButton() {
         UIActions.click(btn_addAndClose);
         UIActions.waitForSpinnerToDisappear();
-        log.info("Clicked 'Add and Close' button.");
+        DoctorInstructionPage doctorInstructionPage = new DoctorInstructionPage();
+        assertTrue(doctorInstructionPage.isDoctorInstructionsTitleDisplayed());
     }
 
 }

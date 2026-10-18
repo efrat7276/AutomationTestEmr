@@ -28,11 +28,24 @@ public class DoctorInstructionPage extends BasePage {
 
 
     //title locator
-    private By doctorInstructionsTitle = By.xpath("//span[contains(@class,'lan-title-ng-view-Hierarchy-a') and text()='הוראות רופא']");
+    private By doctorInstructionsTitle = By.xpath("//span[contains(@class,'lan-title-ng-view-Hierarchy-a') and text()='הוראות רפואיות']");
 
     // Locator ל-span השני של הכותרת
     private By getSecondTitleSpanLocator() {
         return By.xpath("(//span[contains(@class,'lan-title-ng-view-Hierarchy-a')])[2]");
+    }
+
+    public boolean isDoctorInstructionsTitleDisplayed() {
+        String actualText = UIActions.getText(doctorInstructionsTitle).trim();
+        log.debug("Actual text = '{}' | expected = 'הוראות רפואיות'", actualText);
+        return actualText.contains("הוראות רפואיות");
+    }
+
+    public void verifyDoctorInstructionsTitle() {
+        String actualText = UIActions.getText(doctorInstructionsTitle).trim();
+        if (!isDoctorInstructionsTitleDisplayed()) {
+            throw new AssertionError("Expected title to contain 'הוראות רפואיות' but got '" + actualText + "'");
+        }
     }
 
     // בדיקה אם הטקסט בצד השני של הכותרת מתאים
