@@ -63,6 +63,7 @@ public class CardexPageNew extends BasePage {
         for (WebElement el : all){
             UIActions.waitForElementClickable(el);
             UIActions.click(el);
+            log.info("Clicked one of the instruction checkboxes.");
         }
     }
   
@@ -71,6 +72,7 @@ public class CardexPageNew extends BasePage {
         UIActions.waitForSpinnerToDisappear();
         executeAllToThisShift();
          UIActions.click(btn_approvalDrug);
+        log.info("Clicked the approval button for executing all instructions to this shift.");
         userSignModalPage.signModal(username, password);
         verifyExecuted();
          UIActions.waitForText(btn_approvalDrug,"0" );
