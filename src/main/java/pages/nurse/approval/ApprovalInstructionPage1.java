@@ -167,7 +167,9 @@ private int executeTwoStepApproval(By chooseHourBy, By approvalBy, String typeNa
                     // מוצרי דם: לחיצה על האלמנט וברירת מוצר דם
                     UIActions.click(currentButtons.get(i));
                     // 2. תנאי דינמי עם ממתין מפורש מניעת מרוץ זמנים (Race Condition)
-                    UIActions.click(btnVforBloodProductBy);
+                    if (UIActions.isElementPresentAndVisible(btnVforBloodProductBy)) {
+                      UIActions.click(btnVforBloodProductBy);
+                    }
                     break;
                     
                 default:
