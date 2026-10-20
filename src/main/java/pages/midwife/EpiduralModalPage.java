@@ -105,10 +105,10 @@ public class EpiduralModalPage extends BasePage {
 
          
             UIActions.click(epiduralChoiceYesCheckboxBy);
-            if(!driver.findElement(fluidsCheckboxBy).isSelected()) {
+            if(!DriverManager.getInstance().findElement(fluidsCheckboxBy).isSelected()) {
                 UIActions.click(fluidsCheckboxBy);
             }
-            if(!driver.findElement(normalBloodCountCheckboxBy).isSelected()) {
+            if(!DriverManager.getInstance().findElement(normalBloodCountCheckboxBy).isSelected()) {
             UIActions.click(normalBloodCountCheckboxBy);
             }
             
