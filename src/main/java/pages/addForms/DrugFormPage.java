@@ -242,7 +242,7 @@ public class DrugFormPage extends BasePage {
         UIActions.typeText(inp_selectDrug, nameMed);
         UIActions.click(inp_selectDrugTopList);
         
-          if(UIActions.isPopupAppeared(duplicateInstructionModal))
+      if(UIActions.isElementPresentAndVisible(duplicateInstructionModal))
         {
           UIActions.click(duplicateInstructionModalConfirmButton);
           log.info("Duplicate instruction modal appeared. Confirmed to import existing instruction.");
