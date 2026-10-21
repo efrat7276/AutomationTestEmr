@@ -106,17 +106,17 @@ String osInfo = osName + " (" + osVersion + ")";
     
    //log.info(">>> Test Setup Complete");
   }
-    // @AfterClass
-    // public void tearDown() {
-    //     log.info("<<< Quitting driver and cleaning up resources");
-    //     DriverManager.quitDriver();
-    // }
-
-    @AfterMethod 
+    @AfterClass
     public void tearDown() {
         log.info("<<< Quitting driver and cleaning up resources");
         DriverManager.quitDriver();
     }
+
+    // @AfterMethod 
+    // public void tearDown() {
+    //     log.info("<<< Quitting driver and cleaning up resources");
+    //     DriverManager.quitDriver();
+    // }
     
     protected void loginAsDoctor() {
         log.info("Login as doctor with : {} user", Constants.DOCTOR_USERNAME);
