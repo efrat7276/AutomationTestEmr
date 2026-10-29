@@ -107,10 +107,8 @@ public class ZeruzModalPage extends BasePage {
      */
     public void addDirectiveKeepModalOpen(String desiredType) {
         UIActions.waitForSpinnerToDisappear();
-
         // Open Zeruz type dropdown (if closed)
         UIActions.click(zeruzTypeInputOpenOptionsBy);
-
         List<WebElement> zeruzTypeCheckboxes = DriverManager.getInstance().findElements(zeruzTypeInputOptionsListBy);
         String selectedTypeText = "";
 

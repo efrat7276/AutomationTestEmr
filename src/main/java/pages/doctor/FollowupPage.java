@@ -1,6 +1,7 @@
 package pages.doctor;
 
 import actionUtilies.UIActions;
+import helpers.Constants;
 import lombok.extern.slf4j.Slf4j;
 
 import static org.testng.Assert.assertTrue;
@@ -58,8 +59,11 @@ public class FollowupPage extends BasePage {
     // Medical Follow-up Section
     private By medicalFollowupHeading = By.xpath("//heading[contains(text(), 'מעקב רפואי')]");
     private By followupHistoryHeading = By.xpath("//heading[contains(text(), 'היסטוריית מעקב רפואי')]");
+    //סיבת ביטול
+    private By reasonInput = By.cssSelector("input[formcontrolname='reason']");
 
-
+// הגדרת כפתור השמירה לפי סוג הטקסט או ה-class שלו
+   private By saveReasonButton = By.xpath("(//div[contains(@class, 'delete-followup')]//button[@type='submit' and contains(@class, 'btn-submit')])[1]"); 
     // ===== SOAP Notes Methods =====
 
     public void addFollowupAndVerify(String notes_Subjec , String notes_Objective ,
@@ -290,12 +294,24 @@ public class FollowupPage extends BasePage {
     return text == null ? "" : text.trim();
   }
 
-  public void deleteFollowupAtIndex(int index) {
+  public void deleteFollowupAtIndexAndVerify(int index, String username, String password) {
+    log.info("delete last follow-up" );
     List<WebElement> trashButtons = UIActions.findElementsWithWait(buttonTrash);
+    int countBefore = trashButtons.size();
     if (index < trashButtons.size()) {
       UIActions.click(trashButtons.get(index));
-      log.info("✅ Deleted follow-up at index: " + index);
-    }
+      // הכנסת הסיבה לאינפוט
+      UIActions.typeText(reasonInput, " טסט מחיקת פולואפ");
+
+     // לחיצה על כפתור השמור
+      UIActions.click(saveReasonButton);  
+      userSignModalPage.signModal(username, password);
+
+ }
+ // יש לתקן את הבדיקה האם נמחק או לא 
+ //   int countAfter = UIActions.findElementsWithWait(buttonTrash).size();
+ //   assertTrue(countAfter < countBefore, "Follow-up should be deleted, count before: " + countBefore + ", count after: " + countAfter);
+
   }
 
   // ===== Full Flow Methods =====

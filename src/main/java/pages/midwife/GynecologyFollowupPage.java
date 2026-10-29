@@ -469,55 +469,46 @@ public class GynecologyFollowupPage extends FollowupPage {
      * בוחר תמיד את האפשרות הראשונה בכל dropdown ואפשרויות ספציפיות לרדיו
      * @return true if all Monitoring elements were filled successfully, false otherwise
      */
-    public boolean fillMonitoringSection() {
-        try {
+    public boolean fillMonitoringSectionAndSave() {
+       
             log.info("🔄 Starting to fill Monitoring Section with default values...");
-            
-            // Step 1: Click on Monitoring Tab (ניטור PV)
             UIActions.click(monitoringTabBy);
-            UIActions.waitForSpinnerToDisappear();
-            Thread.sleep(500);
             
-            // Step 2: Fill Decelerations dropdown
+            //  בחירת האפשרות הראשונה בהאטות
             boolean decelerationsFilled = fillDropdownWithFirstOption(decelerationsDropdownToggleBy, decelerationOptionsBy, "Decelerations (האטות)");
             
-            // Step 3: Fill Category dropdown
+            // בחירת האפשרות הראשונה בקטגוריה
             boolean categoryFilled = fillDropdownWithFirstOption(categoryDropdownToggleBy, categoryOptionsBy, "Category (קטגוריה)");
             
-            // Step 4: Fill Variability dropdown
+            //  בחירת האפשרות הראשונה בוריאביליות
             boolean variabilityFilled = fillDropdownWithFirstOption(variabilityDropdownToggleBy, variabilityOptionsBy, "Variability (וריאביליות)");
+      
             
-            // Step 5: Fill Input Fields (BL, Frequency)
-            log.info("🔄 Filling Monitoring input fields with default values...");
-            
-            // Fill BL (Baseline) with value 140
+            // ממלא את השדה BL בערך ברירת מחדל
             boolean blFilled = fillInputField(blInputBy, "140", "BL (Baseline)");
             
-            // Fill Frequency (תדירות) with value 10
+            // ממלא את השדה Frequency בערך ברירת מחדל
             boolean frequencyFilled = fillInputField(frequencyInputBy, "10", "Frequency (תדירות)");
             
-            // Step 6: Select Rhythm Radio Button - Regular (סדיר)
-            log.info("🔄 Selecting Rhythm radio button...");
+            //  (סדיר) - בחירת האפשרות הראשונה ברדיו
             boolean rhythmFilled = selectRadioButton(rhythmRegularRadioBy, "Rhythm - Regular (סדיר)");
             
-            // Step 7: Select Accelerations Radio Button - Yes (כן)
-            log.info("🔄 Selecting Accelerations radio button...");
+            //  Yes (כן) - בחירת האפשרות הראשונה ברדיו
             boolean accelerationsFilled = selectRadioButton(accelerationsYesRadioBy, "Accelerations - Yes (כן)");
             
             boolean allFilled = decelerationsFilled && categoryFilled && variabilityFilled && 
                                blFilled && frequencyFilled && rhythmFilled && accelerationsFilled;
+
+            boolean saveSuccessful = allFilled &&
+                    saveAndApproveFollowup(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
             
-            if (allFilled) {
-                log.info("✅ Successfully filled all Monitoring section elements");
+            if (allFilled && saveSuccessful) {
+                log.info("✅ Successfully filled all Monitoring section elements and saved the follow-up");
             } else {
-                log.error("❌ Some Monitoring section elements were NOT filled successfully");
+                log.error("❌ Monitoring section was not filled or saved successfully");
             }
             
-            return allFilled;
-        } catch (Exception e) {
-            log.error("❌ Error filling Monitoring section: {}", e.getMessage());
-            return false;
-        }
+            return allFilled && saveSuccessful;
     }
     
     /**
@@ -527,16 +518,10 @@ public class GynecologyFollowupPage extends FollowupPage {
      * @return true if radio button was selected successfully, false otherwise
      */
     private boolean selectRadioButton(By radioBy, String fieldName) {
-        try {
-            WebElement radioElement = DriverManager.getInstance().findElement(radioBy);
-            UIActions.click(radioElement);
-            UIActions.waitForSpinnerToDisappear();
-            log.info("✅ Selected radio button for {} - SUCCESS", fieldName);
+           // WebElement radioElement = DriverManager.getInstance().findElement(radioBy);
+            UIActions.click(radioBy);
             return true;
-        } catch (Exception e) {
-            log.error("❌ Error selecting radio button for {}: {}", fieldName, e.getMessage());
-            return false;
-        }
+      
     }
   
   
@@ -576,7 +561,7 @@ public class GynecologyFollowupPage extends FollowupPage {
      * @return true if an option was selected successfully, false otherwise
      */
     private boolean fillDropdownWithFirstOption(By dropdownToggle, By options, String fieldName) {
-        try {
+
             // Click dropdown toggle to open
             UIActions.click(dropdownToggle);
             UIActions.waitForSpinnerToDisappear();
@@ -595,10 +580,6 @@ public class GynecologyFollowupPage extends FollowupPage {
                 log.error("❌ No options found for {} - FAILED", fieldName);
                 return false;
             }
-        } catch (Exception e) {
-            log.error("❌ Error filling {} dropdown: {} - FAILED", fieldName, e.getMessage());
-            return false;
-        }
     }
     
     /**

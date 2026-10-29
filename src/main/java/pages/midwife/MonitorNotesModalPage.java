@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import pages.BasePage;
 import drivers.DriverManager;
 
+import static org.testng.Assert.assertTrue;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -67,7 +69,8 @@ public class MonitorNotesModalPage extends BasePage {
     /**
      * Close the monitor notes modal
      */
-    public void closeMonitorNotesModal() {
+    public void verifyMonitorNotesVisibleAndClose() {
+        assertTrue(verifyMonitorNoteSaved(), "Monitor note should be saved before closing the modal");
         UIActions.click(closeButtonBy);
         UIActions.waitForSpinnerToDisappear();
         log.info("✅ Monitor Notes modal closed");

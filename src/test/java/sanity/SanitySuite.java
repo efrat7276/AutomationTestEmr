@@ -81,6 +81,8 @@ public class SanitySuite extends BaseSuit {
         log.error("Department '{}' not found! Using default: {}", 
                   deptNameParam, currentDept.getDisplayName());
     }
+
+    // הקוד של מחיקת רשימת התרופות של החולה והסרת הצנתרים והפצעים מתבצע רק בתנאי שההרצה נעשת בשרת
     if (Boolean.parseBoolean(System.getProperty("JENKINS_RUN"))) {
          log.info("* Pre-Class Setup: Cleaning patient data for department: {} (Code: {})", 
                   currentDept.getDisplayName(), currentDept.getCode());

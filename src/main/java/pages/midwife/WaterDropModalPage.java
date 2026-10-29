@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.bidi.log.Log;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import pages.BasePage;
 import pages.common.DatePickerPage;
@@ -100,33 +101,47 @@ public class WaterDropModalPage extends BasePage {
    // /**\n     * בחר תאריך ירידת מים בעזרת DatePickerPage\n     * @param day The day to select\n     * @param month The month to select\n     * @param year The year to select\n     * @return true if date was selected successfully, false otherwise\n     */\n    public boolean selectWaterDropDate(int day, int month, int year) {\n        log.info(\"attempting to select Water Drop date: {}/{}/{}\", day, month, year);\n        \n        // Click on date field to open datepicker\n        UIActions.click(dateFieldInputBy);\n        UIActions.waitForSpinnerToDisappear();\n        \n        // Create DatePickerPage and select date\n        DatePickerPage datePickerPage = new DatePickerPage();\n        datePickerPage.waitForDatePickerToAppear(5);\n        \n        if (!datePickerPage.isDatePickerOpen()) {\n            log.error(\"datepicker did not open after clicking date field\");\n            return false;\n        }\n        \n        boolean selected = datePickerPage.selectDate(day, month, year);\n        if (!selected) {\n            log.error(\"failed to select date via DatePickerPage\");\n            return false;\n        }\n        \n        log.info(\"water drop date selected: {}/{}/{}\", day, month, year);\n        return true;\n    }\n\n    /**\n     * בחר את תאריך היום בירידת מים\n     * @return true if today's date was selected, false otherwise\n     */\n    public boolean selectTodayForWaterDrop() {\n        LocalDate today = LocalDate.now();\n        return selectWaterDropDate(today.getDayOfMonth(), today.getMonthValue(), today.getYear());\n    }
    
     public void fillAndSaveWaterDropForm( String username, String password) {
-            log.info("🔄 Starting to fill Water Drop form...");
+        log.info("🔄 Starting to fill Water Drop form...");
+        DriverManager.getWait().until(ExpectedConditions.visibilityOfElementLocated(waterDropFormBy));
 
-            // מה לגבי תאריך ירידת מים - נשתמש בתאריך של היום
-            // לבדוק איזה תאריך ניתן לשנות, אם בכלל, ואם יש צורך להוסיף בדיקה של תאריך עתידי או עבר
+        log.info("✅ Filling Water Color and Water Flow Type dropdowns");
+        UIActions.waitForElementClickable(waterColorDropdownToggleBy);
+        UIActions.click(waterColorDropdownToggleBy);
+        List<WebElement> waterColorOptions = UIActions.findElementsWithWait(waterColorOptionsBy);
+        if (waterColorOptions.size() <= 1) {
+            throw new IllegalStateException("Expected at least two Water Color options, but found "
+                    + waterColorOptions.size());
+        }
+        UIActions.selectFromListByIndex(waterColorOptions, 1);
+        DriverManager.getWait().until(ExpectedConditions.invisibilityOfElementLocated(waterColorOptionsBy));
+        DriverManager.getWait().until(ExpectedConditions.invisibilityOfElementLocated(By.tagName("emr-spinner")));
 
-            String todayDate = getTodayDateFormatted();
-        
+        UIActions.waitForElementClickable(waterFlowTypeDropdownToggleBy);
+        UIActions.click(waterFlowTypeDropdownToggleBy);
+        List<WebElement> waterFlowTypeOptions = UIActions.findElementsWithWait(waterFlowTypeOptionsBy);
+        if (waterFlowTypeOptions.size() <= 1) {
+            throw new IllegalStateException("Expected at least two Water Flow Type options, but found "
+                    + waterFlowTypeOptions.size());
+        }
+        UIActions.selectFromListByIndex(waterFlowTypeOptions, 1);
+        DriverManager.getWait().until(ExpectedConditions.invisibilityOfElementLocated(waterFlowTypeOptionsBy));
+        DriverManager.getWait().until(ExpectedConditions.invisibilityOfElementLocated(By.tagName("emr-spinner")));
 
-            log.info("✅ Filling Water Color and Water Flow Type dropdowns");
-
-            UIActions.click(waterColorDropdownToggleBy);
-            List<WebElement> waterColorOptionsListElement = DriverManager.getInstance().findElements(waterColorOptionsBy);
-            UIActions.selectFromListByIndex(waterColorOptionsListElement, 1);
-            UIActions.click(waterFlowTypeDropdownToggleBy);
-            List<WebElement> waterFlowTypeOptionsListElement = DriverManager.getInstance().findElements(waterFlowTypeOptionsBy);
-            UIActions.selectFromListByIndex(waterFlowTypeOptionsListElement, 1);
-            
-            saveWaterDropForm(username, password);
-
+        saveWaterDropForm(username, password);
     }
 
     private void saveWaterDropForm(String username, String password) {
-        
+        UIActions.waitForElementVisible(userSignBy);
         UIActions.typeText(userSignBy, username);
+        DriverManager.getWait().until(ExpectedConditions.attributeToBe(userSignBy, "value", username));
+
+        UIActions.waitForElementVisible(userSignPasswordBy);
         UIActions.typeText(userSignPasswordBy, password);
+        DriverManager.getWait().until(ExpectedConditions.attributeToBe(userSignPasswordBy, "value", password));
+
+        UIActions.waitForElementClickable(waterDropSubmitButtonBy);
         UIActions.click(waterDropSubmitButtonBy);
-      //  userSignModalPage.signModal(username, password);
+        DriverManager.getWait().until(ExpectedConditions.invisibilityOfElementLocated(waterDropModalContainerBy));
     }
 
    

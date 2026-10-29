@@ -67,29 +67,40 @@ public class UIActions {
         wait.until(ExpectedConditions.not(ExpectedConditions.attributeToBe(elem, "value","")));
         return true;
     }
-    
-    public static void click(By locator) {
+   public static void click(By locator) {
     int attempts = 0;
-    int maxAttempts = 3; // נסיונות חוזרים למקרים של Stale או שינויים דינמיים בדף
+    int maxAttempts = 3; // מספר נסיונות מקסימלי
 
     while (attempts < maxAttempts) {
         try {
-            //changed from elementToBeClickable to elementToBeVisible. 
+            // ניסיון 1: המתנה לנראות ולחיצה רגילה
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
             element.click();
-            return;
+            return; // הצליח - יוצאים מהפונקציה
             
         } catch (Exception e) {
+            attempts++;
+            log.warn("ניסיון לחיצה מספר {} נכשל עבור: {}. מנסה שוב...", attempts, locator);
             
+            if (attempts >= maxAttempts) {
+                // אם הגענו למקסימום נסיונות רגילים, ננסה גיבוי אחרון עם JavaScript
+                try {
+                    WebElement element = driver.findElement(locator);
+                    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+                    log.info("לחיצת JavaScript הצליחה בניסיון אחרון עבור: {}", locator);
+                    return;
+                } catch (Exception jsException) {
+                    throw new RuntimeException("נכשלו כל הנסיונות (רגיל + JavaScript) עבור: " + locator, jsException);
+                }
+            }
+            
+            // השהיה קצרה בין ניסיונות למקרה שהעמוד עדיין נטען/זז
             try {
-                WebElement element = driver.findElement(locator);
-                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
-                return; // לחיצת ה-JS הצליחה
-            } catch (Exception jsException) {
-                throw new RuntimeException("נכשל ניסיון לחיצה רגיל (Intercepted) וגם ניסיון JavaScript עבור: " + locator, jsException);
+                Thread.sleep(500);
+            } catch (InterruptedException ignored) {
+                Thread.currentThread().interrupt();
             }
         }
-               
     }
 }
     public static void click(WebElement element) {

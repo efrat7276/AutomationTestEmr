@@ -93,7 +93,7 @@ public class EpiduralModalPage extends BasePage {
      * @param password Password for signature
      */
     public void fillAndSaveEpiduralForm(String username, String password) {
-        try {
+
             log.info("🔄 Starting to fill Epidural form...");
 
             // Get today's date
@@ -116,14 +116,7 @@ public class EpiduralModalPage extends BasePage {
             //UIActions.click(epiduralSubmitButtonBy);
             saveEpiduralForm(username, password);
             
-            // Sign the modal
-            userSignModalPage.signModal(username, password);
-            log.info("✅ Epidural form filled, submitted, and signed");
 
-        } catch (Exception e) {
-            log.error("❌ Error filling Epidural form: {}", e.getMessage());
-            throw new RuntimeException("Failed to fill and save Epidural form", e);
-        }
     }
 
     private void saveEpiduralForm(String username, String password) {

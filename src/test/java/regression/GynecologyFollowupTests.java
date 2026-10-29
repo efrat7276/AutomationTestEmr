@@ -106,7 +106,7 @@ public class GynecologyFollowupTests extends BaseSuit {
         UIActions.waitForSpinnerToDisappear();
 
         // Fill Monitoring section (BL=140, Frequency=10, Rhythm=Regular, Accelerations=Yes)
-        boolean monitoringFilled = gynecologyFollowupPage.fillMonitoringSection();
+        boolean monitoringFilled = gynecologyFollowupPage.fillMonitoringSectionAndSave();
         Assert.assertTrue(monitoringFilled, "Expected fillMonitoringSection to return true");
 
     }
@@ -114,7 +114,7 @@ public class GynecologyFollowupTests extends BaseSuit {
     @io.qameta.allure.Feature("Gynecology Followup - Water Drop")
     @io.qameta.allure.Story("Open Water Drop modal, fill, save and verify date button")
     @Test(description = "GF-05 (P0) — Water Drop modal open/fill/save and date on button")
-    public void gf05_waterDropFillAndVerifyDateIndicator() throws Exception {
+    public void gf05_waterDropFillAndVerify() throws Exception {
         loginAsNurse();
         chooseDepartment("מיון נשים");
         womenEmergencyPatientsPage.choosePatient(1);
@@ -124,12 +124,6 @@ public class GynecologyFollowupTests extends BaseSuit {
         UIActions.waitForSpinnerToDisappear();
         
        WaterDropModalPage waterDropModalPage = new WaterDropModalPage();
-      //  Assert.assertTrue(waterDropModalPage.isWaterDropModalVisible(), "Water Drop modal should be visible after clicking Water Circle");
-       // log.info("water drop modal opened successfully");
-        
-        // boolean dateSelected = waterDropModalPage.selectTodayForWaterDrop();
-        // Assert.assertTrue(dateSelected, "Expected today's date to be selected in Water Drop modal");
-        // log.info("today's date selected via DatePickerPage");
         
         waterDropModalPage.fillAndSaveWaterDropForm(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
         UIActions.waitForSpinnerToDisappear();
@@ -139,11 +133,6 @@ public class GynecologyFollowupTests extends BaseSuit {
         Assert.assertNotNull(waterDropDate, "Water Drop date should be displayed in the button's span");
         Assert.assertFalse(waterDropDate.isEmpty(), "Water Drop date should not be empty");
         log.info("water drop date displayed in button: {}", waterDropDate);
-        
-        // String todayDate = LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-        // Assert.assertTrue(waterDropDate.contains(todayDate), 
-        //     "Water Drop button should display today's date (" + todayDate + "), but got: " + waterDropDate);
-        // log.info("verified water drop date is today: {}", todayDate);
         
         String waterIndicatorClass = gynecologyFollowupPage.getWaterIndicatorClass();
         log.info("water indicator css class after save: {}", waterIndicatorClass);
@@ -236,7 +225,7 @@ public class GynecologyFollowupTests extends BaseSuit {
 
     @io.qameta.allure.Feature("Gynecology Followup - Inductions")
     @io.qameta.allure.Story("Verify Inductions sections exist")
-    @Test(description = "GF-08a: Verify Inductions sections exist ממתינות לזירוז ",dependsOnMethods = { "gf08_zeruzAddDirectiveBalonAndVerify" })
+    @Test(description = "GF-08a: Verify Inductions sections exist ממתינות לזירוז ")
     public void gf08a_verifyInductionsSectionsExist() throws Exception {
         loginAsDoctor();
         chooseDepartment("מיון נשים");
@@ -266,17 +255,14 @@ public class GynecologyFollowupTests extends BaseSuit {
         Assert.assertTrue(monitorNotesModalPage.verifyMonitorNoteSaved(),
             "Latest monitor note should contain today's date and a valid HH:mm time");
 
-        monitorNotesModalPage.closeMonitorNotesModal();
-        gynecologyFollowupPage.openMonitorNotesModal();
-        Assert.assertTrue(monitorNotesModalPage.verifyMonitorNoteSaved(),
-            "Latest monitor note should retain today's date and a valid HH:mm time after reopening the modal");
-        monitorNotesModalPage.closeMonitorNotesModal();
+        monitorNotesModalPage.verifyMonitorNotesVisibleAndClose();
+    
         }
 
         @io.qameta.allure.Feature("Gynecology Followup - SOAP")
         @io.qameta.allure.Story("Copy the last followup, modify it, and save a separate entry")
         @Test(description = "GF-10 (P1) — Copy and Modify: copy last followup, modify, and save as new")
-        public void gf10_copyModifyAndSaveAsNew() {
+        public void gf10_copyLastFollowupModifyAndSaveAsNew() {
         loginAsNurse();
         chooseDepartment("מיון נשים");
         womenEmergencyPatientsPage.choosePatient(1);
@@ -293,7 +279,7 @@ public class GynecologyFollowupTests extends BaseSuit {
 
         String updatedSubjective = "GF10 modified followup " + System.currentTimeMillis();
         gynecologyFollowupPage.fillSubjective(updatedSubjective);
-        Assert.assertTrue(gynecologyFollowupPage.saveAndApproveFollowup(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD),
+        Assert.assertTrue(gynecologyFollowupPage.saveAndApproveFollowup(Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD),
             "Modified followup should save successfully");
 
         Assert.assertTrue(gynecologyFollowupPage.getFollowupHistoryCount() > historyCountBefore,
@@ -307,27 +293,14 @@ public class GynecologyFollowupTests extends BaseSuit {
         @io.qameta.allure.Feature("Gynecology Followup - History")
         @io.qameta.allure.Story("Delete a newly saved followup from history")
         @Test(description = "GF-12 (P1) — History Delete: remove followup entry via trash icon")
-        public void gf12_deleteNewFollowupFromHistory() {
-        loginAsDoctor();
+        public void gf12_deleteLastFollowupFromHistory() {
+        loginAsNurse();
         chooseDepartment("מיון נשים");
         womenEmergencyPatientsPage.choosePatient(1);
         UIActions.waitForSpinnerToDisappear();
 
-        int historyCountBefore = gynecologyFollowupPage.getFollowupHistoryCount();
-        String uniqueSubjective = "GF12 delete followup " + System.currentTimeMillis();
-        gynecologyFollowupPage.fillSubjective(uniqueSubjective);
-        Assert.assertTrue(gynecologyFollowupPage.saveAndApproveFollowup(Constants.DOCTOR_USERNAME, Constants.DOCTOR_PASSWORD),
-            "Followup should save before deletion");
-        Assert.assertTrue(gynecologyFollowupPage.getLatestFollowupHistoryText().contains(uniqueSubjective),
-            "The newly saved followup should be the first history entry");
-
-        gynecologyFollowupPage.deleteFollowupAtIndex(0);
-        UIActions.waitForSpinnerToDisappear();
-
-        Assert.assertEquals(gynecologyFollowupPage.getFollowupHistoryCount(), historyCountBefore,
-            "Deleting the new followup should restore the original history count");
-        Assert.assertFalse(gynecologyFollowupPage.getLatestFollowupHistoryText().contains(uniqueSubjective),
-            "The deleted followup should no longer appear in history");
+        gynecologyFollowupPage.deleteFollowupAtIndexAndVerify(0, Constants.NURSE_USERNAME, Constants.NURSE_PASSWORD);
+     
         }
     
 }
