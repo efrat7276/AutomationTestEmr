@@ -293,7 +293,7 @@ public class GynecologyFollowupPage extends FollowupPage {
             
             // Step 3: Fill Monitoring Section
             log.info("📊 Step 3: Filling Monitoring Section...");
-            boolean monitoringFilled = fillMonitoringSection();
+            boolean monitoringFilled = fillMonitoringSectionAndSave();
             
             if (!monitoringFilled) {
                 log.error("❌ Monitoring Section filling FAILED - aborting save");
@@ -335,7 +335,7 @@ public class GynecologyFollowupPage extends FollowupPage {
             
             // Step 3: Fill Monitoring Section
             log.info("📊 Step 3: Filling Monitoring Section...");
-            boolean monitoringFilled = fillMonitoringSection();
+            boolean monitoringFilled = fillMonitoringSectionAndSave();
             
             if (!monitoringFilled) {
                 log.error("❌ Monitoring Section filling FAILED - aborting save");
@@ -382,7 +382,7 @@ public class GynecologyFollowupPage extends FollowupPage {
             
             // Step 2: Fill Monitoring Section
             log.info("📊 Step 2: Filling Monitoring Section...");
-            boolean monitoringFilled = fillMonitoringSection();
+            boolean monitoringFilled = fillMonitoringSectionAndSave();
             
             if (!monitoringFilled) {
                 log.error("❌ Monitoring Section filling FAILED - aborting save");
