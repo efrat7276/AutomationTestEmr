@@ -5,7 +5,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pages.BasePage;
-import drivers.DriverManager;
 
 import static org.testng.Assert.assertTrue;
 
@@ -93,7 +92,7 @@ public class MonitorNotesModalPage extends BasePage {
      */
     public List<String> getMonitorNotesHistory() {
         List<String> notes = new ArrayList<>();
-        List<WebElement> rows = DriverManager.getInstance().findElements(notesTableRowsBy);
+        List<WebElement> rows = UIActions.findElementsWithWait(notesTableRowsBy);
         for (WebElement row : rows) {
                 WebElement td = row.findElement(org.openqa.selenium.By.xpath("./td[1]"));
                 notes.add(td.getText().trim());

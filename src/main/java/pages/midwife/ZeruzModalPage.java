@@ -109,7 +109,7 @@ public class ZeruzModalPage extends BasePage {
         UIActions.waitForSpinnerToDisappear();
         // Open Zeruz type dropdown (if closed)
         UIActions.click(zeruzTypeInputOpenOptionsBy);
-        List<WebElement> zeruzTypeCheckboxes = DriverManager.getInstance().findElements(zeruzTypeInputOptionsListBy);
+        List<WebElement> zeruzTypeCheckboxes = UIActions.findElementsWithWait(zeruzTypeInputOptionsListBy);
         String selectedTypeText = "";
 
         if (zeruzTypeCheckboxes.isEmpty()) {
@@ -138,7 +138,7 @@ public class ZeruzModalPage extends BasePage {
         // optional reason
         try {
             UIActions.click(zeruzReasonInputOpenOptionsBy);
-            List<WebElement> zeruzReasonCheckboxes = DriverManager.getInstance().findElements(zeruzReasonInputOptionsListBy);
+            List<WebElement> zeruzReasonCheckboxes = UIActions.findElementsWithWait(zeruzReasonInputOptionsListBy);
             if (!zeruzReasonCheckboxes.isEmpty()) {
                 UIActions.click(zeruzReasonCheckboxes.get(0));
                 DriverManager.getInstance().findElement(By.tagName("body")).sendKeys(org.openqa.selenium.Keys.ESCAPE);
@@ -165,7 +165,7 @@ public class ZeruzModalPage extends BasePage {
      */
     public boolean isPreviousDirectiveMarkedCancelled(String prevDirectiveText) {
         UIActions.waitForSpinnerToDisappear();
-        List<WebElement> zeruzimCancelledName = DriverManager.getInstance().findElements(
+        List<WebElement> zeruzimCancelledName = UIActions.findElementsWithWait(
          By.xpath("//div[contains(@class,'zerozim-table-section')][.//span[normalize-space(text())='הנחיות שבוטלו']]//tbody//tr/td[1]"));
         for (WebElement r : zeruzimCancelledName) {
         String rowText = r.getAttribute("textContent"); // או r.getAttribute("innerText")
@@ -191,7 +191,7 @@ public void fillAndSaveZeruz(String desiredType) {
      // Open Zeruz type dropdown (if closed)
       UIActions.click(zeruzTypeInputOpenOptionsBy);
 
-     List<WebElement> zeruzTypeCheckboxes = DriverManager.getInstance().findElements(zeruzTypeInputOptionsListBy);
+     List<WebElement> zeruzTypeCheckboxes = UIActions.findElementsWithWait(zeruzTypeInputOptionsListBy);
      String selectedTypeText = desiredType;
 
     if (zeruzTypeCheckboxes.isEmpty()) {
@@ -231,7 +231,7 @@ public void fillAndSaveZeruz(String desiredType) {
     // Open and select first reason (best-effort)
     
         UIActions.click(zeruzReasonInputOpenOptionsBy);
-        List<WebElement> zeruzReasonCheckboxes = DriverManager.getInstance().findElements(zeruzReasonInputOptionsListBy);
+        List<WebElement> zeruzReasonCheckboxes = UIActions.findElementsWithWait(zeruzReasonInputOptionsListBy);
         if (!zeruzReasonCheckboxes.isEmpty()) {
             UIActions.click(zeruzReasonCheckboxes.get(0));
             DriverManager.getInstance().findElement(By.tagName("body")).sendKeys(org.openqa.selenium.Keys.ESCAPE);
@@ -251,7 +251,7 @@ public void fillAndSaveZeruz(String desiredType) {
     boolean found = false;
     try {
         String xpathContainsType = "//tr[contains(normalize-space(.), '" + selectedTypeText + "')]";
-        WebElement matches = DriverManager.getInstance().findElement(By.xpath(xpathContainsType));
+        WebElement matches =UIActions.findElementWithWait(By.xpath(xpathContainsType));
         if (matches.isDisplayed() && matches.getText().contains(selectedTypeText)) {
             found = true;
         }
@@ -290,7 +290,7 @@ public void fillAndSaveZeruz(String desiredType) {
     }
 
     private void selectPriorityButton(int index) {
-           List<WebElement> priorityButtons = DriverManager.getInstance().findElements(priorityButtonListBy);
+           List<WebElement> priorityButtons = UIActions.findElementsWithWait(priorityButtonListBy);
             if (!priorityButtons.isEmpty()) {
                 UIActions.click(priorityButtons.get(index));
             } else {

@@ -260,7 +260,7 @@ public class DatePickerPage extends BasePage {
      * @return List of day numbers available for selection
      */
     public List<WebElement> getAvailableDays() {
-        return DriverManager.getInstance().findElements(dayButtonsBy);
+        return UIActions.findElementsWithWait(dayButtonsBy);
     }
 
     // ============ Utility Methods ============

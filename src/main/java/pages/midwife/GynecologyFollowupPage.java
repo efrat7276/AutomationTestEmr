@@ -59,6 +59,7 @@ public class GynecologyFollowupPage extends FollowupPage {
     public By getPvTabBy() { return pvTabBy; }
     public By getMonitoringTabBy() { return monitoringTabBy; }
     public By getWaterDropDateSpanBy() { return waterDropDateSpanBy; }
+
     private final By copyLastPVButtonBy = By.xpath("//button[contains(text(), 'העתקת PV אחרון')]");
     private final By clearPVButtonBy = By.xpath("//button[contains(text(), 'ניקוי')]");
     
@@ -156,6 +157,9 @@ public class GynecologyFollowupPage extends FollowupPage {
     private final By epiduralCircleButtonBy = By.xpath("//button[contains(@class, 'epidural-circle')]");
     private final By pitociuButtonBy = By.xpath("//button[contains(@class, 'pt-button')]");
     private final By zeruzButtonBy = By.xpath("//button[contains(@class, 'zeruz')]");
+
+    public By getZeruzButtonBy() { return zeruzButtonBy; }
+
 
     // ============ Water Drop Modal Elements (פופ-אפ ירידת מים) ============
     //private final By waterDropModalBy = By.xpath("//form[@class='water-drop-form']");
@@ -681,8 +685,6 @@ public class GynecologyFollowupPage extends FollowupPage {
     public void clickZeruz() {
             log.info("⚡ Clicking Zeruz button...");
             UIActions.click(zeruzButtonBy);
-            UIActions.waitForSpinnerToDisappear();
-            log.info("✅ Zeruz button clicked successfully");
     }
 
     // ============ PV Getters for Verification ============

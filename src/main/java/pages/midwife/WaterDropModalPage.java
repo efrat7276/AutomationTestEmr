@@ -39,7 +39,7 @@ public class WaterDropModalPage extends BasePage {
     private final By waterDropModalContainerBy = By.xpath("//ngb-modal-window");
     private final By waterDropModalTitleBy = By.xpath("//ngb-modal-window//h5[contains(text(), 'ירידת מים')]");
     private final By waterDropCloseButtonBy = By.xpath("//ngb-modal-window//button[@aria-label='Close']");
-    private final By waterDropFormBy = By.xpath("//form[@class='water-drop-form']");
+    private final By waterDropFormBy = By.xpath("//form[contains(@class,'water-drop-for')]");
      // ============ Modal Input ============
 
      private final By userSignBy = By.xpath("//input[@id='user']");
@@ -103,7 +103,7 @@ public class WaterDropModalPage extends BasePage {
     public void fillAndSaveWaterDropForm( String username, String password) {
         log.info("🔄 Starting to fill Water Drop form...");
         DriverManager.getWait().until(ExpectedConditions.visibilityOfElementLocated(waterDropFormBy));
-
+        UIActions.waitForElementVisible(dateFieldInputBy);
         log.info("✅ Filling Water Color and Water Flow Type dropdowns");
         UIActions.waitForElementClickable(waterColorDropdownToggleBy);
         UIActions.click(waterColorDropdownToggleBy);
@@ -202,7 +202,7 @@ public class WaterDropModalPage extends BasePage {
     //         UIActions.click(dropdownToggle);
     //         UIActions.waitForSpinnerToDisappear();
             
-    //         var optionsList = DriverManager.getInstance().findElements(options);
+    //         var optionsList = UIActions.findElementsWithWait(options);
             
     //         if (!optionsList.isEmpty()) {
     //             String optionText = optionsList.get(0).getText();

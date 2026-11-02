@@ -57,7 +57,7 @@ private final By btnEditBy = By.xpath("//button[contains(@id,'btnIsApproval') an
      */
     private void selectNthOptionFromDropdown(WebElement dropdownOpenerElement, int index) {
         UIActions.click(dropdownOpenerElement);
-        List<WebElement> options =DriverManager.getInstance().findElements(By.xpath("//tr[@class='collapse show ng-star-inserted']//div[@id='div-group-current-day']//div[@class='btn-group show dropdown']//button/following-sibling::ul//li"));
+        List<WebElement> options = UIActions.findElementsWithWait(By.xpath("//tr[@class='collapse show ng-star-inserted']//div[@id='div-group-current-day']//div[@class='btn-group show dropdown']//button/following-sibling::ul//li"));
          if (options.isEmpty()) {
              throw new RuntimeException("לא נמצאו אפשרויות ברשימה הנפתחת.");
          }
@@ -178,7 +178,7 @@ private int executeTwoStepApproval(By chooseHourBy, By approvalBy, String typeNa
             }
 
             // 3. אישור - שליפה בלייב רק ברגע שמוכנים ללחוץ!
-            List<WebElement> currentApprovalBtns = DriverManager.getInstance().findElements(approvalBy);
+            List<WebElement> currentApprovalBtns = UIActions.findElementsWithWait(approvalBy);
 
             // בנוזלים/פופאפ הדינמי לוקחים את הכפתור הפעיל/הגלוי שנפתח ברגע זה
             WebElement targetApprovalBtn = null;
